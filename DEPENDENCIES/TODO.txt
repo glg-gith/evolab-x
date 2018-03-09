@@ -1,0 +1,24 @@
+INSTALL :
+
+1. Build Cython : $ python setup.py install --prefix=.../DEPENDENCIES/Cython
+2. Build Numpy :  $ python setup.py install --prefix=.../DEPENDENCIES/NumPy
+3. Build SciPy :  $ python setup.py install --prefix=.../DEPENDENCIES/SciPy
+#NOP!#4. Build PyGSL :  $ python setup.py install --prefix=.../DEPENDENCIES/PyGSL
+
+
+AT RUNTIME :
+
+1. Add installation directory (the one containing the "setup.py") to PYTHONPATH (for each 4)
+		export PYTHONPATH=$PYTHONPATH:.../Cython-0.17.4
+		...
+
+
+2. Add binaries (.so) to LD_LIBRARY_PATH (for each 4)
+		export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:.../Cython-0.17.4/bin
+		...
+
+   OR :
+
+   Dynamically link all .so into .../DEPENDENCIES/ (like done for libgsl.so, libxml2.so, ...)
+		ln -s .../Cython/*/*.so .../DEPENDENCIES/ (recursively -> CHERCHER COMMENT ON FAIT !!!)
+
