@@ -1,0 +1,121 @@
+\hypertarget{classelps_1_1_lab_rng}{\section{elps\-:\-:Lab\-Rng Class Reference}
+\label{classelps_1_1_lab_rng}\index{elps\-::\-Lab\-Rng@{elps\-::\-Lab\-Rng}}
+}
+
+
+{\ttfamily \#include $<$Lab\-Rng\-Utils.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classelps_1_1_lab_rng_aeec9c09dc936c8b72e34e3bc7a34f41f}{Lab\-Rng} (int ralgo, int rseed)
+\item 
+void \hyperlink{classelps_1_1_lab_rng_a63daffcb37fcfda8aa4c82418a2114f4}{Init} (int ralgo=0, int rseed=-\/1)
+\item 
+double \hyperlink{classelps_1_1_lab_rng_a1a8bf0a71e335dc2de2aa8621e75a110}{Get\-Next\-Double} ()
+\item 
+unsigned int \hyperlink{classelps_1_1_lab_rng_a3603daf5dfa58a4e8b7c6c7c40da5c1a}{Get\-Next\-Int} (int max)
+\item 
+unsigned int \hyperlink{classelps_1_1_lab_rng_a38a77355f1cf17a52e2807a0a7223df3}{Get\-Next\-Int\-Multinomial} (double max\-\_\-cumsum, vector$<$ double $>$ \&p\-\_\-nomes)
+\item 
+unsigned int \hyperlink{classelps_1_1_lab_rng_a15d968113695b7780304b0c20c8acc50}{Get\-Next\-Int\-Poisson} (double mu)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is a simplified access to Random Number Generation.\par
+ Mainly (but not only) a subset of features already available in G\-S\-L \-:\par
+ \href{http://www.gnu.org/software/gsl/manual/gsl-ref.html}{\tt http\-://www.\-gnu.\-org/software/gsl/manual/gsl-\/ref.\-html} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classelps_1_1_lab_rng_aeec9c09dc936c8b72e34e3bc7a34f41f}{\index{elps\-::\-Lab\-Rng@{elps\-::\-Lab\-Rng}!Lab\-Rng@{Lab\-Rng}}
+\index{Lab\-Rng@{Lab\-Rng}!elps::LabRng@{elps\-::\-Lab\-Rng}}
+\subsubsection[{Lab\-Rng}]{\setlength{\rightskip}{0pt plus 5cm}elps\-::\-Lab\-Rng\-::\-Lab\-Rng (
+\begin{DoxyParamCaption}
+\item[{int}]{ralgo, }
+\item[{int}]{rseed}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_rng_aeec9c09dc936c8b72e34e3bc7a34f41f}
+Initialize a R\-N\-G specifying an algorithm (default is 0 \-: Mersenne Twister). 
+\begin{DoxyParams}{Parameters}
+{\em ralgo} & Can be 0, 1 or 2 (respectively \-: mt19937 -\/ the default, taus, gfsr4) \\
+\hline
+{\em rseed} & Seed used to generate the numbers (default is -\/1 \-: clock based). Series of random numbers are different each time the program is run, based on the computer's time clock. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classelps_1_1_lab_rng_a1a8bf0a71e335dc2de2aa8621e75a110}{\index{elps\-::\-Lab\-Rng@{elps\-::\-Lab\-Rng}!Get\-Next\-Double@{Get\-Next\-Double}}
+\index{Get\-Next\-Double@{Get\-Next\-Double}!elps::LabRng@{elps\-::\-Lab\-Rng}}
+\subsubsection[{Get\-Next\-Double}]{\setlength{\rightskip}{0pt plus 5cm}double elps\-::\-Lab\-Rng\-::\-Get\-Next\-Double (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_rng_a1a8bf0a71e335dc2de2aa8621e75a110}
+G\-S\-L \-: Get a random double in range \mbox{[}0.\-0, 1.\-0\mbox{]}. \begin{DoxyReturn}{Returns}
+A random double between 0.\-0 and 1.\-0 included. 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_rng_a3603daf5dfa58a4e8b7c6c7c40da5c1a}{\index{elps\-::\-Lab\-Rng@{elps\-::\-Lab\-Rng}!Get\-Next\-Int@{Get\-Next\-Int}}
+\index{Get\-Next\-Int@{Get\-Next\-Int}!elps::LabRng@{elps\-::\-Lab\-Rng}}
+\subsubsection[{Get\-Next\-Int}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int elps\-::\-Lab\-Rng\-::\-Get\-Next\-Int (
+\begin{DoxyParamCaption}
+\item[{int}]{max}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_rng_a3603daf5dfa58a4e8b7c6c7c40da5c1a}
+G\-S\-L \-: Get a random in in range \mbox{[}0, max-\/1\mbox{]}. 
+\begin{DoxyParams}{Parameters}
+{\em max} & The maximum returned plus 1. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A random integer between 0 and max-\/1 included. 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_rng_a38a77355f1cf17a52e2807a0a7223df3}{\index{elps\-::\-Lab\-Rng@{elps\-::\-Lab\-Rng}!Get\-Next\-Int\-Multinomial@{Get\-Next\-Int\-Multinomial}}
+\index{Get\-Next\-Int\-Multinomial@{Get\-Next\-Int\-Multinomial}!elps::LabRng@{elps\-::\-Lab\-Rng}}
+\subsubsection[{Get\-Next\-Int\-Multinomial}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int elps\-::\-Lab\-Rng\-::\-Get\-Next\-Int\-Multinomial (
+\begin{DoxyParamCaption}
+\item[{double}]{max\-\_\-cumsum, }
+\item[{vector$<$ double $>$ \&}]{p\-\_\-nomes}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_rng_a38a77355f1cf17a52e2807a0a7223df3}
+C\-U\-S\-T\-O\-M \-: Assuming max\-\_\-cumsum is the cumulative sum of all the nomes, returns the index of a nome in the nomes list according to its probability to be chosen. 
+\begin{DoxyParams}{Parameters}
+{\em max\-\_\-cumsum} & The cumulative sum of all the elements of vector \char`\"{}p\-\_\-nomes\char`\"{}. \\
+\hline
+{\em p\-\_\-nomes} & The vector containing the probabilities \mbox{[}0.\-0, 1.\-0\mbox{]} for each nome. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The index of the chosen nome in the vector \char`\"{}p\-\_\-nomes\char`\"{}. 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_rng_a15d968113695b7780304b0c20c8acc50}{\index{elps\-::\-Lab\-Rng@{elps\-::\-Lab\-Rng}!Get\-Next\-Int\-Poisson@{Get\-Next\-Int\-Poisson}}
+\index{Get\-Next\-Int\-Poisson@{Get\-Next\-Int\-Poisson}!elps::LabRng@{elps\-::\-Lab\-Rng}}
+\subsubsection[{Get\-Next\-Int\-Poisson}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int elps\-::\-Lab\-Rng\-::\-Get\-Next\-Int\-Poisson (
+\begin{DoxyParamCaption}
+\item[{double}]{mu}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_rng_a15d968113695b7780304b0c20c8acc50}
+G\-S\-L \-: This function returns a random integer from the Poisson distribution with mean mu. 
+\begin{DoxyParams}{Parameters}
+{\em mu} & Mean of the distribution \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A random integer 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_rng_a63daffcb37fcfda8aa4c82418a2114f4}{\index{elps\-::\-Lab\-Rng@{elps\-::\-Lab\-Rng}!Init@{Init}}
+\index{Init@{Init}!elps::LabRng@{elps\-::\-Lab\-Rng}}
+\subsubsection[{Init}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Rng\-::\-Init (
+\begin{DoxyParamCaption}
+\item[{int}]{ralgo = {\ttfamily 0}, }
+\item[{int}]{rseed = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_rng_a63daffcb37fcfda8aa4c82418a2114f4}
+Initialization method. 
+\begin{DoxyParams}{Parameters}
+{\em ralgo} & \\
+\hline
+{\em rseed} & \\
+\hline
+\end{DoxyParams}

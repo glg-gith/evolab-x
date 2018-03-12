@@ -1,0 +1,1084 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>cyelp.PyLabSiteBase</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="cyelp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a href="http://www.evolab-project.org"><img src="../elp-cy-eee.png" style="margin:10px;" /></a>
+        <script>
+			var link = parent.document.createElement('link'); 
+			link.id = 'dynamic-favicon'; 
+			link.type = 'image/png'; 
+			link.rel = 'shortcut icon'; 
+			link.href = '../logo-base-fav.png'; 
+			parent.document.head.appendChild(link); 
+			parent.document.head = parent.document.head || parent.document.getElementsByTagName('head')[0];
+		</script></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="cyelp-module.html">Module&nbsp;cyelp</a> ::
+        Class&nbsp;PyLabSiteBase
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="cyelp.PyLabSiteBase-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class PyLabSiteBase</h1><p class="nomargin-top"></p>
+<center>
+<center>  <map id="uml_class_diagram_for_cyelp_py_20" name="uml_class_diagram_for_cyelp_py_20">
+<area shape="rect" id="node41" href="cyelp.PyLabSiteBase-class.html#Binarize" title="cyelp.PyLabSiteBase.Binarize" alt="" coords="17,135,497,153"/>
+<area shape="rect" id="node41" href="cyelp.PyLabSiteBase-class.html#Copy" title="Make a copy of the whole attributes stack from another SITE." alt="" coords="17,153,497,172"/>
+<area shape="rect" id="node41" href="cyelp.PyLabSiteBase-class.html#GetAttrDouble" title="Get the integer value of an attribute specified by its id in the attributes stack and its dependency level." alt="" coords="17,172,497,191"/>
+<area shape="rect" id="node41" href="cyelp.PyLabSiteBase-class.html#GetAttrInt" title="Get the integer value of an attribute specified by its id in the attributes stack and its dependency level." alt="" coords="17,191,497,209"/>
+<area shape="rect" id="node41" href="cyelp.PyLabSiteBase-class.html#GetCurrentStateElapsedTime" title="Get the time elapsed since the current state was entered." alt="" coords="17,209,497,228"/>
+<area shape="rect" id="node41" href="cyelp.PyLabSiteBase-class.html#GetCurrentStateRemainingTime" title="Get the time remaining until the current state will be quit (timeout &#160;reached)." alt="" coords="17,228,497,247"/>
+<area shape="rect" id="node41" href="cyelp.PyLabSiteBase-class.html#GetNbAttributes" title="Get the number of attributes at the given dependency level using a filter." alt="" coords="17,247,497,265"/>
+<area shape="rect" id="node41" href="cyelp.PyLabSiteBase-class.html#GetNbStates" title="Get the number of states in the states stack." alt="" coords="17,265,497,284"/>
+<area shape="rect" id="node41" href="cyelp.PyLabSiteBase-class.html#GetState" title="Get the current state of this SITE." alt="" coords="17,284,497,303"/>
+<area shape="rect" id="node41" href="cyelp.PyLabSiteBase-class.html#PopAttribute" title="Remove the last pushed attribute from the top of the specified stack." alt="" coords="17,303,497,321"/>
+<area shape="rect" id="node41" href="cyelp.PyLabSiteBase-class.html#PopState" title="Remove the state located on top of the states stack." alt="" coords="17,321,497,340"/>
+<area shape="rect" id="node41" href="cyelp.PyLabSiteBase-class.html#PushAttribute" title="Add a new attribute on top of the stack specified by dep_type." alt="" coords="17,340,497,359"/>
+<area shape="rect" id="node41" href="cyelp.PyLabSiteBase-class.html#PushState" title="Add a new state to the state stack." alt="" coords="17,359,497,377"/>
+<area shape="rect" id="node41" href="cyelp.PyLabSiteBase-class.html#__new__" title="cyelp.PyLabSiteBase.__new__" alt="" coords="17,396,497,415"/>
+<area shape="rect" id="node1" href="cyelp.PyLabSiteBase-class.html" title="Base class for handling user defined data on a given SITE." alt="" coords="5,102,509,421"/>
+<area shape="rect" id="node3" href="cyelp.PyLabSiteEvent-class.html" title="This class handles ATTRIBUTES and STATES (since it inherits from PyLabSiteBase), but also EVENTS." alt="" coords="192,441,323,479"/>
+<area shape="rect" id="node42" href="cyelp.PyLabUserData-class.html#GetData" title="Get the specific information stored by the user." alt="" coords="199,39,316,57"/>
+<area shape="rect" id="node42" href="cyelp.PyLabUserData-class.html#SetData" title="Set the specific information the user is about to store." alt="" coords="199,57,316,76"/>
+<area shape="rect" id="node2" href="cyelp.PyLabUserData-class.html" title="This is the base class for all the classes used for describing a Site." alt="" coords="187,6,328,82"/>
+</map>
+  <img src="uml_class_diagram_for_cyelp_py_20.gif" alt='' usemap="#uml_class_diagram_for_cyelp_py_20" ismap="ismap" class="graph-without-title" />
+</center>
+</center>
+<hr />
+<p>Base class for handling user defined data on a given SITE.</p>
+  <ul>
+    <li>
+      In a MASS ACTION context, the sites can be stored in an array (See <a
+      href="cyelp.PyLabArrayBinding-class.html" 
+      class="link">PyLabArrayBinding</a>).
+    </li>
+    <li>
+      In a SPATIALIZED context, the sites would be stored in the node of a 
+      network (See <a href="cyelp.PyLabNetBinding-class.html" 
+      class="link">PyLabNetBinding</a>).
+    </li>
+  </ul>
+  <p>This class is specialized in managing 2 stacks of ATTRIBUTES (See 
+  PyLabAttributesStack - TODO).</p>
+  <ul>
+    <li>
+      The first one stores the attributes related to the INDIVIDUAL 
+      currently residing on the SITE.
+    </li>
+    <li>
+      The second one stores the attributes related to the SITE itself 
+      (typically, if the individual moves or dies, those attributes would 
+      persist...).
+    </li>
+  </ul>
+  <p>It's state (the state of its attributes at a given time) can be 
+  binarized / dumped by implementing the features inherited from the 
+  LabIBinarizable interface (See <a 
+  href="cyelp.PyLabSiteBase-class.html#Binarize" 
+  class="link">Binarize()</a>, <a 
+  href="cyelp.PyLabSiteBase-class.html#UnBinarize" 
+  class="link">UnBinarize()</a>).</p>
+  <p>It manages also a stack of states. A SITE can switch from one state to
+  another.</p>
+  <p>STATES (See also : PyLabStateStack - TODO) :</p>
+  <p>A state (like ATTRIBUTES) can change in time. The differences are 
+  :</p>
+  <ul>
+    <li>
+      It can have only integer values [0..N]
+    </li>
+    <li>
+      They can be linked to each other (by giving the id of the next state 
+      coming after the current one)
+    </li>
+    <li>
+      They can have a limited life time - optional timeout - before 
+      returning to an other specified state
+    </li>
+  </ul>
+  <p>Note : A Site is <b>always</b> related to a simulator.</p>
+  <h1 class="heading">USAGE :</h1>
+    <p>A basic use case would look like follows :</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>a_site = PyLabSiteBase(sim)                    <span class="py-comment"># 'sim' : the related simulator</span>
+<span class="py-more">...</span>
+<span class="py-more">... </span><span class="py-comment"># ATTRIBUTES</span>
+<span class="py-more">... </span><span class="py-comment"># Indexed attribute : here, 3 sets/groups are created (&quot;pop0&quot;, &quot;pop1&quot;, &quot;pop2&quot;)</span>
+<span class="py-more">... </span><span class="py-comment"># [In case the site was registered by the 'Sets Manager' (See LabSiteSetsManager, </span>
+<span class="py-more">... </span><span class="py-comment">#  PyLabSiteSetsCalculator)]</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>a_site.PushAttribute(<span class="py-string">&quot;pop&quot;</span>, LabSiteBase::IND_DEP, True, 3);
+<span class="py-more">...</span>
+<span class="py-more">... </span><span class="py-comment"># Classical attributes (doubles)</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>POP = 0
+<span class="py-prompt">&gt;&gt;&gt; </span>X   = 1
+<span class="py-prompt">&gt;&gt;&gt; </span>M   = 2
+<span class="py-more">...</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>a_site.PushAttribute(<span class="py-string">&quot;x&quot;</span>, cyelp.IND_DEP)
+<span class="py-prompt">&gt;&gt;&gt; </span>a_site.PushAttribute(<span class="py-string">&quot;m&quot;</span>, cyelp.IND_DEP)
+<span class="py-more">...</span>
+<span class="py-more">... </span><span class="py-comment"># STATES</span>
+<span class="py-more">... </span><span class="py-comment"># We define 3 possible states :</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>EMPTY    = 0
+<span class="py-prompt">&gt;&gt;&gt; </span>RESIDENT = 1
+<span class="py-prompt">&gt;&gt;&gt; </span>MUTANT   = 2
+<span class="py-more">...</span>
+<span class="py-more">... </span><span class="py-comment"># Parameters : 1, -1, -1 =&gt; next_id = 1, timeout_id = -1, timeout = -1.0</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>a_site.PushState(<span class="py-string">&quot;EMPTY&quot;</span>,    1, -1, -1)
+<span class="py-prompt">&gt;&gt;&gt; </span>a_site.PushState(<span class="py-string">&quot;RESIDENT&quot;</span>, 1, -1, -1)
+<span class="py-prompt">&gt;&gt;&gt; </span>a_site.PushState(<span class="py-string">&quot;MUTANT&quot;</span>,   1, -1, -1)
+<span class="py-more">... </span>
+<span class="py-more">... </span><span class="py-comment"># Choose whether the current site is in EMPTY or RESIDENT state from the</span>
+<span class="py-more">... </span><span class="py-comment"># probability 'p_init'.</span>
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">if</span>(rng.GetNextDouble() &lt; p_init) :
+<span class="py-more">... </span>
+<span class="py-more">... </span>    <span class="py-comment"># This site will be a member of the &quot;RESIDENT&quot; set</span>
+<span class="py-more">... </span>    a_site.SetState(RESIDENT, sim.GetTime())
+<span class="py-more">... </span>
+<span class="py-more">... </span>    a_site.SetAttrDouble(cyelp.IND_DEP, POP, 1)
+<span class="py-more">... </span>    a_site.SetAttrDouble(cyelp.IND_DEP, X,   x1)
+<span class="py-more">... </span>    a_site.SetAttrDouble(cyelp.IND_DEP, M,   mo1)
+<span class="py-more">... </span>
+<span class="py-more">... </span><span class="py-keyword">else</span> :
+<span class="py-more">... </span>
+<span class="py-more">... </span>    <span class="py-comment"># This site will be a member of the &quot;EMPTY&quot; set</span>
+<span class="py-more">... </span>    a_site.SetState(BdmLsim3::EMPTY, sim.GetTime())
+<span class="py-more">... </span>
+<span class="py-more">... </span>    a_site.SetAttrDouble(cyelp.IND_DEP, POP, 0)
+<span class="py-more">... </span>    a_site.SetAttrDouble(cyelp.IND_DEP, X,   0.0)
+<span class="py-more">... </span>    a_site.SetAttrDouble(cyelp.IND_DEP, M,   0.0);
+<span class="py-more">...</span></pre>
+    <p>NOTE : About <b>Sets Management</b></p>
+    <p>As mentioned in the source code above, in case the site was 
+    registered by the <b>Sets Manager</b>, indexed attribute would result 
+    in the creation of related Sets / groups (ex. 3 groups 
+    [&quot;pop0&quot;, &quot;pop1&quot;, &quot;pop2&quot;] are created from
+    the indexed attribute &quot;pop&quot;...) - See <a 
+    href="cyelp.PyLabSiteSetsCalculator-class.html" 
+    class="link">PyLabSiteSetsCalculator</a> for more details concerning 
+    Sets.</p>
+    <p>Concerning states, Sets management behaves the same : in the above, 
+    the groups [&quot;EMPTY&quot;, &quot;RESIDENT&quot;, 
+    &quot;MUTANT&quot;] would be created.</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Instance Methods</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="Binarize"></a><span class="summary-sig-name">Binarize</span>(<span class="summary-sig-arg">...</span>)</span></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSiteBase-class.html#Copy" class="summary-sig-name">Copy</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">src_site</span>,
+        <span class="summary-sig-arg">dep_filter</span>)</span><br />
+      Make a copy of the whole attributes stack from another SITE.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>float</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSiteBase-class.html#GetAttrDouble" class="summary-sig-name">GetAttrDouble</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">dep_type</span>,
+        <span class="summary-sig-arg">id</span>)</span><br />
+      Get the integer value of an attribute specified by its id in the 
+      attributes stack and its dependency level.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>int</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSiteBase-class.html#GetAttrInt" class="summary-sig-name">GetAttrInt</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">dep_type</span>,
+        <span class="summary-sig-arg">id</span>)</span><br />
+      Get the integer value of an attribute specified by its id in the 
+      attributes stack and its dependency level.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>float</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSiteBase-class.html#GetCurrentStateElapsedTime" class="summary-sig-name">GetCurrentStateElapsedTime</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">time</span>)</span><br />
+      Get the time elapsed since the current state was entered.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>float</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSiteBase-class.html#GetCurrentStateRemainingTime" class="summary-sig-name">GetCurrentStateRemainingTime</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">time</span>)</span><br />
+      Get the time remaining until the current state will be quit (timeout 
+      reached).</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>int</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSiteBase-class.html#GetNbAttributes" class="summary-sig-name">GetNbAttributes</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">dep_filter</span>)</span><br />
+      Get the number of attributes at the given dependency level using a 
+      filter.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>int</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSiteBase-class.html#GetNbStates" class="summary-sig-name">GetNbStates</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Get the number of states in the states stack.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>int</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSiteBase-class.html#GetState" class="summary-sig-name">GetState</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Get the current state of this SITE.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSiteBase-class.html#PopAttribute" class="summary-sig-name">PopAttribute</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">dep_type</span>)</span><br />
+      Remove the last pushed attribute from the top of the specified stack.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="PopState"></a><span class="summary-sig-name">PopState</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Remove the state located on top of the states stack.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSiteBase-class.html#PushAttribute" class="summary-sig-name">PushAttribute</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">name</span>,
+        <span class="summary-sig-arg">dep_type</span>,
+        <span class="summary-sig-arg">d_value</span>=<span class="summary-sig-default"> 0.0</span>,
+        <span class="summary-sig-arg">indexed</span>=<span class="summary-sig-default"> False</span>,
+        <span class="summary-sig-arg">nb_beans</span>=<span class="summary-sig-default"> 1</span>)</span><br />
+      Add a new attribute on top of the stack specified by <b>dep_type</b>.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSiteBase-class.html#PushState" class="summary-sig-name">PushState</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">name</span>,
+        <span class="summary-sig-arg">next_id</span>=<span class="summary-sig-default"> -1</span>,
+        <span class="summary-sig-arg">timeout_id</span>=<span class="summary-sig-default"> -1</span>,
+        <span class="summary-sig-arg">timeout</span>=<span class="summary-sig-default"> -1.0</span>)</span><br />
+      Add a new state to the state stack.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSiteBase-class.html#SetAttrDouble" class="summary-sig-name">SetAttrDouble</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">dep_type</span>,
+        <span class="summary-sig-arg">id</span>,
+        <span class="summary-sig-arg">value</span>)</span><br />
+      Set the double value of an attribute specified by its id in the 
+      attributes stack and its dependency level.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSiteBase-class.html#SetState" class="summary-sig-name">SetState</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">state</span>,
+        <span class="summary-sig-arg">time</span>)</span><br />
+      Set the current state of this SITE.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="UnBinarize"></a><span class="summary-sig-name">UnBinarize</span>(<span class="summary-sig-arg">...</span>)</span></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSiteBase-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">sim</span>,
+        <span class="summary-sig-arg">parent</span>=<span class="summary-sig-default"> None</span>)</span><br />
+      Basic constructor (user must provide a parent node in a SPATIALIZED 
+      context).</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">a new object with type S, a subtype of T</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSiteBase-class.html#__new__" class="summary-sig-name">__new__</a>(<span class="summary-sig-arg">T</span>,
+        <span class="summary-sig-arg">S</span>,
+        <span class="summary-sig-arg">...</span>)</span></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="cyelp.PyLabUserData-class.html">PyLabUserData</a></code></b>:
+      <code><a href="cyelp.PyLabUserData-class.html#GetData">GetData</a></code>,
+      <code><a href="cyelp.PyLabUserData-class.html#SetData">SetData</a></code>
+      </p>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__delattr__</code>,
+      <code>__format__</code>,
+      <code>__getattribute__</code>,
+      <code>__hash__</code>,
+      <code>__reduce__</code>,
+      <code>__reduce_ex__</code>,
+      <code>__repr__</code>,
+      <code>__setattr__</code>,
+      <code>__sizeof__</code>,
+      <code>__str__</code>,
+      <code>__subclasshook__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== PROPERTIES ==================== -->
+<a name="section-Properties"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Properties</span></td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__class__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Method Details</span></td>
+</tr>
+</table>
+<a name="Copy"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">Copy</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">src_site</span>,
+        <span class="sig-arg">dep_filter</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Make a copy of the whole attributes stack from another SITE.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>src_site</code></strong> (<a href="cyelp.PyLabSiteBase-class.html" 
+          class="link">PyLabSiteBase</a>) - The site (<a href="cyelp.PyLabSiteBase-class.html" 
+          class="link">PyLabSiteBase</a>) to copy from.</li>
+        <li><strong class="pname"><code>dep_filter</code></strong> (<code>int</code>) - Filter used to select which attributes will be copied. (Ex1 : 
+          dep_filter = IND_DEP | SITE_DEP, means : copies only 
+          non-environmental attributes. Ex2 : dep_filter = IND_DEP | 
+          SITE_DEP | ENV_DEP : copies all).</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetAttrDouble"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetAttrDouble</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">dep_type</span>,
+        <span class="sig-arg">id</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the integer value of an attribute specified by its id in the 
+  attributes stack and its dependency level.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>dep_type</code></strong> (<code>int</code>) - Dependency level of the targeted attribute.</li>
+        <li><strong class="pname"><code>id</code></strong> (<code>int</code>) - Identifier in the list relatively to the specified dependency 
+          level.</li>
+    </ul></dd>
+    <dt>Returns: <code>float</code></dt>
+        <dd>The value of the attribute as a double.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetAttrInt"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetAttrInt</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">dep_type</span>,
+        <span class="sig-arg">id</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the integer value of an attribute specified by its id in the 
+  attributes stack and its dependency level.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>dep_type</code></strong> (<code>int</code>) - Dependency level of the targeted attribute.</li>
+        <li><strong class="pname"><code>id</code></strong> (<code>int</code>) - Identifier in the list relatively to the specified dependency 
+          level.</li>
+    </ul></dd>
+    <dt>Returns: <code>int</code></dt>
+        <dd>The integer value of the attribute.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetCurrentStateElapsedTime"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetCurrentStateElapsedTime</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">time</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the time elapsed since the current state was entered.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>time</code></strong> (<code>float</code>) - The reference time (usually the current time of the simulation).</li>
+    </ul></dd>
+    <dt>Returns: <code>float</code></dt>
+        <dd>The time elapsed.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetCurrentStateRemainingTime"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetCurrentStateRemainingTime</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">time</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the time remaining until the current state will be quit (timeout 
+  reached).</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>time</code></strong> (<code>float</code>) - The reference time (usually the current time of the simulation).</li>
+    </ul></dd>
+    <dt>Returns: <code>float</code></dt>
+        <dd>The time remaining.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetNbAttributes"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetNbAttributes</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">dep_filter</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the number of attributes at the given dependency level using a 
+  filter.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>dep_filter</code></strong> (<code>int</code> @return A number.) - Filter can be any combination (ex. cyelp.IND | cyelp.SITE).</li>
+    </ul></dd>
+    <dt>Returns: <code>int</code></dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetNbStates"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetNbStates</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the number of states in the states stack.</p>
+  <dl class="fields">
+    <dt>Returns: <code>int</code></dt>
+        <dd>Number of states currently stored.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetState"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetState</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the current state of this SITE.</p>
+  <dl class="fields">
+    <dt>Returns: <code>int</code></dt>
+        <dd>A state expressed as an index in the states stack.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="PopAttribute"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">PopAttribute</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">dep_type</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Remove the last pushed attribute from the top of the specified 
+  stack.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>dep_type</code></strong> (<code>int</code>) - The dependency of the attribute to be popped.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="PushAttribute"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">PushAttribute</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">name</span>,
+        <span class="sig-arg">dep_type</span>,
+        <span class="sig-arg">d_value</span>=<span class="sig-default"> 0.0</span>,
+        <span class="sig-arg">indexed</span>=<span class="sig-default"> False</span>,
+        <span class="sig-arg">nb_beans</span>=<span class="sig-default"> 1</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Add a new attribute on top of the stack specified by 
+  <b>dep_type</b>.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>name</code></strong> (<code>str</code>) - Name for this attribute (better use a unique name for each one).</li>
+        <li><strong class="pname"><code>dep_type</code></strong> (<code>int</code>) - Dependency type (cyelp.IND, cyelp.SITE or cyelp.ENV).</li>
+        <li><strong class="pname"><code>d_value</code></strong> (<code>float</code> or <code>int</code>) - Value for the attribute. Pass an <code>int</code> for indexed 
+          attributes.</li>
+        <li><strong class="pname"><code>indexed</code></strong> (<code>bool</code>) - If this attribute is an INDEXED one.</li>
+        <li><strong class="pname"><code>nb_beans</code></strong> (<code>int</code>) - Number of distinct values the indexed attribute can take 
+          [0..nb_beans].</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="PushState"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">PushState</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">name</span>,
+        <span class="sig-arg">next_id</span>=<span class="sig-default"> -1</span>,
+        <span class="sig-arg">timeout_id</span>=<span class="sig-default"> -1</span>,
+        <span class="sig-arg">timeout</span>=<span class="sig-default"> -1.0</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Add a new state to the state stack. (By default : no next logical 
+  state and no timeout).</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>name</code></strong> (<code>str</code>) - Name of the new state</li>
+        <li><strong class="pname"><code>next_id</code></strong> (<code>int</code>) - Next logical state to this state (if any)</li>
+        <li><strong class="pname"><code>timeout_id</code></strong> (<code>int</code>) - Index of the state to switch to when timeout is reached (if any 
+          timeout)</li>
+        <li><strong class="pname"><code>timeout</code></strong> (<code>float</code>) - Delta of time before switching to the &quot;timeout_id&quot; 
+          state (if any timeout)</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="SetAttrDouble"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">SetAttrDouble</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">dep_type</span>,
+        <span class="sig-arg">id</span>,
+        <span class="sig-arg">value</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Set the double value of an attribute specified by its id in the 
+  attributes stack and its dependency level.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>dep_type</code></strong> (<code>int</code>) - Dependency level of the targeted attribute.</li>
+        <li><strong class="pname"><code>id</code></strong> (<code>int</code>) - Identifier in the list relatively to the specified dependency 
+          level.</li>
+        <li><strong class="pname"><code>value</code></strong> (<code>float</code>) - The new double value of the attribute.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="SetState"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">SetState</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">state</span>,
+        <span class="sig-arg">time</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Set the current state of this SITE.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>state</code></strong> (<code>int</code>) - New state (new index in the states stack).</li>
+        <li><strong class="pname"><code>time</code></strong> (<code>float</code>) - Time at which this change is performed (usually the current 
+          simulation time). See <a 
+          href="cyelp.PyLabSimulatorTime-class.html#GetTime" 
+          class="link">PyLabSimulatorTime.GetTime()</a>.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">sim</span>,
+        <span class="sig-arg">parent</span>=<span class="sig-default"> None</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Basic constructor (user must provide a parent node in a SPATIALIZED 
+  context).</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>sim</code></strong> (<code>PyLabSimulatorBase</code>) - The Simulator this Site is related to.</li>
+        <li><strong class="pname"><code>parent</code></strong> (<code>PyLabNode</code>) - The node this Site is related to.</li>
+    </ul></dd>
+    <dt>Overrides:
+        object.__init__
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="__new__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__new__</span>(<span class="sig-arg">T</span>,
+        <span class="sig-arg">S</span>,
+        <span class="sig-arg">...</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Returns: a new object with type S, a subtype of T</dt>
+    <dt>Overrides:
+        object.__new__
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="cyelp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a href="http://www.evolab-project.org"><img src="../elp-cy-eee.png" style="margin:10px;" /></a>
+        <script>
+			var link = parent.document.createElement('link'); 
+			link.id = 'dynamic-favicon'; 
+			link.type = 'image/png'; 
+			link.rel = 'shortcut icon'; 
+			link.href = '../logo-base-fav.png'; 
+			parent.document.head.appendChild(link); 
+			parent.document.head = parent.document.head || parent.document.getElementsByTagName('head')[0];
+		</script></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Fri Jun  7 07:41:40 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

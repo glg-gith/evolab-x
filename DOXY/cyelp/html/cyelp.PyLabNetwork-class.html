@@ -1,0 +1,1070 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>cyelp.PyLabNetwork</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="cyelp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a href="http://www.evolab-project.org"><img src="../elp-cy-eee.png" style="margin:10px;" /></a>
+        <script>
+			var link = parent.document.createElement('link'); 
+			link.id = 'dynamic-favicon'; 
+			link.type = 'image/png'; 
+			link.rel = 'shortcut icon'; 
+			link.href = '../logo-base-fav.png'; 
+			parent.document.head.appendChild(link); 
+			parent.document.head = parent.document.head || parent.document.getElementsByTagName('head')[0];
+		</script></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="cyelp-module.html">Module&nbsp;cyelp</a> ::
+        Class&nbsp;PyLabNetwork
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="cyelp.PyLabNetwork-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class PyLabNetwork</h1><p class="nomargin-top"></p>
+<center>
+<center>  <map id="uml_class_diagram_for_cyelp_py_10" name="uml_class_diagram_for_cyelp_py_10">
+<area shape="rect" id="node15" href="cyelp.PyLabNetwork-class.html#ErdosRenyi" title="Erdos Renyi Network." alt="" coords="17,39,273,57"/>
+<area shape="rect" id="node15" href="cyelp.PyLabNetwork-class.html#FastRandomGraph" title="FastRandomGraph() tries to pick the fastest algorithm based on parameters &#160;given." alt="" coords="17,57,273,76"/>
+<area shape="rect" id="node15" href="cyelp.PyLabNetwork-class.html#GetNodeAt" title="Get a node at the specified index in the nodes list." alt="" coords="17,76,273,95"/>
+<area shape="rect" id="node15" href="cyelp.PyLabNetwork-class.html#GetNodes" title="Get the list of all nodes." alt="" coords="17,95,273,113"/>
+<area shape="rect" id="node15" href="cyelp.PyLabNetwork-class.html#GetSize" title="Get the size of the network." alt="" coords="17,113,273,132"/>
+<area shape="rect" id="node15" href="cyelp.PyLabNetwork-class.html#MigrateNodes" title="Migrates the given fraction of Nodes in the network by rearranging their &#160;edges (= connections)." alt="" coords="17,132,273,151"/>
+<area shape="rect" id="node15" href="cyelp.PyLabNetwork-class.html#Populate" title="Populate the network with nb_sites nodes." alt="" coords="17,151,273,169"/>
+<area shape="rect" id="node15" href="cyelp.PyLabNetwork-class.html#RandConnectExplicit" title="User provides an explicit degree series, one degree per node." alt="" coords="17,169,273,188"/>
+<area shape="rect" id="node15" href="cyelp.PyLabNetwork-class.html#RandConnectExponential" title="Same as RandConnectUser() using a Exponential distribution." alt="" coords="17,188,273,207"/>
+<area shape="rect" id="node15" href="cyelp.PyLabNetwork-class.html#RandConnectPoisson" title="Same as RandConnectUser() using a Poisson distribution." alt="" coords="17,207,273,225"/>
+<area shape="rect" id="node15" href="cyelp.PyLabNetwork-class.html#RandConnectPowerlaw" title="Same as RandConnectUser() using a Powerlaw distribution." alt="" coords="17,225,273,244"/>
+<area shape="rect" id="node15" href="cyelp.PyLabNetwork-class.html#RandConnectUser" title="User provides arbitrary (normalized!) distribution." alt="" coords="17,244,273,263"/>
+<area shape="rect" id="node15" href="cyelp.PyLabNetwork-class.html#RandConnectUserLinear" title="Same as RandConnectUser(), but specifying only the connection degree." alt="" coords="17,263,273,281"/>
+<area shape="rect" id="node15" href="cyelp.PyLabNetwork-class.html#__new__" title="cyelp.PyLabNetwork.__new__" alt="" coords="17,300,273,319"/>
+<area shape="rect" id="node1" href="cyelp.PyLabNetwork-class.html" title="Main class for handling a Network (in a SPATIALIZED context)." alt="" coords="5,6,285,325"/>
+</map>
+  <img src="uml_class_diagram_for_cyelp_py_10.gif" alt='' usemap="#uml_class_diagram_for_cyelp_py_10" ismap="ismap" class="graph-without-title" />
+</center>
+</center>
+<hr />
+<p>Main class for handling a Network (in a <b>SPATIALIZED</b> context). 
+  Those classes have a natural hierarchy of <a 
+  href="cyelp.PyLabNetwork-class.html" class="link">PyLabNetwork</a> &gt; 
+  <a href="cyelp.PyLabNode-class.html" class="link">PyLabNode</a> &gt; 
+  <code>edges</code>.</p>
+  <p>(an edge is a connection between a node and one of its neighbors).</p>
+  <p>That means you probably should not be doing something with nodes <a 
+  href="cyelp.PyLabNode-class.html" class="link">PyLabNode</a> unless they 
+  already belong to a network <a href="cyelp.PyLabNetwork-class.html" 
+  class="link">PyLabNetwork</a>.</p>
+  <p>There are many ways you can construct a network, and several functions
+  are available to automate the process, by providing algorithms for 
+  connecting the edges.</p>
+  <h1 class="heading">USAGE :</h1>
+    <p>Start out by getting yourself a network :</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>my_network = PyLabNetwork()</pre>
+    <p>Then construct it (populate with nodes and connect choosing an 
+    algorithm) :</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>my_network.Populate(10000)         <span class="py-comment"># Add 10^4 nodes to the network.</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>my_network.RandConnectPoisson(4)   <span class="py-comment"># Connect the nodes using a</span>
+<span class="py-more">... </span>                                   <span class="py-comment"># Poisson(4) degree distribution and get rid of </span>
+<span class="py-more">... </span>                                   <span class="py-comment"># self-loops and multi-edges (done automatically).</span></pre>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Instance Methods</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabNetwork-class.html#ErdosRenyi" class="summary-sig-name">ErdosRenyi</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">_lambda</span>)</span><br />
+      Erdos Renyi Network.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabNetwork-class.html#FastRandomGraph" class="summary-sig-name">FastRandomGraph</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">_lambda</span>)</span><br />
+      FastRandomGraph() tries to pick the fastest algorithm based on 
+      parameters given.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><a href="cyelp.PyLabNode-class.html" class="link">PyLabNode</a></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabNetwork-class.html#GetNodeAt" class="summary-sig-name">GetNodeAt</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">i</span>)</span><br />
+      Get a node at the specified index in the nodes list.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>list</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabNetwork-class.html#GetNodes" class="summary-sig-name">GetNodes</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Get the list of all nodes.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>int</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabNetwork-class.html#GetSize" class="summary-sig-name">GetSize</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Get the size of the network.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabNetwork-class.html#MigrateNodes" class="summary-sig-name">MigrateNodes</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">fraction_to_migrate</span>)</span><br />
+      Migrates the given fraction of Nodes in the network by rearranging 
+      their edges (= connections).</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabNetwork-class.html#Populate" class="summary-sig-name">Populate</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">nb_sites</span>)</span><br />
+      Populate the network with <code>nb_sites</code> nodes.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabNetwork-class.html#RandConnectExplicit" class="summary-sig-name">RandConnectExplicit</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">deg_series</span>)</span><br />
+      User provides an explicit degree series, one degree per node.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabNetwork-class.html#RandConnectExponential" class="summary-sig-name">RandConnectExponential</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">_lambda</span>)</span><br />
+      Same as RandConnectUser() using a Exponential distribution.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabNetwork-class.html#RandConnectPoisson" class="summary-sig-name">RandConnectPoisson</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">_lambda</span>)</span><br />
+      Same as RandConnectUser() using a Poisson distribution.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabNetwork-class.html#RandConnectPowerlaw" class="summary-sig-name">RandConnectPowerlaw</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">alpha</span>,
+        <span class="summary-sig-arg">kappa</span>)</span><br />
+      Same as RandConnectUser() using a Powerlaw distribution.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabNetwork-class.html#RandConnectUser" class="summary-sig-name">RandConnectUser</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">dist</span>)</span><br />
+      User provides arbitrary (normalized!) distribution.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabNetwork-class.html#RandConnectUserLinear" class="summary-sig-name">RandConnectUserLinear</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">con_deg</span>)</span><br />
+      Same as RandConnectUser(), but specifying only the connection degree.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabNetwork-class.html#RingLattice" class="summary-sig-name">RingLattice</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">N</span>,
+        <span class="summary-sig-arg">K</span>)</span><br />
+      Ring lattice with N nodes, each connected to K nearest neighbors.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabNetwork-class.html#SmallWorld" class="summary-sig-name">SmallWorld</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">N</span>,
+        <span class="summary-sig-arg">K</span>,
+        <span class="summary-sig-arg">beta</span>)</span><br />
+      Watts-Strogatz small world network with N nodes initially connected 
+      to K neighbors and shuffled with probability beta.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabNetwork-class.html#SparseRandomGraph" class="summary-sig-name">SparseRandomGraph</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">_lambda</span>)</span><br />
+      Sparse distribution.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabNetwork-class.html#SquareLattice" class="summary-sig-name">SquareLattice</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">R</span>,
+        <span class="summary-sig-arg">C</span>,
+        <span class="summary-sig-arg">diag</span>)</span><br />
+      R x C lattice, including diagonals if <code>diag</code> is True.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabNetwork-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Default constructor.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">a new object with type S, a subtype of T</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabNetwork-class.html#__new__" class="summary-sig-name">__new__</a>(<span class="summary-sig-arg">T</span>,
+        <span class="summary-sig-arg">S</span>,
+        <span class="summary-sig-arg">...</span>)</span></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__delattr__</code>,
+      <code>__format__</code>,
+      <code>__getattribute__</code>,
+      <code>__hash__</code>,
+      <code>__reduce__</code>,
+      <code>__reduce_ex__</code>,
+      <code>__repr__</code>,
+      <code>__setattr__</code>,
+      <code>__sizeof__</code>,
+      <code>__str__</code>,
+      <code>__subclasshook__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== PROPERTIES ==================== -->
+<a name="section-Properties"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Properties</span></td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__class__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Method Details</span></td>
+</tr>
+</table>
+<a name="ErdosRenyi"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">ErdosRenyi</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">_lambda</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Erdos Renyi Network.</p>
+  <p>ErdosRenyi() and RandConnectPoisson() (should) produce equivalent 
+  networks, although the former will always allow degree 0 nodes, while the
+  later can be modified to use a left-truncated distribution.</p>
+  <p>Erdos-Renyi can only produce Poisson distributed networks, whereas all
+  the RandConnect* functions use an adaptation of the Molloy-Reed 
+  algorithm, and therefore can take any discrete, non-negative 
+  distribution.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>_lambda</code></strong> (<code>double</code>)</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="FastRandomGraph"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">FastRandomGraph</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">_lambda</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>FastRandomGraph() tries to pick the fastest algorithm based on 
+  parameters given.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>_lambda</code></strong> (<code>double</code>)</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetNodeAt"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetNodeAt</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">i</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get a node at the specified index in the nodes list.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>i</code></strong> (<code>int</code>.) - The index in the list.</li>
+    </ul></dd>
+    <dt>Returns: <a href="cyelp.PyLabNode-class.html" class="link">PyLabNode</a></dt>
+        <dd>A node object.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetNodes"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetNodes</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the list of all nodes.</p>
+  <dl class="fields">
+    <dt>Returns: <code>list</code></dt>
+        <dd>An indexed list of <a href="cyelp.PyLabNode-class.html" 
+          class="link">PyLabNode</a> objects.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetSize"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetSize</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the size of the network.</p>
+  <dl class="fields">
+    <dt>Returns: <code>int</code></dt>
+        <dd>The number of nodes / sites of this network.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="MigrateNodes"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">MigrateNodes</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">fraction_to_migrate</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Migrates the given fraction of Nodes in the network by rearranging 
+  their edges (= connections).</p>
+  <p>Algorithm details :</p>
+  <p>At each call (period), (fraction_to_migrate * 100) % of all nodes 
+  &quot;migrate&quot;. A different group is randomly selected each period. 
+  If a nodes is in the migrating group, all of its edges are broken; this 
+  means the node's neighbors also end up with at least one broken edge. 
+  These broken edges (&quot;stubs&quot;) are then randomly reconnected. The
+  reconnection process will make sure that no self-loops or parallel edges 
+  get created (it's possible that additional edges will get shuffled in 
+  order to get rid of these).</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>fraction_to_migrate</code></strong> (<code>double</code>) - The fraction [0.0, 1.0] of nodes to be reorganized.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="Populate"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">Populate</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">nb_sites</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Populate the network with <code>nb_sites</code> nodes.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>nb_sites</code></strong> (<code>int</code>) - Number of nodes (= sites).</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="RandConnectExplicit"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">RandConnectExplicit</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">deg_series</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>User provides an explicit degree series, one degree per node. Sum of 
+  all degrees should be even, or else it's impossible to connect all 
+  nodes.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>deg_series</code></strong> (<code>list</code>) - Vector of <code>int</code>.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="RandConnectExponential"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">RandConnectExponential</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">_lambda</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Same as RandConnectUser() using a Exponential distribution.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>_lambda</code></strong> (<code>double</code>)</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="RandConnectPoisson"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">RandConnectPoisson</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">_lambda</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Same as RandConnectUser() using a Poisson distribution.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>_lambda</code></strong> (<code>double</code>)</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="RandConnectPowerlaw"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">RandConnectPowerlaw</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">alpha</span>,
+        <span class="sig-arg">kappa</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Same as RandConnectUser() using a Powerlaw distribution.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>alpha</code></strong> (<code>double</code>)</li>
+        <li><strong class="pname"><code>kappa</code></strong> (<code>double</code>)</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="RandConnectUser"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">RandConnectUser</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">dist</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>User provides arbitrary (normalized!) distribution. Each value should 
+  be the probability of the index (index = degree), i.e. if the contents of
+  the vector are (0, 0.13, 0.2, 0.04, 0.63), then the probability of 
+  drawing a deviate (=degree) of 0 is 0, of 1 is 13%, of 2 is 20%, and so 
+  on.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>dist</code></strong> (<code>list</code>) - Vector of probabilities.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="RandConnectUserLinear"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">RandConnectUserLinear</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">con_deg</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Same as RandConnectUser(), but specifying only the connection degree. 
+  The algorithm takes care of computing linearly the intermediate values. 
+  Sum of all degrees should be even, or else it's impossible to connect all
+  the nodes.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>con_deg</code></strong> (<code>int</code>) - Number of connected neighbors.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="RingLattice"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">RingLattice</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">N</span>,
+        <span class="sig-arg">K</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Ring lattice with N nodes, each connected to K nearest neighbors.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>N</code></strong> (<code>int</code>) - Number of nodes.</li>
+        <li><strong class="pname"><code>K</code></strong> (<code>int</code>) - Number of nearest neighbors for each node.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="SmallWorld"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">SmallWorld</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">N</span>,
+        <span class="sig-arg">K</span>,
+        <span class="sig-arg">beta</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Watts-Strogatz small world network with N nodes initially connected to
+  K neighbors and shuffled with probability beta.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>N</code></strong> (<code>int</code>) - Number of nodes.</li>
+        <li><strong class="pname"><code>K</code></strong> (<code>int</code>) - Number of initially connected neighbors for each node.</li>
+        <li><strong class="pname"><code>beta</code></strong> (<code>double</code>) - Shuffle probability.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="SparseRandomGraph"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">SparseRandomGraph</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">_lambda</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Sparse distribution.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>_lambda</code></strong> (<code>double</code>)</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="SquareLattice"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">SquareLattice</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">R</span>,
+        <span class="sig-arg">C</span>,
+        <span class="sig-arg">diag</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>R x C lattice, including diagonals if <code>diag</code> is True.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>R</code></strong> (<code>int</code>) - Number of rows.</li>
+        <li><strong class="pname"><code>C</code></strong> (<code>int</code>) - Number of columns.</li>
+        <li><strong class="pname"><code>diag</code></strong> (<code>bool</code>) - If the diagonals should be connected.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Default constructor.</p>
+  <dl class="fields">
+    <dt>Overrides:
+        object.__init__
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="__new__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__new__</span>(<span class="sig-arg">T</span>,
+        <span class="sig-arg">S</span>,
+        <span class="sig-arg">...</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Returns: a new object with type S, a subtype of T</dt>
+    <dt>Overrides:
+        object.__new__
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="cyelp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a href="http://www.evolab-project.org"><img src="../elp-cy-eee.png" style="margin:10px;" /></a>
+        <script>
+			var link = parent.document.createElement('link'); 
+			link.id = 'dynamic-favicon'; 
+			link.type = 'image/png'; 
+			link.rel = 'shortcut icon'; 
+			link.href = '../logo-base-fav.png'; 
+			parent.document.head.appendChild(link); 
+			parent.document.head = parent.document.head || parent.document.getElementsByTagName('head')[0];
+		</script></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Fri Jun  7 07:41:40 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

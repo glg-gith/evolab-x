@@ -1,0 +1,104 @@
+\hypertarget{classelps_1_1_lab_rng_randomizer}{\section{elps\-:\-:Lab\-Rng\-Randomizer Class Reference}
+\label{classelps_1_1_lab_rng_randomizer}\index{elps\-::\-Lab\-Rng\-Randomizer@{elps\-::\-Lab\-Rng\-Randomizer}}
+}
+
+
+{\ttfamily \#include $<$Lab\-Rng\-Utils.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classelps_1_1_lab_rng_randomizer_a472ee9eafa49f5759f1ff43f7c38f572}{Lab\-Rng\-Randomizer} (int ralgo, int rseed)
+\item 
+double \hyperlink{classelps_1_1_lab_rng_randomizer_ad24feac62dadf0fc3489e800d128678e}{Get\-Next\-Double} ()
+\item 
+unsigned int \hyperlink{classelps_1_1_lab_rng_randomizer_adfdc07b3e50a861dfca23f85d02b19c8}{Get\-Next\-Int} (int max)
+\item 
+unsigned int \hyperlink{classelps_1_1_lab_rng_randomizer_a3d3c89465e7c3122986db1042c309e5c}{Get\-Next\-Int\-Multinomial} (double max\-\_\-cumsum, vector$<$ double $>$ p\-\_\-nomes)
+\item 
+unsigned int \hyperlink{classelps_1_1_lab_rng_randomizer_ae10fff40166b80f6cc7e3459ee26d029}{Get\-Next\-Int\-Poisson} (double mu)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class is a simplified access to Random Number Generation.\par
+ Mainly (but not only) a subset of features already available in G\-S\-L \-:\par
+ \href{http://www.gnu.org/software/gsl/manual/gsl-ref.html}{\tt http\-://www.\-gnu.\-org/software/gsl/manual/gsl-\/ref.\-html} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classelps_1_1_lab_rng_randomizer_a472ee9eafa49f5759f1ff43f7c38f572}{\index{elps\-::\-Lab\-Rng\-Randomizer@{elps\-::\-Lab\-Rng\-Randomizer}!Lab\-Rng\-Randomizer@{Lab\-Rng\-Randomizer}}
+\index{Lab\-Rng\-Randomizer@{Lab\-Rng\-Randomizer}!elps::LabRngRandomizer@{elps\-::\-Lab\-Rng\-Randomizer}}
+\subsubsection[{Lab\-Rng\-Randomizer}]{\setlength{\rightskip}{0pt plus 5cm}elps\-::\-Lab\-Rng\-Randomizer\-::\-Lab\-Rng\-Randomizer (
+\begin{DoxyParamCaption}
+\item[{int}]{ralgo, }
+\item[{int}]{rseed}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_rng_randomizer_a472ee9eafa49f5759f1ff43f7c38f572}
+Initialize a R\-N\-G specifying an algorithm (default is 0 \-: Mersenne Twister). 
+\begin{DoxyParams}{Parameters}
+{\em ralgo} & Can be 0, 1 or 2 (respectively \-: mt19937 -\/ the default, taus, gfsr4) \\
+\hline
+{\em rseed} & Seed used to generate the numbers (default is -\/1 \-: clock based) (Aka \-: series of random numbers are different each time the program is run) \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classelps_1_1_lab_rng_randomizer_ad24feac62dadf0fc3489e800d128678e}{\index{elps\-::\-Lab\-Rng\-Randomizer@{elps\-::\-Lab\-Rng\-Randomizer}!Get\-Next\-Double@{Get\-Next\-Double}}
+\index{Get\-Next\-Double@{Get\-Next\-Double}!elps::LabRngRandomizer@{elps\-::\-Lab\-Rng\-Randomizer}}
+\subsubsection[{Get\-Next\-Double}]{\setlength{\rightskip}{0pt plus 5cm}double elps\-::\-Lab\-Rng\-Randomizer\-::\-Get\-Next\-Double (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_rng_randomizer_ad24feac62dadf0fc3489e800d128678e}
+G\-S\-L \-: Get a random double in range \mbox{[}0.\-0, 1.\-0\mbox{]} \begin{DoxyReturn}{Returns}
+A random double between 0.\-0 and 1.\-0 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_rng_randomizer_adfdc07b3e50a861dfca23f85d02b19c8}{\index{elps\-::\-Lab\-Rng\-Randomizer@{elps\-::\-Lab\-Rng\-Randomizer}!Get\-Next\-Int@{Get\-Next\-Int}}
+\index{Get\-Next\-Int@{Get\-Next\-Int}!elps::LabRngRandomizer@{elps\-::\-Lab\-Rng\-Randomizer}}
+\subsubsection[{Get\-Next\-Int}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int elps\-::\-Lab\-Rng\-Randomizer\-::\-Get\-Next\-Int (
+\begin{DoxyParamCaption}
+\item[{int}]{max}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_rng_randomizer_adfdc07b3e50a861dfca23f85d02b19c8}
+G\-S\-L \-: Get a random in in range \mbox{[}0, max-\/1\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em max} & The maximum returned plus 1 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A random integer between 0 and max-\/1 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_rng_randomizer_a3d3c89465e7c3122986db1042c309e5c}{\index{elps\-::\-Lab\-Rng\-Randomizer@{elps\-::\-Lab\-Rng\-Randomizer}!Get\-Next\-Int\-Multinomial@{Get\-Next\-Int\-Multinomial}}
+\index{Get\-Next\-Int\-Multinomial@{Get\-Next\-Int\-Multinomial}!elps::LabRngRandomizer@{elps\-::\-Lab\-Rng\-Randomizer}}
+\subsubsection[{Get\-Next\-Int\-Multinomial}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int elps\-::\-Lab\-Rng\-Randomizer\-::\-Get\-Next\-Int\-Multinomial (
+\begin{DoxyParamCaption}
+\item[{double}]{max\-\_\-cumsum, }
+\item[{vector$<$ double $>$}]{p\-\_\-nomes}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_rng_randomizer_a3d3c89465e7c3122986db1042c309e5c}
+C\-U\-S\-T\-O\-M \-: Assuming max\-\_\-cumsum is the cumulative sum of all the nomes, returns the index of a nome in the nomes list according to its probability to be chosen. 
+\begin{DoxyParams}{Parameters}
+{\em max\-\_\-cumsum} & The cumulative sum of all the elements of vector \char`\"{}nomes\char`\"{} \\
+\hline
+{\em nomes} & The vector containing the probability \mbox{[}0.\-0, 1.\-0\mbox{]} for each nome \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The index of the chosen nome in the vector \char`\"{}nomes\char`\"{} 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_rng_randomizer_ae10fff40166b80f6cc7e3459ee26d029}{\index{elps\-::\-Lab\-Rng\-Randomizer@{elps\-::\-Lab\-Rng\-Randomizer}!Get\-Next\-Int\-Poisson@{Get\-Next\-Int\-Poisson}}
+\index{Get\-Next\-Int\-Poisson@{Get\-Next\-Int\-Poisson}!elps::LabRngRandomizer@{elps\-::\-Lab\-Rng\-Randomizer}}
+\subsubsection[{Get\-Next\-Int\-Poisson}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int elps\-::\-Lab\-Rng\-Randomizer\-::\-Get\-Next\-Int\-Poisson (
+\begin{DoxyParamCaption}
+\item[{double}]{mu}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_rng_randomizer_ae10fff40166b80f6cc7e3459ee26d029}
+G\-S\-L \-: This function returns a random integer from the Poisson distribution with mean mu. 
+\begin{DoxyParams}{Parameters}
+{\em mu} & Mean of the distribution \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A random integer 
+\end{DoxyReturn}

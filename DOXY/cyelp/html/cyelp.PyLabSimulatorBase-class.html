@@ -1,0 +1,1011 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>cyelp.PyLabSimulatorBase</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="cyelp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a href="http://www.evolab-project.org"><img src="../elp-cy-eee.png" style="margin:10px;" /></a>
+        <script>
+			var link = parent.document.createElement('link'); 
+			link.id = 'dynamic-favicon'; 
+			link.type = 'image/png'; 
+			link.rel = 'shortcut icon'; 
+			link.href = '../logo-base-fav.png'; 
+			parent.document.head.appendChild(link); 
+			parent.document.head = parent.document.head || parent.document.getElementsByTagName('head')[0];
+		</script></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="cyelp-module.html">Module&nbsp;cyelp</a> ::
+        Class&nbsp;PyLabSimulatorBase
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="cyelp.PyLabSimulatorBase-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class PyLabSimulatorBase</h1><p class="nomargin-top"></p>
+<center>
+<center>  <map id="uml_class_diagram_for_cyelp_py_16" name="uml_class_diagram_for_cyelp_py_16">
+<area shape="rect" id="node21" href="cyelp.PyLabSimulatorBase-class.html#CleanAllDumpFiles" title="Remove from disk all the previously generated dumps." alt="" coords="97,39,304,57"/>
+<area shape="rect" id="node21" href="cyelp.PyLabSimulatorBase-class.html#CleanUnusedDumpFile" title="Remove the most ancient dump files during the stepping process (See &#160;StepBinarize())." alt="" coords="97,57,304,76"/>
+<area shape="rect" id="node21" href="cyelp.PyLabSimulatorBase-class.html#GetCurrentRepetition" title="Catch the index of the iteration currently being run." alt="" coords="97,76,304,95"/>
+<area shape="rect" id="node21" href="cyelp.PyLabSimulatorBase-class.html#GetDoDump" title="Check if the dumping system has been activated." alt="" coords="97,95,304,113"/>
+<area shape="rect" id="node21" href="cyelp.PyLabSimulatorBase-class.html#GetDoStartFromDump" title="Check if the system must be recovered from dump files." alt="" coords="97,113,304,132"/>
+<area shape="rect" id="node21" href="cyelp.PyLabSimulatorBase-class.html#GetLastDumpFileIdAndClean" title="Read the penultimate binary dump file (to make sure the integrity of the &#160;file we are working with is preserved, we don&#39;t pick up the very last one, &#160;as it could have been corrupted...)." alt="" coords="97,132,304,151"/>
+<area shape="rect" id="node21" href="cyelp.PyLabSimulatorBase-class.html#GetMaxPopulationSize" title="Requires a preliminary call to SetMaxPopulationSize()" alt="" coords="97,151,304,169"/>
+<area shape="rect" id="node21" href="cyelp.PyLabSimulatorBase-class.html#GetNbRepetitions" title="Get the number of trials for the whole process." alt="" coords="97,169,304,188"/>
+<area shape="rect" id="node21" href="cyelp.PyLabSimulatorBase-class.html#GetTimeDumpStep" title="Get the delta of time between each dump (when &#39;do_dump&#39; is set to true)." alt="" coords="97,188,304,207"/>
+<area shape="rect" id="node21" href="cyelp.PyLabSimulatorBase-class.html#Run" title="WARNING :" alt="" coords="97,207,304,225"/>
+<area shape="rect" id="node21" href="cyelp.PyLabSimulatorBase-class.html#SetBinaryStreams" title="Possibility to specify the output and input streams to respectively dump &#160;and restore using the binarization features." alt="" coords="97,225,304,244"/>
+<area shape="rect" id="node21" href="cyelp.PyLabSimulatorBase-class.html#SetCurrentRepetition" title="WARNING ! Should not be forced by hand during a run." alt="" coords="97,244,304,263"/>
+<area shape="rect" id="node21" href="cyelp.PyLabSimulatorBase-class.html#SetDoDump" title="Set if the dump of the system must be activated." alt="" coords="97,263,304,281"/>
+<area shape="rect" id="node21" href="cyelp.PyLabSimulatorBase-class.html#__new__" title="cyelp.PyLabSimulatorBase.__new__" alt="" coords="97,300,304,319"/>
+<area shape="rect" id="node1" href="cyelp.PyLabSimulatorBase-class.html" title="Base class meant to be subclassed when writing a simulation." alt="" coords="85,6,315,325"/>
+<area shape="rect" id="node5" href="cyelp.PyLabSimulatorTime-class.html" title="A basic TIME based subclass of PyLabSimulatorBase." alt="" coords="123,345,280,383"/>
+<area shape="rect" id="node2" href="cyelp.PyLabNetBinding-class.html" title="This class embeds a network (See PyLabNetwork) and provides features to populate it (for use in a SPATIALIZED context)." alt="" coords="344,146,480,185"/>
+<area shape="rect" id="node3" href="cyelp.PyLabArrayBinding-class.html" title="This class embeds a list of sites and provides features to populate it (for use in a MASS ACTION context)." alt="" coords="509,146,656,185"/>
+<area shape="rect" id="node4" href="cyelp.PyLabSimulatorTimeNet-class.html" title="Class designed to create SPACE and TIME based simulation." alt="" coords="5,403,184,442"/>
+<area shape="rect" id="node6" href="cyelp.PyLabSimulatorTimeArray-class.html" title="Class designed to create MASS ACTION and TIME based simulation." alt="" coords="213,403,403,442"/>
+</map>
+  <img src="uml_class_diagram_for_cyelp_py_16.gif" alt='' usemap="#uml_class_diagram_for_cyelp_py_16" ismap="ismap" class="graph-without-title" />
+</center>
+</center>
+<hr />
+<p>Base class meant to be subclassed when writing a simulation.</p>
+  <p>It provides a layout covering all the basic features required by a 
+  simulation. It is based on common hooks (See C++ 
+  <code>LabSimulatorBase</code> documentation, for an exhaustive list of 
+  the available hooks - <code>InitSimulation()</code>, 
+  <code>StepSimulation()</code>, ...) which can be used (overridden) or not
+  by the user. Most of those hooks are virtual or empty (excepted the one 
+  concerning the main loop - have a look at <code>RunSimulation()</code> 
+  content to have a good preliminary overview on how the other hooks might 
+  be used / organized).</p>
+  <p><b>Note :</b> The hooks concerning the basic implementation of the 
+  binarization (aka : dump / saving the current state of the simulation) 
+  are also pre-written).</p>
+  <p>The inner code of <code>RunSimulation()</code> could look like this 
+  :</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-comment"># Default simulation loop behavior                                                 </span>
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">def</span> <span class="py-defname">RunSimulation</span>(self):                                              
+<span class="py-more">... </span>                                                                                   
+<span class="py-more">... </span>    done = False                                                                               
+<span class="py-more">... </span>    self.InitSimulation()                                                    
+<span class="py-more">... </span>    self.InitUnBinarize()
+<span class="py-more">... </span>    self.BeforeRun()                                                                     
+<span class="py-more">... </span>    while (<span class="py-keyword">not</span> done):
+<span class="py-more">... </span>                                                                                    
+<span class="py-more">... </span>        self.OutputSimulation()                                                          
+<span class="py-more">... </span>        self.BeforeStep()                                                                
+<span class="py-more">... </span>        self.StepSimulation()                                                            
+<span class="py-more">... </span>        self.AfterStep()                                                               
+<span class="py-more">... </span>        self.StepBinarize()
+<span class="py-more">...</span>
+<span class="py-more">... </span>        <span class="py-keyword">if</span> (self.EndSimulation()) done = True
+<span class="py-more">... </span>                                                                                    
+<span class="py-more">... </span>    self.OutputSimulation()                        <span class="py-comment"># One more time for final state                   </span>
+<span class="py-more">... </span>    self.AfterRun()                                                                      
+<span class="py-more">...</span></pre>
+  <p>Assuming self is a custom simulator class inheriting from <a 
+  href="cyelp.PyLabSimulatorBase-class.html" 
+  class="link">PyLabSimulatorBase</a> :</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-comment"># Example of redefinition of the &quot;InitSimulation()&quot; hook</span>
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">def</span> <span class="py-defname">InitSimulation</span>(self):                                              
+<span class="py-more">... </span>    <span class="py-comment"># Do custom initialization stuffs here...                                                                               </span>
+<span class="py-more">... </span>    <span class="py-comment"># This will override the default behavior.</span></pre>
+  <h1 class="heading">COMMON USAGE :</h1>
+    <ul>
+      <li>
+        Create a subclass of <a href="cyelp.PyLabSimulatorBase-class.html" 
+        class="link">PyLabSimulatorBase</a>.
+      </li>
+      <li>
+        Feel free to override the hooks (virtual) functions fitting your 
+        needs.
+      </li>
+    </ul>
+    <p><b>NOTE :</b> All the hooks that where not mentioned above remain 
+    empty in this base class, but what they where designed for is described
+    below...</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Instance Methods</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="CleanAllDumpFiles"></a><span class="summary-sig-name">CleanAllDumpFiles</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Remove from disk all the previously generated dumps.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="CleanUnusedDumpFile"></a><span class="summary-sig-name">CleanUnusedDumpFile</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Remove the most ancient dump files during the stepping process (See 
+      StepBinarize()).</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>int</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSimulatorBase-class.html#GetCurrentRepetition" class="summary-sig-name">GetCurrentRepetition</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Catch the index of the iteration currently being run.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>bool</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSimulatorBase-class.html#GetDoDump" class="summary-sig-name">GetDoDump</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Check if the dumping system has been activated.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>bool</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSimulatorBase-class.html#GetDoStartFromDump" class="summary-sig-name">GetDoStartFromDump</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Check if the system must be recovered from dump files.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>int</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSimulatorBase-class.html#GetLastDumpFileIdAndClean" class="summary-sig-name">GetLastDumpFileIdAndClean</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Read the penultimate binary dump file (to make sure the integrity of 
+      the file we are working with is preserved, we don't pick up the very 
+      last one, as it could have been corrupted...).</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>int</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSimulatorBase-class.html#GetMaxPopulationSize" class="summary-sig-name">GetMaxPopulationSize</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Requires a preliminary call to SetMaxPopulationSize()</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>int</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSimulatorBase-class.html#GetNbRepetitions" class="summary-sig-name">GetNbRepetitions</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Get the number of trials for the whole process.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>float</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSimulatorBase-class.html#GetTimeDumpStep" class="summary-sig-name">GetTimeDumpStep</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Get the delta of time between each dump (when 'do_dump' is set to 
+      true).</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSimulatorBase-class.html#Run" class="summary-sig-name">Run</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      WARNING :</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSimulatorBase-class.html#SetBinaryStreams" class="summary-sig-name">SetBinaryStreams</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">ofs</span>,
+        <span class="summary-sig-arg">ifs</span>)</span><br />
+      Possibility to specify the output and input streams to respectively 
+      dump and restore using the binarization features.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSimulatorBase-class.html#SetCurrentRepetition" class="summary-sig-name">SetCurrentRepetition</a>(<span class="summary-sig-arg">...</span>)</span><br />
+      WARNING ! Should not be forced by hand during a run.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSimulatorBase-class.html#SetDoDump" class="summary-sig-name">SetDoDump</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">do_it</span>)</span><br />
+      Set if the dump of the system must be activated.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSimulatorBase-class.html#SetDoStartFromDump" class="summary-sig-name">SetDoStartFromDump</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">do_it</span>)</span><br />
+      Set if the system must be recovered from dump files.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSimulatorBase-class.html#SetMaxPopulationSize" class="summary-sig-name">SetMaxPopulationSize</a>(<span class="summary-sig-arg">...</span>)</span><br />
+      Sets the maximum number of sites / individuals to be handled by the 
+      simulation.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSimulatorBase-class.html#SetNbRepetitions" class="summary-sig-name">SetNbRepetitions</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">nb_rep</span>)</span><br />
+      Set the number of trials for the whole process.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSimulatorBase-class.html#SetTimeDumpStep" class="summary-sig-name">SetTimeDumpStep</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">time</span>)</span><br />
+      Set the interval between each dump (when 'do_dump' is set to true).</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSimulatorBase-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Default constructor.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">a new object with type S, a subtype of T</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSimulatorBase-class.html#__new__" class="summary-sig-name">__new__</a>(<span class="summary-sig-arg">T</span>,
+        <span class="summary-sig-arg">S</span>,
+        <span class="summary-sig-arg">...</span>)</span></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__delattr__</code>,
+      <code>__format__</code>,
+      <code>__getattribute__</code>,
+      <code>__hash__</code>,
+      <code>__reduce__</code>,
+      <code>__reduce_ex__</code>,
+      <code>__repr__</code>,
+      <code>__setattr__</code>,
+      <code>__sizeof__</code>,
+      <code>__str__</code>,
+      <code>__subclasshook__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== PROPERTIES ==================== -->
+<a name="section-Properties"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Properties</span></td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__class__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Method Details</span></td>
+</tr>
+</table>
+<a name="GetCurrentRepetition"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetCurrentRepetition</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Catch the index of the iteration currently being run.</p>
+  <dl class="fields">
+    <dt>Returns: <code>int</code></dt>
+        <dd>The index, starting at 0 (index of the first iteration).</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetDoDump"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetDoDump</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Check if the dumping system has been activated.</p>
+  <dl class="fields">
+    <dt>Returns: <code>bool</code></dt>
+        <dd>True if it has.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetDoStartFromDump"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetDoStartFromDump</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Check if the system must be recovered from dump files.</p>
+  <dl class="fields">
+    <dt>Returns: <code>bool</code></dt>
+        <dd>True if it must.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetLastDumpFileIdAndClean"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetLastDumpFileIdAndClean</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Read the penultimate binary dump file (to make sure the integrity of 
+  the file we are working with is preserved, we don't pick up the very last
+  one, as it could have been corrupted...).</p>
+  <dl class="fields">
+    <dt>Returns: <code>int</code></dt>
+        <dd>The id of the dump from which the system's state is to be 
+          recovered.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetMaxPopulationSize"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetMaxPopulationSize</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Requires a preliminary call to SetMaxPopulationSize()</p>
+  <dl class="fields">
+    <dt>Returns: <code>int</code></dt>
+        <dd>Maximum number of SITES handled by the simulator.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetNbRepetitions"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetNbRepetitions</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the number of trials for the whole process.</p>
+  <p>(aka : number of times the simulation must be entirely completed until
+  the break condition - See EndSimulation() - is reached)</p>
+  <dl class="fields">
+    <dt>Returns: <code>int</code></dt>
+        <dd>The number of times the simulation will be repeated</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetTimeDumpStep"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetTimeDumpStep</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the delta of time between each dump (when 'do_dump' is set to 
+  true).</p>
+  <dl class="fields">
+    <dt>Returns: <code>float</code></dt>
+        <dd>A time interval expressed in seconds (See t_sys_cur).</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="Run"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">Run</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>WARNING :</p>
+<pre class="literalblock">
+   DO NOT OVERRIDE THIS METHOD !
+   Use it &quot;AS IS&quot; in Python mode...
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="SetBinaryStreams"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">SetBinaryStreams</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">ofs</span>,
+        <span class="sig-arg">ifs</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Possibility to specify the output and input streams to respectively 
+  dump and restore using the binarization features.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>ofs</code></strong> (<a href="cyelp.Py_ofstream-class.html" 
+          class="link">Py_ofstream</a>) - The file output stream to write to.</li>
+        <li><strong class="pname"><code>ifs</code></strong> (<a href="cyelp.Py_ifstream-class.html" 
+          class="link">Py_ifstream</a>) - The file input stream to read from.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="SetCurrentRepetition"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">SetCurrentRepetition</span>(<span class="sig-arg">...</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>WARNING ! Should not be forced by hand during a run. This functions 
+  was designed to allow recovering the last state of the simulation before 
+  interruption of the process by the user or a crash. See the 
+  &quot;UNbinarization&quot; features (<code>UnBinarizeAll()</code>).</p>
+  <p>Consequently, it should only be used to restart a simulation at a 
+  specific point.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>rep_num</code></strong> - The repetition number to restart from.</li>
+        <li><strong class="pname"><code>type</code></strong> - <code>int</code></li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="SetDoDump"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">SetDoDump</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">do_it</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Set if the dump of the system must be activated.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>do_it</code></strong> (<code>bool</code>) - Pass 'true' to activate.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="SetDoStartFromDump"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">SetDoStartFromDump</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">do_it</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Set if the system must be recovered from dump files.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>do_it</code></strong> (<code>bool</code>) - Pass 'true' to activate the recovery.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="SetMaxPopulationSize"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">SetMaxPopulationSize</span>(<span class="sig-arg">...</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Sets the maximum number of sites / individuals to be handled by the 
+  simulation.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>pop_size</code></strong> (<code>int</code>) - Should be at least one individual.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="SetNbRepetitions"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">SetNbRepetitions</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">nb_rep</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Set the number of trials for the whole process.</p>
+  <p>If ignored, the simulation will run only once (as the default 
+  returning value of EndSimulation() is True, meaning that the inner while 
+  loop of the RunSimulation() hook while break at the end of the first 
+  iteration).</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>nb_rep</code></strong> (<code>int</code>) - The number of times the simulation will be repeated.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="SetTimeDumpStep"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">SetTimeDumpStep</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">time</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Set the interval between each dump (when 'do_dump' is set to 
+  true).</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>time</code></strong> (<code>double</code>) - Interval of time expressed in seconds.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Default constructor.</p>
+  <dl class="fields">
+    <dt>Overrides:
+        object.__init__
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="__new__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__new__</span>(<span class="sig-arg">T</span>,
+        <span class="sig-arg">S</span>,
+        <span class="sig-arg">...</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Returns: a new object with type S, a subtype of T</dt>
+    <dt>Overrides:
+        object.__new__
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="cyelp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a href="http://www.evolab-project.org"><img src="../elp-cy-eee.png" style="margin:10px;" /></a>
+        <script>
+			var link = parent.document.createElement('link'); 
+			link.id = 'dynamic-favicon'; 
+			link.type = 'image/png'; 
+			link.rel = 'shortcut icon'; 
+			link.href = '../logo-base-fav.png'; 
+			parent.document.head.appendChild(link); 
+			parent.document.head = parent.document.head || parent.document.getElementsByTagName('head')[0];
+		</script></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Fri Jun  7 07:41:40 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

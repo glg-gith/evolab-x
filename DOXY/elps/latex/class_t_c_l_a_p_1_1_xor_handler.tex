@@ -1,0 +1,108 @@
+\hypertarget{class_t_c_l_a_p_1_1_xor_handler}{\section{T\-C\-L\-A\-P\-:\-:Xor\-Handler Class Reference}
+\label{class_t_c_l_a_p_1_1_xor_handler}\index{T\-C\-L\-A\-P\-::\-Xor\-Handler@{T\-C\-L\-A\-P\-::\-Xor\-Handler}}
+}
+
+
+{\ttfamily \#include $<$Xor\-Handler.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_t_c_l_a_p_1_1_xor_handler_a195391f50b7fe5eb939c2f6d236f571e}{Xor\-Handler} ()
+\item 
+void \hyperlink{class_t_c_l_a_p_1_1_xor_handler_a76f156bf36a8aede334801aa242f31b9}{add} (std\-::vector$<$ \hyperlink{class_t_c_l_a_p_1_1_arg}{Arg} $\ast$ $>$ \&ors)
+\item 
+int \hyperlink{class_t_c_l_a_p_1_1_xor_handler_a3df7722e4c4c5d331de69fc902336b00}{check} (const \hyperlink{class_t_c_l_a_p_1_1_arg}{Arg} $\ast$a)
+\item 
+std\-::string \hyperlink{class_t_c_l_a_p_1_1_xor_handler_aca185a80e9df6e4250a230fa5aec7891}{short\-Usage} ()
+\item 
+void \hyperlink{class_t_c_l_a_p_1_1_xor_handler_a257a855934eb343a0fad3c4e5fe5ff57}{print\-Long\-Usage} (std\-::ostream \&os)
+\item 
+bool \hyperlink{class_t_c_l_a_p_1_1_xor_handler_a1a74fab4667cc591a1e3094c91bc942d}{contains} (const \hyperlink{class_t_c_l_a_p_1_1_arg}{Arg} $\ast$a)
+\item 
+\hypertarget{class_t_c_l_a_p_1_1_xor_handler_a0e0d95c697d227cc51f82424b8530182}{std\-::vector$<$ std\-::vector$<$ \hyperlink{class_t_c_l_a_p_1_1_arg}{Arg} $\ast$ $>$ $>$ \& {\bfseries get\-Xor\-List} ()}\label{class_t_c_l_a_p_1_1_xor_handler_a0e0d95c697d227cc51f82424b8530182}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\-::vector$<$ std\-::vector$<$ \hyperlink{class_t_c_l_a_p_1_1_arg}{Arg} $\ast$ $>$ $>$ \hyperlink{class_t_c_l_a_p_1_1_xor_handler_a4ebd5b96e23a0ab03bdd431fe622d4e1}{\-\_\-or\-List}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This class handles lists of \hyperlink{class_t_c_l_a_p_1_1_arg}{Arg}'s that are to be X\-O\-R'd on the command line. This is used by \hyperlink{class_t_c_l_a_p_1_1_cmd_line}{Cmd\-Line} and you shouldn't ever use it. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_t_c_l_a_p_1_1_xor_handler_a195391f50b7fe5eb939c2f6d236f571e}{\index{T\-C\-L\-A\-P\-::\-Xor\-Handler@{T\-C\-L\-A\-P\-::\-Xor\-Handler}!Xor\-Handler@{Xor\-Handler}}
+\index{Xor\-Handler@{Xor\-Handler}!TCLAP::XorHandler@{T\-C\-L\-A\-P\-::\-Xor\-Handler}}
+\subsubsection[{Xor\-Handler}]{\setlength{\rightskip}{0pt plus 5cm}T\-C\-L\-A\-P\-::\-Xor\-Handler\-::\-Xor\-Handler (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_t_c_l_a_p_1_1_xor_handler_a195391f50b7fe5eb939c2f6d236f571e}
+Constructor. Does nothing. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_t_c_l_a_p_1_1_xor_handler_a76f156bf36a8aede334801aa242f31b9}{\index{T\-C\-L\-A\-P\-::\-Xor\-Handler@{T\-C\-L\-A\-P\-::\-Xor\-Handler}!add@{add}}
+\index{add@{add}!TCLAP::XorHandler@{T\-C\-L\-A\-P\-::\-Xor\-Handler}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void T\-C\-L\-A\-P\-::\-Xor\-Handler\-::add (
+\begin{DoxyParamCaption}
+\item[{std\-::vector$<$ {\bf Arg} $\ast$ $>$ \&}]{ors}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_t_c_l_a_p_1_1_xor_handler_a76f156bf36a8aede334801aa242f31b9}
+Add a list of Arg$\ast$'s that will be orred together. 
+\begin{DoxyParams}{Parameters}
+{\em ors} & -\/ list of Arg$\ast$ that will be xor'd. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_t_c_l_a_p_1_1_xor_handler_a3df7722e4c4c5d331de69fc902336b00}{\index{T\-C\-L\-A\-P\-::\-Xor\-Handler@{T\-C\-L\-A\-P\-::\-Xor\-Handler}!check@{check}}
+\index{check@{check}!TCLAP::XorHandler@{T\-C\-L\-A\-P\-::\-Xor\-Handler}}
+\subsubsection[{check}]{\setlength{\rightskip}{0pt plus 5cm}int T\-C\-L\-A\-P\-::\-Xor\-Handler\-::check (
+\begin{DoxyParamCaption}
+\item[{const {\bf Arg} $\ast$}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_t_c_l_a_p_1_1_xor_handler_a3df7722e4c4c5d331de69fc902336b00}
+Checks whether the specified \hyperlink{class_t_c_l_a_p_1_1_arg}{Arg} is in one of the xor lists and if it does match one, returns the size of the xor list that the \hyperlink{class_t_c_l_a_p_1_1_arg}{Arg} matched. If the \hyperlink{class_t_c_l_a_p_1_1_arg}{Arg} matches, then it also sets the rest of the \hyperlink{class_t_c_l_a_p_1_1_arg}{Arg}'s in the list. You shouldn't use this. 
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ The \hyperlink{class_t_c_l_a_p_1_1_arg}{Arg} to be checked. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_t_c_l_a_p_1_1_xor_handler_a1a74fab4667cc591a1e3094c91bc942d}{\index{T\-C\-L\-A\-P\-::\-Xor\-Handler@{T\-C\-L\-A\-P\-::\-Xor\-Handler}!contains@{contains}}
+\index{contains@{contains}!TCLAP::XorHandler@{T\-C\-L\-A\-P\-::\-Xor\-Handler}}
+\subsubsection[{contains}]{\setlength{\rightskip}{0pt plus 5cm}bool T\-C\-L\-A\-P\-::\-Xor\-Handler\-::contains (
+\begin{DoxyParamCaption}
+\item[{const {\bf Arg} $\ast$}]{a}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_t_c_l_a_p_1_1_xor_handler_a1a74fab4667cc591a1e3094c91bc942d}
+Simply checks whether the \hyperlink{class_t_c_l_a_p_1_1_arg}{Arg} is contained in one of the arg lists. 
+\begin{DoxyParams}{Parameters}
+{\em a} & -\/ The \hyperlink{class_t_c_l_a_p_1_1_arg}{Arg} to be checked. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_t_c_l_a_p_1_1_xor_handler_a257a855934eb343a0fad3c4e5fe5ff57}{\index{T\-C\-L\-A\-P\-::\-Xor\-Handler@{T\-C\-L\-A\-P\-::\-Xor\-Handler}!print\-Long\-Usage@{print\-Long\-Usage}}
+\index{print\-Long\-Usage@{print\-Long\-Usage}!TCLAP::XorHandler@{T\-C\-L\-A\-P\-::\-Xor\-Handler}}
+\subsubsection[{print\-Long\-Usage}]{\setlength{\rightskip}{0pt plus 5cm}void T\-C\-L\-A\-P\-::\-Xor\-Handler\-::print\-Long\-Usage (
+\begin{DoxyParamCaption}
+\item[{std\-::ostream \&}]{os}
+\end{DoxyParamCaption}
+)}}\label{class_t_c_l_a_p_1_1_xor_handler_a257a855934eb343a0fad3c4e5fe5ff57}
+Prints the X\-O\-R specific long usage. 
+\begin{DoxyParams}{Parameters}
+{\em os} & -\/ Stream to print to. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_t_c_l_a_p_1_1_xor_handler_aca185a80e9df6e4250a230fa5aec7891}{\index{T\-C\-L\-A\-P\-::\-Xor\-Handler@{T\-C\-L\-A\-P\-::\-Xor\-Handler}!short\-Usage@{short\-Usage}}
+\index{short\-Usage@{short\-Usage}!TCLAP::XorHandler@{T\-C\-L\-A\-P\-::\-Xor\-Handler}}
+\subsubsection[{short\-Usage}]{\setlength{\rightskip}{0pt plus 5cm}std\-::string T\-C\-L\-A\-P\-::\-Xor\-Handler\-::short\-Usage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_t_c_l_a_p_1_1_xor_handler_aca185a80e9df6e4250a230fa5aec7891}
+Returns the X\-O\-R specific short usage. 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_t_c_l_a_p_1_1_xor_handler_a4ebd5b96e23a0ab03bdd431fe622d4e1}{\index{T\-C\-L\-A\-P\-::\-Xor\-Handler@{T\-C\-L\-A\-P\-::\-Xor\-Handler}!\-\_\-or\-List@{\-\_\-or\-List}}
+\index{\-\_\-or\-List@{\-\_\-or\-List}!TCLAP::XorHandler@{T\-C\-L\-A\-P\-::\-Xor\-Handler}}
+\subsubsection[{\-\_\-or\-List}]{\setlength{\rightskip}{0pt plus 5cm}std\-::vector$<$ std\-::vector$<${\bf Arg}$\ast$$>$ $>$ T\-C\-L\-A\-P\-::\-Xor\-Handler\-::\-\_\-or\-List\hspace{0.3cm}{\ttfamily [protected]}}}\label{class_t_c_l_a_p_1_1_xor_handler_a4ebd5b96e23a0ab03bdd431fe622d4e1}
+The list of of lists of \hyperlink{class_t_c_l_a_p_1_1_arg}{Arg}'s to be or'd together. 

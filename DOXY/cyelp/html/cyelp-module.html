@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>cyelp</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th bgcolor="#70b0f0" class="navbar-select"
+          >&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a href="http://www.evolab-project.org"><img src="../elp-cy-eee.png" style="margin:10px;" /></a>
+        <script>
+			var link = parent.document.createElement('link'); 
+			link.id = 'dynamic-favicon'; 
+			link.type = 'image/png'; 
+			link.rel = 'shortcut icon'; 
+			link.href = '../logo-base-fav.png'; 
+			parent.document.head.appendChild(link); 
+			parent.document.head = parent.document.head || parent.document.getElementsByTagName('head')[0];
+		</script></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        Module&nbsp;cyelp
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="cyelp-module.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== MODULE DESCRIPTION ==================== -->
+<h1 class="epydoc">Module cyelp</h1><p class="nomargin-top"></p>
+<!-- ==================== CLASSES ==================== -->
+<a name="section-Classes"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Classes</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp.PyArg-class.html" class="summary-name">PyArg</a><br />
+      A virtual base class that defines the essential data for all 
+        arguments.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp.PyCmdLine-class.html" class="summary-name">PyCmdLine</a><br />
+      The base class that manages the command line definition and passes 
+        along the parsing to the appropriate Arg classes.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp.PyDoubleArg-class.html" class="summary-name">PyDoubleArg</a><br />
+      Class to define and parse a double value from the command line.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp.PyIntArg-class.html" class="summary-name">PyIntArg</a><br />
+      Class to define and parse an integer value from the command line.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp.PyLabArrayBinding-class.html" class="summary-name">PyLabArrayBinding</a><br />
+      This class embeds a list of sites and provides features to populate
+        it (for use in a <b>MASS ACTION</b> context).
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp.PyLabBinaryUtils-class.html" class="summary-name">PyLabBinaryUtils</a><br />
+      Utility class for writing and reading information stored in binary 
+        files.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp.PyLabCallBack-class.html" class="summary-name">PyLabCallBack</a><br />
+      Utility class to deal with callbacks.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp.PyLabEventStack-class.html" class="summary-name">PyLabEventStack</a><br />
+      Stack of events that can occur at a given time (depending on the 
+        rate of each event) in a <b>TIME based</b> simulation context.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp.PyLabNetBinding-class.html" class="summary-name">PyLabNetBinding</a><br />
+      This class embeds a network (See <a 
+        href="cyelp.PyLabNetwork-class.html" class="link">PyLabNetwork</a>)
+        and provides features to populate it (for use in a 
+        <b>SPATIALIZED</b> context).
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp.PyLabNetwork-class.html" class="summary-name">PyLabNetwork</a><br />
+      Main class for handling a Network (in a <b>SPATIALIZED</b> 
+        context).
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp.PyLabNode-class.html" class="summary-name">PyLabNode</a><br />
+      The node is the base entity constituting a Network.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp.PyLabOutputerLine-class.html" class="summary-name">PyLabOutputerLine</a><br />
+      Basic implementation for output management.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp.PyLabRng-class.html" class="summary-name">PyLabRng</a><br />
+      This class is a simplified access to <b>Random Number 
+        Generation</b>.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp.PyLabSet-class.html" class="summary-name">PyLabSet</a><br />
+      Class implementing a <b>Set of Big Integers</b>.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp.PyLabSetIter-class.html" class="summary-name">PyLabSetIter</a><br />
+      Basic <a href="cyelp.PyLabSet-class.html" class="link">PyLabSet</a>
+        iterator utility.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp.PyLabSimulatorBase-class.html" class="summary-name">PyLabSimulatorBase</a><br />
+      Base class meant to be subclassed when writing a simulation.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp.PyLabSimulatorTime-class.html" class="summary-name">PyLabSimulatorTime</a><br />
+      A basic <b>TIME based</b> subclass of <a 
+        href="cyelp.PyLabSimulatorBase-class.html" 
+        class="link">PyLabSimulatorBase</a>.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp.PyLabSimulatorTimeArray-class.html" class="summary-name">PyLabSimulatorTimeArray</a><br />
+      Class designed to create MASS ACTION and TIME based simulation.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp.PyLabSimulatorTimeNet-class.html" class="summary-name">PyLabSimulatorTimeNet</a><br />
+      Class designed to create SPACE and TIME based simulation.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp.PyLabSiteBase-class.html" class="summary-name">PyLabSiteBase</a><br />
+      Base class for handling user defined data on a given SITE.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp.PyLabSiteEvent-class.html" class="summary-name">PyLabSiteEvent</a><br />
+      This class handles ATTRIBUTES and STATES (since it inherits from <a
+        href="cyelp.PyLabSiteBase-class.html" 
+        class="link">PyLabSiteBase</a>), but also EVENTS.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp.PyLabSiteSetsCalculator-class.html" class="summary-name">PyLabSiteSetsCalculator</a><br />
+      This class gives methods to deal with the &quot;Sets&quot; of Sites
+        handled by the <b>Sets Manager</b> (See C++ LabSiteSetsManager 
+        class).
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp.PyLabTimer-class.html" class="summary-name">PyLabTimer</a><br />
+      Utility class for dealing with time (benchmarking).
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp.PyLabUserData-class.html" class="summary-name">PyLabUserData</a><br />
+      This is the base class for all the classes used for describing a 
+        Site.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp.PyStringArg-class.html" class="summary-name">PyStringArg</a><br />
+      Class to define and parse a string value from the command line.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp.PySwitchArg-class.html" class="summary-name">PySwitchArg</a><br />
+      A simple switch argument.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp.PyTestClass-class.html" class="summary-name">PyTestClass</a><br />
+      This class was created for Cython testing purpose and is 
+        pointless...
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp.Py_ifstream-class.html" class="summary-name">Py_ifstream</a><br />
+      C++ / STL <b>std::ifstream</b> exposed to Python.
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp.Py_ofstream-class.html" class="summary-name">Py_ofstream</a><br />
+      C++ / STL <b>std::ofstream</b> exposed to Python.
+    </td>
+  </tr>
+</table>
+<!-- ==================== VARIABLES ==================== -->
+<a name="section-Variables"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Variables</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="ENV_DEP"></a><span class="summary-name">ENV_DEP</span> = <code title="4">4</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="IND_DEP"></a><span class="summary-name">IND_DEP</span> = <code title="1">1</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="SITE_DEP"></a><span class="summary-name">SITE_DEP</span> = <code title="2">2</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="TO_BOTH"></a><span class="summary-name">TO_BOTH</span> = <code title="3">3</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="TO_FILE"></a><span class="summary-name">TO_FILE</span> = <code title="1">1</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="TO_STD"></a><span class="summary-name">TO_STD</span> = <code title="2">2</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="__package__"></a><span class="summary-name">__package__</span> = <code title="None">None</code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a href="cyelp-module.html#__pyx_capi__" class="summary-name">__pyx_capi__</a> = <code title="{'cy_call_func_bool': &lt;capsule object &quot;int (PyObject *, char *, int *)\
+&quot; at 0x20897b0&gt;,
+ 'cy_call_func_double': &lt;capsule object &quot;double (PyObject *, char *, i\
+nt *)&quot; at 0x2089810&gt;,
+ 'cy_call_func_int': &lt;capsule object &quot;int (PyObject *, char *, int *)&quot;\
+ at 0x20897e0&gt;,
+ 'cy_call_func_void': &lt;capsule object &quot;void (PyObject *, char *, int *\
+)&quot; at 0x2089780&gt;}"><code class="variable-group">{</code><code class="variable-quote">'</code><code class="variable-string">cy_call_func_bool</code><code class="variable-quote">'</code><code class="variable-op">: </code>&lt;capsule object &quot;int (PyO<code class="variable-ellipsis">...</code></code>
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+        <a name="__test__"></a><span class="summary-name">__test__</span> = <code title="{}"><code class="variable-group">{</code><code class="variable-group">}</code></code>
+    </td>
+  </tr>
+</table>
+<!-- ==================== VARIABLES DETAILS ==================== -->
+<a name="section-VariablesDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Variables Details</span></td>
+</tr>
+</table>
+<a name="__pyx_capi__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">__pyx_capi__</h3>
+  
+  <dl class="fields">
+  </dl>
+  <dl class="fields">
+    <dt>Value:</dt>
+      <dd><table><tr><td><pre class="variable">
+<code class="variable-group">{</code><code class="variable-quote">'</code><code class="variable-string">cy_call_func_bool</code><code class="variable-quote">'</code><code class="variable-op">: </code>&lt;capsule object &quot;int (PyObject *, char *, int *)<span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+&quot; at 0x20897b0&gt;<code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">cy_call_func_double</code><code class="variable-quote">'</code><code class="variable-op">: </code>&lt;capsule object &quot;double (PyObject *, char *, i<span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+nt *)&quot; at 0x2089810&gt;<code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">cy_call_func_int</code><code class="variable-quote">'</code><code class="variable-op">: </code>&lt;capsule object &quot;int (PyObject *, char *, int *)&quot;<span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+ at 0x20897e0&gt;<code class="variable-op">,</code>
+ <code class="variable-quote">'</code><code class="variable-string">cy_call_func_void</code><code class="variable-quote">'</code><code class="variable-op">: </code>&lt;capsule object &quot;void (PyObject *, char *, int *<span class="variable-linewrap"><img src="crarr.png" alt="\" /></span>
+)&quot; at 0x2089780&gt;<code class="variable-group">}</code>
+</pre></td></tr></table>
+</dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th bgcolor="#70b0f0" class="navbar-select"
+          >&nbsp;&nbsp;&nbsp;Home&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a href="http://www.evolab-project.org"><img src="../elp-cy-eee.png" style="margin:10px;" /></a>
+        <script>
+			var link = parent.document.createElement('link'); 
+			link.id = 'dynamic-favicon'; 
+			link.type = 'image/png'; 
+			link.rel = 'shortcut icon'; 
+			link.href = '../logo-base-fav.png'; 
+			parent.document.head.appendChild(link); 
+			parent.document.head = parent.document.head || parent.document.getElementsByTagName('head')[0];
+		</script></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Fri Jun  7 07:41:39 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

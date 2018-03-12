@@ -1,0 +1,809 @@
+\hypertarget{classelps_1_1_lab_site_base}{\section{elps\-:\-:Lab\-Site\-Base Class Reference}
+\label{classelps_1_1_lab_site_base}\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}}
+}
+
+
+{\ttfamily \#include $<$Lab\-Site\-Base.\-h$>$}
+
+Inheritance diagram for elps\-:\-:Lab\-Site\-Base\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classelps_1_1_lab_site_base}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classelps_1_1_lab_site_base_a8ec08fafa015dfa53827d985608afe58}{t\-\_\-deptype} \{ {\bfseries I\-N\-D\-\_\-\-D\-E\-P} =  1, 
+{\bfseries S\-I\-T\-E\-\_\-\-D\-E\-P} =  2
+ \}
+\item 
+\hypertarget{classelps_1_1_lab_site_base_a3f4c3dc63e310bb05e254d12ce54faf0}{typedef set$<$ string $>$ {\bfseries t\-\_\-string\-\_\-set}}\label{classelps_1_1_lab_site_base_a3f4c3dc63e310bb05e254d12ce54faf0}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classelps_1_1_lab_site_base_ab051b072f05ac8a16bd51a2331c8ba8c}{Lab\-Site\-Base} (\hyperlink{classelps_1_1_lab_simulator_base}{Lab\-Simulator\-Base} $\ast$sim)
+\item 
+\hyperlink{classelps_1_1_lab_site_base_afe1c00c934b0904cfefd839fe391ce0e}{Lab\-Site\-Base} (\hyperlink{classelps_1_1_lab_simulator_base}{Lab\-Simulator\-Base} $\ast$sim, \hyperlink{classelps_1_1_lab_node}{Lab\-Node} $\ast$parent\-\_\-node)
+\item 
+\hyperlink{classelps_1_1_lab_attributes_stack}{Lab\-Attributes\-Stack} $\ast$ \hyperlink{classelps_1_1_lab_site_base_a558b5b903f6cfc25cdfb4f3368693b27}{Get\-Ind\-Attributes\-Stack} ()
+\item 
+\hyperlink{classelps_1_1_lab_attributes_stack}{Lab\-Attributes\-Stack} $\ast$ \hyperlink{classelps_1_1_lab_site_base_a60aa1b12a8124c731f4364059f5f83ed}{Get\-Site\-Attributes\-Stack} ()
+\item 
+void \hyperlink{classelps_1_1_lab_site_base_a5e67e2b6ae66b57d0b7d601aec09d2f5}{Push\-Attribute} (string name, \hyperlink{classelps_1_1_lab_site_base_a8ec08fafa015dfa53827d985608afe58}{t\-\_\-deptype} dep\-\_\-type, double d\-\_\-value=0.\-0, bool indexed=false, int nb\-\_\-beans=2)
+\item 
+void \hyperlink{classelps_1_1_lab_site_base_aa15bc544668860be639149ffabfb5888}{Push\-Attribute} (string name, int dep\-\_\-type, double d\-\_\-value=0.\-0, bool indexed=false, int nb\-\_\-beans=2)
+\item 
+void \hyperlink{classelps_1_1_lab_site_base_a64a3f5fafc774289abab1c90361e2a45}{Pop\-Attribute} (\hyperlink{classelps_1_1_lab_site_base_a8ec08fafa015dfa53827d985608afe58}{t\-\_\-deptype} dep\-\_\-type)
+\item 
+void \hyperlink{classelps_1_1_lab_site_base_ae85ef5ced5137b26ef4fd970cb34a420}{Pop\-Attribute} (int dep\-\_\-type)
+\item 
+vector\\*
+$<$ \hyperlink{structelps_1_1_lab_attributes_stack_1_1t__attr}{Lab\-Attributes\-Stack\-::t\-\_\-attr} $>$ \& \hyperlink{classelps_1_1_lab_site_base_a6f6d8a4adf1c8a0dd64e24f292f3d614}{Get\-Ind\-Attributes} ()
+\item 
+vector\\*
+$<$ \hyperlink{structelps_1_1_lab_attributes_stack_1_1t__attr}{Lab\-Attributes\-Stack\-::t\-\_\-attr} $>$ \& \hyperlink{classelps_1_1_lab_site_base_a0f09601f867b0655cbb2162e9356f6c2}{Get\-Site\-Attributes} ()
+\item 
+int \hyperlink{classelps_1_1_lab_site_base_a0050970ea50d9c03f8f1297193dccfb3}{Get\-Nb\-Attributes} (int dep\-\_\-filter=I\-N\-D\-\_\-\-D\-E\-P$|$S\-I\-T\-E\-\_\-\-D\-E\-P)
+\item 
+int \hyperlink{classelps_1_1_lab_site_base_ac7decdfd372543844809b7ea9e6dad23}{Get\-Attr\-Int} (\hyperlink{classelps_1_1_lab_site_base_a8ec08fafa015dfa53827d985608afe58}{t\-\_\-deptype} dep\-\_\-filter, int id)
+\item 
+int \hyperlink{classelps_1_1_lab_site_base_a96a94149e72089742cf2d3b28bcea9fd}{Get\-Attr\-Int} (int dep\-\_\-filter, int id)
+\item 
+double \hyperlink{classelps_1_1_lab_site_base_a255927dd021939962f30cd133c8c7314}{Get\-Attr\-Double} (\hyperlink{classelps_1_1_lab_site_base_a8ec08fafa015dfa53827d985608afe58}{t\-\_\-deptype} dep\-\_\-type, int id)
+\item 
+double \hyperlink{classelps_1_1_lab_site_base_a33f15543d7871b9b765e3da074fb97dd}{Get\-Attr\-Double} (int dep\-\_\-type, int id)
+\item 
+void \hyperlink{classelps_1_1_lab_site_base_a60dd270b7d88b505c87df6fa56745fed}{Set\-Attr\-Double} (\hyperlink{classelps_1_1_lab_site_base_a8ec08fafa015dfa53827d985608afe58}{t\-\_\-deptype} dep\-\_\-type, int id, double value)
+\item 
+void \hyperlink{classelps_1_1_lab_site_base_a4f35ab29b854a93a86a08703aef19f97}{Set\-Attr\-Double} (int dep\-\_\-filter, int id, double value)
+\item 
+\hyperlink{classelps_1_1_lab_state_stack}{Lab\-State\-Stack} $\ast$ \hyperlink{classelps_1_1_lab_site_base_a2dc92ba97f028625504bfef9a009a655}{Get\-State\-Stack} ()
+\item 
+int \hyperlink{classelps_1_1_lab_site_base_a825a6fd314de22c041395520dcb5275b}{Get\-State} ()
+\item 
+void \hyperlink{classelps_1_1_lab_site_base_a71fa97f33232e778e106893e5cfd80e3}{Set\-State} (int state, double time)
+\item 
+void \hyperlink{classelps_1_1_lab_site_base_a995ebf491f8c5a79a963e7b1dc439ee1}{Push\-State} (string name, int next\-\_\-id=-\/1, int timeout\-\_\-id=-\/1, double timeout=-\/1.\-0)
+\item 
+void \hyperlink{classelps_1_1_lab_site_base_ad51a610f79abd18515d7d3a7558de3b3}{Pop\-State} ()
+\item 
+void \hyperlink{classelps_1_1_lab_site_base_ab0d008b5668186fcd06ebe42997407b0}{Goto\-Next\-State} (double time)
+\item 
+void \hyperlink{classelps_1_1_lab_site_base_aacb4f452d2d1c01750f27426080d14f9}{Try\-Do\-Timeout\-State} (double time)
+\item 
+int \hyperlink{classelps_1_1_lab_site_base_a079b22b365fd919d87185485077e00c9}{Get\-Nb\-States} ()
+\item 
+double \hyperlink{classelps_1_1_lab_site_base_a41815ef8d2c7632ca48f8aba1ad8cd35}{Get\-Current\-State\-Elapsed\-Time} (double time)
+\item 
+double \hyperlink{classelps_1_1_lab_site_base_a9d2f618e14cf83c70f875d0c913c5f73}{Get\-Current\-State\-Remaining\-Time} (double time)
+\item 
+virtual \hyperlink{classelps_1_1_lab_user_data}{Lab\-User\-Data} $\ast$ \hyperlink{classelps_1_1_lab_site_base_ae0cbc57a3fca186709114f68f693b199}{New} (\hyperlink{classelps_1_1_lab_node}{Lab\-Node} $\ast$parent\-\_\-node=N\-U\-L\-L)
+\item 
+virtual void \hyperlink{classelps_1_1_lab_site_base_a0eee9af7ea7e99923fb403f031c028ca}{Copy} (\hyperlink{classelps_1_1_lab_user_data}{Lab\-User\-Data} $\ast$src\-\_\-site, int dep\-\_\-filter=I\-N\-D\-\_\-\-D\-E\-P$|$S\-I\-T\-E\-\_\-\-D\-E\-P)
+\item 
+void \hyperlink{classelps_1_1_lab_site_base_a42e30841600ed1e45dcd2c1c2a3071e8}{Binarize} (ofstream $\ast$ostream)
+\item 
+void \hyperlink{classelps_1_1_lab_site_base_ad1b2721336db27de86213769b78d3ccd}{Un\-Binarize} (ifstream $\ast$istream)
+\item 
+void \hyperlink{classelps_1_1_lab_site_base_a655d24550c8ff07788422ca4be7116ab}{Subscribe\-Set} (string set\-\_\-name)
+\item 
+void \hyperlink{classelps_1_1_lab_site_base_a6b3062ace04c2750b65d103535cff60b}{Un\-Subscribe\-Set} (string set\-\_\-name)
+\item 
+void \hyperlink{classelps_1_1_lab_site_base_a5d8996bca2f83c16b030c404ffc14fcd}{Subscribe\-All\-Sets} ()
+\item 
+void \hyperlink{classelps_1_1_lab_site_base_a402f47fa4587c8478974437dea7f11eb}{Un\-Subscribe\-All\-Sets} ()
+\item 
+t\-\_\-string\-\_\-set \& \hyperlink{classelps_1_1_lab_site_base_ae1e74a24ef6a40d69d0f288b9e0d8ff3}{Get\-Subscribed\-Sets} ()
+\item 
+void \hyperlink{classelps_1_1_lab_site_base_a807f6e3daebf22071acfd9d16b8941ae}{Print\-Subscribed\-Sets} ()
+\item 
+\hyperlink{classelps_1_1_lab_simulator_base}{Lab\-Simulator\-Base} $\ast$ \hyperlink{classelps_1_1_lab_site_base_ac96a305fcabb01e40719d246baef0f9c}{Get\-Simulator} ()
+\item 
+string \hyperlink{classelps_1_1_lab_site_base_a3c2a29181ed8d13239c5b4f0954fa8a7}{Get\-Site\-Model\-Type} ()
+\item 
+void \hyperlink{classelps_1_1_lab_site_base_ad7228c044e5b7283ea3f25b0c85638a9}{Set\-Site\-Model\-Type} (string model\-\_\-type)
+\item 
+void $\ast$ \hyperlink{classelps_1_1_lab_site_base_a52a5f7fdc453133e9c641bbdc40b165f}{Get\-Cy\-Py\-Obj} ()
+\item 
+void \hyperlink{classelps_1_1_lab_site_base_a3f0a32e3cc4fb2c690242123f92396f1}{Set\-Cy\-Py\-Obj} (void $\ast$cy\-\_\-py\-\_\-obj)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classelps_1_1_lab_site_base_a1dd99add3d04c734eb25a45b2f760c27}{Lab\-Site\-Base} (\hyperlink{classelps_1_1_lab_simulator_base}{Lab\-Simulator\-Base} $\ast$sim, \hyperlink{classelps_1_1_lab_node}{Lab\-Node} $\ast$parent\-\_\-node, bool set\-\_\-trackable)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classelps_1_1_lab_simulator_base}{Lab\-Simulator\-Base} $\ast$ \hyperlink{classelps_1_1_lab_site_base_a5b8dbbdad3e4484493203bf2b89b3878}{simulator}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Base class for handling user defined data on a given S\-I\-T\-E.\par
+
+\begin{DoxyItemize}
+\item In a M\-A\-S\-S A\-C\-T\-I\-O\-N context, the sites can be stored in an array (See \hyperlink{classelps_1_1_lab_array_binding}{Lab\-Array\-Binding}).\par
+
+\item In a S\-P\-A\-T\-I\-A\-L\-I\-Z\-E\-D context, the sites would be stored in the node of a network (See \hyperlink{classelps_1_1_lab_net_binding}{Lab\-Net\-Binding}).\par
+
+\end{DoxyItemize}
+
+This class is specialized in managing 2 stacks of A\-T\-T\-R\-I\-B\-U\-T\-E\-S (See \hyperlink{classelps_1_1_lab_attributes_stack}{Lab\-Attributes\-Stack}).
+\begin{DoxyItemize}
+\item The first one stores the attributes related to the I\-N\-D\-I\-V\-I\-D\-U\-A\-L currently residing on the S\-I\-T\-E.\par
+
+\item The second one stores the attributes related to the S\-I\-T\-E itself (typically, if the individual moves or dies, those attributes would persist...).
+\end{DoxyItemize}
+
+It's state (the state of its attributes at a given time) can be binarized/dumped by implementing the features inherited from the \hyperlink{classelps_1_1_lab_i_binarizable}{Lab\-I\-Binarizable} interface (See \hyperlink{classelps_1_1_lab_site_base_a42e30841600ed1e45dcd2c1c2a3071e8}{Binarize()}, \hyperlink{classelps_1_1_lab_site_base_ad1b2721336db27de86213769b78d3ccd}{Un\-Binarize()}).
+
+It manages also a stack of states. A S\-I\-T\-E can switch from one state to another.
+
+S\-T\-A\-T\-E\-S (See also \-: \hyperlink{classelps_1_1_lab_state_stack}{Lab\-State\-Stack}) \-:\par
+ A state (like A\-T\-T\-R\-I\-B\-U\-T\-E\-S) can change in time. The differences are \-:
+\begin{DoxyItemize}
+\item It can have only integer values \mbox{[}0..N\mbox{]}
+\item They can be linked to each other (by giving the id of the next state coming after the current one)
+\item They can have a limited life time -\/ optional timeout -\/ before returning to an other specified state
+\end{DoxyItemize}
+
+{\bfseries Note \-:} A Site is {\bfseries always} related to a simulator.
+
+\subsection*{U\-S\-A\-G\-E \-:}
+
+A basic use case would look like follows \-:
+
+
+\begin{DoxyCode}
+\hyperlink{classelps_1_1_lab_site_base_ab051b072f05ac8a16bd51a2331c8ba8c}{LabSiteBase} *a\_site = \textcolor{keyword}{new} \hyperlink{classelps_1_1_lab_site_base_ab051b072f05ac8a16bd51a2331c8ba8c}{LabSiteBase}(sim);             \textcolor{comment}{
+      // 'sim' : the related simulator}
+
+\textcolor{comment}{// ATTRIBUTES}
+\textcolor{comment}{// Indexed attribute : here, 3 sets/groups are created ("pop0", "pop1", "pop2")}
+\textcolor{comment}{// [In case the site was registered by the <b>Sets Manager</b> (See
+       LabSiteSetsManager, LabSiteSetsCalculator)]}
+a\_site->PushAttribute(\textcolor{stringliteral}{"pop"}, LabSiteBase::IND\_DEP, \textcolor{keyword}{true}, 3);
+\textcolor{comment}{// Classical attributes (doubles)}
+a\_site->PushAttribute(\textcolor{stringliteral}{"x"}, LabSiteBase::IND\_DEP);
+a\_site->PushAttribute(\textcolor{stringliteral}{"m"}, LabSiteBase::IND\_DEP);
+
+\textcolor{comment}{// STATES}
+\textcolor{comment}{// We define 3 possible states :}
+\textcolor{comment}{// Parameters : 1, -1, -1 => next\_id = 1, timeout\_id = -1, timeout = -1.0}
+a\_site->PushState(\textcolor{stringliteral}{"EMPTY"},    1, -1, -1);
+a\_site->PushState(\textcolor{stringliteral}{"RESIDENT"}, 1, -1, -1);
+a\_site->PushState(\textcolor{stringliteral}{"MUTANT"},   1, -1, -1);
+
+\textcolor{comment}{// Choose whether the current site is in EMPTY or RESIDENT state from the}
+\textcolor{comment}{// probability 'p\_init'.}
+\textcolor{keywordflow}{if}(rng->GetNextDouble() < p\_init)
+\{
+        \textcolor{comment}{// This site will be a member of the "RESIDENT" set}
+        a\_site->SetState(BdmLsim3::RESIDENT, GetTime());
+
+        a\_site->SetAttrDouble(LabSiteBase::IND\_DEP, BdmLsim3::POP, 1);
+        a\_site->SetAttrDouble(LabSiteBase::IND\_DEP, BdmLsim3::X, x1);
+        a\_site->SetAttrDouble(LabAttributesStack::IND\_DEP, BdmLsim3::M, mo1);
+
+        popcnt++;
+\}
+\textcolor{keywordflow}{else}
+\{
+        \textcolor{comment}{// This site will be a member of the "EMPTY" set}
+        a\_site->SetState(BdmLsim3::EMPTY, GetTime());
+
+        a\_site->SetAttrDouble(LabSiteBase::IND\_DEP, BdmLsim3::POP, 0);
+        a\_site->SetAttrDouble(LabSiteBase::IND\_DEP, BdmLsim3::X, 0.0);
+        a\_site->SetAttrDouble(LabSiteBase::IND\_DEP, BdmLsim3::M, 0.0);
+\}
+\end{DoxyCode}
+
+
+{\bfseries Note } about {\bfseries Sets Management} \-:
+
+As mentioned in the source code above, in case the site was registered by the {\bfseries Sets Manager}, Indexed attribute would result in the creation of related sets / groups (ex. 3 groups \mbox{[}\char`\"{}pop0\char`\"{}, \char`\"{}pop1\char`\"{}, \char`\"{}pop2\char`\"{}\mbox{]} are created from the indexed attribute \char`\"{}pop\char`\"{}...) -\/ See \hyperlink{classelps_1_1_lab_site_sets_manager}{Lab\-Site\-Sets\-Manager}, \hyperlink{classelps_1_1_lab_site_sets_calculator}{Lab\-Site\-Sets\-Calculator} for more details concerning Sets. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classelps_1_1_lab_site_base_a8ec08fafa015dfa53827d985608afe58}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!t\-\_\-deptype@{t\-\_\-deptype}}
+\index{t\-\_\-deptype@{t\-\_\-deptype}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{t\-\_\-deptype}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf elps\-::\-Lab\-Site\-Base\-::t\-\_\-deptype}}}\label{classelps_1_1_lab_site_base_a8ec08fafa015dfa53827d985608afe58}
+Type / level of relationship / dependency between the attribute and the system (related to the individual, the site or the entire environment). 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classelps_1_1_lab_site_base_ab051b072f05ac8a16bd51a2331c8ba8c}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Lab\-Site\-Base@{Lab\-Site\-Base}}
+\index{Lab\-Site\-Base@{Lab\-Site\-Base}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Lab\-Site\-Base}]{\setlength{\rightskip}{0pt plus 5cm}elps\-::\-Lab\-Site\-Base\-::\-Lab\-Site\-Base (
+\begin{DoxyParamCaption}
+\item[{{\bf Lab\-Simulator\-Base} $\ast$}]{sim}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_ab051b072f05ac8a16bd51a2331c8ba8c}
+Basic constructor for use in a N\-O\-N-\/\-S\-P\-A\-T\-I\-A\-L\-I\-Z\-E\-D context. 
+\begin{DoxyParams}{Parameters}
+{\em sim} & The Simulator this Site is related to. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_site_base_afe1c00c934b0904cfefd839fe391ce0e}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Lab\-Site\-Base@{Lab\-Site\-Base}}
+\index{Lab\-Site\-Base@{Lab\-Site\-Base}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Lab\-Site\-Base}]{\setlength{\rightskip}{0pt plus 5cm}elps\-::\-Lab\-Site\-Base\-::\-Lab\-Site\-Base (
+\begin{DoxyParamCaption}
+\item[{{\bf Lab\-Simulator\-Base} $\ast$}]{sim, }
+\item[{{\bf Lab\-Node} $\ast$}]{parent\-\_\-node}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_afe1c00c934b0904cfefd839fe391ce0e}
+Basic constructor for use in a S\-P\-A\-T\-I\-A\-L\-I\-Z\-E\-D context. 
+\begin{DoxyParams}{Parameters}
+{\em sim} & The Simulator this Site is related to. \\
+\hline
+{\em parent\-\_\-node} & The network node (\hyperlink{classelps_1_1_lab_node}{Lab\-Node}) this Site is attached to. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_site_base_a1dd99add3d04c734eb25a45b2f760c27}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Lab\-Site\-Base@{Lab\-Site\-Base}}
+\index{Lab\-Site\-Base@{Lab\-Site\-Base}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Lab\-Site\-Base}]{\setlength{\rightskip}{0pt plus 5cm}elps\-::\-Lab\-Site\-Base\-::\-Lab\-Site\-Base (
+\begin{DoxyParamCaption}
+\item[{{\bf Lab\-Simulator\-Base} $\ast$}]{sim, }
+\item[{{\bf Lab\-Node} $\ast$}]{parent\-\_\-node, }
+\item[{bool}]{set\-\_\-trackable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}}\label{classelps_1_1_lab_site_base_a1dd99add3d04c734eb25a45b2f760c27}
+Constructor used to instantiate a \hyperlink{classelps_1_1_lab_site_base}{Lab\-Site\-Base} such that it is {\bfseries set\-\_\-trackable} (Aka \-: it is registered to the \hyperlink{classelps_1_1_lab_site_sets_manager}{Lab\-Site\-Sets\-Manager}). 
+\begin{DoxyParams}{Parameters}
+{\em sim} & The Simulator this Site is related to. \\
+\hline
+{\em parent\-\_\-node} & The network node (\hyperlink{classelps_1_1_lab_node}{Lab\-Node}) this Site is attached to. \\
+\hline
+{\em set\-\_\-trackable} & If this site is meant to be managed by the \hyperlink{classelps_1_1_lab_site_sets_manager}{Lab\-Site\-Sets\-Manager}. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classelps_1_1_lab_site_base_a42e30841600ed1e45dcd2c1c2a3071e8}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Binarize@{Binarize}}
+\index{Binarize@{Binarize}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Binarize}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Base\-::\-Binarize (
+\begin{DoxyParamCaption}
+\item[{ofstream $\ast$}]{ostream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classelps_1_1_lab_site_base_a42e30841600ed1e45dcd2c1c2a3071e8}
+Shortcut to dump the current state of the S\-I\-T\-E (See \hyperlink{classelps_1_1_lab_attributes_stack_a071d6153765174e869d743d435aa04df}{Lab\-Attributes\-Stack\-::\-Binarize()}). 
+\begin{DoxyParams}{Parameters}
+{\em ostream} & Output stream to dump to. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classelps_1_1_lab_i_binarizable_aecc9b383945b4c4e304675e5c970f69d}{elps\-::\-Lab\-I\-Binarizable}.
+
+
+
+Reimplemented in \hyperlink{classelps_1_1_lab_site_event_af4220ab0bbcf208e73b073a73a77c076}{elps\-::\-Lab\-Site\-Event}.
+
+\hypertarget{classelps_1_1_lab_site_base_a0eee9af7ea7e99923fb403f031c028ca}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Copy@{Copy}}
+\index{Copy@{Copy}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Copy}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Base\-::\-Copy (
+\begin{DoxyParamCaption}
+\item[{{\bf Lab\-User\-Data} $\ast$}]{src\-\_\-site, }
+\item[{int}]{dep\-\_\-filter = {\ttfamily IND\-\_\-DEP~$|$~SITE\-\_\-DEP}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classelps_1_1_lab_site_base_a0eee9af7ea7e99923fb403f031c028ca}
+Shortcut to copy the whole attributes stack from another S\-I\-T\-E (See \hyperlink{classelps_1_1_lab_attributes_stack_a5f112b3c81d7e7fa6cb54d0cd879c70e}{Lab\-Attributes\-Stack\-::\-Copy()}). 
+\begin{DoxyParams}{Parameters}
+{\em src\-\_\-site} & The site (\hyperlink{classelps_1_1_lab_site_base}{Lab\-Site\-Base}) to copy from. \\
+\hline
+{\em dep\-\_\-filter} & Filter used to select which attributes will be copied\par
+ (ex1 \-: dep\-\_\-filter = I\-N\-D\-\_\-\-D\-E\-P $|$ S\-I\-T\-E\-\_\-\-D\-E\-P, means \-: copies only non-\/environmental attributes\par
+ ex2 \-: dep\-\_\-filter = I\-N\-D\-\_\-\-D\-E\-P $|$ S\-I\-T\-E\-\_\-\-D\-E\-P $|$ E\-N\-V\-\_\-\-D\-E\-P \-: copies all). \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classelps_1_1_lab_site_event_a81368b772b6ef46286ce9b42169466c0}{elps\-::\-Lab\-Site\-Event}.
+
+\hypertarget{classelps_1_1_lab_site_base_a255927dd021939962f30cd133c8c7314}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Get\-Attr\-Double@{Get\-Attr\-Double}}
+\index{Get\-Attr\-Double@{Get\-Attr\-Double}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Get\-Attr\-Double}]{\setlength{\rightskip}{0pt plus 5cm}double elps\-::\-Lab\-Site\-Base\-::\-Get\-Attr\-Double (
+\begin{DoxyParamCaption}
+\item[{{\bf t\-\_\-deptype}}]{dep\-\_\-type, }
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_a255927dd021939962f30cd133c8c7314}
+Shortcut to get the double value of an attribute specified by its id in the attributes stack and its dependency level. 
+\begin{DoxyParams}{Parameters}
+{\em dep\-\_\-type} & Dependency level of the targeted attribute. \\
+\hline
+{\em id} & Identifier in the list relatively to the specified dependency level. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The double value of the attribute. 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_site_base_a33f15543d7871b9b765e3da074fb97dd}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Get\-Attr\-Double@{Get\-Attr\-Double}}
+\index{Get\-Attr\-Double@{Get\-Attr\-Double}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Get\-Attr\-Double}]{\setlength{\rightskip}{0pt plus 5cm}double elps\-::\-Lab\-Site\-Base\-::\-Get\-Attr\-Double (
+\begin{DoxyParamCaption}
+\item[{int}]{dep\-\_\-type, }
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_a33f15543d7871b9b765e3da074fb97dd}
+Another version of \hyperlink{classelps_1_1_lab_site_base_a255927dd021939962f30cd133c8c7314}{Get\-Attr\-Double()} for Cython compatibility. (Uses int instead of t\-\_\-deptype enum). \hypertarget{classelps_1_1_lab_site_base_ac7decdfd372543844809b7ea9e6dad23}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Get\-Attr\-Int@{Get\-Attr\-Int}}
+\index{Get\-Attr\-Int@{Get\-Attr\-Int}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Get\-Attr\-Int}]{\setlength{\rightskip}{0pt plus 5cm}int elps\-::\-Lab\-Site\-Base\-::\-Get\-Attr\-Int (
+\begin{DoxyParamCaption}
+\item[{{\bf t\-\_\-deptype}}]{dep\-\_\-filter, }
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_ac7decdfd372543844809b7ea9e6dad23}
+Shortcut to get the integer value of an attribute specified by its id in the attributes stack and its dependency level. 
+\begin{DoxyParams}{Parameters}
+{\em dep\-\_\-filter} & Dependency level of the targeted attribute. \\
+\hline
+{\em id} & Identifier in the list relatively to the specified dependency level. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The integer value of the attribute. 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_site_base_a96a94149e72089742cf2d3b28bcea9fd}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Get\-Attr\-Int@{Get\-Attr\-Int}}
+\index{Get\-Attr\-Int@{Get\-Attr\-Int}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Get\-Attr\-Int}]{\setlength{\rightskip}{0pt plus 5cm}int elps\-::\-Lab\-Site\-Base\-::\-Get\-Attr\-Int (
+\begin{DoxyParamCaption}
+\item[{int}]{dep\-\_\-filter, }
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_a96a94149e72089742cf2d3b28bcea9fd}
+Another version of \hyperlink{classelps_1_1_lab_site_base_ac7decdfd372543844809b7ea9e6dad23}{Get\-Attr\-Int()} for Cython compatibility. (Uses int instead of t\-\_\-deptype enum). \hypertarget{classelps_1_1_lab_site_base_a41815ef8d2c7632ca48f8aba1ad8cd35}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Get\-Current\-State\-Elapsed\-Time@{Get\-Current\-State\-Elapsed\-Time}}
+\index{Get\-Current\-State\-Elapsed\-Time@{Get\-Current\-State\-Elapsed\-Time}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Get\-Current\-State\-Elapsed\-Time}]{\setlength{\rightskip}{0pt plus 5cm}double elps\-::\-Lab\-Site\-Base\-::\-Get\-Current\-State\-Elapsed\-Time (
+\begin{DoxyParamCaption}
+\item[{double}]{time}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_a41815ef8d2c7632ca48f8aba1ad8cd35}
+Get the time elapsed since the current state was entered. 
+\begin{DoxyParams}{Parameters}
+{\em time} & The reference time (usually the current time of the simulation). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The time elapsed. 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_site_base_a9d2f618e14cf83c70f875d0c913c5f73}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Get\-Current\-State\-Remaining\-Time@{Get\-Current\-State\-Remaining\-Time}}
+\index{Get\-Current\-State\-Remaining\-Time@{Get\-Current\-State\-Remaining\-Time}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Get\-Current\-State\-Remaining\-Time}]{\setlength{\rightskip}{0pt plus 5cm}double elps\-::\-Lab\-Site\-Base\-::\-Get\-Current\-State\-Remaining\-Time (
+\begin{DoxyParamCaption}
+\item[{double}]{time}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_a9d2f618e14cf83c70f875d0c913c5f73}
+Get the time remaining until the current state will be quit (timeout reached). 
+\begin{DoxyParams}{Parameters}
+{\em time} & The reference time (usually the current time of the simulation). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The time remaining. 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_site_base_a52a5f7fdc453133e9c641bbdc40b165f}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Get\-Cy\-Py\-Obj@{Get\-Cy\-Py\-Obj}}
+\index{Get\-Cy\-Py\-Obj@{Get\-Cy\-Py\-Obj}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Get\-Cy\-Py\-Obj}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ elps\-::\-Lab\-Site\-Base\-::\-Get\-Cy\-Py\-Obj (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classelps_1_1_lab_site_base_a52a5f7fdc453133e9c641bbdc40b165f}
+Mainly for use from Cython \-: D\-O N\-O\-T U\-S\-E unless you know what you're doing ! Get the Python representation of this Site as a Python object (Py\-Lab\-Site\-Base, Py\-Lab\-Site\-Event, ...).
+
+\begin{DoxyReturn}{Returns}
+A Python object (as a void $\ast$), must be casted to Py\-Object $\ast$ to be usable. 
+\end{DoxyReturn}
+
+
+Reimplemented from \hyperlink{classelps_1_1_lab_user_data_a9048829275f436f2e52896902a021727}{elps\-::\-Lab\-User\-Data}.
+
+\hypertarget{classelps_1_1_lab_site_base_a6f6d8a4adf1c8a0dd64e24f292f3d614}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Get\-Ind\-Attributes@{Get\-Ind\-Attributes}}
+\index{Get\-Ind\-Attributes@{Get\-Ind\-Attributes}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Get\-Ind\-Attributes}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Lab\-Attributes\-Stack\-::t\-\_\-attr} $>$ \& elps\-::\-Lab\-Site\-Base\-::\-Get\-Ind\-Attributes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_a6f6d8a4adf1c8a0dd64e24f292f3d614}
+Get the attributes related to the individual (See Lab\-Attributes\-Stack\-::\-Get\-Ind\-Attributes()). \begin{DoxyReturn}{Returns}
+List of attributes. 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_site_base_a558b5b903f6cfc25cdfb4f3368693b27}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Get\-Ind\-Attributes\-Stack@{Get\-Ind\-Attributes\-Stack}}
+\index{Get\-Ind\-Attributes\-Stack@{Get\-Ind\-Attributes\-Stack}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Get\-Ind\-Attributes\-Stack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lab\-Attributes\-Stack} $\ast$ elps\-::\-Lab\-Site\-Base\-::\-Get\-Ind\-Attributes\-Stack (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_a558b5b903f6cfc25cdfb4f3368693b27}
+Get the stack of attributes at the I\-N\-D\-I\-V\-I\-D\-U\-A\-L level. \begin{DoxyReturn}{Returns}
+A pointer to \hyperlink{classelps_1_1_lab_attributes_stack}{Lab\-Attributes\-Stack} of the S\-I\-T\-E. 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_site_base_a0050970ea50d9c03f8f1297193dccfb3}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Get\-Nb\-Attributes@{Get\-Nb\-Attributes}}
+\index{Get\-Nb\-Attributes@{Get\-Nb\-Attributes}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Get\-Nb\-Attributes}]{\setlength{\rightskip}{0pt plus 5cm}int elps\-::\-Lab\-Site\-Base\-::\-Get\-Nb\-Attributes (
+\begin{DoxyParamCaption}
+\item[{int}]{dep\-\_\-filter = {\ttfamily IND\-\_\-DEP~$|$~SITE\-\_\-DEP}}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_a0050970ea50d9c03f8f1297193dccfb3}
+Get the number of attributes at the given dependency level using a filter. 
+\begin{DoxyParams}{Parameters}
+{\em dep\-\_\-filter} & Filter can be any combination of t\-\_\-deptype s. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A number. 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_site_base_a079b22b365fd919d87185485077e00c9}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Get\-Nb\-States@{Get\-Nb\-States}}
+\index{Get\-Nb\-States@{Get\-Nb\-States}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Get\-Nb\-States}]{\setlength{\rightskip}{0pt plus 5cm}int elps\-::\-Lab\-Site\-Base\-::\-Get\-Nb\-States (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_a079b22b365fd919d87185485077e00c9}
+Get the number of states in the states stack. \begin{DoxyReturn}{Returns}
+Number of states currently stored. 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_site_base_ac96a305fcabb01e40719d246baef0f9c}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Get\-Simulator@{Get\-Simulator}}
+\index{Get\-Simulator@{Get\-Simulator}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Get\-Simulator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lab\-Simulator\-Base}$\ast$ elps\-::\-Lab\-Site\-Base\-::\-Get\-Simulator (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classelps_1_1_lab_site_base_ac96a305fcabb01e40719d246baef0f9c}
+Get the Simulator (\hyperlink{classelps_1_1_lab_simulator_base}{Lab\-Simulator\-Base} $\ast$) this Site is related to. \begin{DoxyReturn}{Returns}
+A pointer to the simulator instance. 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_site_base_a0f09601f867b0655cbb2162e9356f6c2}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Get\-Site\-Attributes@{Get\-Site\-Attributes}}
+\index{Get\-Site\-Attributes@{Get\-Site\-Attributes}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Get\-Site\-Attributes}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Lab\-Attributes\-Stack\-::t\-\_\-attr} $>$ \& elps\-::\-Lab\-Site\-Base\-::\-Get\-Site\-Attributes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_a0f09601f867b0655cbb2162e9356f6c2}
+Get the attributes related to the S\-I\-T\-E (node) (See Lab\-Attributes\-Stack\-::\-Get\-Site\-Attributes()). \begin{DoxyReturn}{Returns}
+List of attributes. 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_site_base_a60aa1b12a8124c731f4364059f5f83ed}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Get\-Site\-Attributes\-Stack@{Get\-Site\-Attributes\-Stack}}
+\index{Get\-Site\-Attributes\-Stack@{Get\-Site\-Attributes\-Stack}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Get\-Site\-Attributes\-Stack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lab\-Attributes\-Stack} $\ast$ elps\-::\-Lab\-Site\-Base\-::\-Get\-Site\-Attributes\-Stack (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_a60aa1b12a8124c731f4364059f5f83ed}
+Get the stack of attributes at the S\-I\-T\-E level. \begin{DoxyReturn}{Returns}
+A pointer to \hyperlink{classelps_1_1_lab_attributes_stack}{Lab\-Attributes\-Stack} of the S\-I\-T\-E. 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_site_base_a3c2a29181ed8d13239c5b4f0954fa8a7}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Get\-Site\-Model\-Type@{Get\-Site\-Model\-Type}}
+\index{Get\-Site\-Model\-Type@{Get\-Site\-Model\-Type}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Get\-Site\-Model\-Type}]{\setlength{\rightskip}{0pt plus 5cm}string elps\-::\-Lab\-Site\-Base\-::\-Get\-Site\-Model\-Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classelps_1_1_lab_site_base_a3c2a29181ed8d13239c5b4f0954fa8a7}
+Mainly for use from Cython \-: D\-O N\-O\-T U\-S\-E unless you know what you're doing ! Get the type of this Site (can be Site\-Base, Site\-Event), according to what was set using \hyperlink{classelps_1_1_lab_site_base_ad7228c044e5b7283ea3f25b0c85638a9}{Set\-Site\-Model\-Type()}.
+
+\begin{DoxyReturn}{Returns}
+The type in its string representation. 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_site_base_a825a6fd314de22c041395520dcb5275b}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Get\-State@{Get\-State}}
+\index{Get\-State@{Get\-State}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Get\-State}]{\setlength{\rightskip}{0pt plus 5cm}int elps\-::\-Lab\-Site\-Base\-::\-Get\-State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_a825a6fd314de22c041395520dcb5275b}
+Get the current state of this S\-I\-T\-E. \begin{DoxyReturn}{Returns}
+An integer value (state is expressed as an index in the states stack). 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_site_base_a2dc92ba97f028625504bfef9a009a655}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Get\-State\-Stack@{Get\-State\-Stack}}
+\index{Get\-State\-Stack@{Get\-State\-Stack}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Get\-State\-Stack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lab\-State\-Stack} $\ast$ elps\-::\-Lab\-Site\-Base\-::\-Get\-State\-Stack (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_a2dc92ba97f028625504bfef9a009a655}
+Get the states stack. \begin{DoxyReturn}{Returns}
+A stack of states. 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_site_base_ae1e74a24ef6a40d69d0f288b9e0d8ff3}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Get\-Subscribed\-Sets@{Get\-Subscribed\-Sets}}
+\index{Get\-Subscribed\-Sets@{Get\-Subscribed\-Sets}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Get\-Subscribed\-Sets}]{\setlength{\rightskip}{0pt plus 5cm}t\-\_\-string\-\_\-set\& elps\-::\-Lab\-Site\-Base\-::\-Get\-Subscribed\-Sets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classelps_1_1_lab_site_base_ae1e74a24ef6a40d69d0f288b9e0d8ff3}
+Return the list of sets this Site belongs to. \begin{DoxyReturn}{Returns}
+A std\-::set$<$string$>$ containing the names of the Sets. 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_site_base_ab0d008b5668186fcd06ebe42997407b0}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Goto\-Next\-State@{Goto\-Next\-State}}
+\index{Goto\-Next\-State@{Goto\-Next\-State}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Goto\-Next\-State}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Base\-::\-Goto\-Next\-State (
+\begin{DoxyParamCaption}
+\item[{double}]{time}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_ab0d008b5668186fcd06ebe42997407b0}
+Shortcut to switch into the next logical state (See \hyperlink{classelps_1_1_lab_state_stack_a908bdb7c1aaf4b6daa7ba5bebc6ebf8b}{Lab\-State\-Stack\-::\-Goto\-Next\-State()}). 
+\begin{DoxyParams}{Parameters}
+{\em time} & The time at which the switch ocurrs (usually the current simulation time). \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_site_base_ae0cbc57a3fca186709114f68f693b199}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!New@{New}}
+\index{New@{New}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{New}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lab\-User\-Data} $\ast$ elps\-::\-Lab\-Site\-Base\-::\-New (
+\begin{DoxyParamCaption}
+\item[{{\bf Lab\-Node} $\ast$}]{parent\-\_\-node = {\ttfamily NULL}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classelps_1_1_lab_site_base_ae0cbc57a3fca186709114f68f693b199}
+Self factory. D\-O N\-O\-T U\-S\-E it unless you know what you're doing ! 
+\begin{DoxyParams}{Parameters}
+{\em parent\-\_\-node} & The parent node in S\-P\-A\-T\-I\-A\-L\-I\-Z\-E\-D context. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to \hyperlink{classelps_1_1_lab_site_base}{Lab\-Site\-Base} (casted into \hyperlink{classelps_1_1_lab_user_data}{Lab\-User\-Data} $\ast$). 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classelps_1_1_lab_site_event_a3b0a1f662ad925a9d6ca4fef1d3a21be}{elps\-::\-Lab\-Site\-Event}.
+
+\hypertarget{classelps_1_1_lab_site_base_a64a3f5fafc774289abab1c90361e2a45}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Pop\-Attribute@{Pop\-Attribute}}
+\index{Pop\-Attribute@{Pop\-Attribute}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Pop\-Attribute}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Base\-::\-Pop\-Attribute (
+\begin{DoxyParamCaption}
+\item[{{\bf t\-\_\-deptype}}]{dep\-\_\-type}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_a64a3f5fafc774289abab1c90361e2a45}
+Remove the last pushed attribute from the top of the stack (See \hyperlink{classelps_1_1_lab_attributes_stack_a9503f1ccc86d3951b36516779b1ccc42}{Lab\-Attributes\-Stack\-::\-Pop\-Attribute()}). 
+\begin{DoxyParams}{Parameters}
+{\em dep\-\_\-type} & The dependency of the attribute to be popped. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_site_base_ae85ef5ced5137b26ef4fd970cb34a420}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Pop\-Attribute@{Pop\-Attribute}}
+\index{Pop\-Attribute@{Pop\-Attribute}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Pop\-Attribute}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Base\-::\-Pop\-Attribute (
+\begin{DoxyParamCaption}
+\item[{int}]{dep\-\_\-type}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_ae85ef5ced5137b26ef4fd970cb34a420}
+Another version of \hyperlink{classelps_1_1_lab_site_base_a64a3f5fafc774289abab1c90361e2a45}{Pop\-Attribute()} for Cython compatibility. (Uses int instead of t\-\_\-deptype enum). \hypertarget{classelps_1_1_lab_site_base_ad51a610f79abd18515d7d3a7558de3b3}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Pop\-State@{Pop\-State}}
+\index{Pop\-State@{Pop\-State}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Pop\-State}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Base\-::\-Pop\-State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_ad51a610f79abd18515d7d3a7558de3b3}
+Shortcut to remove the state located on top of the states stack. \hypertarget{classelps_1_1_lab_site_base_a807f6e3daebf22071acfd9d16b8941ae}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Print\-Subscribed\-Sets@{Print\-Subscribed\-Sets}}
+\index{Print\-Subscribed\-Sets@{Print\-Subscribed\-Sets}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Print\-Subscribed\-Sets}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Base\-::\-Print\-Subscribed\-Sets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_a807f6e3daebf22071acfd9d16b8941ae}
+Print the list of sets (names) this Site belongs to. \hypertarget{classelps_1_1_lab_site_base_a5e67e2b6ae66b57d0b7d601aec09d2f5}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Push\-Attribute@{Push\-Attribute}}
+\index{Push\-Attribute@{Push\-Attribute}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Push\-Attribute}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Base\-::\-Push\-Attribute (
+\begin{DoxyParamCaption}
+\item[{string}]{name, }
+\item[{{\bf t\-\_\-deptype}}]{dep\-\_\-type, }
+\item[{double}]{d\-\_\-value = {\ttfamily 0.0}, }
+\item[{bool}]{indexed = {\ttfamily false}, }
+\item[{int}]{nb\-\_\-beans = {\ttfamily 2}}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_a5e67e2b6ae66b57d0b7d601aec09d2f5}
+Add a new attribute on top of the specified stack (See \hyperlink{classelps_1_1_lab_attributes_stack_a564a406c6bbe3c1ad056f8f85b514b9a}{Lab\-Attributes\-Stack\-::\-Push\-Attribute()}). 
+\begin{DoxyParams}{Parameters}
+{\em name} & Name for this attribute (better use a unique name for each one). \\
+\hline
+{\em dep\-\_\-type} & Dependency type (See Lab\-Attributes\-Stack\-::t\-\_\-deptype). Choose attribute stack. \\
+\hline
+{\em d\-\_\-value} & Value for the attribute. Pass an {\bfseries int} for indexed attributes. \\
+\hline
+{\em indexed} & If this attribute is an \char`\"{}\-I\-N\-D\-E\-X\-E\-D\char`\"{} one. \\
+\hline
+{\em nb\-\_\-beans} & Number of distinct values the indexed attribute can take \mbox{[}0..nb\-\_\-beans\mbox{]}. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyParams}{Parameters}
+{\em d\-\_\-value} & int subset\-\_\-id, \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_site_base_aa15bc544668860be639149ffabfb5888}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Push\-Attribute@{Push\-Attribute}}
+\index{Push\-Attribute@{Push\-Attribute}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Push\-Attribute}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Base\-::\-Push\-Attribute (
+\begin{DoxyParamCaption}
+\item[{string}]{name, }
+\item[{int}]{dep\-\_\-type, }
+\item[{double}]{d\-\_\-value = {\ttfamily 0.0}, }
+\item[{bool}]{indexed = {\ttfamily false}, }
+\item[{int}]{nb\-\_\-beans = {\ttfamily 2}}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_aa15bc544668860be639149ffabfb5888}
+Another version of \hyperlink{classelps_1_1_lab_site_base_a5e67e2b6ae66b57d0b7d601aec09d2f5}{Push\-Attribute()} for Cython compatibility. (Uses int instead of t\-\_\-deptype enum). \hypertarget{classelps_1_1_lab_site_base_a995ebf491f8c5a79a963e7b1dc439ee1}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Push\-State@{Push\-State}}
+\index{Push\-State@{Push\-State}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Push\-State}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Base\-::\-Push\-State (
+\begin{DoxyParamCaption}
+\item[{string}]{name, }
+\item[{int}]{next\-\_\-id = {\ttfamily -\/1}, }
+\item[{int}]{timeout\-\_\-id = {\ttfamily -\/1}, }
+\item[{double}]{timeout = {\ttfamily -\/1.0}}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_a995ebf491f8c5a79a963e7b1dc439ee1}
+Shortcut to add a new state to the state stack (See \hyperlink{classelps_1_1_lab_state_stack_a5d2279b5bf25fd3e3628c6d35f94b7e3}{Lab\-State\-Stack\-::\-Push\-State()}). (By default \-: no next logical state and no timeout). 
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the new state. \\
+\hline
+{\em next\-\_\-id} & Next logical state to this state (if any). \\
+\hline
+{\em timeout\-\_\-id} & Index of the state to switch to when timeout is reached (if any timeout). \\
+\hline
+{\em timeout} & Delta of time before switching to the \char`\"{}timeout\-\_\-id\char`\"{} state (if any timeout). \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_site_base_a60dd270b7d88b505c87df6fa56745fed}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Set\-Attr\-Double@{Set\-Attr\-Double}}
+\index{Set\-Attr\-Double@{Set\-Attr\-Double}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Set\-Attr\-Double}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Base\-::\-Set\-Attr\-Double (
+\begin{DoxyParamCaption}
+\item[{{\bf t\-\_\-deptype}}]{dep\-\_\-type, }
+\item[{int}]{id, }
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_a60dd270b7d88b505c87df6fa56745fed}
+Shortcut to set the double value of an attribute specified by its id in the attributes stack and its dependency level. 
+\begin{DoxyParams}{Parameters}
+{\em dep\-\_\-type} & Dependency level of the targeted attribute \\
+\hline
+{\em id} & Identifier in the list relatively to the specified dependency level \\
+\hline
+{\em value} & The new double value of the attribute \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_site_base_a4f35ab29b854a93a86a08703aef19f97}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Set\-Attr\-Double@{Set\-Attr\-Double}}
+\index{Set\-Attr\-Double@{Set\-Attr\-Double}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Set\-Attr\-Double}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Base\-::\-Set\-Attr\-Double (
+\begin{DoxyParamCaption}
+\item[{int}]{dep\-\_\-filter, }
+\item[{int}]{id, }
+\item[{double}]{value}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_a4f35ab29b854a93a86a08703aef19f97}
+Another version of \hyperlink{classelps_1_1_lab_site_base_a60dd270b7d88b505c87df6fa56745fed}{Set\-Attr\-Double()} for Cython compatibility. (Uses int instead of t\-\_\-deptype enum). \hypertarget{classelps_1_1_lab_site_base_a3f0a32e3cc4fb2c690242123f92396f1}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Set\-Cy\-Py\-Obj@{Set\-Cy\-Py\-Obj}}
+\index{Set\-Cy\-Py\-Obj@{Set\-Cy\-Py\-Obj}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Set\-Cy\-Py\-Obj}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Base\-::\-Set\-Cy\-Py\-Obj (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{cy\-\_\-py\-\_\-obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classelps_1_1_lab_site_base_a3f0a32e3cc4fb2c690242123f92396f1}
+Mainly for use from Cython \-: D\-O N\-O\-T U\-S\-E unless you know what you're doing ! Store the Python representation of this Site as a Python object (Py\-Lab\-Site\-Base, Py\-Lab\-Site\-Event, ...).
+
+
+\begin{DoxyParams}{Parameters}
+{\em cy\-\_\-py\-\_\-obj} & The Python object (Py\-Object $\ast$). \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classelps_1_1_lab_user_data_a6260f9a51e3f8871b762f2f07bc36064}{elps\-::\-Lab\-User\-Data}.
+
+\hypertarget{classelps_1_1_lab_site_base_ad7228c044e5b7283ea3f25b0c85638a9}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Set\-Site\-Model\-Type@{Set\-Site\-Model\-Type}}
+\index{Set\-Site\-Model\-Type@{Set\-Site\-Model\-Type}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Set\-Site\-Model\-Type}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Base\-::\-Set\-Site\-Model\-Type (
+\begin{DoxyParamCaption}
+\item[{string}]{model\-\_\-type}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classelps_1_1_lab_site_base_ad7228c044e5b7283ea3f25b0c85638a9}
+Mainly for use from Cython \-: D\-O N\-O\-T U\-S\-E unless you know what you're doing ! Set the type of this Site (can be Site\-Base, Site\-Event, ...).
+
+
+\begin{DoxyParams}{Parameters}
+{\em model\-\_\-type} & The string representation chosen for this type. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_site_base_a71fa97f33232e778e106893e5cfd80e3}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Set\-State@{Set\-State}}
+\index{Set\-State@{Set\-State}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Set\-State}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Base\-::\-Set\-State (
+\begin{DoxyParamCaption}
+\item[{int}]{state, }
+\item[{double}]{time}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_a71fa97f33232e778e106893e5cfd80e3}
+Change the current state of the S\-I\-T\-E. 
+\begin{DoxyParams}{Parameters}
+{\em state} & New state (new index in the states stack). \\
+\hline
+{\em time} & Time at which this change is performed (usually the current simulation time). \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_site_base_a5d8996bca2f83c16b030c404ffc14fcd}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Subscribe\-All\-Sets@{Subscribe\-All\-Sets}}
+\index{Subscribe\-All\-Sets@{Subscribe\-All\-Sets}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Subscribe\-All\-Sets}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Base\-::\-Subscribe\-All\-Sets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_a5d8996bca2f83c16b030c404ffc14fcd}
+Subscribe this Site to all the Sets it belongs to. Afterward this Site doesn't belong to this Set anymore. (This feature is only available if the Site was instantiated via its protected constructor \-: See \hyperlink{classelps_1_1_lab_site_base_a1dd99add3d04c734eb25a45b2f760c27}{Lab\-Site\-Base(\-Lab\-Simulator\-Base $\ast$sim, Lab\-Node $\ast$parent\-\_\-node, bool set\-\_\-trackable)}...
+
+D\-O N\-O\-T U\-S\-E it unless you know what you're doing ! \hypertarget{classelps_1_1_lab_site_base_a655d24550c8ff07788422ca4be7116ab}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Subscribe\-Set@{Subscribe\-Set}}
+\index{Subscribe\-Set@{Subscribe\-Set}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Subscribe\-Set}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Base\-::\-Subscribe\-Set (
+\begin{DoxyParamCaption}
+\item[{string}]{set\-\_\-name}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_a655d24550c8ff07788422ca4be7116ab}
+Subscribe this Site to a specified Set. (This feature is only available if the Site was instantiated via its protected constructor \-: See \hyperlink{classelps_1_1_lab_site_base_a1dd99add3d04c734eb25a45b2f760c27}{Lab\-Site\-Base(\-Lab\-Simulator\-Base $\ast$sim, Lab\-Node $\ast$parent\-\_\-node, bool set\-\_\-trackable)}...
+
+D\-O N\-O\-T U\-S\-E it unless you know what you're doing !
+
+
+\begin{DoxyParams}{Parameters}
+{\em set\-\_\-name} & The name of the Set to subscribe to. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_site_base_aacb4f452d2d1c01750f27426080d14f9}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Try\-Do\-Timeout\-State@{Try\-Do\-Timeout\-State}}
+\index{Try\-Do\-Timeout\-State@{Try\-Do\-Timeout\-State}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Try\-Do\-Timeout\-State}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Base\-::\-Try\-Do\-Timeout\-State (
+\begin{DoxyParamCaption}
+\item[{double}]{time}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_aacb4f452d2d1c01750f27426080d14f9}
+Shortcut to try to terminate a state (See Lab\-State\-Stack\-::\-Try\-Do\-Timeout\-State()). 
+\begin{DoxyParams}{Parameters}
+{\em time} & The time of the attempt (usually the current simulation time). \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_site_base_ad1b2721336db27de86213769b78d3ccd}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Un\-Binarize@{Un\-Binarize}}
+\index{Un\-Binarize@{Un\-Binarize}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Un\-Binarize}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Base\-::\-Un\-Binarize (
+\begin{DoxyParamCaption}
+\item[{ifstream $\ast$}]{istream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classelps_1_1_lab_site_base_ad1b2721336db27de86213769b78d3ccd}
+Shortcut to restore the current state of the S\-I\-T\-E from a dump (See \hyperlink{classelps_1_1_lab_attributes_stack_abc03b7e9c4afaeeed3493398a1353e2b}{Lab\-Attributes\-Stack\-::\-Un\-Binarize()}). 
+\begin{DoxyParams}{Parameters}
+{\em ostream} & Input stream to restore from. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classelps_1_1_lab_i_binarizable_a381af24c243c967b491101b7dbecb252}{elps\-::\-Lab\-I\-Binarizable}.
+
+
+
+Reimplemented in \hyperlink{classelps_1_1_lab_site_event_a237da73d8796cbff70f66d953fbe4c2c}{elps\-::\-Lab\-Site\-Event}.
+
+\hypertarget{classelps_1_1_lab_site_base_a402f47fa4587c8478974437dea7f11eb}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Un\-Subscribe\-All\-Sets@{Un\-Subscribe\-All\-Sets}}
+\index{Un\-Subscribe\-All\-Sets@{Un\-Subscribe\-All\-Sets}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Un\-Subscribe\-All\-Sets}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Base\-::\-Un\-Subscribe\-All\-Sets (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_a402f47fa4587c8478974437dea7f11eb}
+Un\-Subscribe this Site from all the Sets it belongs to. (This feature is only available if the Site was instantiated via its protected constructor \-: See \hyperlink{classelps_1_1_lab_site_base_a1dd99add3d04c734eb25a45b2f760c27}{Lab\-Site\-Base(\-Lab\-Simulator\-Base $\ast$sim, Lab\-Node $\ast$parent\-\_\-node, bool set\-\_\-trackable)}...
+
+D\-O N\-O\-T U\-S\-E it unless you know what you're doing !) \hypertarget{classelps_1_1_lab_site_base_a6b3062ace04c2750b65d103535cff60b}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!Un\-Subscribe\-Set@{Un\-Subscribe\-Set}}
+\index{Un\-Subscribe\-Set@{Un\-Subscribe\-Set}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{Un\-Subscribe\-Set}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Base\-::\-Un\-Subscribe\-Set (
+\begin{DoxyParamCaption}
+\item[{string}]{set\-\_\-name}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_base_a6b3062ace04c2750b65d103535cff60b}
+Un\-Subscribe this Site from a specified Set. Afterward this Site belong to this Set. (This feature is only available if the Site was instantiated via its protected constructor \-: See \hyperlink{classelps_1_1_lab_site_base_a1dd99add3d04c734eb25a45b2f760c27}{Lab\-Site\-Base(\-Lab\-Simulator\-Base $\ast$sim, Lab\-Node $\ast$parent\-\_\-node, bool set\-\_\-trackable)}...
+
+D\-O N\-O\-T U\-S\-E it unless you know what you're doing !
+
+
+\begin{DoxyParams}{Parameters}
+{\em set\-\_\-name} & The name of the Set to unsubscribe from. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classelps_1_1_lab_site_base_a5b8dbbdad3e4484493203bf2b89b3878}{\index{elps\-::\-Lab\-Site\-Base@{elps\-::\-Lab\-Site\-Base}!simulator@{simulator}}
+\index{simulator@{simulator}!elps::LabSiteBase@{elps\-::\-Lab\-Site\-Base}}
+\subsubsection[{simulator}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lab\-Simulator\-Base}$\ast$ elps\-::\-Lab\-Site\-Base\-::simulator\hspace{0.3cm}{\ttfamily [protected]}}}\label{classelps_1_1_lab_site_base_a5b8dbbdad3e4484493203bf2b89b3878}
+Reference to the Simulator related to this Site 

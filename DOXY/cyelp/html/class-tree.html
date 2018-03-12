@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Class Hierarchy</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="cyelp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th bgcolor="#70b0f0" class="navbar-select"
+          >&nbsp;&nbsp;&nbsp;Trees&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a href="http://www.evolab-project.org"><img src="../elp-cy-eee.png" style="margin:10px;" /></a>
+        <script>
+			var link = parent.document.createElement('link'); 
+			link.id = 'dynamic-favicon'; 
+			link.type = 'image/png'; 
+			link.rel = 'shortcut icon'; 
+			link.href = '../logo-base-fav.png'; 
+			parent.document.head.appendChild(link); 
+			parent.document.head = parent.document.head || parent.document.getElementsByTagName('head')[0];
+		</script></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">&nbsp;</td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="class-tree.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<center><b>
+ [ <a href="module-tree.html">Module Hierarchy</a>
+ | <a href="class-tree.html">Class Hierarchy</a> ]
+</b></center><br />
+<h1 class="epydoc">Class Hierarchy</h1>
+<ul class="nomargin-top">
+    <li> <strong class="uidlink">object</strong>:
+      <em class="summary">The most base type</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="cyelp.PyArg-class.html">cyelp.PyArg</a></strong>:
+      <em class="summary">A virtual base class that defines the essential data for all 
+        arguments.</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="cyelp.PyDoubleArg-class.html">cyelp.PyDoubleArg</a></strong>:
+      <em class="summary">Class to define and parse a double value from the command line.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="cyelp.PyIntArg-class.html">cyelp.PyIntArg</a></strong>:
+      <em class="summary">Class to define and parse an integer value from the command line.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="cyelp.PyStringArg-class.html">cyelp.PyStringArg</a></strong>:
+      <em class="summary">Class to define and parse a string value from the command line.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="cyelp.PySwitchArg-class.html">cyelp.PySwitchArg</a></strong>:
+      <em class="summary">A simple switch argument.</em>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="cyelp.PyCmdLine-class.html">cyelp.PyCmdLine</a></strong>:
+      <em class="summary">The base class that manages the command line definition and passes 
+        along the parsing to the appropriate Arg classes.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="cyelp.PyLabArrayBinding-class.html">cyelp.PyLabArrayBinding</a></strong>:
+      <em class="summary">This class embeds a list of sites and provides features to populate
+        it (for use in a <b>MASS ACTION</b> context).</em>
+    </li>
+    <li> <strong class="uidlink"><a href="cyelp.PyLabBinaryUtils-class.html">cyelp.PyLabBinaryUtils</a></strong>:
+      <em class="summary">Utility class for writing and reading information stored in binary 
+        files.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="cyelp.PyLabCallBack-class.html">cyelp.PyLabCallBack</a></strong>:
+      <em class="summary">Utility class to deal with callbacks.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="cyelp.PyLabEventStack-class.html">cyelp.PyLabEventStack</a></strong>:
+      <em class="summary">Stack of events that can occur at a given time (depending on the 
+        rate of each event) in a <b>TIME based</b> simulation context.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="cyelp.PyLabNetBinding-class.html">cyelp.PyLabNetBinding</a></strong>:
+      <em class="summary">This class embeds a network (See <a 
+        href="cyelp.PyLabNetwork-class.html" class="link">PyLabNetwork</a>)
+        and provides features to populate it (for use in a 
+        <b>SPATIALIZED</b> context).</em>
+    </li>
+    <li> <strong class="uidlink"><a href="cyelp.PyLabNetwork-class.html">cyelp.PyLabNetwork</a></strong>:
+      <em class="summary">Main class for handling a Network (in a <b>SPATIALIZED</b> 
+        context).</em>
+    </li>
+    <li> <strong class="uidlink"><a href="cyelp.PyLabNode-class.html">cyelp.PyLabNode</a></strong>:
+      <em class="summary">The node is the base entity constituting a Network.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="cyelp.PyLabOutputerLine-class.html">cyelp.PyLabOutputerLine</a></strong>:
+      <em class="summary">Basic implementation for output management.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="cyelp.PyLabRng-class.html">cyelp.PyLabRng</a></strong>:
+      <em class="summary">This class is a simplified access to <b>Random Number 
+        Generation</b>.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="cyelp.PyLabSet-class.html">cyelp.PyLabSet</a></strong>:
+      <em class="summary">Class implementing a <b>Set of Big Integers</b>.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="cyelp.PyLabSetIter-class.html">cyelp.PyLabSetIter</a></strong>:
+      <em class="summary">Basic <a href="cyelp.PyLabSet-class.html" class="link">PyLabSet</a>
+        iterator utility.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="cyelp.PyLabSimulatorBase-class.html">cyelp.PyLabSimulatorBase</a></strong>:
+      <em class="summary">Base class meant to be subclassed when writing a simulation.</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="cyelp.PyLabSimulatorTime-class.html">cyelp.PyLabSimulatorTime</a></strong>:
+      <em class="summary">A basic <b>TIME based</b> subclass of <a 
+        href="cyelp.PyLabSimulatorBase-class.html" 
+        class="link">PyLabSimulatorBase</a>.</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="cyelp.PyLabSimulatorTimeArray-class.html">cyelp.PyLabSimulatorTimeArray</a></strong>:
+      <em class="summary">Class designed to create MASS ACTION and TIME based simulation.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="cyelp.PyLabSimulatorTimeNet-class.html">cyelp.PyLabSimulatorTimeNet</a></strong>:
+      <em class="summary">Class designed to create SPACE and TIME based simulation.</em>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="cyelp.PyLabSiteSetsCalculator-class.html">cyelp.PyLabSiteSetsCalculator</a></strong>:
+      <em class="summary">This class gives methods to deal with the &quot;Sets&quot; of Sites
+        handled by the <b>Sets Manager</b> (See C++ LabSiteSetsManager 
+        class).</em>
+    </li>
+    <li> <strong class="uidlink"><a href="cyelp.PyLabTimer-class.html">cyelp.PyLabTimer</a></strong>:
+      <em class="summary">Utility class for dealing with time (benchmarking).</em>
+    </li>
+    <li> <strong class="uidlink"><a href="cyelp.PyLabUserData-class.html">cyelp.PyLabUserData</a></strong>:
+      <em class="summary">This is the base class for all the classes used for describing a 
+        Site.</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="cyelp.PyLabSiteBase-class.html">cyelp.PyLabSiteBase</a></strong>:
+      <em class="summary">Base class for handling user defined data on a given SITE.</em>
+    <ul>
+    <li> <strong class="uidlink"><a href="cyelp.PyLabSiteEvent-class.html">cyelp.PyLabSiteEvent</a></strong>:
+      <em class="summary">This class handles ATTRIBUTES and STATES (since it inherits from <a
+        href="cyelp.PyLabSiteBase-class.html" 
+        class="link">PyLabSiteBase</a>), but also EVENTS.</em>
+    </li>
+    </ul>
+    </li>
+    </ul>
+    </li>
+    <li> <strong class="uidlink"><a href="cyelp.PyTestClass-class.html">cyelp.PyTestClass</a></strong>:
+      <em class="summary">This class was created for Cython testing purpose and is 
+        pointless...</em>
+    </li>
+    <li> <strong class="uidlink"><a href="cyelp.Py_ifstream-class.html">cyelp.Py_ifstream</a></strong>:
+      <em class="summary">C++ / STL <b>std::ifstream</b> exposed to Python.</em>
+    </li>
+    <li> <strong class="uidlink"><a href="cyelp.Py_ofstream-class.html">cyelp.Py_ofstream</a></strong>:
+      <em class="summary">C++ / STL <b>std::ofstream</b> exposed to Python.</em>
+    </li>
+    </ul>
+    </li>
+</ul>
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="cyelp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th bgcolor="#70b0f0" class="navbar-select"
+          >&nbsp;&nbsp;&nbsp;Trees&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a href="http://www.evolab-project.org"><img src="../elp-cy-eee.png" style="margin:10px;" /></a>
+        <script>
+			var link = parent.document.createElement('link'); 
+			link.id = 'dynamic-favicon'; 
+			link.type = 'image/png'; 
+			link.rel = 'shortcut icon'; 
+			link.href = '../logo-base-fav.png'; 
+			parent.document.head.appendChild(link); 
+			parent.document.head = parent.document.head || parent.document.getElementsByTagName('head')[0];
+		</script></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Fri Jun  7 07:41:39 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

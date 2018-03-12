@@ -1,0 +1,120 @@
+\hypertarget{classelps_1_1_lab_user_data}{\section{elps\-:\-:Lab\-User\-Data Class Reference}
+\label{classelps_1_1_lab_user_data}\index{elps\-::\-Lab\-User\-Data@{elps\-::\-Lab\-User\-Data}}
+}
+
+
+{\ttfamily \#include $<$Lab\-User\-Data.\-h$>$}
+
+Inheritance diagram for elps\-:\-:Lab\-User\-Data\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classelps_1_1_lab_user_data}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classelps_1_1_lab_user_data_a1935181983a06939e88c755e812a7913}{Get\-Id} ()
+\item 
+void \hyperlink{classelps_1_1_lab_user_data_a7aae5bb2b0fed3c158534e03d5dd13d1}{Set\-Id} (unsigned int id)
+\item 
+void $\ast$ \hyperlink{classelps_1_1_lab_user_data_a9048829275f436f2e52896902a021727}{Get\-Cy\-Py\-Obj} ()
+\item 
+void \hyperlink{classelps_1_1_lab_user_data_a6260f9a51e3f8871b762f2f07bc36064}{Set\-Cy\-Py\-Obj} (void $\ast$cy\-\_\-py\-\_\-obj)
+\item 
+void $\ast$ \hyperlink{classelps_1_1_lab_user_data_aa7b5cd2ae31a3e2ade6c6def85ff5954}{Get\-Cy\-Data} ()
+\item 
+void \hyperlink{classelps_1_1_lab_user_data_a54467f885d97266e2c43836c7efa9ded}{Set\-Cy\-Data} (void $\ast$cy\-\_\-data)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classelps_1_1_lab_node}{Lab\-Node} $\ast$ \hyperlink{classelps_1_1_lab_user_data_a6b1156f86de2f7a493b78e0835c8b0e0}{parent}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+This is the base class for all the classes used for describing a Site. A Site can be completely user defined (by using \hyperlink{classelps_1_1_lab_user_data}{Lab\-User\-Data}, a custom subclass of it, or one of the ready-\/made ones -\/ See \hyperlink{classelps_1_1_lab_site_base}{Lab\-Site\-Base}, ...).
+
+The related user specific information can be stored using Lab\-User\-Data\-::\-Set\-Data() and / or by extending \hyperlink{classelps_1_1_lab_user_data}{Lab\-User\-Data} class (adding members). 
+
+\subsection{Member Function Documentation}
+\hypertarget{classelps_1_1_lab_user_data_aa7b5cd2ae31a3e2ade6c6def85ff5954}{\index{elps\-::\-Lab\-User\-Data@{elps\-::\-Lab\-User\-Data}!Get\-Cy\-Data@{Get\-Cy\-Data}}
+\index{Get\-Cy\-Data@{Get\-Cy\-Data}!elps::LabUserData@{elps\-::\-Lab\-User\-Data}}
+\subsubsection[{Get\-Cy\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ elps\-::\-Lab\-User\-Data\-::\-Get\-Cy\-Data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classelps_1_1_lab_user_data_aa7b5cd2ae31a3e2ade6c6def85ff5954}
+Cython utility. D\-O N\-O\-T U\-S\-E !\par
+ Get the Python object representation of the data carried by this. \hypertarget{classelps_1_1_lab_user_data_a9048829275f436f2e52896902a021727}{\index{elps\-::\-Lab\-User\-Data@{elps\-::\-Lab\-User\-Data}!Get\-Cy\-Py\-Obj@{Get\-Cy\-Py\-Obj}}
+\index{Get\-Cy\-Py\-Obj@{Get\-Cy\-Py\-Obj}!elps::LabUserData@{elps\-::\-Lab\-User\-Data}}
+\subsubsection[{Get\-Cy\-Py\-Obj}]{\setlength{\rightskip}{0pt plus 5cm}void$\ast$ elps\-::\-Lab\-User\-Data\-::\-Get\-Cy\-Py\-Obj (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classelps_1_1_lab_user_data_a9048829275f436f2e52896902a021727}
+Cython utility. D\-O N\-O\-T U\-S\-E !\par
+ Get the Python object representation of this Site. 
+
+Reimplemented in \hyperlink{classelps_1_1_lab_site_base_a52a5f7fdc453133e9c641bbdc40b165f}{elps\-::\-Lab\-Site\-Base}.
+
+\hypertarget{classelps_1_1_lab_user_data_a1935181983a06939e88c755e812a7913}{\index{elps\-::\-Lab\-User\-Data@{elps\-::\-Lab\-User\-Data}!Get\-Id@{Get\-Id}}
+\index{Get\-Id@{Get\-Id}!elps::LabUserData@{elps\-::\-Lab\-User\-Data}}
+\subsubsection[{Get\-Id}]{\setlength{\rightskip}{0pt plus 5cm}int elps\-::\-Lab\-User\-Data\-::\-Get\-Id (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_user_data_a1935181983a06939e88c755e812a7913}
+Get the Site index (unique id in the whole population). \begin{DoxyReturn}{Returns}
+The index. 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_user_data_a54467f885d97266e2c43836c7efa9ded}{\index{elps\-::\-Lab\-User\-Data@{elps\-::\-Lab\-User\-Data}!Set\-Cy\-Data@{Set\-Cy\-Data}}
+\index{Set\-Cy\-Data@{Set\-Cy\-Data}!elps::LabUserData@{elps\-::\-Lab\-User\-Data}}
+\subsubsection[{Set\-Cy\-Data}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-User\-Data\-::\-Set\-Cy\-Data (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{cy\-\_\-data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classelps_1_1_lab_user_data_a54467f885d97266e2c43836c7efa9ded}
+Cython utility. D\-O N\-O\-T U\-S\-E !\par
+ Set the Python object representation of the data carried by this. 
+\begin{DoxyParams}{Parameters}
+{\em cy\-\_\-data} & The Python object carried \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_user_data_a6260f9a51e3f8871b762f2f07bc36064}{\index{elps\-::\-Lab\-User\-Data@{elps\-::\-Lab\-User\-Data}!Set\-Cy\-Py\-Obj@{Set\-Cy\-Py\-Obj}}
+\index{Set\-Cy\-Py\-Obj@{Set\-Cy\-Py\-Obj}!elps::LabUserData@{elps\-::\-Lab\-User\-Data}}
+\subsubsection[{Set\-Cy\-Py\-Obj}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-User\-Data\-::\-Set\-Cy\-Py\-Obj (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{cy\-\_\-py\-\_\-obj}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classelps_1_1_lab_user_data_a6260f9a51e3f8871b762f2f07bc36064}
+Cython utility. D\-O N\-O\-T U\-S\-E !\par
+ Set the Python object representation of this Site. 
+\begin{DoxyParams}{Parameters}
+{\em cy\-\_\-py\-\_\-obj} & The Python object \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classelps_1_1_lab_site_base_a3f0a32e3cc4fb2c690242123f92396f1}{elps\-::\-Lab\-Site\-Base}.
+
+\hypertarget{classelps_1_1_lab_user_data_a7aae5bb2b0fed3c158534e03d5dd13d1}{\index{elps\-::\-Lab\-User\-Data@{elps\-::\-Lab\-User\-Data}!Set\-Id@{Set\-Id}}
+\index{Set\-Id@{Set\-Id}!elps::LabUserData@{elps\-::\-Lab\-User\-Data}}
+\subsubsection[{Set\-Id}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-User\-Data\-::\-Set\-Id (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{id}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_user_data_a7aae5bb2b0fed3c158534e03d5dd13d1}
+Assign an id to this Site. 
+\begin{DoxyParams}{Parameters}
+{\em id} & The index. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classelps_1_1_lab_user_data_a6b1156f86de2f7a493b78e0835c8b0e0}{\index{elps\-::\-Lab\-User\-Data@{elps\-::\-Lab\-User\-Data}!parent@{parent}}
+\index{parent@{parent}!elps::LabUserData@{elps\-::\-Lab\-User\-Data}}
+\subsubsection[{parent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lab\-Node}$\ast$ elps\-::\-Lab\-User\-Data\-::parent}}\label{classelps_1_1_lab_user_data_a6b1156f86de2f7a493b78e0835c8b0e0}
+Parent node for this Site (required only in a S\-P\-A\-T\-I\-A\-L\-I\-Z\-E\-D context) 

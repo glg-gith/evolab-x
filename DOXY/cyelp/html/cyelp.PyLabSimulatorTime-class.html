@@ -1,0 +1,699 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>cyelp.PyLabSimulatorTime</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="cyelp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a href="http://www.evolab-project.org"><img src="../elp-cy-eee.png" style="margin:10px;" /></a>
+        <script>
+			var link = parent.document.createElement('link'); 
+			link.id = 'dynamic-favicon'; 
+			link.type = 'image/png'; 
+			link.rel = 'shortcut icon'; 
+			link.href = '../logo-base-fav.png'; 
+			parent.document.head.appendChild(link); 
+			parent.document.head = parent.document.head || parent.document.getElementsByTagName('head')[0];
+		</script></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="cyelp-module.html">Module&nbsp;cyelp</a> ::
+        Class&nbsp;PyLabSimulatorTime
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="cyelp.PyLabSimulatorTime-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class PyLabSimulatorTime</h1><p class="nomargin-top"></p>
+<center>
+<center>  <map id="uml_class_diagram_for_cyelp_py_17" name="uml_class_diagram_for_cyelp_py_17">
+<area shape="rect" id="node28" href="cyelp.PyLabSimulatorBase-class.html#CleanAllDumpFiles" title="Remove from disk all the previously generated dumps." alt="" coords="97,39,304,57"/>
+<area shape="rect" id="node28" href="cyelp.PyLabSimulatorBase-class.html#CleanUnusedDumpFile" title="Remove the most ancient dump files during the stepping process (See &#160;StepBinarize())." alt="" coords="97,57,304,76"/>
+<area shape="rect" id="node28" href="cyelp.PyLabSimulatorBase-class.html#GetCurrentRepetition" title="Catch the index of the iteration currently being run." alt="" coords="97,76,304,95"/>
+<area shape="rect" id="node28" href="cyelp.PyLabSimulatorBase-class.html#GetDoDump" title="Check if the dumping system has been activated." alt="" coords="97,95,304,113"/>
+<area shape="rect" id="node28" href="cyelp.PyLabSimulatorBase-class.html#GetDoStartFromDump" title="Check if the system must be recovered from dump files." alt="" coords="97,113,304,132"/>
+<area shape="rect" id="node28" href="cyelp.PyLabSimulatorBase-class.html#GetLastDumpFileIdAndClean" title="Read the penultimate binary dump file (to make sure the integrity of the &#160;file we are working with is preserved, we don&#39;t pick up the very last one, &#160;as it could have been corrupted...)." alt="" coords="97,132,304,151"/>
+<area shape="rect" id="node28" href="cyelp.PyLabSimulatorBase-class.html#GetMaxPopulationSize" title="Requires a preliminary call to SetMaxPopulationSize()" alt="" coords="97,151,304,169"/>
+<area shape="rect" id="node28" href="cyelp.PyLabSimulatorBase-class.html#GetNbRepetitions" title="Get the number of trials for the whole process." alt="" coords="97,169,304,188"/>
+<area shape="rect" id="node28" href="cyelp.PyLabSimulatorBase-class.html#GetTimeDumpStep" title="Get the delta of time between each dump (when &#39;do_dump&#39; is set to true)." alt="" coords="97,188,304,207"/>
+<area shape="rect" id="node28" href="cyelp.PyLabSimulatorBase-class.html#Run" title="WARNING :" alt="" coords="97,207,304,225"/>
+<area shape="rect" id="node28" href="cyelp.PyLabSimulatorBase-class.html#SetBinaryStreams" title="Possibility to specify the output and input streams to respectively dump &#160;and restore using the binarization features." alt="" coords="97,225,304,244"/>
+<area shape="rect" id="node28" href="cyelp.PyLabSimulatorBase-class.html#SetCurrentRepetition" title="WARNING ! Should not be forced by hand during a run." alt="" coords="97,244,304,263"/>
+<area shape="rect" id="node28" href="cyelp.PyLabSimulatorBase-class.html#SetDoDump" title="Set if the dump of the system must be activated." alt="" coords="97,263,304,281"/>
+<area shape="rect" id="node28" href="cyelp.PyLabSimulatorBase-class.html#SetTimeDumpStep" title="Set the interval between each dump (when &#39;do_dump&#39; is set to true)." alt="" coords="97,300,304,319"/>
+<area shape="rect" id="node1" href="cyelp.PyLabSimulatorBase-class.html" title="Base class meant to be subclassed when writing a simulation." alt="" coords="85,6,315,325"/>
+<area shape="rect" id="node27" href="cyelp.PyLabSimulatorTime-class.html#GetNbFiredEvents" title="Get the number of events having been fired since the simulation has begun." alt="" coords="80,377,321,396"/>
+<area shape="rect" id="node27" href="cyelp.PyLabSimulatorTime-class.html#GetTime" title="Get the current time of this simulation." alt="" coords="80,396,321,415"/>
+<area shape="rect" id="node27" href="cyelp.PyLabSimulatorTime-class.html#SetEndTime" title="Set the maximum time for the simulation (better use a value related to the &#160;way chosen to compute time &#45; See TimeStep())." alt="" coords="80,415,321,433"/>
+<area shape="rect" id="node27" href="cyelp.PyLabSimulatorTime-class.html#SetOutputTimeStep" title="Set step of time for writing the output (better use a value related to the &#160;way chosen to compute time &#45; See TimeStep())." alt="" coords="80,433,321,452"/>
+<area shape="rect" id="node27" href="cyelp.PyLabSimulatorTime-class.html#SetTime" title="Force the current time (useful when starting the simulation from a given &#160;time instead of from the beginning &#45; when recovering from an interruption, &#160;by example)." alt="" coords="80,452,321,471"/>
+<area shape="rect" id="node27" href="cyelp.PyLabSimulatorTime-class.html#UpdateEventsRate" title="Update the total events rate (value used to compute the &quot;time to next &#160;event&quot; &#45; See TimeStep())." alt="" coords="80,471,321,489"/>
+<area shape="rect" id="node27" href="cyelp.PyLabSimulatorTime-class.html#__init__" title="Default constructor." alt="" coords="80,489,321,508"/>
+<area shape="rect" id="node27" href="cyelp.PyLabSimulatorTime-class.html#__new__" title="cyelp.PyLabSimulatorTime.__new__" alt="" coords="80,508,321,527"/>
+<area shape="rect" id="node5" href="cyelp.PyLabSimulatorTime-class.html" title="A basic TIME based subclass of PyLabSimulatorBase." alt="" coords="68,345,332,533"/>
+<area shape="rect" id="node2" href="cyelp.PyLabNetBinding-class.html" title="This class embeds a network (See PyLabNetwork) and provides features to populate it (for use in a SPATIALIZED context)." alt="" coords="344,146,480,185"/>
+<area shape="rect" id="node3" href="cyelp.PyLabArrayBinding-class.html" title="This class embeds a list of sites and provides features to populate it (for use in a MASS ACTION context)." alt="" coords="509,146,656,185"/>
+<area shape="rect" id="node4" href="cyelp.PyLabSimulatorTimeNet-class.html" title="Class designed to create SPACE and TIME based simulation." alt="" coords="5,553,184,591"/>
+<area shape="rect" id="node6" href="cyelp.PyLabSimulatorTimeArray-class.html" title="Class designed to create MASS ACTION and TIME based simulation." alt="" coords="213,553,403,591"/>
+</map>
+  <img src="uml_class_diagram_for_cyelp_py_17.gif" alt='' usemap="#uml_class_diagram_for_cyelp_py_17" ismap="ismap" class="graph-without-title" />
+</center>
+</center>
+<hr />
+<p>A basic <b>TIME based</b> subclass of <a 
+  href="cyelp.PyLabSimulatorBase-class.html" 
+  class="link">PyLabSimulatorBase</a>.</p>
+  <p>By default the time evolves continuously as follows :</p>
+<pre class="literalblock">
+   t += -log(p) / ter
+   where &quot;p&quot; is a random float number [0.0, 1.0] and &quot;ter&quot; is the current total event rate.                                                                    
+</pre>
+  <p>The way the time is computed / evolves can be customized by overriding
+  the hook <b>TimeStep()</b> (See C++ 
+  <code>LabSimulatorTime::TimeStep()</code> for more details).</p>
+  <p>This class comes with additional dedicated hooks to be overridden. 
+  (See C++ <code>ResetTime()</code>, <code>TimeStep()</code>, 
+  <code>FireEvent()</code>, ... for an exhaustive list).</p>
+  <p><b>Note </b>:</p>
+<pre class="literalblock">
+   We will often use the term &quot;event(s) rate(s)&quot; in time based contexts,             
+   since this class provides a canvas for firing events according to time during     
+   the simulation. By default in PyLabSimulatorTime, the events are fired relatively   
+   to their rate (or propensity to occur).                            
+</pre>
+  <p>Of course, the default event based behavior of this class can be 
+  customized by overriding the appropriate hooks.</p>
+  <h1 class="heading">SPECIFICITIES :</h1>
+    <p>The default inner code of <b>RunSimulation()</b> is an override of 
+    the <a href="cyelp.PyLabSimulatorBase-class.html" 
+    class="link">PyLabSimulatorBase</a> <code>RunSimulation()</code> 
+    hook.</p>
+    <p>This hook can be overridden, but by default it consists in a 
+    re-implementation of <code>LabSimulatorBase.RunSimulation()</code> for 
+    the need of a TIME based process.</p>
+    <p>The only differences with base version are :</p>
+    <ul>
+      <li>
+        We add a reset of the time properties (ResetTime()) each time we 
+        call a new run (right after the InitSimulation() call)
+      </li>
+      <li>
+        This method is no more responsible for managing the output, since 
+        StepSimulation() is
+      </li>
+    </ul>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-comment"># Default simulation's loop behavior (time based version)                                                </span>
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">def</span> <span class="py-defname">RunSimulation</span>(self):                                              
+<span class="py-more">... </span>                                                                                   
+<span class="py-more">... </span>    done = False                                                                               
+<span class="py-more">... </span>    self.InitSimulation() 
+<span class="py-more">... </span>    self.ResetTime();                              <span class="py-comment"># -- ADDED --</span>
+<span class="py-more">... </span>    self.InitUnBinarize()
+<span class="py-more">... </span>    self.BeforeRun()                                                                     
+<span class="py-more">... </span>    while (<span class="py-keyword">not</span> done):
+<span class="py-more">... </span>                                                                                    
+<span class="py-more">... </span>        <span class="py-comment">#self.OutputSimulation()                   # -- REMOVED --                                                          </span>
+<span class="py-more">... </span>        self.BeforeStep()                          <span class="py-comment"># !! 'UpdateEventsRate()' must be called in there !!                                       </span>
+<span class="py-more">... </span>        self.StepSimulation()                                                            
+<span class="py-more">... </span>        self.AfterStep()                                                               
+<span class="py-more">... </span>        self.StepBinarize()
+<span class="py-more">...</span>
+<span class="py-more">... </span>        <span class="py-keyword">if</span> (self.EndSimulation()) done = True
+<span class="py-more">... </span>                                                                                    
+<span class="py-more">... </span>    self.OutputSimulation()                        <span class="py-comment"># One more time for final state                   </span>
+<span class="py-more">... </span>    self.AfterRun()                                                                      
+<span class="py-more">...</span></pre>
+    <p><b>Note :</b> Also be aware that the total events rate is 
+    theoretically in constant evolution and by the way, has to be updated 
+    in the stepping process.</p>
+    <p><b>StepSimulation()</b> method, is specialized too, and is very 
+    important : this is where the decisions for firing new events are 
+    taken. Consequently, you can keep it &quot;AS IS&quot; but you will 
+    have to override the <b>FireEvent()</b> hook, because this is where 
+    everything happen.</p>
+    <p>See the C++ documentation regarding the default implementation of 
+    <b>LabSimluatorTime::StepSimulation()</b>, which behavior can be 
+    customized through <b>LabSimluatorTime::TimeStep()</b>, <a 
+    href="cyelp.PyLabSimulatorTime-class.html#SetEndTime" 
+    class="link">SetEndTime()</a> and <a 
+    href="cyelp.PyLabSimulatorTime-class.html#SetOutputTimeStep" 
+    class="link">SetOutputTimeStep()</a>.</p>
+    <p>Here is how StepSimulation() looks like :</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-comment"># Default StepSimulation()'s behavior</span>
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">def</span> <span class="py-defname">StepSimulation</span>(self):                                                   
+<span class="py-more">... </span>    <span class="py-comment"># If time for output                                                                    </span>
+<span class="py-more">... </span>    <span class="py-keyword">if</span>(self.t_nextout &lt;= self.t_nextevent &amp;&amp; self.t_nextout &lt;= self.t_end):                                       
+<span class="py-more">... </span>                                                                                            
+<span class="py-more">... </span>        self.t = self.t_nextout                                                                       
+<span class="py-more">... </span>                                                                                          
+<span class="py-more">... </span>        self.OutputSimulation()                     <span class="py-comment"># OutputSimulation() fired every &quot;t_outstep&quot;</span>
+<span class="py-more">... </span>                                                    <span class="py-comment"># Feel free to override it...                                      </span>
+<span class="py-more">... </span>                                                                                          
+<span class="py-more">... </span>        self.t_nextout = self.t + self.t_outstep                                                           
+<span class="py-more">... </span>                                                                                            
+<span class="py-more">... </span>                                                                                          
+<span class="py-more">... </span>    <span class="py-comment"># If time for firing event                                                              </span>
+<span class="py-more">... </span>    <span class="py-keyword">if</span>(self.t_nextevent &lt;= self.t_nextout &amp;&amp; self.t_nextout &lt;= self.t_end)                                       
+<span class="py-more">... </span>                                                                                            
+<span class="py-more">... </span>        self.t = self.t_nextevent                                                                     
+<span class="py-more">... </span>                                                                                          
+<span class="py-more">... </span>        self.FireEvent()                            <span class="py-comment"># FireEvent() fired every &quot;TimeStep()&quot;      </span>
+<span class="py-more">... </span>                                                    <span class="py-comment"># Feel free to override it...                                      </span>
+<span class="py-more">... </span>        self.nb_fired_events += 1                                                                   
+<span class="py-more">... </span>                                                                                          
+<span class="py-more">... </span>        self.t_nextevent = self.t + self.TimeStep()                                                        
+<span class="py-more">... </span>                                                                                            
+<span class="py-more">... </span>                                                                                          
+<span class="py-more">... </span>    <span class="py-comment"># End reached = force t                                                                 </span>
+<span class="py-more">... </span>    <span class="py-keyword">if</span>(self.t_nextout &gt; self.t_end): self.t = self.t_end</pre>
+  <h1 class="heading">COMMON USAGE :</h1>
+    <ul>
+      <li>
+        Create a subclass of <a href="cyelp.PyLabSimulatorTime-class.html" 
+        class="link">PyLabSimulatorTime</a>
+      </li>
+      <li>
+        Feel free to override the hooks (virtual) functions fitting your 
+        needs
+      </li>
+    </ul>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Instance Methods</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>int</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSimulatorTime-class.html#GetNbFiredEvents" class="summary-sig-name">GetNbFiredEvents</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Get the number of events having been fired since the simulation has 
+      begun.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>float</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSimulatorTime-class.html#GetTime" class="summary-sig-name">GetTime</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Get the current time of this simulation.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSimulatorTime-class.html#SetEndTime" class="summary-sig-name">SetEndTime</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">end_time</span>)</span><br />
+      Set the maximum time for the simulation (better use a value related 
+      to the way chosen to compute time - See TimeStep()).</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSimulatorTime-class.html#SetOutputTimeStep" class="summary-sig-name">SetOutputTimeStep</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">out_time_step</span>)</span><br />
+      Set step of time for writing the output (better use a value related 
+      to the way chosen to compute time - See TimeStep()).</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSimulatorTime-class.html#SetTime" class="summary-sig-name">SetTime</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">time</span>)</span><br />
+      Force the current time (useful when starting the simulation from a 
+      given time instead of from the beginning - when recovering from an 
+      interruption, by example).</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSimulatorTime-class.html#UpdateEventsRate" class="summary-sig-name">UpdateEventsRate</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">rate</span>)</span><br />
+      Update the total events rate (value used to compute the &quot;time to
+      next event&quot; - See <code>TimeStep()</code>).</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSimulatorTime-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Default constructor.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">a new object with type S, a subtype of T</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSimulatorTime-class.html#__new__" class="summary-sig-name">__new__</a>(<span class="summary-sig-arg">T</span>,
+        <span class="summary-sig-arg">S</span>,
+        <span class="summary-sig-arg">...</span>)</span></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="cyelp.PyLabSimulatorBase-class.html">PyLabSimulatorBase</a></code></b>:
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#CleanAllDumpFiles">CleanAllDumpFiles</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#CleanUnusedDumpFile">CleanUnusedDumpFile</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#GetCurrentRepetition">GetCurrentRepetition</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#GetDoDump">GetDoDump</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#GetDoStartFromDump">GetDoStartFromDump</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#GetLastDumpFileIdAndClean">GetLastDumpFileIdAndClean</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#GetMaxPopulationSize">GetMaxPopulationSize</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#GetNbRepetitions">GetNbRepetitions</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#GetTimeDumpStep">GetTimeDumpStep</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#Run">Run</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#SetBinaryStreams">SetBinaryStreams</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#SetCurrentRepetition">SetCurrentRepetition</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#SetDoDump">SetDoDump</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#SetDoStartFromDump">SetDoStartFromDump</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#SetMaxPopulationSize">SetMaxPopulationSize</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#SetNbRepetitions">SetNbRepetitions</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#SetTimeDumpStep">SetTimeDumpStep</a></code>
+      </p>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__delattr__</code>,
+      <code>__format__</code>,
+      <code>__getattribute__</code>,
+      <code>__hash__</code>,
+      <code>__reduce__</code>,
+      <code>__reduce_ex__</code>,
+      <code>__repr__</code>,
+      <code>__setattr__</code>,
+      <code>__sizeof__</code>,
+      <code>__str__</code>,
+      <code>__subclasshook__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== PROPERTIES ==================== -->
+<a name="section-Properties"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Properties</span></td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__class__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Method Details</span></td>
+</tr>
+</table>
+<a name="GetNbFiredEvents"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetNbFiredEvents</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the number of events having been fired since the simulation has 
+  begun.</p>
+  <dl class="fields">
+    <dt>Returns: <code>int</code></dt>
+        <dd>A number of events.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetTime"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetTime</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the current time of this simulation.</p>
+  <dl class="fields">
+    <dt>Returns: <code>float</code></dt>
+        <dd>The current time expressed relatively to the TimeStep() method's 
+          inner algorithm.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="SetEndTime"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">SetEndTime</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">end_time</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Set the maximum time for the simulation (better use a value related to
+  the way chosen to compute time - See TimeStep()).</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>end_time</code></strong> (<code>float</code>) - The final time expressed relatively to the TimeStep() method's 
+          inner algorithm.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="SetOutputTimeStep"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">SetOutputTimeStep</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">out_time_step</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Set step of time for writing the output (better use a value related to
+  the way chosen to compute time - See TimeStep()).</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>out_time_step</code></strong> (<code>float</code>) - The time step expressed relatively to the TimeStep() method's 
+          inner algorithm.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="SetTime"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">SetTime</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">time</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Force the current time (useful when starting the simulation from a 
+  given time instead of from the beginning - when recovering from an 
+  interruption, by example).</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>time</code></strong> (<code>float</code>) - The time at which to start expressed relatively to the TimeStep()
+          method's inner algorithm.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="UpdateEventsRate"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">UpdateEventsRate</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">rate</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Update the total events rate (value used to compute the &quot;time to 
+  next event&quot; - See <code>TimeStep()</code>).</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>rate</code></strong> (<code>float</code>) - The new total events rate.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Default constructor.</p>
+  <dl class="fields">
+    <dt>Overrides:
+        object.__init__
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="__new__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__new__</span>(<span class="sig-arg">T</span>,
+        <span class="sig-arg">S</span>,
+        <span class="sig-arg">...</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Returns: a new object with type S, a subtype of T</dt>
+    <dt>Overrides:
+        object.__new__
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="cyelp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a href="http://www.evolab-project.org"><img src="../elp-cy-eee.png" style="margin:10px;" /></a>
+        <script>
+			var link = parent.document.createElement('link'); 
+			link.id = 'dynamic-favicon'; 
+			link.type = 'image/png'; 
+			link.rel = 'shortcut icon'; 
+			link.href = '../logo-base-fav.png'; 
+			parent.document.head.appendChild(link); 
+			parent.document.head = parent.document.head || parent.document.getElementsByTagName('head')[0];
+		</script></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Fri Jun  7 07:41:40 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

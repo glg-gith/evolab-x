@@ -1,0 +1,56 @@
+\hypertarget{classelps_1_1_lab_time_utils}{\section{elps\-:\-:Lab\-Time\-Utils Class Reference}
+\label{classelps_1_1_lab_time_utils}\index{elps\-::\-Lab\-Time\-Utils@{elps\-::\-Lab\-Time\-Utils}}
+}
+
+
+{\ttfamily \#include $<$Lab\-Time\-Utils.\-h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classelps_1_1_lab_time_utils_a41c3ece69617f44128e2ec09f14ea8b4}{Timeval\-Subtract} (struct timeval $\ast$result, struct timeval $\ast$t2, struct timeval $\ast$t1)
+\item 
+static void \hyperlink{classelps_1_1_lab_time_utils_a5ac6a5eca9d8e1049fbd6837fa54350b}{Timeval\-Print} (char $\ast$sout, struct timeval $\ast$tv)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Facility class for dealing with time (benchmarking). 
+
+\subsection{Member Function Documentation}
+\hypertarget{classelps_1_1_lab_time_utils_a5ac6a5eca9d8e1049fbd6837fa54350b}{\index{elps\-::\-Lab\-Time\-Utils@{elps\-::\-Lab\-Time\-Utils}!Timeval\-Print@{Timeval\-Print}}
+\index{Timeval\-Print@{Timeval\-Print}!elps::LabTimeUtils@{elps\-::\-Lab\-Time\-Utils}}
+\subsubsection[{Timeval\-Print}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Time\-Utils\-::\-Timeval\-Print (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{sout, }
+\item[{struct timeval $\ast$}]{tv}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classelps_1_1_lab_time_utils_a5ac6a5eca9d8e1049fbd6837fa54350b}
+Print a time into a string 
+\begin{DoxyParams}{Parameters}
+{\em sout} & The resulting string \\
+\hline
+{\em tv} & the time to print \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_time_utils_a41c3ece69617f44128e2ec09f14ea8b4}{\index{elps\-::\-Lab\-Time\-Utils@{elps\-::\-Lab\-Time\-Utils}!Timeval\-Subtract@{Timeval\-Subtract}}
+\index{Timeval\-Subtract@{Timeval\-Subtract}!elps::LabTimeUtils@{elps\-::\-Lab\-Time\-Utils}}
+\subsubsection[{Timeval\-Subtract}]{\setlength{\rightskip}{0pt plus 5cm}int elps\-::\-Lab\-Time\-Utils\-::\-Timeval\-Subtract (
+\begin{DoxyParamCaption}
+\item[{struct timeval $\ast$}]{result, }
+\item[{struct timeval $\ast$}]{t2, }
+\item[{struct timeval $\ast$}]{t1}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classelps_1_1_lab_time_utils_a41c3ece69617f44128e2ec09f14ea8b4}
+Subtract two given times (works on C timeval types) 
+\begin{DoxyParams}{Parameters}
+{\em result} & Storage of the result of the subtraction \\
+\hline
+{\em t2} & Time to be subtracted from \\
+\hline
+{\em t1} & Time to subtract from t2 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+1 if the difference is negative, otherwise 0 
+\end{DoxyReturn}

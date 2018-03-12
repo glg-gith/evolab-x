@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>cyelp.PyLabSimulatorTimeArray</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="cyelp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a href="http://www.evolab-project.org"><img src="../elp-cy-eee.png" style="margin:10px;" /></a>
+        <script>
+			var link = parent.document.createElement('link'); 
+			link.id = 'dynamic-favicon'; 
+			link.type = 'image/png'; 
+			link.rel = 'shortcut icon'; 
+			link.href = '../logo-base-fav.png'; 
+			parent.document.head.appendChild(link); 
+			parent.document.head = parent.document.head || parent.document.getElementsByTagName('head')[0];
+		</script></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="cyelp-module.html">Module&nbsp;cyelp</a> ::
+        Class&nbsp;PyLabSimulatorTimeArray
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="cyelp.PyLabSimulatorTimeArray-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class PyLabSimulatorTimeArray</h1><p class="nomargin-top"></p>
+<center>
+<center>  <map id="uml_class_diagram_for_cyelp_py_18" name="uml_class_diagram_for_cyelp_py_18">
+<area shape="rect" id="node33" href="cyelp.PyLabSimulatorTimeArray-class.html#GetArrayBinding" title="arrayBinding property accessor &#45; See PyLabArrayBinding for details." alt="" coords="53,559,223,577"/>
+<area shape="rect" id="node33" href="cyelp.PyLabSimulatorTimeArray-class.html#SetArrayBinding" title="Setter for the arrayBinding property." alt="" coords="53,577,223,596"/>
+<area shape="rect" id="node33" href="cyelp.PyLabSimulatorTimeArray-class.html#__init__" title="Default constructor." alt="" coords="53,596,223,615"/>
+<area shape="rect" id="node33" href="cyelp.PyLabSimulatorTimeArray-class.html#__new__" title="cyelp.PyLabSimulatorTimeArray.__new__" alt="" coords="53,615,223,633"/>
+<area shape="rect" id="node1" href="cyelp.PyLabSimulatorTimeArray-class.html" title="Class designed to create MASS ACTION and TIME based simulation." alt="" coords="41,526,233,639"/>
+<area shape="rect" id="node3" href="cyelp.PyLabArrayBinding-class.html" title="This class embeds a list of sites and provides features to populate it (for use in a MASS ACTION context)." alt="" coords="65,681,212,719"/>
+<area shape="poly" id="edge2" href="cyelp.PyLabSimulatorTimeArray-class.html#arrayBinding" title="cyelp.PyLabSimulatorTimeArray.arrayBinding" alt="" coords="141,635 141,672 136,672 136,635"/>
+<area shape="rect" id="edge2" href="cyelp.PyLabSimulatorTimeArray-class.html#arrayBinding" title="arrayBinding" alt="" coords="139,651,212,669"/>
+<area shape="rect" id="node34" href="cyelp.PyLabSimulatorTime-class.html#GetNbFiredEvents" title="Get the number of events having been fired since the simulation has begun." alt="" coords="17,383,259,401"/>
+<area shape="rect" id="node34" href="cyelp.PyLabSimulatorTime-class.html#GetTime" title="Get the current time of this simulation." alt="" coords="17,401,259,420"/>
+<area shape="rect" id="node34" href="cyelp.PyLabSimulatorTime-class.html#SetEndTime" title="Set the maximum time for the simulation (better use a value related to the &#160;way chosen to compute time &#45; See TimeStep())." alt="" coords="17,420,259,439"/>
+<area shape="rect" id="node34" href="cyelp.PyLabSimulatorTime-class.html#SetOutputTimeStep" title="Set step of time for writing the output (better use a value related to the &#160;way chosen to compute time &#45; See TimeStep())." alt="" coords="17,439,259,457"/>
+<area shape="rect" id="node34" href="cyelp.PyLabSimulatorTime-class.html#SetTime" title="Force the current time (useful when starting the simulation from a given &#160;time instead of from the beginning &#45; when recovering from an interruption, &#160;by example)." alt="" coords="17,457,259,476"/>
+<area shape="rect" id="node34" href="cyelp.PyLabSimulatorTime-class.html#UpdateEventsRate" title="Update the total events rate (value used to compute the &quot;time to next &#160;event&quot; &#45; See TimeStep())." alt="" coords="17,476,259,495"/>
+<area shape="rect" id="node4" href="cyelp.PyLabSimulatorTime-class.html" title="A basic TIME based subclass of PyLabSimulatorBase." alt="" coords="5,350,269,501"/>
+<area shape="rect" id="node35" href="cyelp.PyLabSimulatorBase-class.html#CleanAllDumpFiles" title="Remove from disk all the previously generated dumps." alt="" coords="35,39,241,57"/>
+<area shape="rect" id="node35" href="cyelp.PyLabSimulatorBase-class.html#CleanUnusedDumpFile" title="Remove the most ancient dump files during the stepping process (See &#160;StepBinarize())." alt="" coords="35,57,241,76"/>
+<area shape="rect" id="node35" href="cyelp.PyLabSimulatorBase-class.html#GetCurrentRepetition" title="Catch the index of the iteration currently being run." alt="" coords="35,76,241,95"/>
+<area shape="rect" id="node35" href="cyelp.PyLabSimulatorBase-class.html#GetDoDump" title="Check if the dumping system has been activated." alt="" coords="35,95,241,113"/>
+<area shape="rect" id="node35" href="cyelp.PyLabSimulatorBase-class.html#GetDoStartFromDump" title="Check if the system must be recovered from dump files." alt="" coords="35,113,241,132"/>
+<area shape="rect" id="node35" href="cyelp.PyLabSimulatorBase-class.html#GetLastDumpFileIdAndClean" title="Read the penultimate binary dump file (to make sure the integrity of the &#160;file we are working with is preserved, we don&#39;t pick up the very last one, &#160;as it could have been corrupted...)." alt="" coords="35,132,241,151"/>
+<area shape="rect" id="node35" href="cyelp.PyLabSimulatorBase-class.html#GetMaxPopulationSize" title="Requires a preliminary call to SetMaxPopulationSize()" alt="" coords="35,151,241,169"/>
+<area shape="rect" id="node35" href="cyelp.PyLabSimulatorBase-class.html#GetNbRepetitions" title="Get the number of trials for the whole process." alt="" coords="35,169,241,188"/>
+<area shape="rect" id="node35" href="cyelp.PyLabSimulatorBase-class.html#GetTimeDumpStep" title="Get the delta of time between each dump (when &#39;do_dump&#39; is set to true)." alt="" coords="35,188,241,207"/>
+<area shape="rect" id="node35" href="cyelp.PyLabSimulatorBase-class.html#Run" title="WARNING :" alt="" coords="35,207,241,225"/>
+<area shape="rect" id="node35" href="cyelp.PyLabSimulatorBase-class.html#SetBinaryStreams" title="Possibility to specify the output and input streams to respectively dump &#160;and restore using the binarization features." alt="" coords="35,225,241,244"/>
+<area shape="rect" id="node35" href="cyelp.PyLabSimulatorBase-class.html#SetCurrentRepetition" title="WARNING ! Should not be forced by hand during a run." alt="" coords="35,244,241,263"/>
+<area shape="rect" id="node35" href="cyelp.PyLabSimulatorBase-class.html#SetDoDump" title="Set if the dump of the system must be activated." alt="" coords="35,263,241,281"/>
+<area shape="rect" id="node35" href="cyelp.PyLabSimulatorBase-class.html#SetTimeDumpStep" title="Set the interval between each dump (when &#39;do_dump&#39; is set to true)." alt="" coords="35,300,241,319"/>
+<area shape="rect" id="node5" href="cyelp.PyLabSimulatorBase-class.html" title="Base class meant to be subclassed when writing a simulation." alt="" coords="23,6,252,325"/>
+</map>
+  <img src="uml_class_diagram_for_cyelp_py_18.gif" alt='' usemap="#uml_class_diagram_for_cyelp_py_18" ismap="ismap" class="graph-without-title" />
+</center>
+</center>
+<hr />
+<p>Class designed to create MASS ACTION and TIME based simulation.</p>
+  <p>It's got all the features of a <a 
+  href="cyelp.PyLabSimulatorTime-class.html" 
+  class="link">PyLabSimulatorTime</a> simulation but additionally 
+  aggregates a list of Sites via a <a 
+  href="cyelp.PyLabArrayBinding-class.html" 
+  class="link">PyLabArrayBinding</a>.</p>
+  <h1 class="heading">COMMON USAGE :</h1>
+    <ul>
+      <li>
+        Create a subclass of LabSimulatorTimeArray
+      </li>
+      <li>
+        Feel free to override the hooks (virtual) functions fitting your 
+        needs
+      </li>
+    </ul>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Instance Methods</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><a href="cyelp.PyLabArrayBinding-class.html" 
+      class="link">PyLabArrayBinding</a></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="GetArrayBinding"></a><span class="summary-sig-name">GetArrayBinding</span>(<span class="summary-sig-arg">...</span>)</span><br />
+      <a href="cyelp.PyLabSimulatorTimeArray-class.html#arrayBinding" 
+      class="link">arrayBinding</a> property accessor - See <a 
+      href="cyelp.PyLabArrayBinding-class.html" 
+      class="link">PyLabArrayBinding</a> for details.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSimulatorTimeArray-class.html#SetArrayBinding" class="summary-sig-name">SetArrayBinding</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">value</span>)</span><br />
+      Setter for the <b>arrayBinding</b> property.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSimulatorTimeArray-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Default constructor.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">a new object with type S, a subtype of T</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSimulatorTimeArray-class.html#__new__" class="summary-sig-name">__new__</a>(<span class="summary-sig-arg">T</span>,
+        <span class="summary-sig-arg">S</span>,
+        <span class="summary-sig-arg">...</span>)</span></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="cyelp.PyLabSimulatorTime-class.html">PyLabSimulatorTime</a></code></b>:
+      <code><a href="cyelp.PyLabSimulatorTime-class.html#GetNbFiredEvents">GetNbFiredEvents</a></code>,
+      <code><a href="cyelp.PyLabSimulatorTime-class.html#GetTime">GetTime</a></code>,
+      <code><a href="cyelp.PyLabSimulatorTime-class.html#SetEndTime">SetEndTime</a></code>,
+      <code><a href="cyelp.PyLabSimulatorTime-class.html#SetOutputTimeStep">SetOutputTimeStep</a></code>,
+      <code><a href="cyelp.PyLabSimulatorTime-class.html#SetTime">SetTime</a></code>,
+      <code><a href="cyelp.PyLabSimulatorTime-class.html#UpdateEventsRate">UpdateEventsRate</a></code>
+      </p>
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="cyelp.PyLabSimulatorBase-class.html">PyLabSimulatorBase</a></code></b>:
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#CleanAllDumpFiles">CleanAllDumpFiles</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#CleanUnusedDumpFile">CleanUnusedDumpFile</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#GetCurrentRepetition">GetCurrentRepetition</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#GetDoDump">GetDoDump</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#GetDoStartFromDump">GetDoStartFromDump</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#GetLastDumpFileIdAndClean">GetLastDumpFileIdAndClean</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#GetMaxPopulationSize">GetMaxPopulationSize</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#GetNbRepetitions">GetNbRepetitions</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#GetTimeDumpStep">GetTimeDumpStep</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#Run">Run</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#SetBinaryStreams">SetBinaryStreams</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#SetCurrentRepetition">SetCurrentRepetition</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#SetDoDump">SetDoDump</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#SetDoStartFromDump">SetDoStartFromDump</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#SetMaxPopulationSize">SetMaxPopulationSize</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#SetNbRepetitions">SetNbRepetitions</a></code>,
+      <code><a href="cyelp.PyLabSimulatorBase-class.html#SetTimeDumpStep">SetTimeDumpStep</a></code>
+      </p>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__delattr__</code>,
+      <code>__format__</code>,
+      <code>__getattribute__</code>,
+      <code>__hash__</code>,
+      <code>__reduce__</code>,
+      <code>__reduce_ex__</code>,
+      <code>__repr__</code>,
+      <code>__setattr__</code>,
+      <code>__sizeof__</code>,
+      <code>__str__</code>,
+      <code>__subclasshook__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== PROPERTIES ==================== -->
+<a name="section-Properties"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Properties</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><a href="cyelp.PyLabArrayBinding-class.html" 
+      class="link">PyLabArrayBinding</a></span>
+    </td><td class="summary">
+        <a href="cyelp.PyLabSimulatorTimeArray-class.html#arrayBinding" class="summary-name">arrayBinding</a><br />
+      <a href="cyelp.PyLabSimulatorTimeArray-class.html#arrayBinding" 
+      class="link">arrayBinding</a> property accessor - See <a 
+      href="cyelp.PyLabArrayBinding-class.html" 
+      class="link">PyLabArrayBinding</a> for details.
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__class__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Method Details</span></td>
+</tr>
+</table>
+<a name="SetArrayBinding"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">SetArrayBinding</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">value</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Setter for the <b>arrayBinding</b> property.</p>
+  <p>WARNING :</p>
+<pre class="literalblock">
+   The arrayBinding property is read-only !
+</pre>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Default constructor.</p>
+  <dl class="fields">
+    <dt>Overrides:
+        object.__init__
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="__new__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__new__</span>(<span class="sig-arg">T</span>,
+        <span class="sig-arg">S</span>,
+        <span class="sig-arg">...</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Returns: a new object with type S, a subtype of T</dt>
+    <dt>Overrides:
+        object.__new__
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== PROPERTY DETAILS ==================== -->
+<a name="section-PropertyDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Property Details</span></td>
+</tr>
+</table>
+<a name="arrayBinding"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <h3 class="epydoc">arrayBinding</h3>
+  <p><a href="cyelp.PyLabSimulatorTimeArray-class.html#arrayBinding" 
+  class="link">arrayBinding</a> property accessor - See <a 
+  href="cyelp.PyLabArrayBinding-class.html" 
+  class="link">PyLabArrayBinding</a> for details.</p>
+  <dl class="fields">
+    <dt>Get Method:</dt>
+    <dd class="value"><span class="summary-sig"><a href="cyelp.PyLabSimulatorTimeArray-class.html#GetArrayBinding" class="summary-sig-name">GetArrayBinding</a>(<span class="summary-sig-arg">...</span>)</span>
+        - <a href="cyelp.PyLabSimulatorTimeArray-class.html#arrayBinding" 
+      class="link">arrayBinding</a> property accessor - See <a 
+      href="cyelp.PyLabArrayBinding-class.html" 
+      class="link">PyLabArrayBinding</a> for details.
+    </dd>
+    <dt>Set Method:</dt>
+    <dd class="value"><span class="summary-sig"><a href="cyelp.PyLabSimulatorTimeArray-class.html#SetArrayBinding" class="summary-sig-name">SetArrayBinding</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">value</span>)</span>
+        - Setter for the <b>arrayBinding</b> property.
+    </dd>
+    <dt>Type:</dt>
+      <dd><a href="cyelp.PyLabArrayBinding-class.html" 
+      class="link">PyLabArrayBinding</a></dd>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="cyelp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a href="http://www.evolab-project.org"><img src="../elp-cy-eee.png" style="margin:10px;" /></a>
+        <script>
+			var link = parent.document.createElement('link'); 
+			link.id = 'dynamic-favicon'; 
+			link.type = 'image/png'; 
+			link.rel = 'shortcut icon'; 
+			link.href = '../logo-base-fav.png'; 
+			parent.document.head.appendChild(link); 
+			parent.document.head = parent.document.head || parent.document.getElementsByTagName('head')[0];
+		</script></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Fri Jun  7 07:41:40 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

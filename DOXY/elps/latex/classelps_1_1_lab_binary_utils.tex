@@ -1,0 +1,121 @@
+\hypertarget{classelps_1_1_lab_binary_utils}{\section{elps\-:\-:Lab\-Binary\-Utils Class Reference}
+\label{classelps_1_1_lab_binary_utils}\index{elps\-::\-Lab\-Binary\-Utils@{elps\-::\-Lab\-Binary\-Utils}}
+}
+
+
+{\ttfamily \#include $<$Lab\-Binary\-Utils.\-h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classelps_1_1_lab_binary_utils_a8106920687a59f85c301514d3a60fc32}{Read\-Int\-From\-Stream} (ifstream $\ast$istream)
+\item 
+double \hyperlink{classelps_1_1_lab_binary_utils_a086e10166668484dbc4f8ea5677dff58}{Read\-Double\-From\-Stream} (ifstream $\ast$istream)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename type $>$ }\\static void \hyperlink{classelps_1_1_lab_binary_utils_a2c5e61ad5108cbaf5ac2e757ab5d3475}{Write\-Value\-To\-Stream} (type val, ofstream $\ast$ostream)
+\item 
+{\footnotesize template$<$typename type $>$ }\\static void \hyperlink{classelps_1_1_lab_binary_utils_aacefd0e197978750669d1dde4634ba5c}{Read\-Value\-From\-Stream} (type \&val, ifstream $\ast$istream)
+\item 
+{\footnotesize template$<$typename vector\-Type $>$ }\\static void \hyperlink{classelps_1_1_lab_binary_utils_a0df99bc2f26dd144c1a598c4bc943ca7}{Write\-Vector\-To\-Stream} (vector$<$ vector\-Type $>$ \&vect, ofstream $\ast$ostream)
+\item 
+{\footnotesize template$<$typename vector\-Type $>$ }\\static void \hyperlink{classelps_1_1_lab_binary_utils_ad681309551b853645cb6aea77126a871}{Read\-Vector\-From\-Stream} (vector$<$ vector\-Type $>$ \&vect, ifstream $\ast$istream)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Utility class for writing and reading information stored in binary files. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classelps_1_1_lab_binary_utils_a086e10166668484dbc4f8ea5677dff58}{\index{elps\-::\-Lab\-Binary\-Utils@{elps\-::\-Lab\-Binary\-Utils}!Read\-Double\-From\-Stream@{Read\-Double\-From\-Stream}}
+\index{Read\-Double\-From\-Stream@{Read\-Double\-From\-Stream}!elps::LabBinaryUtils@{elps\-::\-Lab\-Binary\-Utils}}
+\subsubsection[{Read\-Double\-From\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}double elps\-::\-Lab\-Binary\-Utils\-::\-Read\-Double\-From\-Stream (
+\begin{DoxyParamCaption}
+\item[{ifstream $\ast$}]{istream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classelps_1_1_lab_binary_utils_a086e10166668484dbc4f8ea5677dff58}
+Read a double from an input binary stream (no-\/templates for Cython compliance). 
+\begin{DoxyParams}{Parameters}
+{\em istream} & The stream to read from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The double value 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_binary_utils_a8106920687a59f85c301514d3a60fc32}{\index{elps\-::\-Lab\-Binary\-Utils@{elps\-::\-Lab\-Binary\-Utils}!Read\-Int\-From\-Stream@{Read\-Int\-From\-Stream}}
+\index{Read\-Int\-From\-Stream@{Read\-Int\-From\-Stream}!elps::LabBinaryUtils@{elps\-::\-Lab\-Binary\-Utils}}
+\subsubsection[{Read\-Int\-From\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}int elps\-::\-Lab\-Binary\-Utils\-::\-Read\-Int\-From\-Stream (
+\begin{DoxyParamCaption}
+\item[{ifstream $\ast$}]{istream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classelps_1_1_lab_binary_utils_a8106920687a59f85c301514d3a60fc32}
+Read an integer from an input binary stream (no-\/templates for Cython compliance). 
+\begin{DoxyParams}{Parameters}
+{\em istream} & The stream to read from \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The integer value 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_binary_utils_aacefd0e197978750669d1dde4634ba5c}{\index{elps\-::\-Lab\-Binary\-Utils@{elps\-::\-Lab\-Binary\-Utils}!Read\-Value\-From\-Stream@{Read\-Value\-From\-Stream}}
+\index{Read\-Value\-From\-Stream@{Read\-Value\-From\-Stream}!elps::LabBinaryUtils@{elps\-::\-Lab\-Binary\-Utils}}
+\subsubsection[{Read\-Value\-From\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename type $>$ static void elps\-::\-Lab\-Binary\-Utils\-::\-Read\-Value\-From\-Stream (
+\begin{DoxyParamCaption}
+\item[{type \&}]{val, }
+\item[{ifstream $\ast$}]{istream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classelps_1_1_lab_binary_utils_aacefd0e197978750669d1dde4634ba5c}
+Read a value (object of any type) from an input binary stream 
+\begin{DoxyParams}{Parameters}
+{\em val} & The object to read \\
+\hline
+{\em istream} & The stream to read from \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_binary_utils_ad681309551b853645cb6aea77126a871}{\index{elps\-::\-Lab\-Binary\-Utils@{elps\-::\-Lab\-Binary\-Utils}!Read\-Vector\-From\-Stream@{Read\-Vector\-From\-Stream}}
+\index{Read\-Vector\-From\-Stream@{Read\-Vector\-From\-Stream}!elps::LabBinaryUtils@{elps\-::\-Lab\-Binary\-Utils}}
+\subsubsection[{Read\-Vector\-From\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename vector\-Type $>$ static void elps\-::\-Lab\-Binary\-Utils\-::\-Read\-Vector\-From\-Stream (
+\begin{DoxyParamCaption}
+\item[{vector$<$ vector\-Type $>$ \&}]{vect, }
+\item[{ifstream $\ast$}]{istream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classelps_1_1_lab_binary_utils_ad681309551b853645cb6aea77126a871}
+Read a vector (containing objects of any type) from an input binary stream 
+\begin{DoxyParams}{Parameters}
+{\em vect} & The vector of objects \\
+\hline
+{\em istream} & The stream to read from \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_binary_utils_a2c5e61ad5108cbaf5ac2e757ab5d3475}{\index{elps\-::\-Lab\-Binary\-Utils@{elps\-::\-Lab\-Binary\-Utils}!Write\-Value\-To\-Stream@{Write\-Value\-To\-Stream}}
+\index{Write\-Value\-To\-Stream@{Write\-Value\-To\-Stream}!elps::LabBinaryUtils@{elps\-::\-Lab\-Binary\-Utils}}
+\subsubsection[{Write\-Value\-To\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename type $>$ static void elps\-::\-Lab\-Binary\-Utils\-::\-Write\-Value\-To\-Stream (
+\begin{DoxyParamCaption}
+\item[{type}]{val, }
+\item[{ofstream $\ast$}]{ostream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classelps_1_1_lab_binary_utils_a2c5e61ad5108cbaf5ac2e757ab5d3475}
+Write a value (object of any type) to an output binary stream 
+\begin{DoxyParams}{Parameters}
+{\em val} & The object to write \\
+\hline
+{\em ostream} & The stream to write to \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_binary_utils_a0df99bc2f26dd144c1a598c4bc943ca7}{\index{elps\-::\-Lab\-Binary\-Utils@{elps\-::\-Lab\-Binary\-Utils}!Write\-Vector\-To\-Stream@{Write\-Vector\-To\-Stream}}
+\index{Write\-Vector\-To\-Stream@{Write\-Vector\-To\-Stream}!elps::LabBinaryUtils@{elps\-::\-Lab\-Binary\-Utils}}
+\subsubsection[{Write\-Vector\-To\-Stream}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename vector\-Type $>$ static void elps\-::\-Lab\-Binary\-Utils\-::\-Write\-Vector\-To\-Stream (
+\begin{DoxyParamCaption}
+\item[{vector$<$ vector\-Type $>$ \&}]{vect, }
+\item[{ofstream $\ast$}]{ostream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}}\label{classelps_1_1_lab_binary_utils_a0df99bc2f26dd144c1a598c4bc943ca7}
+Write a vector (containing objects of any type) to an output binary stream 
+\begin{DoxyParams}{Parameters}
+{\em vect} & The vector of objects \\
+\hline
+{\em ostream} & The stream to write to \\
+\hline
+\end{DoxyParams}

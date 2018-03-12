@@ -1,0 +1,52 @@
+\hypertarget{classelps_1_1_lab_simulator_diff_eq_event_ind}{\section{elps\-:\-:Lab\-Simulator\-Diff\-Eq\-Event\-Ind Class Reference}
+\label{classelps_1_1_lab_simulator_diff_eq_event_ind}\index{elps\-::\-Lab\-Simulator\-Diff\-Eq\-Event\-Ind@{elps\-::\-Lab\-Simulator\-Diff\-Eq\-Event\-Ind}}
+}
+
+
+{\ttfamily \#include $<$Lab\-Simulator\-Diff\-Eq\-Event\-Ind.\-h$>$}
+
+Inheritance diagram for elps\-:\-:Lab\-Simulator\-Diff\-Eq\-Event\-Ind\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=5.000000cm]{classelps_1_1_lab_simulator_diff_eq_event_ind}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ \hyperlink{classelps_1_1_lab_site_base}{Lab\-Site\-Base} $\ast$ $>$ \hyperlink{classelps_1_1_lab_simulator_diff_eq_event_ind_acd4c06d710c47b173d57f3137f185871}{Create\-System} (int critical\-\_\-size)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Inherits from \hyperlink{classelps_1_1_lab_simulator_diff_eq_event}{Lab\-Simulator\-Diff\-Eq\-Event} for event handling at the simulation's level + dealing with individuals (aka \-: \hyperlink{classelps_1_1_lab_site_base}{Lab\-Site\-Base} objects). 
+
+\subsection{Member Function Documentation}
+\hypertarget{classelps_1_1_lab_simulator_diff_eq_event_ind_acd4c06d710c47b173d57f3137f185871}{\index{elps\-::\-Lab\-Simulator\-Diff\-Eq\-Event\-Ind@{elps\-::\-Lab\-Simulator\-Diff\-Eq\-Event\-Ind}!Create\-System@{Create\-System}}
+\index{Create\-System@{Create\-System}!elps::LabSimulatorDiffEqEventInd@{elps\-::\-Lab\-Simulator\-Diff\-Eq\-Event\-Ind}}
+\subsubsection[{Create\-System}]{\setlength{\rightskip}{0pt plus 5cm}vector$<${\bf Lab\-Site\-Base} $\ast$$>$ elps\-::\-Lab\-Simulator\-Diff\-Eq\-Event\-Ind\-::\-Create\-System (
+\begin{DoxyParamCaption}
+\item[{int}]{critical\-\_\-size}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_simulator_diff_eq_event_ind_acd4c06d710c47b173d57f3137f185871}
+Instantiate \char`\"{}critical\-\_\-size\char`\"{} objects of type \hyperlink{classelps_1_1_lab_site_base}{Lab\-Site\-Base}. Each of them subscribes to the \hyperlink{classelps_1_1_lab_site_sets_manager}{Lab\-Site\-Sets\-Manager} belonging to the \char`\"{}pop\-\_\-name\char`\"{} set/group. Each of them is also created with a default \char`\"{}\-E\-M\-P\-T\-Y\char`\"{} S\-T\-A\-T\-E. It belongs to the user to then initialize the whole population (adding some states and attributes to some of those S\-I\-T\-Es).
+
+
+\begin{DoxyParams}{Parameters}
+{\em critical\-\_\-size} & The maximum critical size of the population (limit for the possibility of reproduction) \\
+\hline
+{\em pop\-\_\-name} & Name of the newly created group of sites (aka \-: population) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Instantiate \char`\"{}critical\-\_\-size\char`\"{} objects of type \hyperlink{classelps_1_1_lab_site_base}{Lab\-Site\-Base}. Each of them subscribes to the \hyperlink{classelps_1_1_lab_site_sets_manager}{Lab\-Site\-Sets\-Manager} belonging to the \char`\"{}\-U\char`\"{} set/group (the U\-N\-I\-V\-E\-R\-S of the simulation). Each of them is also created with a default \char`\"{}\-E\-M\-P\-T\-Y\char`\"{} S\-T\-A\-T\-E. It belongs to the user to then initialize the whole population (adding some states and attributes to some of those S\-I\-T\-Es). 
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em critical\-\_\-size} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}

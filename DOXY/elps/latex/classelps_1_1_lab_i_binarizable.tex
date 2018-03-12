@@ -1,0 +1,60 @@
+\hypertarget{classelps_1_1_lab_i_binarizable}{\section{elps\-:\-:Lab\-I\-Binarizable Class Reference}
+\label{classelps_1_1_lab_i_binarizable}\index{elps\-::\-Lab\-I\-Binarizable@{elps\-::\-Lab\-I\-Binarizable}}
+}
+
+
+{\ttfamily \#include $<$Lab\-I\-Binarizable.\-h$>$}
+
+Inheritance diagram for elps\-:\-:Lab\-I\-Binarizable\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.818182cm]{classelps_1_1_lab_i_binarizable}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{classelps_1_1_lab_i_binarizable_aecc9b383945b4c4e304675e5c970f69d}{Binarize} (ofstream $\ast$ostream)
+\item 
+virtual void \hyperlink{classelps_1_1_lab_i_binarizable_a381af24c243c967b491101b7dbecb252}{Un\-Binarize} (ifstream $\ast$istream)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Interface class for all the objects for which we potentially need to backup/restore the state physically to/from a file. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classelps_1_1_lab_i_binarizable_aecc9b383945b4c4e304675e5c970f69d}{\index{elps\-::\-Lab\-I\-Binarizable@{elps\-::\-Lab\-I\-Binarizable}!Binarize@{Binarize}}
+\index{Binarize@{Binarize}!elps::LabIBinarizable@{elps\-::\-Lab\-I\-Binarizable}}
+\subsubsection[{Binarize}]{\setlength{\rightskip}{0pt plus 5cm}virtual void elps\-::\-Lab\-I\-Binarizable\-::\-Binarize (
+\begin{DoxyParamCaption}
+\item[{ofstream $\ast$}]{ostream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classelps_1_1_lab_i_binarizable_aecc9b383945b4c4e304675e5c970f69d}
+Save the current state of the binarizable object to a given output stream (binary format).\par
+ Must be overridden ! 
+\begin{DoxyParams}{Parameters}
+{\em ostream} & Output stream to backup to. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classelps_1_1_lab_site_base_a42e30841600ed1e45dcd2c1c2a3071e8}{elps\-::\-Lab\-Site\-Base}, \hyperlink{classelps_1_1_lab_event_stack_a85bb93839b48b856a2b4d9d99804c5e0}{elps\-::\-Lab\-Event\-Stack}, \hyperlink{classelps_1_1_lab_action_stack_ae6608e50b77c7af7047f161f20c59d03}{elps\-::\-Lab\-Action\-Stack}, \hyperlink{classelps_1_1_lab_site_event_af4220ab0bbcf208e73b073a73a77c076}{elps\-::\-Lab\-Site\-Event}, \hyperlink{classelps_1_1_lab_attributes_stack_a071d6153765174e869d743d435aa04df}{elps\-::\-Lab\-Attributes\-Stack}, \hyperlink{classelps_1_1_lab_state_stack_a3cd8dd04feef1244f6cacb6408a1b56e}{elps\-::\-Lab\-State\-Stack}, and \hyperlink{classelps_1_1_lab_outputer_a4a850317a26a30c441b3e913a4bb05f6}{elps\-::\-Lab\-Outputer}.
+
+\hypertarget{classelps_1_1_lab_i_binarizable_a381af24c243c967b491101b7dbecb252}{\index{elps\-::\-Lab\-I\-Binarizable@{elps\-::\-Lab\-I\-Binarizable}!Un\-Binarize@{Un\-Binarize}}
+\index{Un\-Binarize@{Un\-Binarize}!elps::LabIBinarizable@{elps\-::\-Lab\-I\-Binarizable}}
+\subsubsection[{Un\-Binarize}]{\setlength{\rightskip}{0pt plus 5cm}virtual void elps\-::\-Lab\-I\-Binarizable\-::\-Un\-Binarize (
+\begin{DoxyParamCaption}
+\item[{ifstream $\ast$}]{istream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classelps_1_1_lab_i_binarizable_a381af24c243c967b491101b7dbecb252}
+Restore the binarizable object from a given input stream (binary format).\par
+ Must be overridden ! 
+\begin{DoxyParams}{Parameters}
+{\em istream} & Input stream from which to get the info required to restore the object \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \hyperlink{classelps_1_1_lab_site_base_ad1b2721336db27de86213769b78d3ccd}{elps\-::\-Lab\-Site\-Base}, \hyperlink{classelps_1_1_lab_event_stack_a2d3587e25801f8e1f1950bc933846ab0}{elps\-::\-Lab\-Event\-Stack}, \hyperlink{classelps_1_1_lab_action_stack_ae523bf40512050cde98f35acc9292bfc}{elps\-::\-Lab\-Action\-Stack}, \hyperlink{classelps_1_1_lab_site_event_a237da73d8796cbff70f66d953fbe4c2c}{elps\-::\-Lab\-Site\-Event}, \hyperlink{classelps_1_1_lab_attributes_stack_abc03b7e9c4afaeeed3493398a1353e2b}{elps\-::\-Lab\-Attributes\-Stack}, \hyperlink{classelps_1_1_lab_state_stack_a2e449395adca12f1030338d931ff902a}{elps\-::\-Lab\-State\-Stack}, and \hyperlink{classelps_1_1_lab_outputer_a7b9213f0a5bf47ecdf4b87c4ad7757b4}{elps\-::\-Lab\-Outputer}.
+

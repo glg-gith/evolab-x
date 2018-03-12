@@ -1,0 +1,560 @@
+\hypertarget{classelps_1_1_lab_network}{\section{elps\-:\-:Lab\-Network Class Reference}
+\label{classelps_1_1_lab_network}\index{elps\-::\-Lab\-Network@{elps\-::\-Lab\-Network}}
+}
+
+
+{\ttfamily \#include $<$Lab\-Network.\-h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum {\bfseries net\-Type} \{ {\bfseries Undirected} = 0, 
+{\bfseries Directed} = 1
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classelps_1_1_lab_network_a27bf64f9378313b9533201daf70fa8d2}{void {\bfseries Init} (string name, net\-Type directed)}\label{classelps_1_1_lab_network_a27bf64f9378313b9533201daf70fa8d2}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_aa16dcd790f67390e9f8038b7c67c97a5}{{\bfseries Lab\-Network} (string name, net\-Type directed)}\label{classelps_1_1_lab_network_aa16dcd790f67390e9f8038b7c67c97a5}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a9b8166a889554be6ef11642ee43a15f2}{{\bfseries Lab\-Network} (const \hyperlink{classelps_1_1_lab_network}{Lab\-Network} \&net)}\label{classelps_1_1_lab_network_a9b8166a889554be6ef11642ee43a15f2}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a91b9f6a674fffdeb4cb759596ef705b7}{\hyperlink{classelps_1_1_lab_network}{Lab\-Network} $\ast$ {\bfseries duplicate} ()}\label{classelps_1_1_lab_network_a91b9f6a674fffdeb4cb759596ef705b7}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a0d0e7a6d08d9503521377e906f88a97e}{bool {\bfseries operator==} (const \hyperlink{classelps_1_1_lab_network}{Lab\-Network} \&n2)}\label{classelps_1_1_lab_network_a0d0e7a6d08d9503521377e906f88a97e}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_ac01befb26e5377313fceeaa0da1fb760}{int {\bfseries get\-\_\-id} ()}\label{classelps_1_1_lab_network_ac01befb26e5377313fceeaa0da1fb760}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a5fe226eca7093ffca9c599a7470af7b0}{string {\bfseries get\-\_\-name} ()}\label{classelps_1_1_lab_network_a5fe226eca7093ffca9c599a7470af7b0}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a26a22b913b68404c4f7db054983c0ce4}{int {\bfseries size} ()}\label{classelps_1_1_lab_network_a26a22b913b68404c4f7db054983c0ce4}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_aec856778269f6d8ca7c0eac85f1d5e5a}{bool {\bfseries has\-\_\-unit\-\_\-edges} ()}\label{classelps_1_1_lab_network_aec856778269f6d8ca7c0eac85f1d5e5a}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a218fd8de96aeae41c200fa40aa24be61}{bool {\bfseries is\-\_\-directed} ()}\label{classelps_1_1_lab_network_a218fd8de96aeae41c200fa40aa24be61}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a30a0940d834169c7a40146359df78913}{\hyperlink{classelpm_1_1_m_t_rand}{M\-T\-Rand} $\ast$ {\bfseries get\-\_\-rng} ()}\label{classelps_1_1_lab_network_a30a0940d834169c7a40146359df78913}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a890cf3cf10c8da8bec4455e7dc9e3988}{vector$<$ \hyperlink{classelps_1_1_lab_node}{Lab\-Node} $\ast$ $>$ \& {\bfseries get\-\_\-nodes} ()}\label{classelps_1_1_lab_network_a890cf3cf10c8da8bec4455e7dc9e3988}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_afe8db94a3ae34125b0f6cff6f858dfbb}{\hyperlink{classelps_1_1_lab_node}{Lab\-Node} $\ast$ {\bfseries get\-\_\-node} (int node\-\_\-id)}\label{classelps_1_1_lab_network_afe8db94a3ae34125b0f6cff6f858dfbb}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_abbccc86255a171251092dc6d91d5fc7b}{\hyperlink{classelps_1_1_lab_node}{Lab\-Node} $\ast$ {\bfseries get\-\_\-rand\-\_\-node} ()}\label{classelps_1_1_lab_network_abbccc86255a171251092dc6d91d5fc7b}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a9367f81bc27a08181f62e3e3453e9659}{vector$<$ \hyperlink{classelps_1_1_lab_edge}{Lab\-Edge} $\ast$ $>$ {\bfseries get\-\_\-edges} ()}\label{classelps_1_1_lab_network_a9367f81bc27a08181f62e3e3453e9659}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_af4143d27c86c2842a0072f5b9d5824be}{\hyperlink{classelps_1_1_lab_edge}{Lab\-Edge} $\ast$ {\bfseries get\-\_\-edge} (int id)}\label{classelps_1_1_lab_network_af4143d27c86c2842a0072f5b9d5824be}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_af5c862cf17f8f43c3ca8f05d74d87b7b}{vector$<$ state\-Type $>$ {\bfseries get\-\_\-node\-\_\-states} ()}\label{classelps_1_1_lab_network_af5c862cf17f8f43c3ca8f05d74d87b7b}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a9251045c479f9b875d6f2f31c5aa8547}{void {\bfseries get\-\_\-bad\-\_\-edges} (vector$<$ \hyperlink{classelps_1_1_lab_edge}{Lab\-Edge} $\ast$ $>$ \&self\-\_\-loops, vector$<$ \hyperlink{classelps_1_1_lab_edge}{Lab\-Edge} $\ast$ $>$ \&multiedges)}\label{classelps_1_1_lab_network_a9251045c479f9b875d6f2f31c5aa8547}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_ac79ded8681bf28c47e6cf96cd63e99e8}{vector$<$ \hyperlink{classelps_1_1_lab_node}{Lab\-Node} $\ast$ $>$ {\bfseries get\-\_\-component} (\hyperlink{classelps_1_1_lab_node}{Lab\-Node} $\ast$node)}\label{classelps_1_1_lab_network_ac79ded8681bf28c47e6cf96cd63e99e8}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_ac4a41e6f41e95d073a42cab3a357d030}{vector$<$ vector$<$ \hyperlink{classelps_1_1_lab_node}{Lab\-Node} $\ast$ $>$ $>$ {\bfseries get\-\_\-components} ()}\label{classelps_1_1_lab_network_ac4a41e6f41e95d073a42cab3a357d030}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a72ded20fa3d56291345f5ac2f39b36b5}{vector$<$ \hyperlink{classelps_1_1_lab_node}{Lab\-Node} $\ast$ $>$ {\bfseries get\-\_\-biggest\-\_\-component} ()}\label{classelps_1_1_lab_network_a72ded20fa3d56291345f5ac2f39b36b5}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_ac5b367d91c20a12d04785c761af5ddfe}{bool {\bfseries topology\-\_\-altered} ()}\label{classelps_1_1_lab_network_ac5b367d91c20a12d04785c761af5ddfe}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_ae139a0189795b1aac81603e6f0c77552}{\hyperlink{classelps_1_1_lab_node}{Lab\-Node} $\ast$ {\bfseries add\-\_\-new\-\_\-node} ()}\label{classelps_1_1_lab_network_ae139a0189795b1aac81603e6f0c77552}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_abfcc00d0a03112965c3ba30e3242d0de}{void {\bfseries populate} (int n)}\label{classelps_1_1_lab_network_abfcc00d0a03112965c3ba30e3242d0de}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a5b65d747d6a1c1d0748cfb3f5ba36881}{void {\bfseries add\-\_\-node} (\hyperlink{classelps_1_1_lab_node}{Lab\-Node} $\ast$node)}\label{classelps_1_1_lab_network_a5b65d747d6a1c1d0748cfb3f5ba36881}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a43d8a7a102e8871a9833cfa296517e10}{void {\bfseries delete\-\_\-node} (\hyperlink{classelps_1_1_lab_node}{Lab\-Node} $\ast$node)}\label{classelps_1_1_lab_network_a43d8a7a102e8871a9833cfa296517e10}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a8103b2a550fac2cc0a54e7ac54911407}{bool {\bfseries erdos\-\_\-renyi} (double lambda)}\label{classelps_1_1_lab_network_a8103b2a550fac2cc0a54e7ac54911407}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_afeddfebd976523d40bfec65349745baa}{bool {\bfseries sparse\-\_\-random\-\_\-graph} (double lambda)}\label{classelps_1_1_lab_network_afeddfebd976523d40bfec65349745baa}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a2d9009372e476006a5116b66f1e0b020}{bool {\bfseries fast\-\_\-random\-\_\-graph} (double lambda)}\label{classelps_1_1_lab_network_a2d9009372e476006a5116b66f1e0b020}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_aeac66535d94501a0bb90f9c75159d757}{bool {\bfseries ring\-\_\-lattice} (int N, int K)}\label{classelps_1_1_lab_network_aeac66535d94501a0bb90f9c75159d757}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a43e3b11ab9e726e95382e0773e7221a1}{bool {\bfseries square\-\_\-lattice} (int R, int C, bool diag)}\label{classelps_1_1_lab_network_a43e3b11ab9e726e95382e0773e7221a1}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a31a7cc53fbab96bccfc2976e5da4160b}{bool {\bfseries small\-\_\-world} (int N, int K, double beta)}\label{classelps_1_1_lab_network_a31a7cc53fbab96bccfc2976e5da4160b}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_af1d8160d7d649f8de90475e6468bd24e}{bool {\bfseries rand\-\_\-connect\-\_\-poisson} (double lambda)}\label{classelps_1_1_lab_network_af1d8160d7d649f8de90475e6468bd24e}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a6168c96080fdb3b376157a9cb1ff156e}{bool {\bfseries rand\-\_\-connect\-\_\-powerlaw} (double alpha, double kappa)}\label{classelps_1_1_lab_network_a6168c96080fdb3b376157a9cb1ff156e}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a156f6d27be41ca95c805342978165d24}{bool {\bfseries rand\-\_\-connect\-\_\-exponential} (double lambda)}\label{classelps_1_1_lab_network_a156f6d27be41ca95c805342978165d24}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a3a2eeb8efd39f25f981f4532ed2f943a}{bool {\bfseries rand\-\_\-connect\-\_\-user} (vector$<$ double $>$ dist)}\label{classelps_1_1_lab_network_a3a2eeb8efd39f25f981f4532ed2f943a}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_ae2f73cfeae43f03b1496a5008510ab4c}{bool {\bfseries rand\-\_\-connect\-\_\-explicit} (vector$<$ int $>$ deg\-\_\-series)}\label{classelps_1_1_lab_network_ae2f73cfeae43f03b1496a5008510ab4c}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a440f5b1ea29d8d532acfb14287decaf7}{bool {\bfseries rand\-\_\-connect\-\_\-stubs} (vector$<$ \hyperlink{classelps_1_1_lab_edge}{Lab\-Edge} $\ast$ $>$ stubs)}\label{classelps_1_1_lab_network_a440f5b1ea29d8d532acfb14287decaf7}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a97a0bcbac94133e1dc26fd31daa635e5}{bool {\bfseries lose\-\_\-loops} ()}\label{classelps_1_1_lab_network_a97a0bcbac94133e1dc26fd31daa635e5}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a8515c29f4800ca575199d9bc1e94d098}{void {\bfseries clear\-\_\-nodes} ()}\label{classelps_1_1_lab_network_a8515c29f4800ca575199d9bc1e94d098}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a2d93d3e030da4c1dc729c55e5ec0ca6d}{void {\bfseries clear\-\_\-edges} ()}\label{classelps_1_1_lab_network_a2d93d3e030da4c1dc729c55e5ec0ca6d}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a83c1ebe216cba0a45e873ddbe6ea69be}{void {\bfseries disconnect\-\_\-edges} ()}\label{classelps_1_1_lab_network_a83c1ebe216cba0a45e873ddbe6ea69be}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a737502a450631377840387e993b53cd3}{bool {\bfseries shuffle\-\_\-edges} (double frac)}\label{classelps_1_1_lab_network_a737502a450631377840387e993b53cd3}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a5c9f04f024b8a71f0c27d2adc3340e4f}{void {\bfseries set\-\_\-node\-\_\-states} (vector$<$ state\-Type $>$ \&states)}\label{classelps_1_1_lab_network_a5c9f04f024b8a71f0c27d2adc3340e4f}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a7bc3da86abcd937f69f3b5d767e5b6f4}{void {\bfseries set\-\_\-topology\-\_\-altered} (bool flag)}\label{classelps_1_1_lab_network_a7bc3da86abcd937f69f3b5d767e5b6f4}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_acbc1686894dfb5534520732c15c83fe6}{void {\bfseries read\-\_\-edgelist} (string filename, char sep= ',')}\label{classelps_1_1_lab_network_acbc1686894dfb5534520732c15c83fe6}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_aaeb95b5cdeee0b64fbb59a5f185caf2b}{void {\bfseries write\-\_\-edgelist} (string filename)}\label{classelps_1_1_lab_network_aaeb95b5cdeee0b64fbb59a5f185caf2b}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_aa594d7fa73c3cf81dfefb331f8cc50c5}{void {\bfseries graphviz} (string filename)}\label{classelps_1_1_lab_network_aa594d7fa73c3cf81dfefb331f8cc50c5}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a6468ba129125eca0b5e6286ddf798f8c}{void {\bfseries dumper} ()}\label{classelps_1_1_lab_network_a6468ba129125eca0b5e6286ddf798f8c}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_ae8ecc74c372d8a13c01d22bd4936b5bc}{bool {\bfseries gen\-\_\-deg\-\_\-series} (vector$<$ int $>$ \&deg\-\_\-series)}\label{classelps_1_1_lab_network_ae8ecc74c372d8a13c01d22bd4936b5bc}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a612ff25d66d51bd0c32efe965049a908}{vector$<$ int $>$ {\bfseries get\-\_\-states} ()}\label{classelps_1_1_lab_network_a612ff25d66d51bd0c32efe965049a908}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a290cb80cbb0d496252eae9d828851a16}{vector$<$ vector$<$ int $>$ $>$ {\bfseries get\-\_\-states\-\_\-by\-\_\-degree} ()}\label{classelps_1_1_lab_network_a290cb80cbb0d496252eae9d828851a16}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_aaa17daca60c737db1f1035f058ecce38}{bool {\bfseries validate} ()}\label{classelps_1_1_lab_network_aaa17daca60c737db1f1035f058ecce38}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a902bedf2660f1abe82f52eb945f61417}{vector$<$ int $>$ {\bfseries get\-\_\-deg\-\_\-series} ()}\label{classelps_1_1_lab_network_a902bedf2660f1abe82f52eb945f61417}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a040ead6f3849f210eda46f67a299b12b}{vector$<$ int $>$ {\bfseries get\-\_\-deg\-\_\-dist} ()}\label{classelps_1_1_lab_network_a040ead6f3849f210eda46f67a299b12b}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a993fee842b6ae21cec8bcf9b0579677b}{vector$<$ double $>$ {\bfseries get\-\_\-gen\-\_\-deg\-\_\-dist} ()}\label{classelps_1_1_lab_network_a993fee842b6ae21cec8bcf9b0579677b}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a881f92e6cd40429915f9980bfbe0b2a4}{double {\bfseries mean\-\_\-deg} ()}\label{classelps_1_1_lab_network_a881f92e6cd40429915f9980bfbe0b2a4}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_ae21592036aec8bc96cd424e93a45d4bd}{double {\bfseries transitivity} (vector$<$ \hyperlink{classelps_1_1_lab_node}{Lab\-Node} $\ast$ $>$ node\-\_\-set)}\label{classelps_1_1_lab_network_ae21592036aec8bc96cd424e93a45d4bd}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_aa0e33c933e5091abba1b27817876487a}{double {\bfseries mean\-\_\-dist} (vector$<$ \hyperlink{classelps_1_1_lab_node}{Lab\-Node} $\ast$ $>$ node\-\_\-set)}\label{classelps_1_1_lab_network_aa0e33c933e5091abba1b27817876487a}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a046a283aee68ce0d20087a706794a5c6}{vector$<$ vector$<$ double $>$ $>$ {\bfseries calculate\-\_\-distances} (vector$<$ \hyperlink{classelps_1_1_lab_node}{Lab\-Node} $\ast$ $>$ destinations)}\label{classelps_1_1_lab_network_a046a283aee68ce0d20087a706794a5c6}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_aa9abbf4211e6dd789da2f84107dbb9f8}{vector$<$ vector$<$ double $>$ $>$ {\bfseries calculate\-\_\-unweighted\-\_\-distances} (vector$<$ \hyperlink{classelps_1_1_lab_node}{Lab\-Node} $\ast$ $>$ destinations)}\label{classelps_1_1_lab_network_aa9abbf4211e6dd789da2f84107dbb9f8}
+
+\item 
+int \hyperlink{classelps_1_1_lab_network_ad9ba49a3e440387c3a7f26694faea9e2}{Get\-Size} ()
+\item 
+void \hyperlink{classelps_1_1_lab_network_ae07f023a5b2cd7f2e5646343c27165cf}{Populate} (int n)
+\item 
+vector$<$ \hyperlink{classelps_1_1_lab_node}{Lab\-Node} $\ast$ $>$ \& \hyperlink{classelps_1_1_lab_network_a735c4555caac87a1b4f892ed5afafe87}{Get\-Nodes} ()
+\item 
+\hyperlink{classelps_1_1_lab_node}{Lab\-Node} $\ast$ \hyperlink{classelps_1_1_lab_network_a789165972661c5ce76d08fc8e08f0dea}{Get\-Node} (int node\-\_\-id)
+\item 
+bool \hyperlink{classelps_1_1_lab_network_ace3bdd2d65f5d00464cb8abf06fdf3af}{Erdos\-Renyi} (double lambda)
+\item 
+bool \hyperlink{classelps_1_1_lab_network_a49abb9e7a22963fba022c65748ec4242}{Sparse\-Random\-Graph} (double lambda)
+\item 
+bool \hyperlink{classelps_1_1_lab_network_a0bbd4e833feb4641793830f9f3566127}{Fast\-Random\-Graph} (double lambda)
+\item 
+bool \hyperlink{classelps_1_1_lab_network_a5ae5c0c311459d444f040eaf43717abc}{Ring\-Lattice} (int N, int K)
+\item 
+bool \hyperlink{classelps_1_1_lab_network_a7f11fbd1df3dfcf6d81ba1473137ec9c}{Square\-Lattice} (int R, int C, bool diag)
+\item 
+bool \hyperlink{classelps_1_1_lab_network_a7517a4afba40876c2d55ecbd9512a1c7}{Small\-World} (int N, int K, double beta)
+\item 
+bool \hyperlink{classelps_1_1_lab_network_ad407f3fba34f4bbe0cbe9ba867dc54d0}{Rand\-Connect\-User} (vector$<$ double $>$ \&dist)
+\item 
+bool \hyperlink{classelps_1_1_lab_network_a4307b2b2c673f7e834f60ea3a4e8673f}{Rand\-Connect\-User\-Linear} (int con\-\_\-deg)
+\item 
+bool \hyperlink{classelps_1_1_lab_network_aec222034cb40e92ca38dfa4061dc3329}{Rand\-Connect\-Explicit} (vector$<$ int $>$ \&deg\-\_\-series)
+\item 
+bool \hyperlink{classelps_1_1_lab_network_a960fab47aa54eafa962e73a29ac15d46}{Rand\-Connect\-Poisson} (double lambda)
+\item 
+bool \hyperlink{classelps_1_1_lab_network_a5107e01fd7f70e9d8ac3e54abd7003e4}{Rand\-Connect\-Powerlaw} (double alpha, double kappa)
+\item 
+bool \hyperlink{classelps_1_1_lab_network_aaa119c9d408ba708a5e3d39ac8ef3b9b}{Rand\-Connect\-Exponential} (double lambda)
+\item 
+void \hyperlink{classelps_1_1_lab_network_afc4aaf1abf21171bc2879c81da7e8b85}{Migrate\-Nodes} (double fraction\-\_\-to\-\_\-migrate)
+\item 
+\hypertarget{classelps_1_1_lab_network_a0d89975b3151890de887c864642f3f84}{void {\bfseries stop\-\_\-processing} ()}\label{classelps_1_1_lab_network_a0d89975b3151890de887c864642f3f84}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_aaa6dd02033b0838fea245852a7b2b5ae}{void {\bfseries reset\-\_\-processing\-\_\-flag} ()}\label{classelps_1_1_lab_network_aaa6dd02033b0838fea245852a7b2b5ae}
+
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classelps_1_1_lab_network_ac56a76b904b641106cb3d628fdfe41ea}{class {\bfseries Lab\-Node}}\label{classelps_1_1_lab_network_ac56a76b904b641106cb3d628fdfe41ea}
+
+\item 
+\hypertarget{classelps_1_1_lab_network_a046f6907a306a9e8f90bc4e7bb2a9a4b}{class {\bfseries Lab\-Edge}}\label{classelps_1_1_lab_network_a046f6907a306a9e8f90bc4e7bb2a9a4b}
+
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Those classes have a natural hierarchy of \hyperlink{classelps_1_1_lab_network}{Lab\-Network} $>$ \hyperlink{classelps_1_1_lab_node}{Lab\-Node} $>$ \hyperlink{classelps_1_1_lab_edge}{Lab\-Edge}.\par
+ That means you probably should not be doing something with nodes unless they already belong to a network, and you probably shouldn't be handling edges unless they already belong to at least one node (and a network).
+
+There are many ways you can construct a network, but they fall into two categories\-: automated (and probably randomized) and manual.
+
+\subsection*{U\-S\-A\-G\-E \-:}
+
+Start out by getting yourself a network \-:
+
+
+\begin{DoxyCode}
+LabNetwork my\_network(\textcolor{stringliteral}{"name"}, \textcolor{keyword}{false});    \textcolor{comment}{// "name" is any string you want, and
+       "false"}
+                                         \textcolor{comment}{// means network is undirected (true =
+       directed).}
+\end{DoxyCode}
+
+
+If you want to automate the construction \-:
+
+
+\begin{DoxyCode}
+my\_network.Populate(10000);              \textcolor{comment}{// Add 10^4 nodes to the network.}
+my\_network.RandConnectPoisson(4);        \textcolor{comment}{// Connect the nodes using a
+       Poisson(4) degree}
+                                         \textcolor{comment}{// distribution and get rid of
+       self-loops and}
+                                         \textcolor{comment}{// multi-edges (done automatically).}
+\end{DoxyCode}
+ 
+
+\subsection{Member Function Documentation}
+\hypertarget{classelps_1_1_lab_network_ace3bdd2d65f5d00464cb8abf06fdf3af}{\index{elps\-::\-Lab\-Network@{elps\-::\-Lab\-Network}!Erdos\-Renyi@{Erdos\-Renyi}}
+\index{Erdos\-Renyi@{Erdos\-Renyi}!elps::LabNetwork@{elps\-::\-Lab\-Network}}
+\subsubsection[{Erdos\-Renyi}]{\setlength{\rightskip}{0pt plus 5cm}bool elps\-::\-Lab\-Network\-::\-Erdos\-Renyi (
+\begin{DoxyParamCaption}
+\item[{double}]{lambda}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_network_ace3bdd2d65f5d00464cb8abf06fdf3af}
+\hyperlink{classelps_1_1_lab_network_ace3bdd2d65f5d00464cb8abf06fdf3af}{Erdos\-Renyi()} and \hyperlink{classelps_1_1_lab_network_a960fab47aa54eafa962e73a29ac15d46}{Rand\-Connect\-Poisson()} (should) produce equivalent networks, although the former will always allow degree 0 nodes, while the later can be modified to use a left-\/truncated distribution.\par
+
+
+Erdos-\/\-Renyi can only produce Poisson distributed networks, whereas all the Rand\-Connect$\ast$ functions use an adaptation of the Molloy-\/\-Reed algorithm, and therefore can take any discrete, non-\/negative distribution.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lambda} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_network_a0bbd4e833feb4641793830f9f3566127}{\index{elps\-::\-Lab\-Network@{elps\-::\-Lab\-Network}!Fast\-Random\-Graph@{Fast\-Random\-Graph}}
+\index{Fast\-Random\-Graph@{Fast\-Random\-Graph}!elps::LabNetwork@{elps\-::\-Lab\-Network}}
+\subsubsection[{Fast\-Random\-Graph}]{\setlength{\rightskip}{0pt plus 5cm}bool elps\-::\-Lab\-Network\-::\-Fast\-Random\-Graph (
+\begin{DoxyParamCaption}
+\item[{double}]{lambda}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_network_a0bbd4e833feb4641793830f9f3566127}
+\hyperlink{classelps_1_1_lab_network_a0bbd4e833feb4641793830f9f3566127}{Fast\-Random\-Graph()} tries to pick the fastest algorithm based on parameters given.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lambda} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_network_a789165972661c5ce76d08fc8e08f0dea}{\index{elps\-::\-Lab\-Network@{elps\-::\-Lab\-Network}!Get\-Node@{Get\-Node}}
+\index{Get\-Node@{Get\-Node}!elps::LabNetwork@{elps\-::\-Lab\-Network}}
+\subsubsection[{Get\-Node}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lab\-Node} $\ast$ elps\-::\-Lab\-Network\-::\-Get\-Node (
+\begin{DoxyParamCaption}
+\item[{int}]{node\-\_\-id}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_network_a789165972661c5ce76d08fc8e08f0dea}
+Pick up a node by its id in the nodes list. 
+\begin{DoxyParams}{Parameters}
+{\em node\-\_\-id} & Identifier in the nodes list. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_network_a735c4555caac87a1b4f892ed5afafe87}{\index{elps\-::\-Lab\-Network@{elps\-::\-Lab\-Network}!Get\-Nodes@{Get\-Nodes}}
+\index{Get\-Nodes@{Get\-Nodes}!elps::LabNetwork@{elps\-::\-Lab\-Network}}
+\subsubsection[{Get\-Nodes}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Lab\-Node} $\ast$ $>$ \& elps\-::\-Lab\-Network\-::\-Get\-Nodes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_network_a735c4555caac87a1b4f892ed5afafe87}
+Get the network's nodes list \begin{DoxyReturn}{Returns}
+A vector of \hyperlink{classelps_1_1_lab_node}{Lab\-Node} pointers 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_network_ad9ba49a3e440387c3a7f26694faea9e2}{\index{elps\-::\-Lab\-Network@{elps\-::\-Lab\-Network}!Get\-Size@{Get\-Size}}
+\index{Get\-Size@{Get\-Size}!elps::LabNetwork@{elps\-::\-Lab\-Network}}
+\subsubsection[{Get\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int elps\-::\-Lab\-Network\-::\-Get\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_network_ad9ba49a3e440387c3a7f26694faea9e2}
+Get the size of the network. \begin{DoxyReturn}{Returns}
+A number of nodes. 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_network_afc4aaf1abf21171bc2879c81da7e8b85}{\index{elps\-::\-Lab\-Network@{elps\-::\-Lab\-Network}!Migrate\-Nodes@{Migrate\-Nodes}}
+\index{Migrate\-Nodes@{Migrate\-Nodes}!elps::LabNetwork@{elps\-::\-Lab\-Network}}
+\subsubsection[{Migrate\-Nodes}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Network\-::\-Migrate\-Nodes (
+\begin{DoxyParamCaption}
+\item[{double}]{fraction\-\_\-to\-\_\-migrate}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_network_afc4aaf1abf21171bc2879c81da7e8b85}
+Migrates the given fraction of Nodes in the network by rearranging their Edges.\par
+\par
+ Algorithm details \-:\par
+ At each call (period), (fraction\-\_\-to\-\_\-migrate $\ast$ 100) \% of all nodes \char`\"{}migrate\char`\"{}. A different group is randomly selected each period. If a nodes is in the migrating group, all of its edges are broken; this means the node's neighbors also end up with at least one broken edge. These broken edges (\char`\"{}stubs\char`\"{}) are then randomly reconnected. The reconnection process will make sure that no self-\/loops or parallel edges get created (it's possible that additional edges will get shuffled in order to get rid of these).
+
+
+\begin{DoxyParams}{Parameters}
+{\em fraction\-\_\-to\-\_\-migrate} & The fraction \mbox{[}0.\-0, 1.\-0\mbox{]} of nodes to be reorganized. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_network_ae07f023a5b2cd7f2e5646343c27165cf}{\index{elps\-::\-Lab\-Network@{elps\-::\-Lab\-Network}!Populate@{Populate}}
+\index{Populate@{Populate}!elps::LabNetwork@{elps\-::\-Lab\-Network}}
+\subsubsection[{Populate}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Network\-::\-Populate (
+\begin{DoxyParamCaption}
+\item[{int}]{n}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_network_ae07f023a5b2cd7f2e5646343c27165cf}
+Populate the network with n nodes. 
+\begin{DoxyParams}{Parameters}
+{\em n} & Number of nodes. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_network_aec222034cb40e92ca38dfa4061dc3329}{\index{elps\-::\-Lab\-Network@{elps\-::\-Lab\-Network}!Rand\-Connect\-Explicit@{Rand\-Connect\-Explicit}}
+\index{Rand\-Connect\-Explicit@{Rand\-Connect\-Explicit}!elps::LabNetwork@{elps\-::\-Lab\-Network}}
+\subsubsection[{Rand\-Connect\-Explicit}]{\setlength{\rightskip}{0pt plus 5cm}bool elps\-::\-Lab\-Network\-::\-Rand\-Connect\-Explicit (
+\begin{DoxyParamCaption}
+\item[{vector$<$ int $>$ \&}]{deg\-\_\-series}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_network_aec222034cb40e92ca38dfa4061dc3329}
+User provides an explicit degree series, one degree per node. Sum of all degrees should be even, or else it's impossible to connect all nodes. 
+\begin{DoxyParams}{Parameters}
+{\em deg\-\_\-series} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_network_aaa119c9d408ba708a5e3d39ac8ef3b9b}{\index{elps\-::\-Lab\-Network@{elps\-::\-Lab\-Network}!Rand\-Connect\-Exponential@{Rand\-Connect\-Exponential}}
+\index{Rand\-Connect\-Exponential@{Rand\-Connect\-Exponential}!elps::LabNetwork@{elps\-::\-Lab\-Network}}
+\subsubsection[{Rand\-Connect\-Exponential}]{\setlength{\rightskip}{0pt plus 5cm}bool elps\-::\-Lab\-Network\-::\-Rand\-Connect\-Exponential (
+\begin{DoxyParamCaption}
+\item[{double}]{lambda}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_network_aaa119c9d408ba708a5e3d39ac8ef3b9b}
+Same as \hyperlink{classelps_1_1_lab_network_ad407f3fba34f4bbe0cbe9ba867dc54d0}{Rand\-Connect\-User()} using an Exponential distribution. 
+\begin{DoxyParams}{Parameters}
+{\em lambda} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_network_a960fab47aa54eafa962e73a29ac15d46}{\index{elps\-::\-Lab\-Network@{elps\-::\-Lab\-Network}!Rand\-Connect\-Poisson@{Rand\-Connect\-Poisson}}
+\index{Rand\-Connect\-Poisson@{Rand\-Connect\-Poisson}!elps::LabNetwork@{elps\-::\-Lab\-Network}}
+\subsubsection[{Rand\-Connect\-Poisson}]{\setlength{\rightskip}{0pt plus 5cm}bool elps\-::\-Lab\-Network\-::\-Rand\-Connect\-Poisson (
+\begin{DoxyParamCaption}
+\item[{double}]{lambda}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_network_a960fab47aa54eafa962e73a29ac15d46}
+Same as \hyperlink{classelps_1_1_lab_network_ad407f3fba34f4bbe0cbe9ba867dc54d0}{Rand\-Connect\-User()} using a Poisson distribution. 
+\begin{DoxyParams}{Parameters}
+{\em lambda} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_network_a5107e01fd7f70e9d8ac3e54abd7003e4}{\index{elps\-::\-Lab\-Network@{elps\-::\-Lab\-Network}!Rand\-Connect\-Powerlaw@{Rand\-Connect\-Powerlaw}}
+\index{Rand\-Connect\-Powerlaw@{Rand\-Connect\-Powerlaw}!elps::LabNetwork@{elps\-::\-Lab\-Network}}
+\subsubsection[{Rand\-Connect\-Powerlaw}]{\setlength{\rightskip}{0pt plus 5cm}bool elps\-::\-Lab\-Network\-::\-Rand\-Connect\-Powerlaw (
+\begin{DoxyParamCaption}
+\item[{double}]{alpha, }
+\item[{double}]{kappa}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_network_a5107e01fd7f70e9d8ac3e54abd7003e4}
+Same as \hyperlink{classelps_1_1_lab_network_ad407f3fba34f4bbe0cbe9ba867dc54d0}{Rand\-Connect\-User()} using a Powerlaw distribution. 
+\begin{DoxyParams}{Parameters}
+{\em alpha} & \\
+\hline
+{\em kappa} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_network_ad407f3fba34f4bbe0cbe9ba867dc54d0}{\index{elps\-::\-Lab\-Network@{elps\-::\-Lab\-Network}!Rand\-Connect\-User@{Rand\-Connect\-User}}
+\index{Rand\-Connect\-User@{Rand\-Connect\-User}!elps::LabNetwork@{elps\-::\-Lab\-Network}}
+\subsubsection[{Rand\-Connect\-User}]{\setlength{\rightskip}{0pt plus 5cm}bool elps\-::\-Lab\-Network\-::\-Rand\-Connect\-User (
+\begin{DoxyParamCaption}
+\item[{vector$<$ double $>$ \&}]{dist}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_network_ad407f3fba34f4bbe0cbe9ba867dc54d0}
+User provides arbitrary (normalized!) distribution. normalize\-\_\-dist(my\-\_\-dist) in \hyperlink{_utility_8h_source}{Utility.\-h} can be used for that. Each value should be the probability of the index (index = degree), i.\-e. if the contents of the vector are (0, 0.\-13, 0.\-2, 0.\-04, 0.\-63), then the probability of drawing a deviate (=degree) of 0 is 0, of 1 is 13\%, of 2 is 20\%, and so on.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dist} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_network_a4307b2b2c673f7e834f60ea3a4e8673f}{\index{elps\-::\-Lab\-Network@{elps\-::\-Lab\-Network}!Rand\-Connect\-User\-Linear@{Rand\-Connect\-User\-Linear}}
+\index{Rand\-Connect\-User\-Linear@{Rand\-Connect\-User\-Linear}!elps::LabNetwork@{elps\-::\-Lab\-Network}}
+\subsubsection[{Rand\-Connect\-User\-Linear}]{\setlength{\rightskip}{0pt plus 5cm}bool elps\-::\-Lab\-Network\-::\-Rand\-Connect\-User\-Linear (
+\begin{DoxyParamCaption}
+\item[{int}]{con\-\_\-deg}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_network_a4307b2b2c673f7e834f60ea3a4e8673f}
+Same as \hyperlink{classelps_1_1_lab_network_ad407f3fba34f4bbe0cbe9ba867dc54d0}{Rand\-Connect\-User()}, but specifying only the connection degree.\par
+ The algorithm takes care of computing linearly the intermediate values. Sum of all degrees should be even, or else it's impossible to connect all the nodes. 
+\begin{DoxyParams}{Parameters}
+{\em con\-\_\-deg} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_network_a5ae5c0c311459d444f040eaf43717abc}{\index{elps\-::\-Lab\-Network@{elps\-::\-Lab\-Network}!Ring\-Lattice@{Ring\-Lattice}}
+\index{Ring\-Lattice@{Ring\-Lattice}!elps::LabNetwork@{elps\-::\-Lab\-Network}}
+\subsubsection[{Ring\-Lattice}]{\setlength{\rightskip}{0pt plus 5cm}bool elps\-::\-Lab\-Network\-::\-Ring\-Lattice (
+\begin{DoxyParamCaption}
+\item[{int}]{N, }
+\item[{int}]{K}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_network_a5ae5c0c311459d444f040eaf43717abc}
+Ring lattice with N nodes, each connected to K nearest neighbors.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lambda} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_network_a7517a4afba40876c2d55ecbd9512a1c7}{\index{elps\-::\-Lab\-Network@{elps\-::\-Lab\-Network}!Small\-World@{Small\-World}}
+\index{Small\-World@{Small\-World}!elps::LabNetwork@{elps\-::\-Lab\-Network}}
+\subsubsection[{Small\-World}]{\setlength{\rightskip}{0pt plus 5cm}bool elps\-::\-Lab\-Network\-::\-Small\-World (
+\begin{DoxyParamCaption}
+\item[{int}]{N, }
+\item[{int}]{K, }
+\item[{double}]{beta}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_network_a7517a4afba40876c2d55ecbd9512a1c7}
+Watts-\/\-Strogatz small world network with N nodes initially connected to K neighbors and shuffled with probability beta.
+
+
+\begin{DoxyParams}{Parameters}
+{\em N} & \\
+\hline
+{\em K} & \\
+\hline
+{\em beta} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_network_a49abb9e7a22963fba022c65748ec4242}{\index{elps\-::\-Lab\-Network@{elps\-::\-Lab\-Network}!Sparse\-Random\-Graph@{Sparse\-Random\-Graph}}
+\index{Sparse\-Random\-Graph@{Sparse\-Random\-Graph}!elps::LabNetwork@{elps\-::\-Lab\-Network}}
+\subsubsection[{Sparse\-Random\-Graph}]{\setlength{\rightskip}{0pt plus 5cm}bool elps\-::\-Lab\-Network\-::\-Sparse\-Random\-Graph (
+\begin{DoxyParamCaption}
+\item[{double}]{lambda}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_network_a49abb9e7a22963fba022c65748ec4242}
+Sparse distribution. 
+\begin{DoxyParams}{Parameters}
+{\em lambda} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_network_a7f11fbd1df3dfcf6d81ba1473137ec9c}{\index{elps\-::\-Lab\-Network@{elps\-::\-Lab\-Network}!Square\-Lattice@{Square\-Lattice}}
+\index{Square\-Lattice@{Square\-Lattice}!elps::LabNetwork@{elps\-::\-Lab\-Network}}
+\subsubsection[{Square\-Lattice}]{\setlength{\rightskip}{0pt plus 5cm}bool elps\-::\-Lab\-Network\-::\-Square\-Lattice (
+\begin{DoxyParamCaption}
+\item[{int}]{R, }
+\item[{int}]{C, }
+\item[{bool}]{diag}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_network_a7f11fbd1df3dfcf6d81ba1473137ec9c}
+Rx\-C lattice, including diagonals if diag is True.
+
+
+\begin{DoxyParams}{Parameters}
+{\em R} & Number of rows. \\
+\hline
+{\em C} & Number of columns. \\
+\hline
+{\em diag} & If the diagonal should be connected. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}

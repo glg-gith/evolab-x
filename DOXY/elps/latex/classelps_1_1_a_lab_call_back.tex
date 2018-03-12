@@ -1,0 +1,78 @@
+\hypertarget{classelps_1_1_a_lab_call_back}{\section{elps\-:\-:A\-Lab\-Call\-Back Class Reference}
+\label{classelps_1_1_a_lab_call_back}\index{elps\-::\-A\-Lab\-Call\-Back@{elps\-::\-A\-Lab\-Call\-Back}}
+}
+
+
+{\ttfamily \#include $<$A\-Lab\-Call\-Back.\-h$>$}
+
+Inheritance diagram for elps\-:\-:A\-Lab\-Call\-Back\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.978799cm]{classelps_1_1_a_lab_call_back}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classelps_1_1_a_lab_call_back_a87d651de29a702ae5aa1f5bb37c6302d}{typedef double($\ast$ {\bfseries Method} )(void $\ast$param, void $\ast$user\-\_\-data)}\label{classelps_1_1_a_lab_call_back_a87d651de29a702ae5aa1f5bb37c6302d}
+
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classelps_1_1_a_lab_call_back_a6da44ab61e53478be5cac650700b80b2}{{\bfseries A\-Lab\-Call\-Back} (Method method, void $\ast$user\-\_\-data)}\label{classelps_1_1_a_lab_call_back_a6da44ab61e53478be5cac650700b80b2}
+
+\item 
+double \hyperlink{classelps_1_1_a_lab_call_back_a253ebfe04ef570bd542b5e3c09b97e66}{cy\-\_\-execute} (void $\ast$parameter)
+\item 
+bool \hyperlink{classelps_1_1_a_lab_call_back_a4c9a15f81450a0f8a605f64b7bcff611}{Is\-Cython\-Call} ()
+\item 
+\hypertarget{classelps_1_1_a_lab_call_back_a8c454d3bc888f663c8ea0e56f55ce267}{Method \& {\bfseries Get\-Method} ()}\label{classelps_1_1_a_lab_call_back_a8c454d3bc888f663c8ea0e56f55ce267}
+
+\item 
+\hypertarget{classelps_1_1_a_lab_call_back_a8ed108e0a4071d6d4c7c95d5db6b5708}{void $\ast$ {\bfseries Get\-User\-Data} ()}\label{classelps_1_1_a_lab_call_back_a8ed108e0a4071d6d4c7c95d5db6b5708}
+
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classelps_1_1_a_lab_call_back_a15debd77d822894cfcd63465b0c35c21}{is\-\_\-cy\-\_\-call}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Kind of interface class from which \hyperlink{classelps_1_1_lab_call_back2}{Lab\-Call\-Back2} and \hyperlink{classelps_1_1_lab_call_back3}{Lab\-Call\-Back3} inherit from. Designed for compatibility with Cython. 
+
+\subsection{Member Function Documentation}
+\hypertarget{classelps_1_1_a_lab_call_back_a253ebfe04ef570bd542b5e3c09b97e66}{\index{elps\-::\-A\-Lab\-Call\-Back@{elps\-::\-A\-Lab\-Call\-Back}!cy\-\_\-execute@{cy\-\_\-execute}}
+\index{cy\-\_\-execute@{cy\-\_\-execute}!elps::ALabCallBack@{elps\-::\-A\-Lab\-Call\-Back}}
+\subsubsection[{cy\-\_\-execute}]{\setlength{\rightskip}{0pt plus 5cm}double elps\-::\-A\-Lab\-Call\-Back\-::cy\-\_\-execute (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{parameter}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_a_lab_call_back_a253ebfe04ef570bd542b5e3c09b97e66}
+Execute the callback method from the Cython development context 
+\begin{DoxyParams}{Parameters}
+{\em parameter} & The parameter to pass to the method \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The return value of the method 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_a_lab_call_back_a4c9a15f81450a0f8a605f64b7bcff611}{\index{elps\-::\-A\-Lab\-Call\-Back@{elps\-::\-A\-Lab\-Call\-Back}!Is\-Cython\-Call@{Is\-Cython\-Call}}
+\index{Is\-Cython\-Call@{Is\-Cython\-Call}!elps::ALabCallBack@{elps\-::\-A\-Lab\-Call\-Back}}
+\subsubsection[{Is\-Cython\-Call}]{\setlength{\rightskip}{0pt plus 5cm}bool elps\-::\-A\-Lab\-Call\-Back\-::\-Is\-Cython\-Call (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classelps_1_1_a_lab_call_back_a4c9a15f81450a0f8a605f64b7bcff611}
+Test if we here in the Cython development context \begin{DoxyReturn}{Returns}
+True if the method is called in the Cython development context 
+\end{DoxyReturn}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{classelps_1_1_a_lab_call_back_a15debd77d822894cfcd63465b0c35c21}{\index{elps\-::\-A\-Lab\-Call\-Back@{elps\-::\-A\-Lab\-Call\-Back}!is\-\_\-cy\-\_\-call@{is\-\_\-cy\-\_\-call}}
+\index{is\-\_\-cy\-\_\-call@{is\-\_\-cy\-\_\-call}!elps::ALabCallBack@{elps\-::\-A\-Lab\-Call\-Back}}
+\subsubsection[{is\-\_\-cy\-\_\-call}]{\setlength{\rightskip}{0pt plus 5cm}bool elps\-::\-A\-Lab\-Call\-Back\-::is\-\_\-cy\-\_\-call\hspace{0.3cm}{\ttfamily [protected]}}}\label{classelps_1_1_a_lab_call_back_a15debd77d822894cfcd63465b0c35c21}
+If the method/callback is called in the Cython development context, or not. 

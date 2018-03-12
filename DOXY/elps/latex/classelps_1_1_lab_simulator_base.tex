@@ -1,0 +1,489 @@
+\hypertarget{classelps_1_1_lab_simulator_base}{\section{elps\-:\-:Lab\-Simulator\-Base Class Reference}
+\label{classelps_1_1_lab_simulator_base}\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}}
+}
+
+
+{\ttfamily \#include $<$Lab\-Simulator\-Base.\-h$>$}
+
+Inheritance diagram for elps\-:\-:Lab\-Simulator\-Base\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.731707cm]{classelps_1_1_lab_simulator_base}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{classelps_1_1_lab_simulator_base_a92317bd9b947016f1652a4ceb01905ad}{Get\-Nb\-Repetitions} ()
+\item 
+void \hyperlink{classelps_1_1_lab_simulator_base_a8088b2d51c5c07d190e3a87d2995bb63}{Set\-Nb\-Repetitions} (int nb\-\_\-rep)
+\item 
+int \hyperlink{classelps_1_1_lab_simulator_base_af5b61f2481886d12afa0fbca879ca24e}{Get\-Current\-Repetition} ()
+\item 
+void \hyperlink{classelps_1_1_lab_simulator_base_a379cb60ca4c4c7fb6a60aa4d3dc617d6}{Set\-Current\-Repetition} (int rep\-\_\-num)
+\item 
+virtual void \hyperlink{classelps_1_1_lab_simulator_base_aa14aa05df8173ffd2a2e67aa25f3cea5}{Init\-Simulation} ()
+\item 
+virtual void \hyperlink{classelps_1_1_lab_simulator_base_ab48b05171894c3405e6865e019774106}{Step\-Simulation} ()
+\item 
+virtual void \hyperlink{classelps_1_1_lab_simulator_base_a51232753515304871678d22aea555a8b}{Before\-Step} ()
+\item 
+virtual void \hyperlink{classelps_1_1_lab_simulator_base_ad00284fc35dec38e6933a37858cb72c6}{After\-Step} ()
+\item 
+virtual void \hyperlink{classelps_1_1_lab_simulator_base_ac0c49279bf16f19b4f8fbd856e3fc6d6}{Output\-Simulation} ()
+\item 
+virtual bool \hyperlink{classelps_1_1_lab_simulator_base_ae54d693898ca10e20bb9e7e22264bab8}{End\-Simulation} ()
+\item 
+virtual void \hyperlink{classelps_1_1_lab_simulator_base_a1339bc2fd37e7a4cc5c8792f447bf348}{Init\-Un\-Binarize} ()
+\item 
+virtual void \hyperlink{classelps_1_1_lab_simulator_base_ac1dcb0ae906c0e729a31172a02c243e2}{Step\-Binarize} ()
+\item 
+virtual void \hyperlink{classelps_1_1_lab_simulator_base_ab48e943c2b85b25ff96b2aab4d9aa4bd}{Run\-Simulation} ()
+\item 
+virtual void \hyperlink{classelps_1_1_lab_simulator_base_abf0012f53b199184d9359656f2f9e4e1}{Before\-Run} ()
+\item 
+virtual void \hyperlink{classelps_1_1_lab_simulator_base_afbd964545df8788fe65a488e731a7d05}{After\-Run} ()
+\item 
+virtual void \hyperlink{classelps_1_1_lab_simulator_base_a976cbd225a24cb9c327c960fcea0df63}{Run} ()
+\item 
+\hyperlink{classelps_1_1_lab_attributes_stack}{Lab\-Attributes\-Stack} $\ast$ \hyperlink{classelps_1_1_lab_simulator_base_a1fc6fe479fa4c942fa0d46b349679ce6}{Get\-Env\-Attributes\-Stack} ()
+\item 
+void \hyperlink{classelps_1_1_lab_simulator_base_a1523f0d57763742aaaf1b2222caae46f}{Set\-Binary\-Streams} (ofstream $\ast$ostream, ifstream $\ast$istream)
+\item 
+virtual void \hyperlink{classelps_1_1_lab_simulator_base_ada8b1bb899da72df3677649a2732c31e}{Binarize\-All} ()
+\item 
+virtual void \hyperlink{classelps_1_1_lab_simulator_base_aab7881a148c2f3859c19ff311d2b5e49}{Un\-Binarize\-All} ()
+\item 
+int \hyperlink{classelps_1_1_lab_simulator_base_a3b36b0fcefab88319fb92533399ba508}{Get\-Last\-Dump\-File\-Id\-And\-Clean} ()
+\item 
+void \hyperlink{classelps_1_1_lab_simulator_base_ae40e1b9c3113be0629fe78a6e64ebbeb}{Clean\-Unused\-Dump\-File} ()
+\item 
+void \hyperlink{classelps_1_1_lab_simulator_base_af3b8fab0726ba0a17469486315ccc457}{Clean\-All\-Dump\-Files} ()
+\item 
+double \hyperlink{classelps_1_1_lab_simulator_base_a9ca089a13b72ce8dc44be9672a09cce4}{Get\-Time\-Dump\-Step} ()
+\item 
+void \hyperlink{classelps_1_1_lab_simulator_base_a1728d3db698c0557b39ca7246ff749ea}{Set\-Time\-Dump\-Step} (double time)
+\item 
+bool \hyperlink{classelps_1_1_lab_simulator_base_a001a3c283b3e5e662fe495e5431d4614}{Get\-Do\-Dump} ()
+\item 
+void \hyperlink{classelps_1_1_lab_simulator_base_a848eedee34bf452deb5e29cd2a76d132}{Set\-Do\-Dump} (bool do\-\_\-it)
+\item 
+bool \hyperlink{classelps_1_1_lab_simulator_base_afed6057d37890c06c368e0f1c8386151}{Get\-Do\-Start\-From\-Dump} ()
+\item 
+void \hyperlink{classelps_1_1_lab_simulator_base_a0d917416e0b955e991ebb2da2c283763}{Set\-Do\-Start\-From\-Dump} (bool do\-\_\-it)
+\item 
+unsigned int \hyperlink{classelps_1_1_lab_simulator_base_a009b34ef7699895bc858bfe5dd4549cb}{Get\-Max\-Population\-Size} ()
+\item 
+void \hyperlink{classelps_1_1_lab_simulator_base_a69c26fc0a20da366265fe86c292cc7e1}{Set\-Max\-Population\-Size} (int pop\-\_\-size)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+ios\-\_\-base\-::openmode \hyperlink{classelps_1_1_lab_simulator_base_abf50d59bc986d5fd60cf0736da6d7cfc}{bin\-\_\-filter}
+\item 
+ofstream $\ast$ \hyperlink{classelps_1_1_lab_simulator_base_a799acaededd6716893242514ee55f2be}{os}
+\item 
+ifstream $\ast$ \hyperlink{classelps_1_1_lab_simulator_base_a3c2edadc7f9844cc4761c0aaa187a055}{is}
+\item 
+double \hyperlink{classelps_1_1_lab_simulator_base_aa259e227b74c8af7336ec106151eb8e6}{t\-\_\-dump\-\_\-step}
+\item 
+bool \hyperlink{classelps_1_1_lab_simulator_base_ac66d131d494c485ea584bf6421a4066a}{do\-\_\-dump}
+\item 
+bool \hyperlink{classelps_1_1_lab_simulator_base_ade3a639ae5152292e8d15a0e8cf057d0}{do\-\_\-start\-\_\-from\-\_\-dump}
+\item 
+string \hyperlink{classelps_1_1_lab_simulator_base_aa3b09013a555da1f89fa88861612a9ae}{dump\-\_\-prefix}
+\item 
+int \hyperlink{classelps_1_1_lab_simulator_base_a95e1ab73336c28b76439709ad4bfa29a}{dump\-\_\-id}
+\item 
+int \hyperlink{classelps_1_1_lab_simulator_base_af44ecd9b5e3946131bac9e735233502b}{cur\-\_\-rep}
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Base class to be derived when writing a simulation.\par
+ It provides a layout covering all the basic features required by a simulation. It is based on common hooks (\hyperlink{classelps_1_1_lab_simulator_base_aa14aa05df8173ffd2a2e67aa25f3cea5}{Init\-Simulation()}, \hyperlink{classelps_1_1_lab_simulator_base_ab48b05171894c3405e6865e019774106}{Step\-Simulation()}, ...) which can be used (overridden) or not by the user. Most of those hooks are virtual or empty (excepted the one concerning the main loop -\/ have a look at \hyperlink{classelps_1_1_lab_simulator_base_ab48e943c2b85b25ff96b2aab4d9aa4bd}{Run\-Simulation()} content to have a good preliminary overview on how the other hooks might be used / organized).
+
+{\bfseries Note \-:} The hooks concerning the basic implementation of the binarization (aka \-: dump / saving the current state of the simulation) are also pre-\/ written).
+
+The inner code of \hyperlink{classelps_1_1_lab_simulator_base_ab48e943c2b85b25ff96b2aab4d9aa4bd}{Run\-Simulation()} could look like this \-:
+
+
+\begin{DoxyCode}
+\textcolor{comment}{// Default simulation loop behavior}
+\textcolor{keywordtype}{void} \hyperlink{classelps_1_1_lab_simulator_base_ab48e943c2b85b25ff96b2aab4d9aa4bd}{LabSimulatorBase::RunSimulation}()
+\{
+\hyperlink{classelps_1_1_lab_simulator_base_aa14aa05df8173ffd2a2e67aa25f3cea5}{InitSimulation}();
+\hyperlink{classelps_1_1_lab_simulator_base_a1339bc2fd37e7a4cc5c8792f447bf348}{InitUnBinarize}();
+\hyperlink{classelps_1_1_lab_simulator_base_abf0012f53b199184d9359656f2f9e4e1}{BeforeRun}();
+\textcolor{keywordflow}{do}
+\{
+        \hyperlink{classelps_1_1_lab_simulator_base_ac0c49279bf16f19b4f8fbd856e3fc6d6}{OutputSimulation}();
+        \hyperlink{classelps_1_1_lab_simulator_base_a51232753515304871678d22aea555a8b}{BeforeStep}();
+        \hyperlink{classelps_1_1_lab_simulator_base_ab48b05171894c3405e6865e019774106}{StepSimulation}();
+        \hyperlink{classelps_1_1_lab_simulator_base_ad00284fc35dec38e6933a37858cb72c6}{AfterStep}();
+        \hyperlink{classelps_1_1_lab_simulator_base_ac1dcb0ae906c0e729a31172a02c243e2}{StepBinarize}();
+\}
+\textcolor{keywordflow}{while} (! \hyperlink{classelps_1_1_lab_simulator_base_ae54d693898ca10e20bb9e7e22264bab8}{EndSimulation}());
+\hyperlink{classelps_1_1_lab_simulator_base_ac0c49279bf16f19b4f8fbd856e3fc6d6}{OutputSimulation}();                             \textcolor{comment}{// One more
+       time for final state}
+\hyperlink{classelps_1_1_lab_simulator_base_afbd964545df8788fe65a488e731a7d05}{AfterRun}();
+\}
+\end{DoxyCode}
+
+
+\subsection*{C\-O\-M\-M\-O\-N U\-S\-A\-G\-E \-:}
+
+
+\begin{DoxyItemize}
+\item Create a subclass of \hyperlink{classelps_1_1_lab_simulator_base}{Lab\-Simulator\-Base}
+\item Feel free to override the hooks (virtual) functions fitting your needs
+\end{DoxyItemize}
+
+All the hooks that where not mentioned above remain empty in this base class, but what they where designed for is described below... 
+
+\subsection{Member Function Documentation}
+\hypertarget{classelps_1_1_lab_simulator_base_afbd964545df8788fe65a488e731a7d05}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!After\-Run@{After\-Run}}
+\index{After\-Run@{After\-Run}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{After\-Run}]{\setlength{\rightskip}{0pt plus 5cm}virtual void elps\-::\-Lab\-Simulator\-Base\-::\-After\-Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classelps_1_1_lab_simulator_base_afbd964545df8788fe65a488e731a7d05}
+This hook is designed to be overridden. It should contain all the instructions/treatments. that should occur at the very end of the simulation process (aka \-: the end of \hyperlink{classelps_1_1_lab_simulator_base_ab48e943c2b85b25ff96b2aab4d9aa4bd}{Run\-Simulation()}). \hypertarget{classelps_1_1_lab_simulator_base_ad00284fc35dec38e6933a37858cb72c6}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!After\-Step@{After\-Step}}
+\index{After\-Step@{After\-Step}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{After\-Step}]{\setlength{\rightskip}{0pt plus 5cm}virtual void elps\-::\-Lab\-Simulator\-Base\-::\-After\-Step (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classelps_1_1_lab_simulator_base_ad00284fc35dec38e6933a37858cb72c6}
+This hook is designed to be overridden. It should contain all the instructions/treatments required after having stepped (See \hyperlink{classelps_1_1_lab_simulator_base_ab48b05171894c3405e6865e019774106}{Step\-Simulation()}) \hypertarget{classelps_1_1_lab_simulator_base_abf0012f53b199184d9359656f2f9e4e1}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!Before\-Run@{Before\-Run}}
+\index{Before\-Run@{Before\-Run}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{Before\-Run}]{\setlength{\rightskip}{0pt plus 5cm}virtual void elps\-::\-Lab\-Simulator\-Base\-::\-Before\-Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classelps_1_1_lab_simulator_base_abf0012f53b199184d9359656f2f9e4e1}
+This hook is designed to be overridden. It should contain all the instructions/treatments that should precede a step of the simulation. By default, it is placed right before starting the main stepping 'while loop'. \hypertarget{classelps_1_1_lab_simulator_base_a51232753515304871678d22aea555a8b}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!Before\-Step@{Before\-Step}}
+\index{Before\-Step@{Before\-Step}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{Before\-Step}]{\setlength{\rightskip}{0pt plus 5cm}virtual void elps\-::\-Lab\-Simulator\-Base\-::\-Before\-Step (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classelps_1_1_lab_simulator_base_a51232753515304871678d22aea555a8b}
+This hook is designed to be overridden. It should contain all the instructions/treatments required before stepping (See \hyperlink{classelps_1_1_lab_simulator_base_ab48b05171894c3405e6865e019774106}{Step\-Simulation()}) \hypertarget{classelps_1_1_lab_simulator_base_ada8b1bb899da72df3677649a2732c31e}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!Binarize\-All@{Binarize\-All}}
+\index{Binarize\-All@{Binarize\-All}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{Binarize\-All}]{\setlength{\rightskip}{0pt plus 5cm}virtual void elps\-::\-Lab\-Simulator\-Base\-::\-Binarize\-All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classelps_1_1_lab_simulator_base_ada8b1bb899da72df3677649a2732c31e}
+This hook is designed to be overridden. It should contain all the instructions/treatments required to dump the current state of the system/simulation. Can be ignored \-: override it only if you need to binarize/dump to file.\par
+ See also the Binarize() and Un\-Binarize() methods for all the object classes implementing the interface \hyperlink{classelps_1_1_lab_i_binarizable}{Lab\-I\-Binarizable} (including the \hyperlink{classelps_1_1_lab_outputer}{Lab\-Outputer} class -\/ see Outpu\-Simulation() hook -\/ which can handle recovery points). \hypertarget{classelps_1_1_lab_simulator_base_af3b8fab0726ba0a17469486315ccc457}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!Clean\-All\-Dump\-Files@{Clean\-All\-Dump\-Files}}
+\index{Clean\-All\-Dump\-Files@{Clean\-All\-Dump\-Files}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{Clean\-All\-Dump\-Files}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Simulator\-Base\-::\-Clean\-All\-Dump\-Files (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_simulator_base_af3b8fab0726ba0a17469486315ccc457}
+Remove from disk all the previously generated dumps. \hypertarget{classelps_1_1_lab_simulator_base_ae40e1b9c3113be0629fe78a6e64ebbeb}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!Clean\-Unused\-Dump\-File@{Clean\-Unused\-Dump\-File}}
+\index{Clean\-Unused\-Dump\-File@{Clean\-Unused\-Dump\-File}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{Clean\-Unused\-Dump\-File}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Simulator\-Base\-::\-Clean\-Unused\-Dump\-File (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_simulator_base_ae40e1b9c3113be0629fe78a6e64ebbeb}
+Remove the most ancient dump files during the stepping process (See \hyperlink{classelps_1_1_lab_simulator_base_ac1dcb0ae906c0e729a31172a02c243e2}{Step\-Binarize()}). \hypertarget{classelps_1_1_lab_simulator_base_ae54d693898ca10e20bb9e7e22264bab8}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!End\-Simulation@{End\-Simulation}}
+\index{End\-Simulation@{End\-Simulation}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{End\-Simulation}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool elps\-::\-Lab\-Simulator\-Base\-::\-End\-Simulation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classelps_1_1_lab_simulator_base_ae54d693898ca10e20bb9e7e22264bab8}
+This hook is designed to be overridden. It takes care of ending the simulation and can be any kind of condition (by example \-: a given number of repetitions is reached, a population entirely passed away, ...). \begin{DoxyReturn}{Returns}
+True by default (aka \-: the simulation steps only once). One must return true to terminate the simulation. 
+\end{DoxyReturn}
+
+
+Reimplemented in \hyperlink{classelps_1_1_lab_simulator_time_ada8cfaa732adce02ebe8d8f59d758257}{elps\-::\-Lab\-Simulator\-Time}.
+
+\hypertarget{classelps_1_1_lab_simulator_base_af5b61f2481886d12afa0fbca879ca24e}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!Get\-Current\-Repetition@{Get\-Current\-Repetition}}
+\index{Get\-Current\-Repetition@{Get\-Current\-Repetition}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{Get\-Current\-Repetition}]{\setlength{\rightskip}{0pt plus 5cm}int elps\-::\-Lab\-Simulator\-Base\-::\-Get\-Current\-Repetition (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_simulator_base_af5b61f2481886d12afa0fbca879ca24e}
+Catch the index of the iteration currently being run. \begin{DoxyReturn}{Returns}
+The index, starting at 0 (index of the first iteration). 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_simulator_base_a001a3c283b3e5e662fe495e5431d4614}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!Get\-Do\-Dump@{Get\-Do\-Dump}}
+\index{Get\-Do\-Dump@{Get\-Do\-Dump}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{Get\-Do\-Dump}]{\setlength{\rightskip}{0pt plus 5cm}bool elps\-::\-Lab\-Simulator\-Base\-::\-Get\-Do\-Dump (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_simulator_base_a001a3c283b3e5e662fe495e5431d4614}
+Check if the dumping system has been activated. \begin{DoxyReturn}{Returns}
+True if it has. 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_simulator_base_afed6057d37890c06c368e0f1c8386151}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!Get\-Do\-Start\-From\-Dump@{Get\-Do\-Start\-From\-Dump}}
+\index{Get\-Do\-Start\-From\-Dump@{Get\-Do\-Start\-From\-Dump}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{Get\-Do\-Start\-From\-Dump}]{\setlength{\rightskip}{0pt plus 5cm}bool elps\-::\-Lab\-Simulator\-Base\-::\-Get\-Do\-Start\-From\-Dump (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_simulator_base_afed6057d37890c06c368e0f1c8386151}
+Check if the system must be recovered from dump files. \begin{DoxyReturn}{Returns}
+True if it must. 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_simulator_base_a1fc6fe479fa4c942fa0d46b349679ce6}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!Get\-Env\-Attributes\-Stack@{Get\-Env\-Attributes\-Stack}}
+\index{Get\-Env\-Attributes\-Stack@{Get\-Env\-Attributes\-Stack}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{Get\-Env\-Attributes\-Stack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lab\-Attributes\-Stack} $\ast$ elps\-::\-Lab\-Simulator\-Base\-::\-Get\-Env\-Attributes\-Stack (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_simulator_base_a1fc6fe479fa4c942fa0d46b349679ce6}
+Get the global (whole environment scope) attributes. \begin{DoxyReturn}{Returns}
+The global environment's stack of attributes. 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_simulator_base_a3b36b0fcefab88319fb92533399ba508}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!Get\-Last\-Dump\-File\-Id\-And\-Clean@{Get\-Last\-Dump\-File\-Id\-And\-Clean}}
+\index{Get\-Last\-Dump\-File\-Id\-And\-Clean@{Get\-Last\-Dump\-File\-Id\-And\-Clean}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{Get\-Last\-Dump\-File\-Id\-And\-Clean}]{\setlength{\rightskip}{0pt plus 5cm}int elps\-::\-Lab\-Simulator\-Base\-::\-Get\-Last\-Dump\-File\-Id\-And\-Clean (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_simulator_base_a3b36b0fcefab88319fb92533399ba508}
+Read the penultimate binary dump file (to make sure the integrity of the file we are working with is preserved, we don't pick up the very last one, as it could have been corrupted...).
+
+\begin{DoxyReturn}{Returns}
+The id of the dump from which the system's state is to be recovered. 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_simulator_base_a009b34ef7699895bc858bfe5dd4549cb}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!Get\-Max\-Population\-Size@{Get\-Max\-Population\-Size}}
+\index{Get\-Max\-Population\-Size@{Get\-Max\-Population\-Size}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{Get\-Max\-Population\-Size}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int elps\-::\-Lab\-Simulator\-Base\-::\-Get\-Max\-Population\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_simulator_base_a009b34ef7699895bc858bfe5dd4549cb}
+Requires a preliminary call to \hyperlink{classelps_1_1_lab_simulator_base_a69c26fc0a20da366265fe86c292cc7e1}{Set\-Max\-Population\-Size()}. \begin{DoxyReturn}{Returns}
+Maximum number of S\-I\-T\-E\-S handled by the simulator. 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_simulator_base_a92317bd9b947016f1652a4ceb01905ad}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!Get\-Nb\-Repetitions@{Get\-Nb\-Repetitions}}
+\index{Get\-Nb\-Repetitions@{Get\-Nb\-Repetitions}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{Get\-Nb\-Repetitions}]{\setlength{\rightskip}{0pt plus 5cm}int elps\-::\-Lab\-Simulator\-Base\-::\-Get\-Nb\-Repetitions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_simulator_base_a92317bd9b947016f1652a4ceb01905ad}
+Get the number of trials (aka \-: number of times the simulation must be entirely completed until the break condition -\/ See \hyperlink{classelps_1_1_lab_simulator_base_ae54d693898ca10e20bb9e7e22264bab8}{End\-Simulation()} -\/ is reached) for the whole process. \begin{DoxyReturn}{Returns}
+The number of times the simulation will be repeated. 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_simulator_base_a9ca089a13b72ce8dc44be9672a09cce4}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!Get\-Time\-Dump\-Step@{Get\-Time\-Dump\-Step}}
+\index{Get\-Time\-Dump\-Step@{Get\-Time\-Dump\-Step}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{Get\-Time\-Dump\-Step}]{\setlength{\rightskip}{0pt plus 5cm}double elps\-::\-Lab\-Simulator\-Base\-::\-Get\-Time\-Dump\-Step (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_simulator_base_a9ca089a13b72ce8dc44be9672a09cce4}
+Get the delta of time between each dump (when 'do\-\_\-dump' is set to true). \begin{DoxyReturn}{Returns}
+A time interval expressed in seconds (See t\-\_\-sys\-\_\-cur). 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_simulator_base_aa14aa05df8173ffd2a2e67aa25f3cea5}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!Init\-Simulation@{Init\-Simulation}}
+\index{Init\-Simulation@{Init\-Simulation}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{Init\-Simulation}]{\setlength{\rightskip}{0pt plus 5cm}virtual void elps\-::\-Lab\-Simulator\-Base\-::\-Init\-Simulation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classelps_1_1_lab_simulator_base_aa14aa05df8173ffd2a2e67aa25f3cea5}
+This hook is designed to be overridden. It should contain all the instructions/treatments that will occur only once, at the very beginning of the simulation. \hypertarget{classelps_1_1_lab_simulator_base_a1339bc2fd37e7a4cc5c8792f447bf348}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!Init\-Un\-Binarize@{Init\-Un\-Binarize}}
+\index{Init\-Un\-Binarize@{Init\-Un\-Binarize}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{Init\-Un\-Binarize}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Simulator\-Base\-::\-Init\-Un\-Binarize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classelps_1_1_lab_simulator_base_a1339bc2fd37e7a4cc5c8792f447bf348}
+Designed to recover from a previously recorded/binarized state of the simulation process. The default behavior (in this base class) is to try to recover from a given dump file (if existing -\/ See do\-\_\-start\-\_\-from\-\_\-dump member attribute) or to clean previous dump files (if do\-\_\-start\-\_\-from\-\_\-dump is set to false). \hypertarget{classelps_1_1_lab_simulator_base_ac0c49279bf16f19b4f8fbd856e3fc6d6}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!Output\-Simulation@{Output\-Simulation}}
+\index{Output\-Simulation@{Output\-Simulation}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{Output\-Simulation}]{\setlength{\rightskip}{0pt plus 5cm}virtual void elps\-::\-Lab\-Simulator\-Base\-::\-Output\-Simulation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classelps_1_1_lab_simulator_base_ac0c49279bf16f19b4f8fbd856e3fc6d6}
+This hook is designed to be overridden. It should contain all the instructions/treatments handling the output informations. For example writing intermediate states of the simulation process into text files.\par
+ {\bfseries Note \-:} See the \hyperlink{classelps_1_1_lab_outputer}{Lab\-Outputer} class for an helper to generate text files (as lines of numbers or as histograms) \hypertarget{classelps_1_1_lab_simulator_base_a976cbd225a24cb9c327c960fcea0df63}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!Run@{Run}}
+\index{Run@{Run}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{Run}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Simulator\-Base\-::\-Run (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classelps_1_1_lab_simulator_base_a976cbd225a24cb9c327c960fcea0df63}
+W\-A\-R\-N\-I\-N\-G \-: This is not a hook. This function is the entry point for running the entire process.\par
+ By default in this base class, it is designed to repeat a given number of times the entire simulation (See \hyperlink{classelps_1_1_lab_simulator_base_a8088b2d51c5c07d190e3a87d2995bb63}{Set\-Nb\-Repetitions()}). This default behavior can be overridden anyway, but absolutely needs to contain at least one call to \hyperlink{classelps_1_1_lab_simulator_base_ab48e943c2b85b25ff96b2aab4d9aa4bd}{Run\-Simulation()}.
+
+
+\begin{DoxyCode}
+\textcolor{comment}{// Default simulator behavior}
+\textcolor{keywordtype}{void} \hyperlink{classelps_1_1_lab_simulator_base_a976cbd225a24cb9c327c960fcea0df63}{LabSimulatorBase::Run}()
+\{
+        \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i=0; i<this->nbRepetitions; i++)
+        \{
+                \hyperlink{classelps_1_1_lab_simulator_base_ab48e943c2b85b25ff96b2aab4d9aa4bd}{RunSimulation}();
+        \}
+\}
+\end{DoxyCode}
+ \hypertarget{classelps_1_1_lab_simulator_base_ab48e943c2b85b25ff96b2aab4d9aa4bd}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!Run\-Simulation@{Run\-Simulation}}
+\index{Run\-Simulation@{Run\-Simulation}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{Run\-Simulation}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Simulator\-Base\-::\-Run\-Simulation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classelps_1_1_lab_simulator_base_ab48e943c2b85b25ff96b2aab4d9aa4bd}
+Override this hook only if the default behavior doesn't match your needs. See the default content in the above header description of this class. 
+
+Reimplemented in \hyperlink{classelps_1_1_lab_simulator_time_a9cf1c9a315d192ea8c065389788fd2c5}{elps\-::\-Lab\-Simulator\-Time}.
+
+\hypertarget{classelps_1_1_lab_simulator_base_a1523f0d57763742aaaf1b2222caae46f}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!Set\-Binary\-Streams@{Set\-Binary\-Streams}}
+\index{Set\-Binary\-Streams@{Set\-Binary\-Streams}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{Set\-Binary\-Streams}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Simulator\-Base\-::\-Set\-Binary\-Streams (
+\begin{DoxyParamCaption}
+\item[{ofstream $\ast$}]{ostream, }
+\item[{ifstream $\ast$}]{istream}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_simulator_base_a1523f0d57763742aaaf1b2222caae46f}
+Possibility to pass the output and input streams to respectively dump and restore using the binarization features. 
+\begin{DoxyParams}{Parameters}
+{\em ostream} & The file output stream to write to. \\
+\hline
+{\em istream} & The file input stream to read from. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_simulator_base_a379cb60ca4c4c7fb6a60aa4d3dc617d6}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!Set\-Current\-Repetition@{Set\-Current\-Repetition}}
+\index{Set\-Current\-Repetition@{Set\-Current\-Repetition}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{Set\-Current\-Repetition}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Simulator\-Base\-::\-Set\-Current\-Repetition (
+\begin{DoxyParamCaption}
+\item[{int}]{rep\-\_\-num}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_simulator_base_a379cb60ca4c4c7fb6a60aa4d3dc617d6}
+W\-A\-R\-N\-I\-N\-G ! Should not be forced by hand during a run. This functions was designed to allow recovering the last state of the simulation before interruption of the process by the user or a crash. See the \char`\"{}\-U\-Nbinarization\char`\"{} features (\hyperlink{classelps_1_1_lab_simulator_base_aab7881a148c2f3859c19ff311d2b5e49}{Un\-Binarize\-All()}). Consequently, it should only be used to restart a simulation at a specific point. 
+\begin{DoxyParams}{Parameters}
+{\em rep\-\_\-num} & The repetition number to restart from. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_simulator_base_a848eedee34bf452deb5e29cd2a76d132}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!Set\-Do\-Dump@{Set\-Do\-Dump}}
+\index{Set\-Do\-Dump@{Set\-Do\-Dump}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{Set\-Do\-Dump}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Simulator\-Base\-::\-Set\-Do\-Dump (
+\begin{DoxyParamCaption}
+\item[{bool}]{do\-\_\-it}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_simulator_base_a848eedee34bf452deb5e29cd2a76d132}
+Set if the dump of the system must be activated. 
+\begin{DoxyParams}{Parameters}
+{\em do\-\_\-it} & Pass 'true' to activate. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_simulator_base_a0d917416e0b955e991ebb2da2c283763}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!Set\-Do\-Start\-From\-Dump@{Set\-Do\-Start\-From\-Dump}}
+\index{Set\-Do\-Start\-From\-Dump@{Set\-Do\-Start\-From\-Dump}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{Set\-Do\-Start\-From\-Dump}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Simulator\-Base\-::\-Set\-Do\-Start\-From\-Dump (
+\begin{DoxyParamCaption}
+\item[{bool}]{do\-\_\-it}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_simulator_base_a0d917416e0b955e991ebb2da2c283763}
+Set if the system must be recovered from dump files. 
+\begin{DoxyParams}{Parameters}
+{\em do\-\_\-it} & Pass 'true' to activate the recovery. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_simulator_base_a69c26fc0a20da366265fe86c292cc7e1}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!Set\-Max\-Population\-Size@{Set\-Max\-Population\-Size}}
+\index{Set\-Max\-Population\-Size@{Set\-Max\-Population\-Size}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{Set\-Max\-Population\-Size}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Simulator\-Base\-::\-Set\-Max\-Population\-Size (
+\begin{DoxyParamCaption}
+\item[{int}]{pop\-\_\-size}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_simulator_base_a69c26fc0a20da366265fe86c292cc7e1}
+Sets the maximum number of sites / individuals to be handled by the simulation. 
+\begin{DoxyParams}{Parameters}
+{\em pop\-\_\-size} & Should be at least one individual. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_simulator_base_a8088b2d51c5c07d190e3a87d2995bb63}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!Set\-Nb\-Repetitions@{Set\-Nb\-Repetitions}}
+\index{Set\-Nb\-Repetitions@{Set\-Nb\-Repetitions}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{Set\-Nb\-Repetitions}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Simulator\-Base\-::\-Set\-Nb\-Repetitions (
+\begin{DoxyParamCaption}
+\item[{int}]{nb\-\_\-rep}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_simulator_base_a8088b2d51c5c07d190e3a87d2995bb63}
+Set the number of trials for the whole process. If ignored, the simulation will run only once (as the default returning value of \hyperlink{classelps_1_1_lab_simulator_base_ae54d693898ca10e20bb9e7e22264bab8}{End\-Simulation()} is True, meaning that the inner while loop of the \hyperlink{classelps_1_1_lab_simulator_base_ab48e943c2b85b25ff96b2aab4d9aa4bd}{Run\-Simulation()} hook while break at the end of the first iteration). 
+\begin{DoxyParams}{Parameters}
+{\em nb\-\_\-rep} & The number of times the simulation will be repeated. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_simulator_base_a1728d3db698c0557b39ca7246ff749ea}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!Set\-Time\-Dump\-Step@{Set\-Time\-Dump\-Step}}
+\index{Set\-Time\-Dump\-Step@{Set\-Time\-Dump\-Step}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{Set\-Time\-Dump\-Step}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Simulator\-Base\-::\-Set\-Time\-Dump\-Step (
+\begin{DoxyParamCaption}
+\item[{double}]{time}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_simulator_base_a1728d3db698c0557b39ca7246ff749ea}
+Set the interval between each dump (when 'do\-\_\-dump' is set to true). 
+\begin{DoxyParams}{Parameters}
+{\em time} & Interval of time expressed in seconds. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_simulator_base_ac1dcb0ae906c0e729a31172a02c243e2}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!Step\-Binarize@{Step\-Binarize}}
+\index{Step\-Binarize@{Step\-Binarize}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{Step\-Binarize}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Simulator\-Base\-::\-Step\-Binarize (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classelps_1_1_lab_simulator_base_ac1dcb0ae906c0e729a31172a02c243e2}
+Called at the very end of a simulation step (by default). This hook can be overridden to deal with any kind of requirement in term of dumping the system. Ignore (aka \-: do not call it in \hyperlink{classelps_1_1_lab_simulator_base_ab48e943c2b85b25ff96b2aab4d9aa4bd}{Run\-Simulation()}) if you do not plan to use binarization features. \hypertarget{classelps_1_1_lab_simulator_base_ab48b05171894c3405e6865e019774106}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!Step\-Simulation@{Step\-Simulation}}
+\index{Step\-Simulation@{Step\-Simulation}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{Step\-Simulation}]{\setlength{\rightskip}{0pt plus 5cm}virtual void elps\-::\-Lab\-Simulator\-Base\-::\-Step\-Simulation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classelps_1_1_lab_simulator_base_ab48b05171894c3405e6865e019774106}
+This hook is designed to be overridden. It should contain all the instructions/treatments that will occur at each step of the simulation. 
+
+Reimplemented in \hyperlink{classelps_1_1_lab_simulator_time_ad8845591018d7d9bdf38932faa2a04dd}{elps\-::\-Lab\-Simulator\-Time}.
+
+\hypertarget{classelps_1_1_lab_simulator_base_aab7881a148c2f3859c19ff311d2b5e49}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!Un\-Binarize\-All@{Un\-Binarize\-All}}
+\index{Un\-Binarize\-All@{Un\-Binarize\-All}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{Un\-Binarize\-All}]{\setlength{\rightskip}{0pt plus 5cm}virtual void elps\-::\-Lab\-Simulator\-Base\-::\-Un\-Binarize\-All (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classelps_1_1_lab_simulator_base_aab7881a148c2f3859c19ff311d2b5e49}
+This hook is designed to be overridden. It should contain all the instructions/treatments required to restore the last dumpped state of the system/simulation. Can be ignored \-: override it only if you need to unbinarize/restore from file.\par
+ See also the Binarize() and Un\-Binarize() methods for all the object classes implementing the interface \hyperlink{classelps_1_1_lab_i_binarizable}{Lab\-I\-Binarizable} (including the \hyperlink{classelps_1_1_lab_outputer}{Lab\-Outputer} class -\/ see Outpu\-Simulation() hook -\/ which can handle recovery points. 
+
+\subsection{Member Data Documentation}
+\hypertarget{classelps_1_1_lab_simulator_base_abf50d59bc986d5fd60cf0736da6d7cfc}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!bin\-\_\-filter@{bin\-\_\-filter}}
+\index{bin\-\_\-filter@{bin\-\_\-filter}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{bin\-\_\-filter}]{\setlength{\rightskip}{0pt plus 5cm}ios\-\_\-base\-::openmode elps\-::\-Lab\-Simulator\-Base\-::bin\-\_\-filter\hspace{0.3cm}{\ttfamily [protected]}}}\label{classelps_1_1_lab_simulator_base_abf50d59bc986d5fd60cf0736da6d7cfc}
+Used to read/write files in binary mode (default \-: ios\-::app $|$ ios\-::out $|$ ios\-::in $|$ ios\-::binary) \hypertarget{classelps_1_1_lab_simulator_base_af44ecd9b5e3946131bac9e735233502b}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!cur\-\_\-rep@{cur\-\_\-rep}}
+\index{cur\-\_\-rep@{cur\-\_\-rep}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{cur\-\_\-rep}]{\setlength{\rightskip}{0pt plus 5cm}int elps\-::\-Lab\-Simulator\-Base\-::cur\-\_\-rep\hspace{0.3cm}{\ttfamily [protected]}}}\label{classelps_1_1_lab_simulator_base_af44ecd9b5e3946131bac9e735233502b}
+Current repetition index -\/ starting at 0 \hypertarget{classelps_1_1_lab_simulator_base_ac66d131d494c485ea584bf6421a4066a}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!do\-\_\-dump@{do\-\_\-dump}}
+\index{do\-\_\-dump@{do\-\_\-dump}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{do\-\_\-dump}]{\setlength{\rightskip}{0pt plus 5cm}bool elps\-::\-Lab\-Simulator\-Base\-::do\-\_\-dump\hspace{0.3cm}{\ttfamily [protected]}}}\label{classelps_1_1_lab_simulator_base_ac66d131d494c485ea584bf6421a4066a}
+If dumping is activated \hypertarget{classelps_1_1_lab_simulator_base_ade3a639ae5152292e8d15a0e8cf057d0}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!do\-\_\-start\-\_\-from\-\_\-dump@{do\-\_\-start\-\_\-from\-\_\-dump}}
+\index{do\-\_\-start\-\_\-from\-\_\-dump@{do\-\_\-start\-\_\-from\-\_\-dump}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{do\-\_\-start\-\_\-from\-\_\-dump}]{\setlength{\rightskip}{0pt plus 5cm}bool elps\-::\-Lab\-Simulator\-Base\-::do\-\_\-start\-\_\-from\-\_\-dump\hspace{0.3cm}{\ttfamily [protected]}}}\label{classelps_1_1_lab_simulator_base_ade3a639ae5152292e8d15a0e8cf057d0}
+If recovering from dump is activated \hypertarget{classelps_1_1_lab_simulator_base_a95e1ab73336c28b76439709ad4bfa29a}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!dump\-\_\-id@{dump\-\_\-id}}
+\index{dump\-\_\-id@{dump\-\_\-id}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{dump\-\_\-id}]{\setlength{\rightskip}{0pt plus 5cm}int elps\-::\-Lab\-Simulator\-Base\-::dump\-\_\-id\hspace{0.3cm}{\ttfamily [protected]}}}\label{classelps_1_1_lab_simulator_base_a95e1ab73336c28b76439709ad4bfa29a}
+Postfix index to be appended to the name of the dump file \hypertarget{classelps_1_1_lab_simulator_base_aa3b09013a555da1f89fa88861612a9ae}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!dump\-\_\-prefix@{dump\-\_\-prefix}}
+\index{dump\-\_\-prefix@{dump\-\_\-prefix}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{dump\-\_\-prefix}]{\setlength{\rightskip}{0pt plus 5cm}string elps\-::\-Lab\-Simulator\-Base\-::dump\-\_\-prefix\hspace{0.3cm}{\ttfamily [protected]}}}\label{classelps_1_1_lab_simulator_base_aa3b09013a555da1f89fa88861612a9ae}
+Prefix for the name of the dump files (default \-: \char`\"{}dump.\-bin.\char`\"{}) \hypertarget{classelps_1_1_lab_simulator_base_a3c2edadc7f9844cc4761c0aaa187a055}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!is@{is}}
+\index{is@{is}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{is}]{\setlength{\rightskip}{0pt plus 5cm}ifstream$\ast$ elps\-::\-Lab\-Simulator\-Base\-::is\hspace{0.3cm}{\ttfamily [protected]}}}\label{classelps_1_1_lab_simulator_base_a3c2edadc7f9844cc4761c0aaa187a055}
+Input file stream to recover from \hypertarget{classelps_1_1_lab_simulator_base_a799acaededd6716893242514ee55f2be}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!os@{os}}
+\index{os@{os}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{os}]{\setlength{\rightskip}{0pt plus 5cm}ofstream$\ast$ elps\-::\-Lab\-Simulator\-Base\-::os\hspace{0.3cm}{\ttfamily [protected]}}}\label{classelps_1_1_lab_simulator_base_a799acaededd6716893242514ee55f2be}
+Output file stream to dump to \hypertarget{classelps_1_1_lab_simulator_base_aa259e227b74c8af7336ec106151eb8e6}{\index{elps\-::\-Lab\-Simulator\-Base@{elps\-::\-Lab\-Simulator\-Base}!t\-\_\-dump\-\_\-step@{t\-\_\-dump\-\_\-step}}
+\index{t\-\_\-dump\-\_\-step@{t\-\_\-dump\-\_\-step}!elps::LabSimulatorBase@{elps\-::\-Lab\-Simulator\-Base}}
+\subsubsection[{t\-\_\-dump\-\_\-step}]{\setlength{\rightskip}{0pt plus 5cm}double elps\-::\-Lab\-Simulator\-Base\-::t\-\_\-dump\-\_\-step\hspace{0.3cm}{\ttfamily [protected]}}}\label{classelps_1_1_lab_simulator_base_aa259e227b74c8af7336ec106151eb8e6}
+Interval in seconds between two dumps 

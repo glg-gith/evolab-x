@@ -1,0 +1,856 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>cyelp.PyLabSiteEvent</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="cyelp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a href="http://www.evolab-project.org"><img src="../elp-cy-eee.png" style="margin:10px;" /></a>
+        <script>
+			var link = parent.document.createElement('link'); 
+			link.id = 'dynamic-favicon'; 
+			link.type = 'image/png'; 
+			link.rel = 'shortcut icon'; 
+			link.href = '../logo-base-fav.png'; 
+			parent.document.head.appendChild(link); 
+			parent.document.head = parent.document.head || parent.document.getElementsByTagName('head')[0];
+		</script></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="cyelp-module.html">Module&nbsp;cyelp</a> ::
+        Class&nbsp;PyLabSiteEvent
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="cyelp.PyLabSiteEvent-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class PyLabSiteEvent</h1><p class="nomargin-top"></p>
+<center>
+<center>  <map id="uml_class_diagram_for_cyelp_py_21" name="uml_class_diagram_for_cyelp_py_21">
+<area shape="rect" id="node44" href="cyelp.PyLabSiteEvent-class.html#Binarize" title="cyelp.PyLabSiteEvent.Binarize" alt="" coords="39,436,476,455"/>
+<area shape="rect" id="node44" href="cyelp.PyLabSiteEvent-class.html#Copy" title="Copy of the 3 stacks (attributes, states, events) given a source SITE to &#160;this one." alt="" coords="39,455,476,473"/>
+<area shape="rect" id="node44" href="cyelp.PyLabSiteEvent-class.html#GetEventStackRate" title="Access the total rate of the events stack." alt="" coords="39,473,476,492"/>
+<area shape="rect" id="node44" href="cyelp.PyLabSiteEvent-class.html#GetNbEvents" title="Get the number of events in the events stack." alt="" coords="39,492,476,511"/>
+<area shape="rect" id="node44" href="cyelp.PyLabSiteEvent-class.html#GetTimeEvent" title="Get the current time of the events stack." alt="" coords="39,511,476,529"/>
+<area shape="rect" id="node44" href="cyelp.PyLabSiteEvent-class.html#PopEvent" title="Remove the event located on top of the events stack." alt="" coords="39,529,476,548"/>
+<area shape="rect" id="node44" href="cyelp.PyLabSiteEvent-class.html#PushEvent" title="Add a new event to the event stack of this Site." alt="" coords="39,548,476,567"/>
+<area shape="rect" id="node44" href="cyelp.PyLabSiteEvent-class.html#RealizeEvent" title="Choose an event given a probability (Multinomial low), then realize it." alt="" coords="39,567,476,585"/>
+<area shape="rect" id="node44" href="cyelp.PyLabSiteEvent-class.html#ResetEventStackRate" title="Reset the total rate of the events stack." alt="" coords="39,585,476,604"/>
+<area shape="rect" id="node44" href="cyelp.PyLabSiteEvent-class.html#SetTimeEvent" title="Update the current time of the events stack." alt="" coords="39,604,476,623"/>
+<area shape="rect" id="node44" href="cyelp.PyLabSiteEvent-class.html#UnBinarize" title="cyelp.PyLabSiteEvent.UnBinarize" alt="" coords="39,623,476,641"/>
+<area shape="rect" id="node44" href="cyelp.PyLabSiteEvent-class.html#UpdateEventStackRates" title="Update the global stack rate accordingly to the rates of the events stacked (See PyLabEventStack.UpdateStackRates())." alt="" coords="39,641,476,660"/>
+<area shape="rect" id="node44" href="cyelp.PyLabSiteEvent-class.html#__init__" title="Basic constructor (user must provide a parent node in a SPATIALIZED &#160;context)." alt="" coords="39,660,476,679"/>
+<area shape="rect" id="node44" href="cyelp.PyLabSiteEvent-class.html#__new__" title="cyelp.PyLabSiteEvent.__new__" alt="" coords="39,679,476,697"/>
+<area shape="rect" id="node1" href="cyelp.PyLabSiteEvent-class.html" title="This class handles ATTRIBUTES and STATES (since it inherits from PyLabSiteBase), but also EVENTS." alt="" coords="27,403,488,703"/>
+<area shape="rect" id="node45" href="cyelp.PyLabSiteBase-class.html#GetAttrDouble" title="Get the integer value of an attribute specified by its id in the attributes stack and its dependency level." alt="" coords="17,135,497,153"/>
+<area shape="rect" id="node45" href="cyelp.PyLabSiteBase-class.html#GetAttrInt" title="Get the integer value of an attribute specified by its id in the attributes stack and its dependency level." alt="" coords="17,153,497,172"/>
+<area shape="rect" id="node45" href="cyelp.PyLabSiteBase-class.html#GetCurrentStateElapsedTime" title="Get the time elapsed since the current state was entered." alt="" coords="17,172,497,191"/>
+<area shape="rect" id="node45" href="cyelp.PyLabSiteBase-class.html#GetCurrentStateRemainingTime" title="Get the time remaining until the current state will be quit (timeout &#160;reached)." alt="" coords="17,191,497,209"/>
+<area shape="rect" id="node45" href="cyelp.PyLabSiteBase-class.html#GetNbAttributes" title="Get the number of attributes at the given dependency level using a filter." alt="" coords="17,209,497,228"/>
+<area shape="rect" id="node45" href="cyelp.PyLabSiteBase-class.html#GetNbStates" title="Get the number of states in the states stack." alt="" coords="17,228,497,247"/>
+<area shape="rect" id="node45" href="cyelp.PyLabSiteBase-class.html#GetState" title="Get the current state of this SITE." alt="" coords="17,247,497,265"/>
+<area shape="rect" id="node45" href="cyelp.PyLabSiteBase-class.html#PopAttribute" title="Remove the last pushed attribute from the top of the specified stack." alt="" coords="17,265,497,284"/>
+<area shape="rect" id="node45" href="cyelp.PyLabSiteBase-class.html#PopState" title="Remove the state located on top of the states stack." alt="" coords="17,284,497,303"/>
+<area shape="rect" id="node45" href="cyelp.PyLabSiteBase-class.html#PushAttribute" title="Add a new attribute on top of the stack specified by dep_type." alt="" coords="17,303,497,321"/>
+<area shape="rect" id="node45" href="cyelp.PyLabSiteBase-class.html#PushState" title="Add a new state to the state stack." alt="" coords="17,321,497,340"/>
+<area shape="rect" id="node45" href="cyelp.PyLabSiteBase-class.html#SetAttrDouble" title="Set the double value of an attribute specified by its id in the attributes &#160;stack and its dependency level." alt="" coords="17,340,497,359"/>
+<area shape="rect" id="node45" href="cyelp.PyLabSiteBase-class.html#SetState" title="Set the current state of this SITE." alt="" coords="17,359,497,377"/>
+<area shape="rect" id="node2" href="cyelp.PyLabSiteBase-class.html" title="Base class for handling user defined data on a given SITE." alt="" coords="5,102,509,383"/>
+<area shape="rect" id="node46" href="cyelp.PyLabUserData-class.html#GetData" title="Get the specific information stored by the user." alt="" coords="199,39,316,57"/>
+<area shape="rect" id="node46" href="cyelp.PyLabUserData-class.html#SetData" title="Set the specific information the user is about to store." alt="" coords="199,57,316,76"/>
+<area shape="rect" id="node3" href="cyelp.PyLabUserData-class.html" title="This is the base class for all the classes used for describing a Site." alt="" coords="187,6,328,82"/>
+</map>
+  <img src="uml_class_diagram_for_cyelp_py_21.gif" alt='' usemap="#uml_class_diagram_for_cyelp_py_21" ismap="ismap" class="graph-without-title" />
+</center>
+</center>
+<hr />
+<p>This class handles ATTRIBUTES and STATES (since it inherits from <a 
+  href="cyelp.PyLabSiteBase-class.html" class="link">PyLabSiteBase</a>), 
+  but also EVENTS.</p>
+  <p><b>Note :</b> The concept of SITE (data of a node in a network - 
+  SPATIALIZED context) has been kept for MASS ACTION context for preserving
+  genericity.</p>
+  <p>All the features related to ATTRIBUTES and STATES are deeply described
+  in <a href="cyelp.PyLabSiteBase-class.html" 
+  class="link">PyLabSiteBase</a>, since PyLabSiteEvent inherits from this 
+  class.</p>
+  <p>EVENTS (See also : <a href="cyelp.PyLabEventStack-class.html" 
+  class="link">PyLabEventStack</a>) :</p>
+  <p>An event is an action that can be fired at any time on the SITE 
+  (locally).</p>
+  <ul>
+    <li>
+      It has a given propensity to occur (which can change during the 
+      simulation life time)
+    </li>
+    <li>
+      It comes with an action (method) which is fired (executed) when the 
+      event occurs
+    </li>
+  </ul>
+  <p>The PyLabSiteEvent class is nothing else but an aggregate of the 
+  attributes, states and events stacks : See C++ classes 
+  <code>LabAttributesStack</code>, <code>LabStateStack</code> and 
+  <code>LabEventStack</code>.</p>
+  <p><b>Note :</b> A Site is <b>always</b> related to a simulator.</p>
+  <h1 class="heading">USAGE :</h1>
+    <p>A basic use case would look like follows (assuming the setup for 
+    ATTRIBUTES and STATES has already been done - See <a 
+    href="cyelp.PyLabSiteBase-class.html" class="link">PyLabSiteBase</a>) 
+    :</p>
+    <p>First of all define the callback methods to be fired. Those must be 
+    of the form :</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">def</span> <span class="py-defname">BirthRate</span>(node):                                    <span class="py-comment"># We choose to pass a PyLabNode</span>
+<span class="py-more">... </span>    a_site = node.GetUserData()                         <span class="py-comment"># Get the Site embedded in this node </span>
+<span class="py-more">... </span>    rate = b * a_site.GetAttrDouble(cyelp.IND_DEP, X)   <span class="py-comment"># Compute the return value</span>
+<span class="py-more">... </span>    <span class="py-keyword">if</span> (a_site.GetState() == MUTANT):
+<span class="py-more">... </span>        rate *= 0.9
+<span class="py-more">... </span>    return rate                                         <span class="py-comment"># return a float</span></pre>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-keyword">def</span> <span class="py-defname">RealizeBirth</span>(node):
+<span class="py-more">... </span>    <span class="py-keyword">print</span> <span class="py-string">&quot;BIRTH fired !&quot;</span>
+<span class="py-more">... </span>    <span class="py-comment"># DO SOMETHING with node here... </span>
+<span class="py-more">... </span>    return 0.0</pre>
+    <p><b>Note :</b> the <b>node</b> parameter can be any Python object 
+    (here we assume we are in a SPATIALIZED context, that's why we use the 
+    &quot;node&quot; term).</p>
+    <p>Then we can create the callbacks and assign them to the Site :</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span><span class="py-comment"># EVENTS</span>
+<span class="py-more">...</span>
+<span class="py-more">... </span><span class="py-comment"># Push the event to be fired when a &quot;birth&quot; should occur.</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>rate_callback = PyLabCallBack(BirthRate)
+<span class="py-prompt">&gt;&gt;&gt; </span>realize_callback = PyLabCallBack(RealizeBirth)
+<span class="py-prompt">&gt;&gt;&gt; </span>a_site.PushEvent(<span class="py-string">&quot;BIRTH&quot;</span>, 0, a_node, rate_callback, realize_callback);
+<span class="py-more">...</span>
+<span class="py-more">... </span><span class="py-comment"># Push the event to be fired when a &quot;death&quot; should occur.</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>rate_callback = PyLabCallBack(DeathRate)
+<span class="py-prompt">&gt;&gt;&gt; </span>realize_callback = PyLabCallBack(RealizeDeath)
+<span class="py-prompt">&gt;&gt;&gt; </span>a_site.PushEvent(<span class="py-string">&quot;DEATH&quot;</span>, 0, a_node, rate_callback, realize_callback);
+<span class="py-more">...</span>
+<span class="py-more">... </span><span class="py-comment"># etc.</span></pre>
+    <p>Push one callback per possible event according to the needs of your 
+    simulation for the given Site.</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Instance Methods</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSiteEvent-class.html#Binarize" class="summary-sig-name">Binarize</a>(<span class="summary-sig-arg">...</span>)</span></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSiteEvent-class.html#Copy" class="summary-sig-name">Copy</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">src_site</span>,
+        <span class="summary-sig-arg">dep_filter</span>)</span><br />
+      Copy of the 3 stacks (attributes, states, events) given a source SITE
+      to this one.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>float</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSiteEvent-class.html#GetEventStackRate" class="summary-sig-name">GetEventStackRate</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Access the total rate of the events stack.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>int</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSiteEvent-class.html#GetNbEvents" class="summary-sig-name">GetNbEvents</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Get the number of events in the events stack.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>float</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSiteEvent-class.html#GetTimeEvent" class="summary-sig-name">GetTimeEvent</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Get the current time of the events stack.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="PopEvent"></a><span class="summary-sig-name">PopEvent</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Remove the event located on top of the events stack.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSiteEvent-class.html#PushEvent" class="summary-sig-name">PushEvent</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">name</span>,
+        <span class="summary-sig-arg">initial_rate</span>,
+        <span class="summary-sig-arg">param</span>,
+        <span class="summary-sig-arg">rate_callback</span>,
+        <span class="summary-sig-arg">realize_callback</span>)</span><br />
+      Add a new event to the event stack of this Site.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSiteEvent-class.html#RealizeEvent" class="summary-sig-name">RealizeEvent</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">p1</span>,
+        <span class="summary-sig-arg">time</span>)</span><br />
+      Choose an event given a probability (Multinomial low), then realize 
+      it.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="ResetEventStackRate"></a><span class="summary-sig-name">ResetEventStackRate</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Reset the total rate of the events stack.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSiteEvent-class.html#SetTimeEvent" class="summary-sig-name">SetTimeEvent</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">time</span>)</span><br />
+      Update the current time of the events stack.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSiteEvent-class.html#UnBinarize" class="summary-sig-name">UnBinarize</a>(<span class="summary-sig-arg">...</span>)</span></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="UpdateEventStackRates"></a><span class="summary-sig-name">UpdateEventStackRates</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Update the global stack rate accordingly to the rates of the events 
+      stacked (See <a 
+      href="cyelp.PyLabEventStack-class.html#UpdateStackRates" 
+      class="link">PyLabEventStack.UpdateStackRates()</a>).</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSiteEvent-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">sim</span>,
+        <span class="summary-sig-arg">parent</span>=<span class="summary-sig-default"> None</span>)</span><br />
+      Basic constructor (user must provide a parent node in a SPATIALIZED 
+      context).</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">a new object with type S, a subtype of T</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabSiteEvent-class.html#__new__" class="summary-sig-name">__new__</a>(<span class="summary-sig-arg">T</span>,
+        <span class="summary-sig-arg">S</span>,
+        <span class="summary-sig-arg">...</span>)</span></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="cyelp.PyLabSiteBase-class.html">PyLabSiteBase</a></code></b>:
+      <code><a href="cyelp.PyLabSiteBase-class.html#GetAttrDouble">GetAttrDouble</a></code>,
+      <code><a href="cyelp.PyLabSiteBase-class.html#GetAttrInt">GetAttrInt</a></code>,
+      <code><a href="cyelp.PyLabSiteBase-class.html#GetCurrentStateElapsedTime">GetCurrentStateElapsedTime</a></code>,
+      <code><a href="cyelp.PyLabSiteBase-class.html#GetCurrentStateRemainingTime">GetCurrentStateRemainingTime</a></code>,
+      <code><a href="cyelp.PyLabSiteBase-class.html#GetNbAttributes">GetNbAttributes</a></code>,
+      <code><a href="cyelp.PyLabSiteBase-class.html#GetNbStates">GetNbStates</a></code>,
+      <code><a href="cyelp.PyLabSiteBase-class.html#GetState">GetState</a></code>,
+      <code><a href="cyelp.PyLabSiteBase-class.html#PopAttribute">PopAttribute</a></code>,
+      <code><a href="cyelp.PyLabSiteBase-class.html#PopState">PopState</a></code>,
+      <code><a href="cyelp.PyLabSiteBase-class.html#PushAttribute">PushAttribute</a></code>,
+      <code><a href="cyelp.PyLabSiteBase-class.html#PushState">PushState</a></code>,
+      <code><a href="cyelp.PyLabSiteBase-class.html#SetAttrDouble">SetAttrDouble</a></code>,
+      <code><a href="cyelp.PyLabSiteBase-class.html#SetState">SetState</a></code>
+      </p>
+    <p class="indent-wrapped-lines"><b>Inherited from <code><a href="cyelp.PyLabUserData-class.html">PyLabUserData</a></code></b>:
+      <code><a href="cyelp.PyLabUserData-class.html#GetData">GetData</a></code>,
+      <code><a href="cyelp.PyLabUserData-class.html#SetData">SetData</a></code>
+      </p>
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__delattr__</code>,
+      <code>__format__</code>,
+      <code>__getattribute__</code>,
+      <code>__hash__</code>,
+      <code>__reduce__</code>,
+      <code>__reduce_ex__</code>,
+      <code>__repr__</code>,
+      <code>__setattr__</code>,
+      <code>__sizeof__</code>,
+      <code>__str__</code>,
+      <code>__subclasshook__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== PROPERTIES ==================== -->
+<a name="section-Properties"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Properties</span></td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__class__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Method Details</span></td>
+</tr>
+</table>
+<a name="Binarize"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">Binarize</span>(<span class="sig-arg">...</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Overrides:
+        <a href="cyelp.PyLabSiteBase-class.html#Binarize">PyLabSiteBase.Binarize</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="Copy"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">Copy</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">src_site</span>,
+        <span class="sig-arg">dep_filter</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Copy of the 3 stacks (attributes, states, events) given a source SITE 
+  to this one.</p>
+  <p>The dependency level (<b>dep_filter</b>) concerns only the attributes 
+  stack (See C++ LabAttributesStack::Copy()).</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>src_site</code></strong> - The site (<a href="cyelp.PyLabSiteBase-class.html" 
+          class="link">PyLabSiteBase</a>) to copy from.</li>
+        <li><strong class="pname"><code>dep_filter</code></strong> - Filter used to select which attributes will be copied. (Ex1 : 
+          dep_filter = IND_DEP | SITE_DEP, means : copies only 
+          non-environmental attributes. Ex2 : dep_filter = IND_DEP | 
+          SITE_DEP | ENV_DEP : copies all).</li>
+    </ul></dd>
+    <dt>Overrides:
+        <a href="cyelp.PyLabSiteBase-class.html#Copy">PyLabSiteBase.Copy</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetEventStackRate"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetEventStackRate</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Access the total rate of the events stack.</p>
+  <dl class="fields">
+    <dt>Returns: <code>float</code></dt>
+        <dd>The cumulative stack rate.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetNbEvents"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetNbEvents</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the number of events in the events stack.</p>
+  <dl class="fields">
+    <dt>Returns: <code>int</code></dt>
+        <dd>Number of events currently stored.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetTimeEvent"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetTimeEvent</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the current time of the events stack.</p>
+  <dl class="fields">
+    <dt>Returns: <code>float</code></dt>
+        <dd>The time expressed as a double value.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="PushEvent"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">PushEvent</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">name</span>,
+        <span class="sig-arg">initial_rate</span>,
+        <span class="sig-arg">param</span>,
+        <span class="sig-arg">rate_callback</span>,
+        <span class="sig-arg">realize_callback</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Add a new event to the event stack of this Site.</p>
+  <p>Note : Usually, the <b>param</b> parameter would be a <a 
+  href="cyelp.PyLabNode-class.html" class="link">PyLabNode</a> in case we 
+  are in SPATIALIZED context. This can be any kind of Python object 
+  otherwise...</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>name</code></strong> (<code>str</code>) - Name given to the event (better choose a unique one).</li>
+        <li><strong class="pname"><code>initial_rate</code></strong> (<code>float</code>) - Rate at which the event can be fired at start.</li>
+        <li><strong class="pname"><code>param</code></strong> (<code>object</code>) - Parameter which will be passed to both rate and realize callbacks
+          when fired Should be left NULL (None) when sites are built from 
+          models (See <a href="cyelp.PyLabNetBinding-class.html" 
+          class="link">PyLabNetBinding</a> and <a 
+          href="cyelp.PyLabArrayBinding-class.html" 
+          class="link">PyLabArrayBinding</a> classes).</li>
+        <li><strong class="pname"><code>rate_callback</code></strong> (<code>function</code>) - Function to be called when updating the event's rate.</li>
+        <li><strong class="pname"><code>realize_callback</code></strong> (<code>function</code>) - Function to be called when realizing / firing the event.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="RealizeEvent"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">RealizeEvent</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">p1</span>,
+        <span class="sig-arg">time</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Choose an event given a probability (Multinomial low), then realize 
+  it. (See <a href="cyelp.PyLabEventStack-class.html#RealizeEvent" 
+  class="link">PyLabEventStack.RealizeEvent(p1, time)</a>).</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>p1</code></strong> (<code>float</code>) - The probability [0.0, 1.0] used for selecting the event.</li>
+        <li><strong class="pname"><code>time</code></strong> (<code>float</code>) - The given time becomes the current time of the stack.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="SetTimeEvent"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">SetTimeEvent</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">time</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Update the current time of the events stack.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>time</code></strong> (<code>float</code>) - The current time (usually the current simulation time).</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="UnBinarize"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">UnBinarize</span>(<span class="sig-arg">...</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Overrides:
+        <a href="cyelp.PyLabSiteBase-class.html#UnBinarize">PyLabSiteBase.UnBinarize</a>
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">sim</span>,
+        <span class="sig-arg">parent</span>=<span class="sig-default"> None</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Basic constructor (user must provide a parent node in a SPATIALIZED 
+  context).</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>sim</code></strong> (<code>PyLabSimulatorBase</code>) - The Simulator this Site is related to.</li>
+        <li><strong class="pname"><code>parent</code></strong> (<code>PyLabNode</code>) - The node this Site is related to.</li>
+    </ul></dd>
+    <dt>Overrides:
+        object.__init__
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="__new__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__new__</span>(<span class="sig-arg">T</span>,
+        <span class="sig-arg">S</span>,
+        <span class="sig-arg">...</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Returns: a new object with type S, a subtype of T</dt>
+    <dt>Overrides:
+        object.__new__
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="cyelp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a href="http://www.evolab-project.org"><img src="../elp-cy-eee.png" style="margin:10px;" /></a>
+        <script>
+			var link = parent.document.createElement('link'); 
+			link.id = 'dynamic-favicon'; 
+			link.type = 'image/png'; 
+			link.rel = 'shortcut icon'; 
+			link.href = '../logo-base-fav.png'; 
+			parent.document.head.appendChild(link); 
+			parent.document.head = parent.document.head || parent.document.getElementsByTagName('head')[0];
+		</script></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Fri Jun  7 07:41:40 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

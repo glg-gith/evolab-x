@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>cyelp.PyLabArrayBinding</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="cyelp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a href="http://www.evolab-project.org"><img src="../elp-cy-eee.png" style="margin:10px;" /></a>
+        <script>
+			var link = parent.document.createElement('link'); 
+			link.id = 'dynamic-favicon'; 
+			link.type = 'image/png'; 
+			link.rel = 'shortcut icon'; 
+			link.href = '../logo-base-fav.png'; 
+			parent.document.head.appendChild(link); 
+			parent.document.head = parent.document.head || parent.document.getElementsByTagName('head')[0];
+		</script></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="cyelp-module.html">Module&nbsp;cyelp</a> ::
+        Class&nbsp;PyLabArrayBinding
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="cyelp.PyLabArrayBinding-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class PyLabArrayBinding</h1><p class="nomargin-top"></p>
+<center>
+<center>  <map id="uml_class_diagram_for_cyelp_py_5" name="uml_class_diagram_for_cyelp_py_5">
+<area shape="rect" id="node10" href="cyelp.PyLabArrayBinding-class.html#BeginSetSites" title="Starts populating with a given number of sites." alt="" coords="17,39,376,57"/>
+<area shape="rect" id="node10" href="cyelp.PyLabArrayBinding-class.html#CopySite" title="TODO : UNTESTED !" alt="" coords="17,57,376,76"/>
+<area shape="rect" id="node10" href="cyelp.PyLabArrayBinding-class.html#EndSetSites" title="Ends populating sites operation." alt="" coords="17,76,376,95"/>
+<area shape="rect" id="node10" href="cyelp.PyLabArrayBinding-class.html#Populate1" title="Populate randomly according to the given distribution and the models." alt="" coords="17,95,376,113"/>
+<area shape="rect" id="node10" href="cyelp.PyLabArrayBinding-class.html#Populate2" title="Populate with exactly the given amounts given by dist and the models." alt="" coords="17,113,376,132"/>
+<area shape="rect" id="node10" href="cyelp.PyLabArrayBinding-class.html#SetOneSiteAt" title="Adds a single site to the sets manager." alt="" coords="17,132,376,151"/>
+<area shape="rect" id="node10" href="cyelp.PyLabArrayBinding-class.html#SwapSite" title="TODO : UNTESTED !" alt="" coords="17,151,376,169"/>
+<area shape="rect" id="node10" href="cyelp.PyLabArrayBinding-class.html#__init__" title="Constructor." alt="" coords="17,169,376,188"/>
+<area shape="rect" id="node10" href="cyelp.PyLabArrayBinding-class.html#__new__" title="cyelp.PyLabArrayBinding.__new__" alt="" coords="17,188,376,207"/>
+<area shape="rect" id="node1" href="cyelp.PyLabArrayBinding-class.html" title="This class embeds a list of sites and provides features to populate it (for use in a MASS ACTION context)." alt="" coords="5,6,387,213"/>
+</map>
+  <img src="uml_class_diagram_for_cyelp_py_5.gif" alt='' usemap="#uml_class_diagram_for_cyelp_py_5" ismap="ismap" class="graph-without-title" />
+</center>
+</center>
+<hr />
+<p>This class embeds a list of sites and provides features to populate it
+  (for use in a <b>MASS ACTION</b> context).</p>
+  <p>All the <b>*Array</b> sub-classes of the simulator (See <a 
+  href="cyelp.PyLabSimulatorBase-class.html" 
+  class="link">PyLabSimulatorBase</a>) have an aggregated instance of 
+  PyLabArrayBinding (See, for example, <a 
+  href="cyelp.PyLabSimulatorTimeArray-class.html#arrayBinding" 
+  class="link">PyLabSimulatorTimeArray.arrayBinding</a> for an illustration
+  of this).</p>
+  <h1 class="heading">USAGE :</h1>
+    <p>First you will need an <b>array based</b> simulator :</p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>pop_max = 10000
+<span class="py-prompt">&gt;&gt;&gt; </span>sim = PyLabSimulatorTimeArray()                         <span class="py-comment"># Get yourself a simulator</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>sim.SetMaxPopulationSize(pop_max)                       <span class="py-comment"># Set the simulator's capacity</span></pre>
+    <p>Then fill the array binding with the corresponding number of sites. 
+    The array must contain as many Sites as the simulator's capacity (10000
+    in the above example). For this you can use ready made ones (ex. <a 
+    href="cyelp.PyLabSiteBase-class.html" class="link">PyLabSiteBase</a>, 
+    ... or derivatives) and assign them manually. But, PyLabArrayBinding 
+    provides methods to ease the filling of the array from <b>sites model 
+    objects</b> (See <a href="cyelp.PyLabArrayBinding-class.html#Populate1"
+    class="link">PyLabArrayBinding.Populate1()</a> and <a 
+    href="cyelp.PyLabArrayBinding-class.html#Populate2" 
+    class="link">PyLabArrayBinding.Populate2()</a>).</p>
+    <p>Another big advantage of using those methods is that it turns on the
+    <b>Sets Manager</b> (See <a 
+    href="cyelp.PyLabSiteSetsCalculator-class.html" 
+    class="link">PyLabSiteSetsCalculator</a>, ...).</p>
+    <p>The usages are pretty much same as in <a 
+    href="cyelp.PyLabNetBinding-class.html" 
+    class="link">PyLabNetBinding</a>.</p>
+    <p><b>The half-manual way :</b></p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>sim.arrayBinding.BeginSetSites(pop_max)                  <span class="py-comment"># Mandatory to open the sites in writing</span>
+<span class="py-more">...</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>a_site = PyLabSiteBase(sim)                              <span class="py-comment"># Create a Site</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>sim-&gt;SetOneSiteAt(a_site, 0)                             <span class="py-comment"># Mandatory to assign a site to a specified location in the </span>
+<span class="py-more">... </span>                                                         <span class="py-comment"># array (this enables the Sets Manager to monitor the Site)</span>
+<span class="py-more">... </span>                                              
+<span class="py-more">... </span>                                                         <span class="py-comment"># Repeat the above for EVERY single site</span>
+<span class="py-more">...</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>sim.arrayBinding.EndSetSites()                           <span class="py-comment"># Close the sites in writing</span></pre>
+    <p>This allows to customize each site on the fly, but keep in mind that
+    every single site in the array has to be assigned before closure.</p>
+    <p><b>The automated way :</b></p>
+<pre class="py-doctest">
+<span class="py-prompt">&gt;&gt;&gt; </span>models = []
+<span class="py-prompt">&gt;&gt;&gt; </span>a_model = PyLabSiteBase(sim)
+<span class="py-prompt">&gt;&gt;&gt; </span>model_sites.append(a_model)                              <span class="py-comment"># Do this for each different kind of site you need</span>
+<span class="py-more">...</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>dist = [0.25, 0.75]                                      <span class="py-comment"># Define a distribution (here 2 models to be spread)</span>
+<span class="py-prompt">&gt;&gt;&gt; </span>sim.arrayBinding.Populate1(pop_max, dist, models, True)  <span class="py-comment"># Batch assignment (spread) of the sites over the network</span>
+<span class="py-more">...</span></pre>
+    <p>Note : <a href="cyelp.PyLabArrayBinding-class.html#Populate1" 
+    class="link">PyLabArrayBinding.Populate1()</a> and <a 
+    href="cyelp.PyLabArrayBinding-class.html#Populate2" 
+    class="link">PyLabArrayBinding.Populate2()</a> take in charge 
+    everything for you. Your role is restrained to the creation of the 
+    models, and the choice of the spreading method.</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Instance Methods</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabArrayBinding-class.html#BeginSetSites" class="summary-sig-name">BeginSetSites</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">max_size</span>)</span><br />
+      Starts populating with a given number of sites.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="CopySite"></a><span class="summary-sig-name">CopySite</span>(<span class="summary-sig-arg">...</span>)</span><br />
+      TODO : UNTESTED !</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabArrayBinding-class.html#EndSetSites" class="summary-sig-name">EndSetSites</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Ends populating sites operation.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabArrayBinding-class.html#Populate1" class="summary-sig-name">Populate1</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">max_size</span>,
+        <span class="summary-sig-arg">dist</span>,
+        <span class="summary-sig-arg">model_sites</span>,
+        <span class="summary-sig-arg">draw_progress</span>)</span><br />
+      Populate randomly according to the given distribution and the models.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabArrayBinding-class.html#Populate2" class="summary-sig-name">Populate2</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">max_size</span>,
+        <span class="summary-sig-arg">dist</span>,
+        <span class="summary-sig-arg">model_sites</span>,
+        <span class="summary-sig-arg">draw_progress</span>)</span><br />
+      Populate with exactly the given amounts given by dist and the models.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabArrayBinding-class.html#SetOneSiteAt" class="summary-sig-name">SetOneSiteAt</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">a_site</span>,
+        <span class="summary-sig-arg">node_index</span>)</span><br />
+      Adds a single site to the sets manager.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="SwapSite"></a><span class="summary-sig-name">SwapSite</span>(<span class="summary-sig-arg">...</span>)</span><br />
+      TODO : UNTESTED !</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabArrayBinding-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">sim</span>)</span><br />
+      Constructor.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">a new object with type S, a subtype of T</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabArrayBinding-class.html#__new__" class="summary-sig-name">__new__</a>(<span class="summary-sig-arg">T</span>,
+        <span class="summary-sig-arg">S</span>,
+        <span class="summary-sig-arg">...</span>)</span></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__delattr__</code>,
+      <code>__format__</code>,
+      <code>__getattribute__</code>,
+      <code>__hash__</code>,
+      <code>__reduce__</code>,
+      <code>__reduce_ex__</code>,
+      <code>__repr__</code>,
+      <code>__setattr__</code>,
+      <code>__sizeof__</code>,
+      <code>__str__</code>,
+      <code>__subclasshook__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== PROPERTIES ==================== -->
+<a name="section-Properties"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Properties</span></td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__class__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Method Details</span></td>
+</tr>
+</table>
+<a name="BeginSetSites"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">BeginSetSites</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">max_size</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Starts populating with a given number of sites.</p>
+  <p>WARNING : This will reset all the sets that have been set earlier. 
+  Must be call before to start adding sites with <a 
+  href="cyelp.PyLabArrayBinding-class.html#SetOneSiteAt" 
+  class="link">SetOneSiteAt()</a>.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>max_size</code></strong> (<code>int</code>) - Maximum number of sites in the population (including empty 
+          sites).</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="EndSetSites"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">EndSetSites</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Ends populating sites operation. Checks if all sites have been set. If
+  not, terminates the program. All 'max_size' sites must have been set 
+  before ending. See <a 
+  href="cyelp.PyLabArrayBinding-class.html#BeginSetSites" 
+  class="link">BeginSetSites(max_size)</a>.</p>
+  <dl class="fields">
+  </dl>
+</td></tr></table>
+</div>
+<a name="Populate1"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">Populate1</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">max_size</span>,
+        <span class="sig-arg">dist</span>,
+        <span class="sig-arg">model_sites</span>,
+        <span class="sig-arg">draw_progress</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Populate randomly according to the given distribution and the 
+  models.</p>
+  <p>Note : dist and model_sites must be the same size.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>max_size</code></strong> (<code>int</code>) - Maximum number of sites in the population (implies that all the 
+          'max_size' sites have been instantiated before running properly 
+          the simulation)</li>
+        <li><strong class="pname"><code>dist</code></strong> (<code>list</code>) - Vector of <code>float</code>. Cumulative sum must be 1.0.</li>
+        <li><strong class="pname"><code>model_sites</code></strong> (<code>list</code>) - Vector of models / template sites - See <a 
+          href="cyelp.PyLabSiteBase-class.html" 
+          class="link">PyLabSiteBase</a>. Cumulative sum must be 1.0.</li>
+        <li><strong class="pname"><code>draw_progress</code></strong> (<code>bool</code>) - If the progress bar must be displayed while populating.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="Populate2"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">Populate2</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">max_size</span>,
+        <span class="sig-arg">dist</span>,
+        <span class="sig-arg">model_sites</span>,
+        <span class="sig-arg">draw_progress</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Populate with exactly the given amounts given by dist and the 
+  models.</p>
+  <p>Note : dist and model_sites must be the same size.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>max_size</code></strong> (<code>int</code>) - Maximum number of sites in the population (implies that all the 
+          'max_size' sites have been instantiated before running properly 
+          the simulation).</li>
+        <li><strong class="pname"><code>dist</code></strong> (<code>list</code>) - Vector of <code>int</code>. Cumulative sum must be the maximum 
+          population size.</li>
+        <li><strong class="pname"><code>model_sites</code></strong> (<code>list</code>) - Vector of models / template sites - See <a 
+          href="cyelp.PyLabSiteBase-class.html" 
+          class="link">PyLabSiteBase</a>. Cumulative sum must be 1.0.</li>
+        <li><strong class="pname"><code>draw_progress</code></strong> (<code>bool</code>) - If the progress bar must be displayed while populating.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="SetOneSiteAt"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">SetOneSiteAt</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">a_site</span>,
+        <span class="sig-arg">node_index</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Adds a single site to the sets manager. A call to this function must 
+  be enclosed between <a 
+  href="cyelp.PyLabArrayBinding-class.html#BeginSetSites" 
+  class="link">BeginSetSites()</a> and <a 
+  href="cyelp.PyLabArrayBinding-class.html#EndSetSites" 
+  class="link">EndSetSites()</a> calls.</p>
+  <p>WARNING : All sites <b>must</b> be set before ending - See <a 
+  href="cyelp.PyLabArrayBinding-class.html#EndSetSites" 
+  class="link">EndSetSites()</a>.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>a_site</code></strong> (<a href="cyelp.PyLabSiteBase-class.html" 
+          class="link">PyLabSiteBase</a>) - Site to be set.</li>
+        <li><strong class="pname"><code>node_index</code></strong> (<code>int</code>) - Index at which the Site is to be set (regarding the ordered list 
+          of this population). See also <a 
+          href="cyelp.PyLabSiteSetsCalculator-class.html#GI" 
+          class="link">PyLabSiteSetsCalculator.GI()</a>.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">sim</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Constructor.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>sim</code></strong> (<a href="cyelp.PyLabSimulatorBase-class.html" 
+          class="link">PyLabSimulatorBase</a>) - The simulator this binding is attached to.</li>
+    </ul></dd>
+    <dt>Overrides:
+        object.__init__
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="__new__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__new__</span>(<span class="sig-arg">T</span>,
+        <span class="sig-arg">S</span>,
+        <span class="sig-arg">...</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Returns: a new object with type S, a subtype of T</dt>
+    <dt>Overrides:
+        object.__new__
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="cyelp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a href="http://www.evolab-project.org"><img src="../elp-cy-eee.png" style="margin:10px;" /></a>
+        <script>
+			var link = parent.document.createElement('link'); 
+			link.id = 'dynamic-favicon'; 
+			link.type = 'image/png'; 
+			link.rel = 'shortcut icon'; 
+			link.href = '../logo-base-fav.png'; 
+			parent.document.head.appendChild(link); 
+			parent.document.head = parent.document.head || parent.document.getElementsByTagName('head')[0];
+		</script></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Fri Jun  7 07:41:40 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

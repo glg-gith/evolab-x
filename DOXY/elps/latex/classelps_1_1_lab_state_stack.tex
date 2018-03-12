@@ -1,0 +1,295 @@
+\hypertarget{classelps_1_1_lab_state_stack}{\section{elps\-:\-:Lab\-State\-Stack Class Reference}
+\label{classelps_1_1_lab_state_stack}\index{elps\-::\-Lab\-State\-Stack@{elps\-::\-Lab\-State\-Stack}}
+}
+
+
+{\ttfamily \#include $<$Lab\-State\-Stack.\-h$>$}
+
+Inheritance diagram for elps\-:\-:Lab\-State\-Stack\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classelps_1_1_lab_state_stack}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structelps_1_1_lab_state_stack_1_1t__state}{t\-\_\-state}
+\item 
+struct \hyperlink{structelps_1_1_lab_state_stack_1_1t__state__data}{t\-\_\-state\-\_\-data}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classelps_1_1_lab_state_stack_a5d2279b5bf25fd3e3628c6d35f94b7e3}{Push\-State} (string name, int next\-\_\-id=-\/1, int timeout\-\_\-id=-\/1, double timeout=-\/1.\-0)
+\item 
+\hyperlink{structelps_1_1_lab_state_stack_1_1t__state}{t\-\_\-state} \& \hyperlink{classelps_1_1_lab_state_stack_a963d0865077fd3c774ec2de9f96a2933}{Pop\-State} ()
+\item 
+int \hyperlink{classelps_1_1_lab_state_stack_af54751d425f8779b89f905ab1bfce13d}{Get\-Size} ()
+\item 
+int \hyperlink{classelps_1_1_lab_state_stack_a857002d5549e55eda7ea37dd704ae614}{Get\-Current\-State} ()
+\item 
+void \hyperlink{classelps_1_1_lab_state_stack_a561bf5cbe60e344444b78707edcbd284}{Set\-Current\-State} (int id, double time)
+\item 
+double \hyperlink{classelps_1_1_lab_state_stack_ad7102dad5ee2a8dec34f46e8e680e14d}{Get\-Current\-State\-Time} ()
+\item 
+double \hyperlink{classelps_1_1_lab_state_stack_a37d32957231e658b75ae1ffedac5223d}{Get\-Current\-State\-Elapsed\-Time} (double time)
+\item 
+double \hyperlink{classelps_1_1_lab_state_stack_a3f69ff973ca80d870b5102fbd2e9858c}{Get\-Current\-State\-Remaining\-Time} (double time)
+\item 
+string \hyperlink{classelps_1_1_lab_state_stack_aa1a05817e648054092b5ff98a3ccf67a}{Get\-State\-Name} (int id)
+\item 
+bool \hyperlink{classelps_1_1_lab_state_stack_a69f92a113f9dd75c99d34b03221a2465}{Is\-Valid\-State\-Id} (int id)
+\item 
+vector$<$ \hyperlink{structelps_1_1_lab_state_stack_1_1t__state}{t\-\_\-state} $>$ \& \hyperlink{classelps_1_1_lab_state_stack_ad7523516f10a972371967a1454facc52}{Get\-States} ()
+\item 
+void \hyperlink{classelps_1_1_lab_state_stack_a908bdb7c1aaf4b6daa7ba5bebc6ebf8b}{Goto\-Next\-State} (double time)
+\item 
+void \hyperlink{classelps_1_1_lab_state_stack_aef1a38c4d79b29448e7c89886b1c01ac}{Try\-Do\-Timeout} (double time)
+\item 
+void \hyperlink{classelps_1_1_lab_state_stack_ad4901f762e20f67361fb9ec528f50430}{Copy} (\hyperlink{classelps_1_1_lab_state_stack}{Lab\-State\-Stack} $\ast$src\-\_\-stack, bool reset\-\_\-time=false, double time=-\/1.\-0)
+\item 
+void \hyperlink{classelps_1_1_lab_state_stack_a3cd8dd04feef1244f6cacb6408a1b56e}{Binarize} (ofstream $\ast$ostream)
+\item 
+void \hyperlink{classelps_1_1_lab_state_stack_a2e449395adca12f1030338d931ff902a}{Un\-Binarize} (ifstream $\ast$istream)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+S\-T\-A\-T\-E \-:\par
+ A state is \-:
+\begin{DoxyItemize}
+\item Expressed as an integer value (which should be U\-N\-I\-Q\-U\-E for each one)
+\item They can be linked to each other (by giving the id of the next state coming after the current one)
+\item They can have a limited life time -\/ optional timeout -\/ before returning to another specified state
+\item They can be forced to a specified value at any time
+\end{DoxyItemize}
+
+U\-S\-A\-G\-E \-:
+
+
+\begin{DoxyItemize}
+\item Instantiate
+\item Push state(s) (\hyperlink{classelps_1_1_lab_state_stack_a5d2279b5bf25fd3e3628c6d35f94b7e3}{Push\-State()} function)
+\item The state can be forced (\hyperlink{classelps_1_1_lab_state_stack_a561bf5cbe60e344444b78707edcbd284}{Set\-Current\-State()}), or shifted (\hyperlink{classelps_1_1_lab_state_stack_a908bdb7c1aaf4b6daa7ba5bebc6ebf8b}{Goto\-Next\-State()})
+\item The timeout of the current state M\-U\-S\-T be recurrently checked to take effect (\hyperlink{classelps_1_1_lab_state_stack_aef1a38c4d79b29448e7c89886b1c01ac}{Try\-Do\-Timeout()}) 
+\end{DoxyItemize}
+
+\subsection{Member Function Documentation}
+\hypertarget{classelps_1_1_lab_state_stack_a3cd8dd04feef1244f6cacb6408a1b56e}{\index{elps\-::\-Lab\-State\-Stack@{elps\-::\-Lab\-State\-Stack}!Binarize@{Binarize}}
+\index{Binarize@{Binarize}!elps::LabStateStack@{elps\-::\-Lab\-State\-Stack}}
+\subsubsection[{Binarize}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-State\-Stack\-::\-Binarize (
+\begin{DoxyParamCaption}
+\item[{ofstream $\ast$}]{ostream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classelps_1_1_lab_state_stack_a3cd8dd04feef1244f6cacb6408a1b56e}
+Save the current state of the stack to a given output stream (binary format). 
+\begin{DoxyParams}{Parameters}
+{\em ostream} & Output stream to backup to. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classelps_1_1_lab_i_binarizable_aecc9b383945b4c4e304675e5c970f69d}{elps\-::\-Lab\-I\-Binarizable}.
+
+\hypertarget{classelps_1_1_lab_state_stack_ad4901f762e20f67361fb9ec528f50430}{\index{elps\-::\-Lab\-State\-Stack@{elps\-::\-Lab\-State\-Stack}!Copy@{Copy}}
+\index{Copy@{Copy}!elps::LabStateStack@{elps\-::\-Lab\-State\-Stack}}
+\subsubsection[{Copy}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-State\-Stack\-::\-Copy (
+\begin{DoxyParamCaption}
+\item[{{\bf Lab\-State\-Stack} $\ast$}]{src\-\_\-stack, }
+\item[{bool}]{reset\-\_\-time = {\ttfamily false}, }
+\item[{double}]{time = {\ttfamily -\/1.0}}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_state_stack_ad4901f762e20f67361fb9ec528f50430}
+Copy the properties of a stack to this one (default \-: time not reset). 
+\begin{DoxyParams}{Parameters}
+{\em src\-\_\-stack} & The source stack to copy from \\
+\hline
+{\em reset\-\_\-time} & If the copy should reset the time (aka \-: the copy is considered as a change of state) \\
+\hline
+{\em time} & If \char`\"{}reset\-\_\-time\char`\"{} is set to \char`\"{}\-True\char`\"{}, this value M\-U\-S\-T be specified (usually the current simulation time), in order to give a new full life time (for states that do have a timeout) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_state_stack_a857002d5549e55eda7ea37dd704ae614}{\index{elps\-::\-Lab\-State\-Stack@{elps\-::\-Lab\-State\-Stack}!Get\-Current\-State@{Get\-Current\-State}}
+\index{Get\-Current\-State@{Get\-Current\-State}!elps::LabStateStack@{elps\-::\-Lab\-State\-Stack}}
+\subsubsection[{Get\-Current\-State}]{\setlength{\rightskip}{0pt plus 5cm}int elps\-::\-Lab\-State\-Stack\-::\-Get\-Current\-State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_state_stack_a857002d5549e55eda7ea37dd704ae614}
+Get the current state of the S\-I\-T\-E \begin{DoxyReturn}{Returns}
+An integer value 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_state_stack_a37d32957231e658b75ae1ffedac5223d}{\index{elps\-::\-Lab\-State\-Stack@{elps\-::\-Lab\-State\-Stack}!Get\-Current\-State\-Elapsed\-Time@{Get\-Current\-State\-Elapsed\-Time}}
+\index{Get\-Current\-State\-Elapsed\-Time@{Get\-Current\-State\-Elapsed\-Time}!elps::LabStateStack@{elps\-::\-Lab\-State\-Stack}}
+\subsubsection[{Get\-Current\-State\-Elapsed\-Time}]{\setlength{\rightskip}{0pt plus 5cm}double elps\-::\-Lab\-State\-Stack\-::\-Get\-Current\-State\-Elapsed\-Time (
+\begin{DoxyParamCaption}
+\item[{double}]{time}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_state_stack_a37d32957231e658b75ae1ffedac5223d}
+Get the time elapsed since the current state was entered. 
+\begin{DoxyParams}{Parameters}
+{\em time} & The reference time (usually the current time of the simulation) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The time elapsed 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_state_stack_a3f69ff973ca80d870b5102fbd2e9858c}{\index{elps\-::\-Lab\-State\-Stack@{elps\-::\-Lab\-State\-Stack}!Get\-Current\-State\-Remaining\-Time@{Get\-Current\-State\-Remaining\-Time}}
+\index{Get\-Current\-State\-Remaining\-Time@{Get\-Current\-State\-Remaining\-Time}!elps::LabStateStack@{elps\-::\-Lab\-State\-Stack}}
+\subsubsection[{Get\-Current\-State\-Remaining\-Time}]{\setlength{\rightskip}{0pt plus 5cm}double elps\-::\-Lab\-State\-Stack\-::\-Get\-Current\-State\-Remaining\-Time (
+\begin{DoxyParamCaption}
+\item[{double}]{time}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_state_stack_a3f69ff973ca80d870b5102fbd2e9858c}
+Get the time remaining until the current state will be quit (timeout reached). 
+\begin{DoxyParams}{Parameters}
+{\em time} & The reference time (usually the current time of the simulation) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The time remaining 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_state_stack_ad7102dad5ee2a8dec34f46e8e680e14d}{\index{elps\-::\-Lab\-State\-Stack@{elps\-::\-Lab\-State\-Stack}!Get\-Current\-State\-Time@{Get\-Current\-State\-Time}}
+\index{Get\-Current\-State\-Time@{Get\-Current\-State\-Time}!elps::LabStateStack@{elps\-::\-Lab\-State\-Stack}}
+\subsubsection[{Get\-Current\-State\-Time}]{\setlength{\rightskip}{0pt plus 5cm}double elps\-::\-Lab\-State\-Stack\-::\-Get\-Current\-State\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_state_stack_ad7102dad5ee2a8dec34f46e8e680e14d}
+Get the time at which the S\-I\-T\-E has been turned into the current state. \begin{DoxyReturn}{Returns}
+A time expressed relatively to the algorithm used by the simulation to manage the time 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_state_stack_af54751d425f8779b89f905ab1bfce13d}{\index{elps\-::\-Lab\-State\-Stack@{elps\-::\-Lab\-State\-Stack}!Get\-Size@{Get\-Size}}
+\index{Get\-Size@{Get\-Size}!elps::LabStateStack@{elps\-::\-Lab\-State\-Stack}}
+\subsubsection[{Get\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int elps\-::\-Lab\-State\-Stack\-::\-Get\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_state_stack_af54751d425f8779b89f905ab1bfce13d}
+Get the size of the stack. \begin{DoxyReturn}{Returns}
+Number of states in the stack 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_state_stack_aa1a05817e648054092b5ff98a3ccf67a}{\index{elps\-::\-Lab\-State\-Stack@{elps\-::\-Lab\-State\-Stack}!Get\-State\-Name@{Get\-State\-Name}}
+\index{Get\-State\-Name@{Get\-State\-Name}!elps::LabStateStack@{elps\-::\-Lab\-State\-Stack}}
+\subsubsection[{Get\-State\-Name}]{\setlength{\rightskip}{0pt plus 5cm}string elps\-::\-Lab\-State\-Stack\-::\-Get\-State\-Name (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_state_stack_aa1a05817e648054092b5ff98a3ccf67a}
+Get the name of the given state 
+\begin{DoxyParams}{Parameters}
+{\em id} & The index of the state in the stack \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A name 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_state_stack_ad7523516f10a972371967a1454facc52}{\index{elps\-::\-Lab\-State\-Stack@{elps\-::\-Lab\-State\-Stack}!Get\-States@{Get\-States}}
+\index{Get\-States@{Get\-States}!elps::LabStateStack@{elps\-::\-Lab\-State\-Stack}}
+\subsubsection[{Get\-States}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Lab\-State\-Stack\-::t\-\_\-state} $>$ \& elps\-::\-Lab\-State\-Stack\-::\-Get\-States (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_state_stack_ad7523516f10a972371967a1454facc52}
+Get the list of the states \begin{DoxyReturn}{Returns}
+A list of states 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_state_stack_a908bdb7c1aaf4b6daa7ba5bebc6ebf8b}{\index{elps\-::\-Lab\-State\-Stack@{elps\-::\-Lab\-State\-Stack}!Goto\-Next\-State@{Goto\-Next\-State}}
+\index{Goto\-Next\-State@{Goto\-Next\-State}!elps::LabStateStack@{elps\-::\-Lab\-State\-Stack}}
+\subsubsection[{Goto\-Next\-State}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-State\-Stack\-::\-Goto\-Next\-State (
+\begin{DoxyParamCaption}
+\item[{double}]{time}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_state_stack_a908bdb7c1aaf4b6daa7ba5bebc6ebf8b}
+Shift the current state to the next logical one (current state becomes the state given by \char`\"{}next\-\_\-id\char`\"{}). 
+\begin{DoxyParams}{Parameters}
+{\em time} & The time at which the S\-I\-T\-E has been turned into the next one (usually the current simulation time) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_state_stack_a69f92a113f9dd75c99d34b03221a2465}{\index{elps\-::\-Lab\-State\-Stack@{elps\-::\-Lab\-State\-Stack}!Is\-Valid\-State\-Id@{Is\-Valid\-State\-Id}}
+\index{Is\-Valid\-State\-Id@{Is\-Valid\-State\-Id}!elps::LabStateStack@{elps\-::\-Lab\-State\-Stack}}
+\subsubsection[{Is\-Valid\-State\-Id}]{\setlength{\rightskip}{0pt plus 5cm}bool elps\-::\-Lab\-State\-Stack\-::\-Is\-Valid\-State\-Id (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_state_stack_a69f92a113f9dd75c99d34b03221a2465}
+Check if the given state id is in the stack \mbox{[}0, stack size -\/ 1\mbox{]} 
+\begin{DoxyParams}{Parameters}
+{\em id} & The state id \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_state_stack_a963d0865077fd3c774ec2de9f96a2933}{\index{elps\-::\-Lab\-State\-Stack@{elps\-::\-Lab\-State\-Stack}!Pop\-State@{Pop\-State}}
+\index{Pop\-State@{Pop\-State}!elps::LabStateStack@{elps\-::\-Lab\-State\-Stack}}
+\subsubsection[{Pop\-State}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lab\-State\-Stack\-::t\-\_\-state} \& elps\-::\-Lab\-State\-Stack\-::\-Pop\-State (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_state_stack_a963d0865077fd3c774ec2de9f96a2933}
+Remove the last pushed state from the top of the stack \hypertarget{classelps_1_1_lab_state_stack_a5d2279b5bf25fd3e3628c6d35f94b7e3}{\index{elps\-::\-Lab\-State\-Stack@{elps\-::\-Lab\-State\-Stack}!Push\-State@{Push\-State}}
+\index{Push\-State@{Push\-State}!elps::LabStateStack@{elps\-::\-Lab\-State\-Stack}}
+\subsubsection[{Push\-State}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-State\-Stack\-::\-Push\-State (
+\begin{DoxyParamCaption}
+\item[{string}]{name, }
+\item[{int}]{next\-\_\-id = {\ttfamily -\/1}, }
+\item[{int}]{timeout\-\_\-id = {\ttfamily -\/1}, }
+\item[{double}]{timeout = {\ttfamily -\/1.0}}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_state_stack_a5d2279b5bf25fd3e3628c6d35f94b7e3}
+Add a state on top of the stack (By default \-: no next logical state and no timeout). 
+\begin{DoxyParams}{Parameters}
+{\em name} & Name given to the state (better choose a unique one) \\
+\hline
+{\em next\-\_\-id} & The next logical state, this state should switch to (Index in the stack) (ex\-: in S-\/$>$I-\/$>$R models, the next logical state of S is I, the next of I is R, and the next of R is '-\/1', aka \-: none). W\-A\-R\-N\-I\-N\-G \-: if used (!= 0), the id M\-U\-S\-T exist in the stack (\mbox{[}0, nb\-\_\-states-\/1\mbox{]}) \\
+\hline
+{\em timeout\-\_\-id} & The next state to switch to when the timeout of the current state is reached (Index in the stack) W\-A\-R\-N\-I\-N\-G \-: if used (!= 0), the id M\-U\-S\-T exist in the stack (\mbox{[}0, nb\-\_\-states-\/1\mbox{]}) \\
+\hline
+{\em timeout} & Optional (default is -\/1.\-0). As long as this value is less than 0.\-0, the timeout is not activated. Aka \-: the state remains the same unless it is manually switched to another one. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_state_stack_a561bf5cbe60e344444b78707edcbd284}{\index{elps\-::\-Lab\-State\-Stack@{elps\-::\-Lab\-State\-Stack}!Set\-Current\-State@{Set\-Current\-State}}
+\index{Set\-Current\-State@{Set\-Current\-State}!elps::LabStateStack@{elps\-::\-Lab\-State\-Stack}}
+\subsubsection[{Set\-Current\-State}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-State\-Stack\-::\-Set\-Current\-State (
+\begin{DoxyParamCaption}
+\item[{int}]{id, }
+\item[{double}]{time}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_state_stack_a561bf5cbe60e344444b78707edcbd284}
+Change the current state given its integer value (this value/state M\-U\-S\-T exist be an id in the stack \-: \mbox{[}0, nb\-\_\-states-\/1\mbox{]}), otherwise the state won't be changed), and the current time of the simulation. 
+\begin{DoxyParams}{Parameters}
+{\em id} & The new index of the current state in the stack \\
+\hline
+{\em time} & The time at which the S\-I\-T\-E has been turned into this state (usually the current time of the simulation) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_state_stack_aef1a38c4d79b29448e7c89886b1c01ac}{\index{elps\-::\-Lab\-State\-Stack@{elps\-::\-Lab\-State\-Stack}!Try\-Do\-Timeout@{Try\-Do\-Timeout}}
+\index{Try\-Do\-Timeout@{Try\-Do\-Timeout}!elps::LabStateStack@{elps\-::\-Lab\-State\-Stack}}
+\subsubsection[{Try\-Do\-Timeout}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-State\-Stack\-::\-Try\-Do\-Timeout (
+\begin{DoxyParamCaption}
+\item[{double}]{time}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_state_stack_aef1a38c4d79b29448e7c89886b1c01ac}
+Try to end the current state according to its timeout 
+\begin{DoxyParams}{Parameters}
+{\em time} & Time of the attempt (usually the current simulation time) \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_state_stack_a2e449395adca12f1030338d931ff902a}{\index{elps\-::\-Lab\-State\-Stack@{elps\-::\-Lab\-State\-Stack}!Un\-Binarize@{Un\-Binarize}}
+\index{Un\-Binarize@{Un\-Binarize}!elps::LabStateStack@{elps\-::\-Lab\-State\-Stack}}
+\subsubsection[{Un\-Binarize}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-State\-Stack\-::\-Un\-Binarize (
+\begin{DoxyParamCaption}
+\item[{ifstream $\ast$}]{istream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classelps_1_1_lab_state_stack_a2e449395adca12f1030338d931ff902a}
+Restore the stack from a given input stream (binary format). 
+\begin{DoxyParams}{Parameters}
+{\em istream} & Input stream from which to get the info required to restore the stack \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classelps_1_1_lab_i_binarizable_a381af24c243c967b491101b7dbecb252}{elps\-::\-Lab\-I\-Binarizable}.
+

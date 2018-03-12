@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>cyelp.PyLabOutputerLine</title>
+  <link rel="stylesheet" href="epydoc.css" type="text/css" />
+  <script type="text/javascript" src="epydoc.js"></script>
+</head>
+
+<body bgcolor="white" text="black" link="blue" vlink="#204080"
+      alink="#204080">
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="cyelp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a href="http://www.evolab-project.org"><img src="../elp-cy-eee.png" style="margin:10px;" /></a>
+        <script>
+			var link = parent.document.createElement('link'); 
+			link.id = 'dynamic-favicon'; 
+			link.type = 'image/png'; 
+			link.rel = 'shortcut icon'; 
+			link.href = '../logo-base-fav.png'; 
+			parent.document.head.appendChild(link); 
+			parent.document.head = parent.document.head || parent.document.getElementsByTagName('head')[0];
+		</script></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tr valign="top">
+    <td width="100%">
+      <span class="breadcrumbs">
+        <a href="cyelp-module.html">Module&nbsp;cyelp</a> ::
+        Class&nbsp;PyLabOutputerLine
+      </span>
+    </td>
+    <td>
+      <table cellpadding="0" cellspacing="0">
+        <!-- hide/show private -->
+        <tr><td align="right"><span class="options"
+            >[<a href="frames.html" target="_top">frames</a
+            >]&nbsp;|&nbsp;<a href="cyelp.PyLabOutputerLine-class.html"
+            target="_top">no&nbsp;frames</a>]</span></td></tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<!-- ==================== CLASS DESCRIPTION ==================== -->
+<h1 class="epydoc">Class PyLabOutputerLine</h1><p class="nomargin-top"></p>
+<center>
+<center>  <map id="uml_class_diagram_for_cyelp_py_12" name="uml_class_diagram_for_cyelp_py_12">
+<area shape="rect" id="node17" href="cyelp.PyLabOutputerLine-class.html#AddDataLine" title="Add a line to the current set of data." alt="" coords="17,39,416,57"/>
+<area shape="rect" id="node17" href="cyelp.PyLabOutputerLine-class.html#DrawProgressBar" title="Display an ASCII progress bar." alt="" coords="17,57,416,76"/>
+<area shape="rect" id="node17" href="cyelp.PyLabOutputerLine-class.html#GetFilename" title="Get the full path of the associated output file." alt="" coords="17,76,416,95"/>
+<area shape="rect" id="node17" href="cyelp.PyLabOutputerLine-class.html#InsertText" title="Add some text at any time (the user is responsible for carriage return with this feature)." alt="" coords="17,95,416,113"/>
+<area shape="rect" id="node17" href="cyelp.PyLabOutputerLine-class.html#ResetDataSet" title="Clear the current set of data." alt="" coords="17,113,416,132"/>
+<area shape="rect" id="node17" href="cyelp.PyLabOutputerLine-class.html#SetFilename" title="Set the file name associated to this outputer (not required if we work only on standard output)." alt="" coords="17,132,416,151"/>
+<area shape="rect" id="node17" href="cyelp.PyLabOutputerLine-class.html#SetOuputMode" title="Set the mode of output (See LabOutputer::t_output)." alt="" coords="17,151,416,169"/>
+<area shape="rect" id="node17" href="cyelp.PyLabOutputerLine-class.html#SetSeparator" title="SetSeparator(self, string sep) Separator being used between written &#160;values/data (&#39;;&#39;, TAB, or else...)." alt="" coords="17,169,416,188"/>
+<area shape="rect" id="node17" href="cyelp.PyLabOutputerLine-class.html#WriteData" title="Write the current data buffer to file (Write current dataset as text using &#160;the separator &#45; SetSeparator())." alt="" coords="17,188,416,207"/>
+<area shape="rect" id="node17" href="cyelp.PyLabOutputerLine-class.html#__init__" title="Default constructor." alt="" coords="17,207,416,225"/>
+<area shape="rect" id="node17" href="cyelp.PyLabOutputerLine-class.html#__new__" title="cyelp.PyLabOutputerLine.__new__" alt="" coords="17,225,416,244"/>
+<area shape="rect" id="node1" href="cyelp.PyLabOutputerLine-class.html" title="Basic implementation for output management." alt="" coords="5,6,427,250"/>
+</map>
+  <img src="uml_class_diagram_for_cyelp_py_12.gif" alt='' usemap="#uml_class_diagram_for_cyelp_py_12" ismap="ismap" class="graph-without-title" />
+</center>
+</center>
+<hr />
+<p>Basic implementation for output management.</p>
+  <p>Basically this class provides the features to produce output of data 
+  into a file, the standard output, or both. It manipulates DATASETs (sets 
+  of data) which are simple matrixes of doubles.</p>
+  <p>DATASET :</p>
+  <ul>
+    <li>
+      Each set of data is expressed as a list of list of doubles
+    </li>
+    <li>
+      Each time the set of data is written, it is cleared (waiting to be 
+      filled again with the next data). It behaves as a buffer.
+    </li>
+  </ul>
+  <p>We also can customize the header and footer (See C++ 
+  LabOutputer::SetHeader(), LabOutputer::SetFooter()) of the output, as 
+  well as write free entries on the fly (InsertText() - in this case the 
+  text is inserted immediately, unlike DATSET which are buffered until 
+  asked for writing).</p>
+  <h1 class="heading">USAGE :</h1>
+    <ul>
+      <li>
+        Instantiate
+      </li>
+      <li>
+        Set the associated file (only required if planned to write into 
+        files)
+      </li>
+      <li>
+        Set the separator (which will be used to separate the data of a 
+        column)
+      </li>
+      <li>
+        Define the mode of output (SetOuputMode())
+      </li>
+      <li>
+        Buffer some data lines (AddDataLine())
+      </li>
+      <li>
+        Ask for writing the current set of data at your convenience 
+        (WriteData())
+      </li>
+      <li>
+        Or insert some text on the fly (InsertText())
+      </li>
+    </ul>
+    <p><b>Note :</b> The &quot;statistics&quot; and &quot;histogram&quot; 
+    features are not yet implemented.</p>
+
+<!-- ==================== INSTANCE METHODS ==================== -->
+<a name="section-InstanceMethods"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Instance Methods</span></td>
+</tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabOutputerLine-class.html#AddDataLine" class="summary-sig-name">AddDataLine</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">dataLine</span>)</span><br />
+      Add a line to the current set of data.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabOutputerLine-class.html#DrawProgressBar" class="summary-sig-name">DrawProgressBar</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">len</span>,
+        <span class="summary-sig-arg">percent</span>,
+        <span class="summary-sig-arg">erase</span>=<span class="summary-sig-default"> True</span>,
+        <span class="summary-sig-arg">only_text</span>=<span class="summary-sig-default"> False</span>)</span><br />
+      Display an ASCII progress bar.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type"><code>str</code></span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabOutputerLine-class.html#GetFilename" class="summary-sig-name">GetFilename</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Get the full path of the associated output file.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabOutputerLine-class.html#InsertText" class="summary-sig-name">InsertText</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">text</span>)</span><br />
+      Add some text at any time (the user is responsible for carriage 
+      return with this feature).</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="ResetDataSet"></a><span class="summary-sig-name">ResetDataSet</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Clear the current set of data.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabOutputerLine-class.html#SetFilename" class="summary-sig-name">SetFilename</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">filename</span>,
+        <span class="summary-sig-arg">erase</span>)</span><br />
+      Set the file name associated to this outputer (not required if we 
+      work only on standard output).</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabOutputerLine-class.html#SetOuputMode" class="summary-sig-name">SetOuputMode</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">mode</span>)</span><br />
+      Set the mode of output (See LabOutputer::t_output).</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabOutputerLine-class.html#SetSeparator" class="summary-sig-name">SetSeparator</a>(<span class="summary-sig-arg">...</span>)</span><br />
+      SetSeparator(self, string sep) Separator being used between written 
+      values/data (';', TAB, or else...).</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="WriteData"></a><span class="summary-sig-name">WriteData</span>(<span class="summary-sig-arg">self</span>)</span><br />
+      Write the current data buffer to file (Write current dataset as text 
+      using the separator - SetSeparator()).</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabOutputerLine-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>)</span><br />
+      Default constructor.</td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">a new object with type S, a subtype of T</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a href="cyelp.PyLabOutputerLine-class.html#__new__" class="summary-sig-name">__new__</a>(<span class="summary-sig-arg">T</span>,
+        <span class="summary-sig-arg">S</span>,
+        <span class="summary-sig-arg">...</span>)</span></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__delattr__</code>,
+      <code>__format__</code>,
+      <code>__getattribute__</code>,
+      <code>__hash__</code>,
+      <code>__reduce__</code>,
+      <code>__reduce_ex__</code>,
+      <code>__repr__</code>,
+      <code>__setattr__</code>,
+      <code>__sizeof__</code>,
+      <code>__str__</code>,
+      <code>__subclasshook__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== PROPERTIES ==================== -->
+<a name="section-Properties"></a>
+<table class="summary" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Properties</span></td>
+</tr>
+  <tr>
+    <td colspan="2" class="summary">
+    <p class="indent-wrapped-lines"><b>Inherited from <code>object</code></b>:
+      <code>__class__</code>
+      </p>
+    </td>
+  </tr>
+</table>
+<!-- ==================== METHOD DETAILS ==================== -->
+<a name="section-MethodDetails"></a>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr bgcolor="#70b0f0" class="table-header">
+  <td align="left" colspan="2" class="table-header">
+    <span class="table-header">Method Details</span></td>
+</tr>
+</table>
+<a name="AddDataLine"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">AddDataLine</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">dataLine</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Add a line to the current set of data.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>dataLine</code></strong> (<code>list</code>) - Line of data = vector of double values.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="DrawProgressBar"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">DrawProgressBar</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">len</span>,
+        <span class="sig-arg">percent</span>,
+        <span class="sig-arg">erase</span>=<span class="sig-default"> True</span>,
+        <span class="sig-arg">only_text</span>=<span class="sig-default"> False</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Display an ASCII progress bar.</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>len</code></strong> (<code>int</code>) - Length (expressed in number of characters).</li>
+        <li><strong class="pname"><code>percent</code></strong> (<code>float</code>) - The current percentage.</li>
+        <li><strong class="pname"><code>erase</code></strong> (<code>bool</code>) - If the progress bar overrides itself at each iteration, or not 
+          (go to next line).</li>
+        <li><strong class="pname"><code>only_text</code></strong> (<code>bool</code>) - If the progress is only displayed as text (ex. &quot;82%&quot;).</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="GetFilename"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">GetFilename</span>(<span class="sig-arg">self</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Get the full path of the associated output file.</p>
+  <dl class="fields">
+    <dt>Returns: <code>str</code></dt>
+        <dd>The full path.</dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="InsertText"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">InsertText</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">text</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Add some text at any time (the user is responsible for carriage return
+  with this feature).</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>text</code></strong> (<code>str</code>) - The text to be immediately inserted (no delay).</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="SetFilename"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">SetFilename</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">filename</span>,
+        <span class="sig-arg">erase</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Set the file name associated to this outputer (not required if we work
+  only on standard output).</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>filename</code></strong> (<code>str</code>) - The full path of the file.</li>
+        <li><strong class="pname"><code>erase</code></strong> (<code>bool</code>) - If set to True, the given will be erased (if it already exists).</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="SetOuputMode"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">SetOuputMode</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">mode</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Set the mode of output (See LabOutputer::t_output).</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>mode</code></strong> (<code>int</code>) - Can be : <a href="cyelp-module.html#TO_FILE" 
+          class="link">cyelp.TO_FILE</a>, <a 
+          href="cyelp-module.html#TO_STD" class="link">cyelp.TO_STD</a> or 
+          <a href="cyelp-module.html#TO_BOTH" 
+          class="link">cyelp.TO_BOTH</a>.</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="SetSeparator"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">SetSeparator</span>(<span class="sig-arg">...</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>SetSeparator(self, string sep) Separator being used between written 
+  values/data (';', TAB, or else...).</p>
+  <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>sep</code></strong> (<code>str</code>) - Can be one or more characters</li>
+    </ul></dd>
+  </dl>
+</td></tr></table>
+</div>
+<a name="__init__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>)</span>
+    <br /><em class="fname">(Constructor)</em>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  <p>Default constructor.</p>
+  <dl class="fields">
+    <dt>Overrides:
+        object.__init__
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<a name="__new__"></a>
+<div>
+<table class="details" border="1" cellpadding="3"
+       cellspacing="0" width="100%" bgcolor="white">
+<tr><td>
+  <table width="100%" cellpadding="0" cellspacing="0" border="0">
+  <tr valign="top"><td>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__new__</span>(<span class="sig-arg">T</span>,
+        <span class="sig-arg">S</span>,
+        <span class="sig-arg">...</span>)</span>
+  </h3>
+  </td><td align="right" valign="top"
+    >&nbsp;
+    </td>
+  </tr></table>
+  
+  
+  <dl class="fields">
+    <dt>Returns: a new object with type S, a subtype of T</dt>
+    <dt>Overrides:
+        object.__new__
+    </dt>
+  </dl>
+</td></tr></table>
+</div>
+<br />
+<!-- ==================== NAVIGATION BAR ==================== -->
+<table class="navbar" border="0" width="100%" cellpadding="0"
+       bgcolor="#a0c0ff" cellspacing="0">
+  <tr valign="middle">
+  <!-- Home link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="cyelp-module.html">Home</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Tree link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="module-tree.html">Trees</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Index link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="identifier-index.html">Indices</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Help link -->
+      <th>&nbsp;&nbsp;&nbsp;<a
+        href="help.html">Help</a>&nbsp;&nbsp;&nbsp;</th>
+
+  <!-- Project homepage -->
+      <th class="navbar" align="right" width="100%">
+        <table border="0" cellpadding="0" cellspacing="0">
+          <tr><th class="navbar" align="center"
+            ><a href="http://www.evolab-project.org"><img src="../elp-cy-eee.png" style="margin:10px;" /></a>
+        <script>
+			var link = parent.document.createElement('link'); 
+			link.id = 'dynamic-favicon'; 
+			link.type = 'image/png'; 
+			link.rel = 'shortcut icon'; 
+			link.href = '../logo-base-fav.png'; 
+			parent.document.head.appendChild(link); 
+			parent.document.head = parent.document.head || parent.document.getElementsByTagName('head')[0];
+		</script></th>
+          </tr></table></th>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="100%%">
+  <tr>
+    <td align="left" class="footer">
+    Generated by Epydoc 3.0.1 on Fri Jun  7 07:41:40 2013
+    </td>
+    <td align="right" class="footer">
+      <a target="mainFrame" href="http://epydoc.sourceforge.net"
+        >http://epydoc.sourceforge.net</a>
+    </td>
+  </tr>
+</table>
+
+<script type="text/javascript">
+  <!--
+  // Private objects are initially displayed (because if
+  // javascript is turned off then we want them to be
+  // visible); but by default, we want to hide them.  So hide
+  // them unless we have a cookie that says to show them.
+  checkCookie();
+  // -->
+</script>
+</body>
+</html>

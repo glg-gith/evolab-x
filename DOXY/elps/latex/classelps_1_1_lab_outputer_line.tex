@@ -1,0 +1,97 @@
+\hypertarget{classelps_1_1_lab_outputer_line}{\section{elps\-:\-:Lab\-Outputer\-Line Class Reference}
+\label{classelps_1_1_lab_outputer_line}\index{elps\-::\-Lab\-Outputer\-Line@{elps\-::\-Lab\-Outputer\-Line}}
+}
+
+
+{\ttfamily \#include $<$Lab\-Outputer\-Line.\-h$>$}
+
+Inheritance diagram for elps\-:\-:Lab\-Outputer\-Line\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{classelps_1_1_lab_outputer_line}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{classelps_1_1_lab_outputer_line_aeeb83126f30d8dfaa5fae15b022ebcbb}{Set\-Header} (vector$<$ string $>$ \&header\-Cols)
+\item 
+bool \hyperlink{classelps_1_1_lab_outputer_line_ac86ec53024932fee8e7b5bf2e65485d0}{Write\-Stats} ()
+\item 
+bool \hyperlink{classelps_1_1_lab_outputer_line_aa9f31a33f40242b7c7be3fcd01f6443e}{Write\-Histogram} ()
+\item 
+bool \hyperlink{classelps_1_1_lab_outputer_line_ad3d8b9743e9b4a9fe1cbd32b9851bea9}{Set\-Footer} (string footer)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+A simple line after line output writer 
+
+\subsection{Member Function Documentation}
+\hypertarget{classelps_1_1_lab_outputer_line_ad3d8b9743e9b4a9fe1cbd32b9851bea9}{\index{elps\-::\-Lab\-Outputer\-Line@{elps\-::\-Lab\-Outputer\-Line}!Set\-Footer@{Set\-Footer}}
+\index{Set\-Footer@{Set\-Footer}!elps::LabOutputerLine@{elps\-::\-Lab\-Outputer\-Line}}
+\subsubsection[{Set\-Footer}]{\setlength{\rightskip}{0pt plus 5cm}bool elps\-::\-Lab\-Outputer\-Line\-::\-Set\-Footer (
+\begin{DoxyParamCaption}
+\item[{string}]{footer}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classelps_1_1_lab_outputer_line_ad3d8b9743e9b4a9fe1cbd32b9851bea9}
+Hook designed to be overridden. Write the final footer text (Ex. The simulation total time, ...). 
+\begin{DoxyParams}{Parameters}
+{\em footer} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classelps_1_1_lab_outputer_a03a665502df3322215595a35e624cb85}{elps\-::\-Lab\-Outputer}.
+
+\hypertarget{classelps_1_1_lab_outputer_line_aeeb83126f30d8dfaa5fae15b022ebcbb}{\index{elps\-::\-Lab\-Outputer\-Line@{elps\-::\-Lab\-Outputer\-Line}!Set\-Header@{Set\-Header}}
+\index{Set\-Header@{Set\-Header}!elps::LabOutputerLine@{elps\-::\-Lab\-Outputer\-Line}}
+\subsubsection[{Set\-Header}]{\setlength{\rightskip}{0pt plus 5cm}bool elps\-::\-Lab\-Outputer\-Line\-::\-Set\-Header (
+\begin{DoxyParamCaption}
+\item[{vector$<$ string $>$ \&}]{header\-Cols}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classelps_1_1_lab_outputer_line_aeeb83126f30d8dfaa5fae15b022ebcbb}
+Hook designed to be overridden. Set the header text of the output (columns/fields names). 
+\begin{DoxyParams}{Parameters}
+{\em header\-Cols} & Ordered list of columns names \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classelps_1_1_lab_outputer_a3fce40affff7539f6d59768830fd4e03}{elps\-::\-Lab\-Outputer}.
+
+\hypertarget{classelps_1_1_lab_outputer_line_aa9f31a33f40242b7c7be3fcd01f6443e}{\index{elps\-::\-Lab\-Outputer\-Line@{elps\-::\-Lab\-Outputer\-Line}!Write\-Histogram@{Write\-Histogram}}
+\index{Write\-Histogram@{Write\-Histogram}!elps::LabOutputerLine@{elps\-::\-Lab\-Outputer\-Line}}
+\subsubsection[{Write\-Histogram}]{\setlength{\rightskip}{0pt plus 5cm}bool elps\-::\-Lab\-Outputer\-Line\-::\-Write\-Histogram (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classelps_1_1_lab_outputer_line_aa9f31a33f40242b7c7be3fcd01f6443e}
+Hook designed to be overridden. Write some user defined histogram (Build histogram from the current dataset). \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classelps_1_1_lab_outputer_ad1ebbfd4fe1c0eb996b013dd8ab5f83a}{elps\-::\-Lab\-Outputer}.
+
+\hypertarget{classelps_1_1_lab_outputer_line_ac86ec53024932fee8e7b5bf2e65485d0}{\index{elps\-::\-Lab\-Outputer\-Line@{elps\-::\-Lab\-Outputer\-Line}!Write\-Stats@{Write\-Stats}}
+\index{Write\-Stats@{Write\-Stats}!elps::LabOutputerLine@{elps\-::\-Lab\-Outputer\-Line}}
+\subsubsection[{Write\-Stats}]{\setlength{\rightskip}{0pt plus 5cm}bool elps\-::\-Lab\-Outputer\-Line\-::\-Write\-Stats (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}}\label{classelps_1_1_lab_outputer_line_ac86ec53024932fee8e7b5bf2e65485d0}
+Hook designed to be overridden. Write some user defined statistics (Make stats from the current dataset). \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+
+
+Implements \hyperlink{classelps_1_1_lab_outputer_a15d6faa05e150c15c51da1a05f1f0c4d}{elps\-::\-Lab\-Outputer}.
+

@@ -1,0 +1,297 @@
+\hypertarget{classelps_1_1_lab_action_stack}{\section{elps\-:\-:Lab\-Action\-Stack Class Reference}
+\label{classelps_1_1_lab_action_stack}\index{elps\-::\-Lab\-Action\-Stack@{elps\-::\-Lab\-Action\-Stack}}
+}
+
+
+{\ttfamily \#include $<$Lab\-Action\-Stack.\-h$>$}
+
+Inheritance diagram for elps\-:\-:Lab\-Action\-Stack\-:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classelps_1_1_lab_action_stack}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structelps_1_1_lab_action_stack_1_1t__action}{t\-\_\-action}
+\item 
+struct \hyperlink{structelps_1_1_lab_action_stack_1_1t__action__data}{t\-\_\-action\-\_\-data}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{classelps_1_1_lab_action_stack_a869b84c38d157b66a589f5b7bf2c447d}{t\-\_\-status} \{ {\bfseries W\-A\-I\-T\-I\-N\-G}, 
+{\bfseries R\-U\-N\-N\-I\-N\-G}, 
+{\bfseries T\-E\-R\-M\-I\-N\-A\-T\-E\-D}
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{classelps_1_1_lab_action_stack_a8ae2fb5ea16320aeb6dd5c8910d8cb3d}{Push\-Timeout\-Action} (string name, \hyperlink{namespaceelps_a25715773cecbf210efb08dff37b7b013}{Action\-Call\-Back\-Param} param, \hyperlink{namespaceelps_aa1ee9bc57556d61c2b7534818c6d5889}{Action\-Call\-Back} $\ast$action\-\_\-callback, double start\-\_\-time)
+\item 
+void \hyperlink{classelps_1_1_lab_action_stack_a45fe60594dfa9b74e2746c9b40a47260}{Push\-Interval\-Action} (string name, \hyperlink{namespaceelps_a25715773cecbf210efb08dff37b7b013}{Action\-Call\-Back\-Param} param, \hyperlink{namespaceelps_aa1ee9bc57556d61c2b7534818c6d5889}{Action\-Call\-Back} $\ast$action\-\_\-callback, double start\-\_\-time, double interval, double timeout=-\/1)
+\item 
+void \hyperlink{classelps_1_1_lab_action_stack_af8be0d6bfb67e1f55473deca832d1c09}{Pop\-Action} ()
+\item 
+int \hyperlink{classelps_1_1_lab_action_stack_ab104c5d4cf79083d8fb22c0d7de19207}{Get\-Size} ()
+\item 
+double \hyperlink{classelps_1_1_lab_action_stack_a08c9abd10667fcd039c0b1f49cf52975}{Get\-Time} ()
+\item 
+void \hyperlink{classelps_1_1_lab_action_stack_a5bfe16949a6ca81fa5e27701fffaf8e4}{Set\-Time} (double time)
+\item 
+string \hyperlink{classelps_1_1_lab_action_stack_a0d889a8f21b5809134dea1e2a8158518}{Get\-Action\-Name} (int id)
+\item 
+vector$<$ \hyperlink{structelps_1_1_lab_action_stack_1_1t__action}{t\-\_\-action} $>$ \& \hyperlink{classelps_1_1_lab_action_stack_aa0256ee51ed4e231c70fde3930513964}{Get\-Actions} ()
+\item 
+bool \hyperlink{classelps_1_1_lab_action_stack_a639ffa50c74766caa54f8bd243707bf3}{Try\-Fire} (double current\-\_\-time)
+\item 
+bool \hyperlink{classelps_1_1_lab_action_stack_a256a36fd87b65c46f3358537517d1214}{Try\-Fire\-Action} (double current\-\_\-time, int id)
+\item 
+void \hyperlink{classelps_1_1_lab_action_stack_a4ed5c6b07c5e105fe668afa545012fec}{Fire\-Now} ()
+\item 
+void \hyperlink{classelps_1_1_lab_action_stack_ac19a4860a13ee0e40d33f57d5cb19e42}{Fire\-Action\-Now} (int id)
+\item 
+void \hyperlink{classelps_1_1_lab_action_stack_aca1618b9f704080a2adfa506bd2d09a9}{Copy} (\hyperlink{classelps_1_1_lab_action_stack}{Lab\-Action\-Stack} $\ast$src\-\_\-stack)
+\item 
+void \hyperlink{classelps_1_1_lab_action_stack_ae6608e50b77c7af7047f161f20c59d03}{Binarize} (ofstream $\ast$ostream)
+\item 
+void \hyperlink{classelps_1_1_lab_action_stack_ae523bf40512050cde98f35acc9292bfc}{Un\-Binarize} (ifstream $\ast$istream)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Stack of events that can be fired during the simulation at any time in a global context (the user is free to determine what has to be done -\/ it can be of any kind; aka \-: on an individual, on the entire network, ...).
+
+U\-S\-A\-G\-E \-:
+
+
+\begin{DoxyItemize}
+\item Instantiate
+\item Push action(s) to be fired (\hyperlink{classelps_1_1_lab_action_stack_a8ae2fb5ea16320aeb6dd5c8910d8cb3d}{Push\-Timeout\-Action()}, \hyperlink{classelps_1_1_lab_action_stack_a45fe60594dfa9b74e2746c9b40a47260}{Push\-Interval\-Action()} functions) \begin{DoxyVerb}          * Create a function of the form "double func_name(void* param)"
+            to be executed when the action is fired
+\end{DoxyVerb}
+
+\end{DoxyItemize}
+
+
+\begin{DoxyItemize}
+\item \hyperlink{classelps_1_1_lab_action_stack_a639ffa50c74766caa54f8bd243707bf3}{Try\-Fire()} action(s) recurrently (or not) in the simulation loop (This also updates the current time of the stack, at first)
+\end{DoxyItemize}
+
+(Those events/actions come in addition to events that can be fired at Site level. See \hyperlink{classelps_1_1_lab_event_stack}{Lab\-Event\-Stack} class). 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classelps_1_1_lab_action_stack_a869b84c38d157b66a589f5b7bf2c447d}{\index{elps\-::\-Lab\-Action\-Stack@{elps\-::\-Lab\-Action\-Stack}!t\-\_\-status@{t\-\_\-status}}
+\index{t\-\_\-status@{t\-\_\-status}!elps::LabActionStack@{elps\-::\-Lab\-Action\-Stack}}
+\subsubsection[{t\-\_\-status}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf elps\-::\-Lab\-Action\-Stack\-::t\-\_\-status}}}\label{classelps_1_1_lab_action_stack_a869b84c38d157b66a589f5b7bf2c447d}
+Status of a given planned action/event 
+
+\subsection{Member Function Documentation}
+\hypertarget{classelps_1_1_lab_action_stack_ae6608e50b77c7af7047f161f20c59d03}{\index{elps\-::\-Lab\-Action\-Stack@{elps\-::\-Lab\-Action\-Stack}!Binarize@{Binarize}}
+\index{Binarize@{Binarize}!elps::LabActionStack@{elps\-::\-Lab\-Action\-Stack}}
+\subsubsection[{Binarize}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Action\-Stack\-::\-Binarize (
+\begin{DoxyParamCaption}
+\item[{ofstream $\ast$}]{ostream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classelps_1_1_lab_action_stack_ae6608e50b77c7af7047f161f20c59d03}
+Save the current state of the stack to a given output stream (binary format). 
+\begin{DoxyParams}{Parameters}
+{\em ostream} & Output stream to backup to. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classelps_1_1_lab_i_binarizable_aecc9b383945b4c4e304675e5c970f69d}{elps\-::\-Lab\-I\-Binarizable}.
+
+\hypertarget{classelps_1_1_lab_action_stack_aca1618b9f704080a2adfa506bd2d09a9}{\index{elps\-::\-Lab\-Action\-Stack@{elps\-::\-Lab\-Action\-Stack}!Copy@{Copy}}
+\index{Copy@{Copy}!elps::LabActionStack@{elps\-::\-Lab\-Action\-Stack}}
+\subsubsection[{Copy}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Action\-Stack\-::\-Copy (
+\begin{DoxyParamCaption}
+\item[{{\bf Lab\-Action\-Stack} $\ast$}]{src\-\_\-stack}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_action_stack_aca1618b9f704080a2adfa506bd2d09a9}
+Copy the properties of a stack to this one. 
+\begin{DoxyParams}{Parameters}
+{\em src\-\_\-stack} & The source stack to copy from. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_action_stack_ac19a4860a13ee0e40d33f57d5cb19e42}{\index{elps\-::\-Lab\-Action\-Stack@{elps\-::\-Lab\-Action\-Stack}!Fire\-Action\-Now@{Fire\-Action\-Now}}
+\index{Fire\-Action\-Now@{Fire\-Action\-Now}!elps::LabActionStack@{elps\-::\-Lab\-Action\-Stack}}
+\subsubsection[{Fire\-Action\-Now}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Action\-Stack\-::\-Fire\-Action\-Now (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_action_stack_ac19a4860a13ee0e40d33f57d5cb19e42}
+Force firing the given action without any further time checking \hypertarget{classelps_1_1_lab_action_stack_a4ed5c6b07c5e105fe668afa545012fec}{\index{elps\-::\-Lab\-Action\-Stack@{elps\-::\-Lab\-Action\-Stack}!Fire\-Now@{Fire\-Now}}
+\index{Fire\-Now@{Fire\-Now}!elps::LabActionStack@{elps\-::\-Lab\-Action\-Stack}}
+\subsubsection[{Fire\-Now}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Action\-Stack\-::\-Fire\-Now (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_action_stack_a4ed5c6b07c5e105fe668afa545012fec}
+Force firing all the actions without any further time checking \hypertarget{classelps_1_1_lab_action_stack_a0d889a8f21b5809134dea1e2a8158518}{\index{elps\-::\-Lab\-Action\-Stack@{elps\-::\-Lab\-Action\-Stack}!Get\-Action\-Name@{Get\-Action\-Name}}
+\index{Get\-Action\-Name@{Get\-Action\-Name}!elps::LabActionStack@{elps\-::\-Lab\-Action\-Stack}}
+\subsubsection[{Get\-Action\-Name}]{\setlength{\rightskip}{0pt plus 5cm}string elps\-::\-Lab\-Action\-Stack\-::\-Get\-Action\-Name (
+\begin{DoxyParamCaption}
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_action_stack_a0d889a8f21b5809134dea1e2a8158518}
+Get the name of the action by its id in the stack 
+\begin{DoxyParams}{Parameters}
+{\em id} & Position in the stack of the targeted action \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A name given to the action when it has been pushed to the stack 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_action_stack_aa0256ee51ed4e231c70fde3930513964}{\index{elps\-::\-Lab\-Action\-Stack@{elps\-::\-Lab\-Action\-Stack}!Get\-Actions@{Get\-Actions}}
+\index{Get\-Actions@{Get\-Actions}!elps::LabActionStack@{elps\-::\-Lab\-Action\-Stack}}
+\subsubsection[{Get\-Actions}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Lab\-Action\-Stack\-::t\-\_\-action} $>$ \& elps\-::\-Lab\-Action\-Stack\-::\-Get\-Actions (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_action_stack_aa0256ee51ed4e231c70fde3930513964}
+Get the stack \begin{DoxyReturn}{Returns}
+A vector containing all the actions 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_action_stack_ab104c5d4cf79083d8fb22c0d7de19207}{\index{elps\-::\-Lab\-Action\-Stack@{elps\-::\-Lab\-Action\-Stack}!Get\-Size@{Get\-Size}}
+\index{Get\-Size@{Get\-Size}!elps::LabActionStack@{elps\-::\-Lab\-Action\-Stack}}
+\subsubsection[{Get\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int elps\-::\-Lab\-Action\-Stack\-::\-Get\-Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_action_stack_ab104c5d4cf79083d8fb22c0d7de19207}
+Get the size of the stack \begin{DoxyReturn}{Returns}
+Number of actions stored in the stack 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_action_stack_a08c9abd10667fcd039c0b1f49cf52975}{\index{elps\-::\-Lab\-Action\-Stack@{elps\-::\-Lab\-Action\-Stack}!Get\-Time@{Get\-Time}}
+\index{Get\-Time@{Get\-Time}!elps::LabActionStack@{elps\-::\-Lab\-Action\-Stack}}
+\subsubsection[{Get\-Time}]{\setlength{\rightskip}{0pt plus 5cm}double elps\-::\-Lab\-Action\-Stack\-::\-Get\-Time (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_action_stack_a08c9abd10667fcd039c0b1f49cf52975}
+Get the current time of the stack \begin{DoxyReturn}{Returns}
+Return a double expressed in the user defined way\par
+ Note \-: the time has to be set by the user in his simulation loop using \hyperlink{classelps_1_1_lab_action_stack_a5bfe16949a6ca81fa5e27701fffaf8e4}{Set\-Time()} 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_action_stack_af8be0d6bfb67e1f55473deca832d1c09}{\index{elps\-::\-Lab\-Action\-Stack@{elps\-::\-Lab\-Action\-Stack}!Pop\-Action@{Pop\-Action}}
+\index{Pop\-Action@{Pop\-Action}!elps::LabActionStack@{elps\-::\-Lab\-Action\-Stack}}
+\subsubsection[{Pop\-Action}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Action\-Stack\-::\-Pop\-Action (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_action_stack_af8be0d6bfb67e1f55473deca832d1c09}
+Remove the last action pushed in the stack \hypertarget{classelps_1_1_lab_action_stack_a45fe60594dfa9b74e2746c9b40a47260}{\index{elps\-::\-Lab\-Action\-Stack@{elps\-::\-Lab\-Action\-Stack}!Push\-Interval\-Action@{Push\-Interval\-Action}}
+\index{Push\-Interval\-Action@{Push\-Interval\-Action}!elps::LabActionStack@{elps\-::\-Lab\-Action\-Stack}}
+\subsubsection[{Push\-Interval\-Action}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Action\-Stack\-::\-Push\-Interval\-Action (
+\begin{DoxyParamCaption}
+\item[{string}]{name, }
+\item[{{\bf Action\-Call\-Back\-Param}}]{param, }
+\item[{{\bf Action\-Call\-Back} $\ast$}]{action\-\_\-callback, }
+\item[{double}]{start\-\_\-time, }
+\item[{double}]{interval, }
+\item[{double}]{timeout = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_action_stack_a45fe60594dfa9b74e2746c9b40a47260}
+Add an action to the stack which will be fired every 'interval', given a starting time and a timeout (-\/1 \-: never ends until the end of the simulation) 
+\begin{DoxyParams}{Parameters}
+{\em name} & Give a name to the action (Better use a unique name for each) \\
+\hline
+{\em param} & Parameter to be passed to the callback function to be executed\par
+ Must be casted to the expected type inside the callback function \\
+\hline
+{\em action\-\_\-callback} & Function to be executed \\
+\hline
+{\em start\-\_\-time} & Time at which the action will be fired \\
+\hline
+{\em interval} & Delta of time between each firing of the action \\
+\hline
+{\em timeout} & End time \-: after that the action is considered as T\-E\-R\-M\-I\-N\-A\-T\-E\-D \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_action_stack_a8ae2fb5ea16320aeb6dd5c8910d8cb3d}{\index{elps\-::\-Lab\-Action\-Stack@{elps\-::\-Lab\-Action\-Stack}!Push\-Timeout\-Action@{Push\-Timeout\-Action}}
+\index{Push\-Timeout\-Action@{Push\-Timeout\-Action}!elps::LabActionStack@{elps\-::\-Lab\-Action\-Stack}}
+\subsubsection[{Push\-Timeout\-Action}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Action\-Stack\-::\-Push\-Timeout\-Action (
+\begin{DoxyParamCaption}
+\item[{string}]{name, }
+\item[{{\bf Action\-Call\-Back\-Param}}]{param, }
+\item[{{\bf Action\-Call\-Back} $\ast$}]{action\-\_\-callback, }
+\item[{double}]{start\-\_\-time}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_action_stack_a8ae2fb5ea16320aeb6dd5c8910d8cb3d}
+Add an action on top of the stack which will be fired O\-N\-C\-E at the given time 
+\begin{DoxyParams}{Parameters}
+{\em name} & Give a name to the action \\
+\hline
+{\em param} & Parameter to be passed to the callback function to be executed\par
+ Must be casted to the expected type inside the callback function \\
+\hline
+{\em action\-\_\-callback} & Function to be executed \\
+\hline
+{\em start\-\_\-time} & Time at which the action will be fired \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_action_stack_a5bfe16949a6ca81fa5e27701fffaf8e4}{\index{elps\-::\-Lab\-Action\-Stack@{elps\-::\-Lab\-Action\-Stack}!Set\-Time@{Set\-Time}}
+\index{Set\-Time@{Set\-Time}!elps::LabActionStack@{elps\-::\-Lab\-Action\-Stack}}
+\subsubsection[{Set\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Action\-Stack\-::\-Set\-Time (
+\begin{DoxyParamCaption}
+\item[{double}]{time}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_action_stack_a5bfe16949a6ca81fa5e27701fffaf8e4}
+Update the current time of the stack 
+\begin{DoxyParams}{Parameters}
+{\em time} & A double expressed as desired by the user \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_action_stack_a639ffa50c74766caa54f8bd243707bf3}{\index{elps\-::\-Lab\-Action\-Stack@{elps\-::\-Lab\-Action\-Stack}!Try\-Fire@{Try\-Fire}}
+\index{Try\-Fire@{Try\-Fire}!elps::LabActionStack@{elps\-::\-Lab\-Action\-Stack}}
+\subsubsection[{Try\-Fire}]{\setlength{\rightskip}{0pt plus 5cm}bool elps\-::\-Lab\-Action\-Stack\-::\-Try\-Fire (
+\begin{DoxyParamCaption}
+\item[{double}]{current\-\_\-time}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_action_stack_a639ffa50c74766caa54f8bd243707bf3}
+If time as come to fire all the actions, does it. Do nothing otherwise. 
+\begin{DoxyParams}{Parameters}
+{\em current\-\_\-time} & The current time (of the simulation) at which we try to fire the Action \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if at least one action has been fired. 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_action_stack_a256a36fd87b65c46f3358537517d1214}{\index{elps\-::\-Lab\-Action\-Stack@{elps\-::\-Lab\-Action\-Stack}!Try\-Fire\-Action@{Try\-Fire\-Action}}
+\index{Try\-Fire\-Action@{Try\-Fire\-Action}!elps::LabActionStack@{elps\-::\-Lab\-Action\-Stack}}
+\subsubsection[{Try\-Fire\-Action}]{\setlength{\rightskip}{0pt plus 5cm}bool elps\-::\-Lab\-Action\-Stack\-::\-Try\-Fire\-Action (
+\begin{DoxyParamCaption}
+\item[{double}]{current\-\_\-time, }
+\item[{int}]{id}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_action_stack_a256a36fd87b65c46f3358537517d1214}
+If time as come to fire the given action, does it. Do nothing otherwise. 
+\begin{DoxyParams}{Parameters}
+{\em current\-\_\-time} & The current time (of the simulation) at which we try to fire the Action \\
+\hline
+{\em id} & The id of the action to be fired. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if the action has been fired. 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_action_stack_ae523bf40512050cde98f35acc9292bfc}{\index{elps\-::\-Lab\-Action\-Stack@{elps\-::\-Lab\-Action\-Stack}!Un\-Binarize@{Un\-Binarize}}
+\index{Un\-Binarize@{Un\-Binarize}!elps::LabActionStack@{elps\-::\-Lab\-Action\-Stack}}
+\subsubsection[{Un\-Binarize}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Action\-Stack\-::\-Un\-Binarize (
+\begin{DoxyParamCaption}
+\item[{ifstream $\ast$}]{istream}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classelps_1_1_lab_action_stack_ae523bf40512050cde98f35acc9292bfc}
+Restore the stack from a given input stream (binary format). 
+\begin{DoxyParams}{Parameters}
+{\em istream} & Input stream from which to get the info required to restore the stack \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \hyperlink{classelps_1_1_lab_i_binarizable_a381af24c243c967b491101b7dbecb252}{elps\-::\-Lab\-I\-Binarizable}.
+

@@ -1,0 +1,79 @@
+\hypertarget{classelps_1_1_lab_file_utils}{\section{elps\-:\-:Lab\-File\-Utils Class Reference}
+\label{classelps_1_1_lab_file_utils}\index{elps\-::\-Lab\-File\-Utils@{elps\-::\-Lab\-File\-Utils}}
+}
+
+
+{\ttfamily \#include $<$Lab\-File\-Utils.\-h$>$}
+
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static int \hyperlink{classelps_1_1_lab_file_utils_aacfd6e526af7dc3622ffa8c1fd4073b1}{List\-Dir} (string dir, vector$<$ string $>$ \&files, bool skip\-\_\-dot=false, string filter=\char`\"{}\char`\"{}, bool filter\-\_\-ext\-\_\-only=false)
+\item 
+static string \hyperlink{classelps_1_1_lab_file_utils_a2ab6dd5307c6e6552e176a936d98d443}{File\-To\-String} (string filename)
+\item 
+static void \hyperlink{classelps_1_1_lab_file_utils_a5cd318782c1d5c32668b34d9034b0fde}{String\-To\-File} (string filename, string content)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Facility for dealing with files (and directories) 
+
+\subsection{Member Function Documentation}
+\hypertarget{classelps_1_1_lab_file_utils_a2ab6dd5307c6e6552e176a936d98d443}{\index{elps\-::\-Lab\-File\-Utils@{elps\-::\-Lab\-File\-Utils}!File\-To\-String@{File\-To\-String}}
+\index{File\-To\-String@{File\-To\-String}!elps::LabFileUtils@{elps\-::\-Lab\-File\-Utils}}
+\subsubsection[{File\-To\-String}]{\setlength{\rightskip}{0pt plus 5cm}string elps\-::\-Lab\-File\-Utils\-::\-File\-To\-String (
+\begin{DoxyParamCaption}
+\item[{string}]{filename}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classelps_1_1_lab_file_utils_a2ab6dd5307c6e6552e176a936d98d443}
+Read the content of the given file and return it into a string. 
+\begin{DoxyParams}{Parameters}
+{\em filename} & The file to be converted \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The content of the file 
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_file_utils_aacfd6e526af7dc3622ffa8c1fd4073b1}{\index{elps\-::\-Lab\-File\-Utils@{elps\-::\-Lab\-File\-Utils}!List\-Dir@{List\-Dir}}
+\index{List\-Dir@{List\-Dir}!elps::LabFileUtils@{elps\-::\-Lab\-File\-Utils}}
+\subsubsection[{List\-Dir}]{\setlength{\rightskip}{0pt plus 5cm}int elps\-::\-Lab\-File\-Utils\-::\-List\-Dir (
+\begin{DoxyParamCaption}
+\item[{string}]{dir, }
+\item[{vector$<$ string $>$ \&}]{files, }
+\item[{bool}]{skip\-\_\-dot = {\ttfamily false}, }
+\item[{string}]{filter = {\ttfamily \char`\"{}\char`\"{}}, }
+\item[{bool}]{filter\-\_\-ext\-\_\-only = {\ttfamily false}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classelps_1_1_lab_file_utils_aacfd6e526af7dc3622ffa8c1fd4073b1}
+List the files found in a given directory. 
+\begin{DoxyParams}{Parameters}
+{\em dir} & The full path of the directory to search \\
+\hline
+{\em files} & The resulting list of files \\
+\hline
+{\em skip\-\_\-dot} & Skip the current and the backward directories (aka \-: '.' and '..') \\
+\hline
+{\em filter} & String that the searched files must contain to appear in the resulting list \\
+\hline
+{\em filter\-\_\-ext\-\_\-only} & Apply the \char`\"{}filter\char`\"{} only on the extension of the files \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_file_utils_a5cd318782c1d5c32668b34d9034b0fde}{\index{elps\-::\-Lab\-File\-Utils@{elps\-::\-Lab\-File\-Utils}!String\-To\-File@{String\-To\-File}}
+\index{String\-To\-File@{String\-To\-File}!elps::LabFileUtils@{elps\-::\-Lab\-File\-Utils}}
+\subsubsection[{String\-To\-File}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-File\-Utils\-::\-String\-To\-File (
+\begin{DoxyParamCaption}
+\item[{string}]{filename, }
+\item[{string}]{content}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}}\label{classelps_1_1_lab_file_utils_a5cd318782c1d5c32668b34d9034b0fde}
+Write a string to a given file 
+\begin{DoxyParams}{Parameters}
+{\em filename} & The file to write to \\
+\hline
+{\em content} & The string to write \\
+\hline
+\end{DoxyParams}
