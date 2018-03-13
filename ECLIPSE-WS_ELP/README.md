@@ -1,3 +1,19 @@
+STRUCTURE
+=========
+
+* evolab-project
+* evolab-shared
+* evolab-gui
+* .metadata
+* evolab-cython
+* evolab-devel
+* TestSets
+* libbacktrace
+
+
+COMPILATION
+===========
+
 # To compile all C stuffs :
 
 	cd ECLIPSE-WS_ELP
