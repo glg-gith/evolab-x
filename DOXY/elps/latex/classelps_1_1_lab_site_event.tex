@@ -1,11 +1,11 @@
-\hypertarget{classelps_1_1_lab_site_event}{\section{elps\-:\-:Lab\-Site\-Event Class Reference}
-\label{classelps_1_1_lab_site_event}\index{elps\-::\-Lab\-Site\-Event@{elps\-::\-Lab\-Site\-Event}}
+\hypertarget{classelps_1_1_lab_site_event}{\section{elps\+:\+:Lab\+Site\+Event Class Reference}
+\label{classelps_1_1_lab_site_event}\index{elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}}
 }
 
 
-{\ttfamily \#include $<$Lab\-Site\-Event.\-h$>$}
+{\ttfamily \#include $<$Lab\+Site\+Event.\+h$>$}
 
-Inheritance diagram for elps\-:\-:Lab\-Site\-Event\-:\begin{figure}[H]
+Inheritance diagram for elps\+:\+:Lab\+Site\+Event\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=3.000000cm]{classelps_1_1_lab_site_event}
@@ -14,57 +14,61 @@ Inheritance diagram for elps\-:\-:Lab\-Site\-Event\-:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classelps_1_1_lab_site_event_a117c348191564b3f6a684482230f8a17}{Lab\-Site\-Event} (\hyperlink{classelps_1_1_lab_simulator_base}{Lab\-Simulator\-Base} $\ast$sim)
+\hyperlink{classelps_1_1_lab_site_event_a117c348191564b3f6a684482230f8a17}{Lab\+Site\+Event} (\hyperlink{classelps_1_1_lab_simulator_base}{Lab\+Simulator\+Base} $\ast$sim)
 \item 
-\hyperlink{classelps_1_1_lab_site_event_a19847eaac898edc47a392fa4af05396d}{Lab\-Site\-Event} (\hyperlink{classelps_1_1_lab_simulator_base}{Lab\-Simulator\-Base} $\ast$sim, \hyperlink{classelps_1_1_lab_node}{Lab\-Node} $\ast$parent\-\_\-node)
+\hyperlink{classelps_1_1_lab_site_event_a19847eaac898edc47a392fa4af05396d}{Lab\+Site\+Event} (\hyperlink{classelps_1_1_lab_simulator_base}{Lab\+Simulator\+Base} $\ast$sim, \hyperlink{classelps_1_1_lab_node}{Lab\+Node} $\ast$parent\+\_\+node)
 \item 
-\hyperlink{classelps_1_1_lab_event_stack}{Lab\-Event\-Stack} $\ast$ \hyperlink{classelps_1_1_lab_site_event_a1e763ec961a24837734f5c54e0f561b6}{Get\-Event\-Stack} ()
+\hyperlink{classelps_1_1_lab_site_event_a7ead3e9663c0b9103c11e822f2b5e51e}{Lab\+Site\+Event} (Py\+Object $\ast$obj, \hyperlink{classelps_1_1_lab_simulator_base}{Lab\+Simulator\+Base} $\ast$sim)
 \item 
-void \hyperlink{classelps_1_1_lab_site_event_a20f650621d12bd6bf9510bcf6d212fec}{Push\-Event} (string name, double initial\-\_\-rate, \hyperlink{namespaceelps_a1bd4230d698fa66dd38f0fc1cc5c2c55}{Event\-Call\-Back\-Param} param, \hyperlink{namespaceelps_a121bfb217e5fbb734b95d3f7b6653fb2}{Rate\-Call\-Back} $\ast$rate\-\_\-callback, \hyperlink{namespaceelps_adb49d5dbf827d9b190d0b1fd15e0193c}{Realize\-Call\-Back} $\ast$realize\-\_\-callback)
+\hyperlink{classelps_1_1_lab_site_event_a53b0a935dc4185d9aa3d3a6325530923}{Lab\+Site\+Event} (Py\+Object $\ast$obj, \hyperlink{classelps_1_1_lab_simulator_base}{Lab\+Simulator\+Base} $\ast$sim, \hyperlink{classelps_1_1_lab_node}{Lab\+Node} $\ast$parent\+\_\+node)
 \item 
-void \hyperlink{classelps_1_1_lab_site_event_a8416ab18d555c7f46e4600f908aab92c}{Pop\-Event} ()
+\hyperlink{classelps_1_1_lab_event_stack}{Lab\+Event\+Stack} $\ast$ \hyperlink{classelps_1_1_lab_site_event_a1e763ec961a24837734f5c54e0f561b6}{Get\+Event\+Stack} ()
 \item 
-int \hyperlink{classelps_1_1_lab_site_event_a12fd4e99e01db05d8da743ac3fa27ee4}{Get\-Nb\-Events} ()
+void \hyperlink{classelps_1_1_lab_site_event_a20f650621d12bd6bf9510bcf6d212fec}{Push\+Event} (string name, double initial\+\_\+rate, \hyperlink{namespaceelps_a1bd4230d698fa66dd38f0fc1cc5c2c55}{Event\+Call\+Back\+Param} param, \hyperlink{namespaceelps_a121bfb217e5fbb734b95d3f7b6653fb2}{Rate\+Call\+Back} $\ast$rate\+\_\+callback, \hyperlink{namespaceelps_adb49d5dbf827d9b190d0b1fd15e0193c}{Realize\+Call\+Back} $\ast$realize\+\_\+callback)
 \item 
-double \hyperlink{classelps_1_1_lab_site_event_afe1ddd9f7100ab36adaef5f6c4a24942}{Get\-Event\-Stack\-Rate} ()
+void \hyperlink{classelps_1_1_lab_site_event_a8416ab18d555c7f46e4600f908aab92c}{Pop\+Event} ()
 \item 
-void \hyperlink{classelps_1_1_lab_site_event_ac1bc0340ca07f66b92beb8f31c7f0afe}{Reset\-Event\-Stack\-Rate} ()
+int \hyperlink{classelps_1_1_lab_site_event_a12fd4e99e01db05d8da743ac3fa27ee4}{Get\+Nb\+Events} ()
 \item 
-void \hyperlink{classelps_1_1_lab_site_event_a97b1ba428e217f2ae56e21e6cd508ebb}{Set\-Time\-Event} (double time)
+double \hyperlink{classelps_1_1_lab_site_event_afe1ddd9f7100ab36adaef5f6c4a24942}{Get\+Event\+Stack\+Rate} ()
 \item 
-double \hyperlink{classelps_1_1_lab_site_event_add4dbc769c1819b90f89bb4aea07aaca}{Get\-Time\-Event} ()
+void \hyperlink{classelps_1_1_lab_site_event_ac1bc0340ca07f66b92beb8f31c7f0afe}{Reset\+Event\+Stack\+Rate} ()
 \item 
-void \hyperlink{classelps_1_1_lab_site_event_a0ff5037542e555f180c77b4e7f65ae8e}{Update\-Event\-Stack\-Rates} ()
+void \hyperlink{classelps_1_1_lab_site_event_a97b1ba428e217f2ae56e21e6cd508ebb}{Set\+Time\+Event} (double time)
 \item 
-void \hyperlink{classelps_1_1_lab_site_event_a16b450295e4a6b606c9b396b847d52fe}{Realize\-Event} (int id, double time)
+double \hyperlink{classelps_1_1_lab_site_event_add4dbc769c1819b90f89bb4aea07aaca}{Get\+Time\+Event} ()
 \item 
-void \hyperlink{classelps_1_1_lab_site_event_af24df03cf24cd82f61a3b087da569657}{Realize\-Event} (double p1, double time)
+void \hyperlink{classelps_1_1_lab_site_event_a0ff5037542e555f180c77b4e7f65ae8e}{Update\+Event\+Stack\+Rates} ()
 \item 
-void \hyperlink{classelps_1_1_lab_site_event_a3d016ec3ede26bdb559b80dcebb09daa}{Clear\-Events} ()
+void \hyperlink{classelps_1_1_lab_site_event_a16b450295e4a6b606c9b396b847d52fe}{Realize\+Event} (int id, double time)
 \item 
-virtual \hyperlink{classelps_1_1_lab_user_data}{Lab\-User\-Data} $\ast$ \hyperlink{classelps_1_1_lab_site_event_a3b0a1f662ad925a9d6ca4fef1d3a21be}{New} (\hyperlink{classelps_1_1_lab_node}{Lab\-Node} $\ast$parent\-\_\-node=N\-U\-L\-L)
+void \hyperlink{classelps_1_1_lab_site_event_af24df03cf24cd82f61a3b087da569657}{Realize\+Event} (double p1, double time)
 \item 
-virtual void \hyperlink{classelps_1_1_lab_site_event_a81368b772b6ef46286ce9b42169466c0}{Copy} (\hyperlink{classelps_1_1_lab_user_data}{Lab\-User\-Data} $\ast$src\-\_\-site, int dep\-\_\-filter=I\-N\-D\-\_\-\-D\-E\-P$|$S\-I\-T\-E\-\_\-\-D\-E\-P)
+void \hyperlink{classelps_1_1_lab_site_event_a3d016ec3ede26bdb559b80dcebb09daa}{Clear\+Events} ()
+\item 
+virtual \hyperlink{classelps_1_1_lab_user_data}{Lab\+User\+Data} $\ast$ \hyperlink{classelps_1_1_lab_site_event_a3b0a1f662ad925a9d6ca4fef1d3a21be}{New} (\hyperlink{classelps_1_1_lab_node}{Lab\+Node} $\ast$parent\+\_\+node=N\+U\+L\+L)
+\item 
+virtual void \hyperlink{classelps_1_1_lab_site_event_a81368b772b6ef46286ce9b42169466c0}{Copy} (\hyperlink{classelps_1_1_lab_user_data}{Lab\+User\+Data} $\ast$src\+\_\+site, int dep\+\_\+filter=I\+N\+D\+\_\+\+D\+E\+P$\vert$S\+I\+T\+E\+\_\+\+D\+E\+P)
 \item 
 void \hyperlink{classelps_1_1_lab_site_event_af4220ab0bbcf208e73b073a73a77c076}{Binarize} (ofstream $\ast$ostream)
 \item 
-void \hyperlink{classelps_1_1_lab_site_event_a237da73d8796cbff70f66d953fbe4c2c}{Un\-Binarize} (ifstream $\ast$istream)
+void \hyperlink{classelps_1_1_lab_site_event_a237da73d8796cbff70f66d953fbe4c2c}{Un\+Binarize} (ifstream $\ast$istream)
 \item 
-void \hyperlink{classelps_1_1_lab_site_event_ab4f5b42fbd2e9b8dc0507e2656b73c05}{Set\-Call\-Back\-Param\-At} (int i, void $\ast$p)
+void \hyperlink{classelps_1_1_lab_site_event_ab4f5b42fbd2e9b8dc0507e2656b73c05}{Set\+Call\+Back\+Param\+At} (int i, void $\ast$p)
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
-This class handles A\-T\-T\-R\-I\-B\-U\-T\-E\-S and S\-T\-A\-T\-E\-S (since it inherits from \hyperlink{classelps_1_1_lab_site_base}{Lab\-Site\-Base}), but also {\bfseries E\-V\-E\-N\-T\-S}.
+This class handles A\+T\+T\+R\+I\+B\+U\+T\+E\+S and S\+T\+A\+T\+E\+S (since it inherits from \hyperlink{classelps_1_1_lab_site_base}{Lab\+Site\+Base}), but also {\bfseries E\+V\+E\+N\+T\+S}.
 
-{\bfseries Note \-:} The concept of S\-I\-T\-E (data of a node in a network -\/ S\-P\-A\-T\-I\-A\-L\-I\-Z\-E\-D context) has been kept for M\-A\-S\-S A\-C\-T\-I\-O\-N context for preserving genericity.
+{\bfseries Note \+:} The concept of S\+I\+T\+E (data of a node in a network -\/ S\+P\+A\+T\+I\+A\+L\+I\+Z\+E\+D context) has been kept for M\+A\+S\+S A\+C\+T\+I\+O\+N context for preserving genericity.
 
-All the features related to A\-T\-T\-R\-I\-B\-U\-T\-E\-S and S\-T\-A\-T\-E\-S are deeply described in \hyperlink{classelps_1_1_lab_site_base}{Lab\-Site\-Base}, since \hyperlink{classelps_1_1_lab_site_event}{Lab\-Site\-Event} inherits from this class.
+All the features related to A\+T\+T\+R\+I\+B\+U\+T\+E\+S and S\+T\+A\+T\+E\+S are deeply described in \hyperlink{classelps_1_1_lab_site_base}{Lab\+Site\+Base}, since \hyperlink{classelps_1_1_lab_site_event}{Lab\+Site\+Event} inherits from this class.
 
-E\-V\-E\-N\-T\-S (See also \-: \hyperlink{classelps_1_1_lab_event_stack}{Lab\-Event\-Stack}) \-:
+E\+V\+E\+N\+T\+S (See also \+: \hyperlink{classelps_1_1_lab_event_stack}{Lab\+Event\+Stack}) \+:
 
-An event is an action that can be fired at any time on the S\-I\-T\-E (locally).
+An event is an action that can be fired at any time on the S\+I\+T\+E (locally).
 
 
 \begin{DoxyItemize}
@@ -72,31 +76,29 @@ An event is an action that can be fired at any time on the S\-I\-T\-E (locally).
 \item It comes with an action (method) which is fired (executed) when the event occurs
 \end{DoxyItemize}
 
-The \hyperlink{classelps_1_1_lab_site_event}{Lab\-Site\-Event} class is nothing else but an aggregate of the attributes, states and events stacks \-: See \hyperlink{classelps_1_1_lab_attributes_stack}{Lab\-Attributes\-Stack}, \hyperlink{classelps_1_1_lab_state_stack}{Lab\-State\-Stack} and \hyperlink{classelps_1_1_lab_event_stack}{Lab\-Event\-Stack}.
+The \hyperlink{classelps_1_1_lab_site_event}{Lab\+Site\+Event} class is nothing else but an aggregate of the attributes, states and events stacks \+: See \hyperlink{classelps_1_1_lab_attributes_stack}{Lab\+Attributes\+Stack}, \hyperlink{classelps_1_1_lab_state_stack}{Lab\+State\+Stack} and \hyperlink{classelps_1_1_lab_event_stack}{Lab\+Event\+Stack}.
 
-{\bfseries Note \-:} A Site is {\bfseries always} related to a simulator.
+{\bfseries Note \+:} \hyperlink{class_a}{A} Site is {\bfseries always} related to a simulator.
 
-\subsection*{U\-S\-A\-G\-E \-:}
+\subsection*{U\+S\+A\+G\+E \+: }
 
-A basic use case would look like follows (assuming the setup for A\-T\-T\-R\-I\-B\-U\-T\-E\-S and S\-T\-A\-T\-E\-S has already been done -\/ See \hyperlink{classelps_1_1_lab_site_base}{Lab\-Site\-Base}) \-:
+\hyperlink{class_a}{A} basic use case would look like follows (assuming the setup for A\+T\+T\+R\+I\+B\+U\+T\+E\+S and S\+T\+A\+T\+E\+S has already been done -\/ See \hyperlink{classelps_1_1_lab_site_base}{Lab\+Site\+Base}) \+:
 
-First of all define the callback methods to be fired. Those must be of the form \-:
+First of all define the callback methods to be fired. Those must be of the form \+:
 
 
 \begin{DoxyCode}
-\textcolor{keywordtype}{double} BirthRate(\hyperlink{namespaceelps_a1bd4230d698fa66dd38f0fc1cc5c2c55}{EventCallBackParam} node)                    
-                     \textcolor{comment}{// We choose to pass a LabNode}
+\textcolor{keywordtype}{double} BirthRate(\hyperlink{namespaceelps_a1bd4230d698fa66dd38f0fc1cc5c2c55}{EventCallBackParam} node)                                   \textcolor{comment}{// We choose
+       to pass a LabNode}
 \{
         LabNode *a\_node = (LabNode *)node;
         \textcolor{keywordtype}{double} rate;
-        BdmLsim4::t\_site *a\_site = BdmLsim4::GetSiteData(a\_node);              
-       \textcolor{comment}{// Get the Site embedded in this node}
-        rate = b * a\_site->GetAttrDouble(LabSiteBase::IND\_DEP, BdmLsim4::X);   
-       \textcolor{comment}{// Compute the return value}
+        BdmLsim4::t\_site *a\_site = BdmLsim4::GetSiteData(a\_node);               \textcolor{comment}{// Get the Site embedded in
+       this node}
+        rate = b * a\_site->GetAttrDouble(LabSiteBase::IND\_DEP, BdmLsim4::X);    \textcolor{comment}{// Compute the return value}
         \textcolor{keywordflow}{if}(a\_site->GetState() == BdmLsim4::MUTANT)
                 rate *= 0.9;
-        \textcolor{keywordflow}{return} rate;                                                           
-       \textcolor{comment}{// return a float}
+        \textcolor{keywordflow}{return} rate;                                                            \textcolor{comment}{// return a float}
 \}
 
 \textcolor{keywordtype}{double} RealizeBirth(\hyperlink{namespaceelps_a1bd4230d698fa66dd38f0fc1cc5c2c55}{EventCallBackParam} node)
@@ -109,9 +111,9 @@ First of all define the callback methods to be fired. Those must be of the form 
 \end{DoxyCode}
 
 
-{\bfseries Note \-:} the {\bfseries node} parameter can be any object (here we assume we are in a S\-P\-A\-T\-I\-A\-L\-I\-Z\-E\-D context, that's why we use the \char`\"{}node\char`\"{} term).
+{\bfseries Note \+:} the {\bfseries node} parameter can be any object (here we assume we are in a S\+P\+A\+T\+I\+A\+L\+I\+Z\+E\+D context, that's why we use the \char`\"{}node\char`\"{} term).
 
-Then we can create the callbacks and assign them to the Site \-:
+Then we can create the callbacks and assign them to the Site \+:
 
 
 \begin{DoxyCode}
@@ -132,91 +134,124 @@ a\_site->PushEvent(\textcolor{stringliteral}{"DEATH"}, 0, NULL, rate\_callback, 
 Push one callback per possible event according to the needs of your simulation for the given Site. 
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classelps_1_1_lab_site_event_a117c348191564b3f6a684482230f8a17}{\index{elps\-::\-Lab\-Site\-Event@{elps\-::\-Lab\-Site\-Event}!Lab\-Site\-Event@{Lab\-Site\-Event}}
-\index{Lab\-Site\-Event@{Lab\-Site\-Event}!elps::LabSiteEvent@{elps\-::\-Lab\-Site\-Event}}
-\subsubsection[{Lab\-Site\-Event}]{\setlength{\rightskip}{0pt plus 5cm}elps\-::\-Lab\-Site\-Event\-::\-Lab\-Site\-Event (
+\hypertarget{classelps_1_1_lab_site_event_a117c348191564b3f6a684482230f8a17}{\index{elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}!Lab\+Site\+Event@{Lab\+Site\+Event}}
+\index{Lab\+Site\+Event@{Lab\+Site\+Event}!elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}}
+\subsubsection[{Lab\+Site\+Event}]{\setlength{\rightskip}{0pt plus 5cm}elps\+::\+Lab\+Site\+Event\+::\+Lab\+Site\+Event (
 \begin{DoxyParamCaption}
-\item[{{\bf Lab\-Simulator\-Base} $\ast$}]{sim}
+\item[{{\bf Lab\+Simulator\+Base} $\ast$}]{sim}
 \end{DoxyParamCaption}
 )}}\label{classelps_1_1_lab_site_event_a117c348191564b3f6a684482230f8a17}
-Basic constructor for use in a N\-O\-N-\/\-S\-P\-A\-T\-I\-A\-L\-I\-Z\-E\-D context. 
+Basic constructor for use in a N\+O\+N-\/\+S\+P\+A\+T\+I\+A\+L\+I\+Z\+E\+D context. 
 \begin{DoxyParams}{Parameters}
 {\em sim} & The Simulator this Site is related to. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classelps_1_1_lab_site_event_a19847eaac898edc47a392fa4af05396d}{\index{elps\-::\-Lab\-Site\-Event@{elps\-::\-Lab\-Site\-Event}!Lab\-Site\-Event@{Lab\-Site\-Event}}
-\index{Lab\-Site\-Event@{Lab\-Site\-Event}!elps::LabSiteEvent@{elps\-::\-Lab\-Site\-Event}}
-\subsubsection[{Lab\-Site\-Event}]{\setlength{\rightskip}{0pt plus 5cm}elps\-::\-Lab\-Site\-Event\-::\-Lab\-Site\-Event (
+\hypertarget{classelps_1_1_lab_site_event_a19847eaac898edc47a392fa4af05396d}{\index{elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}!Lab\+Site\+Event@{Lab\+Site\+Event}}
+\index{Lab\+Site\+Event@{Lab\+Site\+Event}!elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}}
+\subsubsection[{Lab\+Site\+Event}]{\setlength{\rightskip}{0pt plus 5cm}elps\+::\+Lab\+Site\+Event\+::\+Lab\+Site\+Event (
 \begin{DoxyParamCaption}
-\item[{{\bf Lab\-Simulator\-Base} $\ast$}]{sim, }
-\item[{{\bf Lab\-Node} $\ast$}]{parent\-\_\-node}
+\item[{{\bf Lab\+Simulator\+Base} $\ast$}]{sim, }
+\item[{{\bf Lab\+Node} $\ast$}]{parent\+\_\+node}
 \end{DoxyParamCaption}
 )}}\label{classelps_1_1_lab_site_event_a19847eaac898edc47a392fa4af05396d}
-Basic constructor for use in a S\-P\-A\-T\-I\-A\-L\-I\-Z\-E\-D context. 
+Basic constructor for use in a S\+P\+A\+T\+I\+A\+L\+I\+Z\+E\+D context. 
 \begin{DoxyParams}{Parameters}
 {\em sim} & The Simulator this Site is related to. \\
 \hline
-{\em parent\-\_\-node} & The network node (\hyperlink{classelps_1_1_lab_node}{Lab\-Node}) this Site is attached to. \\
+{\em parent\+\_\+node} & The network node (\hyperlink{classelps_1_1_lab_node}{Lab\+Node}) this Site is attached to. \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_site_event_a7ead3e9663c0b9103c11e822f2b5e51e}{\index{elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}!Lab\+Site\+Event@{Lab\+Site\+Event}}
+\index{Lab\+Site\+Event@{Lab\+Site\+Event}!elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}}
+\subsubsection[{Lab\+Site\+Event}]{\setlength{\rightskip}{0pt plus 5cm}elps\+::\+Lab\+Site\+Event\+::\+Lab\+Site\+Event (
+\begin{DoxyParamCaption}
+\item[{Py\+Object $\ast$}]{obj, }
+\item[{{\bf Lab\+Simulator\+Base} $\ast$}]{sim}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_event_a7ead3e9663c0b9103c11e822f2b5e51e}
+Cython usage only \+: D\+O N\+O\+T U\+S\+E ! 
+\begin{DoxyParams}{Parameters}
+{\em obj} & The Py\+Lab\+Site\+Event Python object related to this object \\
+\hline
+{\em sim} & The Lab\+Simulator$\ast$ related to this object \\
+\hline
+\end{DoxyParams}
+\hypertarget{classelps_1_1_lab_site_event_a53b0a935dc4185d9aa3d3a6325530923}{\index{elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}!Lab\+Site\+Event@{Lab\+Site\+Event}}
+\index{Lab\+Site\+Event@{Lab\+Site\+Event}!elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}}
+\subsubsection[{Lab\+Site\+Event}]{\setlength{\rightskip}{0pt plus 5cm}elps\+::\+Lab\+Site\+Event\+::\+Lab\+Site\+Event (
+\begin{DoxyParamCaption}
+\item[{Py\+Object $\ast$}]{obj, }
+\item[{{\bf Lab\+Simulator\+Base} $\ast$}]{sim, }
+\item[{{\bf Lab\+Node} $\ast$}]{parent\+\_\+node}
+\end{DoxyParamCaption}
+)}}\label{classelps_1_1_lab_site_event_a53b0a935dc4185d9aa3d3a6325530923}
+Cython usage only \+: D\+O N\+O\+T U\+S\+E ! 
+\begin{DoxyParams}{Parameters}
+{\em obj} & The Py\+Lab\+Site\+Event Python object related to this object \\
+\hline
+{\em sim} & The Simulator this Site is related to. \\
+\hline
+{\em parent\+\_\+node} & The network node (\hyperlink{classelps_1_1_lab_node}{Lab\+Node}) this Site is attached to. \\
 \hline
 \end{DoxyParams}
 
 
 \subsection{Member Function Documentation}
-\hypertarget{classelps_1_1_lab_site_event_af4220ab0bbcf208e73b073a73a77c076}{\index{elps\-::\-Lab\-Site\-Event@{elps\-::\-Lab\-Site\-Event}!Binarize@{Binarize}}
-\index{Binarize@{Binarize}!elps::LabSiteEvent@{elps\-::\-Lab\-Site\-Event}}
-\subsubsection[{Binarize}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Event\-::\-Binarize (
+\hypertarget{classelps_1_1_lab_site_event_af4220ab0bbcf208e73b073a73a77c076}{\index{elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}!Binarize@{Binarize}}
+\index{Binarize@{Binarize}!elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}}
+\subsubsection[{Binarize}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Site\+Event\+::\+Binarize (
 \begin{DoxyParamCaption}
 \item[{ofstream $\ast$}]{ostream}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classelps_1_1_lab_site_event_af4220ab0bbcf208e73b073a73a77c076}
-Complete dump the current state of the S\-I\-T\-E. 
+Complete dump the current state of the S\+I\+T\+E. 
 \begin{DoxyParams}{Parameters}
 {\em ostream} & Output stream to dump to. \\
 \hline
 \end{DoxyParams}
 
 
-Reimplemented from \hyperlink{classelps_1_1_lab_site_base_a42e30841600ed1e45dcd2c1c2a3071e8}{elps\-::\-Lab\-Site\-Base}.
+Reimplemented from \hyperlink{classelps_1_1_lab_site_base_a42e30841600ed1e45dcd2c1c2a3071e8}{elps\+::\+Lab\+Site\+Base}.
 
-\hypertarget{classelps_1_1_lab_site_event_a3d016ec3ede26bdb559b80dcebb09daa}{\index{elps\-::\-Lab\-Site\-Event@{elps\-::\-Lab\-Site\-Event}!Clear\-Events@{Clear\-Events}}
-\index{Clear\-Events@{Clear\-Events}!elps::LabSiteEvent@{elps\-::\-Lab\-Site\-Event}}
-\subsubsection[{Clear\-Events}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Event\-::\-Clear\-Events (
+\hypertarget{classelps_1_1_lab_site_event_a3d016ec3ede26bdb559b80dcebb09daa}{\index{elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}!Clear\+Events@{Clear\+Events}}
+\index{Clear\+Events@{Clear\+Events}!elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}}
+\subsubsection[{Clear\+Events}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Site\+Event\+::\+Clear\+Events (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}}\label{classelps_1_1_lab_site_event_a3d016ec3ede26bdb559b80dcebb09daa}
-Clear all the events (See \hyperlink{classelps_1_1_lab_site_event_a8416ab18d555c7f46e4600f908aab92c}{Pop\-Event()}). \hypertarget{classelps_1_1_lab_site_event_a81368b772b6ef46286ce9b42169466c0}{\index{elps\-::\-Lab\-Site\-Event@{elps\-::\-Lab\-Site\-Event}!Copy@{Copy}}
-\index{Copy@{Copy}!elps::LabSiteEvent@{elps\-::\-Lab\-Site\-Event}}
-\subsubsection[{Copy}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Event\-::\-Copy (
+Clear all the events (See \hyperlink{classelps_1_1_lab_site_event_a8416ab18d555c7f46e4600f908aab92c}{Pop\+Event()}). \hypertarget{classelps_1_1_lab_site_event_a81368b772b6ef46286ce9b42169466c0}{\index{elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}!Copy@{Copy}}
+\index{Copy@{Copy}!elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}}
+\subsubsection[{Copy}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Site\+Event\+::\+Copy (
 \begin{DoxyParamCaption}
-\item[{{\bf Lab\-User\-Data} $\ast$}]{src\-\_\-site, }
-\item[{int}]{dep\-\_\-filter = {\ttfamily IND\-\_\-DEP~$|$~SITE\-\_\-DEP}}
+\item[{{\bf Lab\+User\+Data} $\ast$}]{src\+\_\+site, }
+\item[{int}]{dep\+\_\+filter = {\ttfamily IND\+\_\+DEP~$\vert$~SITE\+\_\+DEP}}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classelps_1_1_lab_site_event_a81368b772b6ef46286ce9b42169466c0}
-Copy the 3 stacks (attributes, states, events) given a source S\-I\-T\-E to this one. 
+Copy the 3 stacks (attributes, states, events) given a source S\+I\+T\+E to this one. 
 \begin{DoxyParams}{Parameters}
-{\em src\-\_\-site} & The source site. \\
+{\em src\+\_\+site} & The source site. \\
 \hline
-{\em dep\-\_\-filter} & Dependency level -\/ concerns only the attributes stack (See \hyperlink{classelps_1_1_lab_attributes_stack_a5f112b3c81d7e7fa6cb54d0cd879c70e}{Lab\-Attributes\-Stack\-::\-Copy()}). \\
+{\em dep\+\_\+filter} & Dependency level -\/ concerns only the attributes stack (See \hyperlink{classelps_1_1_lab_attributes_stack_a5f112b3c81d7e7fa6cb54d0cd879c70e}{Lab\+Attributes\+Stack\+::\+Copy()}). \\
 \hline
 \end{DoxyParams}
 
 
-Reimplemented from \hyperlink{classelps_1_1_lab_site_base_a0eee9af7ea7e99923fb403f031c028ca}{elps\-::\-Lab\-Site\-Base}.
+Reimplemented from \hyperlink{classelps_1_1_lab_site_base_a0eee9af7ea7e99923fb403f031c028ca}{elps\+::\+Lab\+Site\+Base}.
 
-\hypertarget{classelps_1_1_lab_site_event_a1e763ec961a24837734f5c54e0f561b6}{\index{elps\-::\-Lab\-Site\-Event@{elps\-::\-Lab\-Site\-Event}!Get\-Event\-Stack@{Get\-Event\-Stack}}
-\index{Get\-Event\-Stack@{Get\-Event\-Stack}!elps::LabSiteEvent@{elps\-::\-Lab\-Site\-Event}}
-\subsubsection[{Get\-Event\-Stack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lab\-Event\-Stack} $\ast$ elps\-::\-Lab\-Site\-Event\-::\-Get\-Event\-Stack (
+\hypertarget{classelps_1_1_lab_site_event_a1e763ec961a24837734f5c54e0f561b6}{\index{elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}!Get\+Event\+Stack@{Get\+Event\+Stack}}
+\index{Get\+Event\+Stack@{Get\+Event\+Stack}!elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}}
+\subsubsection[{Get\+Event\+Stack}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lab\+Event\+Stack} $\ast$ elps\+::\+Lab\+Site\+Event\+::\+Get\+Event\+Stack (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}}\label{classelps_1_1_lab_site_event_a1e763ec961a24837734f5c54e0f561b6}
 Get the events stack. \begin{DoxyReturn}{Returns}
-A stack of events. 
+\hyperlink{class_a}{A} stack of events. 
 \end{DoxyReturn}
-\hypertarget{classelps_1_1_lab_site_event_afe1ddd9f7100ab36adaef5f6c4a24942}{\index{elps\-::\-Lab\-Site\-Event@{elps\-::\-Lab\-Site\-Event}!Get\-Event\-Stack\-Rate@{Get\-Event\-Stack\-Rate}}
-\index{Get\-Event\-Stack\-Rate@{Get\-Event\-Stack\-Rate}!elps::LabSiteEvent@{elps\-::\-Lab\-Site\-Event}}
-\subsubsection[{Get\-Event\-Stack\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}double elps\-::\-Lab\-Site\-Event\-::\-Get\-Event\-Stack\-Rate (
+\hypertarget{classelps_1_1_lab_site_event_afe1ddd9f7100ab36adaef5f6c4a24942}{\index{elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}!Get\+Event\+Stack\+Rate@{Get\+Event\+Stack\+Rate}}
+\index{Get\+Event\+Stack\+Rate@{Get\+Event\+Stack\+Rate}!elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}}
+\subsubsection[{Get\+Event\+Stack\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}double elps\+::\+Lab\+Site\+Event\+::\+Get\+Event\+Stack\+Rate (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
@@ -224,9 +259,9 @@ A stack of events.
 Shortcut to access the total rate of the events stack. \begin{DoxyReturn}{Returns}
 The cumulative stack rate. 
 \end{DoxyReturn}
-\hypertarget{classelps_1_1_lab_site_event_a12fd4e99e01db05d8da743ac3fa27ee4}{\index{elps\-::\-Lab\-Site\-Event@{elps\-::\-Lab\-Site\-Event}!Get\-Nb\-Events@{Get\-Nb\-Events}}
-\index{Get\-Nb\-Events@{Get\-Nb\-Events}!elps::LabSiteEvent@{elps\-::\-Lab\-Site\-Event}}
-\subsubsection[{Get\-Nb\-Events}]{\setlength{\rightskip}{0pt plus 5cm}int elps\-::\-Lab\-Site\-Event\-::\-Get\-Nb\-Events (
+\hypertarget{classelps_1_1_lab_site_event_a12fd4e99e01db05d8da743ac3fa27ee4}{\index{elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}!Get\+Nb\+Events@{Get\+Nb\+Events}}
+\index{Get\+Nb\+Events@{Get\+Nb\+Events}!elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}}
+\subsubsection[{Get\+Nb\+Events}]{\setlength{\rightskip}{0pt plus 5cm}int elps\+::\+Lab\+Site\+Event\+::\+Get\+Nb\+Events (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
@@ -234,9 +269,9 @@ The cumulative stack rate.
 Get the number of events in the events stack. \begin{DoxyReturn}{Returns}
 Number of events currently stored. 
 \end{DoxyReturn}
-\hypertarget{classelps_1_1_lab_site_event_add4dbc769c1819b90f89bb4aea07aaca}{\index{elps\-::\-Lab\-Site\-Event@{elps\-::\-Lab\-Site\-Event}!Get\-Time\-Event@{Get\-Time\-Event}}
-\index{Get\-Time\-Event@{Get\-Time\-Event}!elps::LabSiteEvent@{elps\-::\-Lab\-Site\-Event}}
-\subsubsection[{Get\-Time\-Event}]{\setlength{\rightskip}{0pt plus 5cm}double elps\-::\-Lab\-Site\-Event\-::\-Get\-Time\-Event (
+\hypertarget{classelps_1_1_lab_site_event_add4dbc769c1819b90f89bb4aea07aaca}{\index{elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}!Get\+Time\+Event@{Get\+Time\+Event}}
+\index{Get\+Time\+Event@{Get\+Time\+Event}!elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}}
+\subsubsection[{Get\+Time\+Event}]{\setlength{\rightskip}{0pt plus 5cm}double elps\+::\+Lab\+Site\+Event\+::\+Get\+Time\+Event (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
@@ -244,102 +279,102 @@ Number of events currently stored.
 Shortcut to get the current time of the events stack. \begin{DoxyReturn}{Returns}
 The time expressed as a double value. 
 \end{DoxyReturn}
-\hypertarget{classelps_1_1_lab_site_event_a3b0a1f662ad925a9d6ca4fef1d3a21be}{\index{elps\-::\-Lab\-Site\-Event@{elps\-::\-Lab\-Site\-Event}!New@{New}}
-\index{New@{New}!elps::LabSiteEvent@{elps\-::\-Lab\-Site\-Event}}
-\subsubsection[{New}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lab\-User\-Data} $\ast$ elps\-::\-Lab\-Site\-Event\-::\-New (
+\hypertarget{classelps_1_1_lab_site_event_a3b0a1f662ad925a9d6ca4fef1d3a21be}{\index{elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}!New@{New}}
+\index{New@{New}!elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}}
+\subsubsection[{New}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Lab\+User\+Data} $\ast$ elps\+::\+Lab\+Site\+Event\+::\+New (
 \begin{DoxyParamCaption}
-\item[{{\bf Lab\-Node} $\ast$}]{parent\-\_\-node = {\ttfamily NULL}}
+\item[{{\bf Lab\+Node} $\ast$}]{parent\+\_\+node = {\ttfamily NULL}}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classelps_1_1_lab_site_event_a3b0a1f662ad925a9d6ca4fef1d3a21be}
-Self factory. D\-O N\-O\-T U\-S\-E it unless you know what you're doing ! 
+Self factory. D\+O N\+O\+T U\+S\+E it unless you know what you're doing ! 
 \begin{DoxyParams}{Parameters}
 {\em parent} & The parent node. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A \char`\"{}set managed\char`\"{} instance of \hyperlink{classelps_1_1_lab_site_event}{Lab\-Site\-Event}. 
+\hyperlink{class_a}{A} \char`\"{}set managed\char`\"{} instance of \hyperlink{classelps_1_1_lab_site_event}{Lab\+Site\+Event}. 
 \end{DoxyReturn}
 
 
-Reimplemented from \hyperlink{classelps_1_1_lab_site_base_ae0cbc57a3fca186709114f68f693b199}{elps\-::\-Lab\-Site\-Base}.
+Reimplemented from \hyperlink{classelps_1_1_lab_site_base_ae0cbc57a3fca186709114f68f693b199}{elps\+::\+Lab\+Site\+Base}.
 
-\hypertarget{classelps_1_1_lab_site_event_a8416ab18d555c7f46e4600f908aab92c}{\index{elps\-::\-Lab\-Site\-Event@{elps\-::\-Lab\-Site\-Event}!Pop\-Event@{Pop\-Event}}
-\index{Pop\-Event@{Pop\-Event}!elps::LabSiteEvent@{elps\-::\-Lab\-Site\-Event}}
-\subsubsection[{Pop\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Event\-::\-Pop\-Event (
+\hypertarget{classelps_1_1_lab_site_event_a8416ab18d555c7f46e4600f908aab92c}{\index{elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}!Pop\+Event@{Pop\+Event}}
+\index{Pop\+Event@{Pop\+Event}!elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}}
+\subsubsection[{Pop\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Site\+Event\+::\+Pop\+Event (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}}\label{classelps_1_1_lab_site_event_a8416ab18d555c7f46e4600f908aab92c}
-Shortcut to remove the event located on top of the events stack. \hypertarget{classelps_1_1_lab_site_event_a20f650621d12bd6bf9510bcf6d212fec}{\index{elps\-::\-Lab\-Site\-Event@{elps\-::\-Lab\-Site\-Event}!Push\-Event@{Push\-Event}}
-\index{Push\-Event@{Push\-Event}!elps::LabSiteEvent@{elps\-::\-Lab\-Site\-Event}}
-\subsubsection[{Push\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Event\-::\-Push\-Event (
+Shortcut to remove the event located on top of the events stack. \hypertarget{classelps_1_1_lab_site_event_a20f650621d12bd6bf9510bcf6d212fec}{\index{elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}!Push\+Event@{Push\+Event}}
+\index{Push\+Event@{Push\+Event}!elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}}
+\subsubsection[{Push\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Site\+Event\+::\+Push\+Event (
 \begin{DoxyParamCaption}
 \item[{string}]{name, }
-\item[{double}]{initial\-\_\-rate, }
-\item[{{\bf Event\-Call\-Back\-Param}}]{param, }
-\item[{{\bf Rate\-Call\-Back} $\ast$}]{rate\-\_\-callback, }
-\item[{{\bf Realize\-Call\-Back} $\ast$}]{realize\-\_\-callback}
+\item[{double}]{initial\+\_\+rate, }
+\item[{{\bf Event\+Call\+Back\+Param}}]{param, }
+\item[{{\bf Rate\+Call\+Back} $\ast$}]{rate\+\_\+callback, }
+\item[{{\bf Realize\+Call\+Back} $\ast$}]{realize\+\_\+callback}
 \end{DoxyParamCaption}
 )}}\label{classelps_1_1_lab_site_event_a20f650621d12bd6bf9510bcf6d212fec}
-Shortcut to add a new event to the event stack (See \hyperlink{classelps_1_1_lab_event_stack_a0cf4b5b8bf78009aa20fc073f7ebfa6d}{Lab\-Event\-Stack\-::\-Push\-Event()}). 
+Shortcut to add a new event to the event stack (See \hyperlink{classelps_1_1_lab_event_stack_a0cf4b5b8bf78009aa20fc073f7ebfa6d}{Lab\+Event\+Stack\+::\+Push\+Event()}). 
 \begin{DoxyParams}{Parameters}
 {\em name} & Name given to the event (better choose a unique one). \\
 \hline
-{\em initial\-\_\-rate} & Rate at which the event can be fired at start. \\
+{\em initial\+\_\+rate} & Rate at which the event can be fired at start. \\
 \hline
-{\em param} & Parameter which will be passed to both rate and realize callbacks when fired Should be left N\-U\-L\-L when sites are built from models (See \hyperlink{classelps_1_1_lab_net_binding}{Lab\-Net\-Binding} and \hyperlink{classelps_1_1_lab_array_binding}{Lab\-Array\-Binding} classes). \\
+{\em param} & Parameter which will be passed to both rate and realize callbacks when fired Should be left N\+U\+L\+L when sites are built from models (See \hyperlink{classelps_1_1_lab_net_binding}{Lab\+Net\+Binding} and \hyperlink{classelps_1_1_lab_array_binding}{Lab\+Array\+Binding} classes). \\
 \hline
-{\em rate\-\_\-callback} & Function to be called when updating the event's rate. \\
+{\em rate\+\_\+callback} & Function to be called when updating the event's rate. \\
 \hline
-{\em realize\-\_\-callback} & Function to be called when realizing/firing the event. \\
+{\em realize\+\_\+callback} & Function to be called when realizing/firing the event. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classelps_1_1_lab_site_event_a16b450295e4a6b606c9b396b847d52fe}{\index{elps\-::\-Lab\-Site\-Event@{elps\-::\-Lab\-Site\-Event}!Realize\-Event@{Realize\-Event}}
-\index{Realize\-Event@{Realize\-Event}!elps::LabSiteEvent@{elps\-::\-Lab\-Site\-Event}}
-\subsubsection[{Realize\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Event\-::\-Realize\-Event (
+\hypertarget{classelps_1_1_lab_site_event_a16b450295e4a6b606c9b396b847d52fe}{\index{elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}!Realize\+Event@{Realize\+Event}}
+\index{Realize\+Event@{Realize\+Event}!elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}}
+\subsubsection[{Realize\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Site\+Event\+::\+Realize\+Event (
 \begin{DoxyParamCaption}
 \item[{int}]{id, }
 \item[{double}]{time}
 \end{DoxyParamCaption}
 )}}\label{classelps_1_1_lab_site_event_a16b450295e4a6b606c9b396b847d52fe}
-Shortcut to call/fire the given event's realize callback (See \hyperlink{classelps_1_1_lab_event_stack_a8335ecf33bf6210d5cb9c8d30a125f6e}{Lab\-Event\-Stack\-::\-Realize\-Event(int id, double time)}). 
+Shortcut to call/fire the given event's realize callback (See \hyperlink{classelps_1_1_lab_event_stack_a8335ecf33bf6210d5cb9c8d30a125f6e}{Lab\+Event\+Stack\+::\+Realize\+Event(int id, double time)}). 
 \begin{DoxyParams}{Parameters}
 {\em id} & Identifier of the event in the events stack. \\
 \hline
 {\em time} & The given time becomes the current time of the stack. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classelps_1_1_lab_site_event_af24df03cf24cd82f61a3b087da569657}{\index{elps\-::\-Lab\-Site\-Event@{elps\-::\-Lab\-Site\-Event}!Realize\-Event@{Realize\-Event}}
-\index{Realize\-Event@{Realize\-Event}!elps::LabSiteEvent@{elps\-::\-Lab\-Site\-Event}}
-\subsubsection[{Realize\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Event\-::\-Realize\-Event (
+\hypertarget{classelps_1_1_lab_site_event_af24df03cf24cd82f61a3b087da569657}{\index{elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}!Realize\+Event@{Realize\+Event}}
+\index{Realize\+Event@{Realize\+Event}!elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}}
+\subsubsection[{Realize\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Site\+Event\+::\+Realize\+Event (
 \begin{DoxyParamCaption}
 \item[{double}]{p1, }
 \item[{double}]{time}
 \end{DoxyParamCaption}
 )}}\label{classelps_1_1_lab_site_event_af24df03cf24cd82f61a3b087da569657}
-Shortcut to choose an event given a probability (Multinomial low), then realize it. (See \hyperlink{classelps_1_1_lab_event_stack_a1c05c3df5a26836ad67fffce8d867774}{Lab\-Event\-Stack\-::\-Realize\-Event(double p1, double time)}). 
+Shortcut to choose an event given a probability (Multinomial low), then realize it. (See \hyperlink{classelps_1_1_lab_event_stack_a1c05c3df5a26836ad67fffce8d867774}{Lab\+Event\+Stack\+::\+Realize\+Event(double p1, double time)}). 
 \begin{DoxyParams}{Parameters}
-{\em p1} & The probability \mbox{[}0.\-0, 1.\-0\mbox{]} used for selecting the event. \\
+{\em p1} & The probability \mbox{[}0.\+0, 1.\+0\mbox{]} used for selecting the event. \\
 \hline
 {\em time} & The given time becomes the current time of the stack. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classelps_1_1_lab_site_event_ac1bc0340ca07f66b92beb8f31c7f0afe}{\index{elps\-::\-Lab\-Site\-Event@{elps\-::\-Lab\-Site\-Event}!Reset\-Event\-Stack\-Rate@{Reset\-Event\-Stack\-Rate}}
-\index{Reset\-Event\-Stack\-Rate@{Reset\-Event\-Stack\-Rate}!elps::LabSiteEvent@{elps\-::\-Lab\-Site\-Event}}
-\subsubsection[{Reset\-Event\-Stack\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Event\-::\-Reset\-Event\-Stack\-Rate (
+\hypertarget{classelps_1_1_lab_site_event_ac1bc0340ca07f66b92beb8f31c7f0afe}{\index{elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}!Reset\+Event\+Stack\+Rate@{Reset\+Event\+Stack\+Rate}}
+\index{Reset\+Event\+Stack\+Rate@{Reset\+Event\+Stack\+Rate}!elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}}
+\subsubsection[{Reset\+Event\+Stack\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Site\+Event\+::\+Reset\+Event\+Stack\+Rate (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}}\label{classelps_1_1_lab_site_event_ac1bc0340ca07f66b92beb8f31c7f0afe}
-Shortcut to reset the total rate of the events stack. \hypertarget{classelps_1_1_lab_site_event_ab4f5b42fbd2e9b8dc0507e2656b73c05}{\index{elps\-::\-Lab\-Site\-Event@{elps\-::\-Lab\-Site\-Event}!Set\-Call\-Back\-Param\-At@{Set\-Call\-Back\-Param\-At}}
-\index{Set\-Call\-Back\-Param\-At@{Set\-Call\-Back\-Param\-At}!elps::LabSiteEvent@{elps\-::\-Lab\-Site\-Event}}
-\subsubsection[{Set\-Call\-Back\-Param\-At}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Event\-::\-Set\-Call\-Back\-Param\-At (
+Shortcut to reset the total rate of the events stack. \hypertarget{classelps_1_1_lab_site_event_ab4f5b42fbd2e9b8dc0507e2656b73c05}{\index{elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}!Set\+Call\+Back\+Param\+At@{Set\+Call\+Back\+Param\+At}}
+\index{Set\+Call\+Back\+Param\+At@{Set\+Call\+Back\+Param\+At}!elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}}
+\subsubsection[{Set\+Call\+Back\+Param\+At}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Site\+Event\+::\+Set\+Call\+Back\+Param\+At (
 \begin{DoxyParamCaption}
 \item[{int}]{i, }
 \item[{void $\ast$}]{p}
 \end{DoxyParamCaption}
 )}}\label{classelps_1_1_lab_site_event_ab4f5b42fbd2e9b8dc0507e2656b73c05}
-D\-O N\-O\-T U\-S\-E M\-E ! \mbox{[}Cython side usage only\mbox{]}\par
+D\+O N\+O\+T U\+S\+E M\+E ! \mbox{[}Cython side usage only\mbox{]}~\newline
  Update the current parameter used in the callbacks (usually the parent node) of this Site. 
 \begin{DoxyParams}{Parameters}
 {\em i} & Position in the event stack. \\
@@ -347,9 +382,9 @@ D\-O N\-O\-T U\-S\-E M\-E ! \mbox{[}Cython side usage only\mbox{]}\par
 {\em p} & Pointer on the object to be passed to the callbascks. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classelps_1_1_lab_site_event_a97b1ba428e217f2ae56e21e6cd508ebb}{\index{elps\-::\-Lab\-Site\-Event@{elps\-::\-Lab\-Site\-Event}!Set\-Time\-Event@{Set\-Time\-Event}}
-\index{Set\-Time\-Event@{Set\-Time\-Event}!elps::LabSiteEvent@{elps\-::\-Lab\-Site\-Event}}
-\subsubsection[{Set\-Time\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Event\-::\-Set\-Time\-Event (
+\hypertarget{classelps_1_1_lab_site_event_a97b1ba428e217f2ae56e21e6cd508ebb}{\index{elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}!Set\+Time\+Event@{Set\+Time\+Event}}
+\index{Set\+Time\+Event@{Set\+Time\+Event}!elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}}
+\subsubsection[{Set\+Time\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Site\+Event\+::\+Set\+Time\+Event (
 \begin{DoxyParamCaption}
 \item[{double}]{time}
 \end{DoxyParamCaption}
@@ -359,27 +394,27 @@ Shortcut to update the current time of the events stack.
 {\em time} & The current time (usually the current simulation time). \\
 \hline
 \end{DoxyParams}
-\hypertarget{classelps_1_1_lab_site_event_a237da73d8796cbff70f66d953fbe4c2c}{\index{elps\-::\-Lab\-Site\-Event@{elps\-::\-Lab\-Site\-Event}!Un\-Binarize@{Un\-Binarize}}
-\index{Un\-Binarize@{Un\-Binarize}!elps::LabSiteEvent@{elps\-::\-Lab\-Site\-Event}}
-\subsubsection[{Un\-Binarize}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Event\-::\-Un\-Binarize (
+\hypertarget{classelps_1_1_lab_site_event_a237da73d8796cbff70f66d953fbe4c2c}{\index{elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}!Un\+Binarize@{Un\+Binarize}}
+\index{Un\+Binarize@{Un\+Binarize}!elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}}
+\subsubsection[{Un\+Binarize}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Site\+Event\+::\+Un\+Binarize (
 \begin{DoxyParamCaption}
 \item[{ifstream $\ast$}]{istream}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classelps_1_1_lab_site_event_a237da73d8796cbff70f66d953fbe4c2c}
-Restore the current state of the S\-I\-T\-E from a dump. 
+Restore the current state of the S\+I\+T\+E from a dump. 
 \begin{DoxyParams}{Parameters}
 {\em ostream} & Input stream to restore from. \\
 \hline
 \end{DoxyParams}
 
 
-Reimplemented from \hyperlink{classelps_1_1_lab_site_base_ad1b2721336db27de86213769b78d3ccd}{elps\-::\-Lab\-Site\-Base}.
+Reimplemented from \hyperlink{classelps_1_1_lab_site_base_ad1b2721336db27de86213769b78d3ccd}{elps\+::\+Lab\+Site\+Base}.
 
-\hypertarget{classelps_1_1_lab_site_event_a0ff5037542e555f180c77b4e7f65ae8e}{\index{elps\-::\-Lab\-Site\-Event@{elps\-::\-Lab\-Site\-Event}!Update\-Event\-Stack\-Rates@{Update\-Event\-Stack\-Rates}}
-\index{Update\-Event\-Stack\-Rates@{Update\-Event\-Stack\-Rates}!elps::LabSiteEvent@{elps\-::\-Lab\-Site\-Event}}
-\subsubsection[{Update\-Event\-Stack\-Rates}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Site\-Event\-::\-Update\-Event\-Stack\-Rates (
+\hypertarget{classelps_1_1_lab_site_event_a0ff5037542e555f180c77b4e7f65ae8e}{\index{elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}!Update\+Event\+Stack\+Rates@{Update\+Event\+Stack\+Rates}}
+\index{Update\+Event\+Stack\+Rates@{Update\+Event\+Stack\+Rates}!elps\+::\+Lab\+Site\+Event@{elps\+::\+Lab\+Site\+Event}}
+\subsubsection[{Update\+Event\+Stack\+Rates}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Site\+Event\+::\+Update\+Event\+Stack\+Rates (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}}\label{classelps_1_1_lab_site_event_a0ff5037542e555f180c77b4e7f65ae8e}
-Shortcut to update the global stack rate (See \hyperlink{classelps_1_1_lab_event_stack_a2c69343fc9e0218238c51004d854f900}{Lab\-Event\-Stack\-::\-Update\-Stack\-Rates()}). 
+Shortcut to update the global stack rate (See \hyperlink{classelps_1_1_lab_event_stack_a2c69343fc9e0218238c51004d854f900}{Lab\+Event\+Stack\+::\+Update\+Stack\+Rates()}). 

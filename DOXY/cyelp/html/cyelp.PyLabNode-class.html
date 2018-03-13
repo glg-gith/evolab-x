@@ -70,15 +70,16 @@
 <h1 class="epydoc">Class PyLabNode</h1><p class="nomargin-top"></p>
 <center>
 <center>  <map id="uml_class_diagram_for_cyelp_py_11" name="uml_class_diagram_for_cyelp_py_11">
-<area shape="rect" id="node16" href="cyelp.PyLabNode-class.html#GetIndex" title="Get the index of the node in its network." alt="" coords="17,39,173,57"/>
-<area shape="rect" id="node16" href="cyelp.PyLabNode-class.html#GetNeighborAt" title="Get the direct neighbor of the current LabNode located at the specified &#160;index." alt="" coords="17,57,173,76"/>
-<area shape="rect" id="node16" href="cyelp.PyLabNode-class.html#GetNeighborsCount" title="Get the number of direct neighbors of the current LabNode." alt="" coords="17,76,173,95"/>
-<area shape="rect" id="node16" href="cyelp.PyLabNode-class.html#GetUserData" title="Get user&#39;s data embedded in this PyLabNode (usually a Site &#45; See &#160;PyLabSiteBase and PyLabSiteEvent)" alt="" coords="17,95,173,113"/>
-<area shape="rect" id="node16" href="cyelp.PyLabNode-class.html#MinPaths" title="Get the distance between this PyLabNode and each other in the given group." alt="" coords="17,113,173,132"/>
-<area shape="rect" id="node16" href="cyelp.PyLabNode-class.html#SetUserData" title="Set user&#39;s data embedded in this PyLabNode (usually a Site &#45; See &#160;PyLabSiteBase and PyLabSiteEvent)" alt="" coords="17,132,173,151"/>
-<area shape="rect" id="node16" href="cyelp.PyLabNode-class.html#__init__" title="Default constructor." alt="" coords="17,151,173,169"/>
-<area shape="rect" id="node16" href="cyelp.PyLabNode-class.html#__new__" title="cyelp.PyLabNode.__new__" alt="" coords="17,169,173,188"/>
-<area shape="rect" id="node1" href="cyelp.PyLabNode-class.html" title="The node is the base entity constituting a Network." alt="" coords="5,6,184,194"/>
+<area shape="rect" id="node1_9" href="cyelp.PyLabNode-class.html#GetIndex" title="Get the index of the node in its network." alt="" coords="17,37,196,57"/>
+<area shape="rect" id="node1_10" href="cyelp.PyLabNode-class.html#GetNeighborAt" title="Get the direct neighbor of the current LabNode located at the specified &#160;index." alt="" coords="17,57,196,77"/>
+<area shape="rect" id="node1_11" href="cyelp.PyLabNode-class.html#GetNeighborsCount" title="Get the number of direct neighbors of the current LabNode." alt="" coords="17,77,196,97"/>
+<area shape="rect" id="node1_12" href="cyelp.PyLabNode-class.html#GetNetwork" title="cyelp.PyLabNode.GetNetwork" alt="" coords="17,97,196,117"/>
+<area shape="rect" id="node1_13" href="cyelp.PyLabNode-class.html#GetUserData" title="Get user&#39;s data embedded in this PyLabNode (usually a Site &#45; See &#160;PyLabSiteBase and PyLabSiteEvent)" alt="" coords="17,117,196,137"/>
+<area shape="rect" id="node1_14" href="cyelp.PyLabNode-class.html#MinPaths" title="Get the distance between this PyLabNode and each other in the given group." alt="" coords="17,137,196,157"/>
+<area shape="rect" id="node1_15" href="cyelp.PyLabNode-class.html#SetUserData" title="Set user&#39;s data embedded in this PyLabNode (usually a Site &#45; See &#160;PyLabSiteBase and PyLabSiteEvent)" alt="" coords="17,157,196,177"/>
+<area shape="rect" id="node1_16" href="cyelp.PyLabNode-class.html#__init__" title="Default constructor." alt="" coords="17,177,196,197"/>
+<area shape="rect" id="node1_17" href="cyelp.PyLabNode-class.html#__new__" title="cyelp.PyLabNode.__new__" alt="" coords="17,197,196,217"/>
+<area shape="rect" id="node1" href="cyelp.PyLabNode-class.html" title="The node is the base entity constituting a Network." alt="" coords="5,5,208,224"/>
 </map>
   <img src="uml_class_diagram_for_cyelp_py_11.gif" alt='' usemap="#uml_class_diagram_for_cyelp_py_11" ismap="ismap" class="graph-without-title" />
 </center>
@@ -185,6 +186,22 @@
   </tr>
 <tr>
     <td width="15%" align="right" valign="top" class="summary">
+      <span class="summary-type">&nbsp;</span>
+    </td><td class="summary">
+      <table width="100%" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+          <td><span class="summary-sig"><a name="GetNetwork"></a><span class="summary-sig-name">GetNetwork</span>(<span class="summary-sig-arg">...</span>)</span></td>
+          <td align="right" valign="top">
+            
+            
+          </td>
+        </tr>
+      </table>
+      
+    </td>
+  </tr>
+<tr>
+    <td width="15%" align="right" valign="top" class="summary">
       <span class="summary-type"><code>object</code></span>
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
@@ -248,7 +265,8 @@
     </td><td class="summary">
       <table width="100%" cellpadding="0" cellspacing="0" border="0">
         <tr>
-          <td><span class="summary-sig"><a href="cyelp.PyLabNode-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>)</span><br />
+          <td><span class="summary-sig"><a href="cyelp.PyLabNode-class.html#__init__" class="summary-sig-name">__init__</a>(<span class="summary-sig-arg">self</span>,
+        <span class="summary-sig-arg">embed_c</span>=<span class="summary-sig-default"> True</span>)</span><br />
       Default constructor.</td>
           <td align="right" valign="top">
             
@@ -471,7 +489,8 @@
 <tr><td>
   <table width="100%" cellpadding="0" cellspacing="0" border="0">
   <tr valign="top"><td>
-  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>)</span>
+  <h3 class="epydoc"><span class="sig"><span class="sig-name">__init__</span>(<span class="sig-arg">self</span>,
+        <span class="sig-arg">embed_c</span>=<span class="sig-default"> True</span>)</span>
     <br /><em class="fname">(Constructor)</em>
   </h3>
   </td><td align="right" valign="top"
@@ -481,6 +500,10 @@
   
   <p>Default constructor.</p>
   <dl class="fields">
+    <dt>Parameters:</dt>
+    <dd><ul class="nomargin-top">
+        <li><strong class="pname"><code>embed_c</code></strong> (<code>bool</code>) - DO NOT CHANGE - Leave it to True !</li>
+    </ul></dd>
     <dt>Overrides:
         object.__init__
     </dt>
@@ -553,7 +576,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Fri Jun  7 07:41:40 2013
+    Generated by Epydoc 3.0.1 on Tue Mar 13 13:13:10 2018
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

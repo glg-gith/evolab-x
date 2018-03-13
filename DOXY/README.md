@@ -2,7 +2,7 @@ About documentations:
 =====================
 
 * Folder "elps" : C++ version of the library (made using `Doxygen`).
-* Folder "cyelp" : Python version of the library (made using `EpiDoc`).
+* Folder "cyelp" : Python version of the library (made using `EpyDoc`).
 
 _Note : This is easier to start with the Python version (which gives access to 
 main features only, so more obvious to deal with). The C++ version of the 

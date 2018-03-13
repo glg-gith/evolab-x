@@ -70,36 +70,36 @@
 <h1 class="epydoc">Class PyLabSimulatorTimeNet</h1><p class="nomargin-top"></p>
 <center>
 <center>  <map id="uml_class_diagram_for_cyelp_py_19" name="uml_class_diagram_for_cyelp_py_19">
-<area shape="rect" id="node37" href="cyelp.PyLabSimulatorTimeNet-class.html#GetNetBinding" title="netBinding property accessor &#45; See PyLabNetBinding for details." alt="" coords="59,559,219,577"/>
-<area shape="rect" id="node37" href="cyelp.PyLabSimulatorTimeNet-class.html#SetNetBinding" title="Setter for the netBinding property." alt="" coords="59,577,219,596"/>
-<area shape="rect" id="node37" href="cyelp.PyLabSimulatorTimeNet-class.html#__init__" title="Default constructor." alt="" coords="59,596,219,615"/>
-<area shape="rect" id="node37" href="cyelp.PyLabSimulatorTimeNet-class.html#__new__" title="cyelp.PyLabSimulatorTimeNet.__new__" alt="" coords="59,615,219,633"/>
-<area shape="rect" id="node1" href="cyelp.PyLabSimulatorTimeNet-class.html" title="Class designed to create SPACE and TIME based simulation." alt="" coords="47,526,231,639"/>
-<area shape="rect" id="node3" href="cyelp.PyLabNetBinding-class.html" title="This class embeds a network (See PyLabNetwork) and provides features to populate it (for use in a SPATIALIZED context)." alt="" coords="71,681,207,719"/>
-<area shape="poly" id="edge2" href="cyelp.PyLabSimulatorTimeNet-class.html#netBinding" title="cyelp.PyLabSimulatorTimeNet.netBinding" alt="" coords="141,635 141,672 136,672 136,635"/>
-<area shape="rect" id="edge2" href="cyelp.PyLabSimulatorTimeNet-class.html#netBinding" title="netBinding" alt="" coords="139,651,200,669"/>
-<area shape="rect" id="node38" href="cyelp.PyLabSimulatorTime-class.html#GetNbFiredEvents" title="Get the number of events having been fired since the simulation has begun." alt="" coords="17,383,259,401"/>
-<area shape="rect" id="node38" href="cyelp.PyLabSimulatorTime-class.html#GetTime" title="Get the current time of this simulation." alt="" coords="17,401,259,420"/>
-<area shape="rect" id="node38" href="cyelp.PyLabSimulatorTime-class.html#SetEndTime" title="Set the maximum time for the simulation (better use a value related to the &#160;way chosen to compute time &#45; See TimeStep())." alt="" coords="17,420,259,439"/>
-<area shape="rect" id="node38" href="cyelp.PyLabSimulatorTime-class.html#SetOutputTimeStep" title="Set step of time for writing the output (better use a value related to the &#160;way chosen to compute time &#45; See TimeStep())." alt="" coords="17,439,259,457"/>
-<area shape="rect" id="node38" href="cyelp.PyLabSimulatorTime-class.html#SetTime" title="Force the current time (useful when starting the simulation from a given &#160;time instead of from the beginning &#45; when recovering from an interruption, &#160;by example)." alt="" coords="17,457,259,476"/>
-<area shape="rect" id="node38" href="cyelp.PyLabSimulatorTime-class.html#UpdateEventsRate" title="Update the total events rate (value used to compute the &quot;time to next &#160;event&quot; &#45; See TimeStep())." alt="" coords="17,476,259,495"/>
-<area shape="rect" id="node4" href="cyelp.PyLabSimulatorTime-class.html" title="A basic TIME based subclass of PyLabSimulatorBase." alt="" coords="5,350,269,501"/>
-<area shape="rect" id="node39" href="cyelp.PyLabSimulatorBase-class.html#CleanAllDumpFiles" title="Remove from disk all the previously generated dumps." alt="" coords="35,39,241,57"/>
-<area shape="rect" id="node39" href="cyelp.PyLabSimulatorBase-class.html#CleanUnusedDumpFile" title="Remove the most ancient dump files during the stepping process (See &#160;StepBinarize())." alt="" coords="35,57,241,76"/>
-<area shape="rect" id="node39" href="cyelp.PyLabSimulatorBase-class.html#GetCurrentRepetition" title="Catch the index of the iteration currently being run." alt="" coords="35,76,241,95"/>
-<area shape="rect" id="node39" href="cyelp.PyLabSimulatorBase-class.html#GetDoDump" title="Check if the dumping system has been activated." alt="" coords="35,95,241,113"/>
-<area shape="rect" id="node39" href="cyelp.PyLabSimulatorBase-class.html#GetDoStartFromDump" title="Check if the system must be recovered from dump files." alt="" coords="35,113,241,132"/>
-<area shape="rect" id="node39" href="cyelp.PyLabSimulatorBase-class.html#GetLastDumpFileIdAndClean" title="Read the penultimate binary dump file (to make sure the integrity of the &#160;file we are working with is preserved, we don&#39;t pick up the very last one, &#160;as it could have been corrupted...)." alt="" coords="35,132,241,151"/>
-<area shape="rect" id="node39" href="cyelp.PyLabSimulatorBase-class.html#GetMaxPopulationSize" title="Requires a preliminary call to SetMaxPopulationSize()" alt="" coords="35,151,241,169"/>
-<area shape="rect" id="node39" href="cyelp.PyLabSimulatorBase-class.html#GetNbRepetitions" title="Get the number of trials for the whole process." alt="" coords="35,169,241,188"/>
-<area shape="rect" id="node39" href="cyelp.PyLabSimulatorBase-class.html#GetTimeDumpStep" title="Get the delta of time between each dump (when &#39;do_dump&#39; is set to true)." alt="" coords="35,188,241,207"/>
-<area shape="rect" id="node39" href="cyelp.PyLabSimulatorBase-class.html#Run" title="WARNING :" alt="" coords="35,207,241,225"/>
-<area shape="rect" id="node39" href="cyelp.PyLabSimulatorBase-class.html#SetBinaryStreams" title="Possibility to specify the output and input streams to respectively dump &#160;and restore using the binarization features." alt="" coords="35,225,241,244"/>
-<area shape="rect" id="node39" href="cyelp.PyLabSimulatorBase-class.html#SetCurrentRepetition" title="WARNING ! Should not be forced by hand during a run." alt="" coords="35,244,241,263"/>
-<area shape="rect" id="node39" href="cyelp.PyLabSimulatorBase-class.html#SetDoDump" title="Set if the dump of the system must be activated." alt="" coords="35,263,241,281"/>
-<area shape="rect" id="node39" href="cyelp.PyLabSimulatorBase-class.html#SetTimeDumpStep" title="Set the interval between each dump (when &#39;do_dump&#39; is set to true)." alt="" coords="35,300,241,319"/>
-<area shape="rect" id="node5" href="cyelp.PyLabSimulatorBase-class.html" title="Base class meant to be subclassed when writing a simulation." alt="" coords="23,6,252,325"/>
+<area shape="rect" id="node1_24" href="cyelp.PyLabSimulatorTimeNet-class.html#GetNetBinding" title="netBinding property accessor &#45; See PyLabNetBinding for details." alt="" coords="57,581,216,601"/>
+<area shape="rect" id="node1_25" href="cyelp.PyLabSimulatorTimeNet-class.html#SetNetBinding" title="Setter for the netBinding property." alt="" coords="57,601,216,621"/>
+<area shape="rect" id="node1_26" href="cyelp.PyLabSimulatorTimeNet-class.html#__init__" title="Default constructor." alt="" coords="57,621,216,641"/>
+<area shape="rect" id="node1_27" href="cyelp.PyLabSimulatorTimeNet-class.html#__new__" title="cyelp.PyLabSimulatorTimeNet.__new__" alt="" coords="57,641,216,661"/>
+<area shape="rect" id="node1" href="cyelp.PyLabSimulatorTimeNet-class.html" title="Class designed to create SPACE and TIME based simulation." alt="" coords="45,548,227,667"/>
+<area shape="rect" id="node2" href="cyelp.PyLabNetBinding-class.html" title="This class embeds a network (See PyLabNetwork) and provides features to populate it (for use in a SPATIALIZED context)." alt="" coords="69,703,205,741"/>
+<area shape="poly" id="edge1" href="cyelp.PyLabSimulatorTimeNet-class.html#netBinding" title="cyelp.PyLabSimulatorTimeNet.netBinding" alt="" coords="140,662,140,694,135,694,135,662"/>
+<area shape="rect" id="edge1-label" href="cyelp.PyLabSimulatorTimeNet-class.html#netBinding" title="netBinding" alt="" coords="137,677,199,692"/>
+<area shape="rect" id="node3_28" href="cyelp.PyLabSimulatorTime-class.html#GetNbFiredEvents" title="Get the number of events having been fired since the simulation has begun." alt="" coords="17,399,257,419"/>
+<area shape="rect" id="node3_29" href="cyelp.PyLabSimulatorTime-class.html#GetTime" title="Get the current time of this simulation." alt="" coords="17,419,257,439"/>
+<area shape="rect" id="node3_30" href="cyelp.PyLabSimulatorTime-class.html#SetEndTime" title="Set the maximum time for the simulation (better use a value related to the &#160;way chosen to compute time &#45; See TimeStep())." alt="" coords="17,439,257,459"/>
+<area shape="rect" id="node3_31" href="cyelp.PyLabSimulatorTime-class.html#SetOutputTimeStep" title="Set step of time for writing the output (better use a value related to the &#160;way chosen to compute time &#45; See TimeStep())." alt="" coords="17,459,257,479"/>
+<area shape="rect" id="node3_32" href="cyelp.PyLabSimulatorTime-class.html#SetTime" title="Force the current time (useful when starting the simulation from a given &#160;time instead of from the beginning &#45; when recovering from an interruption, &#160;by example)." alt="" coords="17,479,257,499"/>
+<area shape="rect" id="node3_33" href="cyelp.PyLabSimulatorTime-class.html#UpdateEventsRate" title="Update the total events rate (value used to compute the &quot;time to next &#160;event&quot; &#45; See TimeStep())." alt="" coords="17,499,257,519"/>
+<area shape="rect" id="node3" href="cyelp.PyLabSimulatorTime-class.html" title="A basic TIME based subclass of PyLabSimulatorBase." alt="" coords="5,367,269,525"/>
+<area shape="rect" id="node4_34" href="cyelp.PyLabSimulatorBase-class.html#CleanAllDumpFiles" title="Remove from disk all the previously generated dumps." alt="" coords="35,37,240,57"/>
+<area shape="rect" id="node4_35" href="cyelp.PyLabSimulatorBase-class.html#CleanUnusedDumpFile" title="Remove the most ancient dump files during the stepping process (See &#160;StepBinarize())." alt="" coords="35,57,240,77"/>
+<area shape="rect" id="node4_36" href="cyelp.PyLabSimulatorBase-class.html#GetCurrentRepetition" title="Catch the index of the iteration currently being run." alt="" coords="35,77,240,97"/>
+<area shape="rect" id="node4_37" href="cyelp.PyLabSimulatorBase-class.html#GetDoDump" title="Check if the dumping system has been activated." alt="" coords="35,97,240,117"/>
+<area shape="rect" id="node4_38" href="cyelp.PyLabSimulatorBase-class.html#GetDoStartFromDump" title="Check if the system must be recovered from dump files." alt="" coords="35,117,240,137"/>
+<area shape="rect" id="node4_39" href="cyelp.PyLabSimulatorBase-class.html#GetLastDumpFileIdAndClean" title="Read the penultimate binary dump file (to make sure the integrity of the &#160;file we are working with is preserved, we don&#39;t pick up the very last one, &#160;as it could have been corrupted...)." alt="" coords="35,137,240,157"/>
+<area shape="rect" id="node4_40" href="cyelp.PyLabSimulatorBase-class.html#GetMaxPopulationSize" title="Requires a preliminary call to SetMaxPopulationSize()" alt="" coords="35,157,240,177"/>
+<area shape="rect" id="node4_41" href="cyelp.PyLabSimulatorBase-class.html#GetNbRepetitions" title="Get the number of trials for the whole process." alt="" coords="35,177,240,197"/>
+<area shape="rect" id="node4_42" href="cyelp.PyLabSimulatorBase-class.html#GetTimeDumpStep" title="Get the delta of time between each dump (when &#39;do_dump&#39; is set to true)." alt="" coords="35,197,240,217"/>
+<area shape="rect" id="node4_43" href="cyelp.PyLabSimulatorBase-class.html#Run" title="WARNING :" alt="" coords="35,217,240,237"/>
+<area shape="rect" id="node4_44" href="cyelp.PyLabSimulatorBase-class.html#SetBinaryStreams" title="Possibility to specify the output and input streams to respectively dump &#160;and restore using the binarization features." alt="" coords="35,237,240,257"/>
+<area shape="rect" id="node4_45" href="cyelp.PyLabSimulatorBase-class.html#SetCurrentRepetition" title="WARNING ! Should not be forced by hand during a run." alt="" coords="35,257,240,277"/>
+<area shape="rect" id="node4_46" href="cyelp.PyLabSimulatorBase-class.html#SetDoDump" title="Set if the dump of the system must be activated." alt="" coords="35,277,240,297"/>
+<area shape="rect" id="node4_47" href="cyelp.PyLabSimulatorBase-class.html#SetTimeDumpStep" title="Set the interval between each dump (when &#39;do_dump&#39; is set to true)." alt="" coords="35,317,240,337"/>
+<area shape="rect" id="node4" href="cyelp.PyLabSimulatorBase-class.html" title="Base class meant to be subclassed when writing a simulation." alt="" coords="23,5,252,344"/>
 </map>
   <img src="uml_class_diagram_for_cyelp_py_19.gif" alt='' usemap="#uml_class_diagram_for_cyelp_py_19" ismap="ismap" class="graph-without-title" />
 </center>
@@ -440,7 +440,7 @@
 <table border="0" cellpadding="0" cellspacing="0" width="100%%">
   <tr>
     <td align="left" class="footer">
-    Generated by Epydoc 3.0.1 on Fri Jun  7 07:41:40 2013
+    Generated by Epydoc 3.0.1 on Tue Mar 13 13:13:10 2018
     </td>
     <td align="right" class="footer">
       <a target="mainFrame" href="http://epydoc.sourceforge.net"

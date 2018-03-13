@@ -1,38 +1,38 @@
-\hypertarget{classelps_1_1_lab_rng_utils}{\section{elps\-:\-:Lab\-Rng\-Utils Class Reference}
-\label{classelps_1_1_lab_rng_utils}\index{elps\-::\-Lab\-Rng\-Utils@{elps\-::\-Lab\-Rng\-Utils}}
+\hypertarget{classelps_1_1_lab_rng_utils}{\section{elps\+:\+:Lab\+Rng\+Utils Class Reference}
+\label{classelps_1_1_lab_rng_utils}\index{elps\+::\+Lab\+Rng\+Utils@{elps\+::\+Lab\+Rng\+Utils}}
 }
 
 
-{\ttfamily \#include $<$Lab\-Rng\-Utils.\-h$>$}
+{\ttfamily \#include $<$Lab\+Rng\+Utils.\+h$>$}
 
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static gsl\-\_\-rng $\ast$ \hyperlink{classelps_1_1_lab_rng_utils_a78d684338cc111f94e9ea16901b001cd}{Create\-Randomizer} (int ralgo=0, int rseed=-\/1)
+static gsl\+\_\+rng $\ast$ \hyperlink{classelps_1_1_lab_rng_utils_a78d684338cc111f94e9ea16901b001cd}{Create\+Randomizer} (int ralgo=0, int rseed=-\/1)
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-This class is a simplified access to Random Number Generation.\par
- Mainly (but not only) a subset of features already available in G\-S\-L \-:\par
- \href{http://www.gnu.org/software/gsl/manual/gsl-ref.html}{\tt http\-://www.\-gnu.\-org/software/gsl/manual/gsl-\/ref.\-html} 
+This class is a simplified access to Random Number Generation.~\newline
+ Mainly (but not only) a subset of features already available in G\+S\+L \+:~\newline
+ \href{http://www.gnu.org/software/gsl/manual/gsl-ref.html}{\tt http\+://www.\+gnu.\+org/software/gsl/manual/gsl-\/ref.\+html} 
 
 \subsection{Member Function Documentation}
-\hypertarget{classelps_1_1_lab_rng_utils_a78d684338cc111f94e9ea16901b001cd}{\index{elps\-::\-Lab\-Rng\-Utils@{elps\-::\-Lab\-Rng\-Utils}!Create\-Randomizer@{Create\-Randomizer}}
-\index{Create\-Randomizer@{Create\-Randomizer}!elps::LabRngUtils@{elps\-::\-Lab\-Rng\-Utils}}
-\subsubsection[{Create\-Randomizer}]{\setlength{\rightskip}{0pt plus 5cm}gsl\-\_\-rng $\ast$ elps\-::\-Lab\-Rng\-Utils\-::\-Create\-Randomizer (
+\hypertarget{classelps_1_1_lab_rng_utils_a78d684338cc111f94e9ea16901b001cd}{\index{elps\+::\+Lab\+Rng\+Utils@{elps\+::\+Lab\+Rng\+Utils}!Create\+Randomizer@{Create\+Randomizer}}
+\index{Create\+Randomizer@{Create\+Randomizer}!elps\+::\+Lab\+Rng\+Utils@{elps\+::\+Lab\+Rng\+Utils}}
+\subsubsection[{Create\+Randomizer}]{\setlength{\rightskip}{0pt plus 5cm}gsl\+\_\+rng $\ast$ elps\+::\+Lab\+Rng\+Utils\+::\+Create\+Randomizer (
 \begin{DoxyParamCaption}
 \item[{int}]{ralgo = {\ttfamily 0}, }
 \item[{int}]{rseed = {\ttfamily -\/1}}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{classelps_1_1_lab_rng_utils_a78d684338cc111f94e9ea16901b001cd}
-Initialize a R\-N\-G specifying an algorithm (default is 0 \-: Mersenne Twister). 
+Initialize a R\+N\+G specifying an algorithm (default is 0 \+: Mersenne Twister). 
 \begin{DoxyParams}{Parameters}
-{\em ralgo} & Can be 0, 1 or 2 (respectively \-: mt19937 -\/ the default, taus, gfsr4) \\
+{\em ralgo} & Can be 0, 1 or 2 (respectively \+: mt19937 -\/ the default, taus, gfsr4) \\
 \hline
-{\em rseed} & Seed used to generate the numbers (default is -\/1 \-: clock based) (Aka \-: series of random numbers are different each time the program is run) \\
+{\em rseed} & Seed used to generate the numbers (default is -\/1 \+: clock based) (Aka \+: series of random numbers are different each time the program is run) \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A pointer to a G\-S\-L random number generator 
+\hyperlink{class_a}{A} pointer to a G\+S\+L random number generator 
 \end{DoxyReturn}

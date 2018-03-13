@@ -1,11 +1,11 @@
-\hypertarget{classelps_1_1_lab_event_stack}{\section{elps\-:\-:Lab\-Event\-Stack Class Reference}
-\label{classelps_1_1_lab_event_stack}\index{elps\-::\-Lab\-Event\-Stack@{elps\-::\-Lab\-Event\-Stack}}
+\hypertarget{classelps_1_1_lab_event_stack}{\section{elps\+:\+:Lab\+Event\+Stack Class Reference}
+\label{classelps_1_1_lab_event_stack}\index{elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}}
 }
 
 
-{\ttfamily \#include $<$Lab\-Event\-Stack.\-h$>$}
+{\ttfamily \#include $<$Lab\+Event\+Stack.\+h$>$}
 
-Inheritance diagram for elps\-:\-:Lab\-Event\-Stack\-:\begin{figure}[H]
+Inheritance diagram for elps\+:\+:Lab\+Event\+Stack\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=2.000000cm]{classelps_1_1_lab_event_stack}
@@ -14,81 +14,86 @@ Inheritance diagram for elps\-:\-:Lab\-Event\-Stack\-:\begin{figure}[H]
 \subsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
-struct \hyperlink{structelps_1_1_lab_event_stack_1_1t__event}{t\-\_\-event}
+struct \hyperlink{structelps_1_1_lab_event_stack_1_1t__event}{t\+\_\+event}
 \item 
-struct \hyperlink{structelps_1_1_lab_event_stack_1_1t__event__data}{t\-\_\-event\-\_\-data}
+struct \hyperlink{structelps_1_1_lab_event_stack_1_1t__event__data}{t\+\_\+event\+\_\+data}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classelps_1_1_lab_event_stack_a0cf4b5b8bf78009aa20fc073f7ebfa6d}{Push\-Event} (string name, double initial\-\_\-rate, \hyperlink{namespaceelps_a1bd4230d698fa66dd38f0fc1cc5c2c55}{Event\-Call\-Back\-Param} param, \hyperlink{namespaceelps_a121bfb217e5fbb734b95d3f7b6653fb2}{Rate\-Call\-Back} $\ast$rate\-\_\-callback, \hyperlink{namespaceelps_adb49d5dbf827d9b190d0b1fd15e0193c}{Realize\-Call\-Back} $\ast$realize\-\_\-callback)
+void \hyperlink{classelps_1_1_lab_event_stack_a0cf4b5b8bf78009aa20fc073f7ebfa6d}{Push\+Event} (string name, double initial\+\_\+rate, \hyperlink{namespaceelps_a1bd4230d698fa66dd38f0fc1cc5c2c55}{Event\+Call\+Back\+Param} param, \hyperlink{namespaceelps_a121bfb217e5fbb734b95d3f7b6653fb2}{Rate\+Call\+Back} $\ast$rate\+\_\+callback, \hyperlink{namespaceelps_adb49d5dbf827d9b190d0b1fd15e0193c}{Realize\+Call\+Back} $\ast$realize\+\_\+callback)
 \item 
-void \hyperlink{classelps_1_1_lab_event_stack_a6bf0e41eebd548c3c3bab27fadedbcab}{Pop\-Event} ()
+void \hyperlink{classelps_1_1_lab_event_stack_a6bf0e41eebd548c3c3bab27fadedbcab}{Pop\+Event} ()
 \item 
 void \hyperlink{classelps_1_1_lab_event_stack_a45504e766619df2f47b363ffa9512e93}{Clear} ()
 \item 
-int \hyperlink{classelps_1_1_lab_event_stack_a434b1f56f4914a40f191782866e413c2}{Get\-Size} ()
+int \hyperlink{classelps_1_1_lab_event_stack_a434b1f56f4914a40f191782866e413c2}{Get\+Size} ()
 \item 
-double \hyperlink{classelps_1_1_lab_event_stack_a5738c80975f7d26a6349d9fc98d13175}{Get\-Event\-Rate} (int id)
+int \hyperlink{classelps_1_1_lab_event_stack_af4438f561679f472bec8c26defd51a5a}{Nb\+Fired\+Events} ()
 \item 
-void \hyperlink{classelps_1_1_lab_event_stack_a4a619922dfce62966b6b5c5c5cdca866}{Set\-Event\-Rate} (int id, double rate)
+\hypertarget{classelps_1_1_lab_event_stack_a6c7b1ca2b9ddc8ed00e77a2003437daf}{string {\bfseries Get\+Stats} ()}\label{classelps_1_1_lab_event_stack_a6c7b1ca2b9ddc8ed00e77a2003437daf}
+
 \item 
-string \hyperlink{classelps_1_1_lab_event_stack_a6e8e674cb0a80a798d1a1ea33412f7cd}{Get\-Event\-Name} (int id)
+double \hyperlink{classelps_1_1_lab_event_stack_a5738c80975f7d26a6349d9fc98d13175}{Get\+Event\+Rate} (int id)
 \item 
-vector$<$ \hyperlink{structelps_1_1_lab_event_stack_1_1t__event}{t\-\_\-event} $>$ \& \hyperlink{classelps_1_1_lab_event_stack_a773198530398aa727c8f34ac71c5ba07}{Get\-Events} ()
+void \hyperlink{classelps_1_1_lab_event_stack_a4a619922dfce62966b6b5c5c5cdca866}{Set\+Event\+Rate} (int id, double rate)
 \item 
-double \hyperlink{classelps_1_1_lab_event_stack_afcdede25277a57c56d3664d4484866b6}{Get\-Stack\-Rate} ()
+string \hyperlink{classelps_1_1_lab_event_stack_a6e8e674cb0a80a798d1a1ea33412f7cd}{Get\+Event\+Name} (int id)
 \item 
-void \hyperlink{classelps_1_1_lab_event_stack_a466e090d7d9159983033cf732e13d461}{Reset\-Stack\-Rate} ()
+vector$<$ \hyperlink{structelps_1_1_lab_event_stack_1_1t__event}{t\+\_\+event} $>$ \& \hyperlink{classelps_1_1_lab_event_stack_a773198530398aa727c8f34ac71c5ba07}{Get\+Events} ()
 \item 
-void \hyperlink{classelps_1_1_lab_event_stack_ab3b53f258a8150181f8bd0d14d4d561b}{Set\-Time} (double time)
+double \hyperlink{classelps_1_1_lab_event_stack_afcdede25277a57c56d3664d4484866b6}{Get\+Stack\+Rate} ()
 \item 
-double \hyperlink{classelps_1_1_lab_event_stack_aa7fa9442c7444b4027642ad287a78218}{Get\-Time} ()
+void \hyperlink{classelps_1_1_lab_event_stack_a466e090d7d9159983033cf732e13d461}{Reset\+Stack\+Rate} ()
 \item 
-void \hyperlink{classelps_1_1_lab_event_stack_a2c69343fc9e0218238c51004d854f900}{Update\-Stack\-Rates} ()
+void \hyperlink{classelps_1_1_lab_event_stack_ab3b53f258a8150181f8bd0d14d4d561b}{Set\+Time} (double time)
 \item 
-void \hyperlink{classelps_1_1_lab_event_stack_a8335ecf33bf6210d5cb9c8d30a125f6e}{Realize\-Event} (int id, double time)
+double \hyperlink{classelps_1_1_lab_event_stack_aa7fa9442c7444b4027642ad287a78218}{Get\+Time} ()
 \item 
-void \hyperlink{classelps_1_1_lab_event_stack_a1c05c3df5a26836ad67fffce8d867774}{Realize\-Event} (double p1, double time)
+void \hyperlink{classelps_1_1_lab_event_stack_a2c69343fc9e0218238c51004d854f900}{Update\+Stack\+Rates} ()
 \item 
-void \hyperlink{classelps_1_1_lab_event_stack_a20fb911dc03289f6ef3b5222073c4b61}{Realize\-Event} (gsl\-\_\-rng $\ast$r, double time)
+void \hyperlink{classelps_1_1_lab_event_stack_a8335ecf33bf6210d5cb9c8d30a125f6e}{Realize\+Event} (int id, double time)
 \item 
-void \hyperlink{classelps_1_1_lab_event_stack_a50e06d24fbd5a91054b5024ef13ca6f0}{Copy} (\hyperlink{classelps_1_1_lab_event_stack}{Lab\-Event\-Stack} $\ast$src\-\_\-stack)
+void \hyperlink{classelps_1_1_lab_event_stack_a1c05c3df5a26836ad67fffce8d867774}{Realize\+Event} (double p1, double time)
+\item 
+void \hyperlink{classelps_1_1_lab_event_stack_a20fb911dc03289f6ef3b5222073c4b61}{Realize\+Event} (gsl\+\_\+rng $\ast$r, double time)
+\item 
+void \hyperlink{classelps_1_1_lab_event_stack_a50e06d24fbd5a91054b5024ef13ca6f0}{Copy} (\hyperlink{classelps_1_1_lab_event_stack}{Lab\+Event\+Stack} $\ast$src\+\_\+stack)
 \item 
 void \hyperlink{classelps_1_1_lab_event_stack_a85bb93839b48b856a2b4d9d99804c5e0}{Binarize} (ofstream $\ast$ostream)
 \item 
-void \hyperlink{classelps_1_1_lab_event_stack_a2d3587e25801f8e1f1950bc933846ab0}{Un\-Binarize} (ifstream $\ast$istream)
+void \hyperlink{classelps_1_1_lab_event_stack_a2d3587e25801f8e1f1950bc933846ab0}{Un\+Binarize} (ifstream $\ast$istream)
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Stack of events that can occur at a given time (depending on the rate of each event) in a T\-I\-M\-E based simulation context.\par
+Stack of events that can occur at a given time (depending on the rate of each event) in a T\+I\+M\+E based simulation context.~\newline
 
 
-E\-V\-E\-N\-T\-S \-:\par
- An event is an action that can be fired at any time on the S\-I\-T\-E.
+E\+V\+E\+N\+T\+S \+:~\newline
+ An event is an action that can be fired at any time on the S\+I\+T\+E.
 \begin{DoxyItemize}
 \item It has a given propensity to occur (which can change during the simulation life time)
 \item It comes with an action (method) which is fired (executed) when the event occurs
 \end{DoxyItemize}
 
-\subsection*{U\-S\-A\-G\-E \-:}
+\subsection*{U\+S\+A\+G\+E \+: }
 
 
 \begin{DoxyItemize}
 \item Instantiate
-\item Push event(s) (\hyperlink{classelps_1_1_lab_event_stack_a0cf4b5b8bf78009aa20fc073f7ebfa6d}{Push\-Event()} function)
-\item \hyperlink{classelps_1_1_lab_event_stack_a8335ecf33bf6210d5cb9c8d30a125f6e}{Realize\-Event()} is used to fire an event (the current time of the event stack is updated during this operation)
+\item Push event(s) (\hyperlink{classelps_1_1_lab_event_stack_a0cf4b5b8bf78009aa20fc073f7ebfa6d}{Push\+Event()} function)
+\item \hyperlink{classelps_1_1_lab_event_stack_a8335ecf33bf6210d5cb9c8d30a125f6e}{Realize\+Event()} is used to fire an event (the current time of the event stack is updated during this operation)
 \begin{DoxyItemize}
-\item Create a function of the form \char`\"{}double func\-\_\-name(void$\ast$ param)\char`\"{} for the update of the event's rate
-\item Create a function of the form \char`\"{}double func\-\_\-name(void$\ast$ param)\char`\"{} to be executed when the event is fired
+\item Create a function of the form \char`\"{}double func\+\_\+name(void$\ast$ param)\char`\"{} for the update of the event's rate
+\item Create a function of the form \char`\"{}double func\+\_\+name(void$\ast$ param)\char`\"{} to be executed when the event is fired
 \end{DoxyItemize}
-\item The events rates M\-U\-S\-T then be updated using the \hyperlink{classelps_1_1_lab_event_stack_a2c69343fc9e0218238c51004d854f900}{Update\-Stack\-Rates()} function
+\item The events rates M\+U\+S\+T then be updated using the \hyperlink{classelps_1_1_lab_event_stack_a2c69343fc9e0218238c51004d854f900}{Update\+Stack\+Rates()} function
 \end{DoxyItemize}
 
-{\bfseries Sample \-:}\par
-\par
- First of all, get yourself an event stack \-:
+{\bfseries Sample \+:}~\newline
+~\newline
+ First of all, get yourself an event stack \+:
 
 
 \begin{DoxyCode}
@@ -96,13 +101,13 @@ LabEventStack *eventStack = \textcolor{keyword}{new} LabEventStack()
 \end{DoxyCode}
 
 
-Secondly, define the method to be fired. This has to be done in two steps \-:
+Secondly, define the method to be fired. This has to be done in two steps \+:
 \begin{DoxyItemize}
 \item The {\bfseries rate} callback
 \item The {\bfseries realize} callback
 \end{DoxyItemize}
 
-\par
+~\newline
 
 
 
@@ -111,11 +116,9 @@ Secondly, define the method to be fired. This has to be done in two steps \-:
 \{
         cout << \textcolor{stringliteral}{"CB fired !"} << endl;
         ...
-        ...                                         \textcolor{comment}{// DO SOMETHING with
-       "param" (or not) ...}
+        ...                                         \textcolor{comment}{// DO SOMETHING with "param" (or not) ...}
         ...
-        rate = 12.0;                                \textcolor{comment}{// Recompute the rate
-       (constant in this ex.)}
+        rate = 12.0;                                \textcolor{comment}{// Recompute the rate (constant in this ex.)}
         \textcolor{keywordflow}{return} rate;
 \}
 ...
@@ -128,7 +131,7 @@ double MyCallbackRealize(\textcolor{keywordtype}{void} *param)
 \end{DoxyCode}
 
 
-{\bfseries Note \-:} the {\bfseries param} parameter can be any object (all you need is to cast it into the appropriate type).
+{\bfseries Note \+:} the {\bfseries param} parameter can be any object (all you need is to cast it into the appropriate type).
 
 Then we can create the callbacks and push them to the stack.
 
@@ -139,8 +142,7 @@ Then we can create the callbacks and push them to the stack.
 \textcolor{comment}{// Push the event to be fired given an initial rate of 0.0.}
 LabCallBack2 *rate\_callback = \textcolor{keyword}{new} LabCallBack2(MyCallbackRate);
 LabCallBack2 *realize\_callback = \textcolor{keyword}{new} LabCallBack2(MyCallbackRealize);
-eventStack.PushEvent(\textcolor{stringliteral}{"AN\_EVENT"}, 0.0, a\_param, rate\_callback, realize\_callback)
-      ;
+eventStack.PushEvent(\textcolor{stringliteral}{"AN\_EVENT"}, 0.0, a\_param, rate\_callback, realize\_callback);
 ...
 \end{DoxyCode}
 
@@ -148,9 +150,9 @@ eventStack.PushEvent(\textcolor{stringliteral}{"AN\_EVENT"}, 0.0, a\_param, rate
 Push one callback per possible event according to the needs of your simulation for the given stack. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classelps_1_1_lab_event_stack_a85bb93839b48b856a2b4d9d99804c5e0}{\index{elps\-::\-Lab\-Event\-Stack@{elps\-::\-Lab\-Event\-Stack}!Binarize@{Binarize}}
-\index{Binarize@{Binarize}!elps::LabEventStack@{elps\-::\-Lab\-Event\-Stack}}
-\subsubsection[{Binarize}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Event\-Stack\-::\-Binarize (
+\hypertarget{classelps_1_1_lab_event_stack_a85bb93839b48b856a2b4d9d99804c5e0}{\index{elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}!Binarize@{Binarize}}
+\index{Binarize@{Binarize}!elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}}
+\subsubsection[{Binarize}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Event\+Stack\+::\+Binarize (
 \begin{DoxyParamCaption}
 \item[{ofstream $\ast$}]{ostream}
 \end{DoxyParamCaption}
@@ -162,30 +164,30 @@ Save the current state of the stack to a given output stream (binary format).
 \end{DoxyParams}
 
 
-Reimplemented from \hyperlink{classelps_1_1_lab_i_binarizable_aecc9b383945b4c4e304675e5c970f69d}{elps\-::\-Lab\-I\-Binarizable}.
+Reimplemented from \hyperlink{classelps_1_1_lab_i_binarizable_aecc9b383945b4c4e304675e5c970f69d}{elps\+::\+Lab\+I\+Binarizable}.
 
-\hypertarget{classelps_1_1_lab_event_stack_a45504e766619df2f47b363ffa9512e93}{\index{elps\-::\-Lab\-Event\-Stack@{elps\-::\-Lab\-Event\-Stack}!Clear@{Clear}}
-\index{Clear@{Clear}!elps::LabEventStack@{elps\-::\-Lab\-Event\-Stack}}
-\subsubsection[{Clear}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Event\-Stack\-::\-Clear (
+\hypertarget{classelps_1_1_lab_event_stack_a45504e766619df2f47b363ffa9512e93}{\index{elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}!Clear@{Clear}}
+\index{Clear@{Clear}!elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}}
+\subsubsection[{Clear}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Event\+Stack\+::\+Clear (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}}\label{classelps_1_1_lab_event_stack_a45504e766619df2f47b363ffa9512e93}
-T\-O\-D\-O \-: free allocated callbacks... \hypertarget{classelps_1_1_lab_event_stack_a50e06d24fbd5a91054b5024ef13ca6f0}{\index{elps\-::\-Lab\-Event\-Stack@{elps\-::\-Lab\-Event\-Stack}!Copy@{Copy}}
-\index{Copy@{Copy}!elps::LabEventStack@{elps\-::\-Lab\-Event\-Stack}}
-\subsubsection[{Copy}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Event\-Stack\-::\-Copy (
+T\+O\+D\+O \+: free allocated callbacks... \hypertarget{classelps_1_1_lab_event_stack_a50e06d24fbd5a91054b5024ef13ca6f0}{\index{elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}!Copy@{Copy}}
+\index{Copy@{Copy}!elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}}
+\subsubsection[{Copy}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Event\+Stack\+::\+Copy (
 \begin{DoxyParamCaption}
-\item[{{\bf Lab\-Event\-Stack} $\ast$}]{src\-\_\-stack}
+\item[{{\bf Lab\+Event\+Stack} $\ast$}]{src\+\_\+stack}
 \end{DoxyParamCaption}
 )}}\label{classelps_1_1_lab_event_stack_a50e06d24fbd5a91054b5024ef13ca6f0}
 Copy the properties of a stack to this one. 
 \begin{DoxyParams}{Parameters}
-{\em src\-\_\-stack} & The source stack to copy from. \\
+{\em src\+\_\+stack} & The source stack to copy from. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classelps_1_1_lab_event_stack_a6e8e674cb0a80a798d1a1ea33412f7cd}{\index{elps\-::\-Lab\-Event\-Stack@{elps\-::\-Lab\-Event\-Stack}!Get\-Event\-Name@{Get\-Event\-Name}}
-\index{Get\-Event\-Name@{Get\-Event\-Name}!elps::LabEventStack@{elps\-::\-Lab\-Event\-Stack}}
-\subsubsection[{Get\-Event\-Name}]{\setlength{\rightskip}{0pt plus 5cm}string elps\-::\-Lab\-Event\-Stack\-::\-Get\-Event\-Name (
+\hypertarget{classelps_1_1_lab_event_stack_a6e8e674cb0a80a798d1a1ea33412f7cd}{\index{elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}!Get\+Event\+Name@{Get\+Event\+Name}}
+\index{Get\+Event\+Name@{Get\+Event\+Name}!elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}}
+\subsubsection[{Get\+Event\+Name}]{\setlength{\rightskip}{0pt plus 5cm}string elps\+::\+Lab\+Event\+Stack\+::\+Get\+Event\+Name (
 \begin{DoxyParamCaption}
 \item[{int}]{id}
 \end{DoxyParamCaption}
@@ -198,9 +200,9 @@ Get the name of an event.
 \begin{DoxyReturn}{Returns}
 The name. 
 \end{DoxyReturn}
-\hypertarget{classelps_1_1_lab_event_stack_a5738c80975f7d26a6349d9fc98d13175}{\index{elps\-::\-Lab\-Event\-Stack@{elps\-::\-Lab\-Event\-Stack}!Get\-Event\-Rate@{Get\-Event\-Rate}}
-\index{Get\-Event\-Rate@{Get\-Event\-Rate}!elps::LabEventStack@{elps\-::\-Lab\-Event\-Stack}}
-\subsubsection[{Get\-Event\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}double elps\-::\-Lab\-Event\-Stack\-::\-Get\-Event\-Rate (
+\hypertarget{classelps_1_1_lab_event_stack_a5738c80975f7d26a6349d9fc98d13175}{\index{elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}!Get\+Event\+Rate@{Get\+Event\+Rate}}
+\index{Get\+Event\+Rate@{Get\+Event\+Rate}!elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}}
+\subsubsection[{Get\+Event\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}double elps\+::\+Lab\+Event\+Stack\+::\+Get\+Event\+Rate (
 \begin{DoxyParamCaption}
 \item[{int}]{id}
 \end{DoxyParamCaption}
@@ -213,9 +215,9 @@ Get the rate of the given event.
 \begin{DoxyReturn}{Returns}
 The rate as a double. 
 \end{DoxyReturn}
-\hypertarget{classelps_1_1_lab_event_stack_a773198530398aa727c8f34ac71c5ba07}{\index{elps\-::\-Lab\-Event\-Stack@{elps\-::\-Lab\-Event\-Stack}!Get\-Events@{Get\-Events}}
-\index{Get\-Events@{Get\-Events}!elps::LabEventStack@{elps\-::\-Lab\-Event\-Stack}}
-\subsubsection[{Get\-Events}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Lab\-Event\-Stack\-::t\-\_\-event} $>$ \& elps\-::\-Lab\-Event\-Stack\-::\-Get\-Events (
+\hypertarget{classelps_1_1_lab_event_stack_a773198530398aa727c8f34ac71c5ba07}{\index{elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}!Get\+Events@{Get\+Events}}
+\index{Get\+Events@{Get\+Events}!elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}}
+\subsubsection[{Get\+Events}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$ {\bf Lab\+Event\+Stack\+::t\+\_\+event} $>$ \& elps\+::\+Lab\+Event\+Stack\+::\+Get\+Events (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
@@ -223,9 +225,9 @@ The rate as a double.
 Get an ordered list of all the events present in the stack. \begin{DoxyReturn}{Returns}
 List of all the events (in the order they've been pushed in the stack). 
 \end{DoxyReturn}
-\hypertarget{classelps_1_1_lab_event_stack_a434b1f56f4914a40f191782866e413c2}{\index{elps\-::\-Lab\-Event\-Stack@{elps\-::\-Lab\-Event\-Stack}!Get\-Size@{Get\-Size}}
-\index{Get\-Size@{Get\-Size}!elps::LabEventStack@{elps\-::\-Lab\-Event\-Stack}}
-\subsubsection[{Get\-Size}]{\setlength{\rightskip}{0pt plus 5cm}int elps\-::\-Lab\-Event\-Stack\-::\-Get\-Size (
+\hypertarget{classelps_1_1_lab_event_stack_a434b1f56f4914a40f191782866e413c2}{\index{elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}!Get\+Size@{Get\+Size}}
+\index{Get\+Size@{Get\+Size}!elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}}
+\subsubsection[{Get\+Size}]{\setlength{\rightskip}{0pt plus 5cm}int elps\+::\+Lab\+Event\+Stack\+::\+Get\+Size (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
@@ -233,19 +235,19 @@ List of all the events (in the order they've been pushed in the stack).
 Get the size of the stack. \begin{DoxyReturn}{Returns}
 Number of events stored. 
 \end{DoxyReturn}
-\hypertarget{classelps_1_1_lab_event_stack_afcdede25277a57c56d3664d4484866b6}{\index{elps\-::\-Lab\-Event\-Stack@{elps\-::\-Lab\-Event\-Stack}!Get\-Stack\-Rate@{Get\-Stack\-Rate}}
-\index{Get\-Stack\-Rate@{Get\-Stack\-Rate}!elps::LabEventStack@{elps\-::\-Lab\-Event\-Stack}}
-\subsubsection[{Get\-Stack\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}double elps\-::\-Lab\-Event\-Stack\-::\-Get\-Stack\-Rate (
+\hypertarget{classelps_1_1_lab_event_stack_afcdede25277a57c56d3664d4484866b6}{\index{elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}!Get\+Stack\+Rate@{Get\+Stack\+Rate}}
+\index{Get\+Stack\+Rate@{Get\+Stack\+Rate}!elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}}
+\subsubsection[{Get\+Stack\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}double elps\+::\+Lab\+Event\+Stack\+::\+Get\+Stack\+Rate (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}}\label{classelps_1_1_lab_event_stack_afcdede25277a57c56d3664d4484866b6}
-Get the global stack rate (Computed as explained above -\/ See \hyperlink{classelps_1_1_lab_event_stack_a2c69343fc9e0218238c51004d854f900}{Update\-Stack\-Rates()}). \begin{DoxyReturn}{Returns}
+Get the global stack rate (Computed as explained above -\/ See \hyperlink{classelps_1_1_lab_event_stack_a2c69343fc9e0218238c51004d854f900}{Update\+Stack\+Rates()}). \begin{DoxyReturn}{Returns}
 The cumulative stack rate. 
 \end{DoxyReturn}
-\hypertarget{classelps_1_1_lab_event_stack_aa7fa9442c7444b4027642ad287a78218}{\index{elps\-::\-Lab\-Event\-Stack@{elps\-::\-Lab\-Event\-Stack}!Get\-Time@{Get\-Time}}
-\index{Get\-Time@{Get\-Time}!elps::LabEventStack@{elps\-::\-Lab\-Event\-Stack}}
-\subsubsection[{Get\-Time}]{\setlength{\rightskip}{0pt plus 5cm}double elps\-::\-Lab\-Event\-Stack\-::\-Get\-Time (
+\hypertarget{classelps_1_1_lab_event_stack_aa7fa9442c7444b4027642ad287a78218}{\index{elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}!Get\+Time@{Get\+Time}}
+\index{Get\+Time@{Get\+Time}!elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}}
+\subsubsection[{Get\+Time}]{\setlength{\rightskip}{0pt plus 5cm}double elps\+::\+Lab\+Event\+Stack\+::\+Get\+Time (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
@@ -253,41 +255,51 @@ The cumulative stack rate.
 Get the current time of the stack. \begin{DoxyReturn}{Returns}
 The time expressed as a double value. 
 \end{DoxyReturn}
-\hypertarget{classelps_1_1_lab_event_stack_a6bf0e41eebd548c3c3bab27fadedbcab}{\index{elps\-::\-Lab\-Event\-Stack@{elps\-::\-Lab\-Event\-Stack}!Pop\-Event@{Pop\-Event}}
-\index{Pop\-Event@{Pop\-Event}!elps::LabEventStack@{elps\-::\-Lab\-Event\-Stack}}
-\subsubsection[{Pop\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Event\-Stack\-::\-Pop\-Event (
+\hypertarget{classelps_1_1_lab_event_stack_af4438f561679f472bec8c26defd51a5a}{\index{elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}!Nb\+Fired\+Events@{Nb\+Fired\+Events}}
+\index{Nb\+Fired\+Events@{Nb\+Fired\+Events}!elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}}
+\subsubsection[{Nb\+Fired\+Events}]{\setlength{\rightskip}{0pt plus 5cm}int elps\+::\+Lab\+Event\+Stack\+::\+Nb\+Fired\+Events (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{classelps_1_1_lab_event_stack_af4438f561679f472bec8c26defd51a5a}
+Number of events fired since the stack was instantiated. \begin{DoxyReturn}{Returns}
+
+\end{DoxyReturn}
+\hypertarget{classelps_1_1_lab_event_stack_a6bf0e41eebd548c3c3bab27fadedbcab}{\index{elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}!Pop\+Event@{Pop\+Event}}
+\index{Pop\+Event@{Pop\+Event}!elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}}
+\subsubsection[{Pop\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Event\+Stack\+::\+Pop\+Event (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}}\label{classelps_1_1_lab_event_stack_a6bf0e41eebd548c3c3bab27fadedbcab}
-Remove the last added event from the stack. \hypertarget{classelps_1_1_lab_event_stack_a0cf4b5b8bf78009aa20fc073f7ebfa6d}{\index{elps\-::\-Lab\-Event\-Stack@{elps\-::\-Lab\-Event\-Stack}!Push\-Event@{Push\-Event}}
-\index{Push\-Event@{Push\-Event}!elps::LabEventStack@{elps\-::\-Lab\-Event\-Stack}}
-\subsubsection[{Push\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Event\-Stack\-::\-Push\-Event (
+Remove the last added event from the stack. \hypertarget{classelps_1_1_lab_event_stack_a0cf4b5b8bf78009aa20fc073f7ebfa6d}{\index{elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}!Push\+Event@{Push\+Event}}
+\index{Push\+Event@{Push\+Event}!elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}}
+\subsubsection[{Push\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Event\+Stack\+::\+Push\+Event (
 \begin{DoxyParamCaption}
 \item[{string}]{name, }
-\item[{double}]{initial\-\_\-rate, }
-\item[{{\bf Event\-Call\-Back\-Param}}]{param, }
-\item[{{\bf Rate\-Call\-Back} $\ast$}]{rate\-\_\-callback, }
-\item[{{\bf Realize\-Call\-Back} $\ast$}]{realize\-\_\-callback}
+\item[{double}]{initial\+\_\+rate, }
+\item[{{\bf Event\+Call\+Back\+Param}}]{param, }
+\item[{{\bf Rate\+Call\+Back} $\ast$}]{rate\+\_\+callback, }
+\item[{{\bf Realize\+Call\+Back} $\ast$}]{realize\+\_\+callback}
 \end{DoxyParamCaption}
 )}}\label{classelps_1_1_lab_event_stack_a0cf4b5b8bf78009aa20fc073f7ebfa6d}
 Add an event to the stack. 
 \begin{DoxyParams}{Parameters}
 {\em name} & Name given to the event (better choose a unique one). \\
 \hline
-{\em initial\-\_\-rate} & Rate at which the event can be fired at start \par
- (can be updated during the simulation -\/ See \hyperlink{classelps_1_1_lab_event_stack_a4a619922dfce62966b6b5c5c5cdca866}{Set\-Event\-Rate()}). \\
+{\em initial\+\_\+rate} & Rate at which the event can be fired at start ~\newline
+ (can be updated during the simulation -\/ See \hyperlink{classelps_1_1_lab_event_stack_a4a619922dfce62966b6b5c5c5cdca866}{Set\+Event\+Rate()}). \\
 \hline
 {\em param} & Parameter which will be passed to both rate and realize callbacks when fired. \\
 \hline
-{\em rate\-\_\-callback} & Function to be called when updating the event's rate. \\
+{\em rate\+\_\+callback} & Function to be called when updating the event's rate. \\
 \hline
-{\em realize\-\_\-callback} & Function to be called when realizing/firing the event. \\
+{\em realize\+\_\+callback} & Function to be called when realizing/firing the event. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classelps_1_1_lab_event_stack_a8335ecf33bf6210d5cb9c8d30a125f6e}{\index{elps\-::\-Lab\-Event\-Stack@{elps\-::\-Lab\-Event\-Stack}!Realize\-Event@{Realize\-Event}}
-\index{Realize\-Event@{Realize\-Event}!elps::LabEventStack@{elps\-::\-Lab\-Event\-Stack}}
-\subsubsection[{Realize\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Event\-Stack\-::\-Realize\-Event (
+\hypertarget{classelps_1_1_lab_event_stack_a8335ecf33bf6210d5cb9c8d30a125f6e}{\index{elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}!Realize\+Event@{Realize\+Event}}
+\index{Realize\+Event@{Realize\+Event}!elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}}
+\subsubsection[{Realize\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Event\+Stack\+::\+Realize\+Event (
 \begin{DoxyParamCaption}
 \item[{int}]{id, }
 \item[{double}]{time}
@@ -300,9 +312,9 @@ Call/fire the given event's realize callback.
 {\em time} & The given time becomes the current time of the stack. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classelps_1_1_lab_event_stack_a1c05c3df5a26836ad67fffce8d867774}{\index{elps\-::\-Lab\-Event\-Stack@{elps\-::\-Lab\-Event\-Stack}!Realize\-Event@{Realize\-Event}}
-\index{Realize\-Event@{Realize\-Event}!elps::LabEventStack@{elps\-::\-Lab\-Event\-Stack}}
-\subsubsection[{Realize\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Event\-Stack\-::\-Realize\-Event (
+\hypertarget{classelps_1_1_lab_event_stack_a1c05c3df5a26836ad67fffce8d867774}{\index{elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}!Realize\+Event@{Realize\+Event}}
+\index{Realize\+Event@{Realize\+Event}!elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}}
+\subsubsection[{Realize\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Event\+Stack\+::\+Realize\+Event (
 \begin{DoxyParamCaption}
 \item[{double}]{p1, }
 \item[{double}]{time}
@@ -315,32 +327,32 @@ Choose an event given a probability (Multinomial low), then realize it.
 {\em time} & The given time becomes the current time of the stack. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classelps_1_1_lab_event_stack_a20fb911dc03289f6ef3b5222073c4b61}{\index{elps\-::\-Lab\-Event\-Stack@{elps\-::\-Lab\-Event\-Stack}!Realize\-Event@{Realize\-Event}}
-\index{Realize\-Event@{Realize\-Event}!elps::LabEventStack@{elps\-::\-Lab\-Event\-Stack}}
-\subsubsection[{Realize\-Event}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Event\-Stack\-::\-Realize\-Event (
+\hypertarget{classelps_1_1_lab_event_stack_a20fb911dc03289f6ef3b5222073c4b61}{\index{elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}!Realize\+Event@{Realize\+Event}}
+\index{Realize\+Event@{Realize\+Event}!elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}}
+\subsubsection[{Realize\+Event}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Event\+Stack\+::\+Realize\+Event (
 \begin{DoxyParamCaption}
-\item[{gsl\-\_\-rng $\ast$}]{r, }
+\item[{gsl\+\_\+rng $\ast$}]{r, }
 \item[{double}]{time}
 \end{DoxyParamCaption}
 )}}\label{classelps_1_1_lab_event_stack_a20fb911dc03289f6ef3b5222073c4b61}
-Choose an event given a R\-N\-G (Multinomial low), then realize it.\par
- Same than \hyperlink{classelps_1_1_lab_event_stack_a8335ecf33bf6210d5cb9c8d30a125f6e}{Realize\-Event(int id, double time)}, but the probability is computed using the specified random number generator. 
+Choose an event given a R\+N\+G (Multinomial low), then realize it.~\newline
+ Same than \hyperlink{classelps_1_1_lab_event_stack_a8335ecf33bf6210d5cb9c8d30a125f6e}{Realize\+Event(int id, double time)}, but the probability is computed using the specified random number generator. 
 \begin{DoxyParams}{Parameters}
 {\em r} & The Random Number Generator. \\
 \hline
 {\em time} & The given time becomes the current time of the stack. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classelps_1_1_lab_event_stack_a466e090d7d9159983033cf732e13d461}{\index{elps\-::\-Lab\-Event\-Stack@{elps\-::\-Lab\-Event\-Stack}!Reset\-Stack\-Rate@{Reset\-Stack\-Rate}}
-\index{Reset\-Stack\-Rate@{Reset\-Stack\-Rate}!elps::LabEventStack@{elps\-::\-Lab\-Event\-Stack}}
-\subsubsection[{Reset\-Stack\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Event\-Stack\-::\-Reset\-Stack\-Rate (
+\hypertarget{classelps_1_1_lab_event_stack_a466e090d7d9159983033cf732e13d461}{\index{elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}!Reset\+Stack\+Rate@{Reset\+Stack\+Rate}}
+\index{Reset\+Stack\+Rate@{Reset\+Stack\+Rate}!elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}}
+\subsubsection[{Reset\+Stack\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Event\+Stack\+::\+Reset\+Stack\+Rate (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}}\label{classelps_1_1_lab_event_stack_a466e090d7d9159983033cf732e13d461}
-Reset the global stack rate (to 0.\-0). \hypertarget{classelps_1_1_lab_event_stack_a4a619922dfce62966b6b5c5c5cdca866}{\index{elps\-::\-Lab\-Event\-Stack@{elps\-::\-Lab\-Event\-Stack}!Set\-Event\-Rate@{Set\-Event\-Rate}}
-\index{Set\-Event\-Rate@{Set\-Event\-Rate}!elps::LabEventStack@{elps\-::\-Lab\-Event\-Stack}}
-\subsubsection[{Set\-Event\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Event\-Stack\-::\-Set\-Event\-Rate (
+Reset the global stack rate (to 0.\+0). \hypertarget{classelps_1_1_lab_event_stack_a4a619922dfce62966b6b5c5c5cdca866}{\index{elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}!Set\+Event\+Rate@{Set\+Event\+Rate}}
+\index{Set\+Event\+Rate@{Set\+Event\+Rate}!elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}}
+\subsubsection[{Set\+Event\+Rate}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Event\+Stack\+::\+Set\+Event\+Rate (
 \begin{DoxyParamCaption}
 \item[{int}]{id, }
 \item[{double}]{rate}
@@ -353,9 +365,9 @@ Update the event's rate.
 {\em rate} & New rate. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classelps_1_1_lab_event_stack_ab3b53f258a8150181f8bd0d14d4d561b}{\index{elps\-::\-Lab\-Event\-Stack@{elps\-::\-Lab\-Event\-Stack}!Set\-Time@{Set\-Time}}
-\index{Set\-Time@{Set\-Time}!elps::LabEventStack@{elps\-::\-Lab\-Event\-Stack}}
-\subsubsection[{Set\-Time}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Event\-Stack\-::\-Set\-Time (
+\hypertarget{classelps_1_1_lab_event_stack_ab3b53f258a8150181f8bd0d14d4d561b}{\index{elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}!Set\+Time@{Set\+Time}}
+\index{Set\+Time@{Set\+Time}!elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}}
+\subsubsection[{Set\+Time}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Event\+Stack\+::\+Set\+Time (
 \begin{DoxyParamCaption}
 \item[{double}]{time}
 \end{DoxyParamCaption}
@@ -365,9 +377,9 @@ Update the current time of the stack.
 {\em time} & The current time. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classelps_1_1_lab_event_stack_a2d3587e25801f8e1f1950bc933846ab0}{\index{elps\-::\-Lab\-Event\-Stack@{elps\-::\-Lab\-Event\-Stack}!Un\-Binarize@{Un\-Binarize}}
-\index{Un\-Binarize@{Un\-Binarize}!elps::LabEventStack@{elps\-::\-Lab\-Event\-Stack}}
-\subsubsection[{Un\-Binarize}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Event\-Stack\-::\-Un\-Binarize (
+\hypertarget{classelps_1_1_lab_event_stack_a2d3587e25801f8e1f1950bc933846ab0}{\index{elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}!Un\+Binarize@{Un\+Binarize}}
+\index{Un\+Binarize@{Un\+Binarize}!elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}}
+\subsubsection[{Un\+Binarize}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Event\+Stack\+::\+Un\+Binarize (
 \begin{DoxyParamCaption}
 \item[{ifstream $\ast$}]{istream}
 \end{DoxyParamCaption}
@@ -379,16 +391,16 @@ Restore the stack from a given input stream (binary format).
 \end{DoxyParams}
 
 
-Reimplemented from \hyperlink{classelps_1_1_lab_i_binarizable_a381af24c243c967b491101b7dbecb252}{elps\-::\-Lab\-I\-Binarizable}.
+Reimplemented from \hyperlink{classelps_1_1_lab_i_binarizable_a381af24c243c967b491101b7dbecb252}{elps\+::\+Lab\+I\+Binarizable}.
 
-\hypertarget{classelps_1_1_lab_event_stack_a2c69343fc9e0218238c51004d854f900}{\index{elps\-::\-Lab\-Event\-Stack@{elps\-::\-Lab\-Event\-Stack}!Update\-Stack\-Rates@{Update\-Stack\-Rates}}
-\index{Update\-Stack\-Rates@{Update\-Stack\-Rates}!elps::LabEventStack@{elps\-::\-Lab\-Event\-Stack}}
-\subsubsection[{Update\-Stack\-Rates}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Event\-Stack\-::\-Update\-Stack\-Rates (
+\hypertarget{classelps_1_1_lab_event_stack_a2c69343fc9e0218238c51004d854f900}{\index{elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}!Update\+Stack\+Rates@{Update\+Stack\+Rates}}
+\index{Update\+Stack\+Rates@{Update\+Stack\+Rates}!elps\+::\+Lab\+Event\+Stack@{elps\+::\+Lab\+Event\+Stack}}
+\subsubsection[{Update\+Stack\+Rates}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Event\+Stack\+::\+Update\+Stack\+Rates (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}}\label{classelps_1_1_lab_event_stack_a2c69343fc9e0218238c51004d854f900}
-Update the global stack rate. Obtained by \-:
+Update the global stack rate. Obtained by \+:
 \begin{DoxyItemize}
 \item executing the rate callback of each event (updating its rate).
 \item then, summing the events new rates. 

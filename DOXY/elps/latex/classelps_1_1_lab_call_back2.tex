@@ -1,11 +1,11 @@
-\hypertarget{classelps_1_1_lab_call_back2}{\section{elps\-:\-:Lab\-Call\-Back2 Class Reference}
-\label{classelps_1_1_lab_call_back2}\index{elps\-::\-Lab\-Call\-Back2@{elps\-::\-Lab\-Call\-Back2}}
+\hypertarget{classelps_1_1_lab_call_back2}{\section{elps\+:\+:Lab\+Call\+Back2 Class Reference}
+\label{classelps_1_1_lab_call_back2}\index{elps\+::\+Lab\+Call\+Back2@{elps\+::\+Lab\+Call\+Back2}}
 }
 
 
-{\ttfamily \#include $<$Lab\-Call\-Back2.\-h$>$}
+{\ttfamily \#include $<$Lab\+Call\+Back2.\+h$>$}
 
-Inheritance diagram for elps\-:\-:Lab\-Call\-Back2\-:\begin{figure}[H]
+Inheritance diagram for elps\+:\+:Lab\+Call\+Back2\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=2.000000cm]{classelps_1_1_lab_call_back2}
@@ -20,48 +20,52 @@ Inheritance diagram for elps\-:\-:Lab\-Call\-Back2\-:\begin{figure}[H]
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\hyperlink{classelps_1_1_lab_call_back2_aba9cf581a11e0e7d3e2974529761f567}{Lab\-Call\-Back2} (Method2 \-\_\-method)
+\hyperlink{classelps_1_1_lab_call_back2_aba9cf581a11e0e7d3e2974529761f567}{Lab\+Call\+Back2} (Method2 \+\_\+method)
 \item 
-\hyperlink{classelps_1_1_lab_call_back2_a6cdc315f4a2cc955495504e1e94cd117}{Lab\-Call\-Back2} (Method method, void $\ast$user\-\_\-data)
+\hyperlink{classelps_1_1_lab_call_back2_a6cdc315f4a2cc955495504e1e94cd117}{Lab\+Call\+Back2} (Method method, void $\ast$user\+\_\+data)
 \item 
 double \hyperlink{classelps_1_1_lab_call_back2_a39e544bea4a4983b8f5467b5541308fb}{operator()} (void $\ast$parameter)
 \item 
 double \hyperlink{classelps_1_1_lab_call_back2_a9bfcf16c21b7eabc750fea05e90cb1c5}{execute} (void $\ast$parameter)
 \item 
-\hypertarget{classelps_1_1_lab_call_back2_a4112b8de7ab8a7e56d71d85e55fbd331}{Method2 \& {\bfseries Get\-Method2} ()}\label{classelps_1_1_lab_call_back2_a4112b8de7ab8a7e56d71d85e55fbd331}
+\hypertarget{classelps_1_1_lab_call_back2_a4112b8de7ab8a7e56d71d85e55fbd331}{Method2 \& {\bfseries Get\+Method2} ()}\label{classelps_1_1_lab_call_back2_a4112b8de7ab8a7e56d71d85e55fbd331}
 
 \end{DoxyCompactItemize}
 \subsection*{Additional Inherited Members}
 
 
 \subsection{Detailed Description}
-Utility class to deal with callbacks.\par
- (Non templatized version of \hyperlink{classelps_1_1_lab_call_back3}{Lab\-Call\-Back3} for ease of use with Cython).
+Utility class to deal with callbacks.~\newline
+ (Non templatized version of \hyperlink{classelps_1_1_lab_call_back3}{Lab\+Call\+Back3} for ease of use with Cython).
 
-This version of \hyperlink{classelps_1_1_lab_call_back}{Lab\-Call\-Back} obey to the following pattern \-: \begin{DoxyVerb}    double (*method)(void* parameter)
+2 versions of the constructor \+: \begin{DoxyVerb}   * For C usage (1 param): LabCallBack2(Method2 _method)
+* For Cython usage (2 param): LabCallBack2(Method method, void *user_data)
 \end{DoxyVerb}
 
 
-That is to say that it returns a double and nothing else. Return 0.\-0 if you do not need to return anything...
+This version of \hyperlink{classelps_1_1_lab_call_back}{Lab\+Call\+Back} obey to the following pattern \+: \begin{DoxyVerb}    double (*method)(void* parameter)
+\end{DoxyVerb}
 
-\subsection*{U\-S\-A\-G\-E \-:}
 
-First of all define the callback methods to be fired \-:
+That is to say that it returns a double and nothing else. Return 0.\+0 if you do not need to return anything...
+
+\subsection*{U\+S\+A\+G\+E \+: }
+
+First of all define the callback methods to be fired \+:
 
 
 \begin{DoxyCode}
 \textcolor{keywordtype}{double} MyMethod(\textcolor{keywordtype}{void} *a\_param)
 \{
         \textcolor{comment}{// ...}
-        \textcolor{keywordtype}{double} rate = a\_param * 2.0;                 \textcolor{comment}{// Do something with
-       "a\_param" (can be any object)}
+        \textcolor{keywordtype}{double} rate = a\_param * 2.0;                 \textcolor{comment}{// Do something with "a\_param" (can be any object)}
         \textcolor{comment}{// ...}
         \textcolor{keywordflow}{return} rate;                                 \textcolor{comment}{// Return a float}
 \}
 \end{DoxyCode}
 
 
-Then we can create the callback \-:
+Then we can create the callback \+:
 
 
 \begin{DoxyCode}
@@ -69,7 +73,7 @@ LabCallBack2 *my\_callback = \textcolor{keyword}{new} LabCallBack2(MyMethod);
 \end{DoxyCode}
 
 
-And call it later on \-:
+And call it later on \+:
 
 
 \begin{DoxyCode}
@@ -78,27 +82,27 @@ cout << my\_callback.execute(25.0) << endl;        \textcolor{comment}{// Writes
  
 
 \subsection{Constructor \& Destructor Documentation}
-\hypertarget{classelps_1_1_lab_call_back2_aba9cf581a11e0e7d3e2974529761f567}{\index{elps\-::\-Lab\-Call\-Back2@{elps\-::\-Lab\-Call\-Back2}!Lab\-Call\-Back2@{Lab\-Call\-Back2}}
-\index{Lab\-Call\-Back2@{Lab\-Call\-Back2}!elps::LabCallBack2@{elps\-::\-Lab\-Call\-Back2}}
-\subsubsection[{Lab\-Call\-Back2}]{\setlength{\rightskip}{0pt plus 5cm}elps\-::\-Lab\-Call\-Back2\-::\-Lab\-Call\-Back2 (
+\hypertarget{classelps_1_1_lab_call_back2_aba9cf581a11e0e7d3e2974529761f567}{\index{elps\+::\+Lab\+Call\+Back2@{elps\+::\+Lab\+Call\+Back2}!Lab\+Call\+Back2@{Lab\+Call\+Back2}}
+\index{Lab\+Call\+Back2@{Lab\+Call\+Back2}!elps\+::\+Lab\+Call\+Back2@{elps\+::\+Lab\+Call\+Back2}}
+\subsubsection[{Lab\+Call\+Back2}]{\setlength{\rightskip}{0pt plus 5cm}elps\+::\+Lab\+Call\+Back2\+::\+Lab\+Call\+Back2 (
 \begin{DoxyParamCaption}
-\item[{Method2}]{\-\_\-method}
+\item[{Method2}]{\+\_\+method}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classelps_1_1_lab_call_back2_aba9cf581a11e0e7d3e2974529761f567}
-Constructor that must be used when the callback is used in pure C++ project context. \hypertarget{classelps_1_1_lab_call_back2_a6cdc315f4a2cc955495504e1e94cd117}{\index{elps\-::\-Lab\-Call\-Back2@{elps\-::\-Lab\-Call\-Back2}!Lab\-Call\-Back2@{Lab\-Call\-Back2}}
-\index{Lab\-Call\-Back2@{Lab\-Call\-Back2}!elps::LabCallBack2@{elps\-::\-Lab\-Call\-Back2}}
-\subsubsection[{Lab\-Call\-Back2}]{\setlength{\rightskip}{0pt plus 5cm}elps\-::\-Lab\-Call\-Back2\-::\-Lab\-Call\-Back2 (
+Constructor that must be used when the callback is used in pure C++ project context. \hypertarget{classelps_1_1_lab_call_back2_a6cdc315f4a2cc955495504e1e94cd117}{\index{elps\+::\+Lab\+Call\+Back2@{elps\+::\+Lab\+Call\+Back2}!Lab\+Call\+Back2@{Lab\+Call\+Back2}}
+\index{Lab\+Call\+Back2@{Lab\+Call\+Back2}!elps\+::\+Lab\+Call\+Back2@{elps\+::\+Lab\+Call\+Back2}}
+\subsubsection[{Lab\+Call\+Back2}]{\setlength{\rightskip}{0pt plus 5cm}elps\+::\+Lab\+Call\+Back2\+::\+Lab\+Call\+Back2 (
 \begin{DoxyParamCaption}
 \item[{Method}]{method, }
-\item[{void $\ast$}]{user\-\_\-data}
+\item[{void $\ast$}]{user\+\_\+data}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [inline]}}}\label{classelps_1_1_lab_call_back2_a6cdc315f4a2cc955495504e1e94cd117}
 Constructor that must be used when the callback is used in Cython extension project context. 
 
 \subsection{Member Function Documentation}
-\hypertarget{classelps_1_1_lab_call_back2_a9bfcf16c21b7eabc750fea05e90cb1c5}{\index{elps\-::\-Lab\-Call\-Back2@{elps\-::\-Lab\-Call\-Back2}!execute@{execute}}
-\index{execute@{execute}!elps::LabCallBack2@{elps\-::\-Lab\-Call\-Back2}}
-\subsubsection[{execute}]{\setlength{\rightskip}{0pt plus 5cm}double elps\-::\-Lab\-Call\-Back2\-::execute (
+\hypertarget{classelps_1_1_lab_call_back2_a9bfcf16c21b7eabc750fea05e90cb1c5}{\index{elps\+::\+Lab\+Call\+Back2@{elps\+::\+Lab\+Call\+Back2}!execute@{execute}}
+\index{execute@{execute}!elps\+::\+Lab\+Call\+Back2@{elps\+::\+Lab\+Call\+Back2}}
+\subsubsection[{execute}]{\setlength{\rightskip}{0pt plus 5cm}double elps\+::\+Lab\+Call\+Back2\+::execute (
 \begin{DoxyParamCaption}
 \item[{void $\ast$}]{parameter}
 \end{DoxyParamCaption}
@@ -111,9 +115,9 @@ Execute the method.
 \begin{DoxyReturn}{Returns}
 The return value of the method. 
 \end{DoxyReturn}
-\hypertarget{classelps_1_1_lab_call_back2_a39e544bea4a4983b8f5467b5541308fb}{\index{elps\-::\-Lab\-Call\-Back2@{elps\-::\-Lab\-Call\-Back2}!operator()@{operator()}}
-\index{operator()@{operator()}!elps::LabCallBack2@{elps\-::\-Lab\-Call\-Back2}}
-\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}double elps\-::\-Lab\-Call\-Back2\-::operator() (
+\hypertarget{classelps_1_1_lab_call_back2_a39e544bea4a4983b8f5467b5541308fb}{\index{elps\+::\+Lab\+Call\+Back2@{elps\+::\+Lab\+Call\+Back2}!operator()@{operator()}}
+\index{operator()@{operator()}!elps\+::\+Lab\+Call\+Back2@{elps\+::\+Lab\+Call\+Back2}}
+\subsubsection[{operator()}]{\setlength{\rightskip}{0pt plus 5cm}double elps\+::\+Lab\+Call\+Back2\+::operator() (
 \begin{DoxyParamCaption}
 \item[{void $\ast$}]{parameter}
 \end{DoxyParamCaption}

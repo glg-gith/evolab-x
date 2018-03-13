@@ -1,11 +1,11 @@
-\hypertarget{classelps_1_1_lab_outputer}{\section{elps\-:\-:Lab\-Outputer Class Reference}
-\label{classelps_1_1_lab_outputer}\index{elps\-::\-Lab\-Outputer@{elps\-::\-Lab\-Outputer}}
+\hypertarget{classelps_1_1_lab_outputer}{\section{elps\+:\+:Lab\+Outputer Class Reference}
+\label{classelps_1_1_lab_outputer}\index{elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}}
 }
 
 
-{\ttfamily \#include $<$Lab\-Outputer.\-h$>$}
+{\ttfamily \#include $<$Lab\+Outputer.\+h$>$}
 
-Inheritance diagram for elps\-:\-:Lab\-Outputer\-:\begin{figure}[H]
+Inheritance diagram for elps\+:\+:Lab\+Outputer\+:\begin{figure}[H]
 \begin{center}
 \leavevmode
 \includegraphics[height=3.000000cm]{classelps_1_1_lab_outputer}
@@ -14,117 +14,117 @@ Inheritance diagram for elps\-:\-:Lab\-Outputer\-:\begin{figure}[H]
 \subsection*{Public Types}
 \begin{DoxyCompactItemize}
 \item 
-enum \hyperlink{classelps_1_1_lab_outputer_ad470fb25f86cffd24bc24c56414d5be5}{t\-\_\-output} \{ {\bfseries T\-O\-\_\-\-F\-I\-L\-E} =  1, 
-{\bfseries T\-O\-\_\-\-S\-T\-D} =  2, 
-{\bfseries T\-O\-\_\-\-B\-O\-T\-H} =  T\-O\-\_\-\-F\-I\-L\-E $|$ T\-O\-\_\-\-S\-T\-D
+enum \hyperlink{classelps_1_1_lab_outputer_ad470fb25f86cffd24bc24c56414d5be5}{t\+\_\+output} \{ {\bfseries T\+O\+\_\+\+F\+I\+L\+E} = 1, 
+{\bfseries T\+O\+\_\+\+S\+T\+D} = 2, 
+{\bfseries T\+O\+\_\+\+B\+O\+T\+H} = T\+O\+\_\+\+F\+I\+L\+E $\vert$ T\+O\+\_\+\+S\+T\+D
  \}
 \end{DoxyCompactItemize}
 \subsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \hyperlink{classelps_1_1_lab_outputer_a07c1f50b2f68e09c785257f59cc02989}{Set\-Filename} (const string filename, bool erase)
+void \hyperlink{classelps_1_1_lab_outputer_a07c1f50b2f68e09c785257f59cc02989}{Set\+Filename} (const string filename, bool erase)
 \item 
-string \hyperlink{classelps_1_1_lab_outputer_abb511e85d9689dbfa77d5a57fbc63260}{Get\-Filename} ()
+string \hyperlink{classelps_1_1_lab_outputer_abb511e85d9689dbfa77d5a57fbc63260}{Get\+Filename} ()
 \item 
-void \hyperlink{classelps_1_1_lab_outputer_a44b5ef030d5099fb22e4fc92d4bf9e02}{Set\-Separator} (string sep)
+void \hyperlink{classelps_1_1_lab_outputer_a44b5ef030d5099fb22e4fc92d4bf9e02}{Set\+Separator} (string sep)
 \item 
-virtual bool \hyperlink{classelps_1_1_lab_outputer_a3fce40affff7539f6d59768830fd4e03}{Set\-Header} (vector$<$ string $>$ \&header\-Cols)=0
+virtual bool \hyperlink{classelps_1_1_lab_outputer_a3fce40affff7539f6d59768830fd4e03}{Set\+Header} (vector$<$ string $>$ \&header\+Cols)=0
 \item 
-virtual bool \hyperlink{classelps_1_1_lab_outputer_a53cc31c61d5fe48be47e3eaa9ee505cf}{Write\-Data} ()
+virtual bool \hyperlink{classelps_1_1_lab_outputer_a53cc31c61d5fe48be47e3eaa9ee505cf}{Write\+Data} ()
 \item 
-virtual bool \hyperlink{classelps_1_1_lab_outputer_a15d6faa05e150c15c51da1a05f1f0c4d}{Write\-Stats} ()=0
+virtual bool \hyperlink{classelps_1_1_lab_outputer_a15d6faa05e150c15c51da1a05f1f0c4d}{Write\+Stats} ()=0
 \item 
-virtual bool \hyperlink{classelps_1_1_lab_outputer_ad1ebbfd4fe1c0eb996b013dd8ab5f83a}{Write\-Histogram} ()=0
+virtual bool \hyperlink{classelps_1_1_lab_outputer_ad1ebbfd4fe1c0eb996b013dd8ab5f83a}{Write\+Histogram} ()=0
 \item 
-virtual bool \hyperlink{classelps_1_1_lab_outputer_a03a665502df3322215595a35e624cb85}{Set\-Footer} (string footer)=0
+virtual bool \hyperlink{classelps_1_1_lab_outputer_a03a665502df3322215595a35e624cb85}{Set\+Footer} (string footer)=0
 \item 
-void \hyperlink{classelps_1_1_lab_outputer_a6af708654be42ff33dcc71816656ad9f}{Set\-Ouput\-Mode} (\hyperlink{classelps_1_1_lab_outputer_ad470fb25f86cffd24bc24c56414d5be5}{t\-\_\-output} mode)
+void \hyperlink{classelps_1_1_lab_outputer_a6af708654be42ff33dcc71816656ad9f}{Set\+Ouput\+Mode} (\hyperlink{classelps_1_1_lab_outputer_ad470fb25f86cffd24bc24c56414d5be5}{t\+\_\+output} mode)
 \item 
-void \hyperlink{classelps_1_1_lab_outputer_a670b381b94701a2d60b3efc710465a8a}{Set\-Ouput\-Mode} (int mode)
+void \hyperlink{classelps_1_1_lab_outputer_a670b381b94701a2d60b3efc710465a8a}{Set\+Ouput\+Mode} (int mode)
 \item 
-vector$<$ vector$<$ double $>$ $>$ \& \hyperlink{classelps_1_1_lab_outputer_a644069fd371fbe58381f1af8162908b6}{Get\-Data\-Set} ()
+vector$<$ vector$<$ double $>$ $>$ \& \hyperlink{classelps_1_1_lab_outputer_a644069fd371fbe58381f1af8162908b6}{Get\+Data\+Set} ()
 \item 
-void \hyperlink{classelps_1_1_lab_outputer_a7b86c7d5a768e78873695c061683f5c8}{Set\-Data\-Set} (vector$<$ vector$<$ double $>$ $>$ \&data\-Set)
+void \hyperlink{classelps_1_1_lab_outputer_a7b86c7d5a768e78873695c061683f5c8}{Set\+Data\+Set} (vector$<$ vector$<$ double $>$ $>$ \&data\+Set)
 \item 
-void \hyperlink{classelps_1_1_lab_outputer_a41353b7d293c1902b531eead2a31c644}{Add\-Data\-Line} (vector$<$ double $>$ \&data\-Line)
+void \hyperlink{classelps_1_1_lab_outputer_a41353b7d293c1902b531eead2a31c644}{Add\+Data\+Line} (vector$<$ double $>$ \&data\+Line)
 \item 
-void \hyperlink{classelps_1_1_lab_outputer_a67f51790de5d35de729ead50e33ad531}{Reset\-Data\-Set} ()
+void \hyperlink{classelps_1_1_lab_outputer_a67f51790de5d35de729ead50e33ad531}{Reset\+Data\+Set} ()
 \item 
-void \hyperlink{classelps_1_1_lab_outputer_a21ecad21d95ea286a717a5ec029ee299}{Insert\-Text} (const string text)
+void \hyperlink{classelps_1_1_lab_outputer_a21ecad21d95ea286a717a5ec029ee299}{Insert\+Text} (const string text)
 \item 
 void \hyperlink{classelps_1_1_lab_outputer_a4a850317a26a30c441b3e913a4bb05f6}{Binarize} (ofstream $\ast$ostream)
 \item 
-void \hyperlink{classelps_1_1_lab_outputer_a7b9213f0a5bf47ecdf4b87c4ad7757b4}{Un\-Binarize} (ifstream $\ast$istream)
+void \hyperlink{classelps_1_1_lab_outputer_a7b9213f0a5bf47ecdf4b87c4ad7757b4}{Un\+Binarize} (ifstream $\ast$istream)
 \item 
-void \hyperlink{classelps_1_1_lab_outputer_a8adf798e914942e87bd19980fa8084ac}{Insert\-Recovery\-Tag} ()
+void \hyperlink{classelps_1_1_lab_outputer_a8adf798e914942e87bd19980fa8084ac}{Insert\+Recovery\+Tag} ()
 \item 
-bool \hyperlink{classelps_1_1_lab_outputer_a2c8d775a4f18203f4e767053b983771c}{Goto\-Last\-Recovery\-Tag} ()
+bool \hyperlink{classelps_1_1_lab_outputer_a2c8d775a4f18203f4e767053b983771c}{Goto\+Last\+Recovery\+Tag} ()
 \end{DoxyCompactItemize}
 \subsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-static void \hyperlink{classelps_1_1_lab_outputer_ad497e25cf7a65db54bb2a1ccdce54e06}{Draw\-Progress\-Bar} (int len, double percent, bool erase=true, bool only\-\_\-text=false)
+static void \hyperlink{classelps_1_1_lab_outputer_ad497e25cf7a65db54bb2a1ccdce54e06}{Draw\+Progress\+Bar} (int len, double percent, bool erase=true, bool only\+\_\+text=false)
 \end{DoxyCompactItemize}
 \subsection*{Static Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-static const string \hyperlink{classelps_1_1_lab_outputer_a107166b500ff05595a207c23986249bf}{T\-A\-G\-\_\-\-B\-E\-G\-I\-N} = \char`\"{}$<$R\-T$>$\char`\"{}
+static const string \hyperlink{classelps_1_1_lab_outputer_a107166b500ff05595a207c23986249bf}{T\+A\+G\+\_\+\+B\+E\+G\+I\+N} = \char`\"{}$<$R\+T$>$\char`\"{}
 \item 
-static const string \hyperlink{classelps_1_1_lab_outputer_abf6d3e96248aa72b662627b8bc1b7c91}{T\-A\-G\-\_\-\-E\-N\-D} = \char`\"{}$<$/R\-T$>$\char`\"{}
+static const string \hyperlink{classelps_1_1_lab_outputer_abf6d3e96248aa72b662627b8bc1b7c91}{T\+A\+G\+\_\+\+E\+N\+D} = \char`\"{}$<$/R\+T$>$\char`\"{}
 \end{DoxyCompactItemize}
 
 
 \subsection{Detailed Description}
-Basic implementation for output management \-:
+Basic implementation for output management \+:
 
-Basically this class provides the features to produce output of data into a file, the standard output, or both. It manipulates D\-A\-T\-A\-S\-E\-Ts (sets of data) which are simple matrixes of doubles.
+Basically this class provides the features to produce output of data into a file, the standard output, or both. It manipulates D\+A\+T\+A\+S\+E\+Ts (sets of data) which are simple matrixes of doubles.
 
-D\-A\-T\-A\-S\-E\-T \-:\par
+D\+A\+T\+A\+S\+E\+T \+:~\newline
 
 \begin{DoxyItemize}
 \item Each set of data is expressed as a list of list of doubles
 \item Each time the set of data is written, it is cleared (waiting to be filled again with the next data). It behaves as a buffer.
 \end{DoxyItemize}
 
-We also can customize the header and footer (\hyperlink{classelps_1_1_lab_outputer_a3fce40affff7539f6d59768830fd4e03}{Set\-Header()}, \hyperlink{classelps_1_1_lab_outputer_a03a665502df3322215595a35e624cb85}{Set\-Footer()}) of the output as well as write free entries on the fly (\hyperlink{classelps_1_1_lab_outputer_a21ecad21d95ea286a717a5ec029ee299}{Insert\-Text()} -\/ in this case the text is inserted immediately, unlike D\-A\-T\-S\-E\-T which are buffered until asked for writing).
+We also can customize the header and footer (\hyperlink{classelps_1_1_lab_outputer_a3fce40affff7539f6d59768830fd4e03}{Set\+Header()}, \hyperlink{classelps_1_1_lab_outputer_a03a665502df3322215595a35e624cb85}{Set\+Footer()}) of the output as well as write free entries on the fly (\hyperlink{classelps_1_1_lab_outputer_a21ecad21d95ea286a717a5ec029ee299}{Insert\+Text()} -\/ in this case the text is inserted immediately, unlike D\+A\+T\+S\+E\+T which are buffered until asked for writing).
 
-\subsection*{U\-S\-A\-G\-E \-:}
+\subsection*{U\+S\+A\+G\+E \+: }
 
 
 \begin{DoxyItemize}
 \item Instantiate
 \item Set the associated file (only required if planned to write into files)
 \item Set the separator (which will be used to separate the data of a column)
-\item Define the mode of output (\hyperlink{classelps_1_1_lab_outputer_a6af708654be42ff33dcc71816656ad9f}{Set\-Ouput\-Mode()})
-\item Buffer some data lines (\hyperlink{classelps_1_1_lab_outputer_a41353b7d293c1902b531eead2a31c644}{Add\-Data\-Line()})
-\item Ask for writing the current set of data at your convenience (\hyperlink{classelps_1_1_lab_outputer_a53cc31c61d5fe48be47e3eaa9ee505cf}{Write\-Data()})
-\item Or insert some text on the fly (\hyperlink{classelps_1_1_lab_outputer_a21ecad21d95ea286a717a5ec029ee299}{Insert\-Text()})
+\item Define the mode of output (\hyperlink{classelps_1_1_lab_outputer_a6af708654be42ff33dcc71816656ad9f}{Set\+Ouput\+Mode()})
+\item Buffer some data lines (\hyperlink{classelps_1_1_lab_outputer_a41353b7d293c1902b531eead2a31c644}{Add\+Data\+Line()})
+\item Ask for writing the current set of data at your convenience (\hyperlink{classelps_1_1_lab_outputer_a53cc31c61d5fe48be47e3eaa9ee505cf}{Write\+Data()})
+\item Or insert some text on the fly (\hyperlink{classelps_1_1_lab_outputer_a21ecad21d95ea286a717a5ec029ee299}{Insert\+Text()})
 \end{DoxyItemize}
 
-{\bfseries Note \-:} The \char`\"{}statistics\char`\"{} and \char`\"{}histogram\char`\"{} features are not yet implemented. 
+{\bfseries Note \+:} The \char`\"{}statistics\char`\"{} and \char`\"{}histogram\char`\"{} features are not yet implemented. 
 
 \subsection{Member Enumeration Documentation}
-\hypertarget{classelps_1_1_lab_outputer_ad470fb25f86cffd24bc24c56414d5be5}{\index{elps\-::\-Lab\-Outputer@{elps\-::\-Lab\-Outputer}!t\-\_\-output@{t\-\_\-output}}
-\index{t\-\_\-output@{t\-\_\-output}!elps::LabOutputer@{elps\-::\-Lab\-Outputer}}
-\subsubsection[{t\-\_\-output}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf elps\-::\-Lab\-Outputer\-::t\-\_\-output}}}\label{classelps_1_1_lab_outputer_ad470fb25f86cffd24bc24c56414d5be5}
-Output type \-: 1 \-: only to file, 2 only to standard output, 4 both file and standard output 
+\hypertarget{classelps_1_1_lab_outputer_ad470fb25f86cffd24bc24c56414d5be5}{\index{elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}!t\+\_\+output@{t\+\_\+output}}
+\index{t\+\_\+output@{t\+\_\+output}!elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}}
+\subsubsection[{t\+\_\+output}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf elps\+::\+Lab\+Outputer\+::t\+\_\+output}}}\label{classelps_1_1_lab_outputer_ad470fb25f86cffd24bc24c56414d5be5}
+Output type \+: 1 \+: only to file, 2 only to standard output, 4 both file and standard output 
 
 \subsection{Member Function Documentation}
-\hypertarget{classelps_1_1_lab_outputer_a41353b7d293c1902b531eead2a31c644}{\index{elps\-::\-Lab\-Outputer@{elps\-::\-Lab\-Outputer}!Add\-Data\-Line@{Add\-Data\-Line}}
-\index{Add\-Data\-Line@{Add\-Data\-Line}!elps::LabOutputer@{elps\-::\-Lab\-Outputer}}
-\subsubsection[{Add\-Data\-Line}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Outputer\-::\-Add\-Data\-Line (
+\hypertarget{classelps_1_1_lab_outputer_a41353b7d293c1902b531eead2a31c644}{\index{elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}!Add\+Data\+Line@{Add\+Data\+Line}}
+\index{Add\+Data\+Line@{Add\+Data\+Line}!elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}}
+\subsubsection[{Add\+Data\+Line}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Outputer\+::\+Add\+Data\+Line (
 \begin{DoxyParamCaption}
-\item[{vector$<$ double $>$ \&}]{data\-Line}
+\item[{vector$<$ double $>$ \&}]{data\+Line}
 \end{DoxyParamCaption}
 )}}\label{classelps_1_1_lab_outputer_a41353b7d293c1902b531eead2a31c644}
 Add a line to the current set of data. 
 \begin{DoxyParams}{Parameters}
-{\em data\-Line} & Line of data = list of double values \\
+{\em data\+Line} & Line of data = list of double values \\
 \hline
 \end{DoxyParams}
-\hypertarget{classelps_1_1_lab_outputer_a4a850317a26a30c441b3e913a4bb05f6}{\index{elps\-::\-Lab\-Outputer@{elps\-::\-Lab\-Outputer}!Binarize@{Binarize}}
-\index{Binarize@{Binarize}!elps::LabOutputer@{elps\-::\-Lab\-Outputer}}
-\subsubsection[{Binarize}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Outputer\-::\-Binarize (
+\hypertarget{classelps_1_1_lab_outputer_a4a850317a26a30c441b3e913a4bb05f6}{\index{elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}!Binarize@{Binarize}}
+\index{Binarize@{Binarize}!elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}}
+\subsubsection[{Binarize}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Outputer\+::\+Binarize (
 \begin{DoxyParamCaption}
 \item[{ofstream $\ast$}]{ostream}
 \end{DoxyParamCaption}
@@ -136,26 +136,26 @@ Insert a recovery point/tag to the given output stream (binary format).
 \end{DoxyParams}
 
 
-Reimplemented from \hyperlink{classelps_1_1_lab_i_binarizable_aecc9b383945b4c4e304675e5c970f69d}{elps\-::\-Lab\-I\-Binarizable}.
+Reimplemented from \hyperlink{classelps_1_1_lab_i_binarizable_aecc9b383945b4c4e304675e5c970f69d}{elps\+::\+Lab\+I\+Binarizable}.
 
-\hypertarget{classelps_1_1_lab_outputer_ad497e25cf7a65db54bb2a1ccdce54e06}{\index{elps\-::\-Lab\-Outputer@{elps\-::\-Lab\-Outputer}!Draw\-Progress\-Bar@{Draw\-Progress\-Bar}}
-\index{Draw\-Progress\-Bar@{Draw\-Progress\-Bar}!elps::LabOutputer@{elps\-::\-Lab\-Outputer}}
-\subsubsection[{Draw\-Progress\-Bar}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Outputer\-::\-Draw\-Progress\-Bar (
+\hypertarget{classelps_1_1_lab_outputer_ad497e25cf7a65db54bb2a1ccdce54e06}{\index{elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}!Draw\+Progress\+Bar@{Draw\+Progress\+Bar}}
+\index{Draw\+Progress\+Bar@{Draw\+Progress\+Bar}!elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}}
+\subsubsection[{Draw\+Progress\+Bar}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Outputer\+::\+Draw\+Progress\+Bar (
 \begin{DoxyParamCaption}
 \item[{int}]{len, }
 \item[{double}]{percent, }
 \item[{bool}]{erase = {\ttfamily true}, }
-\item[{bool}]{only\-\_\-text = {\ttfamily false}}
+\item[{bool}]{only\+\_\+text = {\ttfamily false}}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [static]}}}\label{classelps_1_1_lab_outputer_ad497e25cf7a65db54bb2a1ccdce54e06}
-Set the recovery point/tag that will be used to restart from (when calling \hyperlink{classelps_1_1_lab_outputer_a2c8d775a4f18203f4e767053b983771c}{Goto\-Last\-Recovery\-Tag()}). 
+Set the recovery point/tag that will be used to restart from (when calling \hyperlink{classelps_1_1_lab_outputer_a2c8d775a4f18203f4e767053b983771c}{Goto\+Last\+Recovery\+Tag()}). 
 \begin{DoxyParams}{Parameters}
-{\em rec\-\_\-tag} & \\
+{\em rec\+\_\+tag} & \\
 \hline
 \end{DoxyParams}
-\hypertarget{classelps_1_1_lab_outputer_a644069fd371fbe58381f1af8162908b6}{\index{elps\-::\-Lab\-Outputer@{elps\-::\-Lab\-Outputer}!Get\-Data\-Set@{Get\-Data\-Set}}
-\index{Get\-Data\-Set@{Get\-Data\-Set}!elps::LabOutputer@{elps\-::\-Lab\-Outputer}}
-\subsubsection[{Get\-Data\-Set}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$double$>$ $>$\& elps\-::\-Lab\-Outputer\-::\-Get\-Data\-Set (
+\hypertarget{classelps_1_1_lab_outputer_a644069fd371fbe58381f1af8162908b6}{\index{elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}!Get\+Data\+Set@{Get\+Data\+Set}}
+\index{Get\+Data\+Set@{Get\+Data\+Set}!elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}}
+\subsubsection[{Get\+Data\+Set}]{\setlength{\rightskip}{0pt plus 5cm}vector$<$vector$<$double$>$ $>$\& elps\+::\+Lab\+Outputer\+::\+Get\+Data\+Set (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
@@ -163,9 +163,9 @@ Set the recovery point/tag that will be used to restart from (when calling \hype
 Get the current set of data. \begin{DoxyReturn}{Returns}
 List of data lines (each line is a vector of double) 
 \end{DoxyReturn}
-\hypertarget{classelps_1_1_lab_outputer_abb511e85d9689dbfa77d5a57fbc63260}{\index{elps\-::\-Lab\-Outputer@{elps\-::\-Lab\-Outputer}!Get\-Filename@{Get\-Filename}}
-\index{Get\-Filename@{Get\-Filename}!elps::LabOutputer@{elps\-::\-Lab\-Outputer}}
-\subsubsection[{Get\-Filename}]{\setlength{\rightskip}{0pt plus 5cm}string elps\-::\-Lab\-Outputer\-::\-Get\-Filename (
+\hypertarget{classelps_1_1_lab_outputer_abb511e85d9689dbfa77d5a57fbc63260}{\index{elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}!Get\+Filename@{Get\+Filename}}
+\index{Get\+Filename@{Get\+Filename}!elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}}
+\subsubsection[{Get\+Filename}]{\setlength{\rightskip}{0pt plus 5cm}string elps\+::\+Lab\+Outputer\+::\+Get\+Filename (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
@@ -173,33 +173,33 @@ List of data lines (each line is a vector of double)
 Get the full path of the associated output file. \begin{DoxyReturn}{Returns}
 The full path. 
 \end{DoxyReturn}
-\hypertarget{classelps_1_1_lab_outputer_a2c8d775a4f18203f4e767053b983771c}{\index{elps\-::\-Lab\-Outputer@{elps\-::\-Lab\-Outputer}!Goto\-Last\-Recovery\-Tag@{Goto\-Last\-Recovery\-Tag}}
-\index{Goto\-Last\-Recovery\-Tag@{Goto\-Last\-Recovery\-Tag}!elps::LabOutputer@{elps\-::\-Lab\-Outputer}}
-\subsubsection[{Goto\-Last\-Recovery\-Tag}]{\setlength{\rightskip}{0pt plus 5cm}bool elps\-::\-Lab\-Outputer\-::\-Goto\-Last\-Recovery\-Tag (
+\hypertarget{classelps_1_1_lab_outputer_a2c8d775a4f18203f4e767053b983771c}{\index{elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}!Goto\+Last\+Recovery\+Tag@{Goto\+Last\+Recovery\+Tag}}
+\index{Goto\+Last\+Recovery\+Tag@{Goto\+Last\+Recovery\+Tag}!elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}}
+\subsubsection[{Goto\+Last\+Recovery\+Tag}]{\setlength{\rightskip}{0pt plus 5cm}bool elps\+::\+Lab\+Outputer\+::\+Goto\+Last\+Recovery\+Tag (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}}\label{classelps_1_1_lab_outputer_a2c8d775a4f18203f4e767053b983771c}
-Find the given tag in the output file and places the readhead at this point (aka \-: delete the text which comes after that point). Must be called in \hyperlink{classelps_1_1_lab_outputer_a7b9213f0a5bf47ecdf4b87c4ad7757b4}{Un\-Binarize()}. 
+Find the given tag in the output file and places the readhead at this point (aka \+: delete the text which comes after that point). Must be called in \hyperlink{classelps_1_1_lab_outputer_a7b9213f0a5bf47ecdf4b87c4ad7757b4}{Un\+Binarize()}. 
 \begin{DoxyParams}{Parameters}
-{\em rec\-\_\-tag} & A unique tag for the recovery. Allows to restart writing into the output file from that point. \\
+{\em rec\+\_\+tag} & \hyperlink{class_a}{A} unique tag for the recovery. Allows to restart writing into the output file from that point. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classelps_1_1_lab_outputer_a8adf798e914942e87bd19980fa8084ac}{\index{elps\-::\-Lab\-Outputer@{elps\-::\-Lab\-Outputer}!Insert\-Recovery\-Tag@{Insert\-Recovery\-Tag}}
-\index{Insert\-Recovery\-Tag@{Insert\-Recovery\-Tag}!elps::LabOutputer@{elps\-::\-Lab\-Outputer}}
-\subsubsection[{Insert\-Recovery\-Tag}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Outputer\-::\-Insert\-Recovery\-Tag (
+\hypertarget{classelps_1_1_lab_outputer_a8adf798e914942e87bd19980fa8084ac}{\index{elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}!Insert\+Recovery\+Tag@{Insert\+Recovery\+Tag}}
+\index{Insert\+Recovery\+Tag@{Insert\+Recovery\+Tag}!elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}}
+\subsubsection[{Insert\+Recovery\+Tag}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Outputer\+::\+Insert\+Recovery\+Tag (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}}\label{classelps_1_1_lab_outputer_a8adf798e914942e87bd19980fa8084ac}
 Insert the given recovery tag at the current position in the output file. Must be called in \hyperlink{classelps_1_1_lab_outputer_a4a850317a26a30c441b3e913a4bb05f6}{Binarize()}. 
 \begin{DoxyParams}{Parameters}
-{\em rec\-\_\-tag} & A unique tag for later recovery. Allows to restart writing into the output file from that point. \\
+{\em rec\+\_\+tag} & \hyperlink{class_a}{A} unique tag for later recovery. Allows to restart writing into the output file from that point. \\
 \hline
 \end{DoxyParams}
-\hypertarget{classelps_1_1_lab_outputer_a21ecad21d95ea286a717a5ec029ee299}{\index{elps\-::\-Lab\-Outputer@{elps\-::\-Lab\-Outputer}!Insert\-Text@{Insert\-Text}}
-\index{Insert\-Text@{Insert\-Text}!elps::LabOutputer@{elps\-::\-Lab\-Outputer}}
-\subsubsection[{Insert\-Text}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Outputer\-::\-Insert\-Text (
+\hypertarget{classelps_1_1_lab_outputer_a21ecad21d95ea286a717a5ec029ee299}{\index{elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}!Insert\+Text@{Insert\+Text}}
+\index{Insert\+Text@{Insert\+Text}!elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}}
+\subsubsection[{Insert\+Text}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Outputer\+::\+Insert\+Text (
 \begin{DoxyParamCaption}
 \item[{const string}]{text}
 \end{DoxyParamCaption}
@@ -209,28 +209,28 @@ Add some text at any time (the user is responsible for carriage return with this
 {\em text} & The text to be immediately inserted (no delay). \\
 \hline
 \end{DoxyParams}
-\hypertarget{classelps_1_1_lab_outputer_a67f51790de5d35de729ead50e33ad531}{\index{elps\-::\-Lab\-Outputer@{elps\-::\-Lab\-Outputer}!Reset\-Data\-Set@{Reset\-Data\-Set}}
-\index{Reset\-Data\-Set@{Reset\-Data\-Set}!elps::LabOutputer@{elps\-::\-Lab\-Outputer}}
-\subsubsection[{Reset\-Data\-Set}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Outputer\-::\-Reset\-Data\-Set (
+\hypertarget{classelps_1_1_lab_outputer_a67f51790de5d35de729ead50e33ad531}{\index{elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}!Reset\+Data\+Set@{Reset\+Data\+Set}}
+\index{Reset\+Data\+Set@{Reset\+Data\+Set}!elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}}
+\subsubsection[{Reset\+Data\+Set}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Outputer\+::\+Reset\+Data\+Set (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )}}\label{classelps_1_1_lab_outputer_a67f51790de5d35de729ead50e33ad531}
-Clear the current set of data. \hypertarget{classelps_1_1_lab_outputer_a7b86c7d5a768e78873695c061683f5c8}{\index{elps\-::\-Lab\-Outputer@{elps\-::\-Lab\-Outputer}!Set\-Data\-Set@{Set\-Data\-Set}}
-\index{Set\-Data\-Set@{Set\-Data\-Set}!elps::LabOutputer@{elps\-::\-Lab\-Outputer}}
-\subsubsection[{Set\-Data\-Set}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Outputer\-::\-Set\-Data\-Set (
+Clear the current set of data. \hypertarget{classelps_1_1_lab_outputer_a7b86c7d5a768e78873695c061683f5c8}{\index{elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}!Set\+Data\+Set@{Set\+Data\+Set}}
+\index{Set\+Data\+Set@{Set\+Data\+Set}!elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}}
+\subsubsection[{Set\+Data\+Set}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Outputer\+::\+Set\+Data\+Set (
 \begin{DoxyParamCaption}
-\item[{vector$<$ vector$<$ double $>$ $>$ \&}]{data\-Set}
+\item[{vector$<$ vector$<$ double $>$ $>$ \&}]{data\+Set}
 \end{DoxyParamCaption}
 )}}\label{classelps_1_1_lab_outputer_a7b86c7d5a768e78873695c061683f5c8}
 Set the current set of data (useful to recover from a previous dumped state -\/ interrupted simulation). 
 \begin{DoxyParams}{Parameters}
-{\em data\-Set} & The set of data to fill \\
+{\em data\+Set} & The set of data to fill \\
 \hline
 \end{DoxyParams}
-\hypertarget{classelps_1_1_lab_outputer_a07c1f50b2f68e09c785257f59cc02989}{\index{elps\-::\-Lab\-Outputer@{elps\-::\-Lab\-Outputer}!Set\-Filename@{Set\-Filename}}
-\index{Set\-Filename@{Set\-Filename}!elps::LabOutputer@{elps\-::\-Lab\-Outputer}}
-\subsubsection[{Set\-Filename}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Outputer\-::\-Set\-Filename (
+\hypertarget{classelps_1_1_lab_outputer_a07c1f50b2f68e09c785257f59cc02989}{\index{elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}!Set\+Filename@{Set\+Filename}}
+\index{Set\+Filename@{Set\+Filename}!elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}}
+\subsubsection[{Set\+Filename}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Outputer\+::\+Set\+Filename (
 \begin{DoxyParamCaption}
 \item[{const string}]{filename, }
 \item[{bool}]{erase}
@@ -243,9 +243,9 @@ Set the file name associated to this outputer (not required if we work only on s
 {\em erase} & If set to True, the given will be erased (if it already exists) \\
 \hline
 \end{DoxyParams}
-\hypertarget{classelps_1_1_lab_outputer_a03a665502df3322215595a35e624cb85}{\index{elps\-::\-Lab\-Outputer@{elps\-::\-Lab\-Outputer}!Set\-Footer@{Set\-Footer}}
-\index{Set\-Footer@{Set\-Footer}!elps::LabOutputer@{elps\-::\-Lab\-Outputer}}
-\subsubsection[{Set\-Footer}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool elps\-::\-Lab\-Outputer\-::\-Set\-Footer (
+\hypertarget{classelps_1_1_lab_outputer_a03a665502df3322215595a35e624cb85}{\index{elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}!Set\+Footer@{Set\+Footer}}
+\index{Set\+Footer@{Set\+Footer}!elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}}
+\subsubsection[{Set\+Footer}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool elps\+::\+Lab\+Outputer\+::\+Set\+Footer (
 \begin{DoxyParamCaption}
 \item[{string}]{footer}
 \end{DoxyParamCaption}
@@ -260,18 +260,18 @@ Hook designed to be overridden. Write the final footer text (Ex. The simulation 
 \end{DoxyReturn}
 
 
-Implemented in \hyperlink{classelps_1_1_lab_outputer_line_ad3d8b9743e9b4a9fe1cbd32b9851bea9}{elps\-::\-Lab\-Outputer\-Line}.
+Implemented in \hyperlink{classelps_1_1_lab_outputer_line_ad3d8b9743e9b4a9fe1cbd32b9851bea9}{elps\+::\+Lab\+Outputer\+Line}.
 
-\hypertarget{classelps_1_1_lab_outputer_a3fce40affff7539f6d59768830fd4e03}{\index{elps\-::\-Lab\-Outputer@{elps\-::\-Lab\-Outputer}!Set\-Header@{Set\-Header}}
-\index{Set\-Header@{Set\-Header}!elps::LabOutputer@{elps\-::\-Lab\-Outputer}}
-\subsubsection[{Set\-Header}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool elps\-::\-Lab\-Outputer\-::\-Set\-Header (
+\hypertarget{classelps_1_1_lab_outputer_a3fce40affff7539f6d59768830fd4e03}{\index{elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}!Set\+Header@{Set\+Header}}
+\index{Set\+Header@{Set\+Header}!elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}}
+\subsubsection[{Set\+Header}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool elps\+::\+Lab\+Outputer\+::\+Set\+Header (
 \begin{DoxyParamCaption}
-\item[{vector$<$ string $>$ \&}]{header\-Cols}
+\item[{vector$<$ string $>$ \&}]{header\+Cols}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [pure virtual]}}}\label{classelps_1_1_lab_outputer_a3fce40affff7539f6d59768830fd4e03}
 Hook designed to be overridden. Set the header text of the output (columns/fields names). 
 \begin{DoxyParams}{Parameters}
-{\em header\-Cols} & Ordered list of columns names \\
+{\em header\+Cols} & Ordered list of columns names \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
@@ -279,42 +279,42 @@ Hook designed to be overridden. Set the header text of the output (columns/field
 \end{DoxyReturn}
 
 
-Implemented in \hyperlink{classelps_1_1_lab_outputer_line_aeeb83126f30d8dfaa5fae15b022ebcbb}{elps\-::\-Lab\-Outputer\-Line}.
+Implemented in \hyperlink{classelps_1_1_lab_outputer_line_aeeb83126f30d8dfaa5fae15b022ebcbb}{elps\+::\+Lab\+Outputer\+Line}.
 
-\hypertarget{classelps_1_1_lab_outputer_a6af708654be42ff33dcc71816656ad9f}{\index{elps\-::\-Lab\-Outputer@{elps\-::\-Lab\-Outputer}!Set\-Ouput\-Mode@{Set\-Ouput\-Mode}}
-\index{Set\-Ouput\-Mode@{Set\-Ouput\-Mode}!elps::LabOutputer@{elps\-::\-Lab\-Outputer}}
-\subsubsection[{Set\-Ouput\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Outputer\-::\-Set\-Ouput\-Mode (
+\hypertarget{classelps_1_1_lab_outputer_a6af708654be42ff33dcc71816656ad9f}{\index{elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}!Set\+Ouput\+Mode@{Set\+Ouput\+Mode}}
+\index{Set\+Ouput\+Mode@{Set\+Ouput\+Mode}!elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}}
+\subsubsection[{Set\+Ouput\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Outputer\+::\+Set\+Ouput\+Mode (
 \begin{DoxyParamCaption}
-\item[{{\bf t\-\_\-output}}]{mode}
+\item[{{\bf t\+\_\+output}}]{mode}
 \end{DoxyParamCaption}
 )}}\label{classelps_1_1_lab_outputer_a6af708654be42ff33dcc71816656ad9f}
-Set the mode of output (See \hyperlink{classelps_1_1_lab_outputer_ad470fb25f86cffd24bc24c56414d5be5}{Lab\-Outputer\-::t\-\_\-output}) 
+Set the mode of output (See \hyperlink{classelps_1_1_lab_outputer_ad470fb25f86cffd24bc24c56414d5be5}{Lab\+Outputer\+::t\+\_\+output}) 
 \begin{DoxyParams}{Parameters}
 {\em mode} & Can be file, std or both \\
 \hline
 \end{DoxyParams}
-\hypertarget{classelps_1_1_lab_outputer_a670b381b94701a2d60b3efc710465a8a}{\index{elps\-::\-Lab\-Outputer@{elps\-::\-Lab\-Outputer}!Set\-Ouput\-Mode@{Set\-Ouput\-Mode}}
-\index{Set\-Ouput\-Mode@{Set\-Ouput\-Mode}!elps::LabOutputer@{elps\-::\-Lab\-Outputer}}
-\subsubsection[{Set\-Ouput\-Mode}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Outputer\-::\-Set\-Ouput\-Mode (
+\hypertarget{classelps_1_1_lab_outputer_a670b381b94701a2d60b3efc710465a8a}{\index{elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}!Set\+Ouput\+Mode@{Set\+Ouput\+Mode}}
+\index{Set\+Ouput\+Mode@{Set\+Ouput\+Mode}!elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}}
+\subsubsection[{Set\+Ouput\+Mode}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Outputer\+::\+Set\+Ouput\+Mode (
 \begin{DoxyParamCaption}
 \item[{int}]{mode}
 \end{DoxyParamCaption}
 )}}\label{classelps_1_1_lab_outputer_a670b381b94701a2d60b3efc710465a8a}
-Cython version (uses int instead of \hyperlink{classelps_1_1_lab_outputer_ad470fb25f86cffd24bc24c56414d5be5}{Lab\-Outputer\-::t\-\_\-output}). \hypertarget{classelps_1_1_lab_outputer_a44b5ef030d5099fb22e4fc92d4bf9e02}{\index{elps\-::\-Lab\-Outputer@{elps\-::\-Lab\-Outputer}!Set\-Separator@{Set\-Separator}}
-\index{Set\-Separator@{Set\-Separator}!elps::LabOutputer@{elps\-::\-Lab\-Outputer}}
-\subsubsection[{Set\-Separator}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Outputer\-::\-Set\-Separator (
+Cython version (uses int instead of \hyperlink{classelps_1_1_lab_outputer_ad470fb25f86cffd24bc24c56414d5be5}{Lab\+Outputer\+::t\+\_\+output}). \hypertarget{classelps_1_1_lab_outputer_a44b5ef030d5099fb22e4fc92d4bf9e02}{\index{elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}!Set\+Separator@{Set\+Separator}}
+\index{Set\+Separator@{Set\+Separator}!elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}}
+\subsubsection[{Set\+Separator}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Outputer\+::\+Set\+Separator (
 \begin{DoxyParamCaption}
 \item[{string}]{sep}
 \end{DoxyParamCaption}
 )}}\label{classelps_1_1_lab_outputer_a44b5ef030d5099fb22e4fc92d4bf9e02}
-Separator being used between written values/data (';', T\-A\-B, or else...). 
+Separator being used between written values/data (';', T\+A\+B, or else...). 
 \begin{DoxyParams}{Parameters}
 {\em sep} & Can be one or more characters \\
 \hline
 \end{DoxyParams}
-\hypertarget{classelps_1_1_lab_outputer_a7b9213f0a5bf47ecdf4b87c4ad7757b4}{\index{elps\-::\-Lab\-Outputer@{elps\-::\-Lab\-Outputer}!Un\-Binarize@{Un\-Binarize}}
-\index{Un\-Binarize@{Un\-Binarize}!elps::LabOutputer@{elps\-::\-Lab\-Outputer}}
-\subsubsection[{Un\-Binarize}]{\setlength{\rightskip}{0pt plus 5cm}void elps\-::\-Lab\-Outputer\-::\-Un\-Binarize (
+\hypertarget{classelps_1_1_lab_outputer_a7b9213f0a5bf47ecdf4b87c4ad7757b4}{\index{elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}!Un\+Binarize@{Un\+Binarize}}
+\index{Un\+Binarize@{Un\+Binarize}!elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}}
+\subsubsection[{Un\+Binarize}]{\setlength{\rightskip}{0pt plus 5cm}void elps\+::\+Lab\+Outputer\+::\+Un\+Binarize (
 \begin{DoxyParamCaption}
 \item[{ifstream $\ast$}]{istream}
 \end{DoxyParamCaption}
@@ -326,21 +326,21 @@ Restore the output file, restarting writing from the last recovery point/tag -\/
 \end{DoxyParams}
 
 
-Reimplemented from \hyperlink{classelps_1_1_lab_i_binarizable_a381af24c243c967b491101b7dbecb252}{elps\-::\-Lab\-I\-Binarizable}.
+Reimplemented from \hyperlink{classelps_1_1_lab_i_binarizable_a381af24c243c967b491101b7dbecb252}{elps\+::\+Lab\+I\+Binarizable}.
 
-\hypertarget{classelps_1_1_lab_outputer_a53cc31c61d5fe48be47e3eaa9ee505cf}{\index{elps\-::\-Lab\-Outputer@{elps\-::\-Lab\-Outputer}!Write\-Data@{Write\-Data}}
-\index{Write\-Data@{Write\-Data}!elps::LabOutputer@{elps\-::\-Lab\-Outputer}}
-\subsubsection[{Write\-Data}]{\setlength{\rightskip}{0pt plus 5cm}bool elps\-::\-Lab\-Outputer\-::\-Write\-Data (
+\hypertarget{classelps_1_1_lab_outputer_a53cc31c61d5fe48be47e3eaa9ee505cf}{\index{elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}!Write\+Data@{Write\+Data}}
+\index{Write\+Data@{Write\+Data}!elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}}
+\subsubsection[{Write\+Data}]{\setlength{\rightskip}{0pt plus 5cm}bool elps\+::\+Lab\+Outputer\+::\+Write\+Data (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
 )\hspace{0.3cm}{\ttfamily [virtual]}}}\label{classelps_1_1_lab_outputer_a53cc31c61d5fe48be47e3eaa9ee505cf}
-Write the current data buffer to file (Write current dataset as text using the separator -\/ \hyperlink{classelps_1_1_lab_outputer_a44b5ef030d5099fb22e4fc92d4bf9e02}{Set\-Separator()}). \begin{DoxyReturn}{Returns}
+Write the current data buffer to file (Write current dataset as text using the separator -\/ \hyperlink{classelps_1_1_lab_outputer_a44b5ef030d5099fb22e4fc92d4bf9e02}{Set\+Separator()}). \begin{DoxyReturn}{Returns}
 
 \end{DoxyReturn}
-\hypertarget{classelps_1_1_lab_outputer_ad1ebbfd4fe1c0eb996b013dd8ab5f83a}{\index{elps\-::\-Lab\-Outputer@{elps\-::\-Lab\-Outputer}!Write\-Histogram@{Write\-Histogram}}
-\index{Write\-Histogram@{Write\-Histogram}!elps::LabOutputer@{elps\-::\-Lab\-Outputer}}
-\subsubsection[{Write\-Histogram}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool elps\-::\-Lab\-Outputer\-::\-Write\-Histogram (
+\hypertarget{classelps_1_1_lab_outputer_ad1ebbfd4fe1c0eb996b013dd8ab5f83a}{\index{elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}!Write\+Histogram@{Write\+Histogram}}
+\index{Write\+Histogram@{Write\+Histogram}!elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}}
+\subsubsection[{Write\+Histogram}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool elps\+::\+Lab\+Outputer\+::\+Write\+Histogram (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
@@ -350,11 +350,11 @@ Hook designed to be overridden. Write some user defined histogram (Build histogr
 \end{DoxyReturn}
 
 
-Implemented in \hyperlink{classelps_1_1_lab_outputer_line_aa9f31a33f40242b7c7be3fcd01f6443e}{elps\-::\-Lab\-Outputer\-Line}.
+Implemented in \hyperlink{classelps_1_1_lab_outputer_line_aa9f31a33f40242b7c7be3fcd01f6443e}{elps\+::\+Lab\+Outputer\+Line}.
 
-\hypertarget{classelps_1_1_lab_outputer_a15d6faa05e150c15c51da1a05f1f0c4d}{\index{elps\-::\-Lab\-Outputer@{elps\-::\-Lab\-Outputer}!Write\-Stats@{Write\-Stats}}
-\index{Write\-Stats@{Write\-Stats}!elps::LabOutputer@{elps\-::\-Lab\-Outputer}}
-\subsubsection[{Write\-Stats}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool elps\-::\-Lab\-Outputer\-::\-Write\-Stats (
+\hypertarget{classelps_1_1_lab_outputer_a15d6faa05e150c15c51da1a05f1f0c4d}{\index{elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}!Write\+Stats@{Write\+Stats}}
+\index{Write\+Stats@{Write\+Stats}!elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}}
+\subsubsection[{Write\+Stats}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool elps\+::\+Lab\+Outputer\+::\+Write\+Stats (
 \begin{DoxyParamCaption}
 {}
 \end{DoxyParamCaption}
@@ -364,15 +364,15 @@ Hook designed to be overridden. Write some user defined statistics (Make stats f
 \end{DoxyReturn}
 
 
-Implemented in \hyperlink{classelps_1_1_lab_outputer_line_ac86ec53024932fee8e7b5bf2e65485d0}{elps\-::\-Lab\-Outputer\-Line}.
+Implemented in \hyperlink{classelps_1_1_lab_outputer_line_ac86ec53024932fee8e7b5bf2e65485d0}{elps\+::\+Lab\+Outputer\+Line}.
 
 
 
 \subsection{Member Data Documentation}
-\hypertarget{classelps_1_1_lab_outputer_a107166b500ff05595a207c23986249bf}{\index{elps\-::\-Lab\-Outputer@{elps\-::\-Lab\-Outputer}!T\-A\-G\-\_\-\-B\-E\-G\-I\-N@{T\-A\-G\-\_\-\-B\-E\-G\-I\-N}}
-\index{T\-A\-G\-\_\-\-B\-E\-G\-I\-N@{T\-A\-G\-\_\-\-B\-E\-G\-I\-N}!elps::LabOutputer@{elps\-::\-Lab\-Outputer}}
-\subsubsection[{T\-A\-G\-\_\-\-B\-E\-G\-I\-N}]{\setlength{\rightskip}{0pt plus 5cm}const string elps\-::\-Lab\-Outputer\-::\-T\-A\-G\-\_\-\-B\-E\-G\-I\-N = \char`\"{}$<$R\-T$>$\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{classelps_1_1_lab_outputer_a107166b500ff05595a207c23986249bf}
-Recovery tag opening tag \hypertarget{classelps_1_1_lab_outputer_abf6d3e96248aa72b662627b8bc1b7c91}{\index{elps\-::\-Lab\-Outputer@{elps\-::\-Lab\-Outputer}!T\-A\-G\-\_\-\-E\-N\-D@{T\-A\-G\-\_\-\-E\-N\-D}}
-\index{T\-A\-G\-\_\-\-E\-N\-D@{T\-A\-G\-\_\-\-E\-N\-D}!elps::LabOutputer@{elps\-::\-Lab\-Outputer}}
-\subsubsection[{T\-A\-G\-\_\-\-E\-N\-D}]{\setlength{\rightskip}{0pt plus 5cm}const string elps\-::\-Lab\-Outputer\-::\-T\-A\-G\-\_\-\-E\-N\-D = \char`\"{}$<$/R\-T$>$\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{classelps_1_1_lab_outputer_abf6d3e96248aa72b662627b8bc1b7c91}
+\hypertarget{classelps_1_1_lab_outputer_a107166b500ff05595a207c23986249bf}{\index{elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}!T\+A\+G\+\_\+\+B\+E\+G\+I\+N@{T\+A\+G\+\_\+\+B\+E\+G\+I\+N}}
+\index{T\+A\+G\+\_\+\+B\+E\+G\+I\+N@{T\+A\+G\+\_\+\+B\+E\+G\+I\+N}!elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}}
+\subsubsection[{T\+A\+G\+\_\+\+B\+E\+G\+I\+N}]{\setlength{\rightskip}{0pt plus 5cm}const string elps\+::\+Lab\+Outputer\+::\+T\+A\+G\+\_\+\+B\+E\+G\+I\+N = \char`\"{}$<$R\+T$>$\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{classelps_1_1_lab_outputer_a107166b500ff05595a207c23986249bf}
+Recovery tag opening tag \hypertarget{classelps_1_1_lab_outputer_abf6d3e96248aa72b662627b8bc1b7c91}{\index{elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}!T\+A\+G\+\_\+\+E\+N\+D@{T\+A\+G\+\_\+\+E\+N\+D}}
+\index{T\+A\+G\+\_\+\+E\+N\+D@{T\+A\+G\+\_\+\+E\+N\+D}!elps\+::\+Lab\+Outputer@{elps\+::\+Lab\+Outputer}}
+\subsubsection[{T\+A\+G\+\_\+\+E\+N\+D}]{\setlength{\rightskip}{0pt plus 5cm}const string elps\+::\+Lab\+Outputer\+::\+T\+A\+G\+\_\+\+E\+N\+D = \char`\"{}$<$/R\+T$>$\char`\"{}\hspace{0.3cm}{\ttfamily [static]}}}\label{classelps_1_1_lab_outputer_abf6d3e96248aa72b662627b8bc1b7c91}
 Recovery tag closing tag 
