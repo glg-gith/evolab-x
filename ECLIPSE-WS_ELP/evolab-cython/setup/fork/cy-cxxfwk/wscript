@@ -1,0 +1,48 @@
+#
+
+top = '.'
+out = '__build__'
+
+def options(ctx):
+    ctx.load('compiler_c')
+    ctx.load('compiler_cxx')
+    #ctx.load('python')
+    ctx.load('cython', tooldir='.')
+
+def configure(ctx):
+
+    ctx.find_program('python2', var='PYTHON')
+    ctx.load('compiler_c')
+    ctx.load('compiler_cxx')
+
+    ctx.find_program('python2', var='PYTHON')
+    ctx.load('python')
+    ctx.check_python_headers()
+
+    ctx.load('cython', tooldir='.')
+    #ctx.env['CYTHONFLAGS'] = '--cplus'
+    ctx.env.append_unique('CFLAGS', ['-fPIC', '-g'])
+    ctx.env.append_unique('CXXFLAGS', ['-fPIC', '-g'])
+    
+def build(ctx):
+
+    ctx(features='cxx cshlib pyembed',
+        source  ='lib/lib.cxx',
+        name    = 'fwk',
+        target  ='fwk',
+        includes='cy')
+
+    ctx(features='cython cxx cshlib pyext',
+        name    ='cyfwk',
+        source  ='cy/cyfwk.pyx',
+        target  = 'cyfwk',
+        use ='fwk',
+        includes='lib',
+        )
+    
+    ctx(features='cxx cxxprogram pyembed',
+        source  ='app/app.cxx',
+        target  ='test-app',
+        includes='lib cy',
+        use ='fwk')
+    

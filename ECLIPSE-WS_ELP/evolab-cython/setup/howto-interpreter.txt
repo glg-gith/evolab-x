@@ -1,0 +1,16 @@
+To get auto-completion work fine using custom python extensions
+(like the ones created with Cython) :
+
+Goto Window > Preferences > Python - Interpreter 
+
+Then :
+
+1] Add the "myext.so" parent directory to the "Libraries" tab
+2] Add the "myext" string to the "Forced Buildins" tab
+3] Add the dependencies for "myext.so" to the Environment tab 
+	(by adding env var LD_LIBRARY_PATH=$LD_LIBRARY_PATH:myext_dep_parent_dir/)
+4] Press "Apply", after having checked the target Interpreter
+5] Restart Eclipse
+6] Redo 4] => Re-open Window > Preferences > Python - Interpreter and press "Apply"
+	each time the extension has been modified
+

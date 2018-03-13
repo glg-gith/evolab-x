@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ 
+<Root>
+	<Constants>
+		<Const name="death-rate" type="double" value="0.01" value2="0.5" />
+		<Const name="birth-rate" type="double" value="0.01" />
+		<Const name="mut-rate" type="double" value="0.01" />
+		<Const name="mov-rate" type="double" value="0.01" />
+		<Const name="x1-trait" type="double" value="0.01" />
+		<Const name="x2-trait" type="double" value="0.02" />
+		<Const name="L-rate" type="double" value="0.01" />
+		
+		<Const name="run-id" type="string" value="run-0" />
+		<Const name="out-prefix" type="string" value="bdmLsim" />
+		<Const name="nb-rep" type="int" value="1" />
+		
+		<Const name="dump-step" type="double" value="1.0" />
+		<Const name="do-dump" type="bool" value="False" />
+		<Const name="recovery" type="bool" value="False" />
+	</Constants>
+</Root>

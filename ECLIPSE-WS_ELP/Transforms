@@ -1,0 +1,7 @@
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/home/gandons/evolab/DEPENDENCIES/
+export LD_LIBRARY_PATH
+cd Release
+find ./ -type f -exec sed -i 's/gcc/icc/' {} \;
+find ./ -type f -exec sed -i 's/g++/icpc/' {} \;
+find ./ -type f | xargs sed -i 's/\/home\/golgauth\/Documents\/02_DEV\/EVOLAB\/ECLIPSE-WS_ELP\//\/home\/gandons\/evolab\//g'
+

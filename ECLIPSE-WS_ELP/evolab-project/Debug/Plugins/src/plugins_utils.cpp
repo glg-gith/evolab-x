@@ -1,0 +1,44 @@
+
+#include <sys/time.h>
+#include <time.h>
+#include <sys/types.h>
+
+#include <stdlib.h>
+#include <stdio.h>
+//#include <blitz/blitz.h>
+//#include <blitz/array.h>
+
+//using namespace blitz;
+using namespace std;
+
+#ifndef _TIME_FEATURES
+
+	#define _TIME_FEATURES
+
+	/*
+	 * Return 1 if the difference is negative, otherwise 0.
+	 */
+	int timeval_subtract(struct timeval *result, struct timeval *t2, struct timeval *t1)
+	{
+		long int diff = (t2->tv_usec + 1000000 * t2->tv_sec) - (t1->tv_usec + 1000000 * t1->tv_sec);
+		result->tv_sec = diff / 1000000;
+		result->tv_usec = diff % 1000000;
+
+		return (diff<0);
+	}
+
+	void timeval_print(struct timeval *tv)
+	{
+		char buffer[30];
+		time_t curtime;
+
+		printf("%ld.%06ld", tv->tv_sec, tv->tv_usec);
+		curtime = tv->tv_sec;
+		strftime(buffer, 30, "%m-%d-%Y  %T", localtime(&curtime));
+		printf(" = %s.%06ld\n", buffer, tv->tv_usec);
+	}
+	
+
+
+#endif
+
