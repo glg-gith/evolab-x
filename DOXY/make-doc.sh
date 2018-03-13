@@ -20,11 +20,20 @@ do
 				exit 0
             ;;
         --elps)
+                if [ -d "./elps/html" ]; then
+                    rm -r "./elps/html"
+                    rm -r "./elps/latex"
+                    #mkdir -p "./elps/html"
+                fi
 				cd ./elps
 				doxygen Doxyfile
 				cd ..
             ;;
         --cyelp)
+                if [ -d "./cyelp/html" ]; then
+                    rm -r "./cyelp/html"
+                    #mkdir -p "./cyelp/html"
+                fi
 				cd ./cyelp
 				sh ./build_doc.sh
 				cd ..
