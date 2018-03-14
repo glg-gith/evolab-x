@@ -42,12 +42,7 @@ src/SimLab/SimCore/LabSimulatorDiffEq.d: \
  ../src/SimLab/SimCore/LabAttributesStack.h ../src/Utils/LabBinaryUtils.h \
  ../src/SimLab/SimCore/LabBindingBase.h \
  ../src/SimLab/SimCore/LabActionStack.h ../src/Utils/LabCallBack2.h \
- ../src/Utils/ALabCallBack.h ../../../DEPENDENCIES/gsl-1.15/gsl/gsl_rng.h \
- ../../../DEPENDENCIES/gsl-1.15/gsl/gsl_types.h \
- ../../../DEPENDENCIES/gsl-1.15/gsl/gsl_errno.h \
- ../../../DEPENDENCIES/gsl-1.15/gsl/gsl_inline.h \
- ../src/Utils/LabRngUtils.h \
- ../../../DEPENDENCIES/gsl-1.15/gsl/gsl_randist.h
+ ../src/Utils/ALabCallBack.h ../src/Utils/LabRngUtils.h
 
 ../src/SimLab/SimCore/LabSimulatorDiffEq.h:
 
@@ -197,14 +192,4 @@ src/SimLab/SimCore/LabSimulatorDiffEq.d: \
 
 ../src/Utils/ALabCallBack.h:
 
-../../../DEPENDENCIES/gsl-1.15/gsl/gsl_rng.h:
-
-../../../DEPENDENCIES/gsl-1.15/gsl/gsl_types.h:
-
-../../../DEPENDENCIES/gsl-1.15/gsl/gsl_errno.h:
-
-../../../DEPENDENCIES/gsl-1.15/gsl/gsl_inline.h:
-
 ../src/Utils/LabRngUtils.h:
-
-../../../DEPENDENCIES/gsl-1.15/gsl/gsl_randist.h:

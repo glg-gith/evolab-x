@@ -45,11 +45,6 @@ src/SimLab/SimCore/LabSimulatorNet.d: \
  ../src/Network/debug.h ../src/SimLab/SimCore/LabUserData.h \
  ../src/SimLab/SimCore/LabSiteSetsManager.h ../src/Utils/LabSet.h \
  ../src/Utils/LabTimeUtils.h ../src/Utils/LabRngUtils.h \
- ../../../DEPENDENCIES/gsl-1.15/gsl/gsl_rng.h \
- ../../../DEPENDENCIES/gsl-1.15/gsl/gsl_types.h \
- ../../../DEPENDENCIES/gsl-1.15/gsl/gsl_errno.h \
- ../../../DEPENDENCIES/gsl-1.15/gsl/gsl_inline.h \
- ../../../DEPENDENCIES/gsl-1.15/gsl/gsl_randist.h \
  ../src/SimLab/SimCore/LabSiteBase.h \
  ../src/SimLab/SimCore/LabStateStack.h \
  ../src/SimLab/SimCore/LabSimulatorBase.h \
@@ -218,16 +213,6 @@ src/SimLab/SimCore/LabSimulatorNet.d: \
 ../src/Utils/LabTimeUtils.h:
 
 ../src/Utils/LabRngUtils.h:
-
-../../../DEPENDENCIES/gsl-1.15/gsl/gsl_rng.h:
-
-../../../DEPENDENCIES/gsl-1.15/gsl/gsl_types.h:
-
-../../../DEPENDENCIES/gsl-1.15/gsl/gsl_errno.h:
-
-../../../DEPENDENCIES/gsl-1.15/gsl/gsl_inline.h:
-
-../../../DEPENDENCIES/gsl-1.15/gsl/gsl_randist.h:
 
 ../src/SimLab/SimCore/LabSiteBase.h:
 

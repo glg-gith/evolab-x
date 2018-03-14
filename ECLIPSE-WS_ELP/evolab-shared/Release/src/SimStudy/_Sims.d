@@ -38,9 +38,6 @@ src/SimStudy/_Sims.d: ../src/SimStudy/_Sims.cpp \
  /usr/include/python2.7/dtoa.h /usr/include/python2.7/pyfpe.h \
  ../src/SimLab/SimCore/LabConsts.h ../src/SimLab/SimCore/LabUserData.h \
  ../src/SimStudy/Intervention.h ../src/SimStudy/DiffEq_Sim.h \
- ../../../DEPENDENCIES/gsl-1.15/gsl/gsl_odeiv.h \
- ../../../DEPENDENCIES/gsl-1.15/gsl/gsl_types.h \
- ../../../DEPENDENCIES/gsl-1.15/gsl/gsl_errno.h \
  ../src/SimStudy/ChainBinomial_Sim.h \
  ../src/SimStudy/Deterministic_Network_SIR_Sim.h \
  ../src/SimStudy/MassAction_Sim.h ../src/SimStudy/Percolation_Sim.h \
@@ -185,12 +182,6 @@ src/SimStudy/_Sims.d: ../src/SimStudy/_Sims.cpp \
 ../src/SimStudy/Intervention.h:
 
 ../src/SimStudy/DiffEq_Sim.h:
-
-../../../DEPENDENCIES/gsl-1.15/gsl/gsl_odeiv.h:
-
-../../../DEPENDENCIES/gsl-1.15/gsl/gsl_types.h:
-
-../../../DEPENDENCIES/gsl-1.15/gsl/gsl_errno.h:
 
 ../src/SimStudy/ChainBinomial_Sim.h:
 

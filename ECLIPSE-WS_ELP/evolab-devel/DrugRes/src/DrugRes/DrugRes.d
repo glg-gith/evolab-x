@@ -1,14 +1,15 @@
-src/Spatial/BdmLsim3.d: ../src/Spatial/BdmLsim3.cpp \
- ../src/Spatial/BdmLsim3.h ../inc/LabSiteEvent.h ../inc/LabSiteBase.h \
+src/DrugRes/DrugRes.d: ../src/DrugRes/DrugRes.cpp \
+ ../src/DrugRes/DrugRes.h ../inc/LabSiteBase.h \
  ../inc/LabAttributesStack.h ../inc/LabConsts.h ../inc/LabIBinarizable.h \
  ../inc/LabBinaryUtils.h ../inc/LabStateStack.h ../inc/LabUserData.h \
  ../inc/LabNetwork.h ../inc/Utility.h ../inc/MersenneTwister.h \
  ../inc/debug.h ../inc/LabSiteSetsManager.h ../inc/LabSet.h \
  ../inc/LabTimeUtils.h ../inc/LabRngUtils.h ../inc/LabSimulatorBase.h \
- ../inc/LabFileUtils.h ../inc/LabBindingBase.h ../inc/LabEventStack.h \
- ../inc/LabCallBack.h ../inc/LabCallBack2.h ../inc/ALabCallBack.h \
- ../inc/LabSimulatorTime.h ../inc/LabActionStack.h ../inc/LabNetBinding.h \
- ../inc/LabNetwork.h ../inc/LabOutputerLine.h ../inc/LabOutputer.h \
+ ../inc/LabFileUtils.h ../inc/LabBindingBase.h \
+ ../inc/LabSimulatorTimeArray.h ../inc/LabSimulatorTime.h \
+ ../inc/LabActionStack.h ../inc/LabCallBack2.h ../inc/ALabCallBack.h \
+ ../inc/LabArrayBinding.h ../inc/LabOutputerLine.h ../inc/LabOutputer.h \
+ ../inc/LabEventStack.h ../inc/LabCallBack.h \
  ../inc/LabSiteSetsCalculator.h ../inc/CmdLine.h ../inc/SwitchArg.h \
  ../inc/Arg.h ../inc/ArgException.h ../inc/Visitor.h \
  ../inc/CmdLineInterface.h ../inc/ArgTraits.h ../inc/StandardTraits.h \
@@ -36,9 +37,7 @@ src/Spatial/BdmLsim3.d: ../src/Spatial/BdmLsim3.cpp \
  /usr/include/libxml2/libxml/xmlmemory.h \
  /usr/include/libxml2/libxml/threads.h ../inc/LabXMLUtils.h
 
-../src/Spatial/BdmLsim3.h:
-
-../inc/LabSiteEvent.h:
+../src/DrugRes/DrugRes.h:
 
 ../inc/LabSiteBase.h:
 
@@ -76,25 +75,25 @@ src/Spatial/BdmLsim3.d: ../src/Spatial/BdmLsim3.cpp \
 
 ../inc/LabBindingBase.h:
 
-../inc/LabEventStack.h:
-
-../inc/LabCallBack.h:
-
-../inc/LabCallBack2.h:
-
-../inc/ALabCallBack.h:
+../inc/LabSimulatorTimeArray.h:
 
 ../inc/LabSimulatorTime.h:
 
 ../inc/LabActionStack.h:
 
-../inc/LabNetBinding.h:
+../inc/LabCallBack2.h:
 
-../inc/LabNetwork.h:
+../inc/ALabCallBack.h:
+
+../inc/LabArrayBinding.h:
 
 ../inc/LabOutputerLine.h:
 
 ../inc/LabOutputer.h:
+
+../inc/LabEventStack.h:
+
+../inc/LabCallBack.h:
 
 ../inc/LabSiteSetsCalculator.h:
 

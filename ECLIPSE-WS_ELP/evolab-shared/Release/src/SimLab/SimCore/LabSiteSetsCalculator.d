@@ -39,11 +39,6 @@ src/SimLab/SimCore/LabSiteSetsCalculator.d: \
  /usr/include/python2.7/pystrtod.h /usr/include/python2.7/pystrcmp.h \
  /usr/include/python2.7/dtoa.h /usr/include/python2.7/pyfpe.h \
  ../src/Utils/LabTimeUtils.h ../src/Utils/LabRngUtils.h \
- ../../../DEPENDENCIES/gsl-1.15/gsl/gsl_rng.h \
- ../../../DEPENDENCIES/gsl-1.15/gsl/gsl_types.h \
- ../../../DEPENDENCIES/gsl-1.15/gsl/gsl_errno.h \
- ../../../DEPENDENCIES/gsl-1.15/gsl/gsl_inline.h \
- ../../../DEPENDENCIES/gsl-1.15/gsl/gsl_randist.h \
  ../src/SimLab/SimCore/LabSiteBase.h \
  ../src/SimLab/SimCore/LabAttributesStack.h \
  ../src/SimLab/SimCore/LabIBinarizable.h ../src/Utils/LabBinaryUtils.h \
@@ -187,16 +182,6 @@ src/SimLab/SimCore/LabSiteSetsCalculator.d: \
 ../src/Utils/LabTimeUtils.h:
 
 ../src/Utils/LabRngUtils.h:
-
-../../../DEPENDENCIES/gsl-1.15/gsl/gsl_rng.h:
-
-../../../DEPENDENCIES/gsl-1.15/gsl/gsl_types.h:
-
-../../../DEPENDENCIES/gsl-1.15/gsl/gsl_errno.h:
-
-../../../DEPENDENCIES/gsl-1.15/gsl/gsl_inline.h:
-
-../../../DEPENDENCIES/gsl-1.15/gsl/gsl_randist.h:
 
 ../src/SimLab/SimCore/LabSiteBase.h:
 

@@ -34,12 +34,7 @@ src/Utils/LabSet.d: ../src/Utils/LabSet.cpp ../src/Utils/LabSet.h \
  /usr/include/python2.7/eval.h /usr/include/python2.7/pyctype.h \
  /usr/include/python2.7/pystrtod.h /usr/include/python2.7/pystrcmp.h \
  /usr/include/python2.7/dtoa.h /usr/include/python2.7/pyfpe.h \
- ../src/Utils/LabTimeUtils.h ../src/Utils/LabRngUtils.h \
- ../../../DEPENDENCIES/gsl-1.15/gsl/gsl_rng.h \
- ../../../DEPENDENCIES/gsl-1.15/gsl/gsl_types.h \
- ../../../DEPENDENCIES/gsl-1.15/gsl/gsl_errno.h \
- ../../../DEPENDENCIES/gsl-1.15/gsl/gsl_inline.h \
- ../../../DEPENDENCIES/gsl-1.15/gsl/gsl_randist.h
+ ../src/Utils/LabTimeUtils.h ../src/Utils/LabRngUtils.h
 
 ../src/Utils/LabSet.h:
 
@@ -170,13 +165,3 @@ src/Utils/LabSet.d: ../src/Utils/LabSet.cpp ../src/Utils/LabSet.h \
 ../src/Utils/LabTimeUtils.h:
 
 ../src/Utils/LabRngUtils.h:
-
-../../../DEPENDENCIES/gsl-1.15/gsl/gsl_rng.h:
-
-../../../DEPENDENCIES/gsl-1.15/gsl/gsl_types.h:
-
-../../../DEPENDENCIES/gsl-1.15/gsl/gsl_errno.h:
-
-../../../DEPENDENCIES/gsl-1.15/gsl/gsl_inline.h:
-
-../../../DEPENDENCIES/gsl-1.15/gsl/gsl_randist.h:
