@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Populations>
+  <Population name="NewPop_0" desc="Describe population..._0">
+    <Attributes/>
+    <States>
+      <State name="NewState_0" desc="Describe state...0">
+        <Param name="Is Default" type="boolean-exclusive" value="0" desc="TODO..."/>
+        <Param name="Next State" type="integer" value="-1" desc="TODO..."/>
+        <Param name="Next State (Timeout)" type="integer" value="-1" desc="TODO..."/>
+        <Param name="Timeout" type="double" value="-1.0" desc="TODO..."/>
+      </State>
+      <State name="NewState_1" desc="Describe state...1">
+        <Param name="Is Default" type="boolean-exclusive" value="0" desc="TODO..."/>
+        <Param name="Next State" type="integer" value="-1" desc="TODO..."/>
+        <Param name="Next State (Timeout)" type="integer" value="-1" desc="TODO..."/>
+        <Param name="Timeout" type="double" value="-1.0" desc="TODO..."/>
+      </State>
+      <State name="NewState_2" desc="Describe state...2">
+        <Param name="Is Default" type="boolean-exclusive" value="1" desc="TODO..."/>
+        <Param name="Next State" type="integer" value="-1" desc="TODO..."/>
+        <Param name="Next State (Timeout)" type="integer" value="-1" desc="TODO..."/>
+        <Param name="Timeout" type="double" value="-1.0" desc="TODO..."/>
+      </State>
+      <State name="NewState_3" desc="Describe state...3">
+        <Param name="Is Default" type="boolean-exclusive" value="0" desc="TODO..."/>
+        <Param name="Next State" type="integer" value="-1" desc="TODO..."/>
+        <Param name="Next State (Timeout)" type="integer" value="-1" desc="TODO..."/>
+        <Param name="Timeout" type="double" value="-1.0" desc="TODO..."/>
+      </State>
+      <State name="NewState_4" desc="Describe state...4">
+        <Param name="Is Default" type="boolean-exclusive" value="0" desc="TODO..."/>
+        <Param name="Next State" type="integer" value="-1" desc="TODO..."/>
+        <Param name="Next State (Timeout)" type="integer" value="-1" desc="TODO..."/>
+        <Param name="Timeout" type="double" value="-1.0" desc="TODO..."/>
+      </State>
+    </States>
+    <Events/>
+  </Population>
+  <Population name="NewPop_1" desc="Describe population..._1">
+    <Attributes/>
+    <States/>
+    <Events/>
+  </Population>
+</Populations>

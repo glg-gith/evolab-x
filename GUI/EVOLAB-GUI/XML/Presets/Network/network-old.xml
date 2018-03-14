@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Network nbnodes="100" defaultdist="0">
+
+	<Distributions>
+
+		<Distribution name="Linear" desc="gdhfdh fghfdj fghjfgjfg !!!!!!!!! !!!!!!! !!!!!!!!!!!! !!!!!!!!!">
+			<Params>
+				<Param name="Fixed Degree" type="integer" value="4" desc="TODO..."/>
+			</Params>
+		</Distribution>
+
+		<Distribution name="Square Lattice" desc="TODO...">
+			<Params>
+				<Param name="R" type="integer" value="10" desc="TODO..."/>
+				<Param name="C" type="integer" value="10" desc="TODO..."/>
+				<Param name="Diagonal" type="boolean" value="0" desc="TODO..."/>
+			</Params>
+		</Distribution>
+
+		<Distribution name="Ring Lattice" desc="TODO...">
+			<Params>
+				<Param name="N" type="integer" value="2" desc="TODO..."/>
+				<Param name="K" type="integer" value="2" desc="TODO..."/>
+			</Params>
+		</Distribution>
+
+		<Distribution name="Poisson" desc="TODO...">
+			<Params>
+				<Param name="Lambda" type="double" value="4.0" desc="TODO..."/>
+			</Params>
+		</Distribution>
+
+		<Distribution name="Power Law" desc="TODO...">
+			<Params>
+				<Param name="Alpha" type="double" value="1.5" desc="TODO..."/>
+				<Param name="Kappa" type="double" value="10.0" desc="TODO..."/>
+			</Params>
+		</Distribution>
+
+		<Distribution name="Exponential" desc="TODO...">
+			<Params>
+				<Param name="Beta" type="double" value="0.3" desc="TODO..."/>
+			</Params>
+		</Distribution>
+
+	</Distributions>
+
+</Network>
+

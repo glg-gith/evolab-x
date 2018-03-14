@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project>
+	<Name value="NewProject"/>
+	<Type value="Py"/>
+	<Populations value="populations.xml"/>
+	<Network value="network.xml"/>
+	<Variables value="variables.xml"/>
+	<LifeCycle value="lifecycle.xml"/>
+	<Outputs value="outputs.xml"/>
+</Project>

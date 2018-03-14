@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Variables type="0" editable="0" url="http://www.gnu.org/software/libc/manual/html_node/Mathematics.html#Mathematics">
+	
+	<Category name="Usual Constants" url="">
+		<Variable name="M_E" desc="e = 2.71828182845904523536">
+			<Formula xml:space="preserve">
+				DOUBLE M_E
+			</Formula>
+		</Variable>
+		<Variable name="M_LOG2E" desc="log2(e) = 1.44269504088896340736">
+			<Formula xml:space="preserve">
+				DOUBLE M_LOG2E
+			</Formula>
+		</Variable>
+		<Variable name="M_LOG10E" desc="log10(e) = 0.434294481903251827651">
+			<Formula xml:space="preserve">
+				DOUBLE M_LOG10E
+			</Formula>
+		</Variable>
+		<Variable name="M_LN2" desc="ln(2) = 0.693147180559945309417">
+			<Formula xml:space="preserve">
+				DOUBLE M_LN2
+			</Formula>
+		</Variable>
+		<Variable name="M_LN10" desc="ln(10) = 2.30258509299404568402">
+			<Formula xml:space="preserve">
+				DOUBLE M_LN10
+			</Formula>
+		</Variable>
+		<Variable name="M_PI" desc="pi = 3.14159265358979323846">
+			<Formula xml:space="preserve">
+				DOUBLE M_PI
+			</Formula>
+		</Variable>
+		<Variable name="M_PI_2" desc="pi/2 = 1.57079632679489661923">
+			<Formula xml:space="preserve">
+				DOUBLE M_PI_2
+			</Formula>
+		</Variable>
+		<Variable name="M_PI_4" desc="pi/4 = 0.785398163397448309616">
+			<Formula xml:space="preserve">
+				DOUBLE M_PI_4
+			</Formula>
+		</Variable>
+		<Variable name="M_1_PI" desc="1/pi = 0.318309886183790671538">
+			<Formula xml:space="preserve">
+				M_1_PI
+			</Formula>
+		</Variable>
+		<Variable name="M_2_PI" desc="2/pi = 0.636619772367581343076">
+			<Formula xml:space="preserve">
+				DOUBLE M_2_PI
+			</Formula>
+		</Variable>
+		<Variable name="M_2_SQRTPI" desc="2/sqrt(pi) = 1.12837916709551257390">
+			<Formula xml:space="preserve">
+				DOUBLE M_2_SQRTPI
+			</Formula>
+		</Variable>
+		<Variable name="M_SQRT2" desc="sqrt(2) = 1.41421356237309504880">
+			<Formula xml:space="preserve">
+				DOUBLE M_SQRT2
+			</Formula>
+		</Variable>
+		<Variable name="M_SQRT1_2" desc="1/sqrt(2) = 0.707106781186547524401">
+			<Formula xml:space="preserve">
+				DOUBLE M_SQRT1_2
+			</Formula>
+		</Variable>
+	</Category>
+
+	<Category name="Trigonometric Functions" url="">
+		<Variable name="cos" desc="Compute cosine">
+			<Return type="double" />
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE cos(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="sin" desc="Compute sine">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE sin(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="tan" desc="Compute tangent">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE tan(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="acos" desc="Compute arc cosine">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE acos(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="asin" desc="Compute arc sine">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE asin(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="atan" desc="Compute arc tangent">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE atan(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="atan2" desc="Compute arc tangent with two parameters">
+			<Param name="y" type="double" value="" desc="TODO..." />
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE atan2(DOUBLE y, DOUBLE x)
+			</Formula>
+		</Variable>
+	</Category>
+
+	<Category name="Hyperbolic Functions" url="">
+		<Variable name="cosh" desc="Compute hyperbolic cosine">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE cosh(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="sinh" desc="Compute hyperbolic sine">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE sinh(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="tanh" desc="Compute hyperbolic tangent">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE tanh(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="acosh" desc="Compute arc hyperbolic cosine">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE acosh(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="asinh" desc="Compute arc hyperbolic sine">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE asinh(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="atanh" desc="Compute arc hyperbolic tangent">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE atanh(DOUBLE x)
+			</Formula>
+		</Variable>
+	</Category>
+
+	<Category name="Exponential / Logarithmic Functions" url="">
+		<Variable name="exp" desc="Compute exponential function">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE exp(DOUBLE x)
+			</Formula>
+		</Variable>
+		<!-- <Variable name="frexp" desc="Get significand and exponent">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Param name="exp" type="double-pointer" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				frexp(x,exp)
+			</Formula>
+		</Variable>
+		<Variable name="ldexp" desc="Generate value from significand and exponent">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Param name="exp" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				ldexp(x,exp)
+			</Formula>
+		</Variable> -->
+		<Variable name="log" desc="Compute natural logarithm">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE log(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="log10" desc="Compute common logarithm">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE log10(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="exp2" desc="Compute binary exponential function">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE exp2(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="expm1" desc="Compute exponential minus one">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE expm1(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="ilogb" desc="Integer binary logarithm">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				INT ilogb(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="log1p" desc="Compute logarithm plus one">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE log1p(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="log2" desc="Compute binary logarithm">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE log2(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="logb" desc="Compute floating-poINT base logarithm">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE logb(DOUBLE x)
+			</Formula>
+		</Variable>
+		<!-- <Variable name="scalbn" desc="Scale significand using floating-poINT base exponent">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Param name="n" type="integer" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				scalbn(x,n)
+			</Formula>
+		</Variable>
+		<Variable name="scalbln" desc="Scale significand using floating-poINT base exponent (long)">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Param name="n" type="long" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				scalbln(x,n)
+			</Formula>
+		</Variable> -->
+	</Category>
+
+	<Category name="Power Functions" url="">
+		<Variable name="pow" desc="Raise to power">
+			<Param name="base" type="double" value="" desc="TODO..." />
+			<Param name="power" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE pow(DOUBLE base, DOUBLE power)
+			</Formula>
+		</Variable>
+		<Variable name="sqrt" desc="Compute square root">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE sqrt(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="cbrt" desc="Compute cubic root">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE cbrt(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="hypot" desc="Compute hypotenuse">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Param name="y" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE hypot(DOUBLE x, DOUBLE y)
+			</Formula>
+		</Variable>
+	</Category>
+
+	<Category name="Error / Gamma Functions" url="">
+		<Variable name="erf" desc="Compute error function: ">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE erf(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="erfc" desc="Compute complementary error function">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE erfc(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="tgamma" desc="Compute gamma function">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE tgamma(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="lgamma" desc="Compute log-gamma function">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE lgamma(DOUBLE x)
+			</Formula>
+		</Variable>
+	</Category>
+
+	<Category name="Rounding / Remainder Functions" url="">
+		<Variable name="ceil" desc="Round up value">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE ceil(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="floor" desc="Round down value">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE floor(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="fmod" desc="Compute remainder of division">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE fmod(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="trunc" desc="Truncate value">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE trunc(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="round" desc="Round to nearest">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE round(DOUBLE x)
+			</Formula>
+		</Variable>
+		<!-- <Variable name="lround" desc="Round to nearest and cast to long integer">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				lround(x)
+			</Formula>
+		</Variable>
+		<Variable name="llround" desc="Round to nearest and cast to long long integer">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				llround(x)
+			</Formula>
+		</Variable> -->
+		<Variable name="rint" desc="Round to integral value">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE rint(DOUBLE x)
+			</Formula>
+		</Variable>
+		<!-- <Variable name="lrint" desc="Round and cast to long integer">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				lrint(x)
+			</Formula>
+		</Variable>
+		<Variable name="llrint" desc="Round and cast to long long integer">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				llrint(x)
+			</Formula>
+		</Variable> -->
+		<Variable name="nearbyint" desc="Round to nearby integral value">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE nearbyint(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="remainder" desc="Compute remainder (IEC 60559)">
+			<Param name="numer" type="double" value="" desc="TODO..." />
+			<Param name="denom" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE remainder(DOUBLE numer, DOUBLE denom)
+			</Formula>
+		</Variable>
+		<!-- <Variable name="remquo" desc="Compute remainder and quotient">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				remquo(x)
+			</Formula>
+		</Variable> -->
+	</Category>
+
+	<Category name="Floating-poINT Manipulation Functions" url="">
+		<Variable name="copysign" desc="Copy sign">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Param name="y" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE copysign(DOUBLE x, DOUBLE y)
+			</Formula>
+		</Variable>
+		<Variable name="nextafter" desc="Next representable value">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Param name="y" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE nextafter(DOUBLE x, DOUBLE y)
+			</Formula>
+		</Variable>
+		<Variable name="nexttoward" desc="Next representable value toward precise value">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Param name="y" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE nexttoward(DOUBLE x,DOUBLE y)
+			</Formula>
+		</Variable>
+	</Category>
+
+	<Category name="Minimum, Maximum, Difference Functions" url="">
+		<Variable name="fdim" desc="Positive difference">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Param name="y" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE fdim(DOUBLE x,DOUBLE y)
+			</Formula>
+		</Variable>
+		<Variable name="fmax" desc="Maximum value">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Param name="y" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE fmax(DOUBLE x,DOUBLE y)
+			</Formula>
+		</Variable>
+		<Variable name="fmin" desc="Minimum value">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Param name="y" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE fmin(DOUBLE x,DOUBLE y)
+			</Formula>
+		</Variable>
+	</Category>
+
+	<Category name="Other Functions" url="">
+		<Variable name="fabs" desc="Compute absolute value">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE fabs(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="abs" desc="Compute absolute value">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE abs(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="fma" desc="Multiply-add">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Param name="y" type="double" value="" desc="TODO..." />
+			<Param name="z" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				DOUBLE fma(DOUBLE x,DOUBLE y,DOUBLE z)
+			</Formula>
+		</Variable>
+	</Category>
+
+	<Category name="Macros / Functions">
+		<Variable name="fpclassify" desc="Classify floating-poINT value">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				INT fpclassify(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="isfinite" desc="Is finite value">
+			<Param name="x" type="double" value="" desc="TODO..." />
+			<Formula xml:space="preserve">
+				BOOL isfinite(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="isinf" type="double" value="" desc="Is infinity">
+			<Param name="x" desc="TODO..." />
+			<Formula xml:space="preserve">
+				BOOL isinf(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="isnan" type="double" value="" desc="Is Not-A-Number">
+			<Param name="x" desc="TODO..." />
+			<Formula xml:space="preserve">
+				BOOL isnan(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="isnormal" type="double" value="" desc="Is normal">
+			<Param name="x" desc="TODO..." />
+			<Formula xml:space="preserve">
+				BOOL isnormal(DOUBLE x)
+			</Formula>
+		</Variable>
+		<Variable name="signbit" type="double" value="" desc="Sign bit">
+			<Param name="x" desc="TODO..." />
+			<Formula xml:space="preserve">
+				BOOL signbit(DOUBLE x)
+			</Formula>
+		</Variable>
+	</Catergory>
+	
+	<Category name="Macro Constants">
+		<!-- <Variable name="math_errhandling" desc="Error handling">
+			<Formula xml:space="preserve">
+				math_errhandling
+			</Formula>
+		</Variable> -->
+		<Variable name="INFINITY" desc="Infinity">
+			<Formula xml:space="preserve">
+				DOUBLE INFINITY
+			</Formula>
+		</Variable>
+		<Variable name="NAN" desc="Not-A-Number">
+			<Formula xml:space="preserve">
+				DOUBLE NAN
+			</Formula>
+		</Variable>
+		<Variable name="HUGE_VAL" desc="Huge value">
+			<Formula xml:space="preserve">
+				DOUBLE HUGE_VAL
+			</Formula>
+		</Variable>
+		<!-- <Variable name="HUGE_VALF" desc="Huge float value">
+			<Formula xml:space="preserve">
+				HUGE_VALF
+			</Formula>
+		</Variable>
+		<Variable name="HUGE_VALL" desc="Huge long DOUBLE value">
+			<Formula xml:space="preserve">
+				HUGE_VALL
+			</Formula>
+		</Variable> -->
+	</Catergory>
+	
+</Variables>

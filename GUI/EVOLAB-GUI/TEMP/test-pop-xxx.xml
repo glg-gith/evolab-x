@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Populations>
+  <Population name="NewPop_0" desc="Describe population..._0">
+    <Attributes>
+      <Attribute name="NewAttr_0" desc="Describe attribute...0">
+        <Param name="Is Site Dependent" type="boolean" value="1" desc="TODO..."/>
+        <Param name="Value" type="double-indexable-0" value="0.0" desc="TODO..."/>
+        <Param name="Number Of Beans" type="integer" value="2" desc="TODO..."/>
+      </Attribute>
+    </Attributes>
+    <States/>
+    <Events/>
+  </Population>
+  <Population name="NewPop_1" desc="Describe population..._1">
+    <Attributes/>
+    <States/>
+    <Events/>
+  </Population>
+</Populations>
