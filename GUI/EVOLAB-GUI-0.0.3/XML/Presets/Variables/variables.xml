@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Variables>
+	<Variable name="NewMacro" desc="Describe variable or function...">
+		<Formula>
+			RETURN(0)
+		</Formula>
+	</Variable>
+</Variables>
+

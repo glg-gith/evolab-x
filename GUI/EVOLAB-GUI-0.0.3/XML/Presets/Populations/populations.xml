@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Populations>
+	<Population name="NewSite" desc="Describe site / population...">
+		<Attributes>
+			<Attribute name="NewAttr" desc="Describe attribute...">
+				<Param name="Is Site Dependent" type="boolean" value="0" desc="TODO..."/>
+				<Param name="Value" type="double-indexable-0" value="0.0" desc="TODO..."/>
+				<Param name="Number Of Beans" type="integer" value="2" desc="TODO..."/>
+			</Attribute>
+		</Attributes>
+		<States>
+			<State name="NewState" desc="Describe state...">
+				<Param name="Is Default" type="boolean-exclusive" value="0" desc="TODO..."/>
+				<Param name="Next State" type="integer" value="-1" desc="TODO..."/>
+				<Param name="Next State (Timeout)" type="integer" value="-1" desc="TODO..."/>
+				<Param name="Timeout" type="double" value="-1.0" desc="TODO..."/>
+			</State>
+		</States>
+		<Events>
+			<Event name="NewEvent" desc="Describe event...">
+				<Param name="Initial Rate" type="double" value="0.0" desc="TODO..."/>
+			</Event>
+		</Events>
+	</Population>
+</Populations>
+
+<!-- "indexed" => double=not-indexable/normal, double-indexable-0:not-indexed, double-indexable-1:indexed -->
+<!-- "exclusive" => boolean=normal, boolean-exclusive:only one item can be the default -->
+

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Variables type="1" editable="0" url="">
+	<Category name="Custom" url="">
+		<Variable name="NewConst" desc="Describe variable or function...">
+			<Formula xml:space="preserve">
+SET_CONST(DOUBLE, NewConst,
+//# BEGIN_EDIT
+	0.0f
+//# END_EDIT
+)
+			</Formula>
+		</Variable>
+		<Variable name="NewFunc" desc="Describe variable or function...">
+			<Formula xml:space="preserve">
+VOID NewFunc()
+BEGIN
+//# BEGIN_EDIT
+	//DOUBLE(ret)
+	//SET(ret, 0.0f)
+	//...
+	//RETURN(ret)
+//# END_EDIT
+END
+			</Formula>
+		</Variable>
+		<Variable name="NewRate" desc="Describe variable or function...">
+			<Formula xml:space="preserve">
+DOUBLE NewRate()
+BEGIN
+DOUBLE(ret)
+//# BEGIN_EDIT
+	//...
+//# END_EDIT
+RETURN(ret)
+END
+			</Formula>
+		</Variable>
+		<Variable name="NewEvent" desc="Describe variable or function...">
+			<Formula xml:space="preserve">
+VOID_ NewEvent()
+BEGIN
+//# BEGIN_EDIT
+	//...
+//# END_EDIT
+RETURN_
+END
+			</Formula>
+		</Variable>
+	</Category>
+</Variables>
+

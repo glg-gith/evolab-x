@@ -1,0 +1,6 @@
+# Custom functions
+
+NB_NEIGH(site_id, level=1) ## Avoiding duplicates !!!
+MEAN(attribute_name)
+NB_SITES()
+

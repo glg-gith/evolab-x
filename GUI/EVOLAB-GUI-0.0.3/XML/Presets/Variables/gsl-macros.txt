@@ -1,0 +1,11 @@
+#GSL functions
+
+RAND()
+RAND_INT(int max)
+#RAND_INT_MULTINOMIAL(double max_cumsum, vector<double>& p_nomes)
+RAND_INT_POISSON(double mu)
+
+
+#GSL constants
+
+
