@@ -3,8 +3,6 @@ STRUCTURE
 
 * evolab-project
 * evolab-shared
-* evolab-gui
-* .metadata
 * evolab-cython
 * evolab-devel
 * TestSets
@@ -27,14 +25,19 @@ COMPILATION
 # To compile the shared library without Python dependencies :
 
 	* Open "ECLIPSE-WS_ELP/evolab-shared/src/SimLab/SimCore/LabConsts.h" and
-		uncomment "//#define NOPYTHON"
+		uncomment "*//*#define NOPYTHON"
 	* Open "ECLIPSE-WS_ELP/evolab-shared/Release/objects.mk" and
 		remove "-lpython2.7"
 	* Clean and recompile
 
 # To compile Cython extension :
 
-	cd ECLIPSE-WS_ELP/evolab-cython/setup
-	./setup.sh
+    * Make sure flag `NOPYTHON` is activated:
+        Open "ECLIPSE-WS_ELP/evolab-cython/inc/LabConsts.h" and
+            comment "*//*#define NOPYTHON"
+        
+    * Run setup:
+        cd ECLIPSE-WS_ELP/evolab-cython/setup
+        ./setup.sh
 
 
