@@ -12780,3 +12780,80 @@ Critical: New formula: DOUBLE NewRate(BOOL param1, BOOL param2, INT param3)
 Critical: gteryry
 Critical: fgdfgd
 
+Info: The current working directory is: /media/golgauth/DATA-MINT/EVOLAB/GIT-REPO/evolab-x/GUI/EVOLAB-GUI/EVOLAB-QT
+Info: on_tabWidget_currentChanged(): 0
+Info:        >>>> Previous index: 32654
+Info: Fixed Degree | integer | 4 | TODO...
+Info: R | integer | 10 | TODO...
+Info: C | integer | 10 | TODO...
+Info: Diagonal | boolean | 0 | TODO...
+Info: N | integer | 2 | TODO...
+Info: K | integer | 2 | TODO...
+Info: Lambda | double | 4.0 | TODO...
+Info: Alpha | double | 1.5 | TODO...
+Info: Kappa | double | 10.0 | TODO...
+Info: Beta | double | 0.3 | TODO...
+Info: Fixed Degree | integer | 4 | TODO...
+Info: R | integer | 10 | TODO...
+Info: C | integer | 10 | TODO...
+Info: Diagonal | boolean | 0 | TODO...
+Info: N | integer | 2 | TODO...
+Info: K | integer | 2 | TODO...
+Info: Lambda | double | 4.0 | TODO...
+Info: Alpha | double | 1.5 | TODO...
+Info: Kappa | double | 10.0 | TODO...
+Info: Beta | double | 0.3 | TODO...
+Info: Undo1()
+Info: ReplaceAll = Number_Of_Beans
+Info: ReplaceAll = ghgghgjghgugtghgty
+Error: Try init XMLUtils...
+Error: Start loading params from file: ../XML/Presets/Network/network.xml
+Error: Start loading params from file: ../XML/Presets/Network/network.xml
+Error: Update NetworkDist: 0
+Error: > XML Cell: Attributes
+Error: >> XML Item: Attribute
+Error: >>> XML Param: Param
+Error: >>> XML Param: Param
+Error: >>> XML Param: Param
+Error: > XML Cell: States
+Error: >> XML Item: State
+Error: >>> XML Param: Param
+Error: >>> XML Param: Param
+Error: >>> XML Param: Param
+Error: >>> XML Param: Param
+Error: > XML Cell: Events
+Error: >> XML Item: Event
+Error: >>> XML Param: Param
+Error: Compare pops: 0
+Critical: cursorPositionChanged()
+Critical: 2e-06
+Critical: >> A: Found SYMBOL _DEF_FUNC: DEF_FUNC
+Critical: Macro name: DEF_FUNC
+Critical: Symbol name: DEF_FUNC
+Critical: Symbol name 2: DEF_FUNC
+Critical: NO ERROR !!!!!!!!!!!! => Return is: 0
+Critical: >> B: Found SYMBOL _DEF_FUNC dlsym: Sprotch !!
+Critical: Macro name: myVar_DEF_FUNC
+Critical: Symbol name: myVar_DEF_FUNC
+Critical: Symbol name 2: myVar_DEF_FUNC
+Critical: Error: ../build-EVOLAB-QT-Desktop-Release/EVOLAB-QT: undefined symbol: DEF_FUNC
+Critical: >> C: Found SYMBOL _DEF_FUNC dlsym: Sprotch !!
+Critical: Macro name: _GLOBAL__sub_I_myVar_DEF_FUNC
+Critical: Symbol name: _GLOBAL__sub_I_myVar_DEF_FUNC
+Critical: Symbol name 2: _GLOBAL__sub_I_myVar_DEF_FUNC
+Critical: NO ERROR !!!!!!!!!!!! => Return is: 0
+Critical: >> D: Found SYMBOL _DEF_FUNC dlsym: Sprotch !!
+Critical: Signature: 'DEF_CONST(INT, NewConst,'
+Critical: Signature to inserted text: 'NewConst'
+Critical: Initial signature: DOUBLE NewRate(BOOL param1, DOUBLE param2, INT param3)
+Critical: BOOL param1
+Critical:  DOUBLE param2
+Critical:  INT param3
+Critical: Param before change: DOUBLE param2
+Critical: Param after change: BOOL param2
+Critical: New signature: DOUBLE NewRate(BOOL param1, BOOL param2, INT param3, 
+Critical: New signature: DOUBLE NewRate(BOOL param1, BOOL param2, INT param3)
+Critical: New formula: DOUBLE NewRate(BOOL param1, BOOL param2, INT param3)
+Critical: gteryry
+Critical: fgdfgd
+
