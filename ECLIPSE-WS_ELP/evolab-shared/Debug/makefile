@@ -49,7 +49,7 @@ all: libelp.so
 libelp.so: $(OBJS) $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: Cross G++ Linker'
-	g++ -shared -o "libelp.so" $(OBJS) $(USER_OBJS) $(LIBS)
+	g++ -L../../../DEPENDENCIES -shared -o "libelp.so" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 	$(MAKE) --no-print-directory post-build
