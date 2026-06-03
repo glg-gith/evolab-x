@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'mainwindow.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.3.2)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.7.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,109 +12,112 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'mainwindow.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.3.2. It"
+#error "This file was generated using the moc from 5.7.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
 
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_MainWindow_t {
-    QByteArrayData data[86];
-    char stringdata[2442];
+    QByteArrayData data[88];
+    char stringdata0[2479];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_MainWindow_t, stringdata) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_MainWindow_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
 static const qt_meta_stringdata_MainWindow_t qt_meta_stringdata_MainWindow = {
     {
-QT_MOC_LITERAL(0, 0, 10),
-QT_MOC_LITERAL(1, 11, 13),
-QT_MOC_LITERAL(2, 25, 0),
-QT_MOC_LITERAL(3, 26, 8),
-QT_MOC_LITERAL(4, 35, 1),
-QT_MOC_LITERAL(5, 37, 17),
-QT_MOC_LITERAL(6, 55, 26),
-QT_MOC_LITERAL(7, 82, 39),
-QT_MOC_LITERAL(8, 122, 5),
-QT_MOC_LITERAL(9, 128, 29),
-QT_MOC_LITERAL(10, 158, 5),
-QT_MOC_LITERAL(11, 164, 32),
-QT_MOC_LITERAL(12, 197, 6),
-QT_MOC_LITERAL(13, 204, 29),
-QT_MOC_LITERAL(14, 234, 37),
-QT_MOC_LITERAL(15, 272, 36),
-QT_MOC_LITERAL(16, 309, 39),
-QT_MOC_LITERAL(17, 349, 28),
-QT_MOC_LITERAL(18, 378, 31),
-QT_MOC_LITERAL(19, 410, 43),
-QT_MOC_LITERAL(20, 454, 24),
-QT_MOC_LITERAL(21, 479, 38),
-QT_MOC_LITERAL(22, 518, 3),
-QT_MOC_LITERAL(23, 522, 24),
-QT_MOC_LITERAL(24, 547, 7),
-QT_MOC_LITERAL(25, 555, 28),
-QT_MOC_LITERAL(26, 584, 37),
-QT_MOC_LITERAL(27, 622, 17),
-QT_MOC_LITERAL(28, 640, 7),
-QT_MOC_LITERAL(29, 648, 8),
-QT_MOC_LITERAL(30, 657, 31),
-QT_MOC_LITERAL(31, 689, 33),
-QT_MOC_LITERAL(32, 723, 43),
-QT_MOC_LITERAL(33, 767, 21),
-QT_MOC_LITERAL(34, 789, 34),
-QT_MOC_LITERAL(35, 824, 16),
-QT_MOC_LITERAL(36, 841, 4),
-QT_MOC_LITERAL(37, 846, 37),
-QT_MOC_LITERAL(38, 884, 35),
-QT_MOC_LITERAL(39, 920, 37),
-QT_MOC_LITERAL(40, 958, 27),
-QT_MOC_LITERAL(41, 986, 27),
-QT_MOC_LITERAL(42, 1014, 30),
-QT_MOC_LITERAL(43, 1045, 35),
-QT_MOC_LITERAL(44, 1081, 34),
-QT_MOC_LITERAL(45, 1116, 24),
-QT_MOC_LITERAL(46, 1141, 25),
-QT_MOC_LITERAL(47, 1167, 31),
-QT_MOC_LITERAL(48, 1199, 23),
-QT_MOC_LITERAL(49, 1223, 31),
-QT_MOC_LITERAL(50, 1255, 31),
-QT_MOC_LITERAL(51, 1287, 44),
-QT_MOC_LITERAL(52, 1332, 30),
-QT_MOC_LITERAL(53, 1363, 32),
-QT_MOC_LITERAL(54, 1396, 39),
-QT_MOC_LITERAL(55, 1436, 34),
-QT_MOC_LITERAL(56, 1471, 37),
-QT_MOC_LITERAL(57, 1509, 38),
-QT_MOC_LITERAL(58, 1548, 36),
-QT_MOC_LITERAL(59, 1585, 41),
-QT_MOC_LITERAL(60, 1627, 38),
-QT_MOC_LITERAL(61, 1666, 23),
-QT_MOC_LITERAL(62, 1690, 45),
-QT_MOC_LITERAL(63, 1736, 33),
-QT_MOC_LITERAL(64, 1770, 30),
-QT_MOC_LITERAL(65, 1801, 3),
-QT_MOC_LITERAL(66, 1805, 6),
-QT_MOC_LITERAL(67, 1812, 30),
-QT_MOC_LITERAL(68, 1843, 32),
-QT_MOC_LITERAL(69, 1876, 43),
-QT_MOC_LITERAL(70, 1920, 10),
-QT_MOC_LITERAL(71, 1931, 13),
-QT_MOC_LITERAL(72, 1945, 11),
-QT_MOC_LITERAL(73, 1957, 14),
-QT_MOC_LITERAL(74, 1972, 36),
-QT_MOC_LITERAL(75, 2009, 31),
-QT_MOC_LITERAL(76, 2041, 36),
-QT_MOC_LITERAL(77, 2078, 33),
-QT_MOC_LITERAL(78, 2112, 44),
-QT_MOC_LITERAL(79, 2157, 40),
-QT_MOC_LITERAL(80, 2198, 41),
-QT_MOC_LITERAL(81, 2240, 39),
-QT_MOC_LITERAL(82, 2280, 45),
-QT_MOC_LITERAL(83, 2326, 35),
-QT_MOC_LITERAL(84, 2362, 42),
-QT_MOC_LITERAL(85, 2405, 36)
+QT_MOC_LITERAL(0, 0, 10), // "MainWindow"
+QT_MOC_LITERAL(1, 11, 13), // "refreshWidget"
+QT_MOC_LITERAL(2, 25, 0), // ""
+QT_MOC_LITERAL(3, 26, 8), // "QWidget*"
+QT_MOC_LITERAL(4, 35, 1), // "w"
+QT_MOC_LITERAL(5, 37, 17), // "outputTimeoutSlot"
+QT_MOC_LITERAL(6, 55, 26), // "network_param_valueChanged"
+QT_MOC_LITERAL(7, 82, 39), // "spinbox_NetPopsRepartition_va..."
+QT_MOC_LITERAL(8, 122, 5), // "value"
+QT_MOC_LITERAL(9, 128, 29), // "updateCurrentPopCellModelSlot"
+QT_MOC_LITERAL(10, 158, 5), // "index"
+QT_MOC_LITERAL(11, 164, 32), // "PointerLessModels::t_basic_item*"
+QT_MOC_LITERAL(12, 197, 6), // "p_item"
+QT_MOC_LITERAL(13, 204, 29), // "popCellItemParam_valueChanged"
+QT_MOC_LITERAL(14, 234, 37), // "checkBox_PopParamIndexed_valu..."
+QT_MOC_LITERAL(15, 272, 36), // "spinBox_PopParamNbBeans_value..."
+QT_MOC_LITERAL(16, 309, 39), // "checkBox_PopParamIsDefault_va..."
+QT_MOC_LITERAL(17, 349, 28), // "on_toolButton_VarAdd_clicked"
+QT_MOC_LITERAL(18, 378, 31), // "on_toolButton_VarRemove_clicked"
+QT_MOC_LITERAL(19, 410, 43), // "on_comboBox_NetworkDist_curre..."
+QT_MOC_LITERAL(20, 454, 24), // "on_toolButton_15_clicked"
+QT_MOC_LITERAL(21, 479, 38), // "on_spinBox_NetworkNbNodes_val..."
+QT_MOC_LITERAL(22, 518, 3), // "val"
+QT_MOC_LITERAL(23, 522, 24), // "on_toolButton_25_toggled"
+QT_MOC_LITERAL(24, 547, 7), // "checked"
+QT_MOC_LITERAL(25, 555, 28), // "on_toolButton_AddPop_clicked"
+QT_MOC_LITERAL(26, 584, 37), // "on_tableWidget_Pop_currentIte..."
+QT_MOC_LITERAL(27, 622, 17), // "QTableWidgetItem*"
+QT_MOC_LITERAL(28, 640, 7), // "current"
+QT_MOC_LITERAL(29, 648, 8), // "previous"
+QT_MOC_LITERAL(30, 657, 31), // "on_toolButton_RemovePop_clicked"
+QT_MOC_LITERAL(31, 689, 33), // "on_toolButton_Pop_AddItem_cli..."
+QT_MOC_LITERAL(32, 723, 43), // "on_listWidget_ItemList_itemSe..."
+QT_MOC_LITERAL(33, 767, 21), // "on_toolButton_toggled"
+QT_MOC_LITERAL(34, 789, 34), // "on_listWidget_ItemList_itemCh..."
+QT_MOC_LITERAL(35, 824, 16), // "QListWidgetItem*"
+QT_MOC_LITERAL(36, 841, 4), // "item"
+QT_MOC_LITERAL(37, 846, 37), // "on_plainTextEdit_ItemDesc_tex..."
+QT_MOC_LITERAL(38, 884, 35), // "on_toolButton_PopCellItemUp_c..."
+QT_MOC_LITERAL(39, 920, 37), // "on_toolButton_PopCellItemDown..."
+QT_MOC_LITERAL(40, 958, 27), // "on_actionSave_Tab_triggered"
+QT_MOC_LITERAL(41, 986, 27), // "on_actionLoad_Tab_triggered"
+QT_MOC_LITERAL(42, 1014, 30), // "on_actionDefault_Tab_triggered"
+QT_MOC_LITERAL(43, 1045, 35), // "on_actionExtended_Toolbar_tri..."
+QT_MOC_LITERAL(44, 1081, 34), // "on_actionContext_Toolbar_trig..."
+QT_MOC_LITERAL(45, 1116, 24), // "on_actionAbout_triggered"
+QT_MOC_LITERAL(46, 1141, 25), // "on_actionAbout2_triggered"
+QT_MOC_LITERAL(47, 1167, 31), // "on_actionELPS_Version_triggered"
+QT_MOC_LITERAL(48, 1199, 23), // "on_actionQuit_triggered"
+QT_MOC_LITERAL(49, 1223, 31), // "on_actionSave_Project_triggered"
+QT_MOC_LITERAL(50, 1255, 31), // "on_tabWidget_Top_currentChanged"
+QT_MOC_LITERAL(51, 1287, 44), // "on_plainText_Edit_PopDescript..."
+QT_MOC_LITERAL(52, 1332, 30), // "on_toolButton_PopRowUp_clicked"
+QT_MOC_LITERAL(53, 1363, 32), // "on_toolButton_PopRowDown_clicked"
+QT_MOC_LITERAL(54, 1396, 39), // "on_tableWidget_Pop_itemSelect..."
+QT_MOC_LITERAL(55, 1436, 34), // "on_toolButton_DuplicatePop_cl..."
+QT_MOC_LITERAL(56, 1471, 37), // "on_toolButton_CopyPopCellItem..."
+QT_MOC_LITERAL(57, 1509, 38), // "on_toolButton_PastePopCellIte..."
+QT_MOC_LITERAL(58, 1548, 36), // "on_toolButton_CutPopCellItem_..."
+QT_MOC_LITERAL(59, 1585, 41), // "on_toolButton_LockEditPopCell..."
+QT_MOC_LITERAL(60, 1627, 38), // "on_toolButton_NetworkResetDis..."
+QT_MOC_LITERAL(61, 1666, 23), // "on_actionCopy_triggered"
+QT_MOC_LITERAL(62, 1690, 45), // "on_comboBox_NetPopsSpread_cur..."
+QT_MOC_LITERAL(63, 1736, 33), // "on_pushButton_NetGenerate_cli..."
+QT_MOC_LITERAL(64, 1770, 30), // "on_tableWidget_Pop_cellChanged"
+QT_MOC_LITERAL(65, 1801, 3), // "row"
+QT_MOC_LITERAL(66, 1805, 6), // "column"
+QT_MOC_LITERAL(67, 1812, 30), // "on_toolButton_VarRowUp_clicked"
+QT_MOC_LITERAL(68, 1843, 32), // "on_toolButton_VarRowDown_clicked"
+QT_MOC_LITERAL(69, 1876, 43), // "on_tableWidget_Variables_curr..."
+QT_MOC_LITERAL(70, 1920, 10), // "currentRow"
+QT_MOC_LITERAL(71, 1931, 13), // "currentColumn"
+QT_MOC_LITERAL(72, 1945, 11), // "previousRow"
+QT_MOC_LITERAL(73, 1957, 14), // "previousColumn"
+QT_MOC_LITERAL(74, 1972, 36), // "on_tableWidget_Variables_cell..."
+QT_MOC_LITERAL(75, 2009, 31), // "on_textEdit_Formula_textChanged"
+QT_MOC_LITERAL(76, 2041, 36), // "on_plainTextEdit_VarDesc_text..."
+QT_MOC_LITERAL(77, 2078, 33), // "on_toolButton_StopProcess_cli..."
+QT_MOC_LITERAL(78, 2112, 44), // "on_comboBox_CustomMacros_curr..."
+QT_MOC_LITERAL(79, 2157, 40), // "on_toolButton_CustomMacroDisc..."
+QT_MOC_LITERAL(80, 2198, 41), // "on_textEdit_Formula_cursorPos..."
+QT_MOC_LITERAL(81, 2240, 39), // "on_toolButton_CustomMacroInse..."
+QT_MOC_LITERAL(82, 2280, 45), // "on_textEdit_CustomMacro_curso..."
+QT_MOC_LITERAL(83, 2326, 35), // "on_textEdit_CustomMacro_textC..."
+QT_MOC_LITERAL(84, 2362, 42), // "on_toolButton_FormulaInsertKe..."
+QT_MOC_LITERAL(85, 2405, 36), // "on_tableWidget_Variables_cell..."
+QT_MOC_LITERAL(86, 2442, 31), // "on_lineEdit_VarDesc_textChanged"
+QT_MOC_LITERAL(87, 2474, 4) // "arg1"
+
     },
     "MainWindow\0refreshWidget\0\0QWidget*\0w\0"
     "outputTimeoutSlot\0network_param_valueChanged\0"
@@ -183,7 +186,8 @@ QT_MOC_LITERAL(85, 2405, 36)
     "on_textEdit_CustomMacro_cursorPositionChanged\0"
     "on_textEdit_CustomMacro_textChanged\0"
     "on_toolButton_FormulaInsertKeyword_clicked\0"
-    "on_tableWidget_Variables_cellClicked"
+    "on_tableWidget_Variables_cellClicked\0"
+    "on_lineEdit_VarDesc_textChanged\0arg1"
 };
 #undef QT_MOC_LITERAL
 
@@ -193,7 +197,7 @@ static const uint qt_meta_data_MainWindow[] = {
        7,       // revision
        0,       // classname
        0,    0, // classinfo
-      65,   14, // methods
+      66,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -201,71 +205,72 @@ static const uint qt_meta_data_MainWindow[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags
-       1,    1,  339,    2, 0x08 /* Private */,
-       5,    0,  342,    2, 0x08 /* Private */,
-       6,    0,  343,    2, 0x08 /* Private */,
-       7,    1,  344,    2, 0x08 /* Private */,
-       9,    2,  347,    2, 0x08 /* Private */,
-      13,    0,  352,    2, 0x08 /* Private */,
-      14,    0,  353,    2, 0x08 /* Private */,
-      15,    0,  354,    2, 0x08 /* Private */,
-      16,    0,  355,    2, 0x08 /* Private */,
-      17,    0,  356,    2, 0x08 /* Private */,
-      18,    0,  357,    2, 0x08 /* Private */,
-      19,    1,  358,    2, 0x08 /* Private */,
-      20,    0,  361,    2, 0x08 /* Private */,
-      21,    1,  362,    2, 0x08 /* Private */,
-      23,    1,  365,    2, 0x08 /* Private */,
-      25,    0,  368,    2, 0x08 /* Private */,
-      26,    2,  369,    2, 0x08 /* Private */,
-      30,    0,  374,    2, 0x08 /* Private */,
-      31,    0,  375,    2, 0x08 /* Private */,
-      32,    0,  376,    2, 0x08 /* Private */,
-      33,    1,  377,    2, 0x08 /* Private */,
-      34,    1,  380,    2, 0x08 /* Private */,
-      37,    0,  383,    2, 0x08 /* Private */,
-      38,    0,  384,    2, 0x08 /* Private */,
-      39,    0,  385,    2, 0x08 /* Private */,
-      40,    0,  386,    2, 0x08 /* Private */,
-      41,    0,  387,    2, 0x08 /* Private */,
-      42,    0,  388,    2, 0x08 /* Private */,
-      43,    1,  389,    2, 0x08 /* Private */,
-      44,    1,  392,    2, 0x08 /* Private */,
-      45,    0,  395,    2, 0x08 /* Private */,
-      46,    0,  396,    2, 0x08 /* Private */,
-      47,    0,  397,    2, 0x08 /* Private */,
-      48,    0,  398,    2, 0x08 /* Private */,
-      49,    0,  399,    2, 0x08 /* Private */,
-      50,    1,  400,    2, 0x08 /* Private */,
-      51,    0,  403,    2, 0x08 /* Private */,
-      52,    0,  404,    2, 0x08 /* Private */,
-      53,    0,  405,    2, 0x08 /* Private */,
-      54,    0,  406,    2, 0x08 /* Private */,
-      55,    0,  407,    2, 0x08 /* Private */,
-      56,    0,  408,    2, 0x08 /* Private */,
-      57,    0,  409,    2, 0x08 /* Private */,
-      58,    0,  410,    2, 0x08 /* Private */,
-      59,    0,  411,    2, 0x08 /* Private */,
-      60,    0,  412,    2, 0x08 /* Private */,
-      61,    0,  413,    2, 0x08 /* Private */,
-      62,    1,  414,    2, 0x08 /* Private */,
-      63,    0,  417,    2, 0x08 /* Private */,
-      64,    2,  418,    2, 0x08 /* Private */,
-      67,    0,  423,    2, 0x08 /* Private */,
-      68,    0,  424,    2, 0x08 /* Private */,
-      69,    4,  425,    2, 0x08 /* Private */,
-      74,    2,  434,    2, 0x08 /* Private */,
-      75,    0,  439,    2, 0x08 /* Private */,
-      76,    0,  440,    2, 0x08 /* Private */,
-      77,    0,  441,    2, 0x08 /* Private */,
-      78,    1,  442,    2, 0x08 /* Private */,
-      79,    0,  445,    2, 0x08 /* Private */,
-      80,    0,  446,    2, 0x08 /* Private */,
-      81,    0,  447,    2, 0x08 /* Private */,
-      82,    0,  448,    2, 0x08 /* Private */,
-      83,    0,  449,    2, 0x08 /* Private */,
-      84,    0,  450,    2, 0x08 /* Private */,
-      85,    2,  451,    2, 0x08 /* Private */,
+       1,    1,  344,    2, 0x08 /* Private */,
+       5,    0,  347,    2, 0x08 /* Private */,
+       6,    0,  348,    2, 0x08 /* Private */,
+       7,    1,  349,    2, 0x08 /* Private */,
+       9,    2,  352,    2, 0x08 /* Private */,
+      13,    0,  357,    2, 0x08 /* Private */,
+      14,    0,  358,    2, 0x08 /* Private */,
+      15,    0,  359,    2, 0x08 /* Private */,
+      16,    0,  360,    2, 0x08 /* Private */,
+      17,    0,  361,    2, 0x08 /* Private */,
+      18,    0,  362,    2, 0x08 /* Private */,
+      19,    1,  363,    2, 0x08 /* Private */,
+      20,    0,  366,    2, 0x08 /* Private */,
+      21,    1,  367,    2, 0x08 /* Private */,
+      23,    1,  370,    2, 0x08 /* Private */,
+      25,    0,  373,    2, 0x08 /* Private */,
+      26,    2,  374,    2, 0x08 /* Private */,
+      30,    0,  379,    2, 0x08 /* Private */,
+      31,    0,  380,    2, 0x08 /* Private */,
+      32,    0,  381,    2, 0x08 /* Private */,
+      33,    1,  382,    2, 0x08 /* Private */,
+      34,    1,  385,    2, 0x08 /* Private */,
+      37,    0,  388,    2, 0x08 /* Private */,
+      38,    0,  389,    2, 0x08 /* Private */,
+      39,    0,  390,    2, 0x08 /* Private */,
+      40,    0,  391,    2, 0x08 /* Private */,
+      41,    0,  392,    2, 0x08 /* Private */,
+      42,    0,  393,    2, 0x08 /* Private */,
+      43,    1,  394,    2, 0x08 /* Private */,
+      44,    1,  397,    2, 0x08 /* Private */,
+      45,    0,  400,    2, 0x08 /* Private */,
+      46,    0,  401,    2, 0x08 /* Private */,
+      47,    0,  402,    2, 0x08 /* Private */,
+      48,    0,  403,    2, 0x08 /* Private */,
+      49,    0,  404,    2, 0x08 /* Private */,
+      50,    1,  405,    2, 0x08 /* Private */,
+      51,    0,  408,    2, 0x08 /* Private */,
+      52,    0,  409,    2, 0x08 /* Private */,
+      53,    0,  410,    2, 0x08 /* Private */,
+      54,    0,  411,    2, 0x08 /* Private */,
+      55,    0,  412,    2, 0x08 /* Private */,
+      56,    0,  413,    2, 0x08 /* Private */,
+      57,    0,  414,    2, 0x08 /* Private */,
+      58,    0,  415,    2, 0x08 /* Private */,
+      59,    0,  416,    2, 0x08 /* Private */,
+      60,    0,  417,    2, 0x08 /* Private */,
+      61,    0,  418,    2, 0x08 /* Private */,
+      62,    1,  419,    2, 0x08 /* Private */,
+      63,    0,  422,    2, 0x08 /* Private */,
+      64,    2,  423,    2, 0x08 /* Private */,
+      67,    0,  428,    2, 0x08 /* Private */,
+      68,    0,  429,    2, 0x08 /* Private */,
+      69,    4,  430,    2, 0x08 /* Private */,
+      74,    2,  439,    2, 0x08 /* Private */,
+      75,    0,  444,    2, 0x08 /* Private */,
+      76,    0,  445,    2, 0x08 /* Private */,
+      77,    0,  446,    2, 0x08 /* Private */,
+      78,    1,  447,    2, 0x08 /* Private */,
+      79,    0,  450,    2, 0x08 /* Private */,
+      80,    0,  451,    2, 0x08 /* Private */,
+      81,    0,  452,    2, 0x08 /* Private */,
+      82,    0,  453,    2, 0x08 /* Private */,
+      83,    0,  454,    2, 0x08 /* Private */,
+      84,    0,  455,    2, 0x08 /* Private */,
+      85,    2,  456,    2, 0x08 /* Private */,
+      86,    1,  461,    2, 0x08 /* Private */,
 
  // slots: parameters
     QMetaType::Void, 0x80000000 | 3,    4,
@@ -333,6 +338,7 @@ static const uint qt_meta_data_MainWindow[] = {
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void, QMetaType::Int, QMetaType::Int,   65,   66,
+    QMetaType::Void, QMetaType::QString,   87,
 
        0        // eod
 };
@@ -341,6 +347,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
         MainWindow *_t = static_cast<MainWindow *>(_o);
+        Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->refreshWidget((*reinterpret_cast< QWidget*(*)>(_a[1]))); break;
         case 1: _t->outputTimeoutSlot(); break;
@@ -407,6 +414,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 62: _t->on_textEdit_CustomMacro_textChanged(); break;
         case 63: _t->on_toolButton_FormulaInsertKeyword_clicked(); break;
         case 64: _t->on_tableWidget_Variables_cellClicked((*reinterpret_cast< int(*)>(_a[1])),(*reinterpret_cast< int(*)>(_a[2]))); break;
+        case 65: _t->on_lineEdit_VarDesc_textChanged((*reinterpret_cast< const QString(*)>(_a[1]))); break;
         default: ;
         }
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
@@ -432,7 +440,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
 
 const QMetaObject MainWindow::staticMetaObject = {
     { &QMainWindow::staticMetaObject, qt_meta_stringdata_MainWindow.data,
-      qt_meta_data_MainWindow,  qt_static_metacall, 0, 0}
+      qt_meta_data_MainWindow,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
 };
 
 
@@ -443,8 +451,8 @@ const QMetaObject *MainWindow::metaObject() const
 
 void *MainWindow::qt_metacast(const char *_clname)
 {
-    if (!_clname) return 0;
-    if (!strcmp(_clname, qt_meta_stringdata_MainWindow.stringdata))
+    if (!_clname) return Q_NULLPTR;
+    if (!strcmp(_clname, qt_meta_stringdata_MainWindow.stringdata0))
         return static_cast<void*>(const_cast< MainWindow*>(this));
     return QMainWindow::qt_metacast(_clname);
 }
@@ -455,13 +463,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 65)
+        if (_id < 66)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 65;
+        _id -= 66;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 65)
+        if (_id < 66)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 65;
+        _id -= 66;
     }
     return _id;
 }

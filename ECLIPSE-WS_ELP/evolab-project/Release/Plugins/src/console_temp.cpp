@@ -29,6 +29,8 @@
 using namespace std;
 
 
+using namespace elps;
+
 
 class Class_console_temp {
 public:
@@ -41,7 +43,6 @@ void Call() {
 	
 /******************************************************/
 
-cout<<("test !")<<endl;
 /******************************************************/
 
 };

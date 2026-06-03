@@ -1,67 +1,57 @@
-/*
- * LabSiteBase.cpp
- *
- *  Created on: 18 sept. 2012
- *      Author: golgauth
- */
 
 #include "LabSiteBase.h"
+#include "LabSimulatorBase.h"
+#include "LabAttributesStack.h"
+#include "LabStateStack.h"
 
 namespace elps {
 
-
-LabSiteBase::LabSiteBase(LabSimulatorBase *sim) {
+//LabSiteBase();
+//*
+//	 * Basic constructor for use in a NON-SPATIALIZED context.
+//	 * @param sim The Simulator this Site is related to.
+//	 
+LabSiteBase::LabSiteBase(LabSimulatorBase * sim){
 	Init(sim, NULL, false);
 }
 
-LabSiteBase::LabSiteBase(LabSimulatorBase *sim, LabNode *parent_node) {
+//*
+//	 * Basic constructor for use in a SPATIALIZED context.
+//	 * @param sim The Simulator this Site is related to.
+//	 * @param parent_node The network node (LabNode) this Site is attached to.
+//	 
+LabSiteBase::LabSiteBase(LabSimulatorBase * sim, LabNode * parent_node){
 	Init(sim, parent_node, false);
 }
 
-//// Cython !!!
-#ifndef NOPYTHON
-LabSiteBase::LabSiteBase(PyObject *obj, LabSimulatorBase *sim): LabSiteBase(sim) {
+//*
+//	 * Cython usage only : DO NOT USE !
+//	 * @param obj The PyLabSiteBase Python object related to this object
+//	 * @param sim  The LabSimulator* related to this object
+//	 
+LabSiteBase::LabSiteBase(PyObject * obj, LabSimulatorBase * sim): LabSiteBase(sim) {
 	cout << "Create LabSiteBase" << obj << endl;
 	this->CySetPyObj(obj);
 }
 
-LabSiteBase::LabSiteBase(PyObject *obj, LabSimulatorBase *sim, LabNode *parent_node): LabSiteBase(sim, parent_node) {
+//*
+//	 * Cython usage only : DO NOT USE !
+//	 * @param obj The PyLabSiteBase Python object related to this object
+//	 * @param sim  The Simulator this Site is related to.
+//	 * @param parent_node The network node (LabNode) this Site is attached to.
+//	 
+LabSiteBase::LabSiteBase(PyObject * obj, LabSimulatorBase * sim, LabNode * parent_node): LabSiteBase(sim, parent_node) {
 	cout << "Create LabSiteBase" << obj << endl;
 	this->CySetPyObj(obj);
 }
-#endif
-
 
 // PROTECTED !!
-LabSiteBase::LabSiteBase(LabSimulatorBase *sim, LabNode *parent_node, bool set_trackable) {
+
+LabSiteBase::LabSiteBase(LabSimulatorBase * sim, LabNode * parent_node, bool set_trackable){
 	Init(sim, parent_node, set_trackable);
 }
 
-void LabSiteBase::Init(LabSimulatorBase *sim, LabNode *parent_node, bool set_trackable) {
-	simulator = sim;
-	parent = parent_node;
-
-
-
-	indAttributesStack = new LabAttributesStack();
-	siteAttributesStack = new LabAttributesStack();
-
-	CreateStateStack();
-
-	setsManager = SiteSetsMgr::GetInstance();
-
-	//	// Done by the Array/Net-Binding now !!!
-	//	this->id = SetsManager::GetInstance()->GetIndividualsCount();
-	//	SetsManager::GetInstance()->AddSite(this);
-	setTrackable = set_trackable;
-
-#ifndef NOPYTHON
-	this->CySetPyObj(NULL);
-#endif
-}
-
-
-LabSiteBase::~LabSiteBase() {
+LabSiteBase::~LabSiteBase(){
 	// TODO : Implement the possibility of unsubscrtibing a site from LabSiteSetsManager
 	//		  instead of this shity stuff which terminates the program !!
 	//	cerr << "Exception : Deleting a site is currently forbidden." << endl;
@@ -73,27 +63,28 @@ LabSiteBase::~LabSiteBase() {
 //	return attributesStack;
 //}
 
-LabAttributesStack *LabSiteBase::GetIndAttributesStack()
-{
+LabAttributesStack * LabSiteBase::GetIndAttributesStack() {
 	return indAttributesStack;
 }
 
-LabAttributesStack *LabSiteBase::GetSiteAttributesStack()
-{
+//*
+//	 * Get the stack of attributes at the SITE level.
+//	 * @return A pointer to LabAttributesStack of the SITE.
+//	 
+LabAttributesStack * LabSiteBase::GetSiteAttributesStack() {
 	return siteAttributesStack;
 }
 
-void LabSiteBase::PushAttribute(
-		string name,
-		t_deptype dep_type,
-		///int subset_id,
-		double d_value,
-		//int i_value//,
-		//void *o_value = NULL
-		bool indexed,
-		int nb_beans
-)
-{
+// Direct access to LabAttributesStack stuffs
+//*
+//	 * Add a new attribute on top of the specified stack (See LabAttributesStack::PushAttribute()).
+//	 * @param name Name for this attribute (better use a unique name for each one).
+//	 * @param dep_type Dependency type (See LabAttributesStack::t_deptype). Choose attribute stack.
+//	 * @param d_value Value for the attribute. Pass an <b>int</b> for indexed attributes.
+//	 * @param indexed If this attribute is an "INDEXED" one.
+//	 * @param nb_beans Number of distinct values the indexed attribute can take [0..nb_beans].
+//	 
+void LabSiteBase::PushAttribute(string name, LabSiteBase::t_deptype dep_type, double d_value, bool indexed, int nb_beans) {
 
 	int index = round(d_value);
 	bool valid_index = false;
@@ -130,20 +121,20 @@ void LabSiteBase::PushAttribute(
 	}
 }
 
-void LabSiteBase::PushAttribute(
-		string name,
-		int dep_type,
-		double d_value,
-		//int i_value
-		bool indexed,
-		int nb_beans
-)
-{
+//*
+//	 * Another version of PushAttribute() for Cython compatibility.
+//	 * (Uses int instead of t_deptype enum).
+//	 
+void LabSiteBase::PushAttribute(string name, int dep_type, double d_value, bool indexed, int nb_beans) {
 	this->PushAttribute(name, (t_deptype)dep_type, d_value, indexed, nb_beans);//, i_value);
 }
 
-void LabSiteBase::PopAttribute(t_deptype dep_type)
-{
+//*
+//	 * Remove the last pushed attribute from the top of the stack (See LabAttributesStack::PopAttribute()).
+//	 * @param dep_type The dependency of the attribute to be popped.
+//	 
+// TODO : Untested
+void LabSiteBase::PopAttribute(LabSiteBase::t_deptype dep_type) {
 	LabAttributesStack::t_attr *attr;
 	int index;
 	bool valid_index = false;
@@ -165,8 +156,12 @@ void LabSiteBase::PopAttribute(t_deptype dep_type)
 	ss << attr->name << index;
 	if (attr->data.indexed && valid_index) { this->UnSubscribeSet(ss.str()); }
 }
-void LabSiteBase::PopAttribute(int dep_type)
-{
+
+//*
+//	 * Another version of PopAttribute() for Cython compatibility.
+//	 * (Uses int instead of t_deptype enum).
+//	 
+void LabSiteBase::PopAttribute(int dep_type) {
 	this->PopAttribute((t_deptype)dep_type);
 }
 
@@ -175,13 +170,15 @@ void LabSiteBase::PopAttribute(int dep_type)
 //	return this->GetAttributesStack()->GetAttributes();
 //}
 
-vector<LabAttributesStack::t_attr>& LabSiteBase::GetIndAttributes()
-{
+vector<LabAttributesStack::t_attr> & LabSiteBase::GetIndAttributes() {
 	return indAttributesStack->GetAttributes();
 }
 
-vector<LabAttributesStack::t_attr>& LabSiteBase::GetSiteAttributes()
-{
+//*
+//	 * Get the attributes related to the SITE (node) (See LabAttributesStack::GetSiteAttributes()).
+//	 * @return List of attributes.
+//	 
+vector<LabAttributesStack::t_attr> & LabSiteBase::GetSiteAttributes() {
 	return siteAttributesStack->GetAttributes();
 }
 
@@ -209,44 +206,55 @@ int LabSiteBase::GetNbAttributes(int dep_filter) {
 //	return attributesStack->GetSize(dep_type);
 //}
 
-
-int LabSiteBase::GetAttrInt(t_deptype dep_filter, int id)
-{
+int LabSiteBase::GetAttrInt(LabSiteBase::t_deptype dep_filter, int id) {
 	return RND(GetAttrDouble(dep_filter, id));
 }
-int LabSiteBase::GetAttrInt(int dep_filter, int id)
-{
+
+//*
+//	 * Another version of GetAttrInt() for Cython compatibility.
+//	 * (Uses int instead of t_deptype enum).
+//	 
+int LabSiteBase::GetAttrInt(int dep_filter, int id) {
 	return this->GetAttrInt((t_deptype)dep_filter, id);
 }
 
-double LabSiteBase::GetAttrDouble(t_deptype dep_type, int id)
-{
+//int GetIndexedAttr(int dep_filter, int id);
+//*
+//	 * Shortcut to get the double value of an attribute specified by its id in the
+//	 * attributes stack and its dependency level.
+//	 * @param dep_type Dependency level of the targeted attribute.
+//	 * @param id Identifier in the list relatively to the specified dependency level.
+//	 * @return The double value of the attribute.
+//	 
+double LabSiteBase::GetAttrDouble(LabSiteBase::t_deptype dep_type, int id) {
 	if (dep_type == IND_DEP)
 		return indAttributesStack->GetAttribute(/*dep_filter,*/ id)->data.d_value;
 	else
 		return siteAttributesStack->GetAttribute(/*dep_filter,*/ id)->data.d_value;
 }
-double LabSiteBase::GetAttrDouble(int dep_type, int id)
-{
+
+//*
+//	 * Another version of GetAttrDouble() for Cython compatibility.
+//	 * (Uses int instead of t_deptype enum).
+//	 
+double LabSiteBase::GetAttrDouble(int dep_type, int id) {
 	return this->GetAttrDouble((t_deptype)dep_type, id);
 }
-//
+
 //void *LabSiteBase::GetAttrObject(LabAttributesStack::t_deptype dep_filter, int id)
 //{
 //	return attributesStack->GetAttribute(dep_filter, id)->data.o_value;
 //}
+//void LabSiteBase::SetAttrInt(LabAttributesStack::t_deptype dep_filter, int id, int value)
+//{
+//	attributesStack->GetAttribute(dep_filter, id)->data.i_value = value;
+//}
+//void LabSiteBase::SetAttrInt(int dep_filter, int id, int value)
+//{
+//	this->SetAttrInt((LabAttributesStack::t_deptype)dep_filter, id, value);
+//}
 
-/*void LabSiteBase::SetAttrInt(LabAttributesStack::t_deptype dep_filter, int id, int value)
-{
-	attributesStack->GetAttribute(dep_filter, id)->data.i_value = value;
-}*/
-/*void LabSiteBase::SetAttrInt(int dep_filter, int id, int value)
-{
-	this->SetAttrInt((LabAttributesStack::t_deptype)dep_filter, id, value);
-}*/
-
-void LabSiteBase::SetAttrDouble(t_deptype dep_type, int id, double value)
-{
+void LabSiteBase::SetAttrDouble(LabSiteBase::t_deptype dep_type, int id, double value) {
 
 	LabAttributesStack::t_attr *attr;
 
@@ -291,34 +299,39 @@ void LabSiteBase::SetAttrDouble(t_deptype dep_type, int id, double value)
 		}
 	}
 }
-void LabSiteBase::SetAttrDouble(int dep_type, int id, double value)
-{
+
+//*
+//	 * Another version of SetAttrDouble() for Cython compatibility.
+//	 * (Uses int instead of t_deptype enum).
+//	 
+void LabSiteBase::SetAttrDouble(int dep_type, int id, double value) {
 	this->SetAttrDouble((t_deptype)dep_type, id, value);
 }
-//
+
 //void LabSiteBase::SetAttrObject(LabAttributesStack::t_deptype dep_filter, int id, void *value)
 //{
 //	attributesStack->GetAttribute(dep_filter, id)->data.o_value = value;
 //}
 
-
-LabStateStack *LabSiteBase::GetStateStack()
-{
+LabStateStack * LabSiteBase::GetStateStack() {
 	return stateStack;
 }
 
-void LabSiteBase::CreateStateStack()
-{
-	stateStack = new LabStateStack();
-}
-
-int LabSiteBase::GetState()
-{
+// Direct access to LabStateStack stuffs
+//*
+//	 * Get the current state of this SITE.
+//	 * @return An integer value (state is expressed as an index in the states stack).
+//	 
+int LabSiteBase::GetState() {
 	return stateStack->GetCurrentState();
 }
 
-void LabSiteBase::SetState(int state, double time)
-{
+//*
+//	 * Change the current state of the SITE.
+//	 * @param state New state (new index in the states stack).
+//	 * @param time Time at which this change is performed (usually the current simulation time).
+//	 
+void LabSiteBase::SetState(int state, double time) {
 	int prev_id = stateStack->GetCurrentState();
 	int prev_valid = (stateStack->IsValidStateId(prev_id));
 
@@ -348,8 +361,15 @@ void LabSiteBase::SetState(int state, double time)
 	}
 }
 
-void LabSiteBase::PushState(string name, /*bool indexed,*/ int next_id, int timeout_id, double timeout)
-{
+//*
+//	 * Shortcut to add a new state to the state stack (See LabStateStack::PushState()).
+//	 * (By default : no next logical state and no timeout).
+//	 * @param name Name of the new state.
+//	 * @param next_id Next logical state to this state (if any).
+//	 * @param timeout_id Index of the state to switch to when timeout is reached (if any timeout).
+//	 * @param timeout Delta of time before switching to the "timeout_id" state (if any timeout).
+//	 
+void LabSiteBase::PushState(string name, int next_id, int timeout_id, double timeout) {
 	stateStack->PushState(name, /*indexed,*/ next_id, timeout_id, timeout);
 	//	// Sets
 	//	if (stateStack->GetStates()[stateStack->GetSize()-1].data.indexed) {
@@ -359,48 +379,80 @@ void LabSiteBase::PushState(string name, /*bool indexed,*/ int next_id, int time
 	setsManager->CreateSet(simulator->GetMaxPopulationSize(), name);
 }
 
-void LabSiteBase::PopState()
-{
+//t_next loop_mode);
+//*
+//	 * Shortcut to remove the state located on top of the states stack.
+//	 
+// TODO : Untested
+void LabSiteBase::PopState() {
 	LabStateStack::t_state st = stateStack->PopState();
 
 	// Sets
 	this->UnSubscribeSet(st.name);
 }
 
-void LabSiteBase::GotoNextState(double time)
-{
+//*
+//	 * Shortcut to switch into the next logical state (See LabStateStack::GotoNextState()).
+//	 * @param time The time at which the switch ocurrs (usually the current simulation time).
+//	 
+void LabSiteBase::GotoNextState(double time) {
 	stateStack->GotoNextState(time);
 }
 
-void LabSiteBase::TryDoTimeoutState(double time)
-{
+//*
+//	 * Shortcut to try to terminate a state (See LabStateStack::TryDoTimeoutState()).
+//	 * @param time The time of the attempt (usually the current simulation time).
+//	 
+void LabSiteBase::TryDoTimeoutState(double time) {
 	stateStack->TryDoTimeout(time);
 }
 
-
+//*
+//	 * Get the number of states in the states stack.
+//	 * @return Number of states currently stored.
+//	 
 int LabSiteBase::GetNbStates() {
 	return stateStack->GetSize();
 }
 
+//*
+//	 * Get the time elapsed since the current state was entered.
+//	 * @param time The reference time (usually the current time of the simulation).
+//	 * @return The time elapsed.
+//	 
 double LabSiteBase::GetCurrentStateElapsedTime(double time) {
 	return stateStack->GetCurrentStateElapsedTime(time);
 }
 
+//*
+//	 * Get the time remaining until the current state will be quit (timeout reached).
+//	 * @param time The reference time (usually the current time of the simulation).
+//	 * @return The time remaining.
+//	 
 double LabSiteBase::GetCurrentStateRemainingTime(double time) {
 	return stateStack->GetCurrentStateRemainingTime(time);
 }
 
-
-
-LabUserData *LabSiteBase::New(LabNode *parent_node) {
+//*
+//	 * Self factory. DO NOT USE it unless you know what you're doing !
+//	 * @param parent_node The parent node in SPATIALIZED context.
+//	 * @return A pointer to LabSiteBase (casted into LabUserData *).
+//	 
+LabUserData * LabSiteBase::New(LabNode * parent_node) {
 //	cout << "From new 1 : " << parent_node->GetNeighbors().size() << endl;
 //	parent = parent_node;
 //	cout << "From new 2 : " << parent->GetNeighbors().size() << endl;
 	return new LabSiteBase(simulator, parent_node, true);
 }
 
-void LabSiteBase::Copy(LabUserData *src_site, int dep_filter)
-{
+//*
+//	 * Shortcut to copy the whole attributes stack from another SITE (See LabAttributesStack::Copy()).
+//	 * @param src_site The site (LabSiteBase) to copy from.
+//	 * @param dep_filter Filter used to select which attributes will be copied<br/>
+//	 * 			(ex1 : dep_filter = IND_DEP | SITE_DEP, means : copies only non-environmental attributes<br/>
+//	 * 			 ex2 : dep_filter = IND_DEP | SITE_DEP | ENV_DEP : copies all).
+//	 
+void LabSiteBase::Copy(LabUserData * src_site, int dep_filter) {
 	if (this->setTrackable) this->UnSubscribeAllSets();
 
 	switch (dep_filter) {
@@ -428,17 +480,23 @@ void LabSiteBase::Copy(LabUserData *src_site, int dep_filter)
 //	if (was_unset) this->GetSubscribedSets().insert(UNSET);
 }
 
-
-void LabSiteBase::Binarize(ofstream *ostream)
-{
+// Implement virtual
+//*
+//	 * Shortcut to dump the current state of the SITE (See LabAttributesStack::Binarize()).
+//	 * @param ostream Output stream to dump to.
+//	 
+void LabSiteBase::Binarize(ofstream * ostream) {
 	indAttributesStack->Binarize(ostream);
 	siteAttributesStack->Binarize(ostream);
 
 	stateStack->Binarize(ostream);
 }
 
-void LabSiteBase::UnBinarize(ifstream *istream)
-{
+//*
+//	 * Shortcut to restore the current state of the SITE from a dump (See LabAttributesStack::UnBinarize()).
+//	 * @param ostream Input stream to restore from.
+//	 
+void LabSiteBase::UnBinarize(ifstream * istream) {
 	indAttributesStack->UnBinarize(istream);
 	siteAttributesStack->UnBinarize(istream);
 
@@ -455,7 +513,6 @@ void LabSiteBase::UnBinarize(ifstream *istream)
 //		this->SubscribeSet(this->pop_name);
 //	}
 //}
-
 //
 //void LabSiteBase::SubscribeSet(string set_name) {
 //	set<string>::iterator it = subscribed_sets.find(set_name);
@@ -474,12 +531,10 @@ void LabSiteBase::UnBinarize(ifstream *istream)
 //		LabSiteSetsManager<LabUserData *>::GetInstance()->UnSubscribe(set_name, this, this->GetId());
 //	}
 //}
-
 //
 //set<string>& LabSiteBase::GetSubscribeSets() {
 //	return subscribed_sets;
 //}
-
 
 void LabSiteBase::SubscribeSet(string set_name) {
 
@@ -500,6 +555,16 @@ void LabSiteBase::SubscribeSet(string set_name) {
 	}
 }
 
+//*
+//	 * UnSubscribe this Site from a specified Set.
+//	 * Afterward this Site belong to this Set.
+//	 * (This feature is only available if the Site was instantiated via its protected constructor :
+//	 * See LabSiteBase(LabSimulatorBase *sim, LabNode *parent_node, bool set_trackable)...
+//	 *
+//	 * DO NOT USE it unless you know what you're doing !
+//	 *
+//	 * @param set_name The name of the Set to unsubscribe from.
+//	 
 void LabSiteBase::UnSubscribeSet(string set_name) {
 
 	//	if (!setTrackable) throw LabConsts::E(LabConsts::NOT_SET_TRACKABLE);
@@ -515,22 +580,14 @@ void LabSiteBase::UnSubscribeSet(string set_name) {
 	}
 }
 
-
-void LabSiteBase::UnSubscribeAllSets() {
-
-	//	if (!setTrackable) throw LabConsts::E(LabConsts::NOT_SET_TRACKABLE);
-
-	t_string_set::iterator it = subscribed_sets.begin();
-	while (it != subscribed_sets.end())
-	{
-		if (*it != U_SET && *it != UNSET)			// Never un-subscribe from Universe set... or from UNSET...
-			if (setTrackable) setsManager->UnSubscribe(*it, this, this->GetId());
-		std::advance(it, 1);
-	}
-
-	subscribed_sets.clear();
-}
-
+//*
+//	 * Subscribe this Site to all the Sets it belongs to.
+//	 * Afterward this Site doesn't belong to this Set anymore.
+//	 * (This feature is only available if the Site was instantiated via its protected constructor :
+//	 * See LabSiteBase(LabSimulatorBase *sim, LabNode *parent_node, bool set_trackable)...
+//	 *
+//	 * DO NOT USE it unless you know what you're doing !
+//	 
 void LabSiteBase::SubscribeAllSets() {
 
 	//	if (!setTrackable) throw LabConsts::E(LabConsts::NOT_SET_TRACKABLE);
@@ -609,6 +666,31 @@ void LabSiteBase::SubscribeAllSets() {
 
 }
 
+//*
+//	 * UnSubscribe this Site from all the Sets it belongs to.
+//	 * (This feature is only available if the Site was instantiated via its protected constructor :
+//	 * See LabSiteBase(LabSimulatorBase *sim, LabNode *parent_node, bool set_trackable)...
+//	 *
+//	 * DO NOT USE it unless you know what you're doing !)
+//	 
+void LabSiteBase::UnSubscribeAllSets() {
+
+	//	if (!setTrackable) throw LabConsts::E(LabConsts::NOT_SET_TRACKABLE);
+
+	t_string_set::iterator it = subscribed_sets.begin();
+	while (it != subscribed_sets.end())
+	{
+		if (*it != U_SET && *it != UNSET)			// Never un-subscribe from Universe set... or from UNSET...
+			if (setTrackable) setsManager->UnSubscribe(*it, this, this->GetId());
+		std::advance(it, 1);
+	}
+
+	subscribed_sets.clear();
+}
+
+//*
+//	 * Print the list of sets (names) this Site belongs to.
+//	 
 void LabSiteBase::PrintSubscribedSets() {
 	cout << "{";
 	t_string_set::iterator it;
@@ -619,7 +701,39 @@ void LabSiteBase::PrintSubscribedSets() {
 	cout << " }" << endl;
 }
 
+//* Shortcut to instantiate the states stack 
+void LabSiteBase::CreateStateStack() {
+	stateStack = new LabStateStack();
+}
 
-} /* namespace elps */
+//*
+//	 * General initializations shared by all the constructors
+//	 * @param sim The Simulator this Site is related to.
+//	 * @param parent_node The network node (LabNode) this Site is attached to.
+//	 * @param set_trackable If this site is meant to be managed by the LabSiteSetsManager.
+//	 
+void LabSiteBase::Init(LabSimulatorBase * sim, LabNode * parent_node, bool set_trackable) {
+	simulator = sim;
+	parent = parent_node;
 
 
+
+	indAttributesStack = new LabAttributesStack();
+	siteAttributesStack = new LabAttributesStack();
+
+	CreateStateStack();
+
+	setsManager = SiteSetsMgr::GetInstance();
+
+	//	// Done by the Array/Net-Binding now !!!
+	//	this->id = SetsManager::GetInstance()->GetIndividualsCount();
+	//	SetsManager::GetInstance()->AddSite(this);
+	setTrackable = set_trackable;
+
+#ifndef NOPYTHON
+	this->CySetPyObj(NULL);
+#endif
+}
+
+
+} // namespace elps

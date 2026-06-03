@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'Highlighter.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.3.2)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.7.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,7 +12,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'Highlighter.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.3.2. It"
+#error "This file was generated using the moc from 5.7.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -20,16 +20,17 @@
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_Highlighter_t {
     QByteArrayData data[1];
-    char stringdata[12];
+    char stringdata0[12];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_Highlighter_t, stringdata) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_Highlighter_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
 static const qt_meta_stringdata_Highlighter_t qt_meta_stringdata_Highlighter = {
     {
-QT_MOC_LITERAL(0, 0, 11)
+QT_MOC_LITERAL(0, 0, 11) // "Highlighter"
+
     },
     "Highlighter"
 };
@@ -61,7 +62,7 @@ void Highlighter::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
 
 const QMetaObject Highlighter::staticMetaObject = {
     { &QSyntaxHighlighter::staticMetaObject, qt_meta_stringdata_Highlighter.data,
-      qt_meta_data_Highlighter,  qt_static_metacall, 0, 0}
+      qt_meta_data_Highlighter,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
 };
 
 
@@ -72,8 +73,8 @@ const QMetaObject *Highlighter::metaObject() const
 
 void *Highlighter::qt_metacast(const char *_clname)
 {
-    if (!_clname) return 0;
-    if (!strcmp(_clname, qt_meta_stringdata_Highlighter.stringdata))
+    if (!_clname) return Q_NULLPTR;
+    if (!strcmp(_clname, qt_meta_stringdata_Highlighter.stringdata0))
         return static_cast<void*>(const_cast< Highlighter*>(this));
     return QSyntaxHighlighter::qt_metacast(_clname);
 }

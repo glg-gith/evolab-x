@@ -8,6 +8,8 @@ RM := rm -rf
 
 # All of the sources participating in the build are defined here
 -include sources.mk
+-include libbacktrace/subdir.mk
+-include addr2line/subdir.mk
 -include subdir.mk
 -include objects.mk
 
@@ -34,10 +36,9 @@ libbacktrace: $(OBJS) $(USER_OBJS)
 
 # Other Targets
 clean:
-	-$(RM) $(OBJS)$(C_DEPS)$(EXECUTABLES) libbacktrace
+	-$(RM) $(EXECUTABLES)$(OBJS)$(C_DEPS) libbacktrace
 	-@echo ' '
 
 .PHONY: all clean dependents
-.SECONDARY:
 
 -include ../makefile.targets

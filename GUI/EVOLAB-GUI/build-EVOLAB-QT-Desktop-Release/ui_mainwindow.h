@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.3.2
+** Created by: Qt User Interface Compiler version 5.7.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -150,53 +150,6 @@ public:
     QLabel *label_PopDescription;
     QPlainTextEdit *plainText_Edit_PopDescription;
     QSpacerItem *verticalSpacer_12;
-    QWidget *tab_Network;
-    QHBoxLayout *horizontalLayout_14;
-    QGroupBox *groupBox;
-    QVBoxLayout *verticalLayout_4;
-    QFrame *frame;
-    QVBoxLayout *verticalLayout_6;
-    QGridLayout *gridLayout;
-    QLabel *label_NetworkNbNode;
-    QSpinBox *spinBox_NetworkNbNodes;
-    QHBoxLayout *horizontalLayout_15;
-    QLabel *label_NetworkDist;
-    QSpacerItem *horizontalSpacer;
-    QComboBox *comboBox_NetworkDist;
-    QFrame *frame_3;
-    QHBoxLayout *horizontalLayout;
-    QSpacerItem *horizontalSpacer_2;
-    QLabel *label_3;
-    QToolButton *toolButton_NetworkResetDist;
-    QGroupBox *groupBox_3;
-    QVBoxLayout *verticalLayout_10;
-    QFrame *frame_NetworkParams;
-    QGridLayout *gridLayout_2;
-    QSpacerItem *verticalSpacer_8;
-    QGroupBox *groupBox_2;
-    QVBoxLayout *verticalLayout_8;
-    QFrame *frame_2;
-    QVBoxLayout *verticalLayout_7;
-    QHBoxLayout *horizontalLayout_17;
-    QLabel *label_4;
-    QSpacerItem *horizontalSpacer_6;
-    QComboBox *comboBox_NetPopsSpread;
-    QHBoxLayout *horizontalLayout_22;
-    QTableWidget *tableWidget_NetPopsRepartition;
-    QFrame *frame_NetPopTotalInfo;
-    QHBoxLayout *horizontalLayout_23;
-    QLabel *label_NetPopIcon_2;
-    QTextEdit *textEdit_NetPopTotalInfo;
-    QFrame *frame_22;
-    QHBoxLayout *horizontalLayout_21;
-    QLabel *label_18;
-    QLabel *label_NetPopIcon;
-    QTextEdit *textEdit_SpreadTotal;
-    QSpacerItem *verticalSpacer;
-    QSpacerItem *horizontalSpacer_5;
-    QHBoxLayout *horizontalLayout_16;
-    QSpacerItem *horizontalSpacer_3;
-    QPushButton *pushButton_NetGenerate;
     QWidget *tab_Variables;
     QVBoxLayout *verticalLayout_11;
     QHBoxLayout *horizontalLayout_9;
@@ -298,6 +251,11 @@ public:
     QFrame *frame_14;
     QHBoxLayout *horizontalLayout_8;
     QGridLayout *gridLayout_10;
+    QLabel *label_34;
+    QVBoxLayout *verticalLayout_38;
+    QFrame *frame_26;
+    QHBoxLayout *horizontalLayout_20;
+    QLabel *label_24;
     QHBoxLayout *horizontalLayout_30;
     QComboBox *comboBox_CustomMacroParamsNames;
     QToolButton *toolButton_5;
@@ -306,7 +264,6 @@ public:
     QToolButton *toolButton_8;
     QHBoxLayout *horizontalLayout_29;
     QLineEdit *lineEdit_CustomMacroParamName;
-    QLabel *label_34;
     QVBoxLayout *verticalLayout_41;
     QComboBox *comboBox_CustomMacroStyle;
     QFrame *frame_24;
@@ -320,10 +277,6 @@ public:
     QToolButton *toolButton_CustomMacroApply;
     QToolButton *toolButton_CustomMacroDiscard;
     QFrame *frame_23;
-    QVBoxLayout *verticalLayout_38;
-    QFrame *frame_26;
-    QHBoxLayout *horizontalLayout_20;
-    QLabel *label_24;
     QLabel *label_23;
     QVBoxLayout *verticalLayout_40;
     QLabel *label_33;
@@ -333,11 +286,61 @@ public:
     QToolButton *toolButton_CustomMacroAddNew_2;
     QToolButton *toolButton_CustomMacroDelete_2;
     QComboBox *comboBox_CustomMacroReturns;
+    QLineEdit *lineEdit_VarDesc;
+    QLabel *label_28;
     QSpacerItem *verticalSpacer_14;
     QLabel *label_MacroItemName;
     QHBoxLayout *horizontalLayout_33;
     QSpacerItem *horizontalSpacer_8;
     QToolButton *toolButton_EditorCheckSyntax;
+    QSpacerItem *verticalSpacer_18;
+    QWidget *tab_Network;
+    QHBoxLayout *horizontalLayout_14;
+    QGroupBox *groupBox;
+    QVBoxLayout *verticalLayout_4;
+    QFrame *frame;
+    QVBoxLayout *verticalLayout_6;
+    QGridLayout *gridLayout;
+    QLabel *label_NetworkNbNode;
+    QSpinBox *spinBox_NetworkNbNodes;
+    QHBoxLayout *horizontalLayout_15;
+    QLabel *label_NetworkDist;
+    QSpacerItem *horizontalSpacer;
+    QComboBox *comboBox_NetworkDist;
+    QFrame *frame_3;
+    QHBoxLayout *horizontalLayout;
+    QSpacerItem *horizontalSpacer_2;
+    QLabel *label_3;
+    QToolButton *toolButton_NetworkResetDist;
+    QGroupBox *groupBox_3;
+    QVBoxLayout *verticalLayout_10;
+    QFrame *frame_NetworkParams;
+    QGridLayout *gridLayout_2;
+    QSpacerItem *verticalSpacer_8;
+    QGroupBox *groupBox_2;
+    QVBoxLayout *verticalLayout_8;
+    QFrame *frame_2;
+    QVBoxLayout *verticalLayout_7;
+    QHBoxLayout *horizontalLayout_17;
+    QLabel *label_4;
+    QSpacerItem *horizontalSpacer_6;
+    QComboBox *comboBox_NetPopsSpread;
+    QHBoxLayout *horizontalLayout_22;
+    QTableWidget *tableWidget_NetPopsRepartition;
+    QFrame *frame_NetPopTotalInfo;
+    QHBoxLayout *horizontalLayout_23;
+    QLabel *label_NetPopIcon_2;
+    QTextEdit *textEdit_NetPopTotalInfo;
+    QFrame *frame_22;
+    QHBoxLayout *horizontalLayout_21;
+    QLabel *label_18;
+    QLabel *label_NetPopIcon;
+    QTextEdit *textEdit_SpreadTotal;
+    QSpacerItem *verticalSpacer;
+    QSpacerItem *horizontalSpacer_5;
+    QHBoxLayout *horizontalLayout_16;
+    QSpacerItem *horizontalSpacer_3;
+    QPushButton *pushButton_NetGenerate;
     QWidget *tab_Outputs;
     QVBoxLayout *verticalLayout_19;
     QGroupBox *groupBox_5;
@@ -384,7 +387,7 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QStringLiteral("MainWindow"));
-        MainWindow->resize(1141, 953);
+        MainWindow->resize(1141, 1091);
         QIcon icon;
         icon.addFile(QStringLiteral(":/new/prefix1/logo-base-fav.png"), QSize(), QIcon::Normal, QIcon::Off);
         MainWindow->setWindowIcon(icon);
@@ -551,8 +554,9 @@ public:
         frame_4->setFrameShadow(QFrame::Raised);
         verticalLayout_23 = new QVBoxLayout(frame_4);
         verticalLayout_23->setSpacing(3);
-        verticalLayout_23->setContentsMargins(3, 3, 3, 3);
+        verticalLayout_23->setContentsMargins(11, 11, 11, 11);
         verticalLayout_23->setObjectName(QStringLiteral("verticalLayout_23"));
+        verticalLayout_23->setContentsMargins(3, 3, 3, 3);
         label_2 = new QLabel(frame_4);
         label_2->setObjectName(QStringLiteral("label_2"));
         QFont font;
@@ -624,8 +628,9 @@ public:
         frame_12->setFrameShadow(QFrame::Raised);
         verticalLayout_5 = new QVBoxLayout(frame_12);
         verticalLayout_5->setSpacing(3);
-        verticalLayout_5->setContentsMargins(3, 3, 3, 3);
+        verticalLayout_5->setContentsMargins(11, 11, 11, 11);
         verticalLayout_5->setObjectName(QStringLiteral("verticalLayout_5"));
+        verticalLayout_5->setContentsMargins(3, 3, 3, 3);
         label_5 = new QLabel(frame_12);
         label_5->setObjectName(QStringLiteral("label_5"));
         label_5->setFont(font);
@@ -724,8 +729,9 @@ public:
         page_PopCellSettings->setObjectName(QStringLiteral("page_PopCellSettings"));
         verticalLayout_32 = new QVBoxLayout(page_PopCellSettings);
         verticalLayout_32->setSpacing(3);
-        verticalLayout_32->setContentsMargins(3, 3, 3, 3);
+        verticalLayout_32->setContentsMargins(11, 11, 11, 11);
         verticalLayout_32->setObjectName(QStringLiteral("verticalLayout_32"));
+        verticalLayout_32->setContentsMargins(3, 3, 3, 3);
         groupBox_SelectedCell = new QGroupBox(page_PopCellSettings);
         groupBox_SelectedCell->setObjectName(QStringLiteral("groupBox_SelectedCell"));
         verticalLayout_33 = new QVBoxLayout(groupBox_SelectedCell);
@@ -763,8 +769,9 @@ public:
         frame_10->setFrameShadow(QFrame::Raised);
         verticalLayout_24 = new QVBoxLayout(frame_10);
         verticalLayout_24->setSpacing(3);
-        verticalLayout_24->setContentsMargins(3, 3, 3, 3);
+        verticalLayout_24->setContentsMargins(11, 11, 11, 11);
         verticalLayout_24->setObjectName(QStringLiteral("verticalLayout_24"));
+        verticalLayout_24->setContentsMargins(3, 3, 3, 3);
         toolButton_Pop_AddItem = new QToolButton(frame_10);
         toolButton_Pop_AddItem->setObjectName(QStringLiteral("toolButton_Pop_AddItem"));
         toolButton_Pop_AddItem->setIcon(icon21);
@@ -944,8 +951,9 @@ public:
         page_PopDescription->setObjectName(QStringLiteral("page_PopDescription"));
         verticalLayout_26 = new QVBoxLayout(page_PopDescription);
         verticalLayout_26->setSpacing(6);
-        verticalLayout_26->setContentsMargins(3, 3, 3, 3);
+        verticalLayout_26->setContentsMargins(11, 11, 11, 11);
         verticalLayout_26->setObjectName(QStringLiteral("verticalLayout_26"));
+        verticalLayout_26->setContentsMargins(3, 3, 3, 3);
         groupBox_PopDescription = new QGroupBox(page_PopDescription);
         groupBox_PopDescription->setObjectName(QStringLiteral("groupBox_PopDescription"));
         QSizePolicy sizePolicy2(QSizePolicy::Fixed, QSizePolicy::Preferred);
@@ -1013,6 +1021,994 @@ public:
         QIcon icon32;
         icon32.addFile(QStringLiteral(":/new/prefix1/virus-icon.png"), QSize(), QIcon::Normal, QIcon::Off);
         tabWidget_Top->addTab(tab_Populations, icon32, QString());
+        tab_Variables = new QWidget();
+        tab_Variables->setObjectName(QStringLiteral("tab_Variables"));
+        verticalLayout_11 = new QVBoxLayout(tab_Variables);
+        verticalLayout_11->setSpacing(6);
+        verticalLayout_11->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_11->setObjectName(QStringLiteral("verticalLayout_11"));
+        horizontalLayout_9 = new QHBoxLayout();
+        horizontalLayout_9->setSpacing(6);
+        horizontalLayout_9->setObjectName(QStringLiteral("horizontalLayout_9"));
+        horizontalLayout_2 = new QHBoxLayout();
+        horizontalLayout_2->setSpacing(6);
+        horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
+        frame_11 = new QFrame(tab_Variables);
+        frame_11->setObjectName(QStringLiteral("frame_11"));
+        frame_11->setFrameShape(QFrame::StyledPanel);
+        frame_11->setFrameShadow(QFrame::Raised);
+        verticalLayout_36 = new QVBoxLayout(frame_11);
+        verticalLayout_36->setSpacing(3);
+        verticalLayout_36->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_36->setObjectName(QStringLiteral("verticalLayout_36"));
+        verticalLayout_36->setContentsMargins(3, 3, 3, 3);
+        label_30 = new QLabel(frame_11);
+        label_30->setObjectName(QStringLiteral("label_30"));
+        label_30->setFont(font);
+
+        verticalLayout_36->addWidget(label_30);
+
+        toolButton_VarAdd = new QToolButton(frame_11);
+        toolButton_VarAdd->setObjectName(QStringLiteral("toolButton_VarAdd"));
+        toolButton_VarAdd->setIcon(icon21);
+
+        verticalLayout_36->addWidget(toolButton_VarAdd);
+
+        toolButton_VarRemove = new QToolButton(frame_11);
+        toolButton_VarRemove->setObjectName(QStringLiteral("toolButton_VarRemove"));
+        toolButton_VarRemove->setIcon(icon22);
+
+        verticalLayout_36->addWidget(toolButton_VarRemove);
+
+        toolButton_VarRowUp = new QToolButton(frame_11);
+        toolButton_VarRowUp->setObjectName(QStringLiteral("toolButton_VarRowUp"));
+        toolButton_VarRowUp->setIcon(icon23);
+
+        verticalLayout_36->addWidget(toolButton_VarRowUp);
+
+        toolButton_VarRowDown = new QToolButton(frame_11);
+        toolButton_VarRowDown->setObjectName(QStringLiteral("toolButton_VarRowDown"));
+        toolButton_VarRowDown->setIcon(icon24);
+
+        verticalLayout_36->addWidget(toolButton_VarRowDown);
+
+        verticalSpacer_16 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_36->addItem(verticalSpacer_16);
+
+
+        horizontalLayout_2->addWidget(frame_11);
+
+        groupBox_6 = new QGroupBox(tab_Variables);
+        groupBox_6->setObjectName(QStringLiteral("groupBox_6"));
+        verticalLayout_21 = new QVBoxLayout(groupBox_6);
+        verticalLayout_21->setSpacing(6);
+        verticalLayout_21->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_21->setObjectName(QStringLiteral("verticalLayout_21"));
+        verticalLayout_21->setContentsMargins(0, -1, -1, -1);
+        tableWidget_Variables = new QTableWidget(groupBox_6);
+        if (tableWidget_Variables->columnCount() < 2)
+            tableWidget_Variables->setColumnCount(2);
+        QTableWidgetItem *__qtablewidgetitem4 = new QTableWidgetItem();
+        tableWidget_Variables->setHorizontalHeaderItem(0, __qtablewidgetitem4);
+        QTableWidgetItem *__qtablewidgetitem5 = new QTableWidgetItem();
+        tableWidget_Variables->setHorizontalHeaderItem(1, __qtablewidgetitem5);
+        tableWidget_Variables->setObjectName(QStringLiteral("tableWidget_Variables"));
+        tableWidget_Variables->setMinimumSize(QSize(502, 0));
+        tableWidget_Variables->setSelectionBehavior(QAbstractItemView::SelectRows);
+        tableWidget_Variables->horizontalHeader()->setDefaultSectionSize(200);
+        tableWidget_Variables->horizontalHeader()->setMinimumSectionSize(200);
+        tableWidget_Variables->horizontalHeader()->setStretchLastSection(true);
+
+        verticalLayout_21->addWidget(tableWidget_Variables);
+
+        label_29 = new QLabel(groupBox_6);
+        label_29->setObjectName(QStringLiteral("label_29"));
+        QFont font3;
+        font3.setItalic(true);
+        label_29->setFont(font3);
+
+        verticalLayout_21->addWidget(label_29);
+
+        plainTextEdit_VarDesc = new QPlainTextEdit(groupBox_6);
+        plainTextEdit_VarDesc->setObjectName(QStringLiteral("plainTextEdit_VarDesc"));
+        plainTextEdit_VarDesc->setMaximumSize(QSize(16777215, 70));
+        plainTextEdit_VarDesc->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+
+        verticalLayout_21->addWidget(plainTextEdit_VarDesc);
+
+
+        horizontalLayout_2->addWidget(groupBox_6);
+
+
+        horizontalLayout_9->addLayout(horizontalLayout_2);
+
+        groupBox_VarFuncTrashed = new QGroupBox(tab_Variables);
+        groupBox_VarFuncTrashed->setObjectName(QStringLiteral("groupBox_VarFuncTrashed"));
+        horizontalLayout_10 = new QHBoxLayout(groupBox_VarFuncTrashed);
+        horizontalLayout_10->setSpacing(6);
+        horizontalLayout_10->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_10->setObjectName(QStringLiteral("horizontalLayout_10"));
+        horizontalLayout_10->setContentsMargins(0, -1, -1, -1);
+        frame_9 = new QFrame(groupBox_VarFuncTrashed);
+        frame_9->setObjectName(QStringLiteral("frame_9"));
+        QSizePolicy sizePolicy4(QSizePolicy::Expanding, QSizePolicy::Preferred);
+        sizePolicy4.setHorizontalStretch(0);
+        sizePolicy4.setVerticalStretch(0);
+        sizePolicy4.setHeightForWidth(frame_9->sizePolicy().hasHeightForWidth());
+        frame_9->setSizePolicy(sizePolicy4);
+        frame_9->setMaximumSize(QSize(210, 16777215));
+        frame_9->setFrameShape(QFrame::StyledPanel);
+        frame_9->setFrameShadow(QFrame::Raised);
+        verticalLayout_22 = new QVBoxLayout(frame_9);
+        verticalLayout_22->setSpacing(6);
+        verticalLayout_22->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_22->setObjectName(QStringLiteral("verticalLayout_22"));
+        gridLayout_5 = new QGridLayout();
+        gridLayout_5->setSpacing(3);
+        gridLayout_5->setObjectName(QStringLiteral("gridLayout_5"));
+        toolButton_10 = new QToolButton(frame_9);
+        toolButton_10->setObjectName(QStringLiteral("toolButton_10"));
+        QIcon icon33;
+        icon33.addFile(QStringLiteral(":/new/prefix1/new-icon3.png"), QSize(), QIcon::Normal, QIcon::Off);
+        toolButton_10->setIcon(icon33);
+        toolButton_10->setToolButtonStyle(Qt::ToolButtonIconOnly);
+
+        gridLayout_5->addWidget(toolButton_10, 0, 2, 1, 1);
+
+        label_15 = new QLabel(frame_9);
+        label_15->setObjectName(QStringLiteral("label_15"));
+        label_15->setMinimumSize(QSize(25, 0));
+        label_15->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/variable-B-icon.png")));
+
+        gridLayout_5->addWidget(label_15, 0, 0, 1, 1);
+
+        comboBox_4 = new QComboBox(frame_9);
+        comboBox_4->setObjectName(QStringLiteral("comboBox_4"));
+        comboBox_4->setMinimumSize(QSize(120, 0));
+        comboBox_4->setMaximumSize(QSize(120, 16777215));
+
+        gridLayout_5->addWidget(comboBox_4, 0, 1, 1, 1);
+
+        toolButton_11 = new QToolButton(frame_9);
+        toolButton_11->setObjectName(QStringLiteral("toolButton_11"));
+        toolButton_11->setIcon(icon33);
+
+        gridLayout_5->addWidget(toolButton_11, 1, 2, 1, 1);
+
+        comboBox_2 = new QComboBox(frame_9);
+        comboBox_2->setObjectName(QStringLiteral("comboBox_2"));
+        QSizePolicy sizePolicy5(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy5.setHorizontalStretch(0);
+        sizePolicy5.setVerticalStretch(0);
+        sizePolicy5.setHeightForWidth(comboBox_2->sizePolicy().hasHeightForWidth());
+        comboBox_2->setSizePolicy(sizePolicy5);
+        comboBox_2->setMinimumSize(QSize(120, 0));
+        comboBox_2->setMaximumSize(QSize(120, 16777215));
+
+        gridLayout_5->addWidget(comboBox_2, 1, 1, 1, 1);
+
+        label_16 = new QLabel(frame_9);
+        label_16->setObjectName(QStringLiteral("label_16"));
+        label_16->setMinimumSize(QSize(0, 0));
+        label_16->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/function-icon3.png")));
+
+        gridLayout_5->addWidget(label_16, 1, 0, 1, 1);
+
+
+        verticalLayout_22->addLayout(gridLayout_5);
+
+        verticalSpacer_7 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_22->addItem(verticalSpacer_7);
+
+
+        horizontalLayout_10->addWidget(frame_9);
+
+        plainTextEdit = new QPlainTextEdit(groupBox_VarFuncTrashed);
+        plainTextEdit->setObjectName(QStringLiteral("plainTextEdit"));
+
+        horizontalLayout_10->addWidget(plainTextEdit);
+
+
+        horizontalLayout_9->addWidget(groupBox_VarFuncTrashed);
+
+
+        verticalLayout_11->addLayout(horizontalLayout_9);
+
+        QIcon icon34;
+        icon34.addFile(QStringLiteral(":/new/prefix1/variable-icon.png"), QSize(), QIcon::Normal, QIcon::Off);
+        tabWidget_Top->addTab(tab_Variables, icon34, QString());
+        tab_LifeCycle = new QWidget();
+        tab_LifeCycle->setObjectName(QStringLiteral("tab_LifeCycle"));
+        horizontalLayout_7 = new QHBoxLayout(tab_LifeCycle);
+        horizontalLayout_7->setSpacing(6);
+        horizontalLayout_7->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_7->setObjectName(QStringLiteral("horizontalLayout_7"));
+        verticalLayout_3 = new QVBoxLayout();
+        verticalLayout_3->setSpacing(2);
+        verticalLayout_3->setObjectName(QStringLiteral("verticalLayout_3"));
+        verticalLayout_3->setContentsMargins(0, 0, 0, 0);
+        frame_19 = new QFrame(tab_LifeCycle);
+        frame_19->setObjectName(QStringLiteral("frame_19"));
+        frame_19->setMinimumSize(QSize(0, 10));
+        frame_19->setFrameShape(QFrame::StyledPanel);
+        frame_19->setFrameShadow(QFrame::Raised);
+        verticalLayout_35 = new QVBoxLayout(frame_19);
+        verticalLayout_35->setSpacing(3);
+        verticalLayout_35->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_35->setObjectName(QStringLiteral("verticalLayout_35"));
+        verticalLayout_35->setContentsMargins(3, 3, 3, 3);
+        label_14 = new QLabel(frame_19);
+        label_14->setObjectName(QStringLiteral("label_14"));
+        label_14->setFont(font);
+
+        verticalLayout_35->addWidget(label_14);
+
+        toolButton_6 = new QToolButton(frame_19);
+        toolButton_6->setObjectName(QStringLiteral("toolButton_6"));
+        toolButton_6->setIcon(icon21);
+
+        verticalLayout_35->addWidget(toolButton_6);
+
+        toolButton_7 = new QToolButton(frame_19);
+        toolButton_7->setObjectName(QStringLiteral("toolButton_7"));
+        toolButton_7->setIcon(icon22);
+
+        verticalLayout_35->addWidget(toolButton_7);
+
+        toolButton_31 = new QToolButton(frame_19);
+        toolButton_31->setObjectName(QStringLiteral("toolButton_31"));
+        toolButton_31->setIcon(icon23);
+
+        verticalLayout_35->addWidget(toolButton_31);
+
+        toolButton_32 = new QToolButton(frame_19);
+        toolButton_32->setObjectName(QStringLiteral("toolButton_32"));
+        toolButton_32->setIcon(icon24);
+
+        verticalLayout_35->addWidget(toolButton_32);
+
+        frame_20 = new QFrame(frame_19);
+        frame_20->setObjectName(QStringLiteral("frame_20"));
+        frame_20->setFrameShape(QFrame::HLine);
+        frame_20->setFrameShadow(QFrame::Sunken);
+
+        verticalLayout_35->addWidget(frame_20);
+
+        toolButton_33 = new QToolButton(frame_19);
+        toolButton_33->setObjectName(QStringLiteral("toolButton_33"));
+        toolButton_33->setIcon(icon25);
+
+        verticalLayout_35->addWidget(toolButton_33);
+
+        verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_35->addItem(verticalSpacer_2);
+
+
+        verticalLayout_3->addWidget(frame_19);
+
+        frame_7 = new QFrame(tab_LifeCycle);
+        frame_7->setObjectName(QStringLiteral("frame_7"));
+        QSizePolicy sizePolicy6(QSizePolicy::Preferred, QSizePolicy::Expanding);
+        sizePolicy6.setHorizontalStretch(0);
+        sizePolicy6.setVerticalStretch(0);
+        sizePolicy6.setHeightForWidth(frame_7->sizePolicy().hasHeightForWidth());
+        frame_7->setSizePolicy(sizePolicy6);
+        frame_7->setFrameShape(QFrame::StyledPanel);
+        frame_7->setFrameShadow(QFrame::Raised);
+        verticalLayout_30 = new QVBoxLayout(frame_7);
+        verticalLayout_30->setSpacing(3);
+        verticalLayout_30->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_30->setObjectName(QStringLiteral("verticalLayout_30"));
+        verticalLayout_30->setContentsMargins(3, 3, 3, 3);
+        label_17 = new QLabel(frame_7);
+        label_17->setObjectName(QStringLiteral("label_17"));
+        label_17->setFont(font);
+
+        verticalLayout_30->addWidget(label_17);
+
+        toolButton_34 = new QToolButton(frame_7);
+        toolButton_34->setObjectName(QStringLiteral("toolButton_34"));
+        toolButton_34->setIcon(icon27);
+        toolButton_34->setCheckable(true);
+
+        verticalLayout_30->addWidget(toolButton_34);
+
+        frame_21 = new QFrame(frame_7);
+        frame_21->setObjectName(QStringLiteral("frame_21"));
+        frame_21->setFrameShape(QFrame::HLine);
+        frame_21->setFrameShadow(QFrame::Sunken);
+
+        verticalLayout_30->addWidget(frame_21);
+
+        toolButton_16 = new QToolButton(frame_7);
+        toolButton_16->setObjectName(QStringLiteral("toolButton_16"));
+        toolButton_16->setIcon(icon28);
+
+        verticalLayout_30->addWidget(toolButton_16);
+
+        toolButton_35 = new QToolButton(frame_7);
+        toolButton_35->setObjectName(QStringLiteral("toolButton_35"));
+        toolButton_35->setIcon(icon29);
+
+        verticalLayout_30->addWidget(toolButton_35);
+
+        toolButton_14 = new QToolButton(frame_7);
+        toolButton_14->setObjectName(QStringLiteral("toolButton_14"));
+        toolButton_14->setIcon(icon30);
+
+        verticalLayout_30->addWidget(toolButton_14);
+
+        verticalSpacer_13 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_30->addItem(verticalSpacer_13);
+
+
+        verticalLayout_3->addWidget(frame_7);
+
+
+        horizontalLayout_7->addLayout(verticalLayout_3);
+
+        verticalLayout_37 = new QVBoxLayout();
+        verticalLayout_37->setSpacing(6);
+        verticalLayout_37->setObjectName(QStringLiteral("verticalLayout_37"));
+        verticalLayout_37->setContentsMargins(0, -1, -1, -1);
+        tableWidget_LifeCycle = new QTableWidget(tab_LifeCycle);
+        if (tableWidget_LifeCycle->columnCount() < 5)
+            tableWidget_LifeCycle->setColumnCount(5);
+        QTableWidgetItem *__qtablewidgetitem6 = new QTableWidgetItem();
+        tableWidget_LifeCycle->setHorizontalHeaderItem(0, __qtablewidgetitem6);
+        QTableWidgetItem *__qtablewidgetitem7 = new QTableWidgetItem();
+        tableWidget_LifeCycle->setHorizontalHeaderItem(1, __qtablewidgetitem7);
+        QTableWidgetItem *__qtablewidgetitem8 = new QTableWidgetItem();
+        tableWidget_LifeCycle->setHorizontalHeaderItem(2, __qtablewidgetitem8);
+        QTableWidgetItem *__qtablewidgetitem9 = new QTableWidgetItem();
+        tableWidget_LifeCycle->setHorizontalHeaderItem(3, __qtablewidgetitem9);
+        QTableWidgetItem *__qtablewidgetitem10 = new QTableWidgetItem();
+        tableWidget_LifeCycle->setHorizontalHeaderItem(4, __qtablewidgetitem10);
+        if (tableWidget_LifeCycle->rowCount() < 2)
+            tableWidget_LifeCycle->setRowCount(2);
+        QTableWidgetItem *__qtablewidgetitem11 = new QTableWidgetItem();
+        tableWidget_LifeCycle->setVerticalHeaderItem(0, __qtablewidgetitem11);
+        QTableWidgetItem *__qtablewidgetitem12 = new QTableWidgetItem();
+        tableWidget_LifeCycle->setVerticalHeaderItem(1, __qtablewidgetitem12);
+        QTableWidgetItem *__qtablewidgetitem13 = new QTableWidgetItem();
+        tableWidget_LifeCycle->setItem(0, 0, __qtablewidgetitem13);
+        QFont font4;
+        font4.setBold(true);
+        font4.setItalic(true);
+        font4.setWeight(75);
+        QTableWidgetItem *__qtablewidgetitem14 = new QTableWidgetItem();
+        __qtablewidgetitem14->setFont(font4);
+        tableWidget_LifeCycle->setItem(0, 1, __qtablewidgetitem14);
+        QTableWidgetItem *__qtablewidgetitem15 = new QTableWidgetItem();
+        tableWidget_LifeCycle->setItem(0, 2, __qtablewidgetitem15);
+        QTableWidgetItem *__qtablewidgetitem16 = new QTableWidgetItem();
+        tableWidget_LifeCycle->setItem(0, 3, __qtablewidgetitem16);
+        QTableWidgetItem *__qtablewidgetitem17 = new QTableWidgetItem();
+        tableWidget_LifeCycle->setItem(0, 4, __qtablewidgetitem17);
+        QTableWidgetItem *__qtablewidgetitem18 = new QTableWidgetItem();
+        tableWidget_LifeCycle->setItem(1, 0, __qtablewidgetitem18);
+        tableWidget_LifeCycle->setObjectName(QStringLiteral("tableWidget_LifeCycle"));
+        tableWidget_LifeCycle->setMinimumSize(QSize(500, 0));
+        tableWidget_LifeCycle->setMaximumSize(QSize(602, 16777215));
+        tableWidget_LifeCycle->setDragEnabled(true);
+        tableWidget_LifeCycle->setDragDropMode(QAbstractItemView::InternalMove);
+        tableWidget_LifeCycle->setDefaultDropAction(Qt::MoveAction);
+        tableWidget_LifeCycle->setAlternatingRowColors(true);
+        tableWidget_LifeCycle->setTextElideMode(Qt::ElideNone);
+        tableWidget_LifeCycle->horizontalHeader()->setDefaultSectionSize(102);
+        tableWidget_LifeCycle->horizontalHeader()->setMinimumSectionSize(102);
+        tableWidget_LifeCycle->horizontalHeader()->setStretchLastSection(true);
+
+        verticalLayout_37->addWidget(tableWidget_LifeCycle);
+
+        frame_27 = new QFrame(tab_LifeCycle);
+        frame_27->setObjectName(QStringLiteral("frame_27"));
+        frame_27->setMinimumSize(QSize(0, 50));
+        frame_27->setFrameShape(QFrame::StyledPanel);
+        frame_27->setFrameShadow(QFrame::Raised);
+
+        verticalLayout_37->addWidget(frame_27);
+
+        label_21 = new QLabel(tab_LifeCycle);
+        label_21->setObjectName(QStringLiteral("label_21"));
+        label_21->setFont(font3);
+
+        verticalLayout_37->addWidget(label_21);
+
+        plainTextEdit_3 = new QPlainTextEdit(tab_LifeCycle);
+        plainTextEdit_3->setObjectName(QStringLiteral("plainTextEdit_3"));
+        plainTextEdit_3->setMaximumSize(QSize(16777215, 70));
+
+        verticalLayout_37->addWidget(plainTextEdit_3);
+
+
+        horizontalLayout_7->addLayout(verticalLayout_37);
+
+        groupBox_VarFuncCreator = new QGroupBox(tab_LifeCycle);
+        groupBox_VarFuncCreator->setObjectName(QStringLiteral("groupBox_VarFuncCreator"));
+        gridLayout_8 = new QGridLayout(groupBox_VarFuncCreator);
+        gridLayout_8->setSpacing(6);
+        gridLayout_8->setContentsMargins(11, 11, 11, 11);
+        gridLayout_8->setObjectName(QStringLiteral("gridLayout_8"));
+        gridLayout_8->setContentsMargins(0, -1, 0, 0);
+        toolBox_CodeEditor = new QToolBox(groupBox_VarFuncCreator);
+        toolBox_CodeEditor->setObjectName(QStringLiteral("toolBox_CodeEditor"));
+        QFont font5;
+        font5.setFamily(QStringLiteral("Monospace"));
+        font5.setPointSize(10);
+        font5.setBold(true);
+        font5.setItalic(false);
+        font5.setWeight(75);
+        toolBox_CodeEditor->setFont(font5);
+        CurrentFormulaEditing = new QWidget();
+        CurrentFormulaEditing->setObjectName(QStringLiteral("CurrentFormulaEditing"));
+        CurrentFormulaEditing->setGeometry(QRect(0, 0, 304, 512));
+        horizontalLayout_26 = new QHBoxLayout(CurrentFormulaEditing);
+        horizontalLayout_26->setSpacing(0);
+        horizontalLayout_26->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_26->setObjectName(QStringLiteral("horizontalLayout_26"));
+        horizontalLayout_26->setContentsMargins(0, 0, 0, 0);
+        textEdit_Formula = new QTextEditCodeEditor(CurrentFormulaEditing);
+        textEdit_Formula->setObjectName(QStringLiteral("textEdit_Formula"));
+        textEdit_Formula->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+
+        horizontalLayout_26->addWidget(textEdit_Formula);
+
+        QIcon icon35;
+        icon35.addFile(QStringLiteral(":/new/prefix1/puce.png"), QSize(), QIcon::Normal, QIcon::Off);
+        toolBox_CodeEditor->addItem(CurrentFormulaEditing, icon35, QStringLiteral("Current Formula Editing"));
+        CustomMacroEditing = new QWidget();
+        CustomMacroEditing->setObjectName(QStringLiteral("CustomMacroEditing"));
+        CustomMacroEditing->setGeometry(QRect(0, 0, 96, 74));
+        horizontalLayout_27 = new QHBoxLayout(CustomMacroEditing);
+        horizontalLayout_27->setSpacing(0);
+        horizontalLayout_27->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_27->setObjectName(QStringLiteral("horizontalLayout_27"));
+        horizontalLayout_27->setContentsMargins(0, 0, 0, 0);
+        textEdit_CustomMacro = new QTextEditCodeEditor(CustomMacroEditing);
+        textEdit_CustomMacro->setObjectName(QStringLiteral("textEdit_CustomMacro"));
+        textEdit_CustomMacro->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
+
+        horizontalLayout_27->addWidget(textEdit_CustomMacro);
+
+        toolBox_CodeEditor->addItem(CustomMacroEditing, icon35, QStringLiteral("Custom MACRO Editing"));
+
+        gridLayout_8->addWidget(toolBox_CodeEditor, 2, 1, 1, 1);
+
+        frame_13 = new QFrame(groupBox_VarFuncCreator);
+        frame_13->setObjectName(QStringLiteral("frame_13"));
+        sizePolicy4.setHeightForWidth(frame_13->sizePolicy().hasHeightForWidth());
+        frame_13->setSizePolicy(sizePolicy4);
+        frame_13->setMaximumSize(QSize(210, 16777215));
+        frame_13->setFrameShape(QFrame::StyledPanel);
+        frame_13->setFrameShadow(QFrame::Raised);
+        verticalLayout_31 = new QVBoxLayout(frame_13);
+        verticalLayout_31->setSpacing(6);
+        verticalLayout_31->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_31->setObjectName(QStringLiteral("verticalLayout_31"));
+        verticalLayout_31->setContentsMargins(6, 6, 6, 6);
+        horizontalLayout_19 = new QHBoxLayout();
+        horizontalLayout_19->setSpacing(6);
+        horizontalLayout_19->setObjectName(QStringLiteral("horizontalLayout_19"));
+        label_27 = new QLabel(frame_13);
+        label_27->setObjectName(QStringLiteral("label_27"));
+        label_27->setMaximumSize(QSize(16, 16));
+        label_27->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/macro-icon.png")));
+
+        horizontalLayout_19->addWidget(label_27);
+
+        label_22 = new QLabel(frame_13);
+        label_22->setObjectName(QStringLiteral("label_22"));
+        label_22->setFont(font);
+
+        horizontalLayout_19->addWidget(label_22);
+
+
+        verticalLayout_31->addLayout(horizontalLayout_19);
+
+        frame_AvailableMacros = new QFrame(frame_13);
+        frame_AvailableMacros->setObjectName(QStringLiteral("frame_AvailableMacros"));
+        frame_AvailableMacros->setFrameShape(QFrame::StyledPanel);
+        frame_AvailableMacros->setFrameShadow(QFrame::Raised);
+        horizontalLayout_25 = new QHBoxLayout(frame_AvailableMacros);
+        horizontalLayout_25->setSpacing(0);
+        horizontalLayout_25->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_25->setObjectName(QStringLiteral("horizontalLayout_25"));
+        horizontalLayout_25->setContentsMargins(0, 0, 0, 0);
+        gridLayout_AvailableMacros = new QGridLayout();
+        gridLayout_AvailableMacros->setSpacing(3);
+        gridLayout_AvailableMacros->setObjectName(QStringLiteral("gridLayout_AvailableMacros"));
+        gridLayout_AvailableMacros->setContentsMargins(3, 3, 3, 3);
+        comboBox_ElpBuiltin = new QComboBox(frame_AvailableMacros);
+        comboBox_ElpBuiltin->setObjectName(QStringLiteral("comboBox_ElpBuiltin"));
+        sizePolicy5.setHeightForWidth(comboBox_ElpBuiltin->sizePolicy().hasHeightForWidth());
+        comboBox_ElpBuiltin->setSizePolicy(sizePolicy5);
+        comboBox_ElpBuiltin->setMinimumSize(QSize(130, 0));
+        comboBox_ElpBuiltin->setMaximumSize(QSize(200, 26));
+        comboBox_ElpBuiltin->setModelColumn(0);
+
+        gridLayout_AvailableMacros->addWidget(comboBox_ElpBuiltin, 5, 1, 1, 1);
+
+        toolButton_26 = new QToolButton(frame_AvailableMacros);
+        toolButton_26->setObjectName(QStringLiteral("toolButton_26"));
+        QIcon icon36;
+        icon36.addFile(QStringLiteral(":/new/prefix1/edit-cursor-icon.png"), QSize(), QIcon::Normal, QIcon::Off);
+        toolButton_26->setIcon(icon36);
+
+        gridLayout_AvailableMacros->addWidget(toolButton_26, 5, 4, 1, 1);
+
+        label = new QLabel(frame_AvailableMacros);
+        label->setObjectName(QStringLiteral("label"));
+        label->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/user-defined.png")));
+
+        gridLayout_AvailableMacros->addWidget(label, 6, 0, 1, 1);
+
+        comboBox_ElpBuiltinKeywords = new QComboBox(frame_AvailableMacros);
+        comboBox_ElpBuiltinKeywords->setObjectName(QStringLiteral("comboBox_ElpBuiltinKeywords"));
+        comboBox_ElpBuiltinKeywords->setMinimumSize(QSize(130, 0));
+        comboBox_ElpBuiltinKeywords->setMaximumSize(QSize(200, 26));
+
+        gridLayout_AvailableMacros->addWidget(comboBox_ElpBuiltinKeywords, 4, 1, 1, 1);
+
+        label_19 = new QLabel(frame_AvailableMacros);
+        label_19->setObjectName(QStringLiteral("label_19"));
+        label_19->setMinimumSize(QSize(25, 0));
+        label_19->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/key-word.png")));
+
+        gridLayout_AvailableMacros->addWidget(label_19, 4, 0, 1, 1);
+
+        toolButton_FormulaInsertKeyword = new QToolButton(frame_AvailableMacros);
+        toolButton_FormulaInsertKeyword->setObjectName(QStringLiteral("toolButton_FormulaInsertKeyword"));
+        toolButton_FormulaInsertKeyword->setIcon(icon36);
+        toolButton_FormulaInsertKeyword->setToolButtonStyle(Qt::ToolButtonIconOnly);
+
+        gridLayout_AvailableMacros->addWidget(toolButton_FormulaInsertKeyword, 4, 4, 1, 1);
+
+        toolButton_2 = new QToolButton(frame_AvailableMacros);
+        toolButton_2->setObjectName(QStringLiteral("toolButton_2"));
+        toolButton_2->setIcon(icon36);
+
+        gridLayout_AvailableMacros->addWidget(toolButton_2, 3, 4, 1, 1);
+
+        horizontalLayout_24 = new QHBoxLayout();
+        horizontalLayout_24->setSpacing(0);
+        horizontalLayout_24->setObjectName(QStringLiteral("horizontalLayout_24"));
+        horizontalLayout_24->setContentsMargins(-1, 0, -1, -1);
+        comboBox_StdMath = new QComboBox(frame_AvailableMacros);
+        comboBox_StdMath->setObjectName(QStringLiteral("comboBox_StdMath"));
+        comboBox_StdMath->setMaximumSize(QSize(16777215, 26));
+
+        horizontalLayout_24->addWidget(comboBox_StdMath);
+
+        comboBox_CatStdMath = new QComboBox(frame_AvailableMacros);
+        comboBox_CatStdMath->setObjectName(QStringLiteral("comboBox_CatStdMath"));
+        comboBox_CatStdMath->setMaximumSize(QSize(16777215, 26));
+
+        horizontalLayout_24->addWidget(comboBox_CatStdMath);
+
+
+        gridLayout_AvailableMacros->addLayout(horizontalLayout_24, 3, 1, 1, 1);
+
+        label_31 = new QLabel(frame_AvailableMacros);
+        label_31->setObjectName(QStringLiteral("label_31"));
+        label_31->setMinimumSize(QSize(25, 0));
+        label_31->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/math-library.png")));
+
+        gridLayout_AvailableMacros->addWidget(label_31, 3, 0, 1, 1);
+
+        label_20 = new QLabel(frame_AvailableMacros);
+        label_20->setObjectName(QStringLiteral("label_20"));
+        label_20->setMinimumSize(QSize(0, 0));
+        label_20->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/function-icon3.png")));
+
+        gridLayout_AvailableMacros->addWidget(label_20, 5, 0, 1, 1);
+
+        toolButton_CustomMacroInsert = new QToolButton(frame_AvailableMacros);
+        toolButton_CustomMacroInsert->setObjectName(QStringLiteral("toolButton_CustomMacroInsert"));
+        toolButton_CustomMacroInsert->setIcon(icon36);
+
+        gridLayout_AvailableMacros->addWidget(toolButton_CustomMacroInsert, 6, 4, 1, 1);
+
+        horizontalLayout_28 = new QHBoxLayout();
+        horizontalLayout_28->setSpacing(3);
+        horizontalLayout_28->setObjectName(QStringLiteral("horizontalLayout_28"));
+        horizontalLayout_28->setContentsMargins(-1, -1, 0, -1);
+        toolButton_CustomMacroEdit = new QToolButton(frame_AvailableMacros);
+        toolButton_CustomMacroEdit->setObjectName(QStringLiteral("toolButton_CustomMacroEdit"));
+        QIcon icon37;
+        icon37.addFile(QStringLiteral(":/new/prefix1/edit-icon.png"), QSize(), QIcon::Normal, QIcon::Off);
+        toolButton_CustomMacroEdit->setIcon(icon37);
+
+        horizontalLayout_28->addWidget(toolButton_CustomMacroEdit);
+
+        comboBox_CustomMacros = new QComboBox(frame_AvailableMacros);
+        comboBox_CustomMacros->addItem(QString());
+        comboBox_CustomMacros->addItem(QString());
+        comboBox_CustomMacros->addItem(QString());
+        comboBox_CustomMacros->addItem(QString());
+        QIcon icon38;
+        icon38.addFile(QStringLiteral(":/new/prefix1/new-icon.png"), QSize(), QIcon::Normal, QIcon::Off);
+        comboBox_CustomMacros->addItem(icon38, QString());
+        comboBox_CustomMacros->setObjectName(QStringLiteral("comboBox_CustomMacros"));
+        comboBox_CustomMacros->setMaximumSize(QSize(16777215, 26));
+
+        horizontalLayout_28->addWidget(comboBox_CustomMacros);
+
+
+        gridLayout_AvailableMacros->addLayout(horizontalLayout_28, 6, 1, 1, 1);
+
+
+        horizontalLayout_25->addLayout(gridLayout_AvailableMacros);
+
+
+        verticalLayout_31->addWidget(frame_AvailableMacros);
+
+        verticalSpacer_6 = new QSpacerItem(20, 5, QSizePolicy::Minimum, QSizePolicy::Fixed);
+
+        verticalLayout_31->addItem(verticalSpacer_6);
+
+        frame_18 = new QFrame(frame_13);
+        frame_18->setObjectName(QStringLiteral("frame_18"));
+        frame_18->setMaximumSize(QSize(16777215, 3));
+        frame_18->setFrameShape(QFrame::HLine);
+        frame_18->setFrameShadow(QFrame::Sunken);
+
+        verticalLayout_31->addWidget(frame_18);
+
+        verticalSpacer_15 = new QSpacerItem(20, 5, QSizePolicy::Minimum, QSizePolicy::Fixed);
+
+        verticalLayout_31->addItem(verticalSpacer_15);
+
+        horizontalLayout_18 = new QHBoxLayout();
+        horizontalLayout_18->setSpacing(6);
+        horizontalLayout_18->setObjectName(QStringLiteral("horizontalLayout_18"));
+        horizontalLayout_18->setContentsMargins(-1, 0, -1, -1);
+        label_26 = new QLabel(frame_13);
+        label_26->setObjectName(QStringLiteral("label_26"));
+        label_26->setMaximumSize(QSize(16, 16));
+        label_26->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/edit-icon.png")));
+
+        horizontalLayout_18->addWidget(label_26);
+
+        label_25 = new QLabel(frame_13);
+        label_25->setObjectName(QStringLiteral("label_25"));
+        label_25->setFont(font);
+
+        horizontalLayout_18->addWidget(label_25);
+
+
+        verticalLayout_31->addLayout(horizontalLayout_18);
+
+        frame_CustomMacro = new QFrame(frame_13);
+        frame_CustomMacro->setObjectName(QStringLiteral("frame_CustomMacro"));
+        frame_CustomMacro->setFrameShape(QFrame::NoFrame);
+        frame_CustomMacro->setFrameShadow(QFrame::Raised);
+        verticalLayout_12 = new QVBoxLayout(frame_CustomMacro);
+        verticalLayout_12->setSpacing(0);
+        verticalLayout_12->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_12->setObjectName(QStringLiteral("verticalLayout_12"));
+        verticalLayout_12->setContentsMargins(0, 0, 0, 0);
+        frame_14 = new QFrame(frame_CustomMacro);
+        frame_14->setObjectName(QStringLiteral("frame_14"));
+        frame_14->setFrameShape(QFrame::StyledPanel);
+        frame_14->setFrameShadow(QFrame::Raised);
+        horizontalLayout_8 = new QHBoxLayout(frame_14);
+        horizontalLayout_8->setSpacing(0);
+        horizontalLayout_8->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_8->setObjectName(QStringLiteral("horizontalLayout_8"));
+        horizontalLayout_8->setContentsMargins(0, 0, 0, 0);
+        gridLayout_10 = new QGridLayout();
+        gridLayout_10->setSpacing(6);
+        gridLayout_10->setObjectName(QStringLiteral("gridLayout_10"));
+        gridLayout_10->setHorizontalSpacing(6);
+        gridLayout_10->setContentsMargins(3, 3, 3, 3);
+        label_34 = new QLabel(frame_14);
+        label_34->setObjectName(QStringLiteral("label_34"));
+        label_34->setMinimumSize(QSize(0, 26));
+        QFont font6;
+        font6.setPointSize(8);
+        label_34->setFont(font6);
+
+        gridLayout_10->addWidget(label_34, 6, 2, 1, 1);
+
+        verticalLayout_38 = new QVBoxLayout();
+        verticalLayout_38->setSpacing(6);
+        verticalLayout_38->setObjectName(QStringLiteral("verticalLayout_38"));
+        verticalLayout_38->setContentsMargins(0, -1, -1, -1);
+        frame_26 = new QFrame(frame_14);
+        frame_26->setObjectName(QStringLiteral("frame_26"));
+        frame_26->setFrameShape(QFrame::Panel);
+        frame_26->setFrameShadow(QFrame::Sunken);
+        horizontalLayout_20 = new QHBoxLayout(frame_26);
+        horizontalLayout_20->setSpacing(0);
+        horizontalLayout_20->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_20->setObjectName(QStringLiteral("horizontalLayout_20"));
+        horizontalLayout_20->setContentsMargins(1, 0, 0, 0);
+        label_24 = new QLabel(frame_26);
+        label_24->setObjectName(QStringLiteral("label_24"));
+        label_24->setMinimumSize(QSize(0, 27));
+        label_24->setFont(font);
+
+        horizontalLayout_20->addWidget(label_24);
+
+
+        verticalLayout_38->addWidget(frame_26);
+
+
+        gridLayout_10->addLayout(verticalLayout_38, 11, 2, 1, 1);
+
+        horizontalLayout_30 = new QHBoxLayout();
+        horizontalLayout_30->setSpacing(1);
+        horizontalLayout_30->setObjectName(QStringLiteral("horizontalLayout_30"));
+        horizontalLayout_30->setContentsMargins(-1, 0, -1, -1);
+        comboBox_CustomMacroParamsNames = new QComboBox(frame_14);
+        comboBox_CustomMacroParamsNames->setObjectName(QStringLiteral("comboBox_CustomMacroParamsNames"));
+        comboBox_CustomMacroParamsNames->setMaximumSize(QSize(16777215, 26));
+
+        horizontalLayout_30->addWidget(comboBox_CustomMacroParamsNames);
+
+        toolButton_5 = new QToolButton(frame_14);
+        toolButton_5->setObjectName(QStringLiteral("toolButton_5"));
+        QIcon icon39;
+        icon39.addFile(QStringLiteral(":/new/prefix1/description.png"), QSize(), QIcon::Normal, QIcon::Off);
+        toolButton_5->setIcon(icon39);
+
+        horizontalLayout_30->addWidget(toolButton_5);
+
+
+        gridLayout_10->addLayout(horizontalLayout_30, 8, 4, 1, 1);
+
+        horizontalLayout_31 = new QHBoxLayout();
+        horizontalLayout_31->setSpacing(1);
+        horizontalLayout_31->setObjectName(QStringLiteral("horizontalLayout_31"));
+        horizontalLayout_31->setContentsMargins(-1, 0, 0, -1);
+        lineEdit_CustomMacroName = new QLineEdit(frame_14);
+        lineEdit_CustomMacroName->setObjectName(QStringLiteral("lineEdit_CustomMacroName"));
+        lineEdit_CustomMacroName->setMaximumSize(QSize(16777215, 26));
+
+        horizontalLayout_31->addWidget(lineEdit_CustomMacroName);
+
+        toolButton_8 = new QToolButton(frame_14);
+        toolButton_8->setObjectName(QStringLiteral("toolButton_8"));
+        toolButton_8->setIcon(icon39);
+
+        horizontalLayout_31->addWidget(toolButton_8);
+
+
+        gridLayout_10->addLayout(horizontalLayout_31, 1, 4, 1, 1);
+
+        horizontalLayout_29 = new QHBoxLayout();
+        horizontalLayout_29->setSpacing(1);
+        horizontalLayout_29->setObjectName(QStringLiteral("horizontalLayout_29"));
+        horizontalLayout_29->setContentsMargins(-1, 0, -1, -1);
+        lineEdit_CustomMacroParamName = new QLineEdit(frame_14);
+        lineEdit_CustomMacroParamName->setObjectName(QStringLiteral("lineEdit_CustomMacroParamName"));
+        lineEdit_CustomMacroParamName->setMaximumSize(QSize(16777215, 26));
+
+        horizontalLayout_29->addWidget(lineEdit_CustomMacroParamName);
+
+
+        gridLayout_10->addLayout(horizontalLayout_29, 6, 4, 1, 1);
+
+        verticalLayout_41 = new QVBoxLayout();
+        verticalLayout_41->setSpacing(6);
+        verticalLayout_41->setObjectName(QStringLiteral("verticalLayout_41"));
+        verticalLayout_41->setContentsMargins(0, -1, -1, -1);
+        comboBox_CustomMacroStyle = new QComboBox(frame_14);
+        comboBox_CustomMacroStyle->setObjectName(QStringLiteral("comboBox_CustomMacroStyle"));
+        comboBox_CustomMacroStyle->setMaximumSize(QSize(16777215, 26));
+
+        verticalLayout_41->addWidget(comboBox_CustomMacroStyle);
+
+
+        gridLayout_10->addLayout(verticalLayout_41, 2, 4, 1, 1);
+
+        frame_24 = new QFrame(frame_14);
+        frame_24->setObjectName(QStringLiteral("frame_24"));
+        frame_24->setMinimumSize(QSize(0, 10));
+        frame_24->setFrameShape(QFrame::HLine);
+        frame_24->setFrameShadow(QFrame::Sunken);
+
+        gridLayout_10->addWidget(frame_24, 10, 4, 1, 1);
+
+        label_32 = new QLabel(frame_14);
+        label_32->setObjectName(QStringLiteral("label_32"));
+        label_32->setFont(font6);
+
+        gridLayout_10->addWidget(label_32, 3, 2, 1, 1);
+
+        verticalLayout_39 = new QVBoxLayout();
+        verticalLayout_39->setSpacing(3);
+        verticalLayout_39->setObjectName(QStringLiteral("verticalLayout_39"));
+        frame_8 = new QFrame(frame_14);
+        frame_8->setObjectName(QStringLiteral("frame_8"));
+        frame_8->setFrameShape(QFrame::Panel);
+        frame_8->setFrameShadow(QFrame::Sunken);
+        horizontalLayout_6 = new QHBoxLayout(frame_8);
+        horizontalLayout_6->setSpacing(2);
+        horizontalLayout_6->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_6->setObjectName(QStringLiteral("horizontalLayout_6"));
+        horizontalLayout_6->setContentsMargins(2, 2, 2, 2);
+        toolButton_CustomMacroAddNew = new QToolButton(frame_8);
+        toolButton_CustomMacroAddNew->setObjectName(QStringLiteral("toolButton_CustomMacroAddNew"));
+        toolButton_CustomMacroAddNew->setIcon(icon21);
+        toolButton_CustomMacroAddNew->setIconSize(QSize(12, 12));
+
+        horizontalLayout_6->addWidget(toolButton_CustomMacroAddNew);
+
+        toolButton_CustomMacroDelete = new QToolButton(frame_8);
+        toolButton_CustomMacroDelete->setObjectName(QStringLiteral("toolButton_CustomMacroDelete"));
+        toolButton_CustomMacroDelete->setIcon(icon22);
+        toolButton_CustomMacroDelete->setIconSize(QSize(12, 12));
+
+        horizontalLayout_6->addWidget(toolButton_CustomMacroDelete);
+
+        horizontalSpacer_4 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_6->addItem(horizontalSpacer_4);
+
+        toolButton_CustomMacroApply = new QToolButton(frame_8);
+        toolButton_CustomMacroApply->setObjectName(QStringLiteral("toolButton_CustomMacroApply"));
+        QIcon icon40;
+        icon40.addFile(QStringLiteral(":/new/prefix1/checkmark.png"), QSize(), QIcon::Normal, QIcon::Off);
+        toolButton_CustomMacroApply->setIcon(icon40);
+        toolButton_CustomMacroApply->setIconSize(QSize(12, 12));
+
+        horizontalLayout_6->addWidget(toolButton_CustomMacroApply);
+
+        toolButton_CustomMacroDiscard = new QToolButton(frame_8);
+        toolButton_CustomMacroDiscard->setObjectName(QStringLiteral("toolButton_CustomMacroDiscard"));
+        QIcon icon41;
+        icon41.addFile(QStringLiteral(":/new/prefix1/cancel.png"), QSize(), QIcon::Normal, QIcon::Off);
+        toolButton_CustomMacroDiscard->setIcon(icon41);
+        toolButton_CustomMacroDiscard->setIconSize(QSize(12, 12));
+
+        horizontalLayout_6->addWidget(toolButton_CustomMacroDiscard);
+
+
+        verticalLayout_39->addWidget(frame_8);
+
+
+        gridLayout_10->addLayout(verticalLayout_39, 11, 4, 1, 1);
+
+        frame_23 = new QFrame(frame_14);
+        frame_23->setObjectName(QStringLiteral("frame_23"));
+        frame_23->setMinimumSize(QSize(0, 10));
+        frame_23->setFrameShape(QFrame::HLine);
+        frame_23->setFrameShadow(QFrame::Sunken);
+
+        gridLayout_10->addWidget(frame_23, 5, 4, 1, 1);
+
+        label_23 = new QLabel(frame_14);
+        label_23->setObjectName(QStringLiteral("label_23"));
+        label_23->setFont(font);
+
+        gridLayout_10->addWidget(label_23, 1, 2, 1, 1);
+
+        verticalLayout_40 = new QVBoxLayout();
+        verticalLayout_40->setSpacing(0);
+        verticalLayout_40->setObjectName(QStringLiteral("verticalLayout_40"));
+        verticalLayout_40->setContentsMargins(-1, 0, -1, -1);
+        label_33 = new QLabel(frame_14);
+        label_33->setObjectName(QStringLiteral("label_33"));
+        label_33->setFont(font6);
+
+        verticalLayout_40->addWidget(label_33);
+
+
+        gridLayout_10->addLayout(verticalLayout_40, 2, 2, 1, 1);
+
+        frame_25 = new QFrame(frame_14);
+        frame_25->setObjectName(QStringLiteral("frame_25"));
+        frame_25->setMinimumSize(QSize(0, 10));
+        frame_25->setFrameShape(QFrame::HLine);
+        frame_25->setFrameShadow(QFrame::Sunken);
+
+        gridLayout_10->addWidget(frame_25, 10, 2, 1, 1);
+
+        widget = new QWidget(frame_14);
+        widget->setObjectName(QStringLiteral("widget"));
+        horizontalLayout_32 = new QHBoxLayout(widget);
+        horizontalLayout_32->setSpacing(1);
+        horizontalLayout_32->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_32->setObjectName(QStringLiteral("horizontalLayout_32"));
+        horizontalLayout_32->setContentsMargins(0, 0, 0, 0);
+        toolButton_CustomMacroAddNew_2 = new QToolButton(widget);
+        toolButton_CustomMacroAddNew_2->setObjectName(QStringLiteral("toolButton_CustomMacroAddNew_2"));
+        toolButton_CustomMacroAddNew_2->setIcon(icon21);
+        toolButton_CustomMacroAddNew_2->setIconSize(QSize(12, 12));
+
+        horizontalLayout_32->addWidget(toolButton_CustomMacroAddNew_2);
+
+        toolButton_CustomMacroDelete_2 = new QToolButton(widget);
+        toolButton_CustomMacroDelete_2->setObjectName(QStringLiteral("toolButton_CustomMacroDelete_2"));
+        toolButton_CustomMacroDelete_2->setIcon(icon22);
+        toolButton_CustomMacroDelete_2->setIconSize(QSize(12, 12));
+
+        horizontalLayout_32->addWidget(toolButton_CustomMacroDelete_2);
+
+
+        gridLayout_10->addWidget(widget, 8, 2, 1, 1);
+
+        comboBox_CustomMacroReturns = new QComboBox(frame_14);
+        comboBox_CustomMacroReturns->setObjectName(QStringLiteral("comboBox_CustomMacroReturns"));
+        comboBox_CustomMacroReturns->setMinimumSize(QSize(130, 0));
+        comboBox_CustomMacroReturns->setMaximumSize(QSize(200, 26));
+
+        gridLayout_10->addWidget(comboBox_CustomMacroReturns, 3, 4, 1, 1);
+
+        lineEdit_VarDesc = new QLineEdit(frame_14);
+        lineEdit_VarDesc->setObjectName(QStringLiteral("lineEdit_VarDesc"));
+
+        gridLayout_10->addWidget(lineEdit_VarDesc, 7, 4, 1, 1);
+
+        label_28 = new QLabel(frame_14);
+        label_28->setObjectName(QStringLiteral("label_28"));
+
+        gridLayout_10->addWidget(label_28, 7, 2, 1, 1);
+
+
+        horizontalLayout_8->addLayout(gridLayout_10);
+
+
+        verticalLayout_12->addWidget(frame_14);
+
+
+        verticalLayout_31->addWidget(frame_CustomMacro);
+
+        verticalSpacer_14 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_31->addItem(verticalSpacer_14);
+
+
+        gridLayout_8->addWidget(frame_13, 2, 0, 1, 1);
+
+        label_MacroItemName = new QLabel(groupBox_VarFuncCreator);
+        label_MacroItemName->setObjectName(QStringLiteral("label_MacroItemName"));
+        label_MacroItemName->setFont(font);
+
+        gridLayout_8->addWidget(label_MacroItemName, 0, 0, 1, 1);
+
+        horizontalLayout_33 = new QHBoxLayout();
+        horizontalLayout_33->setSpacing(6);
+        horizontalLayout_33->setObjectName(QStringLiteral("horizontalLayout_33"));
+        horizontalLayout_33->setContentsMargins(-1, 0, -1, -1);
+        horizontalSpacer_8 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_33->addItem(horizontalSpacer_8);
+
+        toolButton_EditorCheckSyntax = new QToolButton(groupBox_VarFuncCreator);
+        toolButton_EditorCheckSyntax->setObjectName(QStringLiteral("toolButton_EditorCheckSyntax"));
+        QSizePolicy sizePolicy7(QSizePolicy::Expanding, QSizePolicy::Fixed);
+        sizePolicy7.setHorizontalStretch(0);
+        sizePolicy7.setVerticalStretch(0);
+        sizePolicy7.setHeightForWidth(toolButton_EditorCheckSyntax->sizePolicy().hasHeightForWidth());
+        toolButton_EditorCheckSyntax->setSizePolicy(sizePolicy7);
+        toolButton_EditorCheckSyntax->setFont(font1);
+        QIcon icon42;
+        icon42.addFile(QStringLiteral(":/new/prefix1/spell-check-error.png"), QSize(), QIcon::Normal, QIcon::Off);
+        toolButton_EditorCheckSyntax->setIcon(icon42);
+        toolButton_EditorCheckSyntax->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
+
+        horizontalLayout_33->addWidget(toolButton_EditorCheckSyntax);
+
+
+        gridLayout_8->addLayout(horizontalLayout_33, 0, 1, 1, 1);
+
+        verticalSpacer_18 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Fixed);
+
+        gridLayout_8->addItem(verticalSpacer_18, 3, 1, 1, 1);
+
+
+        horizontalLayout_7->addWidget(groupBox_VarFuncCreator);
+
+        QIcon icon43;
+        icon43.addFile(QStringLiteral(":/new/prefix1/cycle-icon-2.png"), QSize(), QIcon::Normal, QIcon::Off);
+        tabWidget_Top->addTab(tab_LifeCycle, icon43, QString());
         tab_Network = new QWidget();
         tab_Network->setObjectName(QStringLiteral("tab_Network"));
         horizontalLayout_14 = new QHBoxLayout(tab_Network);
@@ -1045,9 +2041,9 @@ public:
 
         spinBox_NetworkNbNodes = new QSpinBox(frame);
         spinBox_NetworkNbNodes->setObjectName(QStringLiteral("spinBox_NetworkNbNodes"));
-        QFont font3;
-        font3.setStrikeOut(false);
-        spinBox_NetworkNbNodes->setFont(font3);
+        QFont font7;
+        font7.setStrikeOut(false);
+        spinBox_NetworkNbNodes->setFont(font7);
         spinBox_NetworkNbNodes->setMaximum(16777215);
         spinBox_NetworkNbNodes->setSingleStep(100);
 
@@ -1093,12 +2089,12 @@ public:
 
         label_3 = new QLabel(frame);
         label_3->setObjectName(QStringLiteral("label_3"));
-        QFont font4;
-        font4.setPointSize(8);
-        font4.setBold(true);
-        font4.setItalic(true);
-        font4.setWeight(75);
-        label_3->setFont(font4);
+        QFont font8;
+        font8.setPointSize(8);
+        font8.setBold(true);
+        font8.setItalic(true);
+        font8.setWeight(75);
+        label_3->setFont(font8);
         label_3->setAlignment(Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft);
 
         horizontalLayout->addWidget(label_3);
@@ -1176,12 +2172,12 @@ public:
         horizontalLayout_17->addItem(horizontalSpacer_6);
 
         comboBox_NetPopsSpread = new QComboBox(frame_2);
-        QIcon icon33;
-        icon33.addFile(QStringLiteral(":/new/prefix1/spray-icon.png"), QSize(), QIcon::Normal, QIcon::Off);
-        comboBox_NetPopsSpread->addItem(icon33, QString());
-        QIcon icon34;
-        icon34.addFile(QStringLiteral(":/new/prefix1/pin-icon.png"), QSize(), QIcon::Normal, QIcon::Off);
-        comboBox_NetPopsSpread->addItem(icon34, QString());
+        QIcon icon44;
+        icon44.addFile(QStringLiteral(":/new/prefix1/spray-icon.png"), QSize(), QIcon::Normal, QIcon::Off);
+        comboBox_NetPopsSpread->addItem(icon44, QString());
+        QIcon icon45;
+        icon45.addFile(QStringLiteral(":/new/prefix1/pin-icon.png"), QSize(), QIcon::Normal, QIcon::Off);
+        comboBox_NetPopsSpread->addItem(icon45, QString());
         comboBox_NetPopsSpread->setObjectName(QStringLiteral("comboBox_NetPopsSpread"));
         comboBox_NetPopsSpread->setSizeAdjustPolicy(QComboBox::AdjustToContents);
 
@@ -1196,10 +2192,10 @@ public:
         tableWidget_NetPopsRepartition = new QTableWidget(frame_2);
         if (tableWidget_NetPopsRepartition->columnCount() < 2)
             tableWidget_NetPopsRepartition->setColumnCount(2);
-        QTableWidgetItem *__qtablewidgetitem4 = new QTableWidgetItem();
-        tableWidget_NetPopsRepartition->setHorizontalHeaderItem(0, __qtablewidgetitem4);
-        QTableWidgetItem *__qtablewidgetitem5 = new QTableWidgetItem();
-        tableWidget_NetPopsRepartition->setHorizontalHeaderItem(1, __qtablewidgetitem5);
+        QTableWidgetItem *__qtablewidgetitem19 = new QTableWidgetItem();
+        tableWidget_NetPopsRepartition->setHorizontalHeaderItem(0, __qtablewidgetitem19);
+        QTableWidgetItem *__qtablewidgetitem20 = new QTableWidgetItem();
+        tableWidget_NetPopsRepartition->setHorizontalHeaderItem(1, __qtablewidgetitem20);
         tableWidget_NetPopsRepartition->setObjectName(QStringLiteral("tableWidget_NetPopsRepartition"));
         tableWidget_NetPopsRepartition->horizontalHeader()->setCascadingSectionResizes(true);
         tableWidget_NetPopsRepartition->horizontalHeader()->setDefaultSectionSize(150);
@@ -1216,15 +2212,13 @@ public:
         frame_NetPopTotalInfo->setFrameShadow(QFrame::Raised);
         horizontalLayout_23 = new QHBoxLayout(frame_NetPopTotalInfo);
         horizontalLayout_23->setSpacing(6);
-        horizontalLayout_23->setContentsMargins(3, 3, 3, 3);
+        horizontalLayout_23->setContentsMargins(11, 11, 11, 11);
         horizontalLayout_23->setObjectName(QStringLiteral("horizontalLayout_23"));
+        horizontalLayout_23->setContentsMargins(3, 3, 3, 3);
         label_NetPopIcon_2 = new QLabel(frame_NetPopTotalInfo);
         label_NetPopIcon_2->setObjectName(QStringLiteral("label_NetPopIcon_2"));
-        QSizePolicy sizePolicy4(QSizePolicy::Fixed, QSizePolicy::Fixed);
-        sizePolicy4.setHorizontalStretch(0);
-        sizePolicy4.setVerticalStretch(0);
-        sizePolicy4.setHeightForWidth(label_NetPopIcon_2->sizePolicy().hasHeightForWidth());
-        label_NetPopIcon_2->setSizePolicy(sizePolicy4);
+        sizePolicy5.setHeightForWidth(label_NetPopIcon_2->sizePolicy().hasHeightForWidth());
+        label_NetPopIcon_2->setSizePolicy(sizePolicy5);
         label_NetPopIcon_2->setBaseSize(QSize(24, 24));
         label_NetPopIcon_2->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/warning.png")));
 
@@ -1232,11 +2226,8 @@ public:
 
         textEdit_NetPopTotalInfo = new QTextEdit(frame_NetPopTotalInfo);
         textEdit_NetPopTotalInfo->setObjectName(QStringLiteral("textEdit_NetPopTotalInfo"));
-        QSizePolicy sizePolicy5(QSizePolicy::Expanding, QSizePolicy::Fixed);
-        sizePolicy5.setHorizontalStretch(0);
-        sizePolicy5.setVerticalStretch(0);
-        sizePolicy5.setHeightForWidth(textEdit_NetPopTotalInfo->sizePolicy().hasHeightForWidth());
-        textEdit_NetPopTotalInfo->setSizePolicy(sizePolicy5);
+        sizePolicy7.setHeightForWidth(textEdit_NetPopTotalInfo->sizePolicy().hasHeightForWidth());
+        textEdit_NetPopTotalInfo->setSizePolicy(sizePolicy7);
         textEdit_NetPopTotalInfo->setMaximumSize(QSize(16777215, 28));
         textEdit_NetPopTotalInfo->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 
@@ -1251,27 +2242,21 @@ public:
         frame_22->setFrameShadow(QFrame::Raised);
         horizontalLayout_21 = new QHBoxLayout(frame_22);
         horizontalLayout_21->setSpacing(6);
-        horizontalLayout_21->setContentsMargins(3, 3, 3, 3);
+        horizontalLayout_21->setContentsMargins(11, 11, 11, 11);
         horizontalLayout_21->setObjectName(QStringLiteral("horizontalLayout_21"));
+        horizontalLayout_21->setContentsMargins(3, 3, 3, 3);
         label_18 = new QLabel(frame_22);
         label_18->setObjectName(QStringLiteral("label_18"));
-        QSizePolicy sizePolicy6(QSizePolicy::Expanding, QSizePolicy::Preferred);
-        sizePolicy6.setHorizontalStretch(0);
-        sizePolicy6.setVerticalStretch(0);
-        sizePolicy6.setHeightForWidth(label_18->sizePolicy().hasHeightForWidth());
-        label_18->setSizePolicy(sizePolicy6);
-        QFont font5;
-        font5.setBold(true);
-        font5.setItalic(true);
-        font5.setWeight(75);
-        label_18->setFont(font5);
+        sizePolicy4.setHeightForWidth(label_18->sizePolicy().hasHeightForWidth());
+        label_18->setSizePolicy(sizePolicy4);
+        label_18->setFont(font4);
 
         horizontalLayout_21->addWidget(label_18);
 
         label_NetPopIcon = new QLabel(frame_22);
         label_NetPopIcon->setObjectName(QStringLiteral("label_NetPopIcon"));
-        sizePolicy4.setHeightForWidth(label_NetPopIcon->sizePolicy().hasHeightForWidth());
-        label_NetPopIcon->setSizePolicy(sizePolicy4);
+        sizePolicy5.setHeightForWidth(label_NetPopIcon->sizePolicy().hasHeightForWidth());
+        label_NetPopIcon->setSizePolicy(sizePolicy5);
         label_NetPopIcon->setBaseSize(QSize(24, 24));
         label_NetPopIcon->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/warning24.png")));
 
@@ -1279,8 +2264,8 @@ public:
 
         textEdit_SpreadTotal = new QTextEdit(frame_22);
         textEdit_SpreadTotal->setObjectName(QStringLiteral("textEdit_SpreadTotal"));
-        sizePolicy5.setHeightForWidth(textEdit_SpreadTotal->sizePolicy().hasHeightForWidth());
-        textEdit_SpreadTotal->setSizePolicy(sizePolicy5);
+        sizePolicy7.setHeightForWidth(textEdit_SpreadTotal->sizePolicy().hasHeightForWidth());
+        textEdit_SpreadTotal->setSizePolicy(sizePolicy7);
         textEdit_SpreadTotal->setMaximumSize(QSize(16777215, 28));
         textEdit_SpreadTotal->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
         textEdit_SpreadTotal->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
@@ -1309,15 +2294,15 @@ public:
 
         pushButton_NetGenerate = new QPushButton(frame_2);
         pushButton_NetGenerate->setObjectName(QStringLiteral("pushButton_NetGenerate"));
-        QSizePolicy sizePolicy7(QSizePolicy::Minimum, QSizePolicy::Fixed);
-        sizePolicy7.setHorizontalStretch(0);
-        sizePolicy7.setVerticalStretch(0);
-        sizePolicy7.setHeightForWidth(pushButton_NetGenerate->sizePolicy().hasHeightForWidth());
-        pushButton_NetGenerate->setSizePolicy(sizePolicy7);
+        QSizePolicy sizePolicy8(QSizePolicy::Minimum, QSizePolicy::Fixed);
+        sizePolicy8.setHorizontalStretch(0);
+        sizePolicy8.setVerticalStretch(0);
+        sizePolicy8.setHeightForWidth(pushButton_NetGenerate->sizePolicy().hasHeightForWidth());
+        pushButton_NetGenerate->setSizePolicy(sizePolicy8);
         pushButton_NetGenerate->setMaximumSize(QSize(16777215, 30));
-        QIcon icon35;
-        icon35.addFile(QStringLiteral(":/new/prefix1/Net-mesh-icon24.png"), QSize(), QIcon::Normal, QIcon::Off);
-        pushButton_NetGenerate->setIcon(icon35);
+        QIcon icon46;
+        icon46.addFile(QStringLiteral(":/new/prefix1/Net-mesh-icon24.png"), QSize(), QIcon::Normal, QIcon::Off);
+        pushButton_NetGenerate->setIcon(icon46);
         pushButton_NetGenerate->setIconSize(QSize(24, 24));
 
         horizontalLayout_16->addWidget(pushButton_NetGenerate);
@@ -1331,959 +2316,9 @@ public:
 
         horizontalLayout_14->addWidget(groupBox_2);
 
-        QIcon icon36;
-        icon36.addFile(QStringLiteral(":/new/prefix1/Net-icon.png"), QSize(), QIcon::Normal, QIcon::Off);
-        tabWidget_Top->addTab(tab_Network, icon36, QString());
-        tab_Variables = new QWidget();
-        tab_Variables->setObjectName(QStringLiteral("tab_Variables"));
-        verticalLayout_11 = new QVBoxLayout(tab_Variables);
-        verticalLayout_11->setSpacing(6);
-        verticalLayout_11->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_11->setObjectName(QStringLiteral("verticalLayout_11"));
-        horizontalLayout_9 = new QHBoxLayout();
-        horizontalLayout_9->setSpacing(6);
-        horizontalLayout_9->setObjectName(QStringLiteral("horizontalLayout_9"));
-        horizontalLayout_2 = new QHBoxLayout();
-        horizontalLayout_2->setSpacing(6);
-        horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
-        frame_11 = new QFrame(tab_Variables);
-        frame_11->setObjectName(QStringLiteral("frame_11"));
-        frame_11->setFrameShape(QFrame::StyledPanel);
-        frame_11->setFrameShadow(QFrame::Raised);
-        verticalLayout_36 = new QVBoxLayout(frame_11);
-        verticalLayout_36->setSpacing(3);
-        verticalLayout_36->setContentsMargins(3, 3, 3, 3);
-        verticalLayout_36->setObjectName(QStringLiteral("verticalLayout_36"));
-        label_30 = new QLabel(frame_11);
-        label_30->setObjectName(QStringLiteral("label_30"));
-        label_30->setFont(font);
-
-        verticalLayout_36->addWidget(label_30);
-
-        toolButton_VarAdd = new QToolButton(frame_11);
-        toolButton_VarAdd->setObjectName(QStringLiteral("toolButton_VarAdd"));
-        toolButton_VarAdd->setIcon(icon21);
-
-        verticalLayout_36->addWidget(toolButton_VarAdd);
-
-        toolButton_VarRemove = new QToolButton(frame_11);
-        toolButton_VarRemove->setObjectName(QStringLiteral("toolButton_VarRemove"));
-        toolButton_VarRemove->setIcon(icon22);
-
-        verticalLayout_36->addWidget(toolButton_VarRemove);
-
-        toolButton_VarRowUp = new QToolButton(frame_11);
-        toolButton_VarRowUp->setObjectName(QStringLiteral("toolButton_VarRowUp"));
-        toolButton_VarRowUp->setIcon(icon23);
-
-        verticalLayout_36->addWidget(toolButton_VarRowUp);
-
-        toolButton_VarRowDown = new QToolButton(frame_11);
-        toolButton_VarRowDown->setObjectName(QStringLiteral("toolButton_VarRowDown"));
-        toolButton_VarRowDown->setIcon(icon24);
-
-        verticalLayout_36->addWidget(toolButton_VarRowDown);
-
-        verticalSpacer_16 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        verticalLayout_36->addItem(verticalSpacer_16);
-
-
-        horizontalLayout_2->addWidget(frame_11);
-
-        groupBox_6 = new QGroupBox(tab_Variables);
-        groupBox_6->setObjectName(QStringLiteral("groupBox_6"));
-        verticalLayout_21 = new QVBoxLayout(groupBox_6);
-        verticalLayout_21->setSpacing(6);
-        verticalLayout_21->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_21->setObjectName(QStringLiteral("verticalLayout_21"));
-        verticalLayout_21->setContentsMargins(0, -1, -1, -1);
-        tableWidget_Variables = new QTableWidget(groupBox_6);
-        if (tableWidget_Variables->columnCount() < 2)
-            tableWidget_Variables->setColumnCount(2);
-        QTableWidgetItem *__qtablewidgetitem6 = new QTableWidgetItem();
-        tableWidget_Variables->setHorizontalHeaderItem(0, __qtablewidgetitem6);
-        QTableWidgetItem *__qtablewidgetitem7 = new QTableWidgetItem();
-        tableWidget_Variables->setHorizontalHeaderItem(1, __qtablewidgetitem7);
-        tableWidget_Variables->setObjectName(QStringLiteral("tableWidget_Variables"));
-        tableWidget_Variables->setMinimumSize(QSize(502, 0));
-        tableWidget_Variables->setSelectionBehavior(QAbstractItemView::SelectRows);
-        tableWidget_Variables->horizontalHeader()->setDefaultSectionSize(200);
-        tableWidget_Variables->horizontalHeader()->setMinimumSectionSize(200);
-        tableWidget_Variables->horizontalHeader()->setStretchLastSection(true);
-
-        verticalLayout_21->addWidget(tableWidget_Variables);
-
-        label_29 = new QLabel(groupBox_6);
-        label_29->setObjectName(QStringLiteral("label_29"));
-        QFont font6;
-        font6.setItalic(true);
-        label_29->setFont(font6);
-
-        verticalLayout_21->addWidget(label_29);
-
-        plainTextEdit_VarDesc = new QPlainTextEdit(groupBox_6);
-        plainTextEdit_VarDesc->setObjectName(QStringLiteral("plainTextEdit_VarDesc"));
-        plainTextEdit_VarDesc->setMaximumSize(QSize(16777215, 70));
-        plainTextEdit_VarDesc->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
-
-        verticalLayout_21->addWidget(plainTextEdit_VarDesc);
-
-
-        horizontalLayout_2->addWidget(groupBox_6);
-
-
-        horizontalLayout_9->addLayout(horizontalLayout_2);
-
-        groupBox_VarFuncTrashed = new QGroupBox(tab_Variables);
-        groupBox_VarFuncTrashed->setObjectName(QStringLiteral("groupBox_VarFuncTrashed"));
-        horizontalLayout_10 = new QHBoxLayout(groupBox_VarFuncTrashed);
-        horizontalLayout_10->setSpacing(6);
-        horizontalLayout_10->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_10->setObjectName(QStringLiteral("horizontalLayout_10"));
-        horizontalLayout_10->setContentsMargins(0, -1, -1, -1);
-        frame_9 = new QFrame(groupBox_VarFuncTrashed);
-        frame_9->setObjectName(QStringLiteral("frame_9"));
-        sizePolicy6.setHeightForWidth(frame_9->sizePolicy().hasHeightForWidth());
-        frame_9->setSizePolicy(sizePolicy6);
-        frame_9->setMaximumSize(QSize(210, 16777215));
-        frame_9->setFrameShape(QFrame::StyledPanel);
-        frame_9->setFrameShadow(QFrame::Raised);
-        verticalLayout_22 = new QVBoxLayout(frame_9);
-        verticalLayout_22->setSpacing(6);
-        verticalLayout_22->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_22->setObjectName(QStringLiteral("verticalLayout_22"));
-        gridLayout_5 = new QGridLayout();
-        gridLayout_5->setSpacing(3);
-        gridLayout_5->setObjectName(QStringLiteral("gridLayout_5"));
-        toolButton_10 = new QToolButton(frame_9);
-        toolButton_10->setObjectName(QStringLiteral("toolButton_10"));
-        QIcon icon37;
-        icon37.addFile(QStringLiteral(":/new/prefix1/new-icon3.png"), QSize(), QIcon::Normal, QIcon::Off);
-        toolButton_10->setIcon(icon37);
-        toolButton_10->setToolButtonStyle(Qt::ToolButtonIconOnly);
-
-        gridLayout_5->addWidget(toolButton_10, 0, 2, 1, 1);
-
-        label_15 = new QLabel(frame_9);
-        label_15->setObjectName(QStringLiteral("label_15"));
-        label_15->setMinimumSize(QSize(25, 0));
-        label_15->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/variable-B-icon.png")));
-
-        gridLayout_5->addWidget(label_15, 0, 0, 1, 1);
-
-        comboBox_4 = new QComboBox(frame_9);
-        comboBox_4->setObjectName(QStringLiteral("comboBox_4"));
-        comboBox_4->setMinimumSize(QSize(120, 0));
-        comboBox_4->setMaximumSize(QSize(120, 16777215));
-
-        gridLayout_5->addWidget(comboBox_4, 0, 1, 1, 1);
-
-        toolButton_11 = new QToolButton(frame_9);
-        toolButton_11->setObjectName(QStringLiteral("toolButton_11"));
-        toolButton_11->setIcon(icon37);
-
-        gridLayout_5->addWidget(toolButton_11, 1, 2, 1, 1);
-
-        comboBox_2 = new QComboBox(frame_9);
-        comboBox_2->setObjectName(QStringLiteral("comboBox_2"));
-        sizePolicy4.setHeightForWidth(comboBox_2->sizePolicy().hasHeightForWidth());
-        comboBox_2->setSizePolicy(sizePolicy4);
-        comboBox_2->setMinimumSize(QSize(120, 0));
-        comboBox_2->setMaximumSize(QSize(120, 16777215));
-
-        gridLayout_5->addWidget(comboBox_2, 1, 1, 1, 1);
-
-        label_16 = new QLabel(frame_9);
-        label_16->setObjectName(QStringLiteral("label_16"));
-        label_16->setMinimumSize(QSize(0, 0));
-        label_16->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/function-icon3.png")));
-
-        gridLayout_5->addWidget(label_16, 1, 0, 1, 1);
-
-
-        verticalLayout_22->addLayout(gridLayout_5);
-
-        verticalSpacer_7 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        verticalLayout_22->addItem(verticalSpacer_7);
-
-
-        horizontalLayout_10->addWidget(frame_9);
-
-        plainTextEdit = new QPlainTextEdit(groupBox_VarFuncTrashed);
-        plainTextEdit->setObjectName(QStringLiteral("plainTextEdit"));
-
-        horizontalLayout_10->addWidget(plainTextEdit);
-
-
-        horizontalLayout_9->addWidget(groupBox_VarFuncTrashed);
-
-
-        verticalLayout_11->addLayout(horizontalLayout_9);
-
-        QIcon icon38;
-        icon38.addFile(QStringLiteral(":/new/prefix1/variable-icon.png"), QSize(), QIcon::Normal, QIcon::Off);
-        tabWidget_Top->addTab(tab_Variables, icon38, QString());
-        tab_LifeCycle = new QWidget();
-        tab_LifeCycle->setObjectName(QStringLiteral("tab_LifeCycle"));
-        horizontalLayout_7 = new QHBoxLayout(tab_LifeCycle);
-        horizontalLayout_7->setSpacing(6);
-        horizontalLayout_7->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_7->setObjectName(QStringLiteral("horizontalLayout_7"));
-        verticalLayout_3 = new QVBoxLayout();
-        verticalLayout_3->setSpacing(2);
-        verticalLayout_3->setContentsMargins(0, 0, 0, 0);
-        verticalLayout_3->setObjectName(QStringLiteral("verticalLayout_3"));
-        frame_19 = new QFrame(tab_LifeCycle);
-        frame_19->setObjectName(QStringLiteral("frame_19"));
-        frame_19->setMinimumSize(QSize(0, 10));
-        frame_19->setFrameShape(QFrame::StyledPanel);
-        frame_19->setFrameShadow(QFrame::Raised);
-        verticalLayout_35 = new QVBoxLayout(frame_19);
-        verticalLayout_35->setSpacing(3);
-        verticalLayout_35->setContentsMargins(3, 3, 3, 3);
-        verticalLayout_35->setObjectName(QStringLiteral("verticalLayout_35"));
-        label_14 = new QLabel(frame_19);
-        label_14->setObjectName(QStringLiteral("label_14"));
-        label_14->setFont(font);
-
-        verticalLayout_35->addWidget(label_14);
-
-        toolButton_6 = new QToolButton(frame_19);
-        toolButton_6->setObjectName(QStringLiteral("toolButton_6"));
-        toolButton_6->setIcon(icon21);
-
-        verticalLayout_35->addWidget(toolButton_6);
-
-        toolButton_7 = new QToolButton(frame_19);
-        toolButton_7->setObjectName(QStringLiteral("toolButton_7"));
-        toolButton_7->setIcon(icon22);
-
-        verticalLayout_35->addWidget(toolButton_7);
-
-        toolButton_31 = new QToolButton(frame_19);
-        toolButton_31->setObjectName(QStringLiteral("toolButton_31"));
-        toolButton_31->setIcon(icon23);
-
-        verticalLayout_35->addWidget(toolButton_31);
-
-        toolButton_32 = new QToolButton(frame_19);
-        toolButton_32->setObjectName(QStringLiteral("toolButton_32"));
-        toolButton_32->setIcon(icon24);
-
-        verticalLayout_35->addWidget(toolButton_32);
-
-        frame_20 = new QFrame(frame_19);
-        frame_20->setObjectName(QStringLiteral("frame_20"));
-        frame_20->setFrameShape(QFrame::HLine);
-        frame_20->setFrameShadow(QFrame::Sunken);
-
-        verticalLayout_35->addWidget(frame_20);
-
-        toolButton_33 = new QToolButton(frame_19);
-        toolButton_33->setObjectName(QStringLiteral("toolButton_33"));
-        toolButton_33->setIcon(icon25);
-
-        verticalLayout_35->addWidget(toolButton_33);
-
-        verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        verticalLayout_35->addItem(verticalSpacer_2);
-
-
-        verticalLayout_3->addWidget(frame_19);
-
-        frame_7 = new QFrame(tab_LifeCycle);
-        frame_7->setObjectName(QStringLiteral("frame_7"));
-        QSizePolicy sizePolicy8(QSizePolicy::Preferred, QSizePolicy::Expanding);
-        sizePolicy8.setHorizontalStretch(0);
-        sizePolicy8.setVerticalStretch(0);
-        sizePolicy8.setHeightForWidth(frame_7->sizePolicy().hasHeightForWidth());
-        frame_7->setSizePolicy(sizePolicy8);
-        frame_7->setFrameShape(QFrame::StyledPanel);
-        frame_7->setFrameShadow(QFrame::Raised);
-        verticalLayout_30 = new QVBoxLayout(frame_7);
-        verticalLayout_30->setSpacing(3);
-        verticalLayout_30->setContentsMargins(3, 3, 3, 3);
-        verticalLayout_30->setObjectName(QStringLiteral("verticalLayout_30"));
-        label_17 = new QLabel(frame_7);
-        label_17->setObjectName(QStringLiteral("label_17"));
-        label_17->setFont(font);
-
-        verticalLayout_30->addWidget(label_17);
-
-        toolButton_34 = new QToolButton(frame_7);
-        toolButton_34->setObjectName(QStringLiteral("toolButton_34"));
-        toolButton_34->setIcon(icon27);
-        toolButton_34->setCheckable(true);
-
-        verticalLayout_30->addWidget(toolButton_34);
-
-        frame_21 = new QFrame(frame_7);
-        frame_21->setObjectName(QStringLiteral("frame_21"));
-        frame_21->setFrameShape(QFrame::HLine);
-        frame_21->setFrameShadow(QFrame::Sunken);
-
-        verticalLayout_30->addWidget(frame_21);
-
-        toolButton_16 = new QToolButton(frame_7);
-        toolButton_16->setObjectName(QStringLiteral("toolButton_16"));
-        toolButton_16->setIcon(icon28);
-
-        verticalLayout_30->addWidget(toolButton_16);
-
-        toolButton_35 = new QToolButton(frame_7);
-        toolButton_35->setObjectName(QStringLiteral("toolButton_35"));
-        toolButton_35->setIcon(icon29);
-
-        verticalLayout_30->addWidget(toolButton_35);
-
-        toolButton_14 = new QToolButton(frame_7);
-        toolButton_14->setObjectName(QStringLiteral("toolButton_14"));
-        toolButton_14->setIcon(icon30);
-
-        verticalLayout_30->addWidget(toolButton_14);
-
-        verticalSpacer_13 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        verticalLayout_30->addItem(verticalSpacer_13);
-
-
-        verticalLayout_3->addWidget(frame_7);
-
-
-        horizontalLayout_7->addLayout(verticalLayout_3);
-
-        verticalLayout_37 = new QVBoxLayout();
-        verticalLayout_37->setSpacing(6);
-        verticalLayout_37->setObjectName(QStringLiteral("verticalLayout_37"));
-        verticalLayout_37->setContentsMargins(0, -1, -1, -1);
-        tableWidget_LifeCycle = new QTableWidget(tab_LifeCycle);
-        if (tableWidget_LifeCycle->columnCount() < 5)
-            tableWidget_LifeCycle->setColumnCount(5);
-        QTableWidgetItem *__qtablewidgetitem8 = new QTableWidgetItem();
-        tableWidget_LifeCycle->setHorizontalHeaderItem(0, __qtablewidgetitem8);
-        QTableWidgetItem *__qtablewidgetitem9 = new QTableWidgetItem();
-        tableWidget_LifeCycle->setHorizontalHeaderItem(1, __qtablewidgetitem9);
-        QTableWidgetItem *__qtablewidgetitem10 = new QTableWidgetItem();
-        tableWidget_LifeCycle->setHorizontalHeaderItem(2, __qtablewidgetitem10);
-        QTableWidgetItem *__qtablewidgetitem11 = new QTableWidgetItem();
-        tableWidget_LifeCycle->setHorizontalHeaderItem(3, __qtablewidgetitem11);
-        QTableWidgetItem *__qtablewidgetitem12 = new QTableWidgetItem();
-        tableWidget_LifeCycle->setHorizontalHeaderItem(4, __qtablewidgetitem12);
-        if (tableWidget_LifeCycle->rowCount() < 2)
-            tableWidget_LifeCycle->setRowCount(2);
-        QTableWidgetItem *__qtablewidgetitem13 = new QTableWidgetItem();
-        tableWidget_LifeCycle->setVerticalHeaderItem(0, __qtablewidgetitem13);
-        QTableWidgetItem *__qtablewidgetitem14 = new QTableWidgetItem();
-        tableWidget_LifeCycle->setVerticalHeaderItem(1, __qtablewidgetitem14);
-        QTableWidgetItem *__qtablewidgetitem15 = new QTableWidgetItem();
-        tableWidget_LifeCycle->setItem(0, 0, __qtablewidgetitem15);
-        QTableWidgetItem *__qtablewidgetitem16 = new QTableWidgetItem();
-        __qtablewidgetitem16->setFont(font5);
-        tableWidget_LifeCycle->setItem(0, 1, __qtablewidgetitem16);
-        QTableWidgetItem *__qtablewidgetitem17 = new QTableWidgetItem();
-        tableWidget_LifeCycle->setItem(0, 2, __qtablewidgetitem17);
-        QTableWidgetItem *__qtablewidgetitem18 = new QTableWidgetItem();
-        tableWidget_LifeCycle->setItem(0, 3, __qtablewidgetitem18);
-        QTableWidgetItem *__qtablewidgetitem19 = new QTableWidgetItem();
-        tableWidget_LifeCycle->setItem(0, 4, __qtablewidgetitem19);
-        QTableWidgetItem *__qtablewidgetitem20 = new QTableWidgetItem();
-        tableWidget_LifeCycle->setItem(1, 0, __qtablewidgetitem20);
-        tableWidget_LifeCycle->setObjectName(QStringLiteral("tableWidget_LifeCycle"));
-        tableWidget_LifeCycle->setMinimumSize(QSize(500, 0));
-        tableWidget_LifeCycle->setMaximumSize(QSize(602, 16777215));
-        tableWidget_LifeCycle->setDragEnabled(true);
-        tableWidget_LifeCycle->setDragDropMode(QAbstractItemView::InternalMove);
-        tableWidget_LifeCycle->setDefaultDropAction(Qt::MoveAction);
-        tableWidget_LifeCycle->setAlternatingRowColors(true);
-        tableWidget_LifeCycle->setTextElideMode(Qt::ElideNone);
-        tableWidget_LifeCycle->horizontalHeader()->setDefaultSectionSize(102);
-        tableWidget_LifeCycle->horizontalHeader()->setMinimumSectionSize(102);
-        tableWidget_LifeCycle->horizontalHeader()->setStretchLastSection(true);
-
-        verticalLayout_37->addWidget(tableWidget_LifeCycle);
-
-        frame_27 = new QFrame(tab_LifeCycle);
-        frame_27->setObjectName(QStringLiteral("frame_27"));
-        frame_27->setMinimumSize(QSize(0, 50));
-        frame_27->setFrameShape(QFrame::StyledPanel);
-        frame_27->setFrameShadow(QFrame::Raised);
-
-        verticalLayout_37->addWidget(frame_27);
-
-        label_21 = new QLabel(tab_LifeCycle);
-        label_21->setObjectName(QStringLiteral("label_21"));
-        label_21->setFont(font6);
-
-        verticalLayout_37->addWidget(label_21);
-
-        plainTextEdit_3 = new QPlainTextEdit(tab_LifeCycle);
-        plainTextEdit_3->setObjectName(QStringLiteral("plainTextEdit_3"));
-        plainTextEdit_3->setMaximumSize(QSize(16777215, 70));
-
-        verticalLayout_37->addWidget(plainTextEdit_3);
-
-
-        horizontalLayout_7->addLayout(verticalLayout_37);
-
-        groupBox_VarFuncCreator = new QGroupBox(tab_LifeCycle);
-        groupBox_VarFuncCreator->setObjectName(QStringLiteral("groupBox_VarFuncCreator"));
-        gridLayout_8 = new QGridLayout(groupBox_VarFuncCreator);
-        gridLayout_8->setSpacing(6);
-        gridLayout_8->setContentsMargins(11, 11, 11, 11);
-        gridLayout_8->setObjectName(QStringLiteral("gridLayout_8"));
-        gridLayout_8->setContentsMargins(0, -1, 0, 0);
-        toolBox_CodeEditor = new QToolBox(groupBox_VarFuncCreator);
-        toolBox_CodeEditor->setObjectName(QStringLiteral("toolBox_CodeEditor"));
-        QFont font7;
-        font7.setFamily(QStringLiteral("Monospace"));
-        font7.setPointSize(10);
-        font7.setBold(true);
-        font7.setItalic(false);
-        font7.setWeight(75);
-        toolBox_CodeEditor->setFont(font7);
-        CurrentFormulaEditing = new QWidget();
-        CurrentFormulaEditing->setObjectName(QStringLiteral("CurrentFormulaEditing"));
-        CurrentFormulaEditing->setGeometry(QRect(0, 0, 300, 452));
-        horizontalLayout_26 = new QHBoxLayout(CurrentFormulaEditing);
-        horizontalLayout_26->setSpacing(0);
-        horizontalLayout_26->setContentsMargins(0, 0, 0, 0);
-        horizontalLayout_26->setObjectName(QStringLiteral("horizontalLayout_26"));
-        textEdit_Formula = new QTextEditCodeEditor(CurrentFormulaEditing);
-        textEdit_Formula->setObjectName(QStringLiteral("textEdit_Formula"));
-        textEdit_Formula->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
-
-        horizontalLayout_26->addWidget(textEdit_Formula);
-
-        QIcon icon39;
-        icon39.addFile(QStringLiteral(":/new/prefix1/puce.png"), QSize(), QIcon::Normal, QIcon::Off);
-        toolBox_CodeEditor->addItem(CurrentFormulaEditing, icon39, QStringLiteral("Current Formula Editing"));
-        CustomMacroEditing = new QWidget();
-        CustomMacroEditing->setObjectName(QStringLiteral("CustomMacroEditing"));
-        CustomMacroEditing->setGeometry(QRect(0, 0, 85, 84));
-        horizontalLayout_27 = new QHBoxLayout(CustomMacroEditing);
-        horizontalLayout_27->setSpacing(0);
-        horizontalLayout_27->setContentsMargins(0, 0, 0, 0);
-        horizontalLayout_27->setObjectName(QStringLiteral("horizontalLayout_27"));
-        textEdit_CustomMacro = new QTextEditCodeEditor(CustomMacroEditing);
-        textEdit_CustomMacro->setObjectName(QStringLiteral("textEdit_CustomMacro"));
-        textEdit_CustomMacro->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOn);
-
-        horizontalLayout_27->addWidget(textEdit_CustomMacro);
-
-        toolBox_CodeEditor->addItem(CustomMacroEditing, icon39, QStringLiteral("Custom MACRO Editing"));
-
-        gridLayout_8->addWidget(toolBox_CodeEditor, 2, 1, 1, 1);
-
-        frame_13 = new QFrame(groupBox_VarFuncCreator);
-        frame_13->setObjectName(QStringLiteral("frame_13"));
-        sizePolicy6.setHeightForWidth(frame_13->sizePolicy().hasHeightForWidth());
-        frame_13->setSizePolicy(sizePolicy6);
-        frame_13->setMaximumSize(QSize(210, 16777215));
-        frame_13->setFrameShape(QFrame::StyledPanel);
-        frame_13->setFrameShadow(QFrame::Raised);
-        verticalLayout_31 = new QVBoxLayout(frame_13);
-        verticalLayout_31->setSpacing(6);
-        verticalLayout_31->setContentsMargins(6, 6, 6, 6);
-        verticalLayout_31->setObjectName(QStringLiteral("verticalLayout_31"));
-        horizontalLayout_19 = new QHBoxLayout();
-        horizontalLayout_19->setSpacing(6);
-        horizontalLayout_19->setObjectName(QStringLiteral("horizontalLayout_19"));
-        label_27 = new QLabel(frame_13);
-        label_27->setObjectName(QStringLiteral("label_27"));
-        label_27->setMaximumSize(QSize(16, 16));
-        label_27->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/macro-icon.png")));
-
-        horizontalLayout_19->addWidget(label_27);
-
-        label_22 = new QLabel(frame_13);
-        label_22->setObjectName(QStringLiteral("label_22"));
-        label_22->setFont(font);
-
-        horizontalLayout_19->addWidget(label_22);
-
-
-        verticalLayout_31->addLayout(horizontalLayout_19);
-
-        frame_AvailableMacros = new QFrame(frame_13);
-        frame_AvailableMacros->setObjectName(QStringLiteral("frame_AvailableMacros"));
-        frame_AvailableMacros->setFrameShape(QFrame::StyledPanel);
-        frame_AvailableMacros->setFrameShadow(QFrame::Raised);
-        horizontalLayout_25 = new QHBoxLayout(frame_AvailableMacros);
-        horizontalLayout_25->setSpacing(0);
-        horizontalLayout_25->setContentsMargins(0, 0, 0, 0);
-        horizontalLayout_25->setObjectName(QStringLiteral("horizontalLayout_25"));
-        gridLayout_AvailableMacros = new QGridLayout();
-        gridLayout_AvailableMacros->setSpacing(3);
-        gridLayout_AvailableMacros->setContentsMargins(3, 3, 3, 3);
-        gridLayout_AvailableMacros->setObjectName(QStringLiteral("gridLayout_AvailableMacros"));
-        comboBox_ElpBuiltin = new QComboBox(frame_AvailableMacros);
-        comboBox_ElpBuiltin->setObjectName(QStringLiteral("comboBox_ElpBuiltin"));
-        sizePolicy4.setHeightForWidth(comboBox_ElpBuiltin->sizePolicy().hasHeightForWidth());
-        comboBox_ElpBuiltin->setSizePolicy(sizePolicy4);
-        comboBox_ElpBuiltin->setMinimumSize(QSize(130, 0));
-        comboBox_ElpBuiltin->setMaximumSize(QSize(200, 26));
-        comboBox_ElpBuiltin->setModelColumn(0);
-
-        gridLayout_AvailableMacros->addWidget(comboBox_ElpBuiltin, 5, 1, 1, 1);
-
-        toolButton_26 = new QToolButton(frame_AvailableMacros);
-        toolButton_26->setObjectName(QStringLiteral("toolButton_26"));
-        QIcon icon40;
-        icon40.addFile(QStringLiteral(":/new/prefix1/edit-cursor-icon.png"), QSize(), QIcon::Normal, QIcon::Off);
-        toolButton_26->setIcon(icon40);
-
-        gridLayout_AvailableMacros->addWidget(toolButton_26, 5, 4, 1, 1);
-
-        label = new QLabel(frame_AvailableMacros);
-        label->setObjectName(QStringLiteral("label"));
-        label->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/user-defined.png")));
-
-        gridLayout_AvailableMacros->addWidget(label, 6, 0, 1, 1);
-
-        comboBox_ElpBuiltinKeywords = new QComboBox(frame_AvailableMacros);
-        comboBox_ElpBuiltinKeywords->setObjectName(QStringLiteral("comboBox_ElpBuiltinKeywords"));
-        comboBox_ElpBuiltinKeywords->setMinimumSize(QSize(130, 0));
-        comboBox_ElpBuiltinKeywords->setMaximumSize(QSize(200, 26));
-
-        gridLayout_AvailableMacros->addWidget(comboBox_ElpBuiltinKeywords, 4, 1, 1, 1);
-
-        label_19 = new QLabel(frame_AvailableMacros);
-        label_19->setObjectName(QStringLiteral("label_19"));
-        label_19->setMinimumSize(QSize(25, 0));
-        label_19->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/key-word.png")));
-
-        gridLayout_AvailableMacros->addWidget(label_19, 4, 0, 1, 1);
-
-        toolButton_FormulaInsertKeyword = new QToolButton(frame_AvailableMacros);
-        toolButton_FormulaInsertKeyword->setObjectName(QStringLiteral("toolButton_FormulaInsertKeyword"));
-        toolButton_FormulaInsertKeyword->setIcon(icon40);
-        toolButton_FormulaInsertKeyword->setToolButtonStyle(Qt::ToolButtonIconOnly);
-
-        gridLayout_AvailableMacros->addWidget(toolButton_FormulaInsertKeyword, 4, 4, 1, 1);
-
-        toolButton_2 = new QToolButton(frame_AvailableMacros);
-        toolButton_2->setObjectName(QStringLiteral("toolButton_2"));
-        toolButton_2->setIcon(icon40);
-
-        gridLayout_AvailableMacros->addWidget(toolButton_2, 3, 4, 1, 1);
-
-        horizontalLayout_24 = new QHBoxLayout();
-        horizontalLayout_24->setSpacing(0);
-        horizontalLayout_24->setObjectName(QStringLiteral("horizontalLayout_24"));
-        horizontalLayout_24->setContentsMargins(-1, 0, -1, -1);
-        comboBox_StdMath = new QComboBox(frame_AvailableMacros);
-        comboBox_StdMath->setObjectName(QStringLiteral("comboBox_StdMath"));
-        comboBox_StdMath->setMaximumSize(QSize(16777215, 26));
-
-        horizontalLayout_24->addWidget(comboBox_StdMath);
-
-        comboBox_CatStdMath = new QComboBox(frame_AvailableMacros);
-        comboBox_CatStdMath->setObjectName(QStringLiteral("comboBox_CatStdMath"));
-        comboBox_CatStdMath->setMaximumSize(QSize(16777215, 26));
-
-        horizontalLayout_24->addWidget(comboBox_CatStdMath);
-
-
-        gridLayout_AvailableMacros->addLayout(horizontalLayout_24, 3, 1, 1, 1);
-
-        label_31 = new QLabel(frame_AvailableMacros);
-        label_31->setObjectName(QStringLiteral("label_31"));
-        label_31->setMinimumSize(QSize(25, 0));
-        label_31->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/math-library.png")));
-
-        gridLayout_AvailableMacros->addWidget(label_31, 3, 0, 1, 1);
-
-        label_20 = new QLabel(frame_AvailableMacros);
-        label_20->setObjectName(QStringLiteral("label_20"));
-        label_20->setMinimumSize(QSize(0, 0));
-        label_20->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/function-icon3.png")));
-
-        gridLayout_AvailableMacros->addWidget(label_20, 5, 0, 1, 1);
-
-        toolButton_CustomMacroInsert = new QToolButton(frame_AvailableMacros);
-        toolButton_CustomMacroInsert->setObjectName(QStringLiteral("toolButton_CustomMacroInsert"));
-        toolButton_CustomMacroInsert->setIcon(icon40);
-
-        gridLayout_AvailableMacros->addWidget(toolButton_CustomMacroInsert, 6, 4, 1, 1);
-
-        horizontalLayout_28 = new QHBoxLayout();
-        horizontalLayout_28->setSpacing(3);
-        horizontalLayout_28->setObjectName(QStringLiteral("horizontalLayout_28"));
-        horizontalLayout_28->setContentsMargins(-1, -1, 0, -1);
-        toolButton_CustomMacroEdit = new QToolButton(frame_AvailableMacros);
-        toolButton_CustomMacroEdit->setObjectName(QStringLiteral("toolButton_CustomMacroEdit"));
-        QIcon icon41;
-        icon41.addFile(QStringLiteral(":/new/prefix1/edit-icon.png"), QSize(), QIcon::Normal, QIcon::Off);
-        toolButton_CustomMacroEdit->setIcon(icon41);
-
-        horizontalLayout_28->addWidget(toolButton_CustomMacroEdit);
-
-        comboBox_CustomMacros = new QComboBox(frame_AvailableMacros);
-        comboBox_CustomMacros->addItem(QString());
-        comboBox_CustomMacros->addItem(QString());
-        comboBox_CustomMacros->addItem(QString());
-        comboBox_CustomMacros->addItem(QString());
-        QIcon icon42;
-        icon42.addFile(QStringLiteral(":/new/prefix1/new-icon.png"), QSize(), QIcon::Normal, QIcon::Off);
-        comboBox_CustomMacros->addItem(icon42, QString());
-        comboBox_CustomMacros->setObjectName(QStringLiteral("comboBox_CustomMacros"));
-        comboBox_CustomMacros->setMaximumSize(QSize(16777215, 26));
-
-        horizontalLayout_28->addWidget(comboBox_CustomMacros);
-
-
-        gridLayout_AvailableMacros->addLayout(horizontalLayout_28, 6, 1, 1, 1);
-
-
-        horizontalLayout_25->addLayout(gridLayout_AvailableMacros);
-
-
-        verticalLayout_31->addWidget(frame_AvailableMacros);
-
-        verticalSpacer_6 = new QSpacerItem(20, 5, QSizePolicy::Minimum, QSizePolicy::Fixed);
-
-        verticalLayout_31->addItem(verticalSpacer_6);
-
-        frame_18 = new QFrame(frame_13);
-        frame_18->setObjectName(QStringLiteral("frame_18"));
-        frame_18->setMaximumSize(QSize(16777215, 3));
-        frame_18->setFrameShape(QFrame::HLine);
-        frame_18->setFrameShadow(QFrame::Sunken);
-
-        verticalLayout_31->addWidget(frame_18);
-
-        verticalSpacer_15 = new QSpacerItem(20, 5, QSizePolicy::Minimum, QSizePolicy::Fixed);
-
-        verticalLayout_31->addItem(verticalSpacer_15);
-
-        horizontalLayout_18 = new QHBoxLayout();
-        horizontalLayout_18->setSpacing(6);
-        horizontalLayout_18->setObjectName(QStringLiteral("horizontalLayout_18"));
-        horizontalLayout_18->setContentsMargins(-1, 0, -1, -1);
-        label_26 = new QLabel(frame_13);
-        label_26->setObjectName(QStringLiteral("label_26"));
-        label_26->setMaximumSize(QSize(16, 16));
-        label_26->setPixmap(QPixmap(QString::fromUtf8(":/new/prefix1/edit-icon.png")));
-
-        horizontalLayout_18->addWidget(label_26);
-
-        label_25 = new QLabel(frame_13);
-        label_25->setObjectName(QStringLiteral("label_25"));
-        label_25->setFont(font);
-
-        horizontalLayout_18->addWidget(label_25);
-
-
-        verticalLayout_31->addLayout(horizontalLayout_18);
-
-        frame_CustomMacro = new QFrame(frame_13);
-        frame_CustomMacro->setObjectName(QStringLiteral("frame_CustomMacro"));
-        frame_CustomMacro->setFrameShape(QFrame::NoFrame);
-        frame_CustomMacro->setFrameShadow(QFrame::Raised);
-        verticalLayout_12 = new QVBoxLayout(frame_CustomMacro);
-        verticalLayout_12->setSpacing(0);
-        verticalLayout_12->setContentsMargins(0, 0, 0, 0);
-        verticalLayout_12->setObjectName(QStringLiteral("verticalLayout_12"));
-        frame_14 = new QFrame(frame_CustomMacro);
-        frame_14->setObjectName(QStringLiteral("frame_14"));
-        frame_14->setFrameShape(QFrame::StyledPanel);
-        frame_14->setFrameShadow(QFrame::Raised);
-        horizontalLayout_8 = new QHBoxLayout(frame_14);
-        horizontalLayout_8->setSpacing(0);
-        horizontalLayout_8->setContentsMargins(0, 0, 0, 0);
-        horizontalLayout_8->setObjectName(QStringLiteral("horizontalLayout_8"));
-        gridLayout_10 = new QGridLayout();
-        gridLayout_10->setSpacing(6);
-        gridLayout_10->setContentsMargins(3, 3, 3, 3);
-        gridLayout_10->setObjectName(QStringLiteral("gridLayout_10"));
-        gridLayout_10->setHorizontalSpacing(6);
-        horizontalLayout_30 = new QHBoxLayout();
-        horizontalLayout_30->setSpacing(1);
-        horizontalLayout_30->setObjectName(QStringLiteral("horizontalLayout_30"));
-        horizontalLayout_30->setContentsMargins(-1, 0, -1, -1);
-        comboBox_CustomMacroParamsNames = new QComboBox(frame_14);
-        comboBox_CustomMacroParamsNames->setObjectName(QStringLiteral("comboBox_CustomMacroParamsNames"));
-        comboBox_CustomMacroParamsNames->setMaximumSize(QSize(16777215, 26));
-
-        horizontalLayout_30->addWidget(comboBox_CustomMacroParamsNames);
-
-        toolButton_5 = new QToolButton(frame_14);
-        toolButton_5->setObjectName(QStringLiteral("toolButton_5"));
-        QIcon icon43;
-        icon43.addFile(QStringLiteral(":/new/prefix1/description.png"), QSize(), QIcon::Normal, QIcon::Off);
-        toolButton_5->setIcon(icon43);
-
-        horizontalLayout_30->addWidget(toolButton_5);
-
-
-        gridLayout_10->addLayout(horizontalLayout_30, 7, 4, 1, 1);
-
-        horizontalLayout_31 = new QHBoxLayout();
-        horizontalLayout_31->setSpacing(1);
-        horizontalLayout_31->setObjectName(QStringLiteral("horizontalLayout_31"));
-        horizontalLayout_31->setContentsMargins(-1, 0, 0, -1);
-        lineEdit_CustomMacroName = new QLineEdit(frame_14);
-        lineEdit_CustomMacroName->setObjectName(QStringLiteral("lineEdit_CustomMacroName"));
-        lineEdit_CustomMacroName->setMaximumSize(QSize(16777215, 26));
-
-        horizontalLayout_31->addWidget(lineEdit_CustomMacroName);
-
-        toolButton_8 = new QToolButton(frame_14);
-        toolButton_8->setObjectName(QStringLiteral("toolButton_8"));
-        toolButton_8->setIcon(icon43);
-
-        horizontalLayout_31->addWidget(toolButton_8);
-
-
-        gridLayout_10->addLayout(horizontalLayout_31, 1, 4, 1, 1);
-
-        horizontalLayout_29 = new QHBoxLayout();
-        horizontalLayout_29->setSpacing(1);
-        horizontalLayout_29->setObjectName(QStringLiteral("horizontalLayout_29"));
-        horizontalLayout_29->setContentsMargins(-1, 0, -1, -1);
-        lineEdit_CustomMacroParamName = new QLineEdit(frame_14);
-        lineEdit_CustomMacroParamName->setObjectName(QStringLiteral("lineEdit_CustomMacroParamName"));
-        lineEdit_CustomMacroParamName->setMaximumSize(QSize(16777215, 26));
-
-        horizontalLayout_29->addWidget(lineEdit_CustomMacroParamName);
-
-
-        gridLayout_10->addLayout(horizontalLayout_29, 6, 4, 1, 1);
-
-        label_34 = new QLabel(frame_14);
-        label_34->setObjectName(QStringLiteral("label_34"));
-        label_34->setMinimumSize(QSize(0, 26));
-        QFont font8;
-        font8.setPointSize(8);
-        label_34->setFont(font8);
-
-        gridLayout_10->addWidget(label_34, 6, 2, 1, 1);
-
-        verticalLayout_41 = new QVBoxLayout();
-        verticalLayout_41->setSpacing(6);
-        verticalLayout_41->setObjectName(QStringLiteral("verticalLayout_41"));
-        verticalLayout_41->setContentsMargins(0, -1, -1, -1);
-        comboBox_CustomMacroStyle = new QComboBox(frame_14);
-        comboBox_CustomMacroStyle->setObjectName(QStringLiteral("comboBox_CustomMacroStyle"));
-        comboBox_CustomMacroStyle->setMaximumSize(QSize(16777215, 26));
-
-        verticalLayout_41->addWidget(comboBox_CustomMacroStyle);
-
-
-        gridLayout_10->addLayout(verticalLayout_41, 2, 4, 1, 1);
-
-        frame_24 = new QFrame(frame_14);
-        frame_24->setObjectName(QStringLiteral("frame_24"));
-        frame_24->setMinimumSize(QSize(0, 10));
-        frame_24->setFrameShape(QFrame::HLine);
-        frame_24->setFrameShadow(QFrame::Sunken);
-
-        gridLayout_10->addWidget(frame_24, 9, 4, 1, 1);
-
-        label_32 = new QLabel(frame_14);
-        label_32->setObjectName(QStringLiteral("label_32"));
-        label_32->setFont(font8);
-
-        gridLayout_10->addWidget(label_32, 3, 2, 1, 1);
-
-        verticalLayout_39 = new QVBoxLayout();
-        verticalLayout_39->setSpacing(3);
-        verticalLayout_39->setObjectName(QStringLiteral("verticalLayout_39"));
-        frame_8 = new QFrame(frame_14);
-        frame_8->setObjectName(QStringLiteral("frame_8"));
-        frame_8->setFrameShape(QFrame::Panel);
-        frame_8->setFrameShadow(QFrame::Sunken);
-        horizontalLayout_6 = new QHBoxLayout(frame_8);
-        horizontalLayout_6->setSpacing(2);
-        horizontalLayout_6->setContentsMargins(2, 2, 2, 2);
-        horizontalLayout_6->setObjectName(QStringLiteral("horizontalLayout_6"));
-        toolButton_CustomMacroAddNew = new QToolButton(frame_8);
-        toolButton_CustomMacroAddNew->setObjectName(QStringLiteral("toolButton_CustomMacroAddNew"));
-        toolButton_CustomMacroAddNew->setIcon(icon21);
-        toolButton_CustomMacroAddNew->setIconSize(QSize(12, 12));
-
-        horizontalLayout_6->addWidget(toolButton_CustomMacroAddNew);
-
-        toolButton_CustomMacroDelete = new QToolButton(frame_8);
-        toolButton_CustomMacroDelete->setObjectName(QStringLiteral("toolButton_CustomMacroDelete"));
-        toolButton_CustomMacroDelete->setIcon(icon22);
-        toolButton_CustomMacroDelete->setIconSize(QSize(12, 12));
-
-        horizontalLayout_6->addWidget(toolButton_CustomMacroDelete);
-
-        horizontalSpacer_4 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_6->addItem(horizontalSpacer_4);
-
-        toolButton_CustomMacroApply = new QToolButton(frame_8);
-        toolButton_CustomMacroApply->setObjectName(QStringLiteral("toolButton_CustomMacroApply"));
-        QIcon icon44;
-        icon44.addFile(QStringLiteral(":/new/prefix1/checkmark.png"), QSize(), QIcon::Normal, QIcon::Off);
-        toolButton_CustomMacroApply->setIcon(icon44);
-        toolButton_CustomMacroApply->setIconSize(QSize(12, 12));
-
-        horizontalLayout_6->addWidget(toolButton_CustomMacroApply);
-
-        toolButton_CustomMacroDiscard = new QToolButton(frame_8);
-        toolButton_CustomMacroDiscard->setObjectName(QStringLiteral("toolButton_CustomMacroDiscard"));
-        QIcon icon45;
-        icon45.addFile(QStringLiteral(":/new/prefix1/cancel.png"), QSize(), QIcon::Normal, QIcon::Off);
-        toolButton_CustomMacroDiscard->setIcon(icon45);
-        toolButton_CustomMacroDiscard->setIconSize(QSize(12, 12));
-
-        horizontalLayout_6->addWidget(toolButton_CustomMacroDiscard);
-
-
-        verticalLayout_39->addWidget(frame_8);
-
-
-        gridLayout_10->addLayout(verticalLayout_39, 10, 4, 1, 1);
-
-        frame_23 = new QFrame(frame_14);
-        frame_23->setObjectName(QStringLiteral("frame_23"));
-        frame_23->setMinimumSize(QSize(0, 10));
-        frame_23->setFrameShape(QFrame::HLine);
-        frame_23->setFrameShadow(QFrame::Sunken);
-
-        gridLayout_10->addWidget(frame_23, 5, 4, 1, 1);
-
-        verticalLayout_38 = new QVBoxLayout();
-        verticalLayout_38->setSpacing(6);
-        verticalLayout_38->setObjectName(QStringLiteral("verticalLayout_38"));
-        verticalLayout_38->setContentsMargins(0, -1, -1, -1);
-        frame_26 = new QFrame(frame_14);
-        frame_26->setObjectName(QStringLiteral("frame_26"));
-        frame_26->setFrameShape(QFrame::Panel);
-        frame_26->setFrameShadow(QFrame::Sunken);
-        horizontalLayout_20 = new QHBoxLayout(frame_26);
-        horizontalLayout_20->setSpacing(0);
-        horizontalLayout_20->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_20->setObjectName(QStringLiteral("horizontalLayout_20"));
-        horizontalLayout_20->setContentsMargins(1, 0, 0, 0);
-        label_24 = new QLabel(frame_26);
-        label_24->setObjectName(QStringLiteral("label_24"));
-        label_24->setMinimumSize(QSize(0, 27));
-        label_24->setFont(font);
-
-        horizontalLayout_20->addWidget(label_24);
-
-
-        verticalLayout_38->addWidget(frame_26);
-
-
-        gridLayout_10->addLayout(verticalLayout_38, 10, 2, 1, 1);
-
-        label_23 = new QLabel(frame_14);
-        label_23->setObjectName(QStringLiteral("label_23"));
-        label_23->setFont(font);
-
-        gridLayout_10->addWidget(label_23, 1, 2, 1, 1);
-
-        verticalLayout_40 = new QVBoxLayout();
-        verticalLayout_40->setSpacing(0);
-        verticalLayout_40->setObjectName(QStringLiteral("verticalLayout_40"));
-        verticalLayout_40->setContentsMargins(-1, 0, -1, -1);
-        label_33 = new QLabel(frame_14);
-        label_33->setObjectName(QStringLiteral("label_33"));
-        label_33->setFont(font8);
-
-        verticalLayout_40->addWidget(label_33);
-
-
-        gridLayout_10->addLayout(verticalLayout_40, 2, 2, 1, 1);
-
-        frame_25 = new QFrame(frame_14);
-        frame_25->setObjectName(QStringLiteral("frame_25"));
-        frame_25->setMinimumSize(QSize(0, 10));
-        frame_25->setFrameShape(QFrame::HLine);
-        frame_25->setFrameShadow(QFrame::Sunken);
-
-        gridLayout_10->addWidget(frame_25, 9, 2, 1, 1);
-
-        widget = new QWidget(frame_14);
-        widget->setObjectName(QStringLiteral("widget"));
-        horizontalLayout_32 = new QHBoxLayout(widget);
-        horizontalLayout_32->setSpacing(1);
-        horizontalLayout_32->setContentsMargins(0, 0, 0, 0);
-        horizontalLayout_32->setObjectName(QStringLiteral("horizontalLayout_32"));
-        toolButton_CustomMacroAddNew_2 = new QToolButton(widget);
-        toolButton_CustomMacroAddNew_2->setObjectName(QStringLiteral("toolButton_CustomMacroAddNew_2"));
-        toolButton_CustomMacroAddNew_2->setIcon(icon21);
-        toolButton_CustomMacroAddNew_2->setIconSize(QSize(12, 12));
-
-        horizontalLayout_32->addWidget(toolButton_CustomMacroAddNew_2);
-
-        toolButton_CustomMacroDelete_2 = new QToolButton(widget);
-        toolButton_CustomMacroDelete_2->setObjectName(QStringLiteral("toolButton_CustomMacroDelete_2"));
-        toolButton_CustomMacroDelete_2->setIcon(icon22);
-        toolButton_CustomMacroDelete_2->setIconSize(QSize(12, 12));
-
-        horizontalLayout_32->addWidget(toolButton_CustomMacroDelete_2);
-
-
-        gridLayout_10->addWidget(widget, 7, 2, 1, 1);
-
-        comboBox_CustomMacroReturns = new QComboBox(frame_14);
-        comboBox_CustomMacroReturns->setObjectName(QStringLiteral("comboBox_CustomMacroReturns"));
-        comboBox_CustomMacroReturns->setMinimumSize(QSize(130, 0));
-        comboBox_CustomMacroReturns->setMaximumSize(QSize(200, 26));
-
-        gridLayout_10->addWidget(comboBox_CustomMacroReturns, 3, 4, 1, 1);
-
-
-        horizontalLayout_8->addLayout(gridLayout_10);
-
-
-        verticalLayout_12->addWidget(frame_14);
-
-
-        verticalLayout_31->addWidget(frame_CustomMacro);
-
-        verticalSpacer_14 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        verticalLayout_31->addItem(verticalSpacer_14);
-
-
-        gridLayout_8->addWidget(frame_13, 2, 0, 1, 1);
-
-        label_MacroItemName = new QLabel(groupBox_VarFuncCreator);
-        label_MacroItemName->setObjectName(QStringLiteral("label_MacroItemName"));
-        label_MacroItemName->setFont(font);
-
-        gridLayout_8->addWidget(label_MacroItemName, 0, 0, 1, 1);
-
-        horizontalLayout_33 = new QHBoxLayout();
-        horizontalLayout_33->setSpacing(6);
-        horizontalLayout_33->setObjectName(QStringLiteral("horizontalLayout_33"));
-        horizontalLayout_33->setContentsMargins(-1, 0, -1, -1);
-        horizontalSpacer_8 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
-
-        horizontalLayout_33->addItem(horizontalSpacer_8);
-
-        toolButton_EditorCheckSyntax = new QToolButton(groupBox_VarFuncCreator);
-        toolButton_EditorCheckSyntax->setObjectName(QStringLiteral("toolButton_EditorCheckSyntax"));
-        sizePolicy5.setHeightForWidth(toolButton_EditorCheckSyntax->sizePolicy().hasHeightForWidth());
-        toolButton_EditorCheckSyntax->setSizePolicy(sizePolicy5);
-        toolButton_EditorCheckSyntax->setFont(font1);
-        QIcon icon46;
-        icon46.addFile(QStringLiteral(":/new/prefix1/spell-check-error.png"), QSize(), QIcon::Normal, QIcon::Off);
-        toolButton_EditorCheckSyntax->setIcon(icon46);
-        toolButton_EditorCheckSyntax->setToolButtonStyle(Qt::ToolButtonTextBesideIcon);
-
-        horizontalLayout_33->addWidget(toolButton_EditorCheckSyntax);
-
-
-        gridLayout_8->addLayout(horizontalLayout_33, 0, 1, 1, 1);
-
-
-        horizontalLayout_7->addWidget(groupBox_VarFuncCreator);
-
         QIcon icon47;
-        icon47.addFile(QStringLiteral(":/new/prefix1/cycle-icon-2.png"), QSize(), QIcon::Normal, QIcon::Off);
-        tabWidget_Top->addTab(tab_LifeCycle, icon47, QString());
+        icon47.addFile(QStringLiteral(":/new/prefix1/Net-icon.png"), QSize(), QIcon::Normal, QIcon::Off);
+        tabWidget_Top->addTab(tab_Network, icon47, QString());
         tab_Outputs = new QWidget();
         tab_Outputs->setObjectName(QStringLiteral("tab_Outputs"));
         verticalLayout_19 = new QVBoxLayout(tab_Outputs);
@@ -2332,7 +2367,7 @@ public:
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 1141, 22));
+        menuBar->setGeometry(QRect(0, 0, 1141, 32));
         menuFile = new QMenu(menuBar);
         menuFile->setObjectName(QStringLiteral("menuFile"));
         menuHelp = new QMenu(menuBar);
@@ -2561,7 +2596,7 @@ public:
         QObject::connect(textEdit_CustomMacro, SIGNAL(cursorPositionChanged()), textEdit_CustomMacro, SLOT(matchParentheses()));
         QObject::connect(textEdit_CustomMacro, SIGNAL(cursorPositionChanged()), textEdit_CustomMacro, SLOT(nonEditableLinesToGrey()));
 
-        tabWidget_Top->setCurrentIndex(3);
+        tabWidget_Top->setCurrentIndex(0);
         stackedWidget_Pop->setCurrentIndex(0);
         toolBox_CodeEditor->setCurrentIndex(0);
         toolBox_CodeEditor->layout()->setSpacing(1);
@@ -2577,291 +2612,254 @@ public:
 
     void retranslateUi(QMainWindow *MainWindow)
     {
-        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "EVOLAB-GUI (version 0.0.1)", 0));
-        actionAbout->setText(QApplication::translate("MainWindow", "About...", 0));
-        actionHelp->setText(QApplication::translate("MainWindow", "Help", 0));
-        actionHelp->setShortcut(QApplication::translate("MainWindow", "F1", 0));
-        actionQuit->setText(QApplication::translate("MainWindow", "Quit", 0));
-        actionQuit->setShortcut(QApplication::translate("MainWindow", "Ctrl+Q", 0));
-        actionLoad_Project->setText(QApplication::translate("MainWindow", "Load Project...", 0));
-        actionLoad_Project->setShortcut(QApplication::translate("MainWindow", "Ctrl+O", 0));
-        actionAbout2->setText(QApplication::translate("MainWindow", "About", 0));
+        MainWindow->setWindowTitle(QApplication::translate("MainWindow", "EVOLAB-GUI (version 0.0.1)", Q_NULLPTR));
+        actionAbout->setText(QApplication::translate("MainWindow", "&About...", Q_NULLPTR));
+        actionHelp->setText(QApplication::translate("MainWindow", "&Help", Q_NULLPTR));
+        actionHelp->setShortcut(QApplication::translate("MainWindow", "F1", Q_NULLPTR));
+        actionQuit->setText(QApplication::translate("MainWindow", "&Quit", Q_NULLPTR));
+        actionQuit->setShortcut(QApplication::translate("MainWindow", "Ctrl+Q", Q_NULLPTR));
+        actionLoad_Project->setText(QApplication::translate("MainWindow", "&Load Project...", Q_NULLPTR));
+        actionLoad_Project->setShortcut(QApplication::translate("MainWindow", "Ctrl+O", Q_NULLPTR));
+        actionAbout2->setText(QApplication::translate("MainWindow", "About", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        actionAbout2->setToolTip(QApplication::translate("MainWindow", "About EVOLAB-GUI", 0));
+        actionAbout2->setToolTip(QApplication::translate("MainWindow", "About EVOLAB-GUI", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        actionBuild->setText(QApplication::translate("MainWindow", "Build", 0));
+        actionBuild->setText(QApplication::translate("MainWindow", "Build", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        actionBuild->setToolTip(QApplication::translate("MainWindow", "Build Project", 0));
+        actionBuild->setToolTip(QApplication::translate("MainWindow", "Build Project", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        actionBuild->setShortcut(QApplication::translate("MainWindow", "Ctrl+B", 0));
-        actionCompile_Simulation->setText(QApplication::translate("MainWindow", "Build Simulation", 0));
-        actionCompile_Simulation->setShortcut(QApplication::translate("MainWindow", "Ctrl+B", 0));
-        actionNew_C_Project->setText(QApplication::translate("MainWindow", "New C++ Project...", 0));
-        actionNew_Python_Project->setText(QApplication::translate("MainWindow", "New Py Project...", 0));
-        actionSave_Project->setText(QApplication::translate("MainWindow", "Save Project...", 0));
-        actionSave_Project->setShortcut(QApplication::translate("MainWindow", "Ctrl+Shift+S", 0));
-        actionRun_Simulation->setText(QApplication::translate("MainWindow", "Run Simulation", 0));
-        actionRun_Simulation->setShortcut(QApplication::translate("MainWindow", "Ctrl+Return", 0));
-        actionOutput->setText(QApplication::translate("MainWindow", "Run Output", 0));
-        actionRun->setText(QApplication::translate("MainWindow", "Run", 0));
+        actionBuild->setShortcut(QApplication::translate("MainWindow", "Ctrl+B", Q_NULLPTR));
+        actionCompile_Simulation->setText(QApplication::translate("MainWindow", "&Build Simulation", Q_NULLPTR));
+        actionCompile_Simulation->setShortcut(QApplication::translate("MainWindow", "Ctrl+B", Q_NULLPTR));
+        actionNew_C_Project->setText(QApplication::translate("MainWindow", "&New C++ Project...", Q_NULLPTR));
+        actionNew_Python_Project->setText(QApplication::translate("MainWindow", "New &Py Project...", Q_NULLPTR));
+        actionSave_Project->setText(QApplication::translate("MainWindow", "&Save Project...", Q_NULLPTR));
+        actionSave_Project->setShortcut(QApplication::translate("MainWindow", "Ctrl+Shift+S", Q_NULLPTR));
+        actionRun_Simulation->setText(QApplication::translate("MainWindow", "&Run Simulation", Q_NULLPTR));
+        actionRun_Simulation->setShortcut(QApplication::translate("MainWindow", "Ctrl+Return", Q_NULLPTR));
+        actionOutput->setText(QApplication::translate("MainWindow", "&Run Output", Q_NULLPTR));
+        actionRun->setText(QApplication::translate("MainWindow", "Run", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        actionRun->setToolTip(QApplication::translate("MainWindow", "Run Simulation", 0));
+        actionRun->setToolTip(QApplication::translate("MainWindow", "Run Simulation", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        actionRun->setShortcut(QApplication::translate("MainWindow", "Ctrl+Return", 0));
-        actionPreferences->setText(QApplication::translate("MainWindow", "Preferences...", 0));
-        actionUndo->setText(QApplication::translate("MainWindow", "Undo", 0));
-        actionUndo->setShortcut(QApplication::translate("MainWindow", "Ctrl+Z", 0));
-        actionRedo->setText(QApplication::translate("MainWindow", "Redo", 0));
-        actionRedo->setShortcut(QApplication::translate("MainWindow", "Ctrl+Shift+Z", 0));
-        actionBuild_Output->setText(QApplication::translate("MainWindow", "Build Output", 0));
-        actionOuput_Window->setText(QApplication::translate("MainWindow", "Ouput Window", 0));
-        actionELPS_Version->setText(QApplication::translate("MainWindow", "ELPS Version", 0));
-        actionCopy->setText(QApplication::translate("MainWindow", "Copy", 0));
-        actionCopy->setShortcut(QApplication::translate("MainWindow", "Ctrl+C", 0));
-        actionCut->setText(QApplication::translate("MainWindow", "Cut", 0));
-        actionCut->setShortcut(QApplication::translate("MainWindow", "Ctrl+X", 0));
-        actionPaste->setText(QApplication::translate("MainWindow", "Paste", 0));
-        actionPaste->setShortcut(QApplication::translate("MainWindow", "Ctrl+V", 0));
-        actionExtended_Toolbar->setText(QApplication::translate("MainWindow", "Extended Toolbar", 0));
-        actionExport_Source->setText(QApplication::translate("MainWindow", "Export Source...", 0));
+        actionRun->setShortcut(QApplication::translate("MainWindow", "Ctrl+Return", Q_NULLPTR));
+        actionPreferences->setText(QApplication::translate("MainWindow", "Pr&eferences...", Q_NULLPTR));
+        actionUndo->setText(QApplication::translate("MainWindow", "&Undo", Q_NULLPTR));
+        actionUndo->setShortcut(QApplication::translate("MainWindow", "Ctrl+Z", Q_NULLPTR));
+        actionRedo->setText(QApplication::translate("MainWindow", "&Redo", Q_NULLPTR));
+        actionRedo->setShortcut(QApplication::translate("MainWindow", "Ctrl+Shift+Z", Q_NULLPTR));
+        actionBuild_Output->setText(QApplication::translate("MainWindow", "&Build Output", Q_NULLPTR));
+        actionOuput_Window->setText(QApplication::translate("MainWindow", "&Ouput Window", Q_NULLPTR));
+        actionELPS_Version->setText(QApplication::translate("MainWindow", "ELPS Version", Q_NULLPTR));
+        actionCopy->setText(QApplication::translate("MainWindow", "&Copy", Q_NULLPTR));
+        actionCopy->setShortcut(QApplication::translate("MainWindow", "Ctrl+C", Q_NULLPTR));
+        actionCut->setText(QApplication::translate("MainWindow", "Cut", Q_NULLPTR));
+        actionCut->setShortcut(QApplication::translate("MainWindow", "Ctrl+X", Q_NULLPTR));
+        actionPaste->setText(QApplication::translate("MainWindow", "&Paste", Q_NULLPTR));
+        actionPaste->setShortcut(QApplication::translate("MainWindow", "Ctrl+V", Q_NULLPTR));
+        actionExtended_Toolbar->setText(QApplication::translate("MainWindow", "&Extended Toolbar", Q_NULLPTR));
+        actionExport_Source->setText(QApplication::translate("MainWindow", "&Export Source...", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        actionExport_Source->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600; color:#00007f;\">Export source files:</span><br/>Exports all source files, as well as auto-generated C++ sources and Makefiles. Everything that is required to run the simulation from outside the GUI (a cluster, for example).</p></body></html>", 0));
+        actionExport_Source->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600; color:#00007f;\">Export source files:</span><br/>Exports all source files, as well as auto-generated C++ sources and Makefiles. Everything that is required to run the simulation from outside the GUI (a cluster, for example).</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        actionExport_Source->setShortcut(QApplication::translate("MainWindow", "Ctrl+Shift+E", 0));
-        actionContext_Toolbar->setText(QApplication::translate("MainWindow", "Context Toolbar", 0));
-        actionSave_Tab->setText(QApplication::translate("MainWindow", "Save Tab", 0));
+        actionExport_Source->setShortcut(QApplication::translate("MainWindow", "Ctrl+Shift+E", Q_NULLPTR));
+        actionContext_Toolbar->setText(QApplication::translate("MainWindow", "&Context Toolbar", Q_NULLPTR));
+        actionSave_Tab->setText(QApplication::translate("MainWindow", "Save Tab", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        actionSave_Tab->setToolTip(QApplication::translate("MainWindow", "Save Current Tab Settings", 0));
+        actionSave_Tab->setToolTip(QApplication::translate("MainWindow", "Save Current Tab Settings", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        actionSave_Tab->setShortcut(QApplication::translate("MainWindow", "Ctrl+S", 0));
-        actionLoad_Tab->setText(QApplication::translate("MainWindow", "Load Tab", 0));
+        actionSave_Tab->setShortcut(QApplication::translate("MainWindow", "Ctrl+S", Q_NULLPTR));
+        actionLoad_Tab->setText(QApplication::translate("MainWindow", "Load Tab", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        actionLoad_Tab->setToolTip(QApplication::translate("MainWindow", "Load Current Tab Settings", 0));
+        actionLoad_Tab->setToolTip(QApplication::translate("MainWindow", "Load Current Tab Settings", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        actionDefault_Tab->setText(QApplication::translate("MainWindow", "Clear Tab", 0));
+        actionDefault_Tab->setText(QApplication::translate("MainWindow", "Clear Tab", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        actionDefault_Tab->setToolTip(QApplication::translate("MainWindow", "Restore Current Tab Defaults", 0));
+        actionDefault_Tab->setToolTip(QApplication::translate("MainWindow", "Restore Current Tab Defaults", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        label_2->setText(QApplication::translate("MainWindow", "Site", 0));
+        label_2->setText(QApplication::translate("MainWindow", "Site", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton_AddPop->setToolTip(QApplication::translate("MainWindow", " Add Pop", 0));
+        toolButton_AddPop->setToolTip(QApplication::translate("MainWindow", " Add Pop", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_AddPop->setText(QApplication::translate("MainWindow", "Add Pop", 0));
+        toolButton_AddPop->setText(QApplication::translate("MainWindow", "Add Pop", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton_RemovePop->setToolTip(QApplication::translate("MainWindow", "Remove Pop", 0));
+        toolButton_RemovePop->setToolTip(QApplication::translate("MainWindow", "Remove Pop", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_RemovePop->setText(QApplication::translate("MainWindow", "Remove Pop", 0));
+        toolButton_RemovePop->setText(QApplication::translate("MainWindow", "Remove Pop", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton_PopRowUp->setToolTip(QApplication::translate("MainWindow", "Move up", 0));
+        toolButton_PopRowUp->setToolTip(QApplication::translate("MainWindow", "Move up", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_PopRowUp->setText(QApplication::translate("MainWindow", "Move up", 0));
+        toolButton_PopRowUp->setText(QApplication::translate("MainWindow", "Move up", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton_PopRowDown->setToolTip(QApplication::translate("MainWindow", "Move down", 0));
+        toolButton_PopRowDown->setToolTip(QApplication::translate("MainWindow", "Move down", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_PopRowDown->setText(QApplication::translate("MainWindow", "Move down", 0));
+        toolButton_PopRowDown->setText(QApplication::translate("MainWindow", "Move down", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton_DuplicatePop->setToolTip(QApplication::translate("MainWindow", "Duplicate Pop", 0));
+        toolButton_DuplicatePop->setToolTip(QApplication::translate("MainWindow", "Duplicate Pop", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_DuplicatePop->setText(QApplication::translate("MainWindow", "Duplicate Pop", 0));
-        label_5->setText(QApplication::translate("MainWindow", "Item", 0));
+        toolButton_DuplicatePop->setText(QApplication::translate("MainWindow", "Duplicate Pop", Q_NULLPTR));
+        label_5->setText(QApplication::translate("MainWindow", "Item", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton_25->setToolTip(QApplication::translate("MainWindow", "Select / Drag", 0));
+        toolButton_25->setToolTip(QApplication::translate("MainWindow", "Select / Drag", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_25->setText(QApplication::translate("MainWindow", "...", 0));
+        toolButton_25->setText(QApplication::translate("MainWindow", "...", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton_LockEditPopCellItem->setToolTip(QApplication::translate("MainWindow", "Lock / Edit item", 0));
+        toolButton_LockEditPopCellItem->setToolTip(QApplication::translate("MainWindow", "Lock / Edit item", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_LockEditPopCellItem->setText(QApplication::translate("MainWindow", "Lock / Edit item", 0));
+        toolButton_LockEditPopCellItem->setText(QApplication::translate("MainWindow", "Lock / Edit item", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton_CopyPopCellItem->setToolTip(QApplication::translate("MainWindow", "Copy item", 0));
+        toolButton_CopyPopCellItem->setToolTip(QApplication::translate("MainWindow", "Copy item", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_CopyPopCellItem->setText(QApplication::translate("MainWindow", "Copy item", 0));
+        toolButton_CopyPopCellItem->setText(QApplication::translate("MainWindow", "Copy item", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton_CutPopCellItem->setToolTip(QApplication::translate("MainWindow", "Cut / Clear item", 0));
+        toolButton_CutPopCellItem->setToolTip(QApplication::translate("MainWindow", "Cut / Clear item", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_CutPopCellItem->setText(QApplication::translate("MainWindow", "...", 0));
+        toolButton_CutPopCellItem->setText(QApplication::translate("MainWindow", "...", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton_PastePopCellItem->setToolTip(QApplication::translate("MainWindow", "Paste item", 0));
+        toolButton_PastePopCellItem->setToolTip(QApplication::translate("MainWindow", "Paste item", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_PastePopCellItem->setText(QApplication::translate("MainWindow", "Paste item", 0));
+        toolButton_PastePopCellItem->setText(QApplication::translate("MainWindow", "Paste item", Q_NULLPTR));
         QTableWidgetItem *___qtablewidgetitem = tableWidget_Pop->horizontalHeaderItem(0);
-        ___qtablewidgetitem->setText(QApplication::translate("MainWindow", "Site / Pop Name", 0));
+        ___qtablewidgetitem->setText(QApplication::translate("MainWindow", "Site / Pop Name", Q_NULLPTR));
         QTableWidgetItem *___qtablewidgetitem1 = tableWidget_Pop->horizontalHeaderItem(1);
-        ___qtablewidgetitem1->setText(QApplication::translate("MainWindow", "Attributes", 0));
+        ___qtablewidgetitem1->setText(QApplication::translate("MainWindow", "Attributes", Q_NULLPTR));
         QTableWidgetItem *___qtablewidgetitem2 = tableWidget_Pop->horizontalHeaderItem(2);
-        ___qtablewidgetitem2->setText(QApplication::translate("MainWindow", "States", 0));
+        ___qtablewidgetitem2->setText(QApplication::translate("MainWindow", "States", Q_NULLPTR));
         QTableWidgetItem *___qtablewidgetitem3 = tableWidget_Pop->horizontalHeaderItem(3);
-        ___qtablewidgetitem3->setText(QApplication::translate("MainWindow", "Events", 0));
-        groupBox_SelectedCell->setTitle(QApplication::translate("MainWindow", "Selected Cell Settings", 0));
+        ___qtablewidgetitem3->setText(QApplication::translate("MainWindow", "Events", Q_NULLPTR));
+        groupBox_SelectedCell->setTitle(QApplication::translate("MainWindow", "Selected Cell Settings", Q_NULLPTR));
         label_13->setText(QString());
-        label_10->setText(QApplication::translate("MainWindow", "Pop [attr, state, event]", 0));
+        label_10->setText(QApplication::translate("MainWindow", "Pop [attr, state, event]", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton_Pop_AddItem->setToolTip(QApplication::translate("MainWindow", "Add item", 0));
+        toolButton_Pop_AddItem->setToolTip(QApplication::translate("MainWindow", "Add item", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_Pop_AddItem->setText(QApplication::translate("MainWindow", "Add item", 0));
+        toolButton_Pop_AddItem->setText(QApplication::translate("MainWindow", "Add item", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton_27->setToolTip(QApplication::translate("MainWindow", "Remove item", 0));
+        toolButton_27->setToolTip(QApplication::translate("MainWindow", "Remove item", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_27->setText(QApplication::translate("MainWindow", "Remove item", 0));
+        toolButton_27->setText(QApplication::translate("MainWindow", "Remove item", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton_PopCellItemUp->setToolTip(QApplication::translate("MainWindow", "Move up", 0));
+        toolButton_PopCellItemUp->setToolTip(QApplication::translate("MainWindow", "Move up", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_PopCellItemUp->setText(QApplication::translate("MainWindow", "Move up", 0));
+        toolButton_PopCellItemUp->setText(QApplication::translate("MainWindow", "Move up", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton_PopCellItemDown->setToolTip(QApplication::translate("MainWindow", "Move down", 0));
+        toolButton_PopCellItemDown->setToolTip(QApplication::translate("MainWindow", "Move down", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_PopCellItemDown->setText(QApplication::translate("MainWindow", "Move down", 0));
+        toolButton_PopCellItemDown->setText(QApplication::translate("MainWindow", "Move down", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton_28->setToolTip(QApplication::translate("MainWindow", "Clear all items", 0));
+        toolButton_28->setToolTip(QApplication::translate("MainWindow", "Clear all items", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_28->setText(QApplication::translate("MainWindow", "Clear all items", 0));
-        label_6->setText(QApplication::translate("MainWindow", "Items", 0));
-        label_8->setText(QApplication::translate("MainWindow", "Param1", 0));
-        label_7->setText(QApplication::translate("MainWindow", "Item Settings", 0));
-        label_11->setText(QApplication::translate("MainWindow", "Item Description:", 0));
+        toolButton_28->setText(QApplication::translate("MainWindow", "Clear all items", Q_NULLPTR));
+        label_6->setText(QApplication::translate("MainWindow", "Items", Q_NULLPTR));
+        label_8->setText(QApplication::translate("MainWindow", "Param1", Q_NULLPTR));
+        label_7->setText(QApplication::translate("MainWindow", "Item Settings", Q_NULLPTR));
+        label_11->setText(QApplication::translate("MainWindow", "Item Description:", Q_NULLPTR));
         plainTextEdit_ItemDesc->setPlainText(QApplication::translate("MainWindow", "try\n"
-"yrtyrt", 0));
-        groupBox_PopDescription->setTitle(QApplication::translate("MainWindow", "Selected Site / Pop Description ", 0));
+"yrtyrt", Q_NULLPTR));
+        groupBox_PopDescription->setTitle(QApplication::translate("MainWindow", "Selected Site / Pop Description ", Q_NULLPTR));
         label_12->setText(QString());
-        label_PopDescription->setText(QApplication::translate("MainWindow", "( - )", 0));
-        plainText_Edit_PopDescription->setPlainText(QApplication::translate("MainWindow", "Describe Population...", 0));
-        tabWidget_Top->setTabText(tabWidget_Top->indexOf(tab_Populations), QApplication::translate("MainWindow", "Populations", 0));
-        groupBox->setTitle(QApplication::translate("MainWindow", "Setup", 0));
-        label_NetworkNbNode->setText(QApplication::translate("MainWindow", "Number of Nodes", 0));
-        label_NetworkDist->setText(QApplication::translate("MainWindow", "Distribution Type", 0));
-        label_3->setText(QApplication::translate("MainWindow", "Default distribution parameters...", 0));
+        label_PopDescription->setText(QApplication::translate("MainWindow", "( - )", Q_NULLPTR));
+        plainText_Edit_PopDescription->setPlainText(QApplication::translate("MainWindow", "Describe Population...", Q_NULLPTR));
+        tabWidget_Top->setTabText(tabWidget_Top->indexOf(tab_Populations), QApplication::translate("MainWindow", "Populations", Q_NULLPTR));
+        label_30->setText(QApplication::translate("MainWindow", "Item", Q_NULLPTR));
+        toolButton_VarAdd->setText(QApplication::translate("MainWindow", "Add", Q_NULLPTR));
+        toolButton_VarRemove->setText(QApplication::translate("MainWindow", "Remove", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton_NetworkResetDist->setToolTip(QApplication::translate("MainWindow", "Reset current distribution parameters", 0));
+        toolButton_VarRowUp->setToolTip(QApplication::translate("MainWindow", "Move up", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_NetworkResetDist->setText(QApplication::translate("MainWindow", "Default Params...", 0));
-        groupBox_3->setTitle(QApplication::translate("MainWindow", "Distribution Parameters:", 0));
-        groupBox_2->setTitle(QApplication::translate("MainWindow", "Populate", 0));
-        label_4->setText(QApplication::translate("MainWindow", "Populations Spreading Method", 0));
-        comboBox_NetPopsSpread->setItemText(0, QApplication::translate("MainWindow", "Stochastic", 0));
-        comboBox_NetPopsSpread->setItemText(1, QApplication::translate("MainWindow", "Fixed", 0));
-
-        QTableWidgetItem *___qtablewidgetitem4 = tableWidget_NetPopsRepartition->horizontalHeaderItem(0);
-        ___qtablewidgetitem4->setText(QApplication::translate("MainWindow", "Sites / Populations", 0));
-        QTableWidgetItem *___qtablewidgetitem5 = tableWidget_NetPopsRepartition->horizontalHeaderItem(1);
-        ___qtablewidgetitem5->setText(QApplication::translate("MainWindow", "Distributions", 0));
+        toolButton_VarRowUp->setText(QApplication::translate("MainWindow", "Move up", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        label_NetPopIcon_2->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600; color:#8b0000;\">Warning...</span></p></body></html>", 0));
+        toolButton_VarRowDown->setToolTip(QApplication::translate("MainWindow", "Move down", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        label_NetPopIcon_2->setText(QString());
-#ifndef QT_NO_TOOLTIP
-        label_18->setToolTip(QApplication::translate("MainWindow", "Green is OK, Red is not...", 0));
-#endif // QT_NO_TOOLTIP
-        label_18->setText(QApplication::translate("MainWindow", "Check Total", 0));
-#ifndef QT_NO_TOOLTIP
-        label_NetPopIcon->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600; color:#8b0000;\">Warning!</span></p></body></html>", 0));
-#endif // QT_NO_TOOLTIP
-        label_NetPopIcon->setText(QString());
-        textEdit_SpreadTotal->setHtml(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
-"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
-"p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Ubuntu'; font-size:12pt; font-weight:600; color:#3cb371;\">1.0</span><span style=\" font-family:'Ubuntu'; font-size:12pt; font-weight:600; color:#000000;\"> / </span><span style=\" font-family:'Ubuntu'; font-size:12pt; font-weight:600; color:#aa0000;\">0.99</span></p></body></html>", 0));
-        pushButton_NetGenerate->setText(QApplication::translate("MainWindow", "   Generate Network  ", 0));
-        tabWidget_Top->setTabText(tabWidget_Top->indexOf(tab_Network), QApplication::translate("MainWindow", "Network", 0));
-        label_30->setText(QApplication::translate("MainWindow", "Item", 0));
-        toolButton_VarAdd->setText(QApplication::translate("MainWindow", "Add", 0));
-        toolButton_VarRemove->setText(QApplication::translate("MainWindow", "Remove", 0));
-#ifndef QT_NO_TOOLTIP
-        toolButton_VarRowUp->setToolTip(QApplication::translate("MainWindow", "Move up", 0));
-#endif // QT_NO_TOOLTIP
-        toolButton_VarRowUp->setText(QApplication::translate("MainWindow", "Move up", 0));
-#ifndef QT_NO_TOOLTIP
-        toolButton_VarRowDown->setToolTip(QApplication::translate("MainWindow", "Move down", 0));
-#endif // QT_NO_TOOLTIP
-        toolButton_VarRowDown->setText(QApplication::translate("MainWindow", "Move down", 0));
-        groupBox_6->setTitle(QApplication::translate("MainWindow", "Variables:", 0));
-        QTableWidgetItem *___qtablewidgetitem6 = tableWidget_Variables->horizontalHeaderItem(0);
-        ___qtablewidgetitem6->setText(QApplication::translate("MainWindow", "Variable / Function Name", 0));
-        QTableWidgetItem *___qtablewidgetitem7 = tableWidget_Variables->horizontalHeaderItem(1);
-        ___qtablewidgetitem7->setText(QApplication::translate("MainWindow", "Formula", 0));
-        label_29->setText(QApplication::translate("MainWindow", "Variable or Function Description:", 0));
+        toolButton_VarRowDown->setText(QApplication::translate("MainWindow", "Move down", Q_NULLPTR));
+        groupBox_6->setTitle(QApplication::translate("MainWindow", "Variables:", Q_NULLPTR));
+        QTableWidgetItem *___qtablewidgetitem4 = tableWidget_Variables->horizontalHeaderItem(0);
+        ___qtablewidgetitem4->setText(QApplication::translate("MainWindow", "Variable / Function Name", Q_NULLPTR));
+        QTableWidgetItem *___qtablewidgetitem5 = tableWidget_Variables->horizontalHeaderItem(1);
+        ___qtablewidgetitem5->setText(QApplication::translate("MainWindow", "Formula", Q_NULLPTR));
+        label_29->setText(QApplication::translate("MainWindow", "Variable or Function Description:", Q_NULLPTR));
         plainTextEdit_VarDesc->setPlainText(QString());
-        groupBox_VarFuncTrashed->setTitle(QApplication::translate("MainWindow", "Formula           (Variable: \"??????\")", 0));
-        toolButton_10->setText(QApplication::translate("MainWindow", "New Const...", 0));
+        groupBox_VarFuncTrashed->setTitle(QApplication::translate("MainWindow", "Formula           (Variable: \"??????\")", Q_NULLPTR));
+        toolButton_10->setText(QApplication::translate("MainWindow", "New Const...", Q_NULLPTR));
         label_15->setText(QString());
         comboBox_4->clear();
         comboBox_4->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "NB_SITES", 0)
+         << QApplication::translate("MainWindow", "NB_SITES", Q_NULLPTR)
         );
-        toolButton_11->setText(QApplication::translate("MainWindow", "New Func...", 0));
+        toolButton_11->setText(QApplication::translate("MainWindow", "New Func...", Q_NULLPTR));
         comboBox_2->clear();
         comboBox_2->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "NB_NEIGH(site id)", 0)
-         << QApplication::translate("MainWindow", "MEAN(attribute name)", 0)
+         << QApplication::translate("MainWindow", "NB_NEIGH(site id)", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "MEAN(attribute name)", Q_NULLPTR)
         );
         label_16->setText(QString());
-        plainTextEdit->setPlainText(QApplication::translate("MainWindow", "This whole groupbox is defined once and for all in \"tab_LifeCycle\" and grabbed from there !!!", 0));
-        tabWidget_Top->setTabText(tabWidget_Top->indexOf(tab_Variables), QApplication::translate("MainWindow", "Variables", 0));
-        label_14->setText(QApplication::translate("MainWindow", "Row", 0));
-        toolButton_6->setText(QApplication::translate("MainWindow", "Add", 0));
-        toolButton_7->setText(QApplication::translate("MainWindow", "Remove", 0));
+        plainTextEdit->setPlainText(QApplication::translate("MainWindow", "This whole groupbox is defined once and for all in \"tab_LifeCycle\" and grabbed from there !!!", Q_NULLPTR));
+        tabWidget_Top->setTabText(tabWidget_Top->indexOf(tab_Variables), QApplication::translate("MainWindow", "Variables", Q_NULLPTR));
+        label_14->setText(QApplication::translate("MainWindow", "Row", Q_NULLPTR));
+        toolButton_6->setText(QApplication::translate("MainWindow", "Add", Q_NULLPTR));
+        toolButton_7->setText(QApplication::translate("MainWindow", "Remove", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton_31->setToolTip(QApplication::translate("MainWindow", "Move up", 0));
+        toolButton_31->setToolTip(QApplication::translate("MainWindow", "Move up", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_31->setText(QApplication::translate("MainWindow", "Move up", 0));
+        toolButton_31->setText(QApplication::translate("MainWindow", "Move up", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton_32->setToolTip(QApplication::translate("MainWindow", "Move down", 0));
+        toolButton_32->setToolTip(QApplication::translate("MainWindow", "Move down", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_32->setText(QApplication::translate("MainWindow", "Move down", 0));
+        toolButton_32->setText(QApplication::translate("MainWindow", "Move down", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton_33->setToolTip(QApplication::translate("MainWindow", "Duplicate Pop", 0));
+        toolButton_33->setToolTip(QApplication::translate("MainWindow", "Duplicate Pop", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_33->setText(QApplication::translate("MainWindow", "Duplicate Pop", 0));
-        label_17->setText(QApplication::translate("MainWindow", "Item", 0));
+        toolButton_33->setText(QApplication::translate("MainWindow", "Duplicate Pop", Q_NULLPTR));
+        label_17->setText(QApplication::translate("MainWindow", "Item", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton_34->setToolTip(QApplication::translate("MainWindow", "Lock / Edit item", 0));
+        toolButton_34->setToolTip(QApplication::translate("MainWindow", "Lock / Edit item", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_34->setText(QApplication::translate("MainWindow", "Lock / Edit item", 0));
+        toolButton_34->setText(QApplication::translate("MainWindow", "Lock / Edit item", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton_16->setToolTip(QApplication::translate("MainWindow", "Copy item", 0));
+        toolButton_16->setToolTip(QApplication::translate("MainWindow", "Copy item", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_16->setText(QApplication::translate("MainWindow", "Copy item", 0));
+        toolButton_16->setText(QApplication::translate("MainWindow", "Copy item", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton_35->setToolTip(QApplication::translate("MainWindow", "Cut / Clear item", 0));
+        toolButton_35->setToolTip(QApplication::translate("MainWindow", "Cut / Clear item", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_35->setText(QApplication::translate("MainWindow", "...", 0));
+        toolButton_35->setText(QApplication::translate("MainWindow", "...", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton_14->setToolTip(QApplication::translate("MainWindow", "Paste item", 0));
+        toolButton_14->setToolTip(QApplication::translate("MainWindow", "Paste item", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_14->setText(QApplication::translate("MainWindow", "Paste item", 0));
-        QTableWidgetItem *___qtablewidgetitem8 = tableWidget_LifeCycle->horizontalHeaderItem(0);
-        ___qtablewidgetitem8->setText(QApplication::translate("MainWindow", "Name", 0));
-        QTableWidgetItem *___qtablewidgetitem9 = tableWidget_LifeCycle->horizontalHeaderItem(1);
-        ___qtablewidgetitem9->setText(QApplication::translate("MainWindow", "Rate (var or func)", 0));
-        QTableWidgetItem *___qtablewidgetitem10 = tableWidget_LifeCycle->horizontalHeaderItem(2);
-        ___qtablewidgetitem10->setText(QApplication::translate("MainWindow", "Transition  (func)", 0));
-        QTableWidgetItem *___qtablewidgetitem11 = tableWidget_LifeCycle->horizontalHeaderItem(3);
-        ___qtablewidgetitem11->setText(QApplication::translate("MainWindow", "State", 0));
-        QTableWidgetItem *___qtablewidgetitem12 = tableWidget_LifeCycle->horizontalHeaderItem(4);
-        ___qtablewidgetitem12->setText(QApplication::translate("MainWindow", "Space", 0));
-        QTableWidgetItem *___qtablewidgetitem13 = tableWidget_LifeCycle->verticalHeaderItem(0);
-        ___qtablewidgetitem13->setText(QApplication::translate("MainWindow", "1", 0));
-        QTableWidgetItem *___qtablewidgetitem14 = tableWidget_LifeCycle->verticalHeaderItem(1);
-        ___qtablewidgetitem14->setText(QApplication::translate("MainWindow", "2", 0));
+        toolButton_14->setText(QApplication::translate("MainWindow", "Paste item", Q_NULLPTR));
+        QTableWidgetItem *___qtablewidgetitem6 = tableWidget_LifeCycle->horizontalHeaderItem(0);
+        ___qtablewidgetitem6->setText(QApplication::translate("MainWindow", "Name", Q_NULLPTR));
+        QTableWidgetItem *___qtablewidgetitem7 = tableWidget_LifeCycle->horizontalHeaderItem(1);
+        ___qtablewidgetitem7->setText(QApplication::translate("MainWindow", "Rate (var or func)", Q_NULLPTR));
+        QTableWidgetItem *___qtablewidgetitem8 = tableWidget_LifeCycle->horizontalHeaderItem(2);
+        ___qtablewidgetitem8->setText(QApplication::translate("MainWindow", "Transition  (func)", Q_NULLPTR));
+        QTableWidgetItem *___qtablewidgetitem9 = tableWidget_LifeCycle->horizontalHeaderItem(3);
+        ___qtablewidgetitem9->setText(QApplication::translate("MainWindow", "State", Q_NULLPTR));
+        QTableWidgetItem *___qtablewidgetitem10 = tableWidget_LifeCycle->horizontalHeaderItem(4);
+        ___qtablewidgetitem10->setText(QApplication::translate("MainWindow", "Space", Q_NULLPTR));
+        QTableWidgetItem *___qtablewidgetitem11 = tableWidget_LifeCycle->verticalHeaderItem(0);
+        ___qtablewidgetitem11->setText(QApplication::translate("MainWindow", "1", Q_NULLPTR));
+        QTableWidgetItem *___qtablewidgetitem12 = tableWidget_LifeCycle->verticalHeaderItem(1);
+        ___qtablewidgetitem12->setText(QApplication::translate("MainWindow", "2", Q_NULLPTR));
 
         const bool __sortingEnabled = tableWidget_LifeCycle->isSortingEnabled();
         tableWidget_LifeCycle->setSortingEnabled(false);
-        QTableWidgetItem *___qtablewidgetitem15 = tableWidget_LifeCycle->item(0, 0);
-        ___qtablewidgetitem15->setText(QApplication::translate("MainWindow", "Infection", 0));
-        QTableWidgetItem *___qtablewidgetitem16 = tableWidget_LifeCycle->item(0, 1);
-        ___qtablewidgetitem16->setText(QApplication::translate("MainWindow", "beta", 0));
-        QTableWidgetItem *___qtablewidgetitem17 = tableWidget_LifeCycle->item(0, 2);
-        ___qtablewidgetitem17->setText(QApplication::translate("MainWindow", "userdef_func()...", 0));
-        QTableWidgetItem *___qtablewidgetitem18 = tableWidget_LifeCycle->item(0, 3);
-        ___qtablewidgetitem18->setText(QApplication::translate("MainWindow", "I", 0));
-        QTableWidgetItem *___qtablewidgetitem19 = tableWidget_LifeCycle->item(0, 4);
-        ___qtablewidgetitem19->setText(QApplication::translate("MainWindow", "Local(level)/Global", 0));
-        QTableWidgetItem *___qtablewidgetitem20 = tableWidget_LifeCycle->item(1, 0);
-        ___qtablewidgetitem20->setText(QApplication::translate("MainWindow", "Death", 0));
+        QTableWidgetItem *___qtablewidgetitem13 = tableWidget_LifeCycle->item(0, 0);
+        ___qtablewidgetitem13->setText(QApplication::translate("MainWindow", "Infection", Q_NULLPTR));
+        QTableWidgetItem *___qtablewidgetitem14 = tableWidget_LifeCycle->item(0, 1);
+        ___qtablewidgetitem14->setText(QApplication::translate("MainWindow", "beta", Q_NULLPTR));
+        QTableWidgetItem *___qtablewidgetitem15 = tableWidget_LifeCycle->item(0, 2);
+        ___qtablewidgetitem15->setText(QApplication::translate("MainWindow", "userdef_func()...", Q_NULLPTR));
+        QTableWidgetItem *___qtablewidgetitem16 = tableWidget_LifeCycle->item(0, 3);
+        ___qtablewidgetitem16->setText(QApplication::translate("MainWindow", "I", Q_NULLPTR));
+        QTableWidgetItem *___qtablewidgetitem17 = tableWidget_LifeCycle->item(0, 4);
+        ___qtablewidgetitem17->setText(QApplication::translate("MainWindow", "Local(level)/Global", Q_NULLPTR));
+        QTableWidgetItem *___qtablewidgetitem18 = tableWidget_LifeCycle->item(1, 0);
+        ___qtablewidgetitem18->setText(QApplication::translate("MainWindow", "Death", Q_NULLPTR));
         tableWidget_LifeCycle->setSortingEnabled(__sortingEnabled);
 
-        label_21->setText(QApplication::translate("MainWindow", "Selected ???? Description:", 0));
-        groupBox_VarFuncCreator->setTitle(QApplication::translate("MainWindow", "Rate / Transition Formula", 0));
+        label_21->setText(QApplication::translate("MainWindow", "Selected ???? Description:", Q_NULLPTR));
+        groupBox_VarFuncCreator->setTitle(QApplication::translate("MainWindow", "Rate / Transition Formula", Q_NULLPTR));
         textEdit_Formula->setHtml(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -2872,8 +2870,8 @@ public:
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">...</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">RETURN"
                         "(ret)</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">END</p></body></html>", 0));
-        toolBox_CodeEditor->setItemText(toolBox_CodeEditor->indexOf(CurrentFormulaEditing), QApplication::translate("MainWindow", "Current Formula Editing", 0));
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">END</p></body></html>", Q_NULLPTR));
+        toolBox_CodeEditor->setItemText(toolBox_CodeEditor->indexOf(CurrentFormulaEditing), QApplication::translate("MainWindow", "Current Formula Editing", Q_NULLPTR));
         textEdit_CustomMacro->setHtml(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
@@ -2884,174 +2882,213 @@ public:
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">...</p>\n"
 "<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">RETURN"
                         "(ret)</p>\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">END</p></body></html>", 0));
-        toolBox_CodeEditor->setItemText(toolBox_CodeEditor->indexOf(CustomMacroEditing), QApplication::translate("MainWindow", "Custom MACRO Editing", 0));
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\">END</p></body></html>", Q_NULLPTR));
+        toolBox_CodeEditor->setItemText(toolBox_CodeEditor->indexOf(CustomMacroEditing), QApplication::translate("MainWindow", "Custom MACRO Editing", Q_NULLPTR));
         label_27->setText(QString());
-        label_22->setText(QApplication::translate("MainWindow", "Available MACROs", 0));
+        label_22->setText(QApplication::translate("MainWindow", "Available MACROs", Q_NULLPTR));
         comboBox_ElpBuiltin->clear();
         comboBox_ElpBuiltin->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "NB_NEIGH(site id, level)", 0)
-         << QApplication::translate("MainWindow", "MEAN(attribute name)", 0)
-         << QApplication::translate("MainWindow", "NB_SITES()", 0)
+         << QApplication::translate("MainWindow", "NB_NEIGH(site id, level)", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "MEAN(attribute name)", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "NB_SITES()", Q_NULLPTR)
         );
 #ifndef QT_NO_TOOLTIP
-        comboBox_ElpBuiltin->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600; color:#00007f;\">Builtin constants, variables and functions:</span><br/>Predefined constants, variables and functions MACROs.</p></body></html>", 0));
+        comboBox_ElpBuiltin->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600; color:#00007f;\">Builtin constants, variables and functions:</span><br/>Predefined constants, variables and functions MACROs.</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_TOOLTIP
-        toolButton_26->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600; color:#00007f;\">Insert at cursor's position:</span><br/>Insert MACRO to the right sided global formula text area.</p></body></html>", 0));
+        toolButton_26->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600; color:#00007f;\">Insert at cursor's position:</span><br/>Insert MACRO to the right sided global formula text area.</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_26->setText(QApplication::translate("MainWindow", "New Func...", 0));
+        toolButton_26->setText(QApplication::translate("MainWindow", "New Func...", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        label->setToolTip(QApplication::translate("MainWindow", "User-defined MACROs", 0));
+        label->setToolTip(QApplication::translate("MainWindow", "User-defined MACROs", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         label->setText(QString());
         comboBox_ElpBuiltinKeywords->clear();
         comboBox_ElpBuiltinKeywords->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "RETURN(T)", 0)
-         << QApplication::translate("MainWindow", "FOREACH(T,VECTOR<T>)", 0)
-         << QApplication::translate("MainWindow", "BEGIN", 0)
-         << QApplication::translate("MainWindow", "END", 0)
-         << QApplication::translate("MainWindow", "DEFINE", 0)
-         << QApplication::translate("MainWindow", "VOID", 0)
-         << QApplication::translate("MainWindow", "BOOL", 0)
-         << QApplication::translate("MainWindow", "INT", 0)
-         << QApplication::translate("MainWindow", "DOUBLE", 0)
-         << QApplication::translate("MainWindow", "INT_PTR", 0)
-         << QApplication::translate("MainWindow", "DOUBLE_PTR", 0)
-         << QApplication::translate("MainWindow", "FREE_PTR", 0)
-         << QApplication::translate("MainWindow", "RND", 0)
-         << QApplication::translate("MainWindow", "VECTOR<T>", 0)
-         << QApplication::translate("MainWindow", "NODE", 0)
-         << QApplication::translate("MainWindow", "CURRENT_NODE", 0)
-         << QApplication::translate("MainWindow", "SITE", 0)
-         << QApplication::translate("MainWindow", "CURRENT_SITE", 0)
-         << QApplication::translate("MainWindow", "DEF_FUNC(type, name)", 0)
-         << QApplication::translate("MainWindow", "DEF_CONST(type, name, value)", 0)
-         << QApplication::translate("MainWindow", "DEF_VAR(type, name, value)", 0)
-         << QApplication::translate("MainWindow", "DEF_PTR(type, name, value)", 0)
-         << QApplication::translate("MainWindow", "SET_VAR(name, value)", 0)
-         << QApplication::translate("MainWindow", "SET_PTR(name, value)", 0)
+         << QApplication::translate("MainWindow", "RETURN(T)", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "FOREACH(T,VECTOR<T>)", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "BEGIN", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "END", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "DEFINE", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "VOID", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "BOOL", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "INT", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "DOUBLE", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "INT_PTR", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "DOUBLE_PTR", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "FREE_PTR", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "RND", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "VECTOR<T>", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "NODE", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "CURRENT_NODE", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "SITE", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "CURRENT_SITE", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "DEF_FUNC(type, name)", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "DEF_CONST(type, name, value)", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "DEF_VAR(type, name, value)", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "DEF_PTR(type, name, value)", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "SET_VAR(name, value)", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "SET_PTR(name, value)", Q_NULLPTR)
         );
 #ifndef QT_NO_TOOLTIP
-        comboBox_ElpBuiltinKeywords->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600; color:#00007f;\">Some builtin keywords:</span><br/>Predefined keyword MACROs</p></body></html>", 0));
+        comboBox_ElpBuiltinKeywords->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600; color:#00007f;\">Some builtin keywords:</span><br/>Predefined keyword MACROs</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
 #ifndef QT_NO_TOOLTIP
-        label_19->setToolTip(QApplication::translate("MainWindow", "Predefined keyword MACROs", 0));
+        label_19->setToolTip(QApplication::translate("MainWindow", "Predefined keyword MACROs", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         label_19->setText(QString());
 #ifndef QT_NO_TOOLTIP
-        toolButton_FormulaInsertKeyword->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600; color:#00007f;\">Insert at cursor's position:</span><br/>Insert MACRO to the right sided global formula text area.</p></body></html>", 0));
+        toolButton_FormulaInsertKeyword->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600; color:#00007f;\">Insert at cursor's position:</span><br/>Insert MACRO to the right sided global formula text area.</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_FormulaInsertKeyword->setText(QApplication::translate("MainWindow", "New Const...", 0));
-        toolButton_2->setText(QApplication::translate("MainWindow", "...", 0));
+        toolButton_FormulaInsertKeyword->setText(QApplication::translate("MainWindow", "New Const...", Q_NULLPTR));
+        toolButton_2->setText(QApplication::translate("MainWindow", "...", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        label_31->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Standard <span style=\" font-weight:600; color:#676700;\">cmath</span> library</p></body></html>", 0));
+        label_31->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p>Standard <span style=\" font-weight:600; color:#676700;\">cmath</span> library</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         label_31->setText(QString());
 #ifndef QT_NO_TOOLTIP
-        label_20->setToolTip(QApplication::translate("MainWindow", "Predefined constant, variable and function MACROs", 0));
+        label_20->setToolTip(QApplication::translate("MainWindow", "Predefined constant, variable and function MACROs", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         label_20->setText(QString());
-        toolButton_CustomMacroInsert->setText(QApplication::translate("MainWindow", "...", 0));
-        toolButton_CustomMacroEdit->setText(QApplication::translate("MainWindow", "...", 0));
-        comboBox_CustomMacros->setItemText(0, QApplication::translate("MainWindow", "BIRTH_RATE", 0));
-        comboBox_CustomMacros->setItemText(1, QApplication::translate("MainWindow", "MyVar", 0));
-        comboBox_CustomMacros->setItemText(2, QApplication::translate("MainWindow", "MyFunc", 0));
-        comboBox_CustomMacros->setItemText(3, QApplication::translate("MainWindow", "---", 0));
-        comboBox_CustomMacros->setItemText(4, QApplication::translate("MainWindow", "New...", 0));
+        toolButton_CustomMacroInsert->setText(QApplication::translate("MainWindow", "...", Q_NULLPTR));
+        toolButton_CustomMacroEdit->setText(QApplication::translate("MainWindow", "...", Q_NULLPTR));
+        comboBox_CustomMacros->setItemText(0, QApplication::translate("MainWindow", "BIRTH_RATE", Q_NULLPTR));
+        comboBox_CustomMacros->setItemText(1, QApplication::translate("MainWindow", "MyVar", Q_NULLPTR));
+        comboBox_CustomMacros->setItemText(2, QApplication::translate("MainWindow", "MyFunc", Q_NULLPTR));
+        comboBox_CustomMacros->setItemText(3, QApplication::translate("MainWindow", "---", Q_NULLPTR));
+        comboBox_CustomMacros->setItemText(4, QApplication::translate("MainWindow", "New...", Q_NULLPTR));
 
 #ifndef QT_NO_TOOLTIP
-        comboBox_CustomMacros->setToolTip(QApplication::translate("MainWindow", "User-defined MACROs", 0));
+        comboBox_CustomMacros->setToolTip(QApplication::translate("MainWindow", "User-defined MACROs", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
         label_26->setText(QString());
-        label_25->setText(QApplication::translate("MainWindow", "Custom MACRO", 0));
-        toolButton_5->setText(QApplication::translate("MainWindow", "...", 0));
-        lineEdit_CustomMacroName->setText(QApplication::translate("MainWindow", "BIRTH_RATE", 0));
-        toolButton_8->setText(QApplication::translate("MainWindow", "...", 0));
-        lineEdit_CustomMacroParamName->setText(QApplication::translate("MainWindow", "NewParam", 0));
-        label_34->setText(QApplication::translate("MainWindow", "Params", 0));
+        label_25->setText(QApplication::translate("MainWindow", "Custom MACRO", Q_NULLPTR));
+        label_34->setText(QApplication::translate("MainWindow", "Params", Q_NULLPTR));
+        label_24->setText(QApplication::translate("MainWindow", "Tools", Q_NULLPTR));
+        toolButton_5->setText(QApplication::translate("MainWindow", "...", Q_NULLPTR));
+        lineEdit_CustomMacroName->setText(QApplication::translate("MainWindow", "BIRTH_RATE", Q_NULLPTR));
+        toolButton_8->setText(QApplication::translate("MainWindow", "...", Q_NULLPTR));
+        lineEdit_CustomMacroParamName->setText(QApplication::translate("MainWindow", "NewParam", Q_NULLPTR));
         comboBox_CustomMacroStyle->clear();
         comboBox_CustomMacroStyle->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "UserConst", 0)
-         << QApplication::translate("MainWindow", "UserFunc", 0)
-         << QApplication::translate("MainWindow", "RateCallback", 0)
-         << QApplication::translate("MainWindow", "EventCallback", 0)
+         << QApplication::translate("MainWindow", "UserConst", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "UserFunc", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "RateCallback", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "EventCallback", Q_NULLPTR)
         );
-        label_32->setText(QApplication::translate("MainWindow", "Return", 0));
+        label_32->setText(QApplication::translate("MainWindow", "Return", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton_CustomMacroAddNew->setToolTip(QApplication::translate("MainWindow", "Create a new custom MACRO", 0));
+        toolButton_CustomMacroAddNew->setToolTip(QApplication::translate("MainWindow", "Create a new custom MACRO", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_CustomMacroAddNew->setText(QApplication::translate("MainWindow", "...", 0));
+        toolButton_CustomMacroAddNew->setText(QApplication::translate("MainWindow", "...", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton_CustomMacroDelete->setToolTip(QApplication::translate("MainWindow", "Remove the current custom MACRO", 0));
+        toolButton_CustomMacroDelete->setToolTip(QApplication::translate("MainWindow", "Remove the current custom MACRO", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_CustomMacroDelete->setText(QApplication::translate("MainWindow", "...", 0));
+        toolButton_CustomMacroDelete->setText(QApplication::translate("MainWindow", "...", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton_CustomMacroApply->setToolTip(QApplication::translate("MainWindow", "Validate changes", 0));
+        toolButton_CustomMacroApply->setToolTip(QApplication::translate("MainWindow", "Validate changes", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_CustomMacroApply->setText(QApplication::translate("MainWindow", "...", 0));
+        toolButton_CustomMacroApply->setText(QApplication::translate("MainWindow", "...", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton_CustomMacroDiscard->setToolTip(QApplication::translate("MainWindow", "Discard changes", 0));
+        toolButton_CustomMacroDiscard->setToolTip(QApplication::translate("MainWindow", "Discard changes", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_CustomMacroDiscard->setText(QApplication::translate("MainWindow", "...", 0));
-        label_24->setText(QApplication::translate("MainWindow", "Tools", 0));
-        label_23->setText(QApplication::translate("MainWindow", "Name", 0));
-        label_33->setText(QApplication::translate("MainWindow", "Style", 0));
+        toolButton_CustomMacroDiscard->setText(QApplication::translate("MainWindow", "...", Q_NULLPTR));
+        label_23->setText(QApplication::translate("MainWindow", "Name", Q_NULLPTR));
+        label_33->setText(QApplication::translate("MainWindow", "Style", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton_CustomMacroAddNew_2->setToolTip(QApplication::translate("MainWindow", "Create a new custom MACRO", 0));
+        toolButton_CustomMacroAddNew_2->setToolTip(QApplication::translate("MainWindow", "Create a new custom MACRO", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_CustomMacroAddNew_2->setText(QApplication::translate("MainWindow", "...", 0));
+        toolButton_CustomMacroAddNew_2->setText(QApplication::translate("MainWindow", "...", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton_CustomMacroDelete_2->setToolTip(QApplication::translate("MainWindow", "Remove the current custom MACRO", 0));
+        toolButton_CustomMacroDelete_2->setToolTip(QApplication::translate("MainWindow", "Remove the current custom MACRO", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton_CustomMacroDelete_2->setText(QApplication::translate("MainWindow", "...", 0));
+        toolButton_CustomMacroDelete_2->setText(QApplication::translate("MainWindow", "...", Q_NULLPTR));
         comboBox_CustomMacroReturns->clear();
         comboBox_CustomMacroReturns->insertItems(0, QStringList()
-         << QApplication::translate("MainWindow", "VOID", 0)
-         << QApplication::translate("MainWindow", "BOOL", 0)
-         << QApplication::translate("MainWindow", "INT", 0)
-         << QApplication::translate("MainWindow", "DOUBLE", 0)
-         << QApplication::translate("MainWindow", "INT_PTR", 0)
-         << QApplication::translate("MainWindow", "DOUBLE_PTR", 0)
-         << QApplication::translate("MainWindow", "VECTOR<T>", 0)
-         << QApplication::translate("MainWindow", "NODE", 0)
-         << QApplication::translate("MainWindow", "SITE", 0)
+         << QApplication::translate("MainWindow", "VOID", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "BOOL", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "INT", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "DOUBLE", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "INT_PTR", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "DOUBLE_PTR", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "VECTOR<T>", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "NODE", Q_NULLPTR)
+         << QApplication::translate("MainWindow", "SITE", Q_NULLPTR)
         );
 #ifndef QT_NO_TOOLTIP
-        comboBox_CustomMacroReturns->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600; color:#00007f;\">Some builtin keywords:</span><br/>Predefined keyword MACROs</p></body></html>", 0));
+        comboBox_CustomMacroReturns->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600; color:#00007f;\">Some builtin keywords:</span><br/>Predefined keyword MACROs</p></body></html>", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        label_MacroItemName->setText(QApplication::translate("MainWindow", "[Item Name...]", 0));
-        toolButton_EditorCheckSyntax->setText(QApplication::translate("MainWindow", "Check Code Errors", 0));
-        tabWidget_Top->setTabText(tabWidget_Top->indexOf(tab_LifeCycle), QApplication::translate("MainWindow", "Life Cycle", 0));
-        groupBox_5->setTitle(QApplication::translate("MainWindow", "Output Configuration:", 0));
+        lineEdit_VarDesc->setText(QApplication::translate("MainWindow", "description...", Q_NULLPTR));
+        label_28->setText(QApplication::translate("MainWindow", "Descr", Q_NULLPTR));
+        label_MacroItemName->setText(QApplication::translate("MainWindow", "[Item Name...]", Q_NULLPTR));
+        toolButton_EditorCheckSyntax->setText(QApplication::translate("MainWindow", "Check Code Errors", Q_NULLPTR));
+        tabWidget_Top->setTabText(tabWidget_Top->indexOf(tab_LifeCycle), QApplication::translate("MainWindow", "Life Cycle", Q_NULLPTR));
+        groupBox->setTitle(QApplication::translate("MainWindow", "Setup", Q_NULLPTR));
+        label_NetworkNbNode->setText(QApplication::translate("MainWindow", "Number of Nodes", Q_NULLPTR));
+        label_NetworkDist->setText(QApplication::translate("MainWindow", "Distribution Type", Q_NULLPTR));
+        label_3->setText(QApplication::translate("MainWindow", "Default distribution parameters...", Q_NULLPTR));
+#ifndef QT_NO_TOOLTIP
+        toolButton_NetworkResetDist->setToolTip(QApplication::translate("MainWindow", "Reset current distribution parameters", Q_NULLPTR));
+#endif // QT_NO_TOOLTIP
+        toolButton_NetworkResetDist->setText(QApplication::translate("MainWindow", "Default Params...", Q_NULLPTR));
+        groupBox_3->setTitle(QApplication::translate("MainWindow", "Distribution Parameters:", Q_NULLPTR));
+        groupBox_2->setTitle(QApplication::translate("MainWindow", "Populate", Q_NULLPTR));
+        label_4->setText(QApplication::translate("MainWindow", "Populations Spreading Method", Q_NULLPTR));
+        comboBox_NetPopsSpread->setItemText(0, QApplication::translate("MainWindow", "Stochastic", Q_NULLPTR));
+        comboBox_NetPopsSpread->setItemText(1, QApplication::translate("MainWindow", "Fixed", Q_NULLPTR));
+
+        QTableWidgetItem *___qtablewidgetitem19 = tableWidget_NetPopsRepartition->horizontalHeaderItem(0);
+        ___qtablewidgetitem19->setText(QApplication::translate("MainWindow", "Sites / Populations", Q_NULLPTR));
+        QTableWidgetItem *___qtablewidgetitem20 = tableWidget_NetPopsRepartition->horizontalHeaderItem(1);
+        ___qtablewidgetitem20->setText(QApplication::translate("MainWindow", "Distributions", Q_NULLPTR));
+#ifndef QT_NO_TOOLTIP
+        label_NetPopIcon_2->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600; color:#8b0000;\">Warning...</span></p></body></html>", Q_NULLPTR));
+#endif // QT_NO_TOOLTIP
+        label_NetPopIcon_2->setText(QString());
+#ifndef QT_NO_TOOLTIP
+        label_18->setToolTip(QApplication::translate("MainWindow", "Green is OK, Red is not...", Q_NULLPTR));
+#endif // QT_NO_TOOLTIP
+        label_18->setText(QApplication::translate("MainWindow", "Check Total", Q_NULLPTR));
+#ifndef QT_NO_TOOLTIP
+        label_NetPopIcon->setToolTip(QApplication::translate("MainWindow", "<html><head/><body><p><span style=\" font-weight:600; color:#8b0000;\">Warning!</span></p></body></html>", Q_NULLPTR));
+#endif // QT_NO_TOOLTIP
+        label_NetPopIcon->setText(QString());
+        textEdit_SpreadTotal->setHtml(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
+"<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
+"p, li { white-space: pre-wrap; }\n"
+"</style></head><body style=\" font-family:'Clear Sans'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:12px; margin-bottom:12px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Ubuntu'; font-size:12pt; font-weight:600; color:#3cb371;\">1.0</span><span style=\" font-family:'Ubuntu'; font-size:12pt; font-weight:600; color:#000000;\"> / </span><span style=\" font-family:'Ubuntu'; font-size:12pt; font-weight:600; color:#aa0000;\">0.99</span></p></body></html>", Q_NULLPTR));
+        pushButton_NetGenerate->setText(QApplication::translate("MainWindow", "   Generate Network  ", Q_NULLPTR));
+        tabWidget_Top->setTabText(tabWidget_Top->indexOf(tab_Network), QApplication::translate("MainWindow", "Network", Q_NULLPTR));
+        groupBox_5->setTitle(QApplication::translate("MainWindow", "Output Configuration:", Q_NULLPTR));
         textEdit->setHtml(QApplication::translate("MainWindow", "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.0//EN\" \"http://www.w3.org/TR/REC-html40/strict.dtd\">\n"
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
-"</style></head><body style=\" font-family:'Sans'; font-size:9pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Ubuntu'; font-size:11pt;\">Penser qu'on va vouloir certains parametres variables d'un run sur l'autre (au fil des repetitions). Donc </span><span style=\" font-family:'Ubuntu'; font-size:11pt; font-weight:600; color:#ff0000;\">g\303\251rer le nombre de repetitions</span><span style=\" font-family:'Ubuntu'; font-size:11pt;\"> et les </span><span style=\" font-family:'Ubuntu'; font-size:11pt; font-weight:600; color:#ff0000;\">fourchettes de variation (XML??)</span><span style=\" font-family:'Ubuntu'; font-size:11pt;\"> de certians params (qu"
-                        "'ils soient globaux, au d'init des attributs, ou que sais-je encore...</span></p></body></html>", 0));
-        tabWidget_Top->setTabText(tabWidget_Top->indexOf(tab_Outputs), QApplication::translate("MainWindow", "Outputs", 0));
-        menuFile->setTitle(QApplication::translate("MainWindow", "File", 0));
-        menuHelp->setTitle(QApplication::translate("MainWindow", "Help", 0));
-        menuBuild->setTitle(QApplication::translate("MainWindow", "Build And Run", 0));
-        menuView->setTitle(QApplication::translate("MainWindow", "View", 0));
-        menuToolbars->setTitle(QApplication::translate("MainWindow", "Toolbars", 0));
-        menuEdit->setTitle(QApplication::translate("MainWindow", "Edit", 0));
-        mainToolBar->setWindowTitle(QApplication::translate("MainWindow", "Main Tools", 0));
-        dockWidget->setWindowTitle(QApplication::translate("MainWindow", "  Simulation Output", 0));
+"</style></head><body style=\" font-family:'Clear Sans'; font-size:11pt; font-weight:400; font-style:normal;\">\n"
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-family:'Ubuntu';\">Penser qu'on va vouloir certains parametres variables d'un run sur l'autre (au fil des repetitions). Donc </span><span style=\" font-family:'Ubuntu'; font-weight:600; color:#ff0000;\">g\303\251rer le nombre de repetitions</span><span style=\" font-family:'Ubuntu';\"> et les </span><span style=\" font-family:'Ubuntu'; font-weight:600; color:#ff0000;\">fourchettes de variation (XML??)</span><span style=\" font-family:'Ubuntu';\"> de certians params (qu'ils soient globaux, au d'init des attributs, ou que sais-je encore...</s"
+                        "pan></p></body></html>", Q_NULLPTR));
+        tabWidget_Top->setTabText(tabWidget_Top->indexOf(tab_Outputs), QApplication::translate("MainWindow", "Outputs", Q_NULLPTR));
+        menuFile->setTitle(QApplication::translate("MainWindow", "Fi&le", Q_NULLPTR));
+        menuHelp->setTitle(QApplication::translate("MainWindow", "Help", Q_NULLPTR));
+        menuBuild->setTitle(QApplication::translate("MainWindow", "B&uild And Run", Q_NULLPTR));
+        menuView->setTitle(QApplication::translate("MainWindow", "&View", Q_NULLPTR));
+        menuToolbars->setTitle(QApplication::translate("MainWindow", "&Toolbars", Q_NULLPTR));
+        menuEdit->setTitle(QApplication::translate("MainWindow", "Edit", Q_NULLPTR));
+        mainToolBar->setWindowTitle(QApplication::translate("MainWindow", "Main Tools", Q_NULLPTR));
+        dockWidget->setWindowTitle(QApplication::translate("MainWindow", "  Si&mulation Output", Q_NULLPTR));
 #ifndef QT_NO_TOOLTIP
-        toolButton->setToolTip(QApplication::translate("MainWindow", "Auto refresh", 0));
+        toolButton->setToolTip(QApplication::translate("MainWindow", "Auto refresh", Q_NULLPTR));
 #endif // QT_NO_TOOLTIP
-        toolButton->setText(QApplication::translate("MainWindow", "...", 0));
-        toolButton_15->setText(QApplication::translate("MainWindow", "...", 0));
-        tabWidget_Outputs->setTabText(tabWidget_Outputs->indexOf(tab_5), QApplication::translate("MainWindow", "Build Output", 0));
-        plainTextEdit_2->setPlainText(QApplication::translate("MainWindow", "Bleh! Blah...", 0));
-        tabWidget_Outputs->setTabText(tabWidget_Outputs->indexOf(tab_6), QApplication::translate("MainWindow", "Run Output", 0));
-        toolButton_StopProcess->setText(QApplication::translate("MainWindow", "...", 0));
-        label_ProcessingInfo->setText(QApplication::translate("MainWindow", "Processing...", 0));
-        label_9->setText(QApplication::translate("MainWindow", "24%", 0));
-        toolBar_Context->setWindowTitle(QApplication::translate("MainWindow", "toolBar", 0));
-        toolBar_Extended->setWindowTitle(QApplication::translate("MainWindow", "Context Tools", 0));
+        toolButton->setText(QApplication::translate("MainWindow", "...", Q_NULLPTR));
+        toolButton_15->setText(QApplication::translate("MainWindow", "...", Q_NULLPTR));
+        tabWidget_Outputs->setTabText(tabWidget_Outputs->indexOf(tab_5), QApplication::translate("MainWindow", "Build Output", Q_NULLPTR));
+        plainTextEdit_2->setPlainText(QApplication::translate("MainWindow", "Bleh! Blah...", Q_NULLPTR));
+        tabWidget_Outputs->setTabText(tabWidget_Outputs->indexOf(tab_6), QApplication::translate("MainWindow", "Run Output", Q_NULLPTR));
+        toolButton_StopProcess->setText(QApplication::translate("MainWindow", "...", Q_NULLPTR));
+        label_ProcessingInfo->setText(QApplication::translate("MainWindow", "Processing...", Q_NULLPTR));
+        label_9->setText(QApplication::translate("MainWindow", "24%", Q_NULLPTR));
+        toolBar_Context->setWindowTitle(QApplication::translate("MainWindow", "toolBar", Q_NULLPTR));
+        toolBar_Extended->setWindowTitle(QApplication::translate("MainWindow", "Context Tools", Q_NULLPTR));
     } // retranslateUi
 
 };

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'lifecyclelistitem.ui'
 **
-** Created by: Qt User Interface Compiler version 5.3.2
+** Created by: Qt User Interface Compiler version 5.7.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -70,14 +70,14 @@ public:
 
     void retranslateUi(QWidget *LifeCycleListItem)
     {
-        LifeCycleListItem->setWindowTitle(QApplication::translate("LifeCycleListItem", "Form", 0));
-        lineEdit->setText(QApplication::translate("LifeCycleListItem", "Name", 0));
-        lineEdit_2->setText(QApplication::translate("LifeCycleListItem", "Rate (var or func)", 0));
-        lineEdit_3->setText(QApplication::translate("LifeCycleListItem", "State", 0));
+        LifeCycleListItem->setWindowTitle(QApplication::translate("LifeCycleListItem", "Form", Q_NULLPTR));
+        lineEdit->setText(QApplication::translate("LifeCycleListItem", "Name", Q_NULLPTR));
+        lineEdit_2->setText(QApplication::translate("LifeCycleListItem", "Rate (var or func)", Q_NULLPTR));
+        lineEdit_3->setText(QApplication::translate("LifeCycleListItem", "State", Q_NULLPTR));
         comboBox->clear();
         comboBox->insertItems(0, QStringList()
-         << QApplication::translate("LifeCycleListItem", "Local", 0)
-         << QApplication::translate("LifeCycleListItem", "Global", 0)
+         << QApplication::translate("LifeCycleListItem", "Local", Q_NULLPTR)
+         << QApplication::translate("LifeCycleListItem", "Global", Q_NULLPTR)
         );
     } // retranslateUi
 

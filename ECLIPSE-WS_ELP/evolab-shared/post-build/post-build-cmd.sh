@@ -31,9 +31,9 @@ find . -name '*.h' -exec cp -v {} ../../evolab-cython/inc/ \; ;
 
 # Copy .so & .h to QT-GUI project
 cd ../Release
-cp -v libelp.so ../../../../EVOLAB-GUI/DEPS/lib/; 
-rm ../../../../EVOLAB-GUI/DEPS/inc/*.*; 
+cp -v libelp.so ../../../GUI/EVOLAB-GUI/DEPS/lib/; 
+rm ../../../GUI/EVOLAB-GUI/DEPS/inc/*.*; 
 cd ../src; 
-find . -name '*.h' -exec cp -v {} ../../../../EVOLAB-GUI/DEPS/inc/ \; ;
+find . -name '*.h' -exec cp -v {} ../../../GUI/EVOLAB-GUI/DEPS/inc/ \; ;
 
 

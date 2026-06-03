@@ -2,31 +2,31 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
-O_SRCS := 
-CPP_SRCS := 
 C_UPPER_SRCS := 
-C_SRCS := 
-S_UPPER_SRCS := 
-OBJ_SRCS := 
-ASM_SRCS := 
 CXX_SRCS := 
 C++_SRCS := 
+OBJ_SRCS := 
 CC_SRCS := 
+ASM_SRCS := 
+C_SRCS := 
+CPP_SRCS := 
+O_SRCS := 
+S_UPPER_SRCS := 
+LIBRARIES := 
+CC_DEPS := 
 C++_DEPS := 
 OBJS := 
-C_DEPS := 
-CC_DEPS := 
-LIBRARIES := 
-CPP_DEPS := 
-CXX_DEPS := 
 C_UPPER_DEPS := 
+CXX_DEPS := 
+C_DEPS := 
+CPP_DEPS := 
 
 # Every subdirectory with source files must be described here
 SUBDIRS := \
-src/Utils \
-src/SimStudy \
-src/SimLab/SimCore \
-src/SimLab/Outputer \
-src/SimLab/Inputer \
 src/Network \
+src/SimLab/Inputer \
+src/SimLab/Outputer \
+src/SimLab/SimCore \
+src/SimStudy \
+src/Utils \
 

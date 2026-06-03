@@ -55,7 +55,8 @@ FORMS    += mainwindow.ui \
 
 win32:CONFIG(release, debug|release): LIBS += -L$$PWD/../DEPS/lib/release/ -lelp -ldl
 else:win32:CONFIG(debug, debug|release): LIBS += -L$$PWD/../DEPS/lib/debug/ -lelp -ldl
-else:unix: LIBS += -L$$PWD/../DEPS/lib/ -lelp -ldl
+//else:unix: LIBS += -L$$PWD/../DEPS/lib/ -lelp -ldl
+else:unix: LIBS += -L$$PWD/../DEPS/lib/ -lgsl -lelp -ldl
 
 INCLUDEPATH += $$PWD/../DEPS/inc
 DEPENDPATH += $$PWD/../DEPS/inc
@@ -75,6 +76,7 @@ INCLUDEPATH += /usr/include/libxml2
 DEPENDPATH += /usr/include/libxml2
 
 ##QMAKE_CXXFLAGS += -std=c++0x
+QMAKE_CXXFLAGS += -fPIC
 QMAKE_CXXFLAGS += -std=c++11
 QMAKE_CXXFLAGS += -Wno-unused-variable
 QMAKE_CXXFLAGS += -Wno-unused-parameter

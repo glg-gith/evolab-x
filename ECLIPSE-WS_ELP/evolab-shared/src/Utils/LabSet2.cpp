@@ -366,7 +366,8 @@ int main( int argc, char* argv[] )
     result( &D, "toggle item 4; D = " );
 
     char buf[32];
-    gets(buf);
+    //gets(buf); // Can overflow, as well as 'scanf'
+    fgets(buf, sizeof(buf), stdin);
     return 0;
 }
 

@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'varlistitem.ui'
 **
-** Created by: Qt User Interface Compiler version 5.3.2
+** Created by: Qt User Interface Compiler version 5.7.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -60,7 +60,7 @@ public:
 
     void retranslateUi(QWidget *VarListItem)
     {
-        VarListItem->setWindowTitle(QApplication::translate("VarListItem", "Form", 0));
+        VarListItem->setWindowTitle(QApplication::translate("VarListItem", "Form", Q_NULLPTR));
     } // retranslateUi
 
 };

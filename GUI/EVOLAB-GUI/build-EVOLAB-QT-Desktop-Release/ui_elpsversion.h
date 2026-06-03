@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'elpsversion.ui'
 **
-** Created by: Qt User Interface Compiler version 5.3.2
+** Created by: Qt User Interface Compiler version 5.7.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -113,7 +113,7 @@ public:
 
     void retranslateUi(QWidget *ElpsVersion)
     {
-        label->setText(QApplication::translate("ElpsVersion", "TextLabel", 0));
+        label->setText(QApplication::translate("ElpsVersion", "TextLabel", Q_NULLPTR));
         pushButton->setText(QString());
         Q_UNUSED(ElpsVersion);
     } // retranslateUi

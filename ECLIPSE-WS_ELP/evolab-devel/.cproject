@@ -964,30 +964,30 @@
 				</extensions>
 			</storageModule>
 			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
-				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release,org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.cross.exe.release.1837785532.1246932288.269189042" name="bdmLsim4" parent="cdt.managedbuild.config.gnu.cross.exe.release">
+				<configuration artifactName="${ProjName}" buildArtefactType="org.eclipse.cdt.build.core.buildArtefactType.exe" buildProperties="org.eclipse.cdt.build.core.buildArtefactType=org.eclipse.cdt.build.core.buildArtefactType.exe,org.eclipse.cdt.build.core.buildType=org.eclipse.cdt.build.core.buildType.release" cleanCommand="rm -rf" description="" id="cdt.managedbuild.config.gnu.cross.exe.release.1837785532.1246932288.269189042" name="bdmLsim4" parent="cdt.managedbuild.config.gnu.cross.exe.release">
 					<folderInfo id="cdt.managedbuild.config.gnu.cross.exe.release.1837785532.1246932288.269189042." name="/" resourcePath="">
 						<toolChain id="cdt.managedbuild.toolchain.gnu.cross.exe.release.2278253" name="Cross GCC" superClass="cdt.managedbuild.toolchain.gnu.cross.exe.release">
 							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.targetPlatform.gnu.cross.2140722110" isAbstract="false" osList="all" superClass="cdt.managedbuild.targetPlatform.gnu.cross"/>
 							<builder buildPath="${workspace_loc:/evolab-devel/Release}" id="cdt.managedbuild.builder.gnu.cross.1823732113" keepEnvironmentInBuildfile="false" managedBuildOn="true" name="Gnu Make Builder" superClass="cdt.managedbuild.builder.gnu.cross"/>
 							<tool id="cdt.managedbuild.tool.gnu.cross.c.compiler.1885541689" name="Cross GCC Compiler" superClass="cdt.managedbuild.tool.gnu.cross.c.compiler">
-								<option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.option.optimization.level.455451824" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" valueType="enumerated"/>
-								<option id="gnu.c.compiler.option.debugging.level.1473595931" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" value="gnu.c.debugging.level.none" valueType="enumerated"/>
-								<option id="gnu.c.compiler.option.include.paths.1104195296" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths"/>
-								<option id="gnu.c.compiler.option.misc.other.681633770" name="Other flags" superClass="gnu.c.compiler.option.misc.other" value="-c -fmessage-length=0 -m64 -msse4.2" valueType="string"/>
+								<option defaultValue="gnu.c.optimization.level.most" id="gnu.c.compiler.option.optimization.level.455451824" name="Optimization Level" superClass="gnu.c.compiler.option.optimization.level" useByScannerDiscovery="false" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.debugging.level.1473595931" name="Debug Level" superClass="gnu.c.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.c.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.c.compiler.option.include.paths.1104195296" name="Include paths (-I)" superClass="gnu.c.compiler.option.include.paths" useByScannerDiscovery="false"/>
+								<option id="gnu.c.compiler.option.misc.other.681633770" name="Other flags" superClass="gnu.c.compiler.option.misc.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -m64 -msse4.2" valueType="string"/>
 								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.1612232653" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.compiler.1449015563" name="Cross G++ Compiler" superClass="cdt.managedbuild.tool.gnu.cross.cpp.compiler">
-								<option id="gnu.cpp.compiler.option.optimization.level.514915199" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
-								<option id="gnu.cpp.compiler.option.debugging.level.52982418" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
-								<option id="gnu.cpp.compiler.option.include.paths.2117968367" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+								<option id="gnu.cpp.compiler.option.optimization.level.514915199" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.debugging.level.52982418" name="Debug Level" superClass="gnu.cpp.compiler.option.debugging.level" useByScannerDiscovery="false" value="gnu.cpp.compiler.debugging.level.none" valueType="enumerated"/>
+								<option id="gnu.cpp.compiler.option.include.paths.2117968367" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" useByScannerDiscovery="false" valueType="includePath">
 									<listOptionValue builtIn="false" value="../../../DEPENDENCIES/python2.7/inc"/>
 									<listOptionValue builtIn="false" value="../../../DEPENDENCIES/gsl-1.15"/>
 									<listOptionValue builtIn="false" value="../../../DEPENDENCIES/libxml2-2.9.0/include"/>
 									<listOptionValue builtIn="false" value="/usr/include/libxml2"/>
 									<listOptionValue builtIn="false" value="../inc"/>
 								</option>
-								<option id="gnu.cpp.compiler.option.other.other.1213661450" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-c -fmessage-length=0 -m64" valueType="string"/>
-								<option id="gnu.cpp.compiler.option.preprocessor.def.1164138804" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+								<option id="gnu.cpp.compiler.option.other.other.1213661450" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" useByScannerDiscovery="false" value="-c -fmessage-length=0 -m64" valueType="string"/>
+								<option id="gnu.cpp.compiler.option.preprocessor.def.1164138804" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def" useByScannerDiscovery="false"/>
 								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1062641594" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
 							</tool>
 							<tool id="cdt.managedbuild.tool.gnu.cross.c.linker.572324193" name="Cross GCC Linker" superClass="cdt.managedbuild.tool.gnu.cross.c.linker"/>
@@ -1018,8 +1018,6 @@
 							</tool>
 						</toolChain>
 					</folderInfo>
-					<fileInfo id="cdt.managedbuild.config.gnu.cross.exe.release.1837785532.1246932288.269189042.src/Spatial/BdmLsim2.h" name="BdmLsim2.h" rcbsApplicability="disable" resourcePath="src/Spatial/BdmLsim2.h" toolsToInvoke=""/>
-					<fileInfo id="cdt.managedbuild.config.gnu.cross.exe.release.1837785532.1246932288.269189042.src/Spatial/BdmLsim3.h" name="BdmLsim3.h" rcbsApplicability="disable" resourcePath="src/Spatial/BdmLsim3.h" toolsToInvoke=""/>
 					<fileInfo id="cdt.managedbuild.config.gnu.cross.exe.release.1837785532.1246932288.269189042.src/Spatial/BdmLsim3.cpp" name="BdmLsim3.cpp" rcbsApplicability="disable" resourcePath="src/Spatial/BdmLsim3.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cross.cpp.compiler.1939245822">
 						<tool id="cdt.managedbuild.tool.gnu.cross.cpp.compiler.1939245822" name="Cross G++ Compiler" superClass="cdt.managedbuild.tool.gnu.cross.cpp.compiler.1449015563">
 							<option id="gnu.cpp.compiler.option.optimization.level.818647767" name="Optimization Level" superClass="gnu.cpp.compiler.option.optimization.level" value="gnu.cpp.compiler.optimization.level.most" valueType="enumerated"/>
@@ -1033,16 +1031,8 @@
 						</tool>
 					</fileInfo>
 					<fileInfo id="cdt.managedbuild.config.gnu.cross.exe.release.1837785532.1246932288.269189042.src/Spatial/BdmLsim.h" name="BdmLsim.h" rcbsApplicability="disable" resourcePath="src/Spatial/BdmLsim.h" toolsToInvoke=""/>
-					<folderInfo id="cdt.managedbuild.config.gnu.cross.exe.release.1837785532.1246932288.269189042.2041559489" name="/" resourcePath="bdmLsim4">
-						<toolChain id="cdt.managedbuild.toolchain.gnu.cross.exe.release.86358787" name="Cross GCC" superClass="cdt.managedbuild.toolchain.gnu.cross.exe.release" unusedChildren="">
-							<tool id="cdt.managedbuild.tool.gnu.cross.c.compiler.1274267844" name="Cross GCC Compiler" superClass="cdt.managedbuild.tool.gnu.cross.c.compiler.1885541689"/>
-							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.compiler.1788265787" name="Cross G++ Compiler" superClass="cdt.managedbuild.tool.gnu.cross.cpp.compiler.1449015563"/>
-							<tool id="cdt.managedbuild.tool.gnu.cross.c.linker.500197121" name="Cross GCC Linker" superClass="cdt.managedbuild.tool.gnu.cross.c.linker.572324193"/>
-							<tool id="cdt.managedbuild.tool.gnu.cross.cpp.linker.127556157" name="Cross G++ Linker" superClass="cdt.managedbuild.tool.gnu.cross.cpp.linker.1864604813"/>
-							<tool id="cdt.managedbuild.tool.gnu.cross.archiver.105286382" name="Cross GCC Archiver" superClass="cdt.managedbuild.tool.gnu.cross.archiver.1077937069"/>
-							<tool id="cdt.managedbuild.tool.gnu.cross.assembler.2064057851" name="Cross GCC Assembler" superClass="cdt.managedbuild.tool.gnu.cross.assembler.1280936277"/>
-						</toolChain>
-					</folderInfo>
+					<fileInfo id="cdt.managedbuild.config.gnu.cross.exe.release.1837785532.1246932288.269189042.src/Spatial/BdmLsim3.h" name="BdmLsim3.h" rcbsApplicability="disable" resourcePath="src/Spatial/BdmLsim3.h" toolsToInvoke=""/>
+					<fileInfo id="cdt.managedbuild.config.gnu.cross.exe.release.1837785532.1246932288.269189042.src/Spatial/BdmLsim2.h" name="BdmLsim2.h" rcbsApplicability="disable" resourcePath="src/Spatial/BdmLsim2.h" toolsToInvoke=""/>
 					<sourceEntries>
 						<entry excluding="src" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
 						<entry excluding="Spatial/BdmLsim3.cpp|DrugRes/DrugRes.cpp|Spatial/BdmLsim3.h|Spatial/BdmLsim2.h|Spatial/BdmLsim.h|ex7_seir_percolation.cpp|ex6_network_diff_eq.cpp|ex5_diff_eq.cpp|ex4_dynamic_net.cpp|ex3_chain_binomial.cpp|ex2_percolation.cpp|ex1_mass_action.cpp|Spatial/BdmLsim2.cpp|Spatial/BdmLsim.cpp" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>

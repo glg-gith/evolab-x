@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'aboutdialog.ui'
 **
-** Created by: Qt User Interface Compiler version 5.3.2
+** Created by: Qt User Interface Compiler version 5.7.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -97,14 +97,14 @@ public:
 
     void retranslateUi(QDialog *AboutDialog)
     {
-        AboutDialog->setWindowTitle(QApplication::translate("AboutDialog", "About...", 0));
+        AboutDialog->setWindowTitle(QApplication::translate("AboutDialog", "About...", Q_NULLPTR));
         label->setText(QString());
-        label_2->setText(QApplication::translate("AboutDialog", "EVOLAB-GUI", 0));
-        label_EvolabVersion->setText(QApplication::translate("AboutDialog", "V 0.0.1", 0));
-        label_3->setText(QApplication::translate("AboutDialog", "<html><head/><body><p>Designed By <span style=\" font-weight:600;\">Gauthier Boaglio</span></p></body></html>", 0));
-        label_5->setText(QApplication::translate("AboutDialog", "<html><head/><body><p><a href=\"http://www.evolepid.org/\"><span style=\" font-weight:600; text-decoration: underline; color:#00007f;\">EEE</span></a>  -  <a href=\"http://www.cefe.cnrs.fr/en\"><span style=\" font-weight:600; text-decoration: underline; color:#00007f;\">CEFE</span></a> / CNRS - UMR 5175</p></body></html>", 0));
-        label_6->setText(QApplication::translate("AboutDialog", "<html><head/><body><p><span style=\" font-weight:400; font-style:italic; color:#006336;\">Supervisors :</span></p></body></html>", 0));
-        label_7->setText(QApplication::translate("AboutDialog", "<html><head/><body><p><span style=\" font-style:italic; color:#006336;\">PhD - Sylvain Gandon<br/>PhD - Sebastien Lion</span></p></body></html>", 0));
+        label_2->setText(QApplication::translate("AboutDialog", "EVOLAB-GUI", Q_NULLPTR));
+        label_EvolabVersion->setText(QApplication::translate("AboutDialog", "V 0.0.1", Q_NULLPTR));
+        label_3->setText(QApplication::translate("AboutDialog", "<html><head/><body><p>Designed By <span style=\" font-weight:600;\">Gauthier Boaglio</span></p></body></html>", Q_NULLPTR));
+        label_5->setText(QApplication::translate("AboutDialog", "<html><head/><body><p><a href=\"http://www.evolepid.org/\"><span style=\" font-weight:600; text-decoration: underline; color:#00007f;\">EEE</span></a>  -  <a href=\"http://www.cefe.cnrs.fr/en\"><span style=\" font-weight:600; text-decoration: underline; color:#00007f;\">CEFE</span></a> / CNRS - UMR 5175</p></body></html>", Q_NULLPTR));
+        label_6->setText(QApplication::translate("AboutDialog", "<html><head/><body><p><span style=\" font-weight:400; font-style:italic; color:#006336;\">Supervisors :</span></p></body></html>", Q_NULLPTR));
+        label_7->setText(QApplication::translate("AboutDialog", "<html><head/><body><p><span style=\" font-style:italic; color:#006336;\">PhD - Sylvain Gandon<br/>PhD - Sebastien Lion</span></p></body></html>", Q_NULLPTR));
     } // retranslateUi
 
 };

@@ -2145,7 +2145,7 @@ void MainWindow::on_tabWidget_Top_currentChanged(int index)
         // Update Meta Model from previous Tab
         switch (this->previousTabIndex)
         {
-        case 0:
+        case TAB_ID_POPULATIONS:
         {
             /// ****  Update pops list  **** ///
             // Backup whole meta model
@@ -2179,7 +2179,7 @@ void MainWindow::on_tabWidget_Top_currentChanged(int index)
             }
         }
             break;
-        case 1:
+        case TAB_ID_NETWORK:
         {
             // Save pops spread values
             for (int i=0; i < ui->tableWidget_NetPopsRepartition->rowCount(); ++i)
@@ -2188,15 +2188,11 @@ void MainWindow::on_tabWidget_Top_currentChanged(int index)
             }
         }
             break;
-        case 2:
+        case TAB_ID_LIFE_CYCLE:
         {
         }
             break;
-        case 3:
-        {
-        }
-            break;
-        case 4:
+        case TAB_ID_OUTPUTS:
         {
         }
             break;
@@ -2211,18 +2207,19 @@ void MainWindow::on_tabWidget_Top_currentChanged(int index)
         // Do init stuffs for the current Tab
         switch (index)
         {
-        case 0:
+        case TAB_ID_POPULATIONS:
         {
         }
             break;
 
-        case 1:
+        case TAB_ID_NETWORK:
         {
             this->UpdateNetPopRepartition(ui->comboBox_NetPopsSpread->currentIndex());
         }
             break;
 
-        case 2:
+            // DEPREC
+        case TAB_ID_VARIABLES:
         {
             // Replace in "Variables tab" with Macro utility designed in "Life Cycle tab"
             QLayoutItem *item = ui->horizontalLayout_9->itemAt(1);
@@ -2245,7 +2242,7 @@ void MainWindow::on_tabWidget_Top_currentChanged(int index)
         }
             break;
 
-        case 3:
+        case TAB_ID_LIFE_CYCLE:
         {
             // Move back Macro utility from "Variables tab" to "Life Cycle tab" if applicable
             QLayoutItem *item = ui->tab_LifeCycle->layout()->itemAt(2);
@@ -2257,7 +2254,7 @@ void MainWindow::on_tabWidget_Top_currentChanged(int index)
         }
             break;
 
-        case 4:
+        case TAB_ID_OUTPUTS:
         {
         }
             break;
@@ -2674,6 +2671,12 @@ void MainWindow::on_tableWidget_Pop_cellChanged(int row, int column)
 
 void MainWindow::on_toolButton_VarAdd_clicked()
 {
+    QFont font;
+    font.setFamily("Courier");
+    font.setFixedPitch(true);
+    font.setPointSize(11);
+    font.setBold(true);
+
     //    int row = ui->tableWidget_Variables->currentRow();
     //    int col = ui->tableWidget_Variables->currentColumn();
 
@@ -2715,6 +2718,7 @@ void MainWindow::on_toolButton_VarAdd_clicked()
     te->setPlainText(QUOTEME(DEFAULT_RETURN));
     te->setTextInteractionFlags(Qt::NoTextInteraction);     // Disable interaction
     //te->setEnabled(false);
+    te->setFont(font);
 
     qDebug("Added 6!");
 
@@ -2811,7 +2815,7 @@ void MainWindow::on_tableWidget_Variables_cellClicked(int row, int column)
 
 void MainWindow::on_plainTextEdit_VarDesc_textChanged()
 {
-    if (ui->tabWidget_Top->currentIndex() == 2)                         // Variables tab
+    if (ui->tabWidget_Top->currentIndex() == TAB_ID_VARIABLES)                         // Variables tab
     {
         int row = ui->tableWidget_Variables->currentRow();
         clog << "Current row2= " << row << endl;
@@ -2826,9 +2830,20 @@ void MainWindow::on_plainTextEdit_VarDesc_textChanged()
     }
 }
 
+void MainWindow::on_lineEdit_VarDesc_textChanged(const QString &arg1)
+{
+//    int row = ui->tableWidget_Variables->currentRow();
+//    clog << "Current row2= " << row << endl;
+//    QTableWidgetItem *item0 = ui->tableWidget_Variables->item(row, 0);
+//    PointerLessModels::t_variable *p_var = (PointerLessModels::t_variable *)item0->data(Qt::UserRole).value<quintptr>();
+//    QString desc = ((QPlainTextEdit *)this->sender())->toPlainText();
+//    p_var->var.desc = desc.toStdString();
+}
+
+
 void MainWindow::on_textEdit_Formula_textChanged()
 {
-    if (ui->tabWidget_Top->currentIndex() == 2)                         // Variables tab
+    if (ui->tabWidget_Top->currentIndex() == TAB_ID_VARIABLES)                         // Variables tab
     {
         int row = ui->tableWidget_Variables->currentRow();
 

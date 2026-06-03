@@ -311,6 +311,9 @@ private slots:
 
     void on_tableWidget_Variables_cellClicked(int row, int column);
 
+    void on_lineEdit_VarDesc_textChanged(const QString &arg1);
+
+
 private:
     Ui::MainWindow *ui;
     void displayElpsVersion();

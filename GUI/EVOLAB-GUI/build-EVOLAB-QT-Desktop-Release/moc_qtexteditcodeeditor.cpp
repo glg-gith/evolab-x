@@ -1,7 +1,7 @@
 /****************************************************************************
 ** Meta object code from reading C++ file 'qtexteditcodeeditor.h'
 **
-** Created by: The Qt Meta Object Compiler version 67 (Qt 5.3.2)
+** Created by: The Qt Meta Object Compiler version 67 (Qt 5.7.1)
 **
 ** WARNING! All changes made in this file will be lost!
 *****************************************************************************/
@@ -12,7 +12,7 @@
 #if !defined(Q_MOC_OUTPUT_REVISION)
 #error "The header file 'qtexteditcodeeditor.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 67
-#error "This file was generated using the moc from 5.3.2. It"
+#error "This file was generated using the moc from 5.7.1. It"
 #error "cannot be used with the include files from this version of Qt."
 #error "(The moc has changed too much.)"
 #endif
@@ -20,30 +20,31 @@
 QT_BEGIN_MOC_NAMESPACE
 struct qt_meta_stringdata_QTextEditCodeEditor_t {
     QByteArrayData data[15];
-    char stringdata[222];
+    char stringdata0[222];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
-    qptrdiff(offsetof(qt_meta_stringdata_QTextEditCodeEditor_t, stringdata) + ofs \
+    qptrdiff(offsetof(qt_meta_stringdata_QTextEditCodeEditor_t, stringdata0) + ofs \
         - idx * sizeof(QByteArrayData)) \
     )
 static const qt_meta_stringdata_QTextEditCodeEditor_t qt_meta_stringdata_QTextEditCodeEditor = {
     {
-QT_MOC_LITERAL(0, 0, 19),
-QT_MOC_LITERAL(1, 20, 17),
-QT_MOC_LITERAL(2, 38, 0),
-QT_MOC_LITERAL(3, 39, 12),
-QT_MOC_LITERAL(4, 52, 1),
-QT_MOC_LITERAL(5, 54, 15),
-QT_MOC_LITERAL(6, 70, 13),
-QT_MOC_LITERAL(7, 84, 10),
-QT_MOC_LITERAL(8, 95, 11),
-QT_MOC_LITERAL(9, 107, 13),
-QT_MOC_LITERAL(10, 121, 16),
-QT_MOC_LITERAL(11, 138, 22),
-QT_MOC_LITERAL(12, 161, 25),
-QT_MOC_LITERAL(13, 187, 13),
-QT_MOC_LITERAL(14, 201, 20)
+QT_MOC_LITERAL(0, 0, 19), // "QTextEditCodeEditor"
+QT_MOC_LITERAL(1, 20, 17), // "mouseReleaseEvent"
+QT_MOC_LITERAL(2, 38, 0), // ""
+QT_MOC_LITERAL(3, 39, 12), // "QMouseEvent*"
+QT_MOC_LITERAL(4, 52, 1), // "e"
+QT_MOC_LITERAL(5, 54, 15), // "mousePressEvent"
+QT_MOC_LITERAL(6, 70, 13), // "keyPressEvent"
+QT_MOC_LITERAL(7, 84, 10), // "QKeyEvent*"
+QT_MOC_LITERAL(8, 95, 11), // "resizeEvent"
+QT_MOC_LITERAL(9, 107, 13), // "QResizeEvent*"
+QT_MOC_LITERAL(10, 121, 16), // "matchParentheses"
+QT_MOC_LITERAL(11, 138, 22), // "nonEditableLinesToGrey"
+QT_MOC_LITERAL(12, 161, 25), // "updateLineNumberAreaWidth"
+QT_MOC_LITERAL(13, 187, 13), // "newBlockCount"
+QT_MOC_LITERAL(14, 201, 20) // "updateLineNumberArea"
+
     },
     "QTextEditCodeEditor\0mouseReleaseEvent\0"
     "\0QMouseEvent*\0e\0mousePressEvent\0"
@@ -98,6 +99,7 @@ void QTextEditCodeEditor::qt_static_metacall(QObject *_o, QMetaObject::Call _c, 
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
         QTextEditCodeEditor *_t = static_cast<QTextEditCodeEditor *>(_o);
+        Q_UNUSED(_t)
         switch (_id) {
         case 0: _t->mouseReleaseEvent((*reinterpret_cast< QMouseEvent*(*)>(_a[1]))); break;
         case 1: _t->mousePressEvent((*reinterpret_cast< QMouseEvent*(*)>(_a[1]))); break;
@@ -116,7 +118,7 @@ void QTextEditCodeEditor::qt_static_metacall(QObject *_o, QMetaObject::Call _c, 
 
 const QMetaObject QTextEditCodeEditor::staticMetaObject = {
     { &QTextEdit::staticMetaObject, qt_meta_stringdata_QTextEditCodeEditor.data,
-      qt_meta_data_QTextEditCodeEditor,  qt_static_metacall, 0, 0}
+      qt_meta_data_QTextEditCodeEditor,  qt_static_metacall, Q_NULLPTR, Q_NULLPTR}
 };
 
 
@@ -127,8 +129,8 @@ const QMetaObject *QTextEditCodeEditor::metaObject() const
 
 void *QTextEditCodeEditor::qt_metacast(const char *_clname)
 {
-    if (!_clname) return 0;
-    if (!strcmp(_clname, qt_meta_stringdata_QTextEditCodeEditor.stringdata))
+    if (!_clname) return Q_NULLPTR;
+    if (!strcmp(_clname, qt_meta_stringdata_QTextEditCodeEditor.stringdata0))
         return static_cast<void*>(const_cast< QTextEditCodeEditor*>(this));
     return QTextEdit::qt_metacast(_clname);
 }

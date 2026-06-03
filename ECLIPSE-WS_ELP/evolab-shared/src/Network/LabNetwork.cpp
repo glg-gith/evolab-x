@@ -34,6 +34,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #include "LabNetwork.h"
 #include "Utility.h"
 
+using namespace std;
 
 namespace elps {
 
@@ -180,14 +181,14 @@ LabNode* LabNetwork::get_node(int node_id) {
     for (itr = node_list.begin(); itr < node_list.end(); itr++) {
         if ((*itr)->id == node_id) return *itr;
     }
-    cerr << "Couldn't find a node with id  " << node_id << endl;
+    cout << "Couldn't find a node with id  " << node_id << endl;
     return NULL;
 }
 
 
 bool LabNetwork::ring_lattice(int N, int K) {
     if (K > (N - 1) / 2) {
-        cerr << "Cannot construct a ring lattice with K-nearest neighbors where K > (network size - 1) / 2\n";
+        cout << "Cannot construct a ring lattice with K-nearest neighbors where K > (network size - 1) / 2\n";
         return false;
     }
     clear_nodes();
@@ -205,7 +206,7 @@ bool LabNetwork::ring_lattice(int N, int K) {
 // Assumes undirected network
 bool LabNetwork::square_lattice(int R, int C, bool diag) {
     if (R < 1 or C < 1) {
-        cerr << "Square lattice must have at least one row and one column.\n";
+        cout << "Square lattice must have at least one row and one column.\n";
         return false;
     }
     clear_nodes();
@@ -273,7 +274,7 @@ bool LabNetwork::small_world(int N, int K, double beta) {
                         }
                         if (++attempts > 1000) {
                             // Give up if we've tried to rewire this edge 1000 times
-                            cerr << "Failed to find a prospective neighbor after trying 1000 times in small world generator.\n";
+                            cout << "Failed to find a prospective neighbor after trying 1000 times in small world generator.\n";
                             return false;
                         }
                     }
@@ -301,7 +302,7 @@ bool LabNetwork::erdos_renyi(double lambda) {
         }
         //set_progress( (double) a / n );
         PROG( (int) 100 * (1 - (double)(n-a)*(n-a-1) / (n*(n-1))) );
-        //cerr <<  1 - (double)(n-a)*(n-a-1) / (n*(n-1))  << endl;
+        //cout <<  1 - (double)(n-a)*(n-a-1) / (n*(n-1))  << endl;
     }
     return true;
 }
@@ -442,7 +443,7 @@ bool LabNetwork::lose_loops() {
 
     bad_edges.insert(bad_edges.begin(), self_loops.begin(), self_loops.end());
     bad_edges.insert(bad_edges.end(), multiedges.begin(), multiedges.end());
-    //cerr << "Bad edge count: " << bad_edges.size() << endl;
+    //cout << "Bad edge count: " << bad_edges.size() << endl;
 
     //shuffle the vector
     int max = bad_edges.size() - 1;
@@ -453,7 +454,7 @@ bool LabNetwork::lose_loops() {
         m = bad_edges.size() - 1;
         n = mtrand.randInt(  edges.size() - 1 );
         if ( failed_attempts > 99 ) {
-            cerr    << "It may be impossible to equilibriate a network with these parameters--"
+            cout    << "It may be impossible to equilibriate a network with these parameters--"
                 << "couldn't get rid of any self-loops or multi-edges in the last 100 attempts"
                 << endl;
             return false;
@@ -487,7 +488,7 @@ bool LabNetwork::lose_loops() {
         result2 = find( neighbors2.begin(), neighbors2.end(), start1 );
 
         if( result1 != neighbors1.end() || result2 != neighbors2.end() ) {
-            //            cerr << "Broke Rule 3 " << endl ;
+            //            cout << "Broke Rule 3 " << endl ;
             failed_attempts++;
             continue;
         }
@@ -498,12 +499,12 @@ bool LabNetwork::lose_loops() {
         for ( unsigned int i = 0; i < bad_edges.size(); i++ ) {
             if ( bad_edges[i]==edge1_comp ) {
                 bad_edges.erase(bad_edges.begin() + i);
-                //                cerr << "spliced out complement " << endl;
+                //                cout << "spliced out complement " << endl;
                 break;
             }
         }
 
-        //        cerr << "swapping edges: " << edge1->id  << " " << edge2->id << endl;
+        //        cout << "swapping edges: " << edge1->id  << " " << edge2->id << endl;
         failed_attempts = 0;
         edge1->swap_ends(edge2);
     }
@@ -538,7 +539,7 @@ void LabNetwork::get_bad_edges(vector<LabEdge*> &self_loops, vector<LabEdge*> &m
         }
     }
 
-    //cerr <<  "get_bad_edges() " << seen_edges.size() <<  " " << self_loops.size() <<  " " << multiedges.size() << endl;
+    //cout <<  "get_bad_edges() " << seen_edges.size() <<  " " << self_loops.size() <<  " " << multiedges.size() << endl;
 }
 
 
@@ -633,8 +634,8 @@ bool LabNetwork::_assign_deg_series() {
 bool LabNetwork::gen_deg_series(vector<int> &deg_series) {
     double dist_sum = sum(gen_deg_dist);
     if (dist_sum < 1 - 1e-14 || dist_sum > 1 + 1e-14) {
-        //cerr << "Sum: " << setprecision(50) << (double) sum(gen_deg_dist) << endl;
-        cerr << "Degree distribution does not sum to 1\n";
+        //cout << "Sum: " << setprecision(50) << (double) sum(gen_deg_dist) << endl;
+        cout << "Degree distribution does not sum to 1\n";
         return false;
     }
 
@@ -792,7 +793,7 @@ LabEdge* LabNetwork::get_edge(int edge_id) {
             }
         }
     }
-    cerr << "Coundn't find an edge with id " << edge_id << endl;
+    cout << "Coundn't find an edge with id " << edge_id << endl;
     return NULL;
 }
 
@@ -853,7 +854,7 @@ bool LabNetwork::shuffle_edges(double frac) {
     vector<LabEdge*> stubs;
     vector<LabEdge*> edges = get_edges();
     if (is_directed()) {
-        cerr << "Shuffling edges not implemented for directed networks.\n";
+        cout << "Shuffling edges not implemented for directed networks.\n";
         exit(1);
     } else {
         vector< pair <LabEdge*, LabEdge*> > edge_pairs;
@@ -885,7 +886,7 @@ bool LabNetwork::shuffle_edges(double frac) {
 
 void LabNetwork::set_node_states(vector<stateType> &states) {
     if ((signed) states.size() != size()) {
-        cerr << "Error in LabNetwork::set_node_states(): Vector of node states has size " << states.size() << " but there are " << size() << " nodes in network.\n";
+        cout << "Error in LabNetwork::set_node_states(): Vector of node states has size " << states.size() << " but there are " << size() << " nodes in network.\n";
     }
     else {
         for (int i = 0; i < size() ; i++) {
@@ -905,12 +906,12 @@ vector<stateType> LabNetwork::get_node_states() {
 
 
 void LabNetwork::dumper() {
-    cerr << "Dumping network:\n";
-    cerr << "name => " << name << "\n";
-    cerr << "id => " << id << "\n";
-    cerr << "n => " << node_list.size() << endl;
-    cerr << "directed => " << directed  << endl;
-    cerr << "nodes => \n";
+    cout << "Dumping network:\n";
+    cout << "name => " << name << "\n";
+    cout << "id => " << id << "\n";
+    cout << "n => " << node_list.size() << endl;
+    cout << "directed => " << directed  << endl;
+    cout << "nodes => \n";
     vector <LabNode*>::iterator itr;
     for ( itr = node_list.begin(); itr != node_list.end(); itr++ ) (*itr)->dumper();
 }
@@ -920,42 +921,42 @@ bool LabNetwork::validate() {
     int net_error = 0;
     for (int i = 0; i < size(); i++) {
         LabNode* node = node_list[i];
-        if (node == NULL) { cerr << "node with index " << i << " is undefined (NULL)" << endl; net_error = true; continue;}
+        if (node == NULL) { cout << "node with index " << i << " is undefined (NULL)" << endl; net_error = true; continue;}
         vector<LabEdge*> in = node->edges_in;
         vector<LabEdge*> out = node->edges_out;
-        if (in.size() != out.size() && directed == false) cerr << "node" << node << ": Number of edges in does not match number out: " << in.size() << ", " << out.size() << endl;
+        if (in.size() != out.size() && directed == false) cout << "node" << node << ": Number of edges in does not match number out: " << in.size() << ", " << out.size() << endl;
         map<int, int> seen;
         int error_ct = 0;
         for (unsigned int j = 0; j < in.size(); j++) {
             LabEdge* edge = in[j];
             LabNode* start = edge->start;
             LabNode* end = edge->end;
-            if (edge->is_stub())  {cerr << "node" << node << ": Found edge in edges_in vector that has NULL endpoint: edge" << edge << endl; error_ct++;}
-            if (start == NULL)  {cerr << "node" << node << ": Found edge in edges_in vector that has NULL startpoint: edge" << edge << endl; error_ct++;}
-            if (end != NULL && end->id != node->id) {cerr << "node" << node << ": Found edge in edges_in vector that does not end at this node: edge" << edge << ", end: " << end << endl; error_ct++;}
-            if (start != NULL && end != NULL && end == start) {cerr << "node" << node << ": Found self-loop in edges_in vector: edge" << edge << endl; error_ct++;}
-            if (start != NULL && seen[start->id]++ != 0) {cerr <<  "node" << node << ": Found " << seen[start->id]  << " multi-edges from node" << start << endl; error_ct++;}
+            if (edge->is_stub())  {cout << "node" << node << ": Found edge in edges_in vector that has NULL endpoint: edge" << edge << endl; error_ct++;}
+            if (start == NULL)  {cout << "node" << node << ": Found edge in edges_in vector that has NULL startpoint: edge" << edge << endl; error_ct++;}
+            if (end != NULL && end->id != node->id) {cout << "node" << node << ": Found edge in edges_in vector that does not end at this node: edge" << edge << ", end: " << end << endl; error_ct++;}
+            if (start != NULL && end != NULL && end == start) {cout << "node" << node << ": Found self-loop in edges_in vector: edge" << edge << endl; error_ct++;}
+            if (start != NULL && seen[start->id]++ != 0) {cout <<  "node" << node << ": Found " << seen[start->id]  << " multi-edges from node" << start << endl; error_ct++;}
         }
         for (unsigned int j = 0; j < out.size(); j++) {
             LabEdge* edge = out[j];
             LabNode* start = edge->start;
             LabNode* end = edge->end;
-            if (start == NULL)  {cerr << "node" << node << ": Found edge in edges_out vector that has NULL startpoint: edge" << edge << endl; error_ct++; continue;}
-            if (start->id != node->id) {cerr << "node" << node << ": Found edge in edges_out vector that does not start at this node: edge" << edge << ", start: " << start << endl; error_ct++;}
-            if (edge->is_stub())  {cerr << "node" << node << ": Found stub in edges_out vector that has NULL endpoint: edge" << edge << endl; error_ct++;}
-            if (start != NULL && end != NULL && end == start) {cerr << "node" << node << ": Found self-loop in edges_in vector: edge" << edge << endl; error_ct++;}
-            if (end != NULL && --seen[end->id] < 0) {cerr <<  "node" << node << ": Found edge in edges_out vector that is not a complement of an edge in edges_in vector: edge" << edge << endl; error_ct++;}
+            if (start == NULL)  {cout << "node" << node << ": Found edge in edges_out vector that has NULL startpoint: edge" << edge << endl; error_ct++; continue;}
+            if (start->id != node->id) {cout << "node" << node << ": Found edge in edges_out vector that does not start at this node: edge" << edge << ", start: " << start << endl; error_ct++;}
+            if (edge->is_stub())  {cout << "node" << node << ": Found stub in edges_out vector that has NULL endpoint: edge" << edge << endl; error_ct++;}
+            if (start != NULL && end != NULL && end == start) {cout << "node" << node << ": Found self-loop in edges_in vector: edge" << edge << endl; error_ct++;}
+            if (end != NULL && --seen[end->id] < 0) {cout <<  "node" << node << ": Found edge in edges_out vector that is not a complement of an edge in edges_in vector: edge" << edge << endl; error_ct++;}
         }
         if (error_ct > 0) {
-            node->dumper(); cerr << "node" << node << ": Found " << error_ct << " error(s).\n\n";
+            node->dumper(); cout << "node" << node << ": Found " << error_ct << " error(s).\n\n";
             net_error += error_ct;
         }
     }
     if ( net_error == 0) {
-        cerr << "LabNetwork PASSED validation.\n";
+        cout << "LabNetwork PASSED validation.\n";
         return true;
     }
-    cerr << "LabNetwork FAILED validation.\n";
+    cout << "LabNetwork FAILED validation.\n";
     return false;
 }
 
@@ -963,7 +964,7 @@ bool LabNetwork::validate() {
 // read_edgelist currently supports only undirected networks
 void LabNetwork::read_edgelist(string filename, char sep) {
 
-    //cerr << "Loading " << filename << endl;
+    //cout << "Loading " << filename << endl;
     ifstream myfile(filename.c_str());
     std::stringstream ss;
     map<string,LabNode*> idmap;
@@ -979,12 +980,12 @@ void LabNetwork::read_edgelist(string filename, char sep) {
 
             //format check
             if (fields.size() > 2 ) {
-                cerr << "Skipping line: too many fields: " << line << endl;
+                cout << "Skipping line: too many fields: " << line << endl;
                 continue;
             } else if (fields.size() == 1) {
                 LabNode* node = this->add_new_node();
                 string name1 = strip(fields[0],whitespace);
-                cerr << "Found single node " << name1 << endl;
+                cout << "Found single node " << name1 << endl;
                 node->name = name1;
                 idmap[name1] = node;
                 continue;
@@ -995,10 +996,10 @@ void LabNetwork::read_edgelist(string filename, char sep) {
                 string name1 = strip(fields[0],whitespace);
                 string name2 = strip(fields[1],whitespace);
 
-                //cerr << line << endl;
-                //if(idmap.count(name1)) cerr << name1 << " " << idmap[name1] << endl ;
-                //if(idmap.count(name2)) cerr << name2 << " " << idmap[name2] << endl ;
-                //cerr << "---" << endl;
+                //cout << line << endl;
+                //if(idmap.count(name1)) cout << name1 << " " << idmap[name1] << endl ;
+                //if(idmap.count(name2)) cout << name2 << " " << idmap[name2] << endl ;
+                //cout << "---" << endl;
 
                 //new node;
                 if(idmap.count(name1)==0) {
@@ -1024,7 +1025,7 @@ void LabNetwork::read_edgelist(string filename, char sep) {
         }
     }
     //dumper();
-    //cerr << "finished dumping network\n";
+    //cout << "finished dumping network\n";
     //validate();
 }
 
@@ -1057,7 +1058,7 @@ void LabNetwork::write_edgelist(string filename) {
 /*
 void LabNetwork::read_adj_matrix(string filename, char sep) {
 
-    cerr << "Loading " << filename << endl;
+    cout << "Loading " << filename << endl;
     ifstream myfile(filename.c_str());
     std::stringstream ss;
     map<string,LabNode*> idmap;
@@ -1080,7 +1081,7 @@ void LabNetwork::read_adj_matrix(string filename, char sep) {
             }
 
             if ((unsigned) net_size != fields.size()) {
-                cerr << "Adjacenty matrix does not appear to be square.  Make sure matrix file has the same number of elements on each line.\n";
+                cout << "Adjacenty matrix does not appear to be square.  Make sure matrix file has the same number of elements on each line.\n";
                 exit(1);
             }
 
@@ -1093,20 +1094,20 @@ void LabNetwork::read_adj_matrix(string filename, char sep) {
                 } else if (val == "0") {
                     continue;
                 } else {
-                    cerr << "Warning: unknown value found in adjacency matrix file (not 0 or 1): " << val << endl;
+                    cout << "Warning: unknown value found in adjacency matrix file (not 0 or 1): " << val << endl;
                 }
             }
             row_id++;
         }
     }
     dumper();
-    cerr << "finished dumping network\n";
+    cout << "finished dumping network\n";
     validate();
 }*/
 
 void LabNetwork::graphviz (string filename) {
     /*    if (get_edges().size() > 200) {
-            cerr << "LabNetwork is too large (> 200 edges) to reasonably output with graphviz/DOT\n";
+            cout << "LabNetwork is too large (> 200 edges) to reasonably output with graphviz/DOT\n";
             return;
         }*/
     if (filename == "") filename = "tmp.dot";
@@ -1131,7 +1132,7 @@ void LabNetwork::graphviz (string filename) {
         cout << start << " [label=\"" << start_name << "\"]\n";
 
         if ( (*node_it)->deg() == 0 ) {
-            cerr << "Encountered unconnected node when trying to draw network.  This is currently not supported for visualization: node will be ignored.\n";
+            cout << "Encountered unconnected node when trying to draw network.  This is currently not supported for visualization: node will be ignored.\n";
             continue;
         }
         vector<LabEdge*>::iterator edge_it;
@@ -1178,8 +1179,8 @@ bool LabNetwork::is_stopped() {
 	//
 
 	if (process_stopped) {
-		cerr << "Hardware processing interruption" << endl;
-		flush(cerr);
+		cout << "Hardware processing interruption" << endl;
+		flush(cout);
 	}
 	bool status = process_stopped;
     process_stopped = false;
@@ -1361,7 +1362,7 @@ LabNode::LabNode() {                   //empty constructor
 
 
 LabNode::~LabNode() {                  //destructor
-    //cerr << "~LabNode() " << id << endl;
+    //cout << "~LabNode() " << id << endl;
     for(unsigned int i=0; i< edges_out.size(); i++ ) delete edges_out[i];
     edges_out.clear();
 }
@@ -1489,7 +1490,7 @@ void LabNode::_add_outbound_edge (LabEdge* edge) {
 //this doesn't delete the edge object, it merely disconnects it from the node that it was going to.
 void LabNode::_del_inbound_edge (LabEdge* inbound) {
     if (! inbound->end->id == this->id ) {
-        cerr << "The 'inbound' edge does not connect to the node provided." << endl;
+        cout << "The 'inbound' edge does not connect to the node provided." << endl;
         exit(100);
     }
     vector<LabEdge*>::iterator itr = find(edges_in.begin(), edges_in.end(), inbound);
@@ -1500,7 +1501,7 @@ void LabNode::_del_inbound_edge (LabEdge* inbound) {
 //this doesn't delete the edge object, it merely disconnects it from the node that it was coming from.
 void LabNode::_del_outbound_edge (LabEdge* outbound) {
     if (! outbound->start->id == this->id ) {
-        cerr << "The 'outbound' edge does not start from the node provided." << endl;
+        cout << "The 'outbound' edge does not start from the node provided." << endl;
         exit(101);
     }
     vector<LabEdge*>::iterator itr = find(edges_out.begin(), edges_out.end(), outbound);
@@ -1522,22 +1523,22 @@ ostream& operator<< (ostream &out, LabNode* node) {
 
 void LabNode::dumper() {
 
-    cerr << "\tname => " << name << endl;
-    cerr << "\tid => "<< id << endl;
-    cerr << "\tdegree => " << deg() <<  endl;
-    cerr << "\tlocation => ";
-    copy( loc.begin(), loc.end(), ostream_iterator<double>(cerr, " "));
-    cerr << endl;
+    cout << "\tname => " << name << endl;
+    cout << "\tid => "<< id << endl;
+    cout << "\tdegree => " << deg() <<  endl;
+    cout << "\tlocation => ";
+    copy( loc.begin(), loc.end(), ostream_iterator<double>(cout, " "));
+    cout << endl;
 
     vector<LabEdge*>::iterator itr;
 
-    cerr << "\tedges out => \n";
+    cout << "\tedges out => \n";
     for(itr = edges_out.begin(); itr != edges_out.end(); itr++ ) (*itr)->dumper();
 
-    cerr << "\tedges in => \n";
+    cout << "\tedges in => \n";
     for(itr = edges_in.begin();  itr != edges_in.end();  itr++ ) (*itr)->dumper();
 
-    cerr << "\n";
+    cout << "\n";
 }
 
 // Mean path length from this node to all others in same component
@@ -1554,7 +1555,7 @@ double LabNode::mean_min_path() {
     }
     double mean = (double) sum / (double) component_size;
                                  //quantum computing!! NAN != NAN is true
-    if (mean != mean) cerr << "Mean_minimum_path is not meaningful for one-node components.\n" << endl;
+    if (mean != mean) cout << "Mean_minimum_path is not meaningful for one-node components.\n" << endl;
     return mean;
 }
 
@@ -1753,7 +1754,7 @@ LabEdge::LabEdge(LabNode* start, LabNode* end) {
 }
 
 
-LabEdge::~LabEdge() {  /*cerr << "removing edge " << id << endl;*/ }
+LabEdge::~LabEdge() {  /*cout << "removing edge " << id << endl;*/ }
 
 void LabEdge::delete_edge() {
     vector<LabEdge*>::iterator itr;
@@ -1789,11 +1790,11 @@ LabEdge* LabEdge::get_complement () {
     vector<LabEdge*> edges = end->edges_out;
                                  // one is bound to be the complement
     for (unsigned int i = 0; i < edges.size(); i++) {
-        //    cerr << edges[i]->start->id << " " << edges[i]->end->id << endl;
+        //    cout << edges[i]->start->id << " " << edges[i]->end->id << endl;
         if (edges[i]==this) continue;
         if (edges[i]->end==start) return edges[i];
     }
-    cerr << "Failed to find a complement (antiparallel edge) to the edge provided.  There may be a problem with the network structure." << endl;
+    cout << "Failed to find a complement (antiparallel edge) to the edge provided.  There may be a problem with the network structure." << endl;
     exit(1);
 }
 
@@ -1876,7 +1877,7 @@ void LabEdge::dumper () {
     string space = "\t\t";
     string start_name = start->get_name_or_id();
     string end_name = ( end != NULL ) ? end->get_name_or_id() : "undef";
-    cerr << space << "id => " << id << ", start => " << start_name << ", end => " << end_name << endl;
+    cout << space << "id => " << id << ", start => " << start_name << ", end => " << end_name << endl;
 }
 
 }

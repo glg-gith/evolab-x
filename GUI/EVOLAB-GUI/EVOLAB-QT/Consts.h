@@ -15,6 +15,13 @@
 //#define MACRO_LIFECYCLE_TITLE "Rate / Transition Formula:          (Variable: \"<itemname>\")"
 //#define MACRO_REPLACEMENT_TAG "<itemname>"
 
+// Tabs
+#define TAB_ID_POPULATIONS              0
+#define TAB_ID_VARIABLES                -2 // DEPREC
+#define TAB_ID_LIFE_CYCLE               1
+#define TAB_ID_NETWORK                  2
+#define TAB_ID_OUTPUTS                  3
+
 
 // Paths
 #define TEMP_PROJECT_PATH               "../TEMP/"
