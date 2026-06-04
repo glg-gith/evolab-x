@@ -1,0 +1,24 @@
+# Dépendances tierces (GSL source + binaires) — réinstallables, ~Mo
+DEPENDENCIES/
+
+# Métadonnées de workspace Eclipse
+.metadata/
+.settings/
+.cproject
+.project
+*.pdom
+
+# Artefacts de compilation
+*.o
+*.obj
+*.a
+*.so
+*.so.*
+*.lo
+*.la
+*.exe
+
+# Sorties de simulation / images générées
+*.bmp
+output*.txt
+output_r.r

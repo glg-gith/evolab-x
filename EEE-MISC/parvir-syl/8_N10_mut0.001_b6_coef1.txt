@@ -1,0 +1,21 @@
+INITIAL PARAMETERS :
+------------------
+virmin             = 0
+virmax             = 6
+b0             = 6
+coef             = 1
+N             = 10
+tmax             = 1e+07
+wstep             = 1000
+ralgo             = 0
+rseed             = 2096323895
+ngeno             = 100
+mut             = 0.001
+
+               
+COMPUTING RESULTS :
+-----------------
+           time              S              I         virMOY
+              0              2              8         3.0303              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              8              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0              0
+
+Stopped : Extinction of the infected hosts population !  (t=1e+07)

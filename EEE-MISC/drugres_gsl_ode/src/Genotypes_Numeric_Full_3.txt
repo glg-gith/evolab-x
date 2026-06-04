@@ -1,0 +1,185 @@
+tmax = 1200;
+
+theta = 10.0;
+mu = 0.01;
+tho = 0.8;
+sigma = 1.0;
+
+//r = 0.5
+
+p1 = .025;
+pA = .025;
+isize = 80;
+tsize = 20;
+
+sinit = 270;
+
+IA1init = p1 * pA * isize; IA2init = (1 - p1) * pA * isize; IB1init = (1 - pA) * p1 * isize; IB2init = (1 - p1) * (1 - pA) * isize;
+TA1init = p1 * pA * tsize; TA2init = (1 - p1) * pA * tsize; TB1init = (1 - pA) * p1 * tsize; TB2init = (1 - p1) * (1 - pA) * tsize;
+
+
+alpha = 0.01; deltaAlpha1 = 0.0; deltaAlphaA = 0.0; deltaAlphaE = 0.0;
+alphaT = 0.01; deltaAlpha1T = 0.0; deltaAlphaAT = 0.0; deltaAlphaET = 0.0;
+
+beta = 0.00007; deltaBeta1 = -0.00002; deltaBetaA = -0.00002; deltaBetaE = 0.0;
+betaT = 0.00003; deltaBeta1T = 0.00002; deltaBetaAT = 0.00002; deltaBetaET = 0.0;
+
+gamma = 0.0; deltaGamma1 = 0.0; deltaGammaA = 0.0; deltaGammaE = 0.0;
+gammaT = 0.0; deltaGamma1T = 0.0; deltaGammaAT = 0.0; deltaGammaET = 0.0;
+
+
+alphaB2 = alpha; alphaB1 = alpha + deltaAlpha1; alphaA2 = alpha + deltaAlphaA; alphaA1 = alpha + deltaAlpha1 + deltaAlphaA + deltaAlphaE;
+alphaB2T = alphaT; alphaB1T = alphaT + deltaAlpha1T; alphaA2T = alphaT + deltaAlphaAT; alphaA1T = alphaT + deltaAlpha1T + deltaAlphaAT + deltaAlphaET;
+
+betaB2 = beta; betaB1 = beta + deltaBeta1; betaA2 = beta + deltaBetaA; betaA1 = beta + deltaBeta1 + deltaBetaA + deltaBetaE;
+betaB2T = betaT; betaB1T = betaT + deltaBeta1T; betaA2T = betaT + deltaBetaAT; betaA1T = betaT + deltaBeta1T + deltaBetaAT + deltaBetaET;
+
+gammaB2 = gamma; gammaB1 = gamma + deltaGamma1; gammaA2 = gamma + deltaGammaA; gammaA1 = gamma + deltaGamma1 + deltaGammaA + deltaGammaE;
+gammaB2T = gammaT; gammaB1T = gammaT + deltaGamma1T; gammaA2T = gammaT + deltaGammaAT; gammaA1T = gammaT + deltaGamma1T + deltaGammaAT + deltaGammaET;
+
+
+//result[r_] := NDSolve[{
+    s'[t] == theta - (mu*s[t]) - ((betaA1*IA1[t] + betaA2*IA2[t] + betaB1*IB1[t] + betaB2*IB2[t]) +
+                                  (betaA1T*TA1[t] + betaA2T*TA2[t] + betaB1T*TB1[t] + betaB2T*TB2[t])) * s[t] - 
+                                 ((gammaA1*IA1[t] + gammaA2*IA2[t] + gammaB1*IB1[t] + gammaB2*IB2[t]) + 
+                                  (gammaA1T*TA1[t] + gammaA2T*TA2[t] + gammaB1T*TB1[t] + gammaB2T*TB2[t])),
+    
+    IA1'[t] == (1 - tho)*(betaA1*IA1[t] + betaA1T*TA1[t])*s[t] - (mu + alphaA1 + gammaA1)*IA1[t] - 
+               sigma*((betaA1*IA1[t] + betaA2*IA2[t] + betaB1*IB1[t] + betaB2*IB2[t]) + 
+                      (betaA1T*TA1[t] + betaA2T*TA2[t] + betaB1T*TB1[t] + betaB2T*TB2[t]))*IA1[t] + 
+               sigma*(
+                      (sigma/2)*(IA1[t]*((betaA1*IA1[t] + betaA2*IA2[t] + betaB1*IB1[t] + betaB2*IB2[t]) + 
+                                         (betaA1T*TA1[t] + betaA2T*TA2[t] + betaB1T*TB1[t] + betaB2T*TB2[t])) + 
+                                (IA1[t] + IA2[t] + IB1[t] + IB2[t])*(betaA1*IA1[t] + betaA1T*TA1[t]))
+                    + (sigma*r/2)*(IA2[t]*(betaB1*IB1[t] + betaB1T*TB1[t]) + 
+                                   IB1[t]*(betaA2*IA2[t] + betaA2T*TA2[t]) - 
+                                   IA1[t]*(betaB2*IB2[t] + betaB2T*TB2[t]) - 
+                                   IB2[t]*(betaA1*IA1[t] + betaA1T*TA1[t]))
+                     ),
+    
+    IA2'[t] == (1 - tho)*(betaA2*IA2[t] + betaA2T*TA2[t])* s[t] - (mu + alphaA2 + gammaA2)*IA2[t] - 
+               sigma*((betaA1*IA1[t] + betaA2*IA2[t] + betaB1*IB1[t] + betaB2*IB2[t]) + 
+                      (betaA1T*TA1[t] + betaA2T*TA2[t] + betaB1T*TB1[t] + betaB2T*TB2[t]))*IA2[t] + 
+               sigma*(
+                      (sigma/2)*(IA2[t]*((betaA1*IA1[t] + betaA2*IA2[t] + betaB1*IB1[t] + betaB2*IB2[t]) + 
+                                         (betaA1T*TA1[t] + betaA2T*TA2[t] + betaB1T*TB1[t] + betaB2T*TB2[t])) + 
+                                (IA1[t] + IA2[t] + IB1[t] + IB2[t])*(betaA2*IA2[t] + betaA2T*TA2[t]))
+                    - (sigma*r/2)*(IA2[t]*(betaB1*IB1[t] + betaB1T*TB1[t]) + 
+                                   IB1[t]*(betaA2*IA2[t] + betaA2T*TA2[t]) - 
+                                   IA1[t]*(betaB2*IB2[t] + betaB2T*TB2[t]) - 
+                                   IB2[t]*(betaA1*IA1[t] + betaA1T*TA1[t]))
+                     ),
+    
+    IB1'[t] == (1 - tho)*(betaB1*IB1[t] + betaB1T*TB1[t])*s[t] - (mu + alphaB1 + gammaB1)*IB1[t] - 
+               sigma*((betaA1*IA1[t] + betaA2*IA2[t] + betaB1*IB1[t] + betaB2*IB2[t]) + 
+                      (betaA1T*TA1[t] + betaA2T*TA2[t] + betaB1T*TB1[t] + betaB2T*TB2[t]))*IB1[t] + 
+               sigma*(
+                      (sigma/2)*(IB1[t]*((betaA1*IA1[t] + betaA2*IA2[t] + betaB1*IB1[t] + betaB2*IB2[t]) + 
+                                         (betaA1T*TA1[t] + betaA2T*TA2[t] + betaB1T*TB1[t] + betaB2T*TB2[t])) + 
+                                (IA1[t] + IA2[t] + IB1[t] + IB2[t])*(betaB1*IB1[t] + betaB1T*TB1[t]))
+                    - (sigma*r/2)*(IA2[t]*(betaB1*IB1[t] + betaB1T*TB1[t]) + 
+                                   IB1[t]*(betaA2*IA2[t] + betaA2T*TA2[t]) - 
+                                   IA1[t]*(betaB2*IB2[t] + betaB2T*TB2[t]) - 
+                                   IB2[t]*(betaA1*IA1[t] + betaA1T*TA1[t]))
+                     ),
+    
+    IB2'[t] == (1 - tho)*(betaB2*IB2[t] + betaB2T*TB2[t])*s[t] - (mu + alphaB2 + gammaB2)*IB2[t] - 
+               sigma*((betaA1*IA1[t] + betaA2*IA2[t] + betaB1*IB1[t] + betaB2*IB2[t]) + 
+                      (betaA1T*TA1[t] + betaA2T*TA2[t] + betaB1T*TB1[t] + betaB2T*TB2[t]))*IB2[t] + 
+               sigma*(
+                      (sigma/2)*(IB2[t]*((betaA1*IA1[t] + betaA2*IA2[t] + betaB1*IB1[t] + betaB2*IB2[t]) + 
+                                         (betaA1T*TA1[t] + betaA2T*TA2[t] + betaB1T*TB1[t] + betaB2T*TB2[t])) + 
+                                (IA1[t] + IA2[t] + IB1[t] + IB2[t])*(betaB2*IB2[t] + betaB2T*TB2[t]))
+                    + (sigma*r/2)*(IA2[t]*(betaB1*IB1[t] + betaB1T*TB1[t]) + 
+                                   IB1[t]*(betaA2*IA2[t] + betaA2T*TA2[t]) - 
+                                   IA1[t]*(betaB2*IB2[t] + betaB2T*TB2[t]) - 
+                                   IB2[t]*(betaA1*IA1[t] + betaA1T*TA1[t]))
+                     ),
+    
+    
+    TA1'[t] == (tho)*(betaA1*IA1[t] + betaA1T*TA1[t])*s[t] - (mu + alphaA1T + gammaA1T)*TA1[t] - 
+               sigma*((betaA1*IA1[t] + betaA2*IA2[t] + betaB1*IB1[t] + betaB2*IB2[t]) + 
+                      (betaA1T*TA1[t] + betaA2T*TA2[t] + betaB1T*TB1[t] + betaB2T*TB2[t]))*TA1[t] + 
+               sigma*(
+                      (sigma/2)*(TA1[t]*((betaA1*IA1[t] + betaA2*IA2[t] + betaB1*IB1[t] + betaB2*IB2[t]) + 
+                                         (betaA1T*TA1[t] + betaA2T*TA2[t] + betaB1T*TB1[t] + betaB2T*TB2[t])) + 
+                                (TA1[t] + TA2[t] + TB1[t] + TB2[t])*(betaA1*IA1[t] + betaA1T*TA1[t]))
+                    + (sigma*r/2)*(TA2[t]*(betaB1*IB1[t] + betaB1T*TB1[t]) + 
+                                   TB1[t]*(betaA2*IA2[t] + betaA2T*TA2[t]) - 
+                                   TA1[t]*(betaB2*IB2[t] + betaB2T*TB2[t]) - 
+                                   TB2[t]*(betaA1*IA1[t] + betaA1T*TA1[t]))
+                     ),
+    
+    TA2'[t] == (tho)*(betaA2*IA2[t] + betaA2T*TA2[t])*s[t] - (mu + alphaA2T + gammaA2T)*TA2[t] - 
+               sigma*((betaA1*IA1[t] + betaA2*IA2[t] + betaB1*IB1[t] + betaB2*IB2[t]) + 
+                      (betaA1T*TA1[t] + betaA2T*TA2[t] + betaB1T*TB1[t] + betaB2T*TB2[t]))*TA2[t] + 
+               sigma*(
+                      (sigma/2)*(TA2[t]*((betaA1*IA1[t] + betaA2*IA2[t] + betaB1*IB1[t] + betaB2*IB2[t]) + 
+                                         (betaA1T*TA1[t] + betaA2T*TA2[t] + betaB1T*TB1[t] + betaB2T*TB2[t])) + 
+                                (TA1[t] + TA2[t] + TB1[t] + TB2[t])*(betaA2*IA2[t] + betaA2T*TA2[t]))
+                    - (sigma*r/2)*(TA2[t]*(betaB1*IB1[t] + betaB1T*TB1[t]) + 
+                                   TB1[t]*(betaA2*IA2[t] + betaA2T*TA2[t]) - 
+                                   TA1[t]*(betaB2*IB2[t] + betaB2T*TB2[t]) - 
+                                   TB2[t]*(betaA1*IA1[t] + betaA1T*TA1[t]))
+                     ),
+    
+    TB1'[t] == (tho)*(betaB1*IB1[t] + betaB1T*TB1[t])*s[t] - (mu + alphaB1T + gammaB1T)*TB1[t] - 
+               sigma*((betaA1*IA1[t] + betaA2*IA2[t] + betaB1*IB1[t] + betaB2*IB2[t]) + 
+                      (betaA1T*TA1[t] + betaA2T*TA2[t] + betaB1T*TB1[t] + betaB2T*TB2[t]))*TB1[t] + 
+               sigma*(
+                      (sigma/2)*(TB1[t]*((betaA1*IA1[t] + betaA2*IA2[t] + betaB1*IB1[t] +betaB1T*TB1[t] + betaB2T*TB2[t])) + 
+                                (TA1[t] + TA2[t] + TB1[t] + TB2[t])*(betaB1*IB1[t] + betaB1T*TB1[t]))
+                    - (sigma*r/2)*(TA2[t]*(betaB1*IB1[t] + betaB1T*TB1[t]) + 
+                           TB1[t]*(betaA2*IA2[t] + betaA2T*TA2[t]) - 
+                           TA1[t]*(betaB2*IB2[t] + betaB2T*TB2[t]) - 
+                           TB2[t]*(betaA1*IA1[t] + betaA1T*TA1[t]))
+                     ),
+    
+    TB2'[t] == (tho)*(betaB2*IB2[t] + betaB2T*TB2[t])*s[t] - (mu + alphaB2T + gammaB2T)*TB2[t] - 
+               sigma*((betaA1*IA1[t] + betaA2*IA2[t] + betaB1*IB1[t] + betaB2*IB2[t]) + 
+                      (betaA1T*TA1[t] + betaA2T*TA2[t] + betaB1T*TB1[t] + betaB2T*TB2[t]))*TB2[t] + 
+               sigma*(
+                      (sigma/2)*(TB2[t]*((betaA1*IA1[t] + betaA2*IA2[t] + betaB1*IB1[t] + betaB2*IB2[t]) + 
+                                         (betaA1T*TA1[t] + betaA2T*TA2[t] + betaB1T*TB1[t] + betaB2T*TB2[t])) + 
+                                (TA1[t] + TA2[t] + TB1[t] + TB2[t])*(betaB2*IB2[t] + betaB2T*TB2[t]))
+                    + (sigma*r/2)*(TA2[t]*(betaB1*IB1[t] + betaB1T*TB1[t]) + 
+                                   TB1[t]*(betaA2*IA2[t] + betaA2T*TA2[t]) - 
+                                   TA1[t]*(betaB2*IB2[t] + betaB2T*TB2[t]) - 
+                                   TB2[t]*(betaA1*IA1[t] + betaA1T*TA1[t]))
+                     ),
+    
+    
+    /*
+    s[0] = sinit,IA1[0] = IA1init,IA2[0] = IA2init,
+    IB1[0] = IB1init,IB2[0] = IB2init,TA1[0] = TA1init,
+    TA2[0] = TA2init,TB1[0] = TB1init,TB2[0] = TB2init},
+    {s,IA1,IA2,IB1,IB2,TA1,TA2,TB1,TB2},{t,0,tmax},
+    MaxSteps->100000, StartingStepSize->0.1, Method->{"ExplicitRungeKutta"}];
+    */
+    
+    s[0] = sinit; IA1[0] = IA1init; IA2[0] = IA2init; IB1[0] = IB1init; IB2[0] = IB2init; 
+                  TA1[0] = TA1init; TA2[0] = TA2init; TB1[0] = TB1init; TB2[0] = TB2init;
+    //},
+    //{s, IA1, IA2, IB1, IB2, TA1, TA2, TB1, TB2}, {t, 0, tmax}, MaxSteps -> 100000];
+
+
+/*
+Plot[Evaluate[{   s[t] /. result[0], 
+                  (TA1[t] + TA2[t] + TB1[t] + TB2[t]) /. result[0], 
+                  (IA1[t] + IA2[t] + IB1[t] + IB2[t]) /. result[0], 
+                  s[t] /. result[.5], 
+                  (TA1[t] + TA2[t] + TB1[t] + TB2[t]) /. result[.5], 
+                  (IA1[t] + IA2[t] + IB1[t] + IB2[t]) /. result[.5]}], 
+              {t, 0, tmax}, PlotRange -> {0, 1000}, 
+              PlotStyle -> {Dashing[{0}], 
+                           {Dashing[{0}], RGBColor[1, 0, 0]}, 
+                           {Dashing[{0}], RGBColor[0, 0, 1]}, 
+                           Dashing[{.025}], 
+                           {Dashing[{.025}], RGBColor[1, 0, 0]}, 
+                           {Dashing[{.025}], RGBColor[0, 0, 1]}
+             }]
+*/
+             
+             
+             
+             

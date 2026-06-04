@@ -1,0 +1,23 @@
+INITIAL PARAMETERS :
+------------------
+virmin             = 0
+virmax             = 6
+b0             = 3
+coef             = 0.5
+N             = 10
+tmax             = 1e+07
+wstep             = 1000
+ralgo             = 0
+rseed             = 627549
+repmax             = 10000000
+virstep             = 0.5
+virdelta             = 0.1
+tmut             = 100
+
+               
+COMPUTING RESULTS :
+-----------------
+      Virulence       fixation   fixation RES       Pfix Res    NO fixation  NO extinction Res extinction Mut extinction
+              0              0              0              -              0              0       10000000              0
+            0.5              0              0              -              0              0       10000000              0
+              1              0              0              -              0              0       10000000              0
