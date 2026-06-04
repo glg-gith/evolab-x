@@ -23,6 +23,7 @@
 #include <sys/stat.h>
 #include <sys/types.h>
 #include <sys/time.h>
+#include <sys/wait.h>
 
 
 #if defined (__WIN32__)
@@ -302,8 +303,14 @@ void write_header(ofstream *myfile)
 //----------------------------------------------//
 
 
-void set_state_matrix(double mtx[3][4][2])
+void set_state_matrix(double mtx_in[3][4][2])
 {
+	// Copie locale : la fonction LIT mtx en ECRIVANT dans le global VTCmtx.
+	// Si appelee avec VTCmtx en entree (run_stock), entree=sortie -> la formule
+	// de g3 (somme des 4 slots) relirait g1/g2 deja reecrits dans le meme appel.
+	// La copie locale rend la fonction insensible a cet aliasing.
+	double mtx[3][4][2];
+	memcpy(mtx, mtx_in, sizeof(mtx));
 
 	// Virulence				[ex : treatment lowers virulence]
 	// Not-Treated / vir[Iab, IAb, IaB, IAB]
@@ -398,7 +405,9 @@ void set_globals()
 	memcpy(VTCmtx, dmatrix, sizeof(dmatrix));
 
 
-	set_state_matrix(dmatrix);
+	// (option B) Cumulation unique : VTCmtx garde ici les effets BRUTS.
+	// set_state_matrix est applique une seule fois plus tard (run_stock),
+	// apres les eventuels overrides -a/-b/-c, evitant toute double cumulation.
 }
 
 
@@ -1184,7 +1193,7 @@ int run_stock(/*int argc, char *argv[]*/) {
 //					if (execl(rpath, rpath, rs_name, (char *)NULL) == -1)			// "/usr/bin/r"
 //						fprintf(stderr, "\nFailure while running R on file :\n\"%s\" !\n", rs_name);
 //				} else if (pid > 0) {
-//					wait(); /* wait for child */
+//					wait(NULL); /* wait for child */
 //				} else {
 //					/* it was not possible to create child process, so print error message */
 //					perror("fork failed");
@@ -1360,7 +1369,7 @@ public:
 
 
 		dydt[0] = _theta - (_mu*y[0]) - ((betaA1*y[1] + betaA2*y[2] + betaB1*y[3] + betaB2*y[4]) +
-	                                  (betaA1T*y[5] + betaA2T*y[6] + betaB1T*y[7] + betaB2T*y[8])) * y[0] -
+	                                  (betaA1T*y[5] + betaA2T*y[6] + betaB1T*y[7] + betaB2T*y[8])) * y[0] +
 	                                 ((gammaA1*y[1] + gammaA2*y[2] + gammaB1*y[3] + gammaB2*y[4]) +
 	                                  (gammaA1T*y[5] + gammaA2T*y[6] + gammaB1T*y[7] + gammaB2T*y[8]));
 
@@ -1673,7 +1682,7 @@ int run_ode() {
 //				if (execl(rpath, rpath, rs_name, (char *)NULL) == -1)			// "/usr/bin/r"
 //					fprintf(stderr, "\nFailure while running R on file :\n\"%s\" !\n", rs_name);
 //			} else if (pid > 0) {
-//				wait(); /* wait for child */
+//				wait(NULL); /* wait for child */
 //			} else {
 //				/* it was not possible to create child process, so print error message */
 //				perror("fork failed");
@@ -1724,7 +1733,7 @@ void generate_r_ouput() {
 			if (execl(rpath, rpath, rs_name, (char *)NULL) == -1)			// "/usr/bin/r"
 				fprintf(stderr, "\nFailure while running R on file :\n\"%s\" !\n", rs_name);
 		} else if (pid > 0) {
-			wait(); /* wait for child */
+			wait(NULL); /* wait for child */
 		} else {
 			/* it was not possible to create child process, so print error message */
 			perror("fork failed");
