@@ -34,11 +34,13 @@ begin
     include(joinpath(@__DIR__, "src", "DrugResModel.jl"))
     include(joinpath(@__DIR__, "src", "models", "SIR.jl"))
     include(joinpath(@__DIR__, "src", "models", "SEIR.jl"))
+    include(joinpath(@__DIR__, "src", "models", "Emergence.jl"))
     include(joinpath(@__DIR__, "src", "models", "Parvir.jl"))
     include(joinpath(@__DIR__, "src", "models", "DrugResL2.jl"))
     include(joinpath(@__DIR__, "src", "Viz.jl"))
-    import .Runners, .Viz, .SIR, .SEIR, .Parvir, .DrugResL2
-    MODELS = ["SIR" => SIR, "SEIR" => SEIR, "Parvir (virulence)" => Parvir, "DrugRes" => DrugResL2]
+    import .Runners, .Viz, .SIR, .SEIR, .Emergence, .Parvir, .DrugResL2
+    MODELS = ["SIR" => SIR, "SEIR" => SEIR, "Émergence (seuil A→B)" => Emergence,
+              "Parvir (virulence)" => Parvir, "DrugRes" => DrugResL2]
     md"*(moteur chargé — $(length(MODELS)) modèles)*"
 end
 
@@ -57,6 +59,11 @@ end
 # ╔═╡ 11111111-1111-1111-1111-111111111106
 md"""Grille L = $(@bind L Slider(20:5:50, default = 30, show_value = true))   ·   graine = $(@bind seed Slider(1:50, default = 1, show_value = true))"""
 
+# ╔═╡ 11111111-1111-1111-1111-111111111120
+md"""**Structure de contact de C** : $(@bind contact Select([:lattice => "Grille 2D (degré 4, spatial)", :smallworld => "Small-world (degré ⟨k⟩ réglable)"]))
+
+⟨k⟩ = $(@bind kdeg Slider([4, 6, 8, 12, 16, 24, 32, 48, 64, 96, 128, 192, 256, 384], default = 8, show_value = true))   ·   recâblage β = $(@bind wsbeta Slider(0:0.05:1.0, default = 0.1, show_value = true))   *(actifs en mode small-world ; ⟨k⟩→N fait converger C vers A)*"""
+
 # ╔═╡ 11111111-1111-1111-1111-111111111107
 params = merge(model.fixed_params(L), P)
 
@@ -67,7 +74,8 @@ begin
 end
 
 # ╔═╡ 11111111-1111-1111-1111-111111111109
-A, B, C = Viz.run_main(model, params, L; tend = TEND, out = OUT, seed = seed)
+A, B, C = Viz.run_main(model, params, L; tend = TEND, out = OUT, seed = seed,
+                       contact = contact, k = round(Int, kdeg), ws_beta = float(wsbeta))
 
 # ╔═╡ 11111111-1111-1111-1111-111111111110
 md"""Instant affiché : $(@bind frame Slider(1:max(1, length(C.snaps)), default = max(1, length(C.snaps) ÷ 2), show_value = true))"""
@@ -99,6 +107,7 @@ end
 # ╟─11111111-1111-1111-1111-111111111104
 # ╟─11111111-1111-1111-1111-111111111105
 # ╟─11111111-1111-1111-1111-111111111106
+# ╟─11111111-1111-1111-1111-111111111120
 # ╟─11111111-1111-1111-1111-111111111107
 # ╟─11111111-1111-1111-1111-111111111108
 # ╟─11111111-1111-1111-1111-111111111109

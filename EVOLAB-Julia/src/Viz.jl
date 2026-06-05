@@ -14,17 +14,28 @@ export run_main, run_frontier, plot_spatial, plot_trajectories, plot_frontier, p
 palette(model, p) = cgrad(model.state_palette(p), model.nclasses(p), categorical = true)
 
 """
-    run_main(model, params, L; tend, out, seed)
+    run_main(model, params, L; tend, out, seed, contact, k, ws_beta)
 
-Calcule les 3 résolutions « live » : A (ODE), B (bien mélangé) et C (grille L×L,
+Calcule les 3 résolutions « live » : A (ODE), B (bien mélangé) et C (structurée,
 avec snapshots spatiaux). Léger → adapté à un slider.
+
+La structure de contact de C est paramétrable, pour que le spectateur explore le
+**bouton d'interpolation** structure ↔ champ moyen :
+- `contact = :lattice`    → grille 2D (degré ~4), carte spatiale lisible (tache d'encre).
+- `contact = :smallworld` → small-world Watts-Strogatz de degré moyen `k` et de
+  recâblage `ws_beta`. Quand `k → N`, C converge vers B (donc vers A) : la frontière
+  de validité du champ moyen devient visible *en direct*.
 """
-function run_main(model, params, L; tend, out, seed)
+function run_main(model, params, L; tend, out, seed,
+                  contact::Symbol = :lattice, k::Int = 8, ws_beta::Float64 = 0.1)
     N = L * L
     A = run_ode(model, params; tend = tend, saveat = out)
     B = run_ssa(model, params, empty_graph(N); wellmixed = true,
                 tend = tend, out_step = out, seed = seed)
-    C = run_ssa(model, params, lattice_graph(L); wellmixed = false,
+    keven = clamp(2 * (k ÷ 2), 2, N - 1)                 # watts_strogatz exige k pair, k<N
+    graphC = contact === :smallworld ? smallworld_graph(N, keven, ws_beta, seed) :
+                                       lattice_graph(L)
+    C = run_ssa(model, params, graphC; wellmixed = false,
                 tend = tend, out_step = out, seed = seed, record_spatial = true)
     return A, B, C
 end
