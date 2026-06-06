@@ -1,83 +1,83 @@
-# EVOLAB-Julia — DrugRes : individu vs champ moyen
+# EVOLAB-Julia — démo « individu vs champ moyen »
 
-Réimplémentation **propre** du modèle `DrugRes` (S-I-S évolutif de S. Gandon)
-issu d'EVOLAB-X, en Julia, dans le but de **chiffrer l'écart** entre trois
-résolutions d'un *même* modèle microscopique :
+Démo interactive qui montre **quand le champ moyen (ODE) ment**, en comparant trois
+résolutions du même modèle microscopique :
 
-| | Résolution | Outil | Ce qu'elle ajoute |
-|---|---|---|---|
-| **A** | champ moyen déterministe (ODE) | OrdinaryDiffEq | baseline naïve |
-| **B** | stochastique **bien mélangé** | Agents.jl | stochasticité / minorité rare |
-| **C** | stochastique **réseau** | Agents.jl + Graphs | corrélation spatiale |
+- **A** — champ moyen déterministe (ODE)
+- **B** — stochastique **bien mélangé** (Gillespie, contacts au hasard)
+- **C** — stochastique **structuré** (Gillespie sur grille / réseau)
 
-L'écart **A→B** isole l'effet de la stochasticité ; **B→C** isole l'effet de la
-structure. La version C++ d'origine correspond à **B** (référence de validation).
+Écart **A→B** = stochasticité (extinction, fade-out). Écart **B→C** = corrélations
+spatiales. On ne compare jamais A à C directement : les trois ensemble *décomposent*
+l'erreur.
 
-> ⚠️ **Code non testé.** Julia n'était pas installé sur la machine au moment de
-> l'écriture. Le code est écrit pour être correct et lisible, mais **n'a pas été
-> exécuté**. Voir la checklist de validation en bas.
+## Prérequis
 
-## Principe méthodologique (à ne pas casser)
-
-- **Matching au niveau microscopique** : A, B et C partagent EXACTEMENT les mêmes
-  taux par événement (β par contact, γ, mutation, matrice VTC). On laisse les
-  observables macro (R0, prévalence) **diverger** — la divergence est le signal.
-- **Ne jamais re-calibrer l'ODE sur l'ABM** : cela effacerait le phénomène étudié.
-- En **graphe complet**, C se réduit exactement à B (cohérence par construction).
-
-## Structure
-
-```
-EVOLAB-Julia/
-├── src/
-│   ├── DrugResModel.jl      # cœur partagé : params, matrice VTC, recombinaison, mutation
-│   ├── ResolutionA_ODE.jl   # A : champ moyen (ODE)
-│   ├── ResolutionBC_ABM.jl  # B & C : Gillespie individu-centré (contact en interrupteur)
-│   └── Indices.jl           # les 3 familles d'indices
-├── scripts/
-│   ├── setup.jl             # installe les dépendances dans un env local
-│   └── run_minimal.jl       # expérience minimale A vs B vs C (« Figure 1 »)
-└── README.md
-```
-
-## Installation de Julia
-
-- **Recommandé (multiplateforme)** : `juliaup`
-  ```bash
-  curl -fsSL https://install.julialang.org | sh
-  # puis, nouveau shell :
-  juliaup add release && juliaup default release
-  ```
-- **Manjaro/Arch** : `sudo pacman -S julia` (ou `yay -S juliaup`).
-- Vérifier : `julia --version` (≥ 1.10 conseillé).
-
-## Lancer
+Julia 1.12 via juliaup. Le binaire s'appelle `julialauncher` (pas de symlink `julia`).
+Première fois — installer et précompiler les dépendances :
 
 ```bash
 cd EVOLAB-Julia
-julia scripts/setup.jl              # installe Agents, Graphs, OrdinaryDiffEq
-julia --project=. scripts/run_minimal.jl
+~/.juliaup/bin/julialauncher --project=. -e 'using Pkg; Pkg.instantiate(); Pkg.precompile()'
 ```
 
-Le script imprime un tableau comparant les indices A / B / C :
-- **F1** prévalence d'équilibre (symptôme épidémique),
-- **F2** fréquence du génotype AB + persistance (symptôme évolutif),
-- **F3** corrélation S-I (cause structurelle, réseau).
+## Lancer la démo interactive (le mode normal)
 
-## Faire varier le bouton d'interpolation (version « papier »)
+```bash
+~/.juliaup/bin/julialauncher --project=. -e 'using Pluto; Pluto.run(notebook="dashboard.jl")'
+```
 
-Dans `run_minimal.jl`, `ws_beta` est la proba de recâblage small-world :
-`0` = treillis (très structuré) → `1` = aléatoire (≈ bien mélangé).
-Balayer `ws_beta` (ou `mean_deg`, ou `N`) et tracer un indice vs le bouton
-donne la **frontière de validité** du champ moyen.
+Pluto démarre et ouvre le notebook dans le navigateur (1re fois : ~1 min de
+compilation). Chaque mouvement de slider recalcule A, B et C en direct.
+*(Variante : `Pluto.run()` sans argument, puis ouvrir `dashboard.jl` depuis la page
+d'accueil Pluto.)*
 
-## Checklist de validation (avant d'exploiter les résultats)
+## Ce que tu peux régler
 
-1. **B ≈ C++** : comparer la trajectoire de B aux sorties de `DrugRes.cpp`
-   (mêmes paramètres) — doit coïncider en distribution.
-2. **C(graphe complet) ≈ B** : remplacer le graphe de C par `complete_graph(N)`
-   doit reproduire B.
-3. **A ≈ B à grand N** : augmenter N ; B doit converger vers A.
-4. **Conservation** : `S + I + E == N` à tout instant (sites).
-5. Surinfection/recombinaison : la partie la plus délicate — vérifier les
-   distributions de génotypes contre la logique de `RealizeSuperinfection`.
+| Contrôle | Effet |
+|---|---|
+| **Modèle** | SIR · SEIR · Émergence · Parvir (virulence) · DrugRes (résistance) |
+| **Sliders de paramètres** | propres à chaque modèle (β, γ, virulence…) |
+| **Grille L** | taille de la population N = L×L |
+| **Graine** | le tirage aléatoire (change l'issue stochastique de B et C) |
+| **Structure de contact de C** | *Grille 2D* (spatial) ou *Small-world* avec ⟨k⟩ et recâblage β réglables |
+| **Bouton « frontière de validité »** | trace l'écart C/A en fonction du degré ⟨k⟩ |
+
+Panneaux affichés : carte spatiale de C · trajectoires A/B/C · barres d'issue ·
+(sur bouton) courbe de frontière.
+
+## Trois expériences à faire (chacune isole un écart)
+
+1. **L'effet spatial (B→C).** Modèle **SIR**, défauts. La courbe C (grille) traîne
+   loin sous A et B : l'épidémie avance en tache d'encre au lieu de flamber. Puis
+   passe la structure en *Small-world* et **monte ⟨k⟩** : C remonte vers A. À ⟨k⟩→N,
+   les trois courbes se rejoignent — *c'est la frontière de validité du champ moyen,
+   en direct*. (Convergence la plus nette à petite grille, L=20.)
+
+2. **L'effet stochastique (A→B).** Modèle **Émergence** (calé au seuil). A part
+   *toujours* en épidémie. **Bouge la graine** : B (bien mélangé, sans aucune
+   structure) bascule entre épidémie majeure et avortement — l'ODE ne voit jamais ce
+   fade-out. Ici l'écart est purement stochastique, pas spatial.
+
+3. **L'effet évolutif.** Modèle **Parvir** ou **DrugRes**. La structure ne change pas
+   que la prévalence : elle change *quelle souche gagne*. En C (spatial), la souche la
+   plus transmissible s'auto-étouffe localement → virulence / résistance évoluée plus
+   basse qu'en B. Le champ moyen rate ça qualitativement.
+
+## Sans interaction
+
+- **Figure statique** (PNG multi-panneaux) :
+  `~/.juliaup/bin/julialauncher --project=. scripts/make_figure.jl` → `dashboard_preview.png`
+- **Smoke test** (vérifie que tout charge et tourne) :
+  `~/.juliaup/bin/julialauncher --project=. dashboard.jl`
+- **Tests par modèle** : `scripts/test_{framework,parvir,emergence,drugres}.jl`
+
+> ⚠️ Ne pas lancer deux compilations Julia lourdes **en parallèle** (Makie +
+> OrdinaryDiffEq) : Julia 1.12.6 segfaulte dans son GC. Une à la fois.
+
+## Aller plus loin
+
+- Ajouter un modèle : voir la convention dans `CLAUDE.md` (table des fonctions à
+  exposer) et `src/models/SIR.jl` comme gabarit minimal.
+- `drugres-reference/` est l'**instrument DrugRes validé, gelé** (référence de
+  validation, reproductible par script) — voir son propre README.
