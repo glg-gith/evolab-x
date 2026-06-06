@@ -54,6 +54,11 @@ Panneaux affichés : carte spatiale de C · trajectoires A/B/C · barres d'issue
    les trois courbes se rejoignent — *c'est la frontière de validité du champ moyen,
    en direct*. (Convergence la plus nette à petite grille, L=20.)
 
+   > ⚠️ Un ⟨k⟩ élevé sur un graphe dense coûte cher en calcul. Si la simulation dépasse
+   > son budget (20 s), C est **tronquée** et le graphe l'indique en rouge — baisse ⟨k⟩
+   > ou L. Cette expérience de convergence est légère sur **SIR/Émergence** ; sur
+   > **Parvir/DrugRes** (génotypés), reste à petite grille.
+
 2. **L'effet stochastique (A→B).** Modèle **Émergence** (calé au seuil). A part
    *toujours* en épidémie. **Bouge la graine** : B (bien mélangé, sans aucune
    structure) bascule entre épidémie majeure et avortement — l'ODE ne voit jamais ce

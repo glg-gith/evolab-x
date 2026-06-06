@@ -1,27 +1,20 @@
 ### A Pluto.jl notebook ###
-# v0.20.4
+# v1.0.1
 
 using Markdown
 using InteractiveUtils
 
 # This Pluto notebook uses @bind for interactivity. When running this notebook outside of Pluto, the following 'mock version' of @bind gives bound variables a default value (instead of an error).
 macro bind(def, element)
-    #= EVOLAB dashboard =#
-    quote
+    #! format: off
+    return quote
         local iv = try Base.loaded_modules[Base.PkgId(Base.UUID("6e696c72-6542-2067-7265-42206c756150"), "AbstractPlutoDingetjes")].Bonds.initial_value catch; b -> missing; end
         local el = $(esc(element))
         global $(esc(def)) = Core.applicable(Base.get, el) ? Base.get(el) : iv(el)
         el
     end
+    #! format: on
 end
-
-# ╔═╡ 11111111-1111-1111-1111-111111111101
-md"""
-# EVOLAB — Individu vs champ moyen
-Compare **A** (champ moyen, ODE), **B** (bien mélangé, stochastique) et **C** (grille
-spatiale, stochastique), et trace la **frontière de validité**. Choisis un modèle, bouge
-les sliders. *(Parvir et DrugRes sont génotypés → plus lents : compte quelques secondes.)*
-"""
 
 # ╔═╡ 11111111-1111-1111-1111-111111111102
 begin
@@ -43,6 +36,14 @@ begin
               "Parvir (virulence)" => Parvir, "DrugRes" => DrugRes]
     md"*(moteur chargé — $(length(MODELS)) modèles)*"
 end
+
+# ╔═╡ 11111111-1111-1111-1111-111111111101
+md"""
+# EVOLAB — Individu vs champ moyen
+Compare **A** (champ moyen, ODE), **B** (bien mélangé, stochastique) et **C** (grille
+spatiale, stochastique), et trace la **frontière de validité**. Choisis un modèle, bouge
+les sliders. *(Parvir et DrugRes sont génotypés → plus lents : compte quelques secondes.)*
+"""
 
 # ╔═╡ 11111111-1111-1111-1111-111111111103
 md"""**Modèle** : $(@bind modelname Select([k for (k, v) in MODELS]))"""

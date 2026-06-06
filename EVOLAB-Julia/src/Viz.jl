@@ -59,9 +59,12 @@ function plot_spatial(model, params, C, L, frame)
 end
 
 function plot_trajectories(A, B, C)
+    trunc = get(C, :truncated, false) || get(B, :truncated, false)
     fig = Figure(size = (560, 360))
     ax = Axis(fig[1, 1], xlabel = "temps", ylabel = "nb infectés (prévalence)",
-              title = "A (champ moyen) vs B (bien mélangé) vs C (grille)")
+              title = "A (champ moyen) vs B (bien mélangé) vs C (grille)" *
+                      (trunc ? "\n⚠ tronqué : budget calcul atteint — baisse ⟨k⟩ ou L" : ""),
+              titlecolor = trunc ? :crimson : :black)
     lines!(ax, A.t, A.prev, label = "A — champ moyen", linewidth = 3, color = :gray25)
     lines!(ax, B.t, B.prev, label = "B — bien mélangé", linewidth = 2, linestyle = :dash, color = :dodgerblue)
     lines!(ax, C.t, C.prev, label = "C — grille (spatial)", linewidth = 3, color = :crimson)

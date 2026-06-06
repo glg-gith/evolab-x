@@ -118,7 +118,7 @@ function run_ssa(model, params, graph; wellmixed::Bool, tend, out_step, seed,
     prevalence() = sum(count_class(g, c) for c in prevc)
 
     rec_t = Float64[]; rec_prev = Float64[]; snaps = Vector{Vector{Int}}()
-    nextout = 0.0; nev = 0; t0 = time()
+    nextout = 0.0; nev = 0; t0 = time(); truncated = false
     while g.t < tend
         rates = model.rates(g)
         tot = sum(rates); tot <= 0 && break
@@ -132,11 +132,12 @@ function run_ssa(model, params, graph; wellmixed::Bool, tend, out_step, seed,
         model.execute!(g, wchoose(rates, g.rng))
         nev += 1
         if nev > max_events || time() - t0 > max_seconds
-            @warn "run_ssa: budget atteint" nev t = round(g.t, digits = 2)
+            @warn "run_ssa: budget calcul atteint → trajectoire tronquée (baisser ⟨k⟩ ou L)" nev t = round(g.t, digits = 2) tend
+            truncated = true
             break
         end
     end
-    return (t = rec_t, prev = rec_prev, snaps = snaps, gstate = g)
+    return (t = rec_t, prev = rec_prev, snaps = snaps, gstate = g, truncated = truncated)
 end
 
 "Résolution A — champ moyen déterministe."
