@@ -31,16 +31,16 @@ begin
     import CairoMakie
     CairoMakie.activate!()
     include(joinpath(@__DIR__, "src", "framework", "Runners.jl"))
-    include(joinpath(@__DIR__, "src", "DrugResModel.jl"))
+    include(joinpath(@__DIR__, "src", "models", "DrugResCore.jl"))
     include(joinpath(@__DIR__, "src", "models", "SIR.jl"))
     include(joinpath(@__DIR__, "src", "models", "SEIR.jl"))
     include(joinpath(@__DIR__, "src", "models", "Emergence.jl"))
     include(joinpath(@__DIR__, "src", "models", "Parvir.jl"))
-    include(joinpath(@__DIR__, "src", "models", "DrugResL2.jl"))
+    include(joinpath(@__DIR__, "src", "models", "DrugRes.jl"))
     include(joinpath(@__DIR__, "src", "Viz.jl"))
-    import .Runners, .Viz, .SIR, .SEIR, .Emergence, .Parvir, .DrugResL2
+    import .Runners, .Viz, .SIR, .SEIR, .Emergence, .Parvir, .DrugRes
     MODELS = ["SIR" => SIR, "SEIR" => SEIR, "Émergence (seuil A→B)" => Emergence,
-              "Parvir (virulence)" => Parvir, "DrugRes" => DrugResL2]
+              "Parvir (virulence)" => Parvir, "DrugRes" => DrugRes]
     md"*(moteur chargé — $(length(MODELS)) modèles)*"
 end
 

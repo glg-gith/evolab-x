@@ -30,7 +30,7 @@
 using Printf, Graphs, Statistics, Random
 using Agents: abmproperties
 
-const SRC = normpath(joinpath(@__DIR__, "..", "src"))
+const SRC = @__DIR__   # archive gelée : les modules sont dans ce même dossier
 include(joinpath(SRC, "DrugResModel.jl"))
 include(joinpath(SRC, "ResolutionA_ODE.jl"))
 include(joinpath(SRC, "ResolutionBC_ABM.jl"))

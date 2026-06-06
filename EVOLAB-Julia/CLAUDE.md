@@ -11,23 +11,24 @@ et *de combien* le champ moyen ment :
 Écart A→B = stochasticité / fade-out. Écart B→C = corrélations spatiales. Le but
 est de *décomposer* l'erreur, donc on garde les trois, jamais A vs C seul.
 
-## Deux couches — ne pas les confondre
+## Structure
 
-- **L1 (instrument de recherche, validé en interne)** : `src/DrugResModel.jl`,
-  `src/ResolutionA_ODE.jl`, `src/ResolutionBC_ABM.jl` (Agents.jl), `src/Indices.jl`,
-  + `scripts/{run_minimal,sweep_validity,evolution_endemic,validate_vs_eee}.jl`.
-  Spécifique à DrugRes. Reproductible (script + graine). **C'est la référence de
-  validation** : `DrugResL2` (L2) doit retrouver ses chiffres.
-- **L2 (démo pédagogique)** : moteur générique `src/framework/Runners.jl`, modèles
-  `src/models/*.jl`, visualisation `src/Viz.jl`, notebook `dashboard.jl`. Multi-modèles,
-  interactif. **Pas un livrable reproductible** — un effet vu en bougeant un slider se
-  refait en script avant de devenir un résultat.
+- **`src/` + `scripts/` + `dashboard.jl` — la démo (code vivant).** Moteur générique
+  `src/framework/Runners.jl` (mécanique A/B/C, indépendante du modèle), modèles
+  `src/models/*.jl`, visualisation `src/Viz.jl`, notebook Pluto `dashboard.jl`.
+  Multi-modèles, interactif. **Pas un livrable reproductible** — un effet vu en
+  bougeant un slider se refait en script avant de devenir un résultat.
+- **`drugres-reference/` — instrument DrugRes validé, GELÉ.** L'implémentation
+  DrugRes-spécifique d'origine (`ResolutionA_ODE.jl` = A/ODE, `ResolutionBC_ABM.jl` =
+  B&C/Agents.jl, `Indices.jl`, + ses scripts). Sert de **référence de validation** :
+  `src/models/DrugRes.jl` doit retrouver ses chiffres. Ne pas modifier (cf. son README).
 
-`src/DrugResModel.jl` est le **cœur partagé** (params, matrice VTC, `recombine`,
-`mutate`, distributions) traduit fidèlement du C++ d'origine. Utilisé par L1 ET par
-`src/models/DrugResL2.jl`. **Ne pas supprimer** : c'est la logique validée, factorisée.
+Le noyau de domaine DrugRes (génotypes, matrice VTC, `recombine`, `mutate`,
+distributions, traduit du C++) est dans `src/models/DrugResCore.jl` — vivant, importé
+par `src/models/DrugRes.jl`. L'archive gelée en garde une **copie figée**
+(`drugres-reference/DrugResModel.jl`), donc **aucune dépendance vivant→gelé**.
 
-## Écrire un nouveau modèle L2
+## Écrire un nouveau modèle
 
 Un modèle = un module exposant cette convention (le moteur l'appelle par duck typing ;
 voir l'en-tête de `src/framework/Runners.jl` et `src/models/SIR.jl` comme gabarit

@@ -44,7 +44,7 @@ using Statistics
 using Random
 
 # --- chargement des modules du projet ---
-const SRC = normpath(joinpath(@__DIR__, "..", "src"))
+const SRC = @__DIR__   # archive gelée : les modules sont dans ce même dossier
 include(joinpath(SRC, "DrugResModel.jl"))
 include(joinpath(SRC, "ResolutionBC_ABM.jl"))
 include(joinpath(SRC, "Indices.jl"))

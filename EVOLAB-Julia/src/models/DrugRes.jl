@@ -1,18 +1,18 @@
 """
-    DrugResL2 — modèle DrugRes (S-I-S évolutif de Gandon) porté sur l'interface L2.
+    DrugRes — modèle DrugRes (S-I-S évolutif de Gandon) pour le moteur générique.
 
-Réutilise la logique validée de `DrugResModel.jl` (matrice VTC, recombinaison,
-mutation) et le champ moyen de `ResolutionA_ODE.jl`. Génotypes : 4 (2 loci) ×
-{traité, non traité}. Classes : 1=EMPTY, 2=SUSC, 3..10 = INF[génotype, traité].
+Réutilise le noyau de domaine `DrugResCore` (matrice VTC, recombinaison, mutation).
+Génotypes : 4 (2 loci) × {traité, non traité}. Classes : 1=EMPTY, 2=SUSC,
+3..10 = INF[génotype, traité].
 
 ⚠ Le plus lourd des modèles (10 classes, génotypes) → plutôt sur grille modeste.
-Cross-check : en bien mélangé sur graphe complet, doit retrouver les ~640 du
-runner validé `ResolutionBC.run_B`.
+Cross-check : en bien mélangé sur graphe complet, doit retrouver les ~640 de
+l'instrument validé gelé (`drugres-reference/`, `ResolutionBC.run_B`).
 """
-module DrugResL2
+module DrugRes
 
 using ..Runners: GState, set_class!, count_class, nodes_of, nbr_count, pick_neighbor, wchoose, tailmean
-using ..DrugResModel: VIR, BETA, CLEAR, NGENO, recombine, mutate, recomb_dist, mut_dist, default_params
+using ..DrugResCore: VIR, BETA, CLEAR, NGENO, recombine, mutate, recomb_dist, mut_dist, default_params
 using Graphs: neighbors
 using Random: randperm
 
