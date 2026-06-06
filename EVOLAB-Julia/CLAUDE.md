@@ -28,6 +28,15 @@ distributions, traduit du C++) est dans `src/models/DrugResCore.jl` — vivant, 
 par `src/models/DrugRes.jl`. L'archive gelée en garde une **copie figée**
 (`drugres-reference/DrugResModel.jl`), donc **aucune dépendance vivant→gelé**.
 
+> **Pourquoi DrugRes est le seul modèle en deux fichiers** (`DrugRes.jl` +
+> `DrugResCore.jl`) — choix délibéré, pas un oubli. Les 4 autres modèles tiennent en un
+> fichier car leur « biologie » fait 2-3 lignes. DrugRes inliné ferait ~440 lignes, et
+> son noyau est une **traduction fidèle ligne-à-ligne du C++** (recombinaison à masques
+> de bits, quirks d'origine) qu'on veut isoler : ne pas la faire défiler à chaque retouche
+> du câblage A/B/C, et pouvoir tester `recombine`/`mutate` seuls (distributions exactes
+> attendues). Ne **pas** appliquer ce découpage aux modèles simples — ce serait de la
+> sur-ingénierie.
+
 ## Écrire un nouveau modèle
 
 Un modèle = un module exposant cette convention (le moteur l'appelle par duck typing ;
